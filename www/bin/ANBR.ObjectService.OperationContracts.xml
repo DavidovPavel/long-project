@@ -1,0 +1,2453 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.ObjectService.OperationContracts</name>
+    </assembly>
+    <members>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.CreateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Создает новый аларм.
+            </summary>
+            <param name="alarm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.DeleteAlarm(System.Int32)">
+            <summary>
+            Удалить существующий аларм
+            </summary>
+            <param name="alarmId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.UpdateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Изменить существующий аларм
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.SubscribeOnAlarm(System.Int32)">
+            <summary>
+            Подписаться на аларм
+            </summary>
+            <param name="alarmId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.UnSubscribeOnAlarm(System.Int32)">
+            <summary>
+            Отписаться от аларма
+            </summary>
+            <param name="alarmId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.GetNolookingAlarms">
+            <summary>
+            Список непрочитанных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.GetAlarmByFolder(System.Int32)">
+            <summary>
+            Вернуть список алармов в папке
+            </summary>
+            <param name="folderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.GetCommonAlarms">
+            <summary>
+            Получить список общих алармрв
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.GetUserAlarms">
+            <summary>
+            Получить список личных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClient.GetAlarmById(System.Int32)">
+            <summary>
+            Получить аларм по идентификатору
+            </summary>
+            <param name="id">идентификатор</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.CreateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Создает новый аларм.
+            </summary>
+            <param name="alarm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.DeleteAlarm(System.Int32)">
+            <summary>
+            Удалить существующий аларм
+            </summary>
+            <param name="alarmId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.UpdateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Изменить существующий аларм
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.SubscribeOnAlarm(System.Int32)">
+            <summary>
+            Подписаться на аларм
+            </summary>
+            <param name="AlarmId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.UnSubscribeOnAlarm(System.Int32)">
+            <summary>
+            Отписаться от аларма
+            </summary>
+            <param name="AlarmId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.GetNolookingAlarms">
+            <summary>
+            Список непрочитанных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.GetAlarmByFolder(System.Int32)">
+            <summary>
+            Вернуть список алармов в папке
+            </summary>
+            <param name="folderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.GetCommonAlarms">
+            <summary>
+            Получить список общих алармрв
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.GetUserAlarms">
+            <summary>
+            Получить список личных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.AlarmServiceClientProxy.GetAlarmById(System.Int32)">
+            <summary>
+            Получить аларм по идентификатору
+            </summary>
+            <param name="id">идентификатор</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.ObjectService.OperationContracts.ClientCallbackHealer">
+            <summary>
+            Поддержка прослушивателей клиента в состоянии lifetime
+            </summary>
+        </member>
+        <member name="T:ANBR.ObjectService.OperationContracts.IExporter">
+            <summary>
+            Интерфейс эекспорта данных из поисковой задачи
+            </summary>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.IExporter.GetTaskID">
+            <summary>
+            Идентификатор задачи
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.IExporter.Export">
+            <summary>
+            Експортировать результаты
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.ObjectService.OperationContracts.StateInfo">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ANBR.ObjectService.OperationContracts.StateInfo.state">
+            <summary>
+            -1 - не опеределено
+            0 - в работе 
+            1 - завершено
+            500 - ошибка
+            </summary>
+        </member>
+        <member name="T:ANBR.ObjectService.OperationContracts.ITumbleTilting">
+            <summary>
+            Ванька - встанька.
+            </summary>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ITumbleTilting.Rise">
+            <summary>
+            Поднять клиентский прокси.
+            </summary>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetTypeStatisticByObjectAndRelType(System.Int32,System.Int32)">
+            <summary>
+            Возвращает статистику по типам для объекта и определенной роли объекта
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeId">Итентификатор роли в связи</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetTypeStatisticByObjectAndRelTypeList(System.Int32,System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+            Возвращает статистику по типам для объекта и определенных ролей объекта
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeIdList">Итентификаторы роли в связи</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetRelatedObjects(System.Int32,System.Int32,System.Int32,ANBR.SemanticArchive.ObjectService.ObjectSetResultType)">
+            <summary>
+            Возвращает список объектов, связанного с объектом objetcId, выполняющего  роль roleTypeId.
+            Возвращаемые объекты будут типа  typeId
+            </summary>
+            <param name="objetcId"></param>
+            <param name="roleTypeId"></param>
+            <param name="typeId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetLikeFacts(System.Int32,System.Int32[],System.Int32)">
+            <summary>
+            Возвращает выкты заданного типа связанных с определенными объектами
+            </summary>
+            <param name="factTypeId">тип факта</param>
+            <param name="relatedObjecs">список связанных объектов. Список не может быть пустым. </param>
+            <param name="topFacts">Будет возвращено первые topFacts фактов.  0 -без ограничений. В любом случаи вернется не более 200 фактов.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetCountMentionObject(System.Int32)">
+            <summary>
+            Возвращает коль-во умомянутых объектов и/или количество источников, в которых упомянут объект
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetRubricByFragment(System.Int32)">
+            <summary>
+            Возвращает список рубрик по фрагменту.
+            </summary>
+            <param name="fragmentId">Идентификатор фрагмента</param>
+            <returns>Список рубрик</returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.RetrospectiveFindObjectInTexts(System.Int32[],System.String)">
+            <summary>
+            Ретроспективное выделение объектов из источников.
+            </summary>
+            <param name="objects">список идентификаторов объектов для ретроспективного выделения</param>
+            <param name="sourceQuery">запрос, который возврящает идентификаторы источников, в которых производить ретроспективное выделение</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.ObjectIdByGuid(System.Guid)">
+            <summary>
+            Идентификатор объекта по uid
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.CreateWorkSpace(System.String,System.Int32[])">
+            <summary>
+            Создать рабочую область для объектов
+            </summary>
+            <param name="workSpaceName">Наименование новой рабочей области</param>
+            <param name="objects">Список объектов, которые привязываются к рабочей области</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.SaveBinaryPropertyValue(ANBR.SemanticArchive.ObjectService.BinaryPropertyValue)">
+            <summary>
+            Сохраняет или обновляет информацию по бинарному файлу
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.SaveContentBinaryPropertyValue(System.IO.Stream)">
+            <summary>
+            Сохраняет содержимое бинарного файлв
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.SaveContentBinaryPropertyValue(System.Int32,System.IO.Stream)">
+            <summary>
+            Сохраняет содержимое бинарного файлв
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение информаци по бинареому файлу
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetContentBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение содержимого бинарного файла
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.DeleteBinaryPropertyValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Удаление бинарного файла
+            </summary>
+            <param name="contentId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClient.GetObjectsById(System.Int32[],System.Int32)">
+            <summary>
+            Вернуть список объектов по идентификаторам
+            </summary>
+            <param name="ids">Массив идентификаторов</param>
+            <param name="asMetaTypeId">Возвращать как объекты тип asMetaTypeId. Если asMetaTypeId=0 - как абстрактный элемент. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetTypeStatisticByObjectAndRelType(System.Int32,System.Int32)">
+            <summary>
+            Возвращает статистику по типам для объекта и определенной роли объекта
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeId">Итентификатор роли в связи</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetTypeStatisticByObjectAndRelTypeList(System.Int32,System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+            Возвращает статистику по типам для объекта и списка ролей в связи
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeIdList">Список идентификаторов роли в связи</param>
+            <param name="includeMentionObject">Включать в статистику упоминание объекта в источниках</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetRelatedObjects(System.Int32,System.Int32,System.Int32,ANBR.SemanticArchive.ObjectService.ObjectSetResultType)">
+            <summary>
+            Возвращает список объектов, связанного с объектом objetcId, выполняющего  роль roleTypeId.
+            Возвращаемые объекты будут типа  typeId
+            </summary>
+            <param name="objetcId"></param>
+            <param name="roleTypeId"></param>
+            <param name="typeId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetLikeFacts(System.Int32,System.Int32[],System.Int32)">
+            <summary>
+            Возвращает выкты заданного типа связанных с определенными объектами
+            </summary>
+            <param name="factTypeId">тип факта</param>
+            <param name="relatedObjecs">список связанных объектов. Список не может быть пустым. </param>
+            <param name="topFacts">Будет возвращено первые topFacts фактов.  0 -без ограничений. В любом случаи вернется не более 200 фактов.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetCountMentionObject(System.Int32)">
+            <summary>
+            Возвращает коль-во умомянутых объектов и/или количество источников, в которых упомянут объект
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetRubricByFragment(System.Int32)">
+            <summary>
+            Возвращает список рубрик по фрагменту.
+            </summary>
+            <param name="fragmentId">Идентификатор фрагмента</param>
+            <returns>Список рубрик</returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.RetrospectiveFindObjectInTexts(System.Int32[],System.String)">
+            <summary>
+            Ретроспективное выделение объектов из источников.
+            </summary>
+            <param name="objects">список идентификаторов объектов для ретроспективного выделения</param>
+            <param name="sourceQuery">запрос, который возврящает идентификаторы источников, в которых производить ретроспективное выделение</param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.ObjectIdByGuid(System.Guid)">
+            <summary>
+            Идентификатор объекта по uid
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.AssignObjectToProfiller(System.Int32,System.Int32)">
+            <summary>
+            Связать объект с профилем
+            </summary>
+            <param name="objectId"></param>
+            <param name="profileId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.CreateWorkSpace(System.String,System.Int32[])">
+            <summary>
+            Создать рабочую область для объектов
+            </summary>
+            <param name="workSpaceName">Наименование новой рабочей области</param>
+            <param name="objects">Список объектов, которые привязываются к рабочей области</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.SaveBinaryPropertyValue(ANBR.SemanticArchive.ObjectService.BinaryPropertyValue)">
+            <summary>
+            Сохраняет или обновляет информацию по бинарному файлу
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.SaveContentBinaryPropertyValue(System.IO.Stream)">
+            <summary>
+            Сохраняет содержимое бинарного файлв
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.SaveContentBinaryPropertyValue(System.Int32,System.IO.Stream)">
+            <summary>
+            Сохраняет содержимое бинарного файлв
+            </summary>
+            <param name="_binaryPropertyValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение информаци по бинареому файлу
+            </summary>
+            <param name="id"></param> <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetContentBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение содержимого бинарного файла
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.DeleteBinaryPropertyValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Удаление бинарного файла
+            </summary>
+            <param name="contentId"></param>
+        </member>
+        <member name="M:ANBR.ObjectService.OperationContracts.ObjectServiceClientProxy.GetObjectsById(System.Int32[],System.Int32)">
+            <summary>
+            Вернуть список объектов по идентификаторам
+            </summary>
+            <param name="ids">Массив идентификаторов</param>
+            <param name="asMetaTypeId">Возвращать как объекты тип asMetaTypeId. Если asMetaTypeId=0 - как абстрактный элемент. </param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.ObjectService.OperationContracts.RubricQueryPaging">
+            <summary>
+            Постраничный запрос поиска объектов по рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.ObjectService.OperationContracts.RubricQueryPaging.RubricId">
+            <summary>
+            Идентификатор рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.ObjectService.OperationContracts.RubricQueryPaging.TypeId">
+            <summary>
+            Искомфй тип объекта
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.CreateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Создает новый аларм.
+            </summary>
+            <param name="alarm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.DeleteAlarm(System.Int32)">
+            <summary>
+            Удалить существующий аларм
+            </summary>
+            <param name="alarmId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.UpdateAlarm(ANBR.SemanticArchive.DataContracts.Alarms.Alarm)">
+            <summary>
+            Изменить существующий аларм
+            </summary>
+            <param name="alarm"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.SubscribeOnAlarm(System.Int32)">
+            <summary>
+            Подписаться на аларм
+            </summary>
+            <param name="AlarmId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.UnSubscribeOnAlarm(System.Int32)">
+            <summary>
+            Отписаться от аларма
+            </summary>
+            <param name="AlarmId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.GetNolookingAlarms">
+            <summary>
+            Список непрочитанных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.GetAlarmByFolder(System.Int32)">
+            <summary>
+            Вернуть список алармов в папке
+            </summary>
+            <param name="folderId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.GetCommonAlarms">
+            <summary>
+            Получить список общих алармрв
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.GetUserAlarms">
+            <summary>
+            Получить список личных алармов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.CancelAlarmAction(System.Int32)">
+            <summary>
+            Погасить сработавший Аларм
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IAlarmService.GetObjectsByAlarmAction(System.Int32)">
+            <summary>
+            Возвращает список объектов во сработавшему индикатору трефоги
+            </summary>
+            <param name="alarmActionID"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.IObjectService">
+            <summary>
+            Контракт основной службы для работы с объектами семантического архива.
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetMetaModelXML">
+            <summary>
+            Получить поток с метамоделью (антологической моделью) базы данных.
+            </summary>
+            <returns>Поток с сериализованным XML, может быть прочитан с помощью класса MetaModel из SAMetaModel</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreatePerson(ANBR.SemanticArchive.DataContracts.EntityObject.Person,ANBR.SemanticArchive.DataContracts.ExtendedProperties,System.Int32)">
+            <summary>
+            Создать новую персону
+            </summary>
+            <param name="person">Объект типа Person с описание параметров персоны</param>
+            <param name="extendedProperties">Список дополнительных свойств. Может быть null</param>
+            <param name="subTypeId"></param>
+            <returns>Идентификатор вновь созданного объекта</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdatePerson(ANBR.SemanticArchive.DataContracts.EntityObject.Person,ANBR.SemanticArchive.DataContracts.ExtendedProperties)">
+            <summary>
+            Сохраненине новый значений свойств существующей персоны
+            </summary>
+            <param name="person"></param>
+            <param name="extendedProperties"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateOrganisation(ANBR.SemanticArchive.DataContracts.EntityObject.Organization,ANBR.SemanticArchive.DataContracts.ExtendedProperties,System.Int32)">
+            <summary>
+            Создание новой организации.
+            </summary>
+            <param name="organization">Объект типа Oranization с описание параметров организации</param>
+            <param name="extendedProperties">Список дополнительных свойств. Может быть null</param>
+            <param name="subTypeId">Идентификатор дочернего для Окганицайии типа (например Банк). Если 0 - будет создана просто Организация </param>
+            <returns>Идентификатор созданной организации</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateOrganisation(ANBR.SemanticArchive.DataContracts.EntityObject.Organization,ANBR.SemanticArchive.DataContracts.ExtendedProperties)">
+            <summary>
+            Изменение свойств организации
+            </summary>
+            <param name="organization">Объект типа Oranization с описание параметров организации</param>
+            <param name="extendedProperties">Список дополнительных свойств. Может быть null</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteObject(System.Int32)">
+            <summary>
+            Удаление объекта по идентификатору.
+            </summary>
+            <param name="objectId">Идентификатор удаляемого объекта</param>
+            <remarks>На самом деле объект физически из базы не удаляется, а только помечается как удаленные. В дольнейшем его можно будет восстановить</remarks>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetInstance(System.Int32)">
+            <summary>
+            Возвращает экземпляр по идентификатору. Вернется Person для персоны, Organization для организации
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Объект семантического архива класса DataObject или его потомок</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetDictionaryData(System.Int32)">
+            <summary>
+            Вернуть все значения из справочника по его идентификатору
+            </summary>
+            <param name="dictionaryId">Идентификатор справочника</param>
+            <returns>Набор данных со значениями в справочнике</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetMultiData(System.Int32,System.Int32,ANBR.Common.Contarcts.PropertyType)">
+            <summary>
+            Возвращает значения множественного свойства объекта
+            </summary>
+            <param name="objectId">Идентификаор объекта</param>
+            <param name="propertyId">Идентификатор множественного свойства</param>
+            <param name="typeData">Тип свойства</param>
+            <see cref="T:ANBR.Common.Contarcts.PropertyType"/>
+            <returns>Набор данных со значениями множественных свойств объекта</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdatePropValueByStream(System.IO.Stream)">
+            <summary>
+            Обновить значение свойства объекта из потока
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdatePropValue(System.Int32,ANBR.Common.Contarcts.DMetaProperty,System.Object[])">
+            <summary>
+            Задать значение свойства у объекта
+            </summary>
+            <param name="objectId">Идентификатор изменяемого объекта</param>
+            <param name="property">Изменяемое свойство</param>
+            <param name="data">Новое значение/новые значения свойства</param>
+            <returns>Идентифкатор измененного свойства</returns>
+            <remarks>Для однозначных (не множественных свойств) нужно передавать массив с одним значением. Все остальные значения будут проигнорированны.
+            Для многозначных свойст можно перердать сразу несколько значений. Передаваеые значения должны быть соответствовать типу свойст.
+            </remarks>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeletePropValue(System.Int32,ANBR.Common.Contarcts.DMetaProperty,System.Object[])">
+            <summary>
+            Удаляет одно или несколько значений у множественных свойств
+            </summary>
+            <param name="objectId">Идентификатор объекта, у котрого удаляются значения свойств</param>
+            <param name="property">Свойство, значения которого удаляются</param>
+            <param name="data">Список идетдификаторов значений множественных свойст типа int </param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectsByIds(System.Int32[])">
+            <summary>
+            Возвращает в виде набора данных свойства объектов с идентификаторами ids
+            </summary>
+            <param name="ids">Список идентификаторов объектов</param>
+            <returns>Набор данных со значениями свойст объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectsByIds(System.Int32[],ANBR.SemanticArchive.ObjectService.ObjectResultFormat,System.String)">
+            <summary>
+            Возвращает в виде набора данных свойства объектов с идентификаторами ids
+            </summary>
+            <param name="ids">Список идентификаторов объектов</param>
+            <param name="objectResultFormat">Значение каких свойств возвращать</param>
+            <param name="columns">Список необъодимых свойств зере запятую,  если  objectResultFormat =ObjectResultFormat.CustomList </param>
+            <returns>Набор данных DataSet со значениями запрошенных свойств</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelationStatistic(System.Int32)">
+            <summary>
+            Посчитать статистику связей для объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Набор данных со данными по статистике</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetAbstractObject(System.Int32)">
+            <summary>
+            Возвращает объект из базы данных по идентификатору
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Объекта Семантического архива</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetPerson(System.Int32)">
+            <summary>
+            Вернуть объект типа Персона по идентификатору
+            </summary>
+            <param name="personId">Идентификатор объекта</param>
+            <returns>Объект - Персона</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetOrganizaton(System.Int32)">
+            <summary>
+            Вернуть объект типа Организация по идентификатору
+            </summary>
+            <param name="organizatioId">Идентификатор объекта</param>
+            <returns>Объект-Организация</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindObjectByName(System.String,System.Int32,System.Boolean,ANBR.SemanticArchive.ObjectService.ObjectResultFormat,System.String)">
+            <summary>
+            Найти объект(ы) в базе по имени
+            </summary>
+            <param name="name">Искомое имя объекта</param>
+            <param name="rootTypeId">Тип искомого объекта</param>
+            <param name="useSynonym">Искомый тип объекта</param>
+            <param name="objectResultFormat">Значения каких свойств возвращать для объекта</param>
+            <param name="cultomColumnList">Список возвращаемых свойств, если objectResultFormat = ObjectResultFormat.Custom  </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindObjectByNameExt(ANBR.SemanticArchive.ObjectService.AbstractObjectQuery)">
+            <summary>
+            Найти объект(ы) в базе по имени . Разширенный
+            </summary>
+            <param name="abstractObjectQuery">Критерий поиска объекта по имени</param>
+            <returns>Результаты поиска объекта в виде класса BasePageResult</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateFact(ANBR.SemanticArchive.DataContracts.Facts.Fact)">
+            <summary>
+            Создать новый факт
+            </summary>
+            <param name="fact">Новый факт, описанный классом Fact</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateFact(ANBR.SemanticArchive.DataContracts.Facts.Fact)">
+            <summary>
+            Обновить существующий факт
+            </summary>
+            <param name="fact">Факт, описанный классом Fact</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateGeoData(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="objectId"></param>
+            <param name="geographyObjectId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetEntitySynonym(System.Int32)">
+            <summary>
+            Получить список синонимов объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Список синонимов объекта в виде списка классов Synonym</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddEntitySynonym(ANBR.SemanticArchive.DataContracts.EntityObject.Synonym)">
+            <summary>
+            Добавить новый синоним к объекту
+            </summary>
+            <param name="synonym"></param>
+            <returns></returns>
+            <see cref="T:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteSynonym(ANBR.SemanticArchive.DataContracts.EntityObject.Synonym)">
+            <summary>
+            Удалить синоним у объекта
+            </summary>
+            <param name="synonym">Удаляемый синоним. Можно передавать только идентификатор</param>
+            <see cref="T:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateSynonym(ANBR.SemanticArchive.DataContracts.EntityObject.Synonym)">
+            <summary>
+            Обновить синоним объекта
+            </summary>
+            <param name="synonym">Синоним объекта</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetSynonymMonitoringObjects(System.Boolean,System.Boolean)">
+            <summary>
+            Получить список синонимов объектов мониторинга
+            </summary>
+            <param name="forSearch">Позвращать синонимы предназначенные для поиска</param>
+            <param name="forHighLite">Позвращать синонимы предназначенные для подсветки в тексте</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelation(System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="objectId"></param>
+            <param name="typeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelationsBetween(System.Int32,System.Int32[])">
+            <summary>
+            Возвращает список существующих сязей от одного объекта к списку других объектов
+            </summary>
+            <param name="objectId">Главный объекты</param>
+            <param name="otherObjects">Список других объектов</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelationStats(System.Int32)">
+            <summary>
+            Вернуть статистику связей по объекту
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateRelation(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Создать новую связь между двумя объектами
+            </summary>
+            <param name="fromObjectId">Идентификатор первого объекта</param>
+            <param name="toObjectId">Идентификатор второго объекта</param>
+            <param name="fromRoleId">Идентификатор роли со стороны 1-го объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteRelation(System.Int32)">
+            <summary>
+            Удалить связь по идентификатору
+            </summary>
+            <param name="relationId">Идентификатор связи</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteRelation(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Удалить связь по идентификаторам двух объектов и роли в связи
+            </summary>
+            <param name="fromObjectId">Идентификатор первого объекта</param>
+            <param name="toObjectId">Идентификатор второго объекта</param>
+            <param name="fromRoleId">Идентификатор роли со стороны 1-го объекта</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CheckIn(System.Int32)">
+            <summary>
+            Вернуть объект в базу после изменений
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CheckOut(System.Int32)">
+            <summary>
+            Взять объект на редактирования
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UndoCheckOut(System.Int32)">
+            <summary>
+            Отменить все изменения для объекта и вернуть его в базу
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetAllRubrics">
+            <summary>
+            Вернуть список всех рубрик
+            </summary>
+            <returns>Список рубрик в виде коллекции классов Rubric</returns>
+            <see cref="T:ANBR.SemanticArchive.DataContracts.Rubric"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddRubric(ANBR.SemanticArchive.DataContracts.Rubric)">
+            <summary>
+            Создать новую рубрику
+            </summary>
+            <param name="rubric">Описание новой рубрики</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.EditRubric(ANBR.SemanticArchive.DataContracts.Rubric)">
+            <summary>
+            Отредактировать существующую рубрику
+            </summary>
+            <param name="rubric"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRubricStatistics">
+            <summary>
+            Вернуть статистику по связанным объектам по всем рубрикам
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRubricStatsByRubric(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Gets number of linked objects for designated rubric 
+            </summary>
+            <param name="rubric">rubric</param>
+            <param name="includeChildren">with/without objects linked to child rubrics</param>
+            <param name="sourcesOnly">count on sources only</param>
+            <returns>number of linked objects</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.LinkObjectsToRubric(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Link objects to rubric 
+            </summary>
+            <param name="rubric">rubric</param>
+            <param name="objects">objects to link to rubric</param>
+            <returns>changed rubric or (-1), if linked objects have not been changed</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UnlinkObjectsFromRubric(System.Int32,System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+            Unlink objects from rubric
+            </summary>
+            <param name="rubric">rubric</param>
+            <param name="objects">objects to unlink from rubric</param>
+            <param name="IncludeChildren">take child rubrics into account</param>
+            <returns>list of changed rubrics or list with single value = (-1), 
+            if linked objects have not been changed</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindByRubric(System.Int32,System.Int32)">
+            <summary>
+            Найти объекты, привязанные к рубрике
+            </summary>
+            <param name="rubricId">Идентификатор рубрики</param>
+            <param name="typeId">Нужны объекты только этого типа </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObject(System.Int32)">
+            <summary>
+            Вернуть объект в виде набора данных
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.StatisticByRubric(System.Int32,System.Boolean)">
+            <summary>
+            Статистика по рубрике и/или ее подрубрикам
+            </summary>
+            <param name="rubricId">Идентификатор рубрики</param>
+            <param name="withChindren">Считать статистику по подрубрикам</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddRubricsToObject(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Добавить объект к рубрике(ам)
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="rubricIdList">Идентификаторы рубрик</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddRubricToObject(System.Int32,System.Int32)">
+            <summary>
+            Добавить объект к рубрике
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="rubricId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RemoveRubricsFromObject(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Отвязать объект от рубрик(и)
+            </summary>
+            <param name="objectId">Идентифиуатор объекта</param>
+            <param name="rubricIdList">Список идентификаторов рубрик</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RemoveRubricFromObject(System.Int32,System.Int32)">
+            <summary>
+            Отвязать объект от рубрик(и)
+            </summary>
+            <param name="objectId">Идентифиуатор объекта</param>
+            <param name="rubricId">Идентификатор рубрики</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectTypeID(System.Int32)">
+            <summary>
+            Вернуть тип объекта
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+            <returns>Идентификатор типа объекта</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateObject(ANBR.SemanticArchive.DataContracts.DataObject)">
+            <summary>
+            Создать новый объект
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateObject(ANBR.SemanticArchive.DataContracts.DataObject)">
+            <summary>
+            Изменить объект
+            </summary>
+            <param name="obj">Описание объета</param>
+            <see cref="T:ANBR.SemanticArchive.DataContracts.DataObject"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetTypeStatisticByObjectAndRelType(System.Int32,System.Int32)">
+            <summary>
+            Возвращает статистику по типам для объекта и определенной роли объекта
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeId">Итентификатор роли в связи</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetTypeStatisticByObjectAndRelTypeList(System.Int32,System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+            Возвращает статистику по типам для объекта и списка ролей в связи
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeIdList">Список идентификаторов роли в связи</param>
+            <param name="includeMentionObject">Включать в результаты статистику по упоминанию в документах</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelatedObjects(System.Int32,System.Int32,System.Int32,ANBR.SemanticArchive.ObjectService.ObjectSetResultType)">
+            <summary>
+            Возвращает список объектов, связанного с объектом objetcId, выполняющего  роль roleTypeId.
+            Возвращаемые объекты будут типа  typeId
+            </summary>
+            <param name="objetcId">Идентификатор объекта</param>
+            <param name="roleTypeId">Тип роли</param>
+            <param name="typeId">Тип объекта</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelatedObjectsByRoleList(System.Int32,System.Collections.Generic.List{System.Int32},System.Int32,System.Boolean)">
+            <summary>
+            Вернуть объекты, связанные с другим объектом по критериям
+            </summary>
+            <param name="objetcId">Идентификаор объекта</param>
+            <param name="roleTypeIdList">Список ролей со стороны objetcId</param>
+            <param name="typeId">Возвращать объекты только этого типа</param>
+            <param name="IncludeMentionObject">Включать связи типа объект-источник</param>
+            <returns>Набор данных со списком объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRelatedObjectsByRoleListPage(ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery)">
+            <summary>
+            Вернуть объекты , связанные с определенным объектом по критериям параметра relatedObjectsPageQuery
+            Есть возможность постраничного доступа к данным
+            </summary>
+            <param name="relatedObjectsPageQuery"></param>
+            <returns>Списое</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectRubrics(System.Int32)">
+            <summary>
+            Вернуть коллекцию рубрик, к которым привязан объект
+            </summary>
+            <param name="objectid"></param>
+            <returns>Коллекция рубрик в виде классов Rubric</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetCountRelatedObjectByRole(System.Int32,System.Int32)">
+            <summary>
+            Вернуть количество объектов, связзанных с objectid связанных ролью roleid
+            </summary>
+            <param name="objectid">Идентификатор объекта</param>
+            <param name="roleid">Идентификатор роли</param>
+            <returns>Количество связанных объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetAllGeographyObject">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetGeographyObjects(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="parentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindGeographyObject(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ReloadMetaModel">
+            <summary>
+            Перезачитать метамодель из базы данных
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateObjectRubrics(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Обновить связи объекта с рубриками
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="rubricIdList">Список идентификаторов рубрик</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectHistory(System.Int32)">
+            <summary>
+            Вернуть историю изменений объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Список объектов ObjectHistory с историей изменений объекта</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RestoreObject(System.Int32)">
+            <summary>
+            Восстановить состояние объекта на момент historyId
+            </summary>
+            <param name="historyId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetFactByID(System.Int32)">
+            <summary>
+            Веруть факт по идентификатору объекта
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetSourceById(System.Int32)">
+            <summary>
+            Вернуть объект-источник по идентификатору
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectSemanticReports(System.Int32)">
+            <summary>
+            Вернуть список сохраненных раскладок Семантических сетей для объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Список список сохраненных раскладок Семантических в виде объектов  SemanticReport </returns>
+            <see cref="T:ANBR.SemanticArchive.DataContracts.SemanticReport"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteSemanticReport(System.Int32)">
+            <summary>
+            Удалить сохраненную раскладку  Семантической сетеи  объекта
+            </summary>
+            <param name="reportId">Идентификатор сохраненной раскладки</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateSemanticReport(System.Int32,System.String)">
+            <summary>
+            Создать новую раскладку семантической сети у объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="name">Наименование раскладки</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetSemanticReportData(System.Int32)">
+            <summary>
+            вернуть данные по раскладке семантической сети
+            </summary>
+            <param name="semanticReportId">Идентификатор семантической сети</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetSemanticReportData(System.IO.Stream)">
+            <summary>
+            Сохранить данные разкладки семантической сети
+            </summary>
+            <param name="stream"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetSemanticReportXml(System.Int32,System.String)">
+            <summary>
+            Сохранить данные по разкладке семантической сети в виде XML
+            </summary>
+            <param name="semanticReportId">Идентификатор сохраненной семантической сети </param>
+            <param name="xml">Данные в XML формате</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetSemanticReportXmlData(System.IO.Stream)">
+            <summary>
+            Сохранить данные по разкладке семантической сети в виде XML из патока
+            </summary>
+            <param name="xmlStream">Данные в XML формате</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetSemanticReportXmlData(System.Int32)">
+            <summary>
+            Вернуть сохраненную разкладку семантической сети в виде XML
+            </summary>
+            <param name="semanticReportId"></param>
+            <returns>Строка в виде XML</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectByHistory(System.Int32)">
+            <summary>
+            Вернуть данные об объекте на мометы истории historyId
+            </summary>
+            <param name="historyId">Идентификатор истории</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectLockInfo(System.Int32)">
+            <summary>
+            Вернуть информацию о блокировке (Chek-out) объектf
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetFactRelatedObjects(System.Int32)">
+            <summary>
+            Возвращает список объектов, связанных с этим фактом
+            </summary>
+            <param name="factId">ID факта</param>
+            <returns>Список связанных объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetLikeFacts(System.Int32,System.Int32[],System.Int32)">
+            <summary>
+            Возвращает выкты заданного типа связанных с определенными объектами
+            </summary>
+            <param name="factTypeId">тип факта</param>
+            <param name="relatedObjecs">список связанных объектов. Список не может быть пустым. </param>
+            <param name="topFacts">Будет возвращено первые topFacts фактов.  0 -без ограничений. В любом случаи вернется не более 200 фактов.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetCountMentionObject(System.Int32)">
+            <summary>
+            Возвращает коль-во умомянутых объектов и/или количество источников, в которых упомянут объект
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.JoinFragmentToRubric(System.Int32,System.Int32)">
+            <summary>
+            Связывает фрагмент с рубрикой
+            </summary>
+            <param name="fragmentId">идентификатор фрагмента</param>
+            <param name="rubricId">идентификатор рубрики</param>
+            <returns>Идентификатор созданной связи</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteFragmentToRubric(System.Int32,System.Int32)">
+            <summary>
+            Разрывает связь фрагмента с рубрикой
+            </summary>
+            <param name="fragmentId">идентификатор фрагмента</param>
+            <param name="rubricId">идентификатор рубрики</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteFragmentToRubric(System.Int32)">
+            <summary>
+            Разрывает связь фрагмента с рубрикой
+            </summary>
+            <param name="fragmentByRubricId">идентификатор связи фрагмента с рубрикой</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRubricByFragment(System.Int32)">
+            <summary>
+            Возвращает список рубрик по фрагменту.
+            </summary>
+            <param name="fragmentId">Идентификатор фрагмента</param>
+            <returns>Список рубрик</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RetrospectiveFindObjectInTexts(System.Int32[],System.String)">
+            <summary>
+            Ретроспективное выделение объектов из источников.
+            </summary>
+            <param name="objects">список идентификаторов объектов для ретроспективного выделения</param>
+            <param name="sourceQuery">запрос, который возврящает идентификаторы источников, в которых производить ретроспективное выделение
+            Если запрос пустой - применяется ко всем документам системы</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.TestChannel">
+            <summary>
+            Проверка работоспособности канала связи клиента и службы
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateHistory(ANBR.SemanticArchive.DataContracts.EntityObject.History)">
+            <summary>
+            Сохранить историю выполнения запроса
+            </summary>
+            <param name="history"></param>
+            <returns></returns>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateHistory(ANBR.SemanticArchive.DataContracts.EntityObject.History)"/>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetHistory(System.Boolean)"/>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetHistoryContent(System.Int32)"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateHistory(ANBR.SemanticArchive.DataContracts.EntityObject.History)">
+            <summary>
+            Обновить информацию об истории выполнения запроса
+            </summary>
+            <param name="history"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetHistory(System.Boolean)">
+            <summary>
+            Получить историю выполнения запосов пользователем
+            </summary>
+            <param name="includeContent">Включать ли в результат Тексты запросов</param>
+            <returns>Список выполненных запросов пользователем в виде объекта History</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetHistoryContent(System.Int32)">
+            <summary>
+            Получить текст запросы для истории запросов по идентификатору
+            </summary>
+            <param name="id">Идентификатор истории запросов</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteHistory(System.Int32)">
+            <summary>
+            Удалить запрос из списка историй запросов по идентификатору
+            </summary>
+            <param name="id">Идентификатор истории запросов</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateFavorite(System.Int32,System.Int32)">
+            <summary>
+            Сохранить ссылку на объект как Важную/ Главную. Один объект может быть в нескольких папках
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="folderId">Идентификатор папка для главных объектов</param>
+            <returns>Идентификатор связи объект-папка</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetFavorite(System.Int32,System.Boolean)">
+            <summary>
+            Вернуть список главных/важных объектов из пользовательской папки 
+            </summary>
+            <param name="folderId">Идентификатор папки</param>
+            <param name="withImages">Возвращать гоавные изображения объеккта</param>
+            <returns>Список главных/важных объектов в папке</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteFavorite(System.Int32)">
+            <summary>
+            Удалить объект из списка главных/важных
+            </summary>
+            <param name="favoriteId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectInfo(System.Int32)">
+            <summary>
+            Вернуть информацию об объекте
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRubric(System.Int32)">
+            <summary>
+            Вернуть описание рубрики по идентификатору
+            </summary>
+            <param name="rubricId">Идентификатор рубрики</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteRubric(System.Int32)">
+            <summary>
+            Удалить рубрику по идентификатору
+            </summary>
+            <param name="rubricId">Идентификатор рубрики</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteMultiPropValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Удалить значение у множественного свойства
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="propertyId">Идентификатор свойства</param>
+            <param name="valueId">Идентификатор значения свойства</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SaveMultiPropValue(System.Int32,System.Int32,System.Int32,System.Object)">
+            <summary>
+            Создать или изменить значение у множественного свойства
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="propertyId">Идентификатор свойства</param>
+            <param name="valueId">Идентификатор значения свойства</param>
+            <param name="value">Значение свойства</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetTypeStatiscicByRubrics(System.Int32[])">
+            <summary>
+            Вернуть статистику по типам в рамках переданных рубрик
+            </summary>
+            <param name="rubrics">Идентификаторы рубрик, для которых нужна статистика</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetTypeStatiscicByObject(System.Int32,System.Int32[])">
+            <summary>
+            Вернуть статистику по типам, связанных с определенным объектов и определенной ролью (ролями)
+            </summary>
+            <param name="objectId">Идентификатор объекта, для которого строится статистика</param>
+            <param name="roles">Список идентификаторов ролей</param>
+            <returns>Коллекция объектов со статистикой</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.MergeObject(System.Int32,System.Int32)">
+            <summary>
+            Объединение двух объектов </summary>
+            В базе останется только объект с идентификатором mainObjectId. Все возможные данные будут перенесены с объекта objectId на mainObjectId
+            <param name="mainObjectId"></param>
+            <param name="objectId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.MergeObjects(System.Int32,System.Int32[])">
+            <summary>
+            Объеденить несколько объектов в один.
+            В базе останется только объект с идентификатором mainObjectId. Все возможные данные будут перенесены с объектов objectId на mainObjectId
+            </summary>
+            <param name="mainObjectId">Идентификатор главного объекта, который останется в базе</param>
+            <param name="objectId">Идентификаторы сливаемых объектов, которые будут удалены</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteObjectForever(System.Int32)">
+            <summary>
+            Удалить объект из базы навседа, без возмолности восстановления
+            </summary>
+            <param name="objectId">Идентификатор удаляемого объекта</param>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteObject(System.Int32)"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetUserSettings(System.String,ANBR.SemanticArchive.DataContracts.DefaultUsage)">
+            <summary>
+            Вернуть пользовательские настройки
+            </summary>
+            <param name="settingName">Системное имя пользовательсяких настроек</param>
+            <param name="defaultUsage">Возвращать настройки по умолчанию для псех пользователей</param>
+            <returns>Строка пользовательских настроек. За содержимое строки отвечает та часть кода, которая их сохраняет и читает в произвольном вормате</returns>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetUserSettings(System.String,System.String,System.Boolean)"/>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.ClearUserSettings(System.String)"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetUserSettings(System.String,System.String,System.Boolean)">
+            <summary>
+            Сохранить пользовательскую настройку в базе
+            </summary>
+            <param name="settingName">Системное имя пользовательской настройки</param>
+            <param name="value">Строка - значение в  произвольном формате</param>
+            <param name="isDefault">Сохранить как настройку по-умолчанию для всех пользователей</param>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetUserSettings(System.String,ANBR.SemanticArchive.DataContracts.DefaultUsage)"/>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.ClearUserSettings(System.String)"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ClearUserSettings(System.String)">
+            <summary>
+            Очистить значение пользовательской настройки для текущего пользователя.
+            </summary>
+            <param name="settingName">Системное имя пользовательской настройки</param>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetUserSettings(System.String,System.String,System.Boolean)"/>
+            <see cref="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetUserSettings(System.String,ANBR.SemanticArchive.DataContracts.DefaultUsage)"/>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ObjectIdByGuid(System.Guid)">
+            <summary>
+            Идентификатор объекта по uid
+            </summary>
+            <param name="guid"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RefindObjectInSources(System.Int32)">
+            <summary>
+            Запустить поиск упоминания объекта в источниках
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AssignObjectToProfiller(System.Int32,System.Int32)">
+            <summary>
+            Связать объект с профилем
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="profileId">Идентификатор профиля</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetAssignedProfillers(System.Int32)">
+            <summary>
+            Вернуть список профилей, определенных для объекта
+            </summary> <param name="objectId">Идентификатор объекта</param>
+            <returns>Объекта класса AssignedProfiler с описанием привязки профиля к объекту</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteAssignedProfillers(System.Int32)">
+            <summary>
+            Удалить привязку объекта к профилю
+            </summary> <param name="id"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateWorkSpace(System.String,System.Int32[])">
+            <summary>
+            Создать рабочую область для объектов
+            </summary>
+            <param name="workSpaceName">Наименование новой рабочей области</param>
+            <param name="objects">Список объектов, которые привязываются к рабочей области</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetGeoDataForObjects(System.Int32[])">
+            <summary>
+            Возвращает информацию о геоданных для списка объектов
+            </summary>
+            <param name="objectsId"></param>
+            <returns>Список геоданных объекта</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SaveBinaryPropertyValue(ANBR.SemanticArchive.ObjectService.BinaryPropertyValue)">
+            <summary>
+            Сохраняет или обновляет информацию по бинарному файлу
+            </summary>
+            <param name="binaryPropertyValue"></param>
+            <returns>Идентификатор файла</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SaveContentBinaryPropertyValue(System.IO.Stream)">
+            <summary>
+            Сохраняет содержимое бинарного файлв
+            </summary>
+            <param name="stream"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение информаци по бинареому файлу
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetContentBinaryPropertyValue(System.Int32)">
+            <summary>
+            Получение содержимого бинарного файла
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteBinaryPropertyValue(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Удаление бинарного файла
+            </summary>
+            <param name="contentId">Идентификатор сонтента с файлов</param>
+            <param name="objectId">Идентификатор объекта, который ссылается на бинарные данные </param>
+            <param name="propertyId">Идентификатор свойства, типа бинарное свойство</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectsById(System.Int32[],System.Int32)">
+            <summary>
+            Вернуть список объектов по идентификаторам
+            </summary>
+            <param name="ids">Массив идентификаторов</param>
+            <param name="asMetaTypeId">Возвращать как объекты тип asMetaTypeId. Если asMetaTypeId=0 - как абстрактный элемент. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteHtmlPage(System.Int32)">
+            <summary>
+            Удалить HTML страницу
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SaveHtmlPage(ANBR.SemanticArchive.DataContracts.DcHtmlPage)">
+            <summary>
+            Сохранить HTML страницу
+            </summary>
+            <param name="htmlPage">Описание HTML страницы</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindHtmlPageByName(System.String)">
+            <summary>
+            Найти HTML страницу по названию
+            </summary>
+            <param name="displayName"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindHtmlPageById(System.Int32)">
+            <summary>
+            Найти HTML страницу по идентификатору
+            </summary>
+            <param name="id"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AllHtmlPages">
+            <summary>
+            Вурнуть все HTML страницы
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectImage(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Вернуть главную картинку объекта с подстраиванием под максимальные размеры
+            </summary>
+            <param name="objectId">Идентфикатор объекта</param>
+            <param name="maxWithx">Макси</param>
+            <param name="maxHeight"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetMentionedInSources(System.Int32)">
+            <summary>
+            Вернуть список документов, в которых упомянут объекто (факт)
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ClearDatabase(System.String)">
+            <summary>
+            Полная очистка базы данных
+            </summary>
+            <param name="code"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.StartSearchReguest(System.Int32)">
+            <summary>
+            Запуск заявки на поиск
+            </summary>
+            <param name="searchReguestId">Идентификатор заявки</param> <returns>Возвращает идентификатор провери по заявке</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectChild(System.Int32)">
+            <summary>
+            Вернуть список объектов-наследников
+            </summary>
+            <param name="id">Идентификатор родительского объекта</param>
+            <returns>Список дочерних объектов в виде класса DataObjectInfo</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ChangeType(System.Int32,System.Int32)">
+            <summary>
+            Изменить тип объекта (только на тип-потовок текужего типа объекта)
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="metaTypeId">Новый тип объекта</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteObjectSourceRelation(System.Int32)">
+            <summary>
+            Разорвать связь объекта с источником
+            </summary>
+            <param name="relationId">Идентификатор связи объект-источник</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ObjectIsDeleted(System.Int32)">
+            <summary>
+            ПРоверить, что объект и идентификатором objectId удален
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CheckFileExists(ANBR.SemanticArchive.ObjectService.SAFileInfo)">
+            <summary>
+            Проыерить, что файл, соответствующий описанию asFileInfo уже существует и базе
+            </summary>
+            <param name="asFileInfo"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetJoinedObjects(System.Guid)">
+            <summary>
+            Получение списка UID объектов, которые были слиты с ID переданного объекта
+            </summary>
+            <param name="uid">ID объекта</param>
+            <returns>Массив слитых объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddJoinUID(System.Guid,System.Guid)">
+            <summary>
+            Позволяет добавить для основного объекта UID, который будет считаться "сливаемым"
+            </summary>
+            <param name="mainUID">UID основного объекта</param>
+            <param name="uid">UID объекта, который будет мержится</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ExportData(System.String)">
+            <summary>
+            Проводит экспорт данных на основе переданных сведений в формате XML
+            </summary>
+            <param name="xmlSpec"></param>
+            <returns>Идентификатор задачи</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ExportDataState(System.Guid)">
+            <summary>
+            Позволяет получить информацию о состоянии экспорта 
+            </summary>
+            <param name="idTask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ExportDataDownload(System.Guid)">
+            <summary>
+            Позволяет выгрузить экспортированные данные 
+            </summary>
+            <param name="idTask"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ExportDataDownloadByChunk(System.Guid,System.Int32)">
+            <summary>
+            Позволяет выгрузить экспортированные данные превышающие объем 2047Мб
+            </summary>
+            <param name="idTask">Идентификатор задачи</param>
+            <param name="chunkSize">Размер перемещаемого блока</param>
+            <returns>Идетинфикатор задачи (используется совместно с ExportDataDownload)</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ImportData(System.Guid)">
+            <summary>
+            Позволяет запустить автоматический мерж объектов, подлежащих импорту
+            (у которых ObjectStatus = 0)
+            </summary>
+            <returns>Идентификатор задачи</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetLinkedObjectsByBaseType(System.Int32[],System.Int32)">
+            <summary>
+            Возвращает список связанных объектов заданного типа и всех его наследников
+            </summary>
+            <param name="ids">Список объектов связи которых необходимы</param>
+            <param name="baseType">Базовый тип</param>
+            <returns>Список объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FilterObjectsByBaseType(System.Int32[],System.Int32)">
+            <summary>
+            Возвращает список объектов отфильтрованный по задоному типу
+            </summary>
+            <param name="ids">Список объектов</param>
+            <param name="baseType">Базовый тип</param>
+            <returns>Список объектов</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectsByAliases(System.Guid[])">
+            <summary>
+            Возвращает список соотвествий алиас -> основной объект
+            </summary>
+            <param name="ids">Список алиасов</param>
+            <returns>Справочник алиас -> основной объект</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateImportTaskDescriptor(System.Guid)">
+            <summary>
+            Создает целочисленный дискриптор на основе идентификатора задачи
+            </summary>
+            <param name="taskID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.TranslateObject(System.Int32,ANBR.SemanticArchive.ObjectService.ObjectAttribute,System.String,System.String)">
+            <summary>
+            Перевести свойство(а) объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="objectAttribute">Переводимое свойство</param>
+            <param name="toLanguage">На какой язык переводит. Если пустая строка - на язык базы данных </param>
+            <param name="fromLanguages">С какого языка переводить. По умолчанию AUTO - автоматическое определение языка текста</param>
+            <returns>Переведенное значение свойства </returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.TranslateObjectAndSave(System.Int32[],ANBR.SemanticArchive.ObjectService.ObjectAttribute,System.String,System.String)">
+            <summary>
+            Перевести свойства объекта и сохранить в базу данных
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="objectAttribute">Переводимое свойство</param>
+            <param name="toLanguage">На какой язык переводит. Если пустая строка - на язык базы данных </param>
+            <param name="fromLanguages">С какого языка переводить. По умолчанию AUTO - автоматическое определение языка текста</param>
+            <returns>Переведенное значение свойства </returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.TranslateText(System.String,System.String,System.String)">
+            <summary>
+            Перевести произвольный текст текст
+            </summary>
+            <param name="text">Текст для перевода</param>
+            <param name="toLanguage">На какой язык переводит. Если пустая строка - на язык базы данных </param>
+            <param name="fromLanguages">С какого языка переводить. По умолчанию AUTO - автоматическое определение языка текста</param>
+            <returns>Переведенный текст</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetWordForms(System.String)">
+            <summary>
+            Вернуть словоформы слова
+            </summary>
+            <param name="word">Слово, для которого строются словоформы</param>
+            <returns>Список словоформ</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetDatabaseInfo">
+            <summary>
+            Вернуть информацию о базе данных
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetSourceRelationCount(System.Int32)">
+            <summary>
+            Вернуть количество объектов, связанных с источником
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindByRubricPaging(ANBR.ObjectService.OperationContracts.RubricQueryPaging)">
+            <summary>
+            Найти рубрики по условия поиска
+            </summary>
+            <param name="rubricQueryPaging"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjects(System.Int32[])">
+            <summary>
+            Вернуть опмсание объектов по идентификаторам
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateSource(ANBR.SemanticArchive.DataContracts.Sources.Source,ANBR.SemanticArchive.DataContracts.ExtendedProperties)">
+            <summary>
+            Обновить данные по источнику (документу)
+            </summary>
+            <param name="source">Описание источника (документа)</param>
+            <param name="extendedProperties"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetProjects(System.Boolean)">
+            <summary>
+            Вернуть список проектов из базы
+            </summary>
+            <param name="myOnly">Долько проекты текущего пользователя</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateProject(ANBR.SemanticArchive.DataContracts.SAProject)">
+            <summary>
+            Создать новый проект (заявку) в базе данных
+            </summary>
+            <param name="newProjects"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.UpdateProject(ANBR.SemanticArchive.DataContracts.SAProject)">
+            <summary>
+            При обновлении null свойства, не оказывают влияния на данные
+            </summary>
+            <param name="projects"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.EditProjectRole(System.Int32,System.String)">
+            <summary>
+            У заданной роли изменяется имя
+            </summary>
+            <param name="projectRoleId"></param>
+            <param name="roleName"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DeleteProjectRole(System.Int32)">
+            <summary>
+            Удалить тип роли объекта в проекта
+            </summary>
+            <param name="projectRoleId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetProjectRoles">
+            <summary>
+            Вернуть все роли объекта 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CustomTaskCreateDescriptor(System.Guid,System.Int32,System.String)">
+            <summary>
+            Создает задачу заданного типа
+            </summary>
+            <param name="taskId"></param>
+            <param name="taskType"></param>
+            <param name="creator"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CustomTaskGetState(System.Nullable{System.Guid},System.Nullable{System.Int32})">
+            <summary>
+            Позволяет получить информацию о состоянии задачи на основе идентификатора задачи или 
+            его дескриптора
+            </summary>
+            <param name="idTask"></param>
+            <param name="idTaskDescriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CustomTaskGetStateOnly(System.Nullable{System.Guid},System.Nullable{System.Int32})">
+            <summary>
+            Позволяет получить статус задачи на основе идентификатора задачи или 
+            его дескриптора
+            </summary>
+            <param name="idTask"></param>
+            <param name="idTaskDescriptor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CustomTaskSetState(System.Nullable{System.Guid},System.Nullable{System.Int32},System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Guid},System.Nullable{System.Guid},System.Int32)">
+            <summary>
+            Позволяет обновить данные по состоянию задачи  на основе идентификатора задачи или 
+            его дескриптора
+            </summary>
+            <param name="idTask"></param>
+            <param name="idTaskDescriptor"></param>
+            <param name="param1"></param>
+            <param name="param2"></param>
+            <param name="paramInt1"></param>
+            <param name="paramInt2"></param>
+            <param name="paramGuid1"></param>
+            <param name="paramGuid2"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CustomTaskSetStateOnly(System.Nullable{System.Guid},System.Nullable{System.Int32},System.Int32)">
+            <summary>
+            Позволяет обновить статус задачи  на основе идентификатора задачи или 
+            его дескриптора
+            </summary>
+            <param name="idTask"></param>
+            <param name="idTaskDescriptor"></param>
+            <param name="state"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetProjectRoleByName(System.String)">
+            <summary>
+            GetProjectRoleByName
+            </summary>
+            <param name="roleName">Имя роли</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetProjectsPaging(ANBR.SemanticArchive.DataContracts.ProjectPageQuery)">
+            <summary>
+            Вернуть список проектов по фильтру
+            </summary>
+            <param name="query">Фильтр поиска проектов</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateProjectRoleEx(ANBR.SemanticArchive.DataContracts.ProjectRole)">
+            <summary>
+            Созданию подлежат только системные роли, остальные роли заполняются 
+            на этапе поставки БД. 
+            При создании заполняются все свойства кроме RoleTitleLocal и RoleTitleGeneral.
+            </summary>
+            <param name="role"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.EditProjectRoleEx(ANBR.SemanticArchive.DataContracts.ProjectRole)">
+            <summary>
+            Модификации подлежат все свойства кроме Culter и Title, которые заполняются 
+            на этапе поставки БД. Перед вызовом необходимо получить оригинальный объект. 
+            </summary>
+            <param name="role"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.Login">
+            <summary>
+            Подключиться к службе
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.Logout">
+            <summary>
+            Отключиться от службы
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.MergeProject(System.Int32,System.Int32,System.String)">
+            <summary>
+            Объекинение двух проектов в один
+            </summary>
+            <param name="project1Id">Идентификатор первого проекта</param>
+            <param name="project2Id">Идентификатор второго проекта</param>
+            <param name="newProjectName">Новое имя проекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.AddAllFromProject(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Добавить (скопировать) все объекты из одного проекта в другой
+            </summary>
+            <param name="sourceProjectId">Идентификатор проект-источника</param>
+            <param name="destinationProjectId">Тдентификатор проекта-назначения</param>
+            <param name="deleteSourceProject">Удалить проект-источник после переноса</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectProfiles(System.Int32)">
+            <summary>
+            Вернуть сисок профидей проекта
+            </summary>
+            <param name="objectId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.ImportFromGlobalSearchData(System.String)">
+            <summary>
+            Импортировать результаты поиска из GlobalSearce
+            </summary>
+            <param name="xmlData">XML данные из GlobalSearce </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetCodeName(System.String,System.Int32,System.String)">
+            <summary>
+            Вернуть имя кода для страны
+            </summary>
+            <param name="codeName">Наименование кода</param>
+            <param name="countryId">Идентификатор страны</param>
+            <param name="culture2">Код культуры</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.EntitySpecifySearch(ANBR.SemanticArchive.DataContracts.BaseSearchCriteria)">
+            <summary>
+            
+            </summary>
+            <param name="criterias">критерии поиска</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RegisterTag(ANBR.SemanticArchive.DataContracts.SATag)">
+            <summary>
+            Зарегистрировать новый тэг и получить его идентификатор. Если тэг уже существует, вернется его идентификатор быз каких лиюо изменений в базе.
+            </summary>
+            <param name="tag">Описание тега</param>
+            <returns>Идентификатор тега</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.FindTag(System.String)">
+            <summary>
+            Получить идентификатор тега по системному имени
+            </summary>
+            <param name="tagName">Системное имя тега</param>
+            <returns>Идентификатор тега</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.LinkTagToObject(System.Int32,System.String)">
+            <summary>
+            Уствановить тэг у объекта по имени
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="tagName">Системное имя тэга</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.LinkTagToObject(System.Int32,System.Int32)">
+            <summary>
+            Уствановить тэг у объекта по идентификатору тега
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="tagId">Идентификатор тэга</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.LinkTagToRelation(System.Int32,System.String)">
+            <summary>
+            Уствановить тэг у объекта по имени
+            </summary>
+            <param name="relationId">Идентификатор связи</param>
+            <param name="tagName">Системное имя тэга</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.LinkTagToRelation(System.Int32,System.Int32)">
+            <summary>
+            Уствановить тэг у объекта по идентификатору тега
+            </summary>
+            <param name="relationId">Идентификатор связи</param>
+            <param name="tagId">Идентификатор тэга</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DropLinkTagToObject(System.Int32,System.Int32)">
+            <summary>
+            Разорвать связь объекта и  тэга
+            </summary>
+            <param name="objectId"></param>
+            <param name="tagId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.DropLinkTagToRelation(System.Int32,System.Int32)">
+            <summary>
+            Разорвать связь связи и  тэга
+            </summary>
+            <param name="objectId"></param>
+            <param name="tagId"></param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CreateRelationForProfile(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Создать сявзь
+            </summary>
+            <param name="objectIdFrom">От объекта</param>
+            <param name="objectIdTo">К объекту</param>
+            <param name="roleIdFrom">Идентификатор роли со стороны объекта from</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetRubricatorStatisticByType(System.Int32)">
+            <summary>
+            Статистика
+            </summary>
+            <param name="metaTypeId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.GetObjectPropertyValue(System.Int32,System.String)">
+            <summary>
+            Вернуть значение свойства объекта
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="sysPropName">Системное имя свойства</param>
+            <returns>Занчение свойства одиночный объект или массив значений</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.CheckDocumentExists(ANBR.SemanticArchive.ObjectService.SAFileInfo,System.Boolean)">
+            <summary>
+            Проверить наличие документа в базе по имени файла и размеру
+            </summary>
+            <param name="fileInfo"></param>
+            <param name="bestOnly">Возвражать только лучшее совпадение</param>
+            
+            
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.RestoreDeletedObject(System.Int32,System.Boolean)">
+            <summary>
+            Восстановить объект по идентификатору 
+            </summary>
+            <param name="objectId">Идентификатор восстанавливаемого объекта</param>
+            <param name="withRelations">Восстанавливать связи, удаленные вместе с объектом</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.IObjectService.SetEntityIndicatorValue(ANBR.SemanticArchive.ObjectService.EntityIndicatorValue)">
+            <summary>
+            Установить значение мндикатора у объекта
+            </summary>
+            <param name="entityIndicatorValue"></param>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.DocumentInfo">
+            <summary>
+            Результат поиска документа по имени файла и размеру
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DocumentInfo.FileSize">
+            <summary>
+            Размер файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DocumentInfo.CreatedDate">
+            <summary>
+            Дата загрузки документа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DocumentInfo.ObjectId">
+            <summary>
+            Идентификатор документа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DocumentInfo.Deleted">
+            <summary>
+            Документ удален
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DocumentInfo.CheckDocument">
+            <summary>
+            Степень похожести с искомым документов
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.CheckDocument">
+            <summary>
+            Вариант совпадения файлов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckDocument.Exists">
+            <summary>
+            Полное Совпадение
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckDocument.ExistsByFullFileName">
+            <summary>
+            Совпадение по полному имени ,но не размеру
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckDocument.ExistsByFileNameAndSize">
+            <summary>
+            Совпадение по  имени файла (без пути) и размеру
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckDocument.ExistsByFileName">
+            <summary>
+            Совпадение только по имени файла (без пути) 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.CodeInfo">
+            <summary>
+            Описание кода 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.CodeName">
+            <summary>
+            Наименование кода
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.CountryId">
+            <summary>
+            Идентификатор региона
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.Culture2">
+            <summary>
+            Двухбуквенное обозначение культуры интерфейса для LangName
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.OriginalName">
+            <summary>
+            Наименование на языка региона
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.InternationalName">
+            <summary>
+            Международное наименованиен
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.LangName">
+            <summary>
+            Наименование на запрашиваемой культуре
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.OriginalFullName">
+            <summary>
+            Полное наименование на языка региона
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.LangFullName">
+            <summary>
+            Полное наименование на запрашиваемой локали (Culture2)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.CodeInfo.InternationalFullName">
+            <summary>
+            Полное интернациональное наименование
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.DatabaseInfo">
+            <summary>
+            Информация о базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DatabaseInfo.DatabaseType">
+            <summary>
+            Тип базы данных 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DatabaseInfo.Version">
+            <summary>
+            Версия базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.DatabaseInfo.DatabaseMode">
+            <summary>
+            Режим работы базы данных
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery">
+            <summary>
+            Базовый класс поиска объекта по критериям
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.Name">
+            <summary>
+            Искомое имя объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.RootTypeId">
+            <summary>
+            Искомый тип объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.UseSynonym">
+            <summary>
+            Искать с учетом синонимов
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.ObjectResultFormat">
+            <summary>
+            Формат возвращаемых данных
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.AbstractObjectQuery.CultomColumnList">
+            <summary>
+            Список вохвращаемыъ свойств
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery">
+            <summary>
+            Постраничный запрос к связанным объектам другого объект
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.ObjetcId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.RoleTypeIdList">
+            <summary>
+            Идентификаторы типов ролей
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.TypeId">
+            <summary>
+            Идентифиуатор искомого типа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.ExcludedTypeIds">
+            <summary>
+            Иключаемые типы связанных объектов.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelatedObjectsPageQuery.IncludeMentionObject">
+            <summary>
+            Учитывать связи объект-источник
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.SAFileInfo">
+            <summary>
+            Описание фийла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.SAFileInfo.FileName">
+            <summary>
+            Полный путь к имени файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.SAFileInfo.FileDate">
+            <summary>
+            Дата создания файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.SAFileInfo.FileSize">
+            <summary>
+            Размер файла
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.CheckFileResult">
+            <summary>
+            Результат проверки наличия файла в базе
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckFileResult.Exists">
+            <summary>
+            Искомый файл существунт
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckFileResult.NotExists">
+            <summary>
+            Искомый файл не существует
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.CheckFileResult.Obsolete">
+            <summary>
+            Файл существует, но более старой версии
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.ObjectSetResultType">
+            <summary>
+            Какая информация об объекте возвращается
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectSetResultType.ObjectIdOnly">
+            <summary>
+            Только идентификаторы объектов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectSetResultType.MainInfoOnly">
+            <summary>
+            ТОлькот главные  - Object_ID, Type_ID, DispalyName
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectSetResultType.RelefanceOnly">
+            <summary>
+            Только важные свойства </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectSetResultType.FullData">
+            <summary>
+            Все не Blob-поля
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.ObjectResultFormat">
+            <summary>
+            Значения каких свойств возвращать для объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.DisplayNameOnly">
+            <summary>
+            Только наименование объекта и наименование типа
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.RelavancePropertyOnly">
+            <summary>
+            Все занчимые свойства
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.RelavanceOnly">
+            <summary>
+            Все занчимые свойства и связи
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.AllButBlob">
+            <summary>
+            Все свойства, определенные у типа, за исключением бинарных и больших текстовых varchar(max)
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.All">
+            <summary>
+            Все свойства, определенные у типа
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectResultFormat.CustomList">
+            <summary>
+            Список возвращаемых колонок передает пользователь
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.BinaryPropertyValue">
+            <summary>
+            Значение бинарного свойства
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.BinaryPropertyValue.ValueId">
+            <summary>
+            Идентификатор значения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.BinaryPropertyValue.Header">
+            <summary>
+            Описание
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.BinaryPropertyValue.FileName">
+            <summary>
+            Имя файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.BinaryPropertyValue.Size">
+            <summary>
+            Размер содержимого бинарного свойства
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo">
+            <summary>
+            Описание связи факт-объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.FactName">
+            <summary>
+            Наименоваие факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.ObjectName">
+            <summary>
+            Наименование объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.FactId">
+            <summary>
+            Идентификатор факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.FactRoleName">
+            <summary>
+            Наименование роли со стооны факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.ObjectRoleName">
+            <summary>
+            Наименование роли со стороны объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.FactRoleId">
+            <summary>
+            Идентификатор роли со стороны объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.ObjectRoleId">
+            <summary>
+            Идентификатор роли со стороны факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.MetaRelationId">
+            <summary>
+            Идентификатор типа связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.RelationId">
+            <summary>
+            Идентификатор связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.MetaRelationName">
+            <summary>
+            Наименование типа связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.FactRelatedObjectInfo.ObjectTypeName">
+            <summary>
+            Наименование типа объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.Relation">
+            <summary>
+            Связь между объектами
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.LeftObjectId">
+            <summary>
+            Идентификатор первого объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.RightObjectId">
+            <summary>
+            Идентификатор второго объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.LeftRoleId">
+            <summary>
+            Идентификатор роли со стороны первого объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.RightRoleId">
+            <summary>
+            Идентификатор роли со стороны второго объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.MetaRelationId">
+            <summary>
+            Идентификатор типа связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.RelationId">
+            <summary>
+            Идентификатор связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.Relation.Deleted">
+            <summary>
+            Признак, что связь удалена 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.ObjectLockInfo">
+            <summary>
+            Информация о блокировке объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.ObjectLockInfo.UserName">
+            <summary>
+            Имя пользователя, взявшего объект на редактирование
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.ObjectLockInfo.LockDate">
+            <summary>
+            Дата начала блокировки
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.ObjectLockInfo.ObjectId">
+            <summary>
+            Идентификтор объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.SysLanguage">
+            <summary>
+            Языки , поддерживаемые системой
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.SysLanguage.DatabaseDefault">
+            <summary>
+            Язык базы данных по умолчанию. Может указываться только как язык назначения
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.SysLanguage.Auto">
+            <summary>
+            Автоматическое определение языка. Может указываться только как изык источника
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.ObjectAttribute">
+            <summary>
+            Список свойств объекта для перевода
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectAttribute.DisplayName">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectAttribute.Dossier">
+             <summary>
+            Досье
+             </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectAttribute.TextSource">
+            <summary>
+            Текст документа
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.ObjectService.ObjectAttribute.Properties">
+            <summary>
+            Свойства
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue">
+            <summary>
+            Значение индикатора у объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue.EntityIndicatorTypeId">
+            <summary>
+            Идентификатор индикатора
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue.EndOfYear">
+            <summary>
+            Значение на конец года
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue.IndicatorValue">
+            <summary>
+            Значение индикатора
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.EntityIndicatorValue.EntityIndicatorCode">
+            <summary>
+            Код индикатора индикатора. Можно указывать вместо EntityIndicatorTypeId. При указанном значении EntityIndicatorTypeId - игнорируется
+            </summary>
+        </member>
+    </members>
+</doc>

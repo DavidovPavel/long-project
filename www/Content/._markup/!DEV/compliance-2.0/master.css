@@ -1,0 +1,237 @@
+﻿.nav-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 44px;
+  height: 44px;
+  background: #0094ff;
+  cursor: pointer;
+}
+.nav-btn > span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  transform: rotate(0deg);
+  transition: ease-in-out all 250ms;
+  display: block;
+}
+.nav-btn > span:before,
+.nav-btn > span:after {
+  background: #0094ff;
+  position: absolute;
+  content: '';
+  display: block;
+}
+.nav-btn > span:before {
+  width: 2px;
+  height: 16px;
+  top: 0px;
+  left: calc(50% - 1px);
+}
+.nav-btn > span:after {
+  width: 16px;
+  height: 2px;
+  top: calc(50% - 1px);
+  left: 0px;
+}
+.nav-btn:hover > span {
+  transform: rotate(270deg);
+}
+body {
+  padding: 44px 0 0;
+  margin: 0;
+}
+main {
+  padding: 0;
+  margin: 0;
+  max-height: calc(100vh - 88px);
+  position: relative;
+  background: #f5f5f5;
+  min-width: 1170px;
+}
+.main-sidebar {
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 308px;
+  background: #333;
+  box-sizing: border-box;
+  color: #fff;
+  height: 100%;
+  border-right: 1px #666 solid;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.25);
+  min-height: calc(100vh - 44px);
+}
+.main-sidebar.right {
+  left: auto;
+  right: 0;
+  text-align: right;
+}
+.main-sidebar.right ul {
+  text-align: left;
+}
+.main-sidebar > i.control {
+  background: #666;
+  position: static;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  z-index: 0;
+}
+.main-sidebar.hidden {
+  width: 44px;
+  overflow: hidden;
+}
+.main-sidebar.hidden ul li {
+  padding-left: 44px;
+}
+.main-sidebar.hidden ul li i {
+  display: none;
+}
+.main-sidebar ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.main-sidebar ul li {
+  display: block;
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid #666;
+  position: relative;
+  transition: all ease-in-out 150ms;
+}
+.main-sidebar ul li:hover {
+  background: #454545;
+}
+.main-sidebar ul li:hover li {
+  background: #444;
+}
+.main-sidebar ul li:hover li:hover {
+  background: #454545;
+}
+.main-sidebar ul li i {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 11px;
+  right: 11px;
+  background: transparent;
+  cursor: pointer;
+}
+.main-sidebar ul li i:before,
+.main-sidebar ul li i:after {
+  content: '';
+  width: 1px;
+  height: 8px;
+  position: absolute;
+  top: calc(50% - 4px);
+  background: #fff;
+  transition: all ease-in-out 150ms;
+}
+.main-sidebar ul li i:before {
+  transform: rotate(-45deg);
+  left: calc(50% - 3px);
+}
+.main-sidebar ul li i:after {
+  transform: rotate(45deg);
+  right: calc(50% - 3px);
+}
+.main-sidebar ul li i.expanded:before {
+  transform: rotate(45deg);
+  left: calc(50% - 3px);
+}
+.main-sidebar ul li i.expanded:after {
+  transform: rotate(-45deg);
+  right: calc(50% - 3px);
+}
+.main-sidebar ul li span {
+  padding: 12px 20px;
+  margin-right: 20px;
+  display: block;
+  cursor: pointer;
+}
+.main-sidebar ul li ul {
+  display: none;
+}
+.main-sidebar ul li ul li span {
+  padding: 12px 20px 12px 40px;
+  margin-right: 20px;
+  display: block;
+  cursor: pointer;
+}
+.main-sidebar ul li ul li:first-child {
+  border-top: 1px solid #666;
+}
+.main-sidebar ul li ul li:last-child {
+  border: none;
+}
+.main-sidebar ul li.active ul {
+  display: block;
+}
+.main-taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #333;
+  height: 44px;
+  z-index: 6000;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+.main {
+  padding: 20px 10px 0;
+  margin-left: 44px;
+  margin-right: 44px;
+  transition: all ease-in-out 150ms;
+}
+.main.hassidebar {
+  margin-left: 308px;
+}
+.main.hasrightsidebar {
+  margin-right: 308px;
+}
+.main.hastaskbar {
+  margin-bottom: 44px;
+}
+.main .analyst-worklist {
+  padding: 5px;
+  background: #fff;
+  max-height: 6vh;
+  overflow-y: scroll;
+  border: 1px #d7d7d7 solid;
+  border-bottom: none;
+  transition: all ease-in-out 150ms;
+}
+.main .analyst-worklist.max {
+  max-height: 40vh;
+}
+.main .analyst-worklist table {
+  margin: 0;
+  border: 1px solid #d7d7d7;
+}
+.main .analyst-workflow {
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  border-top: none;
+  max-height: 48vh;
+  box-sizing: border-box;
+  height: 48vh;
+  transition: all ease-in-out 150ms;
+  padding: 5px 20px;
+}
+.main .analyst-workflow.max {
+  min-height: 80vh;
+  height: 80vh;
+}
+.main .analyst-workflow .g-toolbar {
+  margin: -5px -20px;
+}
+.main .analyst-workflow .analyst-content {
+  overflow-y: scroll;
+}

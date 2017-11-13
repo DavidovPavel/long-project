@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <reports>
+    <!--<rep type="person" path="/SemanticArchive/PersonFactsByChapter" title="repPersonFactsByChapter"/>-->
+    <rep type="person" path="/SemanticArchive/PersonOnlineDataByChapter" title="repPersonOnlineDataByChapter"/>
+    <rep type="organization" path="/SemanticArchive/OrganizationFactsByChapter" title="repOrganizationFactsByChapter"/>
+    <rep type="organization" path="/SemanticArchive/OrganizationOnlineDataByChapter" title="repOrganizationOnlineDataByChapter"/>
+  </reports>
+</configuration>

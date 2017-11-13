@@ -1,0 +1,30 @@
+html, body {
+  margin:0; padding:0; line-height: 100%;
+}
+
+.global-controls {
+  position: fixed;
+  width:400px;
+  top:5px;
+  left:50%;
+  margin-left: -200px;
+  text-align: center;
+  opacity: 0.1;
+  transition: all linear 150ms;
+}
+.global-controls:hover {
+  opacity: 1;
+}
+.global-controls div {
+  display:inline-block;
+  box-sizing: border-box;
+  padding:10px;
+  text-align: center;
+  color:#fff;
+  cursor: pointer;
+  background: #444;
+  font-size: 13px;
+}
+.global-controls div:hover {
+  background: #333;
+}

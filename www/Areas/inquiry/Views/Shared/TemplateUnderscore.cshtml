@@ -1,0 +1,10 @@
+<script type="x-template/underscore" id="source-info-template"><div class="menu-info-source">
+        <div class="source-logo"><img src="<%- logoUrl %>" alt="" /></div>
+        <div class="source-title"><%= title %></div>
+        <div class="source-desc">
+            <ul> <% _.each(property, function(item){ %> <li><%- item %></li> <% }) %> </ul>
+            <i><%= description %></i>
+            <p><%= text %></p>
+        </div>
+    </div>
+    <div><span><%- Resources.price %>:</span> - <%- price?price:Resources.freeTitle %></div></script>

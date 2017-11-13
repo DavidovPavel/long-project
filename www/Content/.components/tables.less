@@ -1,0 +1,73 @@
+﻿
+table { width: 100%;font-size: 12px;}
+table td, table th { padding:10px; vertical-align: middle;}
+table th { background-color: #e8e8e8;color: #888;position: relative;white-space:nowrap;}
+
+table td { 
+    & span.link { 
+        cursor: pointer;
+        &:hover { text-decoration: underline;}
+    }
+}
+/*
+table.inquiry th {background-color:#5578ac;color:#fff!important;}
+table.inquiry > thead > tr > th:before {border-left: solid 1px #6686b4!important; }
+table.inquiry > thead > tr > th:after {border-right: solid 1px #44689e!important; }
+
+.table-scroll-head {margin-bottom:1px;}
+
+table.table > thead > tr > th:before, 
+table.table > thead > tr > th:after {content: '';display: inline-block;width: 0;height: 14px;position: absolute;top: 8px;}
+table.table > thead > tr > th:before {border-left: solid 1px #efefef;left: 0px; }
+table.table > thead > tr > th:after {border-right: solid 1px #c1c2c3;right: 0px; }
+table.table > thead > tr > th:last-child:after, 
+table.table > thead > tr > th:last-child:before,
+table.table > thead > tr > th:nth-last-child(2):after, 
+table.table > thead > tr > th:first-child:before { content: none;}
+table.table > thead > tr { background: #e8e8e8; }
+
+table.table.table-hover > thead > tr > th {
+    color: #888888;padding: 0 10px;vertical-align: middle;height: 30px;line-height: 30px;border-bottom: 0;position: relative; 
+    & .font-icon-checkbox {margin-right:9px;}
+}
+     */
+table.table.table-hover > tbody > tr > td {
+    border-top: solid 1px #e5e5e5; border-bottom: solid 1px #e5e5e5;color: #666;text-align: left; padding: 11px; vertical-align: middle;  
+    & .font-icon-checkbox {margin-right:9px;} 
+    & .sup-icon {cursor:pointer;} 
+    & div[role=flex] {display:flex;}
+    &.controls { 
+        padding: 0px 1px 0px 0; text-align: right;min-width:33px; 
+        & button {
+            float: right;width: 32px;display: none;
+            & svg {width: 10px;height: 10px;vertical-align: middle;fill: #666666; }
+            &:hover svg {fill: #333; }
+        }
+    }
+    & .font-icon-flag {color:forestgreen;}
+    & .font-icon-help {color:goldenrod;}
+    & .font-icon-dislike {color:orangered;}
+}
+
+table.table.table-hover > tbody > tr.ui-selected { 
+    background-color: #e1eaf8; 
+}
+
+table.table.table-hover > tbody > tr:hover > td { 
+    background: #edf3fb; 
+    &.controls button {display: inline-block; }
+}
+
+table.table tr td .icon-range {.size(16px);float:right;margin-top:6px;fill:@color-norm; }
+
+#win-dossier {
+    display:none; top:auto; width:600px; height:400px; left:50%; padding-top:24px; margin-left:-300px;
+    & .icon-close {position:absolute;top:4px;right:8px;}
+}
+
+.my-checks-menu {
+    position:absolute;z-index:99;
+    & .list-area {position:absolute;display:none;margin-top:-33px;}
+}
+
+p.count-info { text-align: center; display: none; padding: 10px; }

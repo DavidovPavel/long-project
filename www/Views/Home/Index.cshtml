@@ -1,0 +1,126 @@
+﻿@using Resources
+@using www.SaGateway
+    @{
+        Layout = "~/views/shared/_Layout.cshtml";
+        var currentLang = ViewBag.CurrentLang;
+        string baseAddr = WebSaUtilities.BuildBaseUrl();
+        string report = baseAddr + "/sqlreporting.aspx";
+    }
+
+<div class="wrapper">
+
+    <div id="Query" class="W">
+        <div class="Inner">
+            <div class="PanelHead">
+                <div class="btn2 right Reduce"></div>
+                <span>@Client.search</span>
+            </div>
+            
+            <section id="Query_Buttons" data-id="94965912-2822-4ABD-85C5-CE4C5BD7FB66">
+                <div id="mainButtons" class="sButtons"></div>
+                <div id="subButtons" class="sButtons"></div>
+            </section>
+
+            <section class="Present" data-id="7394472E-5A66-486B-966C-EBF2559A5E90"></section>
+
+            <div id="ListBottomPanel"></div>
+
+            <div id="ViewParameters" data-id="AE817F7F-7657-4DF2-886C-6E9FBA304D95"></div>
+
+        </div>
+    </div>
+
+    <div class="Dragger W" id="Drag1"><img src="/images/dr.png" alt="" /></div>
+
+    <div id="Result" class="W">
+        <div class="Inner">
+            <div class="PanelHead">
+                <div class="left twoColumns"><button id="toobj" class="ui-state-highlight">к объекту</button></div>
+                <div class="btn2 right Reduce"></div>
+                <span>@Client.searchResults</span>
+            </div>
+            
+            <div id="List">
+                <div class="DisplayResult">
+                    <label>@Client.variantView:</label><select id="DisplayList"></select>
+                </div>
+                <div id="LoadResults">
+                    <table class="List"></table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="Dragger W" id="Drag2"><img src="/images/dr.png" alt="" /></div>
+
+    <div id="Detail" class="W">
+        <div class="Inner">
+            <div class="PanelHead">
+                <div class="left twoColumns"><button class="ui-state-highlight" id="tolist">к списку</button></div>
+                <div class="btn2 right Reduce"></div>
+                <span>@Client.objectInformation</span>
+            </div>
+
+            <div id="LoadDetails" data-id="2EDB7494-2163-4D32-8FF0-375C19353AC4">
+                <ul>
+                    <li class="Details" data-id="FBB44316-1A0C-450A-8DC6-A1D10F560C01"><span></span><a href="#Details">@Client.properties</a></li>
+                    <li class="SemNet" data-id="E641426A-B86A-48F0-A8D9-D1CEC88B896C"><span></span><a href="#SemNet">@Client.semanticnet</a></li>
+                    <li class="Content" data-id="E7087740-A79F-493C-8B46-77BDBB8EA74E"><span></span><a href="#Content">@Client.Content</a></li>
+                    <li class="Report" data-id="AD694BFD-4983-4658-ABDD-D6863BB80F71"><span></span><a href="#Report">@Client.report</a></li>
+                    <li class="Search" data-id="EA932373-3647-471A-87C1-DDB56657FEBC"><span></span><a href="#SearchBySource">@Client.searchBySource</a></li>
+                </ul>
+                <div id="Details">
+                    <div class="Submenu"></div>
+                    <h3></h3>
+                    <div class="Load"></div>
+                </div>
+
+                <div id="Content"></div>
+
+                <div id="SemNet">
+                    <div id='svg-cd128757-b0fa-4fdd-a005-05f74ac632c8' style='clear:both;'></div>
+                </div>
+               
+                <div id="Report"><iframe src="@report" style="border: 0;width:100%;height: 100%" id="SqlRepFrame"></iframe></div>
+                <div id="SearchBySource">
+                    <div class="Submenu"></div>
+                    <h3></h3>
+                    <div class="Load"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+ <div id="add_SelectViewPanel" class="ui-corner-all">
+        <ul>
+            <li>@Client.fullScreen</li>
+            <li>@Client.newWindow</li>
+        </ul>
+    </div>
+
+@using (Html.BeginForm("Index", "Svg", FormMethod.Post, new { name = "svgToPng", @class = "svgToPng", target = "_blank" }))
+{
+    @Html.Hidden("data")
+}
+<script type="text/javascript">
+    require.config({
+        config: { i18n: { locale: '@currentLang.ToLower()' } }
+    });
+    define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+    
+    function sh(id, obj) { var $o = $("#" + id); $o.toggle(); if ($o.is(":hidden")) { $(obj).attr("src", "/images/open.gif"); } else { $(obj).attr("src", "/images/collapse.gif") } }
+    function Config(hash) {
+        var params = hash.split('/');
+        require(['jquery','app'], function($, App) {
+            $.ajax({
+                url: "/api/Search/ConfigureTask/",
+                data: $.param({ "mainObjectID": App.Select.get("detail"), "typeID": params[0], "id":params[1] }),
+                dataType: "json"
+            }).done(function () {
+                //alert("done!");
+            });
+        });
+    }
+</script>

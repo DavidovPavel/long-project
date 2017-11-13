@@ -1,0 +1,2431 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.SemanticArchive.DataContracts</name>
+    </assembly>
+    <members>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Alarms.AlarmSub.IsSubscriber">
+            <summary>
+            Установлено, если у пользователя есть подписка на этот аларм
+            </summary>
+            
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.AssignedProfiler">
+            <summary>
+            Описание связи профиля с объектов
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.AssignedProfiler.Id">
+            <summary>
+            Идентификатор связи объект-профиль
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.AssignedProfiler.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.AssignedProfiler.ProfilerId">
+            <summary>
+            Идентификатор профиля
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.DataObject">
+            <summary>
+            Объект семантияеского архива. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Object_ID">
+            <summary>
+            Мдентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Display_Name">
+            <summary>
+            Наименование объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Dossier">
+            <summary>
+            Досье на объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Parent_ID">
+            <summary>
+            Родительский объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Project_ID">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.ProjectRole_ID">
+            <summary>
+            Роль объекта в проекте
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Type_ID">
+            <summary>
+            Идентификатор типа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.CreatedDate">
+            <summary>
+            Дата создания объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.ModifyDate">
+            <summary>
+            Дата последней модификации объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Creator">
+            <summary>
+            Кто созда объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.LastModificator">
+            <summary>
+            Кто последний изменял объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Image">
+            <summary>
+            Фотография/логотип объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.UID">
+            <summary>
+            Уникальный идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.Deleted">
+            <summary>
+            Признак, что объект удален
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.ThematicRubric">
+            <summary>
+            Мдентификатор тематической рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.UntypedData">
+            <summary>
+            Нетипизированные данные
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.GeographyObject_ID">
+            <summary>
+            Геообъект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.IsMonitoringObject">
+            <summary>
+            Объект мониторинга
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.DataObject.LoadData(System.Data.DataTable)">
+            <summary>
+            Загружает данные полей
+            </summary>
+            <param name="dt">Данные полей</param>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.DataObject.ExtendedLoad">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.MainGeoMarker">
+            <summary>
+            Координаты объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.ObjectStatus">
+            <summary>
+            Статус объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.DisplayNameOriginal">
+            <summary>
+            Оригинальное наименование объекта (после перевода на язык базы данных)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.DossierOriginal">
+            <summary>
+            Оригинальное содержимое досье (после перевода на язык базы данных)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DataObject.CountryId">
+            <summary>
+            Идентификатор страны объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.GeoData">
+            <summary>
+            Географические данные объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeoData.Marker">
+            <summary>
+            Географические координаты
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeoData.DisplayName">
+            <summary>
+            Наименование метки
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeoData.DataId">
+            <summary>
+            Идентификатор географической метки
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.IGeographyMarkerOwner">
+            <summary>
+            Интерфейс объекта географический маркер
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.IGeographyMarkerOwner.GeographyMarkerChanget(ANBR.SemanticArchive.DataContracts.GeographyMarker)">
+            <summary>
+            
+            </summary>
+            <param name="geographyMarker"></param>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.GeographyMarker">
+            <summary>
+            Географический маркер
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyMarker.Coordinate">
+            <summary>
+            Географические координаты
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyMarker.Color">
+            <summary>
+            Цвет маркера
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyMarker.MarkerType">
+            <summary>
+            Тип маркера 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyMarker.Text">
+            <summary>
+            Полный текст с описание маркера
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyMarker.MarkerText">
+            <summary>
+            Текст, отображаемы при наведении на маркер
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.MarkTypes">
+            <summary>
+            Тип маркера
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.MarkTypes.Image">
+            <summary>
+            Картинка
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.MarkTypes.Flag">
+            <summary>
+            Флаг
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.MarkTypes.Bubble">
+            <summary>
+            Пузырек
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.MarkTypes.Triangle">
+            <summary>
+            Треугольник
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.GeoCoordinate">
+            <summary>
+            Географические координаты
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeoCoordinate.Longitude">
+            <summary>
+            Долгота
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeoCoordinate.Latitude">
+            <summary>
+            Широта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.DefaultUsage">
+            <summary>
+            Перечисление, определяющее правил возвращения пользовательских настроек
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.DefaultUsage.User">
+            <summary>
+            Возвращать только пользовательскую нстройку
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.DefaultUsage.UserOtherwiseDefault">
+            <summary>
+            Возвращать пользовательскую нстройку, а если ее нет - по умолчанию
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.DefaultUsage.Default">
+            <summary>
+            Возвращать только настройку по умолчанию
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.DcHtmlPage">
+            <summary>
+            Сохраненная HTML страница
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DcHtmlPage.Id">
+            <summary>
+            Идентификатор объекта в базе
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DcHtmlPage.DisplayName">
+            <summary>
+            Наименование объекта. Только для чтения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.DcHtmlPage.PageContent">
+            <summary>
+            Содержимое Html страницы </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.EntityObject">
+            <summary>
+            Объект Семантическог архива с синонимами
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.EntityObject.EntityObject.Synonyms">
+            <summary>
+            Список синонимов объектов
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.History">
+            <summary>
+            История выполнения запросов пользователем
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.HistoryId">
+            <summary>
+            Идентификатор истории
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.Name">
+            <summary>
+            Наименование запрса
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.Owner">
+            <summary>
+            Кто выаолнил запрос
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.Data">
+            <summary>
+            Дата выполнения запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.Content">
+            <summary>
+            Текст запроса для повторного выполнения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.Count">
+            <summary>
+            Количество возвращенных результатов
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.History.HistoryType">
+            <summary>
+            Тип истории
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory">
+            <summary>
+            История изменения об\екта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.ObjectHistory_ID">
+            <summary>
+            Идентификатор истории объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.Object_ID">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.Verison">
+            <summary>
+            Версия объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.Date">
+            <summary>
+            Дата изменения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.Autor">
+            <summary>
+            Автор изменений 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.ObjectHistory.CurrentVersion">
+            <summary>
+            Признак, что эта верия является последней
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.Organization">
+            <summary>
+            Объект Семнтического архива - организация
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.INN">
+            <summary>
+            ИНН оганизации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.OGRN">
+            <summary>
+            ОГРН организации
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.LoadData(System.Data.DataTable)">
+            <summary>
+            Заргузка значений свойств из набора данных
+            </summary>
+            <param name="dt">DataTable - со значениями свойст объекта</param>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.FoundationDate">
+            <summary>
+            Дата основания
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.URL">
+            <summary>
+            Офтцтальный сайт организации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Organization.OKPO">
+            <summary>
+            ОКПО организации
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.Person">
+            <summary>
+            Объект Семантического архива - Песона
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.INN">
+            <summary>
+            ИНН персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.BirhtDate">
+            <summary>
+            Дата рождения персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.Sex">
+            <summary>
+            Пол песоны
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.Nationality">
+            <summary>
+            Национальность. Идентификатор справочника.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.PlaceOfBirth">
+            <summary>
+            Место рождения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Person.Patriality">
+            <summary>
+            Гражданство
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym">
+            <summary>
+            Monitoring object synonym 
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.#ctor">
+            <summary>
+            Конструктор п
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.SynonymId">
+            <summary>
+            Identifier 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.ObjectId">
+            <summary>
+            Identifier of corresponding Object 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.ForSearch">
+            <summary>
+            Turned ON or OFF synonym 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.ForHighLight">
+            <summary>
+            Whether to highlight synonym in text 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.IsFtSearch">
+            <summary>
+            Is synonym's Value a custom fts-query 
+            (true means that UseMorphologic flag must be false) 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.UseMorphologic">
+            <summary>
+            Search using morphology 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.Value">
+            <summary>
+            Value 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.Description">
+            <summary>
+            Comment 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.LanguageId">
+            <summary>
+            Language ID 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.IsNew">
+            <summary>
+            New or Old synonyms (default New, i.e. True)
+            (New synonyms are searched among all documents, than turn into Old.
+             old synonyms - are searched among new documents only, greater than the last processed document) 
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.EntityObject.Synonym.Clone">
+            <summary>
+            Clones synonym 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ExtendedProperties">
+            <summary>
+            Разширенный свойства объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ExtendedProperties.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ExtendedProperties.Properties">
+            <summary>
+            Список разширенных смойств
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ExtendedProperty">
+            <summary>
+            Разширенное свойство
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ExtendedProperty.Object_ID">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ExtendedProperty.MetaProperty_ID">
+            <summary>
+            Идентификатор свойства
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ExtendedProperty.Value">
+            <summary>
+            Значение свойства
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Facts.Fact">
+            <summary>
+            Описание объекта-факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Facts.Fact.Reliability">
+            <summary>
+            Достоверность факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Facts.Fact.Importance">
+            <summary>
+            Выжность факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Facts.Fact.DateFrom">
+            <summary>
+            Дата начала факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Facts.Fact.DateTo">
+            <summary>
+            Дата окончания факта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Facts.Fact.IsTemporary">
+            <summary>
+            Является ли факт временным (выделенным автопоиском) 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Facts.Relationship">
+            <summary>
+            Объект Семантического Архива- Отношение
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.GeographyObject">
+            <summary>
+            Географический объекта (страна, город и т.д.)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.GeographyObjectId">
+            <summary>
+            Идентификатор географического объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.Name">
+            <summary>
+            Наименование географического объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.Code">
+            <summary>
+            Код географического объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.ControlNumber">
+            <summary>
+            Идентификатор контрола
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.ParentId">
+            <summary>
+            Идентификатор родительского объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.ParentCode">
+            <summary>
+            Код родительского объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.NodeCount">
+            <summary>
+            Количество дочерних элементов
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.AdditionalInfo">
+            <summary>
+            Строка с дополнительной информацией
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.GeographyObject.HasMapBinding">
+            <summary>
+            Имеет примязку на карте
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Rubric">
+            <summary>
+            Описание рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.ID">
+            <summary>
+            Идентификатор рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.Parent_ID">
+            <summary>
+            Идентификатор рубрики-предка
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.Global_ID">
+            <summary>
+            Глобальный идкнтификатор рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.Code">
+            <summary>
+            Код рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.Name">
+            <summary>
+            Наименование рубрики. Наиманования должны быть уникальны в пределах предка
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.IsApproved">
+            <summary>
+            Рубрика утверждена для использования
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.Image">
+            <summary>
+            Картинка рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Rubric.SortIndex">
+            <summary>
+            Сортировочный индекс рубрики
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Rubric.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ProjectRubric">
+            <summary>
+            Проектные рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubric.ID">
+            <summary>
+            Идентификатор рубрики проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubric.Parent_ID">
+            <summary>
+            Идентификатор рубрики-предка
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubric.Code">
+            <summary>
+            Код рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubric.Name">
+            <summary>
+            Наименование рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubric.SortIndex">
+            <summary>
+            Сортировочный индекс
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.ProjectRubric.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SAProject">
+            <summary>
+            Проект базы семантического архива
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.ProjectId">
+            <summary>
+            Идентификатор проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.ProjectName">
+            <summary>
+            Наимаенование проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.DateOfCreation">
+            <summary>
+            Автоматически устанавливается при создании
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.ProjectStatus">
+            <summary>
+            Описывает бизнес-вывод: есть негатив, есть сомнение и т.п.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.Data">
+            <summary>
+            В рамках работы с заявкой - заключение аналитика
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.ProjectState">
+            <summary>
+            Описывает workflow - не назначен, взят в работу и т.п.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.UserOwner">
+            <summary>
+            Исполнитель
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.ProjectCode">
+            <summary>
+            Код проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.Rubrics">
+            <summary>
+            Перечень связанных с проектом рубрик
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SAProject.Description">
+            <summary>
+            Описание проекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SARequest">
+            <summary>
+            Разширенный проект - заявка
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ProjectRubricSimple">
+            <summary>
+            Рубрика дерева проектов
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubricSimple.RubricID">
+            <summary>
+            Идентификатор рубрики
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRubricSimple.RubricName">
+            <summary>
+            Наименование рубрики
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ProjectRole">
+            <summary>
+            Описывает роль объекта в проекте
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.ProjectRoleId">
+            <summary>
+            Идентификатор роли для проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.RoleName">
+            <summary>
+            Код роли (его системное имя) - не меняется при локализации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.IsSystem">
+            <summary>
+            Флаг который характеризует роли, которые создаются системой (partrel - информационный признак) и тех, которые поставляются
+            на этапе развертывания (роль "Созаемщик")
+            С первыми пользователь не манипулирует, со вторыми - взаимодействует (видит, выбирает)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.Category">
+            <summary>
+            Не обновляемое
+            Позволяет сгруппировать роли по категориям
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.Title">
+            <summary>
+            Не обновляемое
+            Локализованное имя (задается при развертывании БД, изменению не подлежит)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.Culture">
+            <summary>
+            Не обновляемое
+            Культура локализации (задается при развертывании БД, изменению не подлежит)
+            Формат - en-US, ru-RU и т.д.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectRole.No">
+            <summary>
+            Не обновляемое
+            Порядковый номер (используется при построении списков)(задается при развертывании БД, изменению не подлежит)
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.ProjectPageQuery">
+            <summary>
+            Шаблон поиска Проектов(Заявок)
+            При использовании нескольких критериев используется "И" связка
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectPageQuery.UserOwner">
+            <summary>
+            Владелец проекта (заявок)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectPageQuery.ProjectState">
+            <summary>
+            Текущее состояние проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectPageQuery.ProjectStatus">
+            <summary>
+            Статус проекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectPageQuery.WhereClause">
+            <summary>
+            Используется нотация SQL (пр. Data like '%тест%')
+            Поля - [ProjectId], [ProjectName], [DateOfCreation], [ProjectStatus], [Data], [ProjectState], [UserOwner], [ProjectCode] 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.ProjectPageQuery.OrderClause">
+            <summary>
+            Используется нотация SQL (пр. UserOwner DESC, ProjectState DESC)
+            Поля - [ProjectId], [ProjectName], [DateOfCreation], [ProjectStatus], [Data], [ProjectState], [UserOwner] 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.BaseSearchCriteria">
+            <summary>
+            Критерии поиска объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.BaseSearchCriteria.ExternalID">
+            <summary>
+            Поиск по внешнему идентификатору
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.PersonSearchCriteria">
+            <summary>
+            Критерии поиска персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.PersonSearchCriteria.PersonCode01">
+            <summary>
+            Поиск персоны по коду 01  ОГРН ИП
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.PersonSearchCriteria.PersonCode02">
+            <summary>
+            Поиск персоны по коду 02  ИНН
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.PersonSearchCriteria.PersonCode03">
+            <summary>
+            Поиск персоны по коду 03  СНИЛС
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SearchByName">
+            <summary>
+            Поиск объекта по имени и типу
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SearchByName.Name">
+            <summary>
+            Искомое имя объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SearchByName.TypeId">
+            <summary>
+            Искомый тип объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.OrganizationSearchCriteria">
+            <summary>
+            Критерии поиска организации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.OrganizationSearchCriteria.OrgCode01">
+            <summary>
+            Поиск организвции по коду 01 ОГРН
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.OrganizationSearchCriteria.OrgCode02">
+            <summary>
+            Поиск организвции по коду 02 ИНН
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.OrganizationSearchCriteria.OrgCode03">
+            <summary>
+            Поиск организвции по коду 03 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.FactSearchCriteria">
+            <summary>
+            Критерии поиска фактов 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.FactSearchCriteria.FromObjectId">
+            <summary>
+            Идентификатор первого объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.FactSearchCriteria.ToObjectId">
+            <summary>
+            Идентификатор второго объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.FactSearchCriteria.TypeName">
+            <summary>
+            Системное имя типа
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SATag">
+            <summary>
+            Описание тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.TagId">
+            <summary>
+            Идентификатор тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.TagSystemName">
+            <summary>
+            Системное имя тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.TagName">
+            <summary>
+            Наименование тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.TagType">
+            <summary>
+            Тип тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.ParentTagId">
+            <summary>
+            Идентификатор родительского тега
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.IsSystem">
+            <summary>
+            Тег имеет статус системного.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SATag.ApplayForMetaEntityId">
+            <summary>
+            Можно применять только для мета-типов с идентификатором ApplayForMetaEntityId или его потомкам
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SaTagType">
+            <summary>
+            Для каких объектов предназначен тег
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.SaTagType.Object">
+            <summary>
+            Для объктов и фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.SaTagType.Relation">
+            <summary>
+            Для связей
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.SemanticReport">
+            <summary>
+            Семантический отчет
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SemanticReport.SemanticReport_ID">
+            <summary>
+            Идентификатор семантического отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SemanticReport.Name">
+            <summary>
+            Наименование отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.SemanticReport.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo">
+            <summary>
+            Минимальная информация об объекте.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.Object_ID">
+            <summary>
+            Идентификатор СА
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.Type_ID">
+            <summary>
+            Тип
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.DisplayName">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.TypeName">
+            <summary>
+            Имя типа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.Deleted">
+            <summary>
+            Удаленный ли объект 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.ParentId">
+            <summary>
+            Родитель
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.Project_ID">
+            <summary>
+            Проект
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.DataObjectInfo.ToString">
+            <summary>
+            Возвращает строковое представление объекта. 
+            </summary>
+            <returns>Имя объекта</returns>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.FavoriteDataObjectInfo">
+            <summary>
+            Информация о главном/важном объекте для пользователя
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.FavoriteDataObjectInfo.FavoriteId">
+            <summary>
+            Идентификатор объекта, как важного/главного
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.FavoriteDataObjectInfo.ImageBase64">
+            <summary>
+            Картинка объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.Digest">
+            <summary>
+            Дайджест. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Digest.DigestKind">
+            <summary>
+            Тип дайджеста
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo">
+            <summary>
+            Информация о Дайджесте. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.ID">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.DigestKind">
+            <summary>
+            Тип Дайджеста
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.Creator">
+            <summary>
+            Создатель
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.FileName">
+            <summary>
+            Имя файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.SavedFileName">
+            <summary>
+            Имя файла на сервере приложений в хранилище
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.CreatedDate">
+            <summary>
+            Дата создания
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.Size">
+            <summary>
+            Размер
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DigestShortInfo.Location">
+            <summary>
+            Местонахождение исходного файла дайджеста на сервере приложений
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DigestKind">
+            <summary>
+            Вид дайджеста (Статей или Фактов). 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DigestKind.ArticlesSimple">
+            <summary>
+            Дайджест Статей (Простой)
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DigestKind.ArticlesStandard">
+            <summary>
+            Дайджест Статей (Стандартный)
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DigestKind.Facts">
+            <summary>
+            Дайджест Фактов
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DigestLocation">
+            <summary>
+            Местонахождение исходного файла дайджеста на сервере приложений ("файл" или "файл и БД"). 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DigestLocation.File">
+            <summary>
+            Файл
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DigestLocation.FileAndDB">
+            <summary>
+            Файл и БД
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DocumentFragment">
+            <summary>
+            Фрагмент документа. 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.Document">
+            <summary>
+            Документ. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Document.Autors">
+            <summary>
+            Авторы
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Document.Number">
+            <summary>
+            Номер
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Document.Date">
+            <summary>
+            Дата
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Document.SmiId">
+            <summary>
+            СМИ
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DocumentState">
+            <summary>
+            Состояние документа. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DocumentState.DocumentState_ID">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DocumentState.SystemName">
+            <summary>
+            Системное имя
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DocumentState.DocumentStates">
+            <summary>
+            Статус
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DocumentState.DisplayName">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DocumentState.Description">
+            <summary>
+            Описание 
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum">
+            <summary>
+            Статус документа. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.NoProcessing">
+            <summary>
+            Новый документ. С ним еще ничего не происходило.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.AutoProcessing">
+            <summary>
+            Документ находится в стадии автоматической обработки
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.ReadyForProcessing">
+            <summary>
+            Документ готов к обработке 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.Processing">
+            <summary>
+            Взят на обработку оператором
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.ProcessingNotCompleted">
+            <summary>
+            Документ обработан частично
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.FullProcessed">
+            <summary>
+            Документ обработан полностью
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.DocumentStateEnum.Rejected">
+            <summary>
+            Документ отклонен
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo">
+            <summary>
+            Информация об источнике. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo.Id">
+            <summary>
+            Ижентификатор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo.Header">
+            <summary>
+            Заголовок
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo.Size">
+            <summary>
+            Размер
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.DStoredFileInfo.StoredDateTime">
+            <summary>
+            Дата сохранения
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.MentionPosition">
+            <summary>
+            Место упоминания объекта в источнике. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.MentionPosition.StartPosition">
+            <summary>
+            Начало
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.MentionPosition.EndPosition">
+            <summary>
+            Конец
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.MentionPosition.Clone">
+            <summary>
+            Клонирует упоминание. 
+            </summary>
+            <returns>Копия упоминания</returns>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.MentionPosition.op_Implicit(ANBR.SemanticArchive.DataContracts.Sources.MentionPosition)~ANBR.Common.MentionPositionWrapper">
+            <summary>
+            Преобразует место упоминания в обертку. 
+            </summary>
+            <param name="mpos">Обертка упоминания объекта</param>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.MentionObject">
+            <summary>
+            Упоминание объекта в источнике.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.Position">
+            <summary>
+            Координаты объекта в источнике 
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.#ctor">
+            <summary>
+            Создает упоминание объекта.
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.ID">
+            <summary>
+            Идентификатор упоминания
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.Source_ID">
+            <summary>
+            Идентификатор источника
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.MentionPosition">
+            <summary>
+            Место упоминания объекта в источнике 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.DataObjectInfo">
+            <summary>
+            Краткая информация об объекте 
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.Deleted">
+            <summary>
+            Удален
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.Synonyms">
+            <summary>
+            Синонимы
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.IsMonitoring">
+            <summary>
+            Объект мониторинга
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionObject.TemporaryFact">
+            <summary>
+            Временный факт
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment">
+            <summary>
+            Оценка упоминания объекта. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.MentionsAssessmentId">
+            <summary>
+            Идентификатор оценки упоминания
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.SourceId">
+            <summary>
+            Идентификатор источника, в котором упомянут объект
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.ObjectId">
+            <summary>
+            Идентификатор упомянутого объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.CommentText">
+            <summary>
+            Комментарий к упоминанию
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.MentionPosition">
+            <summary>
+            Позиция упоминания объекта в тексте
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.NatureAssessment_ID">
+            <summary>
+            Идентификатор типа оценки упоминания
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment.BehaviorsAssessment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.Paper">
+            <summary>
+            Статья. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Paper.SMI_ID">
+            <summary>
+            СМИ идентификатор
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Paper.SMI">
+            <summary>
+            СМИ
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Paper.DateOfPOublication">
+            <summary>
+            Дата публикации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Paper.URL">
+            <summary>
+            URL источника
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.Source">
+            <summary>
+            Источник информации. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.Source.#ctor">
+            <summary>
+            Создает источник. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.Language">
+            <summary>
+            Язык документа (отображается на перечисление LanguageGlobal в ANBR.Common)
+            английский = 1, по умолчанию
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.Text">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.WebDossier">
+            <summary>
+            Веб-досье
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.FileName">
+            <summary>
+            Имя файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.DocumentState">
+            <summary>
+            Состояние источника
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.OriginalText">
+            <summary>
+            Оригинальный текст
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.AuthorIds">
+            <summary>
+            Авторы
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.ProviderId">
+            <summary>
+            СМИ
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.PublicationDate">
+            <summary>
+            Дата публикации
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.DocumentDate">
+            <summary>
+            Дата документа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.DocumnetNumber">
+            <summary>
+            Номер документа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.Source.SmiId">
+            <summary>
+            СМИ идентификатор
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticArchive.DataContracts.Sources.Source.LoadData(System.Data.DataTable)">
+            <summary>
+            Загружает данные полей источника
+            </summary>
+            <param name="dt">Данные полей источника</param>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Sources.TextSource">
+            <summary>
+            Текстовый источник. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Sources.TextSource.DocLanguage">
+            <summary>
+            Язык документа
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.Entity">
+            <summary>
+            Объект Семантического архива с географической привязкой
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.Entity.GeographyBinding">
+            <summary>
+            Географическая привязка
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.TypeStatistic">
+            <summary>
+            Статистика по количеству объектов 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.TypeStatistic.TypeId">
+            <summary>
+            Ижентификатор типа
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.TypeStatistic.Count">
+            <summary>
+            Колтчество объектов данного типа
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.DataContracts.UserSettingDc">
+            <summary>
+            Значение пользовательской настройки
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.UserSettingDc.Id">
+            <summary>
+            Идентификатор пользовательской настройки
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.UserSettingDc.Name">
+            <summary>
+            Наименование настройки
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.UserSettingDc.Value">
+            <summary>
+            Строка-значение с произвольным содержанием
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.DataContracts.UserSettingDc.IsDefault">
+            <summary>
+            Признак того, что данная настройка является значением по умолчанию для всех пользователей
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.RelationInfo">
+            <summary>
+            Описание связи между объектами
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationInfo.FromObjectId">
+            <summary>
+            Идентификатор первого объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationInfo.RoleId">
+            <summary>
+            Идентификатор роли превого объекта в связи
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationInfo.ToObjectInfo">
+            <summary>
+            Идентификатор второго объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationInfo.RelationId">
+            <summary>
+            Идентификатор связи двух объектов
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticArchive.ObjectService.RelationStatInfo">
+            <summary>
+            Статистика по связям объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationStatInfo.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationStatInfo.RoleId">
+            <summary>
+            Идентификатор роли
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticArchive.ObjectService.RelationStatInfo.Count">
+            <summary>
+            Количество связанных объектов данной ролью
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SAObjectDbState">
+            <summary>
+            Статус объекта в БД СА. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.Exists">
+            <summary>
+            Существует ли в БД СА
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.IsNotDeleted">
+            <summary>
+            Является ли неудаленным объектом
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.IsOrganization">
+            <summary>
+            Является ли Организацией или ее потомком
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.IsPerson">
+            <summary>
+            Является ли Персоной или ее потомком
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.NotExisted">
+            <summary>
+            Объект не существует в БД СА
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SAObjectDbState.ErrorMessage">
+            <summary>
+            Текст ошибки, если не удалось получить статус объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.OperationResult">
+            <summary>
+            Результат операции. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.OperationResult.Value">
+            <summary>
+            Возвращаемое значение (в случае ошибки: 
+            OperationState = CompletionState.Failure - может иметь неопределенное значение)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.OperationResult.Message">
+            <summary>
+            Текст ошибки (в случае успеха OperationState = CompletionState.Success может быть - NULL или 
+            string.Empty или OK)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.OperationResult.State">
+            <summary>
+            Статус завершения операции (Success или Failure)
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.CompletionState">
+            <summary>
+            Статус завершения операции. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CompletionState.Success">
+            <summary>
+            Успех
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CompletionState.Failure">
+            <summary>
+            Неудача
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CompletionState.CompletedWithErrors">
+            <summary>
+            Завершено с ошибками
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulPreAnalysisState">
+            <summary>
+            Статус предварительного анализа. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.NeedsParsing">
+            <summary>
+            Выполнять ли разбор выписки и создание (извлечение) объектов и фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.InnOrg">
+            <summary>
+            ИНН 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.InnOrgEgrul">
+            <summary>
+            ИНН в ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.OgrnOrg">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.OgrnOrgEgrul">
+            <summary>
+            ОГРН в ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulPreAnalysisState.NotParse">
+            <summary>
+            Не разбирать выписку
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FileFormat">
+            <summary>
+            Формат файла
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.RTF">
+            <summary>
+            Rich text format
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.HTML">
+            <summary>
+            Hypertext
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.DOC">
+            <summary>
+            Word
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.DOCX">
+            <summary>
+            Word docx
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.TXT">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.XLS">
+            <summary>
+            Excel 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.XLSX">
+            <summary>
+            Excel xlsx
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FileFormat.NOT_DEFINED">
+            <summary>
+            Не определен
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulCompanyInfo">
+            <summary>
+            Данные о Компании в ЕГРЮЛ (все данные из выписки)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfo.Main">
+            <summary>
+            Основные сведения о ЮЛ - 1 таблица выписки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfo.Address">
+            <summary>
+            Адрес (место нахождения) ЮЛ - 2 таблица выписки
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulCompanyInfoMain">
+            <summary>
+            Данные о Компании в ЕГРЮЛ (Основные сведения о ЮЛ - 1 таблица)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.FullName">
+            <summary>
+            Полное наименование
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.ShortName">
+            <summary>
+            Сокращенное наименование
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.Name">
+            <summary>
+            Фирменное наименование
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.ForeghnName">
+            <summary>
+            Наименование на иностранном языке
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.OPF">
+            <summary>
+            ОПФ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.StateInfo">
+            <summary>
+            Сведения о состоянии юр.лица
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.FormDate">
+            <summary>
+            Дата формирования сведений из ЕГРЮЛ 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.KPP">
+            <summary>
+            КПП юридического лица 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.OGRNDate">
+            <summary>
+            Дата присвоения ОГРН 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.Classifier">
+            <summary>
+            Наименование классификатора по которому введены сведения об ОПФ: ОКОПФ, КОПФ 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoMain.Code">
+            <summary>
+            Код по выбранному классификатору 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress">
+            <summary>
+            Данные о Компании в ЕГРЮЛ (Адрес (место нахождения) ЮЛ - 2 таблица)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.FullName">
+            <summary>
+            Полное наименование
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.Name">
+            <summary>
+            Наименование органа (лица)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.Address">
+            <summary>
+            Адрес (место нахождения) юр.лица
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.CityCode">
+            <summary>
+            Код города
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.Phone">
+            <summary>
+            Телефон
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.Fax">
+            <summary>
+            Факс
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.Date">
+            <summary>
+            Дата внесения записи в ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulCompanyInfoAddress.GRN">
+            <summary>
+            ГРН
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulObject">
+            <summary>
+            Объект ЕГРЮЛ, созданный или найденный (уже существующий в БД)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObject.Name">
+            <summary>
+            Имя объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObject.TypeName">
+            <summary>
+            Название типа объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObject.ID">
+            <summary>
+            ID объекта в БД СА
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObject.TypeID">
+            <summary>
+            ID типа объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObject.IsNewObject">
+            <summary>
+            Созданный (IsNewObject=true) или уже существующий (IsNewObject=false) в БД СА объект
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulShortSchema">
+            <summary>
+            Краткая Схема выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.MainInfoSectionName">
+            <summary>
+            Имя основного раздела
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.AddressInfoSectionName">
+            <summary>
+            Имя раздела адреса
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CapitalInfoSectionName">
+            <summary>
+            Имя раздела 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CapitalPartsInfoSectionName">
+            <summary>
+            Имя раздела '3.4.	Сведения о долях в уставном капитале OOO, принадлежащих обществу'
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CleanActivesSectionName">
+            <summary>
+            Имя раздела чистых активов AO
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.UFaceSectionName">
+            <summary>
+            Имя раздела Сведения о состоянии юридического лица
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.UFaceCreatingSectionName">
+            <summary>
+            Имя раздела Сведения об образовании юридического лица
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.StopActivitySectionName">
+            <summary>
+            Имя раздела Сведения о прекращении деятельности
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CoownersRusSectionName">
+            <summary>
+            Имя раздела - Сведения об учредителях (участниках) - Российских ЮЛ 6.10 TZ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CoownersEngSectionName">
+            <summary>
+            Имя раздела - 3.11.	Сведения об учредителях (участниках) - иностранных ЮЛ 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.ControlCompanySectionName">
+            <summary>
+            Имя раздела -  3.27.	Сведения об управляющей компании 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.CoownersPersonsRusSectionName">
+            <summary>
+            Имя раздела - Сведения об учредителях (участниках) - физических лицах - 6.12 ТЗ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.ActionersSectionName">
+            <summary>
+            Имя раздела - Сведения о держателе реестра акционеров АО
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.PredecessorsSectionName">
+            <summary>
+            Имя раздела - "Сведения о юр.лицах - предшественниках при реорганизации"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.SuccessorsSectionName">
+            <summary>
+             Имя раздела - Сведения о юр.лицах - преемниках при реорганизации 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.PersonsVIPSectionName">
+            <summary>
+            Имя раздела - Сведения о физических лицах, имеющих право действовать без доверенности 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.FilialsOrgSectionName">
+            <summary>
+            Имя раздела - Сведения о филиалах юр.лица 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.ProxiesOrgSectionName">
+            <summary>
+            Имя раздела - Сведения о представительствах юр.лица
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.SectionNames">
+            <summary>
+            Названия разделов
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulShortSchema.SectionSubstNames">
+            <summary>
+            Названия синонимов разделов
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulFullSchema">
+            <summary>
+            Полная Схема выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulFullSchema.ShortSchema">
+            <summary>
+            Краткая Схема выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulFullSchema.ColumnsOfTable">
+            <summary>
+            Список полей таблицы (Value of Dictionary pair) 
+            по названию таблицы (Key of Dictionary pair) в разделе
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulParsedData">
+            <summary>
+            Данные в результате разбора выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulParsedData.Schema">
+            <summary>
+            Схема выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulParsedData.SectionByName">
+            <summary>
+            Данные разделов, по имени раздела
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.EgrulParsedData.Item(System.String)">
+            <summary>
+            Получает раздел выписки по имени
+            </summary>
+            <param name="name"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulSection">
+            <summary>
+            Раздел выписки с разобранными данными
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulSection.Name">
+            <summary>
+            Имя раздела
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulSection.TableColumns">
+            <summary>
+            Колонки таблицы раздела
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulSection.Tables">
+            <summary>
+            Таблицы данных раздела
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulTable">
+            <summary>
+            Таблица раздела выписки ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Name">
+            <summary>
+            Имя таблицы
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Columns">
+            <summary>
+            Колонки таблицы
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddress">
+            <summary>
+            Колонка таблицы адреса (главная) [Адрес (место нахождения) юр.лица]
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressDate">
+            <summary>
+            Колонка таблицы адреса (Дата внесения...)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressGRN">
+            <summary>
+            Колонка таблицы адреса (ГРН)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressPhones">
+            <summary>
+            Колонки таблицы адреса телефон-факс
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressCODE">
+            <summary>
+            Колонка код города таблицы адреса 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUstCapital">
+            <summary>
+            Колонка Уставный капитал
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUstCapitalKind">
+            <summary>
+            Колонка Вид капитала ...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUstCapitalDat">
+            <summary>
+            Колонка Дата внесения записи...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUstCapitalGRN">
+            <summary>
+            Колонка Уставный капитал - ГРН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgActives">
+            <summary>
+            Колонка Чистые активы...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgActivesDatRep">
+            <summary>
+            Колонка Чистые активы... Дата окончания отчетного периода...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgActivesDatEgrul">
+            <summary>
+            Колонка Чистые активы... Дата внесения записи...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgActivesGRN">
+            <summary>
+            Колонка Чистые активы... ГРН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUFaceState">
+            <summary>
+            Колонка ЮЛ -  1. Сведения о состоянии ЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUFace_DatEgrul">
+            <summary>
+            Колонка ЮЛ -  Дата внесения записи...
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgUFaceCRT_DatReg">
+            <summary>
+            Колонка Образование ЮЛ -  Дата регистрации
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoownerNameUFace">
+            <summary>
+            Колонка  - "Полное наименование учредителя (участника) - юр.лица"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoownerNameUFaceINN">
+            <summary>
+            Колонка  - ИНН
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoownerNameUFaceOGRN">
+            <summary>
+            Колонка  - "ОГРН учредителя"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoowner_VkladRubles">
+            <summary>
+            Колонка - "Размер вклада (в рублях)" 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoowner_VkladPercents">
+            <summary>
+            Колонка - "Доля в процентах" 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoowner_DateEgr">
+            <summary>
+            Колонка - "Дата внесения записи в ЕГРЮЛ"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoowner_UfaceAddress">
+            <summary>
+            Колонка - "Адрес учредителя (участника) - российского юр.лица"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoownerEng_Country">
+            <summary>
+            Колонка - "Страна регистрации (инкорпорации)"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgCoownerEng_Place">
+            <summary>
+            Колонка - Место нахождения в стране регистрации (инкорпорации)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgState">
+            <summary>
+            Колонка главной таблицы для сведений о состоянии ЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Actioners_OrgINN">
+            <summary>
+            Колонка  - "ИНН юридического лица"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Actioners_OrgOGRN">
+            <summary>
+            Колонка  - "ОГРН"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Actioners_Date">
+            <summary>
+            "Дата внесения сведений в ЕГРЮЛ"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Preds_OrgName">
+            <summary>
+            Колонка  - "Полное наименование реорганизованного юр.лица"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Preds_OrgINN">
+            <summary>
+            Колонка  - "ИНН"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Preds_OrgOGRN">
+            <summary>
+            Колонка  - "ОГРН"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Preds_Date">
+            <summary>
+            Колонка  - "Дата внесения записи в ЕГРЮЛ"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Preds_Address">
+            <summary>
+            Колонка  - "Адрес (место нахождения) юр.лица"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Filials_FullName">
+            <summary>
+            Колонка  -  "Полное наименование ЮЛ"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Filials_Address">
+            <summary>
+            Колонка  -  "Адрес (место нахождения) филиала"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Column_Proxies_Address">
+            <summary>
+            Колонка  -  "Адрес (место нахождения) представительства"
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressTextDate">
+            <summary>
+            Колонка таблицы для сведений о дате внесения в егрюл
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnForOrgAddressTextGRN">
+            <summary>
+            Колонка таблицы для сведений о грн
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnsForUpdateProperties">
+            <summary>
+            Колонки таблицы для обновления данных организации данными ЕГРЮЛ (обновить свойства)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnsForAddSynonyms">
+            <summary>
+            Колонки таблицы для обновления данных организации данными ЕГРЮЛ (добавить синонимы)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.ColumnsForCreatingFactsByTableName">
+            <summary>
+            Колонки таблицы для создания фактов из данных ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.PropertyNameByColumnName">
+            <summary>
+            Имя свойства в БД СА, соответствующее колонке таблицы
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulTable.Data">
+            <summary>
+            Пары колонка-значение в конкретной таблице
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult">
+            <summary>
+            Результат разбора выписки ЕГРЮЛ: 
+            Созданные (либо найденные и использованные) объекты БД СА,
+            краткая схем выписки, список ошибок. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.SaObjectsBySection">
+            <summary>
+            Списки объектов БД СА, созданных (либо найденных и использованных),
+            по разделам выписки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.ErrorsBySection">
+            <summary>
+            Списки ошибок, возникших при разборе выписки ЕГРЮЛ, создании объектов БД СА,
+            по разделам выписки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.IdEgrul">
+            <summary>
+            ID объекта - файла выписки ЕГРЮЛ 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.IdSpecialFact">
+            <summary>
+            ID специального факта для связи Персона-ВыпискаЕгрюл
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.ExtractEntities">
+            <summary>
+            Разбирать ли выписку (true) или только сохранить (false)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.EmptyNew">
+            <summary>
+            Копия объекта
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.EgrulObjectsExtractionResult.#ctor">
+            <summary>
+            Конструктор. 
+            </summary>
+        </member>
+    </members>
+</doc>

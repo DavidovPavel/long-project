@@ -1,0 +1,46 @@
+﻿<script type="x-template/underscore" id="legend-settings-template">
+    <div class="g-form--input">
+        <input id="LegendIsVisible_<%- id %>" type="checkbox" class="g-form--checkbox" name="LegendIsVisible" <%- (LegendIsVisible?checked="checked":"") %> />
+        <label for="LegendIsVisible_<%- id %>"><%= Resources.visibleLegend %>:</label>
+    </div>
+    <div class="g-form--input">
+        <input type="text" value="<%- Title %>" class="g-form--input" id="Title" name="Title" placeholder="<%- Resources.title %>" />
+        <label for="Title"><%- Resources.title %>:</label>
+    </div>
+    <div class="g-form--input" id="<%- id %>" style="margin-top:20px;">
+        <label class="g-form--label"><%- Resources.position %>:</label>
+        <div class="RbtnSet">
+            <div class="tl">
+                <input type="radio" id="<%- id %>_tl" name="LegendPosition<%- id %>" value="left-top" />
+                <label for="<%- id %>_tl"><%- Resources.leftTop %></label>
+            </div>
+            <div class="tr">
+                <input type="radio" id="<%- id %>_tr" name="LegendPosition<%- id %>" value="right-top" />
+                <label for="<%- id %>_tr"><%- Resources.rightTop %></label>
+            </div>
+            <div class="bl">
+                <input type="radio" id="<%- id %>_bl" name="LegendPosition<%- id %>" value="left-bottom" />
+                <label for="<%- id %>_bl"><%- Resources.leftBottom %></label>
+            </div>
+            <div class="br">
+                <input type="radio" id="<%- id %>_br" name="LegendPosition<%- id %>" value="right-bottom" />
+                <label for="<%- id %>_br"><%- Resources.rightBottom %></label>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="legend-item-template">
+    <td><img src="<%= MarkerUrl %>" alt="" /></td>
+    <td>
+        <div class="g-form--input">
+            <input type="text" placeholder="<%- Resources.enterDescription %>" name="MarkerDescription" value="<%- MarkerDescription %>" class="g-form--input" />
+            <label class="g-form--label"><%= Resources.enterDescription %></label>
+        </div>
+    </td>
+    <td>
+        <% if(LegendItemUID){ %>
+        <button data-icon="icon-trash" class="g-form--button flat"></button>
+        <% } %>
+    </td>
+</script>

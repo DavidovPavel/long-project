@@ -1,0 +1,45 @@
+﻿@model www.Models.LoginModel
+@using Resources
+@{
+    ViewBag.Title = Client.Login;
+    ViewBag.Name = "login";
+    Layout = "~/Views/Shared/ANBR/_Layout.cshtml";
+}
+
+<style type="text/css">
+    .SelectForm {
+        width: 400px;
+        //height: 150px;       
+        padding: 10px 20px;
+        margin:100px auto;
+    }
+
+        .SelectForm label {
+            display: block;
+        }
+</style>
+
+<section id="loginForm" style="margin: 20px;">
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        @Html.HiddenFor(m => m.UserName)
+        @Html.HiddenFor(m => m.Password)
+        
+        <div class="SelectForm">
+            <br />
+            <label>@Client.Server:</label>
+            @Html.DropDownListFor(model => model.ServerID, Model.Servers, new { disabled = "disabled", @class="form-control" })
+            <br />
+            <br />
+            <label>@Client.DataBase:</label>
+            @Html.DropDownListFor(model => model.DatabaseID, Model.Databases, new { @class="form-control"})
+            <br />
+            <br />
+            <button type="submit" class="btn btn-flagy btn-blue mrg-l-11">@Client.Connect</button>
+        </div>
+    }
+</section>
+

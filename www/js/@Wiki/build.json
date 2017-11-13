@@ -1,0 +1,10 @@
+﻿[
+
+  {
+    "outputFileName": "@wiki.min.js",
+    "inputFiles": [
+      "js/@wiki/app.js"
+    ]
+  }
+
+]

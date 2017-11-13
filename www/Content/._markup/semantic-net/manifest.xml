@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+
+  <description>
+    <![CDATA[ 
+  описание сущности ололол фывфыв фывфывфывфыв
+  ]]>
+  </description>
+
+  <link>/content/.components/context.less</link>
+
+  <relations view="html">
+    <![CDATA[
+    ссылки на используемые компоненты
+    <ul>
+      <li>one<br/>
+      <i>/content/.components/...</i></li>
+    <li>
+      two<br/>
+      <i>/content/.components/...</i></li>
+    </ul>
+    ]]>
+  </relations>
+
+  <snippet>
+    <![CDATA[
+  
+    <div>
+      контейнер
+      <span>содержимое</span>
+    </div>
+
+  ]]>
+  </snippet>
+
+</root>

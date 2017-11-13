@@ -1,0 +1,78 @@
+﻿
+@using Resources
+@using www.SaGateway
+@{
+    Layout = null;
+    var baseAddr = WebSaUtilities.BuildBaseUrl();
+    var report = baseAddr + "/sqlreporting.aspx";
+    var currentLang = ViewBag.CurrentLang;
+    var ruRuting = new { lang = "ru-RU", db = ViewBag.CureentDatabaseID };
+    var enRuting = new { lang = "en-US", db = ViewBag.CureentDatabaseID };
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Wiki</title>
+        @Styles.Render("~/Content/css")
+        @Styles.Render("~/Content/themes/base/css")
+        <link href="~/Content/wiki.css" rel="stylesheet" />
+
+        @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/modernizr")
+        <script src="~/Scripts/underscore.min.js"></script>
+        <script src="~/Scripts/backbone.min.js"></script>
+
+        <script src="/Scripts/IWC-master/iwc-all.min.js"></script>
+
+        <script data-main="/js/entry" src="/js/libs/require/require.js" type="text/javascript"></script>
+    </head>
+
+    <body>
+         <div class="Local">
+            <a class="ui-corner-all @(currentLang == "ru-RU" ? "C" : string.Empty)" href="@Url.RouteUrl(ruRuting)">
+                <span>RUS</span>
+            </a><a class="ui-corner-all @(currentLang == "en-US" ? "C" : string.Empty)" href="@Url.RouteUrl(enRuting)">
+                    <span>ENG</span>
+                </a>
+        </div>
+        <div class="MainMenu">
+            <div class="Item" style="padding-top: 25px; cursor: pointer;">
+                <span id="Edge" title="@Client.productsList">
+                    <img src="/Images/m.png" alt="" /></span>
+            </div>
+            <div class="Item S">
+                <div class="Home" title="@Client.Main"></div>
+            </div>
+            <div class="Item">
+                <div class="Document" title="@Client.addDoc"></div>
+            </div>
+        </div>
+
+        <div id="Main">
+            <div class="List"><p><i>Выберите, пожалуйста, медиа документ:</i></p></div>
+        </div>
+
+        <div id="Left">
+            <h3 class="MainTitle"><span class="One"></span><span class="Two"></span></h3>            
+            <div class="Content"></div>
+        </div>
+
+
+        <div id="Right">
+            <ul>
+                <li class="SemNet"><span></span><a href="#SemNet">@Client.semanticnet</a></li>
+                <li class="Report"><span></span><a href="#Report">@Client.report</a></li>
+            </ul>
+
+            <div id="SemNet">
+                <div id='svg-cd128757-b0fa-4fdd-a005-05f74ac632c8' style='clear:both;'></div>
+            </div>
+            <div id="Report"><iframe src="@report" style="border: 0;width:100%;height: 100%" id="SqlRepFrame"></iframe></div>
+        </div>
+
+        <img src="/Images/bigrotation2.gif" id="PL" style="display: none;position: absolute;top:100px;left:100px;" />
+
+    </body>
+</html>

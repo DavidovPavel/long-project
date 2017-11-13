@@ -1,0 +1,93 @@
+﻿[tooltip] {
+  position: relative!important;
+}
+[tooltip]:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: rgba(40, 40, 40, 0.9) transparent transparent transparent;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 0) rotate(360deg);
+  display: none;
+}
+[tooltip]:after {
+  content: attr(tooltip);
+  min-width: 2em;
+  height: auto;
+  padding: .5em 1em;
+  background: rgba(40, 40, 40, 0.9);
+  color: #fff;
+  display: none;
+  position: absolute;
+  bottom: 100%;
+  white-space: nowrap;
+  left: 50%;
+  box-sizing: border-box;
+  border-radius: 4px;
+  transform: translate(-50%, -5px);
+  max-width: 30em;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  user-select: none;
+  z-index: 50;
+}
+[tooltip][decor^="under"] {
+  text-decoration: underline;
+  cursor: help;
+}
+[tooltip][flow^="right"]:after {
+  left: 100%!important;
+  transform: translate(8px, 9px);
+  bottom: 0;
+}
+[tooltip][flow^="right"]:before {
+  transform: translate(3px, -2px);
+  left: 100%;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 5px 0;
+  border-color: transparent rgba(40, 40, 40, 0.9) transparent transparent;
+}
+[tooltip][flow^="bottom"]:after {
+  top: 100%;
+  transform: translate(-50%, 8px);
+  bottom: auto;
+}
+[tooltip][flow^="bottom"]:before {
+  top: 100%;
+  width: 0;
+  bottom: auto;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  border-color: transparent transparent rgba(40, 40, 40, 0.9) transparent;
+  transform: translate(-50%, 3px);
+}
+[tooltip][flow^="left"]:after {
+  left: auto;
+  right: 100%;
+  transform: translate(-8px, 8px);
+  bottom: 0;
+  top: auto;
+}
+[tooltip][flow^="left"]:before {
+  transform: translate(-3px, -2px);
+  bottom: 0;
+  left: auto;
+  right: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent rgba(40, 40, 40, 0.9);
+}
+[tooltip]:hover:after,
+[tooltip]:hover:before {
+  display: block;
+}

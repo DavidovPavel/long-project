@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="master.min.css" rel="stylesheet" />
+    <style>
+        table {
+            position:fixed;
+            width:400px;
+            height:400px;
+            top:50%;
+            left:50%;
+            transform:translate(-200px, -200px);
+            border-collapse:collapse;
+        }
+        td {
+            border:1px solid #ccc;
+            position:relative;
+            padding:1em;
+            width:50%
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>default class="loading"</td>
+            <td><i class="loading"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" speed="slow"</td>
+            <td><i class="loading" speed="slow"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" speed="medium"</td>
+            <td><i class="loading" speed="medium"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" speed="fast"</td>
+            <td><i class="loading" speed="fast"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" size="l" speed="slow"</td>
+            <td><i class="loading" size="l" speed="slow"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" speed="medium" size="xl"</td>
+            <td><i class="loading" size="xl" speed="medium"></i></td>
+        </tr>
+        <tr>
+            <td>class="loading" size="xl" speed="fast"</td>
+            <td><i class="loading" size="xl" speed="fast"></i></td>
+        </tr>
+    </table>
+</body>
+</html>

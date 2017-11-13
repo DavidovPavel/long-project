@@ -1,0 +1,28 @@
+﻿<div id="Balance" class="ui-corner-all">
+    <div style="font-size: .8em;">
+        <% if(WorkGroupID){ %>
+        <a href="https://semarch.anbr.ru/lang-ru-RU/private/wg-<%= WorkGroupID %>/personal/payment" target="_blank" style="float: right;"><%= Resources.topUp %></a>
+        <% } %>
+        <a target="_blank" href="https://semarch.anbr.ru/"><%= Resources.linkToAdmin %></a>
+    </div>
+    <div><label><%= Resources.Balance %>:</label>&nbsp;<b class="BalanceVal"></b></div>
+    <section style="display: none;">
+        <div class="List"></div>
+        <div><label><%= Resources.InTotal %>:</label>&nbsp;<b class="TotalVal">0</b></div>
+    </section>
+</div>
+<p style="margin: 0; padding: 2px;">
+    <label><%= Resources.profiles %></label>&nbsp;<select class="profile"></select>&nbsp;&nbsp;        
+    <button type="button" id="MenProf"><%= Resources.MenageProfiles %></button>
+</p>
+<b><%= Resources.searchTasksInProfile %></b>
+<div id="robotsInProfile"></div>
+<p>
+    <button type="button" disabled="disabled" class="showTasks"><%= Resources.preview %></button>
+    &nbsp;
+    <button type="button" disabled="disabled" class="Run ui-state-error"><%= Resources.run %></button>
+    &nbsp;
+    <input type="checkbox" class="autoSelect" /><label><%= Resources.runAutoSelect %></label>
+</p>
+
+<div class="inLoad"></div>

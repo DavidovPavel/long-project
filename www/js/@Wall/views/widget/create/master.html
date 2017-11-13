@@ -1,0 +1,108 @@
+﻿<script type="x-template/underscore" id="widget-create-template">
+
+    <div class="step-panel one">
+        <p class="title"><%= Resources.addWidget %></p>
+        <div class="types-widget">
+            <span id="WidgetTable"><svg class="widget-type"><use xlink:href="#widget-table" /></svg><label><%- Resources.table %></label></span>            
+            <span id="WidgetRunning"><svg class="widget-type"><use xlink:href="#widget-running" /></svg><label><%- Resources.running %></label></span>
+            <span id="WidgetMap"><svg class="widget-type"><use xlink:href="#widget-maps" /></svg><label><%- Resources.maps %></label></span>
+            <span id="WidgetGraph"><svg class="widget-type"><use xlink:href="#widget-graph" /></svg><label><%- Resources.graph %></label></span>
+            <span id="WidgetCloud"><svg class="widget-type"><use xlink:href="#widget-cloud" /></svg><label><%- Resources.tc %></label></span>
+            <span id="WidgetSource"><svg class="widget-type"><use xlink:href="#widget-source" /></svg><label><%- Resources.source %></label></span>
+            <span id="WidgetReporting"><svg class="widget-type"><use xlink:href="#widget-report" /></svg><label><%- Resources.report %></label></span>
+            <span id="WidgetHtml"><svg class="widget-type"><use xlink:href="#widget-decor" /></svg><label><%- Resources.decorate %></label></span>
+            <span id="WidgetSemNet"><svg class="widget-type"><use xlink:href="#widget-semnet" /></svg><label><%- Resources.relgraph %></label></span>
+        </div>
+        <br />
+        <p class="description"></p>
+    </div>
+
+    <div class="step-panel requestParam">
+        <p class="title"><%= Resources.widgetName %></p>
+        <input type="text" name="title" id="titleWidget" placeholder="" maxlength="255" />
+        <section></section>
+    </div>
+
+    <div class="step-panel visualization"></div>
+
+    <div class="step-panel subscribe">
+        <p class="title"><%= Resources.m4 %></p>
+        <div id="Subscribe"></div>
+        <br /><br />
+        <p class="titleSubscribe"><%= Resources.subscribe %></p>
+    </div>
+
+    <div class="step-panel htmlEditor"></div>
+
+    <div class="step-panel decoration">
+        <p class="title"><%= Resources.m3 %></p>
+
+        <div class="row">
+            <div class="grid--1-1">
+                <span class="g-form--input">                    
+                    <input type="text" name="width" class="g-form--input" placeholder="<%- Resources.width %>" id="width" maxlength="4" />
+                    <label class="g-form--label" for="width"><%- Resources.width %></label>
+                </span>
+            </div>
+            <div class="grid--1-1">
+                <span class="g-form--input">                    
+                    <input type="text" name="height" class="g-form--input" placeholder="<%- Resources.height %>" id="height" maxlength="4" />
+                    <label class="g-form--label" for="height"><%- Resources.height %></label>
+                </span>
+            </div>
+        </div>
+
+        <div id="decoration">
+            <!--<nav>
+                <div class="ac" data-tab="one"><svg><use xlink:href="#marker-decoration"></use></svg></div>
+            </nav>
+            <div class="tabs">
+                <div class="tab-content one show">
+                    <div class="marker">
+                        <div>
+                            <hr />
+                            <svg><use xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="CaptionBackground" value="#c8bca2" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="CaptionForeground" value="#333333" />
+                        </div>
+                        <div>
+                            <hr />
+                            <svg><use xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="ContainerBackground" value="#ffffff" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="ContainerForeground" value="#333333" />
+                        </div>
+                        <div>
+                            <hr />
+                            <svg><use xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="LinkBackground" value="#ffffff" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="LinkForeground" value="#467fd4" />
+                        </div>
+                    </div>
+                    <div class="pattern">
+                        <div class="title">Title</div>
+                        <div class="content">
+                            Content
+                            <div class="link"><span>Link</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content two">
+                    <div class="marker">
+                        <div><hr /></div>
+                        <div><hr /></div>
+                        <div><hr /></div>
+                    </div>
+                    <div class="pattern"><div class="title">Title</div><div class="content">Content<div class="link">Link</div></div></div>
+                </div>
+            </div>-->
+            <div id="decor-chbx">
+                <div><span class="font-icon font-icon-checkbox checked"><input type="checkbox" name="CaptionIsVisible" checked="checked" /><label><%= Resources.captionVisible %></label></span></div>
+                <div><span class="font-icon font-icon-checkbox checked"><input type="checkbox" name="BorderIsVisible" checked="checked" /><label><%= Resources.borderVisible %></label></span></div>
+                <div><span class="font-icon font-icon-checkbox"><input type="checkbox" name="ContainerIsTransparent" /><label><%= Resources.containerTransparent %></label></span></div>
+            </div>
+            <br />
+        </div>
+    </div>
+
+    <div class="step-panel reporting"></div>
+
+    <br />
+    <p class="cmd"><button id="back"><%= Resources.toback %></button>&nbsp;&nbsp;<button id="next"><%= Resources.next %></button></p>
+</script>

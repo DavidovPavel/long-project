@@ -1,0 +1,50 @@
+﻿<script type="x-template/underscore" id="clone-widget-dialog-template">
+    <div class="g-form--input">
+        <label class="g-form--label"><%- Resources.cloneTo %></label>
+        <div id="dashboards-list"></div>
+    </div>
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="newDBName" name="newDBName" value="" placeholder="<%- Resources.newDBName %>" />
+            <label class="g-form--label" for="newDBName"><%- Resources.newDBName %></label>
+        </span>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="top-buttons-template">
+    <button class="show-add-widget-btn"><svg><use xlink:href='#add-widget-plus' /></svg><span class='anbr-tooltip'><span position='top'></span><%= Resources.addWidget %></span></button>
+    <span class='sepa'></span>
+    <section id='position-buttons'></section>
+</script>
+
+<script type="x-template/underscore" id="position-btns-template">
+    <button title='<%= Resources.aligntop %>' name='top'><svg><use xlink:href='#align-top' /></svg></button>
+    <button title='<%= Resources.alignmiddle %>' name='middle'><svg><use xlink:href='#align-middle' /></svg></button>
+    <button title='<%= Resources.alignbottom %>' name='bottom'><svg><use xlink:href='#align-bottom' /></svg></button>
+    <button title='<%= Resources.alignleft %>' name='left'><svg class='rotate'><use xlink:href='#align-top' /></svg></button>
+    <button title='<%= Resources.aligncenter %>' name='center'><svg class='rotate'><use xlink:href='#align-middle' /></svg></button>
+    <button title='<%= Resources.alignright %>' name='right'><svg class='rotate'><use xlink:href='#align-bottom' /></svg></button>
+    <span class='sepa'></span>
+
+    <button title='<%= Resources.alignheight %>' name='height'><svg class='align-by-height'><use xlink:href='#align-by-height' /></svg></button>
+    <button title='<%= Resources.alignwidth %>' name='width'><svg class='align-by-width rotate'><use xlink:href='#align-by-height' /></svg></button>
+    <button title='<%= Resources.alignsize %>' name='size'><svg><use xlink:href='#align-by-size' /></svg></button>
+
+    <input name='width' value='' maxlength="4" title="<%- Resources.width %>" />
+    <span>X</span>
+    <input name='height' value='' maxlength="4" title="<%- Resources.height %>" />&nbsp;
+    <span>px</span>
+
+    <span class='sepa'></span>
+    <button title='<%= Resources.paddinghor %>' name='dispose-x'><svg><use xlink:href='#padding-horizont' /></svg></button>
+    <input name='PositonPadding-x' value='' maxlength="2" />&nbsp;
+    <span>px</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button title='<%= Resources.paddingver %>' name='dispose-y'><svg class='rotate2'><use xlink:href='#padding-horizont' /></svg></button>
+    <input name='PositonPadding-y' value='' maxlength="2" />&nbsp;
+    <span>px</span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class='sepa'></span>
+    <button title='<%= Resources.onfront %>' name='front'><svg><use xlink:href='#to-front' /></svg></button>
+    <button title='<%= Resources.onback %>' name='back'><svg><use xlink:href='#to-back' /></svg></button>
+    <span class='sepa'></span>
+    <div id="multi-operation"></div>
+</script>

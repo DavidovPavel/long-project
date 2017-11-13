@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dropdown menu</title>
+    <link href="dropdown.min.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.min.css" rel="stylesheet" />
+    <script src="https://yastatic.net/jquery/2.2.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.g-dropdown--placeholder').click(function () {
+                $(this).siblings('.g-dropdown--container').slideToggle(100);
+                $(this).toggleClass('expanded');
+            });
+        });
+    </script>
+</head>
+<body style="text-align:center; font-size:13px; padding:250px 0 0">
+    <div class="g-dropdown--menu blank">
+        <div class="g-dropdown--placeholder">
+            <div class="item">Select iconless item</div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item">Iconless item 1</div>
+            <div class="item">Iconless item 2</div>
+            <div class="item">Iconless item 3</div>
+            <div class="item selected">Iconless item 4</div>
+        </div>
+    </div>
+    <div class="g-dropdown--menu">
+        <div class="g-dropdown--placeholder">
+            <div class="item">Select iconless item</div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item">Iconless item 1</div>
+            <div class="item">Iconless item 2</div>
+            <div class="item selected">Iconless item 3</div>
+            <div class="item">Iconless item 4</div>
+        </div>
+    </div>
+    <div class="g-dropdown--menu">
+        <div class="g-dropdown--placeholder">
+            <div class="item controls">Select iconless item<span class="close"></span><span class="add"></span></div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item control-2">Iconless item 1<span class="close"></span><span class="add"></span></div>
+            <div class="item selected">Iconless item 2 <span class="add single"></span></div>
+            <div class="item">Iconless item 3</div>
+            <div class="item">Iconless item 4</div>
+        </div>
+    </div>
+    <div class="g-dropdown--menu">
+        <div class="g-dropdown--placeholder">
+            <div class="item" data-icon="icon-send">Select iconless item</div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item" data-icon="icon-send">Icon item 1</div>
+            <div class="item" data-icon="icon-geo">Icon item 2</div>
+            <div class="item selected" data-icon="icon-warn">Icon item 3</div>
+            <div class="item" data-icon="icon-blank">Icon item 4</div>
+        </div>
+    </div>
+    <div class="g-dropdown--menu">
+        <div class="g-dropdown--placeholder">
+            <div class="item controls" data-icon="icon-send">Select iconless item<span class="close"></span><span class="add"></span></div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item selected" data-icon="icon-send">Icon item 1<span class="close"></span><span class="add"></span></div>
+            <div class="item" data-icon="icon-geo">Icon item 2 <span class="add single"></span></div>
+            <div class="item" data-icon="icon-warn">Icon item 3</div>
+            <div class="item" data-icon="icon-blank">Icon item 4</div>
+        </div>
+    </div>
+    <br /><br /><br />
+    <hr />
+    <h3>NEW</h3>
+    <div class="g-dropdown--menu">
+        <div class="g-dropdown--placeholder">
+            <div class="item" data-icon="icon-send" tools="3">
+                Select iconless item
+                <div class="manage">
+                    <span class="add"></span><span class="clear"></span><span class="edit"></span>
+                </div>
+            </div>
+        </div>
+        <div class="g-dropdown--container">
+            <div class="item selected" data-icon="icon-send" tools="3">
+                Icon item 1
+                <div class="manage">
+                    <span class="add"></span><span class="clear"></span><span class="edit"></span>
+                </div>
+            </div>
+            <div class="item" data-icon="icon-geo" tools="3">
+                Icon item 2
+                <div class="manage">
+                    <span class="add"></span><span class="clear"></span><span class="edit"></span>
+                </div>
+            </div>
+            <div class="item" data-icon="icon-warn">Icon item 3</div>
+            <div class="item" data-icon="icon-blank">Icon item 4</div>
+        </div>
+    </div>
+</body>
+</html>

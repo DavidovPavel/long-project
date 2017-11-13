@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wireframe</title>
+	<meta charset="utf-8" />
+    <link href="/Content/._markup/header/header-new.min.css" rel="stylesheet" />
+    <link href="/Content/._markup/typo/typo.css" rel="stylesheet" />
+    <link href="/Content/._markup/form/form.css" rel="stylesheet" />
+    <link href="/Content/._markup/dropdown/dropdown.css" rel="stylesheet" />
+    <link href="/Content/._markup/dialog/dialog.css" rel="stylesheet" />
+    <link href="/Content/._markup/data-icon/data-icon.css" rel="stylesheet" />
+    <link href="/Content/._markup/context/context.css" rel="stylesheet" />
+    <link href="/Content/._markup/blind/blind.css" rel="stylesheet" />
+    <link href="/Content/._markup/!DEV/app-v.0.1/master.css" rel="stylesheet" />
+    <script src="/js/dist/jquery.js"></script>
+    <script src="/Content/._markup/!DEV/app-v.0.1/app.js"></script>
+</head>
+<body>
+    <header>
+        <!-- NAV -->
+        <div class="nav-btn">
+            <span></span>
+        </div>
+        <!-- LOGO -->
+        <div class="logo compliance">
+            Compliance Check
+        </div>
+        <!-- TRAY -->
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation" class="active">
+                            <a href="/lang-ru-RU/db159/inquiry">Ru</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="/lang-en-US/db159/inquiry">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span>
+                </li>
+                <li class="tray--item case-block" style="">
+                    <span id="basket-btn" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                        <span class="badge basket-num">33</span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                    <div id="blind" class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">База данных:</span></div>
+                                <div class="right">ВебВерсия. Пустая </div>
+                            </div>
+                        </div>
+                        <div class="g-blind--controls">
+                            <button class="g-form--button small flat ghost-w" onclick="location.href='/account/login?returnUrl=%2flang-ru-RU%2fdb159%2finquiry%2finquiry'">Сменить базу данных</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">ABS\ISafronov</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">ABS\ISafronov</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/Manage" target="_blank">Профиль</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                <form action="/lang-ru-RU/db159/Account/LogOff" id="logoutForm" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="RcylMFxYT0R0IeVenNoS9Drkib6zQfqTa_C0N3Vt6s2FsfvYoQoxyQvM7XB8FP6uq-43BKNEWlLh1j88N_fAKTdkfHp_vcCJ1_lS5wUQDukxIMPsHgRgIsI2iDAn1OkW0">                                    <button class="g-form--button flat ghost-w small" onclick="javascript:document.getElementById('logoutForm').submit()">Выход</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="top-panel">
+            <h3 class="tac">Список заявок</h3>
+        </div>
+        <div class="g-toolbar">
+            <ul>
+                <li class="tlbr--fact text" id="new-chk">Создать новую проверку</li>
+                <li class="tlbr--search text">Поиск проверки</li>
+                <li class="right">
+                    <div class="g-dropdown--menu">
+                        <div class="g-dropdown--placeholder">
+                            <div class="item" data-icon="icon-all">Все заявки</div>
+                        </div>
+                        <div class="g-dropdown--container" style="display: none;">
+                            <div class="item selected">Показывать все</div>
+                            <div class="item">Показывать только мои</div>
+                        </div>
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="g-dropdown--menu">
+                        <div class="g-dropdown--placeholder">
+                            <div class="item" data-icon="icon-all">В работе</div>
+                        </div>
+                        <div class="g-dropdown--container" style="display: none;">
+                            <div class="item selected">Завершено</div>
+                            <div class="item">В работе</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="main-container">
+            <div class="g-form--new-check" id="new-check" style="display:none;">
+                <div class="row">
+                    <div class="grid--1-3">
+                        <span class="g-form--input">
+                            <input type="text" id="ID" class="g-form--input filled" placeholder="Наименование заявки" value="Новая заявка № 874" />
+                            <label for="ID">Наименование заявки</label>
+                        </span>
+                    </div>
+                    <div class="grid--1-3">
+                        <span class="g-form--input">
+                            <input type="text" id="RUBRIC" value="Без рубрики" disabled class="g-form--input filled" />
+                            <label for="RUBRIC">Рубрика</label>
+                            <i class="add rtl-2"></i>
+                            <i class="clear rtl-1"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-3">
+                        <span class="g-form--input">
+                            <input type="text" id="CODE" value="" class="g-form--input" placeholder="Код заявки"/>
+                            <label for="CODE">Код заявки</label>
+                        </span>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="row tar">
+                        <span data-icon="icon-clean">Очистить всю форму</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <button class="g-form--button left prev" id="cancel">Отмена</button>
+
+                    <button class="g-form--button right next">Сохранить</button>
+                </div>
+            </div>
+
+            <section class="form--search-inquiry" style="display:none;">
+                <div class="row">
+                    <div class="grid--1-1">
+                        <span class="g-form--input">
+                            <input type="text" value="" class="g-form--input" id="inputFilter" placeholder="Ключевое слово">
+                            <label for="inputFilter">Ключевое слово</label>
+                        </span>
+                    </div>
+                    <div class="grid--1-2 rubric-param">
+                        <span class="g-form--input"><input type="text" class="g-form--input " placeholder="Рубрика" value="" name="input-rubrics" disabled="disabled"><label>Рубрика</label><i class="rtl-1 more add"></i><i class="rtl-2 clear"></i></span>
+                    </div>
+                    <div class="grid--1-2">
+                        <div class="row">
+                            <div class="grid--1-2">
+                                <span class="g-form--input">
+                                    <input type="text" value="" class="g-form--input" id="input-exec" placeholder="Исполнитель">
+                                    <label for="input-exec">Исполнитель</label>
+                                </span>
+                            </div>
+                            <div class="grid--1-2">
+                                <span class="g-form--input">
+                                    <label for="re" class="g-label" style="display:none;">Результат</label>
+                                    <div class="g-dropdown--menu"><div class="g-dropdown--placeholder"><div class="item" data-icon="icon-all">Показать все</div></div><div class="g-dropdown--container"><div class="item" data-icon="icon-all">Показать все</div><div class="item" data-icon="icon-inwork">В работе</div><div class="item" data-icon="icon-finished">Завершено</div><div class="item" data-icon="icon-clock">Отложено</div><div class="item" data-icon="icon-archive">В архиве</div></div></div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="grid--1-2">
+                        <!--span class="tac db" style="color:#777;">Период</span-->
+                        <div class="row">
+                            <div class="grid--1-2">
+                                <span class="g-form--input">
+                                    <span id="datepickerFrom_wrapper" class="e-datetime-wrap e-widget e-ntouch"><span class="e-in-wrap e-box e-padding"><input type="text" id="datepickerFrom" class="g-form--input e-datetimepicker e-js e-input" tabindex="0" aria-atomic="true" aria-live="assertive" value="" aria-disabled="false" name="datepickerFrom" placeholder="Select datetime"><span class="e-select" aria-disabled="false"><span class="e-icon e-datetime" aria-label="select"></span></span></span></span>
+                                    <label class="g-label" for="datepickerFrom">от</label>
+                                </span>
+                            </div>
+                            <div class="grid--1-2">
+                                <span class="g-form--input">
+                                    <span id="datepickerTo_wrapper" class="e-datetime-wrap e-widget e-ntouch"><span class="e-in-wrap e-box e-padding"><input type="text" id="datepickerTo" class="g-form--input e-datetimepicker e-js e-input" tabindex="0" aria-atomic="true" aria-live="assertive" value="" aria-disabled="false" name="datepickerTo" placeholder="Select datetime"><span class="e-select" aria-disabled="false"><span class="e-icon e-datetime" aria-label="select"></span></span></span></span>
+                                    <label class="g-label" for="datepickerTo">до</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid--1-4">
+                        <span class="g-form--input">
+                            <!--<select id="types-filter"></select>-->
+                            <label for="typeFilter" style="display:none;">Искать</label>
+                            <span class="types-filter"></span>
+                        </span>
+                    </div>
+                    <div class="grid--1-4">
+                        <span class="g-form--input">
+                            <button id="startFilter" class="g-form--button right flat">Поиск</button>
+                        </span>
+                    </div>
+                </div>
+                <div class="options">
+                    <div class="row tar">
+                        <span role="button" class="clearForm"><svg class="icon icon-trash-s"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-trash-s"></use></svg>Очистить всю форму</span>
+                    </div>
+                </div>
+            </section>
+
+            <table style="margin:0;">
+                <thead>
+                    <tr>
+                        <th>Lorem</th>
+                        <th>Ipsum</th>
+                        <th>Dolor</th>
+                        <th>Sit</th>
+                        <th>Amet</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">300</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">250</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">800</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <!--<tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">90</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">45</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">4</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">68</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">62</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">68</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">62</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">68</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">62</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">68</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">62</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">68</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>
+                    <tr>
+                        <td>Item title by default</td>
+                        <td>Very long item description allowed here by default</td>
+                        <td>Some item value</td>
+                        <td class="tac">62</td>
+                        <td class="tar"><span data-icon="icon-loader">Action</span></td>
+                    </tr>-->
+                </tbody>
+            </table>
+        </div>
+    </main>
+    
+    
+    <footer>
+        <div class="step passed">
+            <span>1</span>
+            Создание заявки
+        </div>
+        <div class="step">
+            <span>2</span>
+            Создание объекта
+        </div>
+        <div class="step">
+            <span>3</span>
+            Настройка проверки
+        </div>
+        <div class="step">
+            <span>4</span>
+            Работа с результатами
+        </div>
+        <div class="step">
+            <span>5</span>
+            Итоги проверки
+        </div>
+    </footer>
+    <!--<aside>
+        <div class="control">
+            <i></i>
+        </div>
+        <ul class="side-nav">
+            <li>
+                <span>Compliance Check</span>
+                <ul>
+                    <li>
+                        <span>Источники поиска</span>
+                    </li>
+                    <li>
+                        <span>Библиотека запросов</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>-->
+</body>
+</html>

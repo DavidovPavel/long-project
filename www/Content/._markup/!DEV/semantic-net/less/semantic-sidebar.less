@@ -1,0 +1,301 @@
+.semantic-sidebar {
+  position: absolute;
+  width: 44px;
+  top:0;
+  left:0;
+  height: 100%;
+  background: #444;
+  transition: all linear 100ms;
+  &.active {
+    width:308px;
+    background: #f5f5f5;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.25);
+    .semantic--tool-settings {
+      display: block;
+    }
+  }
+  .hamburger {
+    width: 44px;
+    height: 44px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    background: #444;
+    transition: all linear 150ms;
+    float:left;
+    &.active {
+      span {transform: rotate(90deg);}
+    }
+    span {
+      width: 16px;
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      top:~"calc(50% - 1px)";
+      transition: all linear 100ms;
+      left:~"calc(50% - 8px)";
+      &:before {
+        content: '';
+        width: 16px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        top:-6px;
+        transition: all linear 250ms;
+      }
+      &:after {
+        content: '';
+        width: 16px;
+        height: 2px;
+        background: #fff;
+        position: absolute;
+        bottom:-6px;
+        transition: all linear 250ms;
+      }
+    }
+    &:hover {
+      background: #353535;
+      span {
+        &:before {
+          top:-7px;
+        }
+        &:after {
+          bottom:-7px;
+        }
+      }
+    }
+  }
+  .semantic-tools {
+    width: 44px;
+    position: absolute;
+    top:44px;
+    left:0;
+    height: ~"calc(100% - 44px)";
+    background: #444;
+    z-index: 200;
+    ul {
+      padding: 0;
+      margin: 0;
+      display: block;
+      li {
+        display: block;
+        position: relative;
+        list-style: none;
+        z-index: 250;
+        ul {
+          z-index: 250;
+          display: none;
+          transition: all linear 100ms;
+          position: absolute;
+          top:0;
+          left: 44px;
+          min-width: 132px;
+          li {float:left;}
+        }
+        &:hover {
+          ul {
+            display: block;
+          }
+        }
+        span {
+          height: 44px;
+          width: 44px;
+          background: #444;
+          display: block;
+          cursor: pointer;
+          position: relative;
+          &.active {
+            background: #666;
+          }
+          &:before {
+            content: '';
+            display: block;
+            background-image: url('../images/tools.svg');
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+            background-size:256px 22px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+          }
+          &:hover {
+            background: #333;
+          }
+          &.semantic-tools--zoom {
+            &:before {
+              background-position: 0 0;
+            }
+            &:after {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 0 8px 8px;
+              border-color: transparent transparent #999 transparent;
+              position: absolute;
+              right: 1px;
+              bottom: 1px;
+            }
+          }
+          &.semantic-tools--zoomout {
+            &:before {
+              background-position: -16px 0;
+            }
+          }
+          &.semantic-tools--zoomin {
+            &:before {
+              background-position: -32px 0;
+            }
+          }
+          &.semantic-tools--zoomfit {
+            &:before {
+              width: 22px;
+              height: 22px;
+              background-position: -48px 0;
+            }
+          }
+          &.semantic-tools--hand {
+            &:before {
+              background-position: -70px 0;
+            }
+          }
+          &.semantic-tools--editor {
+            &:before {
+              width: 12px;
+              height: 20px;
+              background-position: -86px 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .semantic--tool-select {
+    margin-bottom: 16px;
+  }
+  hr.ruller {
+    display: block;
+    margin: 15px 0;
+  }
+  .semantic--tool-appearance {
+    margin-bottom: 16px;
+    label {
+      margin-bottom: 8px;
+      display: inline-block;
+    }
+    input[type=checkbox] {
+          display: none;
+          & ~ label {
+            position: relative;
+            height: 1em;
+            padding-left: 24px;
+            display: inline-block;
+            margin: 5px 0;
+            vertical-align: bottom;
+            padding-top: 3px;
+            &:before {
+              display: block;
+              width: 15px;
+              height: 14px;
+              content: '';
+              border:1px #888 solid;
+              background: #fff;
+              position: absolute;
+              top:0;
+              left: 0;
+            }
+          }
+          &:checked {
+            & ~ label {
+              &:before{
+                background: #fff;
+                border-color: #85acac;
+              }
+              &:after {
+                content: '';
+                position: absolute;
+                background: url('../images/chck.svg');
+                width: 15px;
+                height: 14px;
+                top:-3px;
+                left:2px;
+              }
+            }
+          }
+        }
+  }
+  .semantic--tool-filter, .semantic--tool-form {
+    margin-bottom: 16px;
+    input[type="button"] {
+      width:113px;
+      padding:8px;
+      cursor: pointer;
+      text-align: center;
+      box-sizing: border-box;
+      background: #fff;
+      border:1px solid #888;
+      margin: 5px 0;
+      display: inline-block;
+      &:last-child  {
+        float:right;
+        display: block;
+      }
+    }
+  }
+  .semantic--tool-settings {
+    display: none;
+    margin-left: 44px;
+    .semantic--tool-editmode {
+      color:#fff;
+      background: #444;
+      height: 44px;
+      width: 100%;
+      position: relative;
+      label {
+        display: block;
+        position: absolute;
+        right: 56px;
+        top:50%;
+        transform: translateY(-50%);
+        color:#ccc;
+      }
+      span {
+        width: 35px;
+        cursor: pointer;
+        display: block;
+        height: 14px;
+        background: #666;
+        position: absolute;
+        top:50%;
+        right: 12px;
+        margin-top: -8px;
+        border-radius: 8px;
+        transition: all linear 200ms;
+        &:before {
+          width: 12px;
+          height: 12px;
+          content: '';
+          position: absolute;
+          top:1px;
+          left: 1px;
+          background: #fff;
+          border-radius: 50% ;
+          transition: all linear 200ms;
+        }
+        &.enabled {
+          background: #5b8cd6;
+          &:before {
+            top:1px;
+            left:22px;
+            transition: all linear 200ms;
+          }
+        }
+      }
+    }
+    .semantic--tool-viewmode {
+      padding: 12px;
+    }
+  }
+}

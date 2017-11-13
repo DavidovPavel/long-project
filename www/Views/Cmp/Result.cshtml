@@ -1,0 +1,37 @@
+﻿@using www
+@{
+    Layout = null;
+    var currentLang = ViewBag.CurrentLang;
+    var objectID = ViewBag.ObjectID;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title></title>
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+    </head>
+    <body>
+        <div id="List">
+    <div id="LoadResults">
+        <div style="text-align: right; padding:2px;">
+            <label>Варианты отображения:</label>
+            <select id="DisplayList" style="font-size:10px;"></select>
+        </div>
+        <table class="List"></table>
+    </div>
+    <div id="MapCanvas" class="Area"></div>
+    <div id="Diagram" class="Area"></div>
+</div>
+        <script data-main="/js/result" src="/js/libs/require/require.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        require.config(
+            {urlArgs: "v=1.1", config: {i18n: {locale: '@currentLang.ToLower()'}}});
+        define("objID", "@objectID");
+        define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+    </script>
+    </body>
+</html>

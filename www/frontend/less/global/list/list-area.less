@@ -1,0 +1,22 @@
+﻿
+/* список */
+.list-area {
+    border:solid 1px #d7d7d7;
+    overflow: auto;
+    & .icon-close { width:10px; height:10px; margin-left:6px; position:absolute; top:~"calc(50% - 5px)"; right:10px;}
+    & .item {
+        line-height:16px;white-space:nowrap;background-color:#f9f9f9;min-height:30px;border-bottom:solid 1px #e5e5e5;padding:6px 10px;position:relative;display:flex;justify-content:flex-start;
+        &:hover {background-color:@color-F5;color:@color-dark;}
+        &:last-child {border-bottom:0;}
+        & label {max-width:100%; text-overflow:ellipsis; overflow: hidden; padding-right:25px;margin: 5px 0;}
+        & .font-icon {margin-right:10px;}
+        & .to {padding:0 6px;width:100%;overflow:hidden;}    
+        &.se {
+            color: #333;background-color:#ffffff;
+            & .radio-button { 
+                border-color:#333; 
+                & span { background-color:#333; }
+            }
+        }
+    }
+}

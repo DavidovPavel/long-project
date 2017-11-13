@@ -1,0 +1,76 @@
+﻿<script type="x-template/underscore" id="semantic-scheme-tools">
+    <div id="tools-hamburger" class="hamburger"><span></span></div>
+    <div class="semantic-tools">
+        <ul>
+            <!--<li>
+                <span title="Zoom" class="semantic-tools--zoom"></span>
+                <ul>
+                    <li><span title="Zoom out" class="semantic-tools--zoomout"></span></li>
+                    <li><span title="Zoom in" class="semantic-tools--zoomin"></span></li>
+                    <li><span title="Fit to screen" class="semantic-tools--zoomfit"></span></li>
+                </ul>
+            </li>-->
+            <li><span title="Drag tool" class="semantic-tools--hand active"></span></li>
+            <!--<li><span title="Select tool" class="semantic-tools--editor"></span></li>-->
+        </ul>
+    </div>
+    <div class="semantic--tool-settings">
+
+        <!--<div class="semantic--tool-editmode">
+            <label>Edit mode</label><span id="editmode"></span>
+        </div>-->
+
+        <div class="semantic--tool-viewmode edit" style="display:none;">
+            <p><%- Resources.uc %></p>
+            <p><a href="<%- Resources.hashurl %>"><%- Resources.ea %></a></p>
+        </div>
+
+        <div class="semantic--tool-viewmode">
+
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.layout %></label>
+                <div id="layout"></div>
+            </div>
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.tlayout %></label>
+                <div id="astree"></div>
+            </div>
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.level %></label>
+                <div id="level"></div>
+            </div>
+
+            <!--<div class="semantic--tool-appearance">
+                <label><%- Resources.Filters %></label>
+                <div>
+                    <input type="checkbox" id="id1">
+                    <label for="id1"><%- Resources.snfname %></label>
+                </div>
+                <div>
+                    <input type="checkbox" id="id2">
+                    <label for="id2"><%- Resources.snshowlf %></label>
+                </div>
+                <div>
+                    <input type="checkbox" id="id3">
+                    <label for="id3"><%- Resources.snhidemo %></label>
+                </div>
+            </div>-->
+
+            <!--<div class="semantic--tool-filter">
+                <div>
+                    <label><%- Resources.Filterbytype %></label>
+                </div>
+                <input type="button" name="objects" value="<%- Resources.selectTree %>">
+                <input type="button" name="clear" value="<%- Resources.clear %>">
+                <div class="g-form--filter"></div>
+            </div>-->
+
+            <hr class="ruller">
+
+            <div class="semantic--tool-form">
+                <input type="button" name="reload" value="<%- Resources.refresh %>">
+                <input type="button" name="export" value="<%- Resources.download %>">
+            </div>
+        </div>
+    </div>
+</script>

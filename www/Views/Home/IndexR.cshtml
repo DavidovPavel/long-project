@@ -1,0 +1,17 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <form action="@Html.Raw(ViewBag.RealUrl)" method="get" name="redirect"></form>
+    <script> document.forms['redirect'].submit() </script>
+</body>
+</html>

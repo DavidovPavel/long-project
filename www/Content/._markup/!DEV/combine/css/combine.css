@@ -1,0 +1,180 @@
+﻿@import url('../../../../anbr/application.css');
+body {
+  padding: 80px 0 0;
+  margin: 0;
+  font-size: 13px;
+  padding-top: 44px;
+  background: #f5f5f5;
+}
+header {
+  width: 100%;
+  height: 44px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background: #444;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+header span {
+  font-size: 20px;
+  font-weight: 300;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  line-height: normal;
+}
+header i {
+  float: right;
+  font-size: 11px;
+  color: #fff;
+  line-height: 220%;
+}
+h1 {
+  padding-top: 80px;
+  font-weight: 300;
+  font-size: 32px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: default;
+  color: #444;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.description {
+  padding: 10px 0;
+  font-size: 16px;
+  font-style: italic;
+  color: #888;
+}
+.relations,
+.snippet {
+  margin: 10px 0;
+  padding: 10px;
+  color: #0a77d9;
+  border: 1px #666 solid;
+}
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #378dda;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+.btn:hover,
+.btn:focus {
+  text-decoration: none;
+  color: #fff;
+  background: #427bad;
+}
+.btn:active {
+  top: 1px;
+}
+.wrapper {
+  margin: 80px auto;
+  width: 1170px;
+  padding: 40px;
+  background: #fff;
+  border: 1px #ccc solid;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.25);
+}
+.wrapper ul {
+  padding: 0;
+  margin: -5px 0 0;
+}
+.wrapper ul li {
+  display: block;
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+}
+.titles {
+  background: #ededed;
+  font-size: 16px;
+  color: #121212;
+  text-transform: capitalize;
+  padding: 12px 20px;
+  cursor: pointer;
+  border: 1px #ccc solid;
+}
+.titles:before {
+  width: 16px;
+  height: 16px;
+  background: #cacaca;
+  position: absolute;
+  content: '';
+  top: 15px;
+  right: 15px;
+  border-radius: 50%;
+}
+.titles:after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #333;
+  border-right: 1px solid #333;
+  position: absolute;
+  transform: rotate(135deg);
+  top: 19px;
+  right: 20px;
+}
+.titles.active {
+  border: 1px #666 solid;
+  background: #666;
+  color: #fff;
+}
+.titles.active:before {
+  background: #555;
+}
+.titles.active:after {
+  transform: rotate(-45deg);
+  top: 21px;
+  border-color: #eee;
+}
+.contents {
+  display: none;
+  border: 1px #666 solid;
+  padding: 20px;
+}
+.combine-nav {
+  position: fixed;
+  display: block;
+  top: 130px;
+  width: 240px;
+  background: #333;
+  left: calc(50% - 120px);
+  z-index: 0;
+  transform: translateX(704px);
+}
+.combine-nav > ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.combine-nav > ul > li {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.combine-nav > ul > li > a {
+  color: #fff;
+  padding: 11px 20px;
+  display: block;
+  text-decoration: none;
+  border-bottom: 1px solid #666;
+  transition: all linear 150ms;
+}
+.combine-nav > ul > li > a:hover {
+  background: #444;
+}

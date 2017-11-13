@@ -1,0 +1,708 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.GlobalBase.Common</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.GlobalBase.Common.DatabaseInfo">
+            <summary>
+            Описание базы данных. 
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.#ctor">
+            <summary>
+            Создает описание базы данных. 
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.GetHashCode">
+            <summary>
+            Возвращает хеш-код. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Nullable{System.Int32})">
+            <summary>
+            Создает описание базы данных. 
+            </summary>
+            <param name="database_id">Идентификатор базы данных</param>
+            <param name="databaseName">Системное наименование базы данных</param>
+            <param name="serverName">Сервер</param>
+            <param name="displayName">Наименование базы данных</param>
+            <param name="description">Описание</param>
+            <param name="virtualDatabaseID">Код</param>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.Database_id">
+            <summary>
+            Идентификатор базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DatabaseName">
+            <summary>
+            Системное наименование базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ServerName">
+            <summary>
+            Сервер, которому принадлежит база данных (имя экземпляра ms sql server)
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DisplayName">
+            <summary>
+            Наименование базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.Description">
+            <summary>
+            Описание базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.MonitoringObjectEnable">
+            <summary>
+            Признак того, что для базы активировано автоматическое извлечение объектов мониторинга 
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.SplittingDocumentEnable">
+            <summary>
+            Разбивать ли документы конкретной базы данных на предложения 
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DatabaseCode">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DatabaseUserAccess">
+            <summary>
+            Доступ к БД
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.VirtualDatabaseID">
+            <summary>
+            Виртуальный идентификатор БД
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.AutoExtractKnowledge">
+            <summary>
+            Извлекать ли знания автоматически
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.AutoExtractNewEntities">
+            <summary>
+            Извлекать ли новые сущности автоматически 
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.FactExtractionMode">
+            <summary>
+            Режим создания фактов
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ObjectDuplicateMode">
+            <summary>
+            Режим создания объектов
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.FactDuplicateMode">
+            <summary>
+            Режим дублирования фактов
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractPersons">
+            <summary>
+            Извлекать Персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractOrganizations">
+            <summary>
+            Извлекать Организации
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractRegions">
+            <summary>
+            Извлекать Регионы
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractObjects">
+            <summary>
+            Извлекать Объекты
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractDates">
+            <summary>
+            Извлекать Даты
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.ExtractMoney">
+            <summary>
+            Извлекать Денежные суммы
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DatabaseUserAccessStr">
+            <summary>
+            Строковая интерпретация доступа к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.WebScraperAddress">
+            <summary>
+            Web-Scraper адрес 
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Строковое представление.</returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.CompareTo(System.Object)">
+            <summary>
+            Сравнивает БД.
+            </summary>
+            <param name="obj">БД</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfo.Equals(System.Object)">
+            <summary>
+            Проверяет на равенство. 
+            </summary>
+            <param name="obj">БД</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.Deleted">
+            <summary>
+            Удалена
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.AutoFolder">
+            <summary>
+            Автопапка
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.MediaFolder">
+            <summary>
+            Медиапапка
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DatabaseInfo.DefaulLanguageId">
+            <summary>
+            Язык БД
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.DatabaseUserAccess">
+            <summary>
+            Вид доступа к БД. 
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DatabaseUserAccess.Full">
+            <summary>
+            Полный доступ
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DatabaseUserAccess.ReadOnly">
+            <summary>
+            Только чтение
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DatabaseUserAccess.Denied">
+            <summary>
+            Нет доступа
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.FactExtractionMode">
+            <summary>
+            Режим извлечения фактов.
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.FactExtractionMode.Always">
+            <summary>
+            Создавать всегда
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.FactExtractionMode.IfInterestObjectsMentioned">
+            <summary>
+            Создавать если внутри факта есть объекты интереса 
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.CheckForDuplicatesMode">
+            <summary>
+            Вид проверки на дубли при создании объектов. 
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.CheckForDuplicatesMode.NoCheck">
+            <summary>
+            Не проверять
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.CheckForDuplicatesMode.CheckOnlyLinkedToDoc">
+            <summary>
+            Проверять среди объектов, связанных с текущим документом
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.CheckForDuplicatesMode.CheckAllDatabase">
+            <summary>
+            Проверять среди всех объектов
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.EndPoint">
+            <summary>
+            Описание точки доступа
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.EndPoint.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.EndPoint.#ctor(ANBR.GlobalBase.Common.EndPointType,System.String)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="endPoinType">Тип конечной точки</param>
+            <param name="endPointUrl">Адрес конечной точки</param>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPoint.EndPointType">
+            <summary>
+            Тип конечной точки
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPoint.EndPointUrl">
+            <summary>
+            Адрес конечной тички
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.EndPointService">
+            <summary>
+            Статический класс формирующий адреса конечных точек  всех служб семантического архива
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.EndPointService.GetEndPointName(ANBR.GlobalBase.Common.EndPointType,ANBR.GlobalBase.Common.EndPointProtocolType,System.String,System.Int32)">
+            <summary>
+            Формирует адрес конечной точки по ее типу и имени сервера.
+            </summary>
+            <param name="endPointType">Тип конечной точки</param>
+            <param name="endPointProtocolType">Протокол взаимодействия с конечной точкой</param>
+            <param name="machineName">Имя сервера</param>
+            <param name="databaseId">Идентификатор базы данных</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.FileDescription">
+            <summary>
+            Класс с данными из файла-описателя
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.DocumentSource">
+            <summary>
+            Источник документа
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.Subscriber">
+            <summary>
+            Кем подписан
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.OutcomingNumber">
+            <summary>
+            Изходящий номер
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.IncomingNumber">
+            <summary>
+            Входящий номер
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.SubscriptDate">
+            <summary>
+            Дата подписания
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.Stamp">
+            <summary>
+            Статус доступа к документу
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.Resolution">
+            <summary>
+            Резолюция
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.Maintenance">
+            <summary>
+            Документ подлежит обычной обработке
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.FileDescription.Bases">
+            <summary>
+            Список баз , в котоьрые должен попасть документ
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DocumentStamp.NoSecret">
+            <summary>
+            Несекретно
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DocumentStamp.Restricted">
+            <summary>
+            ДСП
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DocumentStamp.Secret">
+            <summary>
+            секретно
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.DocumentStamp.TopSecret">
+            <summary>
+            Совершенно секретно
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DocSource.ExtSourceId">
+            <summary>
+            Внешний идентификатор источника
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.DocSource.SourceName">
+            <summary>
+            Наименование источника
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.FormatDescription">
+            <summary>
+            Описание формата файла
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.FormatDescription.FormatName">
+            <summary>
+            Название формата файла
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.FormatDescription.FormatGroupName">
+            <summary>
+            Название группы форматов файла
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.FormatDescription.FormatExtension">
+            <summary>
+            Расширение файла
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.DatabaseInfoProvider">
+            <summary>
+            Статический класс для доступа к списку баз данных
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.DatabaseInfoProvider.GetDatabasesInfo(System.String,System.String,ANBR.Common.Security.AuthenticationType)">
+            <summary>
+            Подключется к службе глобальной базы данных и возвращает список баз
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <param name="password">Пароль </param>
+            <param name="authenticationType">Тип идентификации</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.GlobalDatabaseClientProxy.GetDatabaseList">
+            <summary>
+            Получить список зарегистрированных баз данных на сервере
+            </summary>
+            <returns></returns>,
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ANBR.GlobalBase.Common.GlobalDatabaseClientProxy.GetEndPoints(System.String,ANBR.GlobalBase.Common.EndPointProtocolType)" -->
+        <!-- Badly formed XML comment ignored for member "M:ANBR.GlobalBase.Common.GlobalDatabaseClientProxy.GetEndPointsByDBID(System.Int32,ANBR.GlobalBase.Common.EndPointProtocolType)" -->
+        <member name="M:ANBR.GlobalBase.Common.GlobalDatabaseClientProxy.GetAccessDatabases">
+            <summary>
+            Получить список баз данных, на которые пользователь имеет права
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.GlobalDatabaseClientProxy.GetDatabaseInfo(System.Int32)">
+            <summary>
+            Возвращает информацию о базе данных
+            </summary>
+            <param name="databaseId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.EndPointType">
+            <summary>
+            Типы WCF точек доступа системы
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Sources">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия ISourceService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.SemanticNet">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия ISemanticNetService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.ObjectModel">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IObjectService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.QueryModel">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IQueryService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.MetaModel">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IMetaModel
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Dictionary">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IDictionaryService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Highlighter">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IHighlighterService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Reporting">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IReportingService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Alarms">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IAlarmService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.CartService">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия ICartService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.EventerService">
+            <summary>
+            Точка доступа, реализующая контракт  взаимодествия IEventerService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Spark">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия ISparkService
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.ServiceSearchMonitoredObjects">
+            <summary>
+            Точка доступа , реализующая контракт взаимодествия IServiceSearchMonitoredObjects
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointType.Paint">
+            <summary>
+             Точка доступа , реализующая контракт взаимодествия IPaint
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.EndPointProtocolType">
+            <summary>
+            Протоколы WCF взаимодействия клиента и сервера 
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointProtocolType.NetTcp">
+            <summary>
+            Net.Tcp
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointProtocolType.NetPeerTcp">
+            <summary>
+            NetPeerTcp
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointProtocolType.NetNamed">
+            <summary>
+            Именнованные каналы
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointProtocolType.WSHttp">
+            <summary>
+            HTTP
+            </summary>
+        </member>
+        <member name="F:ANBR.GlobalBase.Common.EndPointProtocolType.BasicHttp">
+            <summary>
+            Двунаправленный (с возможностью обратных вызовов) HTTP
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetDatabaseList">
+            <summary>
+            Получить список зарегистрированных баз данных на сервере
+            </summary>
+            <returns>Список объектов DatabaseInfo с описание баз данных</returns>,
+            <see cref="T:ANBR.GlobalBase.Common.DatabaseInfo"/>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetEndPoints(System.String,ANBR.GlobalBase.Common.EndPointProtocolType)">
+            <summary>
+            Получить список точек доступа для работы с БД
+            </summary>
+            <param name="databasename">Системное имя базы данных</param>
+            <param name="endPointProtocolType">Тип протокола взаимодействия, для которого возвращать точки доступа</param>
+            <returns>Список доступный конечных точек в виде классов EndPoint</returns>
+            <see cref="T:ANBR.GlobalBase.Common.DatabaseInfo"/>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetEndPointsByDBID(System.Int32,ANBR.GlobalBase.Common.EndPointProtocolType)">
+            <summary>
+            Получить список точек доступа для работы с БД
+            </summary>
+            <param name="databaseId">Системное имя базы данных</param>
+            <param name="endPointProtocolType">Тип протокола взаимодействия, для которого возвращать точки доступа</param>
+            <returns>Список доступный конечных точек в виде классов EndPoint</returns>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetAccessDatabases">
+            <summary>
+            Получить список баз данных, на которые пользователь имеет права
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetDatabaseInfo(System.Int32)">
+            <summary>
+            Возвращает информацию о базе данных
+            </summary>
+            <param name="databaseId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetDatabaseInfo(System.String)">
+            <summary>
+            Возвращает информацию о базе данных
+            </summary>
+            <param name="databaseName">Наименование или код базы данных</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.CreateDatabase(ANBR.GlobalBase.Common.DatabaseInfo)">
+            <summary>
+            Создать новую базу данных Семантического архива
+            </summary>
+            <param name="databaseInfo">Описание вновь создаваемой базы данных</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.DeleteDatabase(System.Int32)">
+            <summary>
+            Удалить базу данных
+            </summary>
+            <param name="id">Идентификатор базы данных</param>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.UpdateDatabase(ANBR.GlobalBase.Common.DatabaseInfo)">
+            <summary>
+            Обновить информацию о базе данных
+            </summary>
+            <param name="databaseInfo">Информация о базе данных. </param>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.TestChannel">
+            <summary>
+            Метод для тестирования канала связи клиента со службой. 
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetDatabaseIdByCode(System.String)">
+            <summary>
+            Возвращает идентификатор базы данных по ее коду.
+            </summary>
+            <param name="databaseCode">Код базы данных</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetUserRightsInfo(System.Int32)">
+            <summary>
+            Возвращает список пользователей, у которых есть права доступа к базе данных с идентификатором. 
+            </summary>
+            <param name="databaseId"></param>
+            <returns></returns>
+            <see cref="T:ANBR.GlobalBase.Common.UserRightInfo"/>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.AddUser(System.String,System.String)">
+            <summary>
+            Создать нового пользователя. Попытка создания пользователя с ранее зарегистрированным accountName вызовет ошибку.
+            </summary>
+            <param name="accountName">Доменное имя пользователя в формате DOMAIN\USERNAME</param>
+            <param name="userName">Экранное (ФИО) имя пользователя</param>
+            <returns>Идентификатор созданного пользователя.</returns>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.DeleteUser(System.Int32)">
+            <summary>
+            Удалить пользователя по идентификатору.
+            </summary>
+            <param name="userId">Идентификатор пользователя</param>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.AccessUserToDatabase(System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Дать/убрать права пользователя на доступ к базе данных.
+            </summary>
+            <param name="userId">Идентификатор пользователя</param>
+            <param name="databaseId">Идентификатор базы данных</param>
+            <param name="access">true - дать право на подключения, false - забрать право на подключение</param>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.GetAllDatabaseList">
+            <summary>
+            Вернуть список всех баз на сервере
+            </summary>
+            <returns>Список баз данных в виде классов DatabaseInfo</returns>
+            <see cref="T:ANBR.GlobalBase.Common.DatabaseInfo"/>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.EditUser(ANBR.GlobalBase.Common.UserInfo)">
+            <summary>
+            Изменение данных о пользователе
+            </summary>
+            <param name="userInfo"></param>
+            <see cref="T:ANBR.GlobalBase.Common.UserInfo"/>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.Login">
+            <summary>
+            Подключиться к системе.
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.Logout">
+            <summary>
+            Отключиться от системы
+            </summary>
+        </member>
+        <member name="M:ANBR.GlobalBase.Common.IGlobaldatabase.IsDbAdmin">
+            <summary>
+            Проверка, является ли данный пользователь администратором баз семантического архива()
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.UserRightInfo">
+            <summary>
+            Описание прав данных пользоваетля на базу данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserRightInfo.UserInfo">
+            <summary>
+            Информация о пльзователе
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserRightInfo.DatabaseID">
+            <summary>
+            Идентификатор базы данных
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserRightInfo.AccessType">
+            <summary>
+            Тип доступа
+            </summary>
+            <see cref="T:ANBR.GlobalBase.Common.DatabaseUserAccess"/>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserRightInfo.HasRights">
+            <summary>
+            Признак наличия/отсутствия 
+            </summary>
+        </member>
+        <member name="T:ANBR.GlobalBase.Common.UserInfo">
+            <summary>
+            Информация о пользователе
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserInfo.UserId">
+            <summary>
+            Идентификатор пользователя
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserInfo.AccountName">
+            <summary>
+            Доменное имя пользователя
+            </summary>
+        </member>
+        <member name="P:ANBR.GlobalBase.Common.UserInfo.UserName">
+            <summary>
+            Экранное имя пользователя
+            </summary>
+        </member>
+    </members>
+</doc>

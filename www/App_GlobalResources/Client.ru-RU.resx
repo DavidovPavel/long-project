@@ -1,0 +1,793 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addOrganization" xml:space="preserve">
+    <value>Добавить организацию</value>
+  </data>
+  <data name="addPerson" xml:space="preserve">
+    <value>Добавить персону</value>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>Возраст</value>
+  </data>
+  <data name="browseproperties" xml:space="preserve">
+    <value>Просмотреть свойства</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>Очистить</value>
+  </data>
+  <data name="Clearall" xml:space="preserve">
+    <value>Очистить все</value>
+  </data>
+  <data name="create" xml:space="preserve">
+    <value>Создать</value>
+  </data>
+  <data name="Dateofbirthunknown" xml:space="preserve">
+    <value>Дата рождения неизвестна</value>
+  </data>
+  <data name="Descriptionofparameters" xml:space="preserve">
+    <value>Описание параметра</value>
+  </data>
+  <data name="enter" xml:space="preserve">
+    <value>Войти</value>
+  </data>
+  <data name="exactdateofbirth" xml:space="preserve">
+    <value>Точная дата рождения</value>
+  </data>
+  <data name="Filterbytype" xml:space="preserve">
+    <value>Фильтр по типам</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Найти</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>от</value>
+  </data>
+  <data name="fullScreen" xml:space="preserve">
+    <value>Во весь экран</value>
+  </data>
+  <data name="graph" xml:space="preserve">
+    <value>Граф</value>
+  </data>
+  <data name="hello" xml:space="preserve">
+    <value>Здравствуйте</value>
+  </data>
+  <data name="inputdate" xml:space="preserve">
+    <value>Дата ввода</value>
+  </data>
+  <data name="level" xml:space="preserve">
+    <value>Уровень</value>
+  </data>
+  <data name="logOff" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="nameofcompany" xml:space="preserve">
+    <value>Наименование компании</value>
+  </data>
+  <data name="newWindow" xml:space="preserve">
+    <value>В новом окне</value>
+  </data>
+  <data name="objectInformation" xml:space="preserve">
+    <value>Информация об объекте</value>
+  </data>
+  <data name="passport" xml:space="preserve">
+    <value>Паспорт</value>
+  </data>
+  <data name="patronymic" xml:space="preserve">
+    <value>Отчество</value>
+  </data>
+  <data name="Previousname" xml:space="preserve">
+    <value>Предыдущая фамилия</value>
+  </data>
+  <data name="properties" xml:space="preserve">
+    <value>Свойства</value>
+  </data>
+  <data name="report" xml:space="preserve">
+    <value>Отчет</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="searchResults" xml:space="preserve">
+    <value>Результаты поиска</value>
+  </data>
+  <data name="Searchwiththesynonyms" xml:space="preserve">
+    <value>Искать с учетом синонимов</value>
+  </data>
+  <data name="semanticArchive" xml:space="preserve">
+    <value>Семантический архив</value>
+  </data>
+  <data name="semanticnet" xml:space="preserve">
+    <value>Семантическая сеть</value>
+  </data>
+  <data name="surname" xml:space="preserve">
+    <value>Фамилия</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>до</value>
+  </data>
+  <data name="tree" xml:space="preserve">
+    <value>Дерево</value>
+  </data>
+  <data name="treeТypes" xml:space="preserve">
+    <value>Дерево типов</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="viewadescription" xml:space="preserve">
+    <value>Просмотреть описание</value>
+  </data>
+  <data name="Yearofbirth" xml:space="preserve">
+    <value>Год рождения</value>
+  </data>
+  <data name="addSearchParam" xml:space="preserve">
+    <value>Параметры поиска</value>
+  </data>
+  <data name="searchBySource" xml:space="preserve">
+    <value>Поиск по источникам</value>
+  </data>
+  <data name="Docs" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="Facts" xml:space="preserve">
+    <value>Факты</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Содержимое</value>
+  </data>
+  <data name="strnet" xml:space="preserve">
+    <value>Структура сети</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>История просмотра объектов</value>
+  </data>
+  <data name="N" xml:space="preserve">
+    <value>Нет данных...</value>
+  </data>
+  <data name="gotoobject" xml:space="preserve">
+    <value>Перейти к объекту</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>Сообщение</value>
+  </data>
+  <data name="deleteItem" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="editItem" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="restoreItem" xml:space="preserve">
+    <value>Вернуть</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="download" xml:space="preserve">
+    <value>Выгрузить</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>Оригинал документа</value>
+  </data>
+  <data name="preview" xml:space="preserve">
+    <value>Просмотреть</value>
+  </data>
+  <data name="upload" xml:space="preserve">
+    <value>Загрузить</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>Профили</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="addDoc" xml:space="preserve">
+    <value>Добавить документ</value>
+  </data>
+  <data name="addElement" xml:space="preserve">
+    <value>Добавить элемент</value>
+  </data>
+  <data name="addFact" xml:space="preserve">
+    <value>Добавить факт </value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Запустить</value>
+  </data>
+  <data name="MenageProfiles" xml:space="preserve">
+    <value>Управление профилями</value>
+  </data>
+  <data name="Phrase" xml:space="preserve">
+    <value>Фраза</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>Обновить</value>
+  </data>
+  <data name="translate" xml:space="preserve">
+    <value>Перевести</value>
+  </data>
+  <data name="filerByТypes" xml:space="preserve">
+    <value>Фильтр по типам</value>
+  </data>
+  <data name="serverMessage" xml:space="preserve">
+    <value>Серверное сообщение</value>
+  </data>
+  <data name="Extract" xml:space="preserve">
+    <value>Выписки</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTemplate" xml:space="preserve">
+    <value>Автовыделение фактов "{0}"</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Finished" xml:space="preserve">
+    <value>Завершено</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Indexed" xml:space="preserve">
+    <value>Проиндексировано</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Processing" xml:space="preserve">
+    <value>Обрабатывается</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Splitted" xml:space="preserve">
+    <value>По предложениям разбито</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Started" xml:space="preserve">
+    <value>Начало</value>
+  </data>
+  <data name="BackgroundThread_RobotsFinished" xml:space="preserve">
+    <value>Роботы завершили работу</value>
+  </data>
+  <data name="Basket" xml:space="preserve">
+    <value>Корзина</value>
+  </data>
+  <data name="avaDatabase" xml:space="preserve">
+    <value>Доступные для подключения базы данных</value>
+  </data>
+  <data name="avaProjects" xml:space="preserve">
+    <value>Доступные для подключения проекты</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Подключиться</value>
+  </data>
+  <data name="selWorkArea" xml:space="preserve">
+    <value>Выберите параметры рабочей зоны</value>
+  </data>
+  <data name="workGroups" xml:space="preserve">
+    <value>Рабочие группы</value>
+  </data>
+  <data name="Youlogin" xml:space="preserve">
+    <value>Ваш логин</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="LogoPath" xml:space="preserve">
+    <value>/images/ru/logo.gif</value>
+  </data>
+  <data name="ContentCollection_Rubrics" xml:space="preserve">
+    <value>Рубрики</value>
+  </data>
+  <data name="ModeView" xml:space="preserve">
+    <value>Режим просмотра</value>
+  </data>
+  <data name="toedit" xml:space="preserve">
+    <value>Перейти к редактированию</value>
+  </data>
+  <data name="addVitrin" xml:space="preserve">
+    <value>Добавить витрину</value>
+  </data>
+  <data name="productsList" xml:space="preserve">
+    <value>Список продуктов</value>
+  </data>
+  <data name="CheckNote" xml:space="preserve">
+    <value>На основе введенных данных обнаружено - &lt;span id='count'&gt;0&lt;/span&gt; досье. Для повторного запуска проверки в рамках существующего объекта, выберете его , после чего перейдите к выбору источников.</value>
+  </data>
+  <data name="Checks" xml:space="preserve">
+    <value>Проверки</value>
+  </data>
+  <data name="Copying" xml:space="preserve">
+    <value>Выписки</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Статистика</value>
+  </data>
+  <data name="ABS_ArtKeyPhrases" xml:space="preserve">
+    <value>Ключевые фразы по умолчанию</value>
+  </data>
+  <data name="variantView" xml:space="preserve">
+    <value>Варианты отображения</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Детали</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Отменить</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Вернуться</value>
+  </data>
+  <data name="anbr" xml:space="preserve">
+    <value>Аналитические Бизнес Решения</value>
+  </data>
+  <data name="typeContent" xml:space="preserve">
+    <value>Тип содержимого</value>
+  </data>
+  <data name="SemNet_AutoTabName" xml:space="preserve">
+    <value>Автоматическая раскладка</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Информация по объекту</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Исходные данные проверки</value>
+  </data>
+  <data name="Form" xml:space="preserve">
+    <value>Форма</value>
+  </data>
+  <data name="toolsShowOriginalDoc" xml:space="preserve">
+    <value>оригинал документа</value>
+  </data>
+  <data name="toolsToFullView" xml:space="preserve">
+    <value>полный вид</value>
+  </data>
+  <data name="toolsToOriginalText" xml:space="preserve">
+    <value>вернуться к оригиналу</value>
+  </data>
+  <data name="toolsToShortView" xml:space="preserve">
+    <value>краткий вид</value>
+  </data>
+  <data name="toolsTranslate" xml:space="preserve">
+    <value>перевести</value>
+  </data>
+  <data name="CartDefaultName" xml:space="preserve">
+    <value>По-умолчанию</value>
+  </data>
+  <data name="toolsAddToCart" xml:space="preserve">
+    <value>добавить в корзину</value>
+  </data>
+  <data name="toolsGoToCart" xml:space="preserve">
+    <value>перейти к корзине</value>
+  </data>
+  <data name="AllChecks" xml:space="preserve">
+    <value>Все проверки</value>
+  </data>
+  <data name="ChangeDatabase" xml:space="preserve">
+    <value>Сменить базу данных</value>
+  </data>
+  <data name="Checklist" xml:space="preserve">
+    <value>Список проверок</value>
+  </data>
+  <data name="CheckOrg" xml:space="preserve">
+    <value>Проверка организации</value>
+  </data>
+  <data name="CheckPerson" xml:space="preserve">
+    <value>Проверка персоны</value>
+  </data>
+  <data name="DataBase" xml:space="preserve">
+    <value>База данных</value>
+  </data>
+  <data name="MyChecks" xml:space="preserve">
+    <value>Мои проверки</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Проект</value>
+  </data>
+  <data name="SearchChecks" xml:space="preserve">
+    <value>Поиск проверок</value>
+  </data>
+  <data name="slogan" xml:space="preserve">
+    <value>Узнать больше</value>
+  </data>
+  <data name="soon" xml:space="preserve">
+    <value>скоро</value>
+  </data>
+  <data name="reports" xml:space="preserve">
+    <value>Отчеты</value>
+  </data>
+  <data name="CheckStatus" xml:space="preserve">
+    <value>Ход проверки</value>
+  </data>
+  <data name="SemanticConnection" xml:space="preserve">
+    <value>Семантическая схема</value>
+  </data>
+  <data name="SourceData" xml:space="preserve">
+    <value>Исходные данные</value>
+  </data>
+  <data name="TitleLinks" xml:space="preserve">
+    <value>Связи</value>
+  </data>
+  <data name="TitleTranslate" xml:space="preserve">
+    <value>Перевод</value>
+  </data>
+  <data name="Editing" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="myDashboard" xml:space="preserve">
+    <value>Мои витрины</value>
+  </data>
+  <data name="shareDashboard" xml:space="preserve">
+    <value>Демонстрация</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Результаты</value>
+  </data>
+  <data name="Report_UploadReportsArchived" xml:space="preserve">
+    <value>Создание архива отчетов началось.
+Это может занять несколько минут. Когда работа будет закончена вы будете уведомлены</value>
+  </data>
+  <data name="repOrganizationFactsByChapter" xml:space="preserve">
+    <value>Факты по разделам досье</value>
+  </data>
+  <data name="repOrganizationOnlineDataByChapter" xml:space="preserve">
+    <value>Выписки по компании</value>
+  </data>
+  <data name="repPersonFactsByChapter" xml:space="preserve">
+    <value>Факты по разделам досье</value>
+  </data>
+  <data name="repPersonOnlineDataByChapter" xml:space="preserve">
+    <value>Выписки по персоне</value>
+  </data>
+  <data name="BackgroundThread_r13_EmailBody" xml:space="preserve">
+    <value>Добрый день! 
+&lt;br&gt;
+Вашему вниманию представлен архив отчетов, автоматически созданный с помощью системы «Семантический архив». 
+&lt;br&gt;
+Отчеты содержат сведения по проверке «{0}» на {1}
+&lt;br&gt;
+Результаты во вложении</value>
+  </data>
+  <data name="BackgroundThread_r13_EmailTitle" xml:space="preserve">
+    <value>Отчеты по проверке «{0}» на {1}</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgBody" xml:space="preserve">
+    <value>&lt;p&gt;&lt;a href="{0}"&gt;Архив отчетов&lt;/a&gt; по "{1}" готов для загрузки&lt;/p&gt;</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgTitle" xml:space="preserve">
+    <value>Архив отчетов готов для загрузки ({0})</value>
+  </data>
+  <data name="Report_UploadReportsArchived_0" xml:space="preserve">
+    <value>Создание архива отчетов началось. После этого он будет отправлен на заданный e-mail.
+Это может занять несколько минут. Когда работа будет закончена вы будете уведомлены</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgBodyEmail" xml:space="preserve">
+    <value>&lt;p&gt;&lt;a href="{0}"&gt;Архив отчетов&lt;/a&gt; по "{1}" готов для загрузки&lt;br&gt;Копия архива отправлена на заданный почтовый ящикк&lt;/p&gt;</value>
+  </data>
+  <data name="WorkGroup" xml:space="preserve">
+    <value>Рабочая гуппа</value>
+  </data>
+  <data name="Export_GenerateDocsDigest" xml:space="preserve">
+    <value>Генерация дайджеста документов началась.
+Это может занять несколько минут. Когда работа будет закончена вы будете уведомлены</value>
+  </data>
+  <data name="Export_GenerateDocsDigest_AlertBody" xml:space="preserve">
+    <value>&lt;p&gt;Генерация дайджеста документов завершена. &lt;br&gt;&lt;a href='{0}'&gt;Загрузить дайджест&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Export_GenerateDocsDigest_AlertMsg" xml:space="preserve">
+    <value>Генерация дайджеста документов завершена</value>
+  </data>
+  <data name="Export_GenerateFactDigest" xml:space="preserve">
+    <value>Генерация дайджеста фактов началась.
+Это может занять несколько минут. Когда работа будет закончена вы будете уведомлены</value>
+  </data>
+  <data name="Export_GenerateFactDigest_AlertBody" xml:space="preserve">
+    <value>&lt;p&gt;Генерация дайджеста фактов завершена. &lt;br&gt;&lt;a href='{0}'&gt;Загрузить дайджест&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Export_GenerateFactDigest_AlertMsg" xml:space="preserve">
+    <value>Генерация дайджеста фактов завершена</value>
+  </data>
+  <data name="Export_GenerateFactDigest_NoFacts" xml:space="preserve">
+    <value>Факты отсутствуют для выбранного объекта. Дайджест не может быть создан.</value>
+  </data>
+  <data name="AllInq" xml:space="preserve">
+    <value>Все заявки</value>
+  </data>
+  <data name="Inqlist" xml:space="preserve">
+    <value>Список заявок</value>
+  </data>
+  <data name="InqOrg" xml:space="preserve">
+    <value>Заявка на организацию</value>
+  </data>
+  <data name="InqPerson" xml:space="preserve">
+    <value>Заявка на персону</value>
+  </data>
+  <data name="MyInq" xml:space="preserve">
+    <value>Мои заявки</value>
+  </data>
+  <data name="SearchInq" xml:space="preserve">
+    <value>Поиск заявки</value>
+  </data>
+  <data name="ObjectsInquiry" xml:space="preserve">
+    <value>Объекты заявки</value>
+  </data>
+  <data name="InterestObjController_LabelRoles" xml:space="preserve">
+    <value>Роль</value>
+  </data>
+  <data name="CheckResume_GeneratedTitle" xml:space="preserve">
+    <value>Итоги {0} по объекту «{1}». Результат: {2}</value>
+  </data>
+  <data name="CheckResume_ModuleTitleCheck" xml:space="preserve">
+    <value>проверки</value>
+  </data>
+  <data name="CheckResume_ModuleTitleInquire" xml:space="preserve">
+    <value>заявки</value>
+  </data>
+  <data name="InquiryController_SAProject_CDate" xml:space="preserve">
+    <value>Создано</value>
+  </data>
+  <data name="InquiryController_SAProject_Owner" xml:space="preserve">
+    <value>Исполнитель</value>
+  </data>
+  <data name="InquiryController_SAProject_Title" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="NewInq" xml:space="preserve">
+    <value>Новая заявка</value>
+  </data>
+  <data name="g1i" xml:space="preserve">
+    <value>Галерея изображений</value>
+  </data>
+  <data name="InquiryController_SAProject_ProjectCode" xml:space="preserve">
+    <value>Код</value>
+  </data>
+  <data name="InquiryController_SAProject_Rubrics" xml:space="preserve">
+    <value>Рубрика</value>
+  </data>
+  <data name="InquiryController_SAProject_State" xml:space="preserve">
+    <value>Состояние</value>
+  </data>
+  <data name="InquiryController_SAProject_Status" xml:space="preserve">
+    <value>Результат</value>
+  </data>
+  <data name="InterestObjController_LabelMark" xml:space="preserve">
+    <value>Признак</value>
+  </data>
+  <data name="InterestObjController_LabelTypeName" xml:space="preserve">
+    <value>Тип</value>
+  </data>
+  <data name="ChSta" xml:space="preserve">
+    <value>Изменить статус</value>
+  </data>
+  <data name="CheckResume_GeneratedTitleForState" xml:space="preserve">
+    <value>Состояние {0} по объекту "{1}". Состояние: {2}</value>
+  </data>
+  <data name="CheckResume_GeneratedTitleForAnnotatedNote" xml:space="preserve">
+    <value>Пояснительная записка к "{0}"</value>
+  </data>
+  <data name="InterestObjController_CheckState_InWork" xml:space="preserve">
+    <value>В работе</value>
+  </data>
+  <data name="Pchecks" xml:space="preserve">
+    <value>Предыдущие проверки</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Печать</value>
+  </data>
+  <data name="mm" xml:space="preserve">
+    <value>Основные модули</value>
+  </data>
+  <data name="sap" xml:space="preserve">
+    <value>Semantic Archive Platform</value>
+  </data>
+  <data name="sm" xml:space="preserve">
+    <value>Сервисные модули</value>
+  </data>
+  <data name="MBFResult_ErrorNet" xml:space="preserve">
+    <value>ошибка сети</value>
+  </data>
+  <data name="MBFResult_ErrorProcessing" xml:space="preserve">
+    <value>ошибка обработки данных</value>
+  </data>
+  <data name="MBFResult_ErrorResource" xml:space="preserve">
+    <value>ошибка ресурса</value>
+  </data>
+  <data name="MBFResult_ErrorSaveResult" xml:space="preserve">
+    <value>ошибка сохранения результата</value>
+  </data>
+  <data name="MBFResult_Found" xml:space="preserve">
+    <value>результат найден</value>
+  </data>
+  <data name="MBFResult_GeneralError" xml:space="preserve">
+    <value>общая ошибка</value>
+  </data>
+  <data name="MBFResult_NotenoughInputData" xml:space="preserve">
+    <value>не достаточно входных данных</value>
+  </data>
+  <data name="MBFResult_NotFound_v01" xml:space="preserve">
+    <value>результат не найден</value>
+  </data>
+  <data name="MBFResult_UserIgnoreAlert" xml:space="preserve">
+    <value>пользователь не выбрал объект</value>
+  </data>
+  <data name="Inquiry" xml:space="preserve">
+    <value>Заявка</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Объект</value>
+  </data>
+  <data name="news" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="os" xml:space="preserve">
+    <value>Онлайн поддержка</value>
+  </data>
+  <data name="tc" xml:space="preserve">
+    <value>Условия и положения</value>
+  </data>
+  <data name="MainPage_News" xml:space="preserve">
+    <value>Последние новости</value>
+  </data>
+  <data name="MainPage_ReadAllNews" xml:space="preserve">
+    <value>Все новости</value>
+  </data>
+  <data name="UploadedImageInvalidFileName" xml:space="preserve">
+    <value>Некорректное имя файла</value>
+  </data>
+  <data name="UploadedImageSizeConstraint" xml:space="preserve">
+    <value>Размер изображения не должен превышать 50 МБ</value>
+  </data>
+  <data name="UploadedImageInvalidFormat" xml:space="preserve">
+    <value>Загруженное изображение имеет недопустимый формат</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Вход в систему</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Рабочая группа</value>
+  </data>
+  <data name="ComplianceCheck" xml:space="preserve">
+    <value>Комплексная проверка</value>
+  </data>
+  <data name="MBFResult_Completed" xml:space="preserve">
+    <value>завершена</value>
+  </data>
+  <data name="MBFResult_Created" xml:space="preserve">
+    <value>создана</value>
+  </data>
+  <data name="MBFResult_InProgress" xml:space="preserve">
+    <value>выполняется</value>
+  </data>
+  <data name="MBFResult_Invalid" xml:space="preserve">
+    <value>ошибочна</value>
+  </data>
+  <data name="MBFResult_Stopped" xml:space="preserve">
+    <value>остановлена</value>
+  </data>
+  <data name="InquiryController_SAProject_CheckDate" xml:space="preserve">
+    <value>Дата проверки</value>
+  </data>
+  <data name="ImportCheck_Message" xml:space="preserve">
+    <value>Импорт выполняется.... По завершении, вы получите уведомление</value>
+  </data>
+  <data name="Check_MarkRelationNameTemplate" xml:space="preserve">
+    <value>"{0}" характеризуется признаком "{1}"</value>
+  </data>
+  <data name="Check_RoleRelationNameTemplate" xml:space="preserve">
+    <value>«{0}» участвует как «{1}» в заявке «{2}»</value>
+  </data>
+</root>

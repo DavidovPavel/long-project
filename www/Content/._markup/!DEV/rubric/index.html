@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Выбор рубрики</title>
+	<meta charset="utf-8" />
+    <link href="../../data-icon/data-icon.min.css" rel="stylesheet" />
+    <link href="../../form/form.min.css" rel="stylesheet" />
+    <link href="../../typo/typo.min.css" rel="stylesheet" />
+    <link href="../../dialog/dialog.min.css" rel="stylesheet" />
+    <script src="../../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#erase').click(function () {
+                $('.g-dialog--manage').slideToggle(150);
+            });
+            $('.g-dialog--manage button').click(function () {
+                $('.g-dialog--manage').slideToggle(150)
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="g-dialog--wrapper small" id="choise-panel" style="display:block">
+            <div class="g-dialog--header" data-icon="icon-folder">
+                Выбор рубрики<i class="close"></i>
+            </div>
+            <div class="g-dialog--manage">
+                <span>Удалить выбранную рубрику?</span>
+                <div class="row">
+                    <button class="small g-form--button left flat">Отмена</button>
+                    <button class="small g-form--button right flat blue">Удалить</button>
+                </div>
+            </div>
+            <div class="g-dialog--toolbar">
+                <ul>
+                    <li class="tlbr--add"></li>
+                    <li class="tlbr--rename"></li>
+                    <li class="tlbr--erase" id="erase"></li>
+                    <li class="sorting">
+                        <i class="up"></i>
+                        <i class="down"></i>
+                        <i class="first"></i>
+                        <i class="last"></i>
+                    </li>
+                    <li>
+                        <span class="g-form--input">
+                            <input type="text" class="g-form--input" name="search" value="" placeholder="Поиск рубрики" />
+                            <i class="search rtl-1"></i>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="g-dialog--content hastoolbar">
+                <div class="g-dialog--container">
+                    <ul>
+                        <li>ROOT
+                            <ul>
+                                <li>Rubric
+                                    <ul>
+                                        <li>Rubric
+                                            <ul>
+                                                <li>Rubric</li>
+                                                <li>Rubric</li>
+                                                <li>Rubric</li>
+                                                <li>Rubric</li>
+                                                <li>Rubric</li>
+                                            </ul>
+                                        </li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                    </ul>
+                                </li>
+                                <li>Rubric
+                                    <ul>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                        <li>Rubric</li>
+                                    </ul>
+                                </li>
+                                <li>Rubric</li>
+                                <li>Rubric</li>
+                                <li>Rubric</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-dialog--controls">
+                    <button class="g-form--button right blue flat">Выбрать</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

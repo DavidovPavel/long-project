@@ -1,0 +1,145 @@
+﻿
+<script type="x-template/underscore" id="main-template">
+
+    <div id="dialog"></div>
+
+    <div class='Shna'></div>
+
+    <div class="mode-info disabled">
+        <label data-icon="icon-pen" for="mode-info"><%- Resources.Editing %></label><button class="g-form--switch" mode="off" id="mode-info"></button>
+    </div>
+
+    <div id="first"></div>
+
+    <div id="left-property" class="side-panel"></div>
+
+    <aside class="g-sidebar--right dashboard sidebar">
+    <div class="title"></div>
+    <div class="control"><i></i></div><div class="current-title"></div><div class="list"></div></aside>
+
+    <div id="container"></div>
+    <div id="slider"></div>
+
+</script>
+
+<script type="x-template/underscore" id="first-page-template">
+    <section>
+        <button data-link="my">
+            <svg><use xlink:href="#my-board"></use><use xlink:href="#my-board-check"></use></svg><span><%- Resources.myDashboard %></span>
+        </button><button data-link="shared">
+            <svg><use xlink:href="#share-dashboard"></use><use xlink:href="#share-dashboard-round"></use></svg><span><%- Resources.shareDashboard %></span>
+        </button>
+    </section>
+
+    <figure>
+        <h1><%- Resources.myDashboard %></h1>
+        <div class="list"></div>
+    </figure>
+
+</script>
+
+<script type="x-template/underscore" id="first-item-template">
+    <i class="remove"><svg><use xlink:href='#icon-trash' /></svg></i>
+    <% if(!Screen){ %>
+    <svg width='208' height='158'><use xlink:href='#plug4dashboard' /></svg>
+    <% } else if(Screen.indexOf('data:image')!==-1) {%>
+    <img src='<%- Screen %>' alt="" />
+    <% } else { %>
+    <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=220&height=160' alt="" />
+    <% } %>
+    <span><%= title %></span>
+</script>
+
+<script type="x-template/underscore" id="slider-template">
+    <div class="bolt"><div class="bolt-lug"><div><span class="arrow vertical"></span></div></div></div>
+    <div class="list">
+        <div class="show-add-vitrin" title="<%- Resources.addVitrin %>"><svg><use xlink:href="#add-vitrin" /></svg></div>
+        <div class="arrow horisontal big le"></div>
+        <div class="items-wrap"></div>
+        <div class="continue"><span></span><span></span><span></span></div>
+        <div class="arrow horisontal west big ri"></div>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="slider-item-template">
+    <div class='edit'>
+        <!-- <span role='button' class='edit-vitrina'><svg><use xlink:href='#icon-pencil' /></svg></span> -->
+        <span role='button' class='delete-vitrina' style="display: <%- !id?'inline-block':'none' %>;"><svg><use xlink:href='#icon-trash' /></svg></span>
+    </div>
+    <div class='panel-vitrin' dir="auto">
+        <% if(Screen) { %>
+        <% if(Screen.indexOf('data:image')!==-1){ %>
+        <img src='<%= Screen %>' alt='' />
+        <% } else { %>
+        <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=96&height=55' alt='' />
+        <% } %>
+        <% } %>
+        <div class='name-vitrina'><%= title %></div>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="dashboard-settings0">
+    <input type="text" name="title" value="<%- title %>" placeholder="<%- Resources.title %>" class="g-form--input" />
+    <label><%- Resources.title %></label>
+</script>
+
+<script type="x-template/underscore" id="dashboard-settings1">
+
+    <div class="set-background">
+        <label><%= Resources.setColor %>:</label>
+        <input type="text" name="BackgroundColor" />
+    </div>
+
+    <label><%= Resources.usebgimg %>:</label>
+    <div class="image-gallery"></div>
+
+    <div class="RadioBtnBlock">
+        <span><input type="radio" name="BackgroundPosition" value="0" <%- Decoration.BackgroundPosition==0?'checked':'' %> />&nbsp;<label><%= Resources.Center %></label></span>
+        <span><input type="radio" name="BackgroundPosition" value="1" <%- Decoration.BackgroundPosition==1?'checked':'' %> />&nbsp;<label><%= Resources.Fill %></label></span>
+        <span><input type="radio" name="BackgroundPosition" value="2" <%- Decoration.BackgroundPosition==2?'checked':'' %> />&nbsp;<label><%= Resources.Tile %></label></span>
+        <span><input type="radio" name="BackgroundPosition" value="3" <%- Decoration.BackgroundPosition==3?'checked':'' %> />&nbsp;<label><%= Resources.None %></label></span>
+    </div>
+
+</script>
+
+<script type="x-template/underscore" id="dashboard-settings2">
+    <!-- ТУТ НАДО ПЕРЕДЕЛАТЬ ЛОГИКУ -->
+    <div></div>
+    <span style="margin:0 1em; width:calc(100% - 2em); display:block;">
+        <table class="search-result"><tr class="checked-user"></tr></table>
+        <table class="list"></table>
+    </span>
+</script>
+
+<script type="x-template/underscore" id="dashboard-settings3">
+    <div class="thumb-settings">
+        <div class="thumb-image"></div>
+        <div class="g-form--input">
+            <div>
+                <input type="radio" value="0" class="g-form--radio" name="thumb" id="thumb-0" <%- !Screen?checked="checked":"" %> />
+                <label for="thumb-0"><%- Resources.dbd1 %></label>
+            </div>
+            <div>
+                <input type="radio" value="1" class="g-form--radio" name="thumb" id="thumb-1" <%- Screen && Screen.indexOf('data:image') !== -1?checked="checked":"" %> />
+                <label for="thumb-1"><%- Resources.dbd2 %></label>
+            </div>
+            <div>
+                <input type="radio" value="2" class="g-form--radio" name="thumb" id="thumb-2" <%- Screen && Screen.indexOf('data:image') === -1?checked="checked":"" %> />
+                <label for="thumb-2"><%- Resources.dbd3 %></label>
+            </div>
+            <div>
+                <input type="radio" value="3" class="g-form--radio" name="thumb" id="thumb-3" <%- Screen && Decoration && Decoration.BackgroundImageLink && Screen !== Decoration.BackgroundImageLink?checked="checked":"" %> />
+                <label for="thumb-3"><%- Resources.dbd4 %></label>
+            </div>
+        </div>
+    </div>
+    <div class="thumb-options">
+        <div class="thumb-desc">
+            <p></p>
+        </div>
+        <div class="thumb-gallery" style="display:none;"></div>
+    </div>
+</script>
+
+
+

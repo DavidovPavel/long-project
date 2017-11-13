@@ -1,0 +1,41 @@
+﻿.workbench {
+    height:~"calc(100vh - 44px)";
+    position:relative;
+    .workbench--content {
+        padding:20px;
+        background:#fff;
+        position:relative;
+        height:~"calc(100% - 88px)";
+        overflow:auto;
+        box-sizing:border-box;
+        &::-webkit-scrollbar {
+            width: 12px;
+            
+        }
+        &::-webkit-scrollbar-track {
+            background:#ccc;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background:#666;
+        }
+    }
+}
+
+/*WIZZARD*/
+main.wizzard {    
+    left:0!important;
+    z-index:800!important;
+}
+/*body {
+    &.hls {
+        .wizzard {
+            width:~"calc(100% - 44px)";
+        }
+        &.ls-on {
+            .wizzard {
+                width:~"calc(100% - 220px)";
+            }
+        }
+    }
+}*/

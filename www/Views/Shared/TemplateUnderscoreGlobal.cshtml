@@ -1,0 +1,330 @@
+<script type="x-template/underscore" id="alert-list-template"><div class="feedback-panel" style="display:none;"></div>
+    <button type="button" class="btn-link"></button>
+    <div class="dropdown-menu dropdown-menu-center">
+        <span class="dropdown-menu_arrow"></span>
+        <span class="close" data-icon="icon-close-l"></span>
+        <div class="menu-alert-message"><%= Resources.alertMessage %></div>
+        <div class="menu-alert-list">
+            <ul></ul>
+        </div>
+    </div></script><script type="x-template/underscore" id="case-export-template"><div class="row">
+        <div class="grid--1-2">
+            <h4><%= Resources.forobj %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_doc" id="obj_doc" />
+                <label for="obj_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact" id="obj_fact" />
+                <label for="obj_fact"><%= Resources.infact %></label>
+            </div>
+        </div>
+        <div class="grid--1-2">
+            <h4><%= Resources.forfact2 %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact_doc" id="obj_fact_doc" />
+                <label for="obj_fact_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact_obj" id="obj_fact_obj" />
+                <label for="obj_fact_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row" style="margin-bottom:30px;">
+        <div class="grid--1-2">
+            <h4><%= Resources.forfact %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="fact_doc" id="fact_doc" />
+                <label for="fact_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="fact_obj" id="fact_obj" />
+                <label for="fact_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+        <div class="grid--1-2">
+            <h4><%= Resources.fordoc %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="doc_fact" id="doc_fact" />
+                <label for="doc_fact"><%= Resources.infact %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="doc_obj" id="doc_obj" />
+                <label for="doc_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+    </div></script><script type="x-template/underscore" id="case-import-template"><p><%- Resources.selExpItem %></p>
+    <div id="exp-items"></div></script><script type="x-template/underscore" id="case-factdigests-template"><p><%= Resources.factdigestnotice %></p>
+    <p><b id="objForFactDigest"><%- Resources.selectobj %></b></p>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleTop %>" value="<%- TitleTop %>" name="TitleTop" id="TitleTop" class="g-form--input" />
+        <label for="TitleTop"><%- Resources.titleTop %></label>
+    </span>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleMiddle %>" value="<%- TitleMiddle %>" name="TitleMiddle" id="TitleMiddle" class="g-form--input" />
+        <label for="TitleMiddle"><%- Resources.titleMiddle %></label>
+    </span>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleBottom %>" value="<%- TitleBottom %>" name="TitleBottom" id="TitleBottom" class="g-form--input" />
+        <label for="TitleBottom"><%- Resources.titleBottom %></label>
+    </span>
+    <span class="g-form--input">
+        <label for="datebefore"><%- Resources.factsBefore %>:</label><input type="text" name="PointDateForSelection" id="datebefore" class="ejdatepicker">
+    </span>
+    <br />
+    <span class="g-form--input">
+        <input type="checkbox" id="show-sche" class="g-form--checkbox ignore" /><label for="show-sche"><%- Resources.byschedule %></label>
+    </span>
+
+    <div class="sche-container"></div></script><script type="x-template/underscore" id="case-docdigest-template"><div class="DocDigestNotice">
+        <input type="radio" class="g-form--radio" name="ObjectByRequest" value="a" checked="checked" id="obra" /><label for="obra"><%= Resources.inbasket %></label>&nbsp;<span class="sources-from-basket"></span><br />
+        <input type="radio" class="g-form--radio" name="ObjectByRequest" value="b" id="obrb" /><label for="obrb"><%= Resources.byrequest %></label>&nbsp;<span id="sel-request"></span>
+    </div>
+    <br />
+    <p><button class="g-form--button next choose"><%- Resources.selectingObj %></button></p>
+    <div id="choose-dialog"></div>
+    <p class="notice"><%- Resources.docdigestnotice %>: [ <b><span class="selected-key-obj"><%- Resources.noselect %></span></b> ]</p>
+    <input type="text" placeholder="<%- Resources.titleTop %>" name="TitleTop" />
+    <br />
+    <br />
+    <input type="text" placeholder="<%- Resources.titleMiddle %>" name="TitleMiddle" />
+    <br />
+    <br />
+    <input type="text" placeholder="<%- Resources.titleBottom %>" name="TitleBottom" />
+
+    <span class="g-form--input"><input type="checkbox" id="show-sche" class="g-form--checkbox ignore" /><label for="show-sche"><%- Resources.byschedule %></label></span>
+    <div class="sche-container"></div></script><script type="x-template/underscore" id="case-schedules-template"><div class="list-tasks"></div>
+    <br />
+    <div class="item-digest"></div>
+    <br />
+    <div class='item-sche'></div></script><script type="x-template/underscore" id="case-schedule-item-template"><input type="text" name="Title" placeholder="<%= Resources.titleSchedule %>" style="width: 80%;" value="<%- Title %>" />
+    <p><label><%- Resources.startTime %></label>&nbsp;<input type="text" name="TimeStartExecution" class="ejtimepicker" value=""></p>
+
+    <table>
+        <tr>
+            <td style="padding: 2px 4px;width: 40%; vertical-align: top;" class="period"></td>
+            <td style="padding: 4px 6px;height: 80px; vertical-align: top;width:300px;" class="days-block"></td>
+        </tr>
+    </table>
+
+    <p><input type="text" name="Subscribers" placeholder="<%- Resources.subscribers %>" style="width: 80%;" value="<%- Subscribers %>" /></p>
+    <p><input type="text" name="EmailTopic" placeholder="<%- Resources.EmailTopic %>" style="width: 80%;" value="<%- EmailTopic %>" /></p>
+    <p><label><%- Resources.emailBody %></label><br /><textarea name="EmailBody" style="width: 80%;"><%- EmailBody %></textarea></p></script><script type="x-template/underscore" id="connect-template"><div style="width:400px;margin:0 auto;">
+        <label><%= Resources.workGroups %></label>
+        <select class="form-control" id="WorkGroups"><option value="">...</option></select>
+        <br />
+        <label><%= Resources.avaProjects %></label>
+        <select class="form-control" id="Projects"><option value="">...</option></select>
+        <br />
+        <label><%= Resources.avaDatabase %></label>
+        <select class="form-control" id="Connects"><option value="">...</option></select>
+        <div id="Info" style="color: red;"></div>
+        <!--<br />
+        <p><button class="g-form--button blue disabled"><%= Resources.Connect %></button></p>-->
+    </div></script><script type="x-template/underscore" id="dialog-window-template"><div class="g-dialog--header">
+        <div class="g-dialog--title" data-icon="icon-<%- icon %>"><%= title %></div>
+        <div class="g-dialog--manage">
+            <i class="close"></i>
+            <i class="size"></i>
+            <i class="menu"></i>
+        </div>
+    </div>
+    <div class="g-toolbar"></div>
+    <div class="g-dialog--context">
+        <!--<ul>
+            <li>
+                File
+                <ul>
+                    <li>Save</li>
+                    <li>Open</li>
+                    <li>Save as</li>
+                    <li>Settings</li>
+                    <li>Quit</li>
+                </ul>
+            </li>
+            <li>
+                Edit
+                <ul>
+                    <li>Cut</li>
+                    <li>Copy</li>
+                    <li>Paste</li>
+                    <li>Undo</li>
+                </ul>
+            </li>
+            <li>
+                View
+                <ul>
+                    <li>Markup</li>
+                    <li>Toolbox</li>
+                    <li>Full Screen</li>
+                </ul>
+            </li>
+            <li>
+                Window
+                <ul>
+                    <li>Minimize</li>
+                    <li>Split</li>
+                    <li>Float</li>
+                </ul>
+            </li>
+            <li>
+                Help
+                <ul>
+                    <li>View Help (F1)</li>
+                    <li>Register Product</li>
+                    <li>Technical Support</li>
+                    <li>About Dialog v. 0.1</li>
+                </ul>
+            </li>
+        </ul>-->
+    </div>
+    <div class="g-dialog--promt"></div>
+    <div class="g-dialog--container">
+        <div class="g-dialog--content"></div>
+        <div class="g-dialog--sidebar"></div>
+    </div>
+    <div class="g-dialog--footer"></div>
+    <div class="g-dialog--blocker">
+        <i class="loading" size="xl" speed="medium"></i>
+    </div></script><script type="x-template/underscore" id="edge-block-template"><div class="default-start-nav-header">
+        <div class="default-start-nav-path"><span></span><%= Resources.toMain %></div>
+        <div class="default-start-nav-close"><span></span></div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="default-start-nav-inner">
+        <div class="default-start-tabs"></div>
+        <div class="default-start-tabs-toggler">
+            <div class="default-start-tabs-inner"></div>
+        </div>
+    </div></script><script type="x-template/underscore" id="file-upload-template"><form class="uploadFile" method="post" enctype="multipart/form-data">
+        
+        <label class="uploadbutton">
+            <span class="progress">
+                <span class="bar"></span>
+                <span class="percent">0%</span>
+            </span>
+            <span class="button blue">
+                <span data-icon="icon-import" color-icon="white"></span>
+            </span>
+            <!--<span class="button">
+                <span data-icon="icon-folder"></span>
+            </span>-->
+            <span class="input"><%= Resources.selFile %></span><input type="file" name="fileToUpload" />
+        </label>
+        <span class="anbr-tooltip bottom">
+            <span position="bottom"></span><%= Resources.findimg %> </span>
+
+    </form></script><script type="x-template/underscore" id="edit-panel-template"><ul>
+        <li name="add" class="tlbr--add" title="<%- Resources.add %>"></li>
+        <li name="rename" class="tlbr--rename" disabled title="<%- Resources.editItem %>"></li>
+        <li name="remove" class="tlbr--clear" disabled title="<%- Resources.deleteItem %>"></li>
+        <li class="sorting">
+            <i class="up" name="up"></i>
+            <i class="down" name="down"></i>
+            <i class="first" name="first"></i>
+            <i class="last" name="last"></i>
+        </li>
+        <li class="search">
+            <span class="g-form--input input-data"><input type="text" name="rubric-name" value="" class="g-form--input" placeholder="Enter keyword" /><i class="search rtl-1" name="search"></i></span>
+        </li>
+    </ul></script><script type="x-template/underscore" id="choise-panel-list-template"><div id="types-tree" class="right" style="display:none;"></div>
+    <div class="result-search">
+        <div class="result-list"></div>
+        <div class="select-list"></div>
+    </div></script><script type="x-template/underscore" id="semantic-scheme-wrapper"><section class="semnet">
+        <div class="semantic-wrapper">
+            <div id="svg-content"></div>
+            <div class="semantic-sidebar" id="tools-bar"></div>
+
+            <!--<div class="semantic-tabs active">
+                <div class="control"></div>
+                <ul id="set-layout"></ul>
+            </div>-->
+
+            <div class="semantic-sidebar right">
+                <div class="semantic-tools">
+                    <ul>
+                        <li>
+                            <span title="Fullscreen mode" id="sfs" class="semantic-tools--fullscreen"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section></script><script type="x-template/underscore" id="semantic-scheme-tools"><div id="tools-hamburger" class="hamburger"><span></span></div>
+    <div class="semantic-tools">
+        <ul>
+            <!--<li>
+                <span title="Zoom" class="semantic-tools--zoom"></span>
+                <ul>
+                    <li><span title="Zoom out" class="semantic-tools--zoomout"></span></li>
+                    <li><span title="Zoom in" class="semantic-tools--zoomin"></span></li>
+                    <li><span title="Fit to screen" class="semantic-tools--zoomfit"></span></li>
+                </ul>
+            </li>-->
+            <li><span title="Drag tool" class="semantic-tools--hand active"></span></li>
+            <!--<li><span title="Select tool" class="semantic-tools--editor"></span></li>-->
+        </ul>
+    </div>
+    <div class="semantic--tool-settings">
+
+        <!--<div class="semantic--tool-editmode">
+            <label>Edit mode</label><span id="editmode"></span>
+        </div>-->
+
+        <div class="semantic--tool-viewmode edit" style="display:none;">
+            <p><%- Resources.uc %></p>
+            <p><a href="<%- Resources.hashurl %>"><%- Resources.ea %></a></p>
+        </div>
+
+        <div class="semantic--tool-viewmode">
+
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.layout %></label>
+                <div id="layout"></div>
+            </div>
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.tlayout %></label>
+                <div id="astree"></div>
+            </div>
+            <div class="g-dropdown--wrapper">
+                <label><%- Resources.level %></label>
+                <div id="level"></div>
+            </div>
+
+            <!--<div class="semantic--tool-appearance">
+                <label><%- Resources.Filters %></label>
+                <div>
+                    <input type="checkbox" id="id1">
+                    <label for="id1"><%- Resources.snfname %></label>
+                </div>
+                <div>
+                    <input type="checkbox" id="id2">
+                    <label for="id2"><%- Resources.snshowlf %></label>
+                </div>
+                <div>
+                    <input type="checkbox" id="id3">
+                    <label for="id3"><%- Resources.snhidemo %></label>
+                </div>
+            </div>-->
+
+            <!--<div class="semantic--tool-filter">
+                <div>
+                    <label><%- Resources.Filterbytype %></label>
+                </div>
+                <input type="button" name="objects" value="<%- Resources.selectTree %>">
+                <input type="button" name="clear" value="<%- Resources.clear %>">
+                <div class="g-form--filter"></div>
+            </div>-->
+
+            <hr class="ruller">
+
+            <div class="semantic--tool-form">
+                <input type="button" name="reload" value="<%- Resources.refresh %>">
+                <input type="button" name="export" value="<%- Resources.download %>">
+            </div>
+        </div>
+    </div></script>

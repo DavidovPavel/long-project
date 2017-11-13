@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+	<meta charset="utf-8" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="home.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.toolbox .control').click(function () {
+                $(this).parent('.toolbox').toggleClass('active');
+                $(this).toggleClass('active');
+            });
+            $('.toolbox li').click(function () {
+                $('.toolbox li').removeClass('active');
+                $(this).addClass('active');
+                var preset = $(this).attr('class')
+                $('body').attr('class', preset);
+            });
+            $('#news').click(function () {
+                $('.apps').toggleClass('collapsed');
+                $('.feed').toggleClass('hidden');
+                $(this).parent('li').toggleClass('active');
+            });
+            $('.feed--item .close').click(function () {
+                $(this).parent('.feed--item').addClass('removed');
+                setTimeout(function () {
+                    $(this).parent('.feed--item').remove();
+                }.bind(this), 300);
+            });
+            $('#whatif1').click(function () {
+                $('.services').hide();
+                $('.main').show().addClass('single');
+            });
+            $('#whatif2').click(function () {
+                $('.main').hide();
+                $('.services').show().addClass('single');
+            });
+            $('#whatif3').click(function () {
+                $('.services, .main').show().removeClass('single');
+            });
+            $('#whatif4').click(function () {
+                $('.wiki').clone().appendTo($('.wiki').parent());
+                $('.wiki').addClass('tiny');
+                $('.check').clone().appendTo($('.check').parent());
+                $('.check').addClass('tiny');
+            });
+        });
+    </script>
+    <style>
+        .whatif {
+            position:absolute;
+            top:0;
+            left:50%;
+            color:#eee;
+            z-index:90000;
+            transform:translateX(-50%);
+        }
+        .whatif ul {
+            display:block;
+            padding:0;
+            margin:0;
+            height:44px;
+            box-sizing:border-box;
+            overflow:hidden;
+        }
+        .whatif ul li {
+            display:inline-block;
+            opacity:0.05;
+            padding:12px;
+            height:44px;
+            box-sizing:border-box;
+            cursor:pointer;
+            vertical-align:top;
+            background:#333;
+            transition:all linear 100ms;
+        }
+        .whatif ul li:hover {
+            opacity:1;
+        }
+    </style>
+</head>
+<body class="bg-preset--6">
+    <div class="whatif">
+        <ul>
+            <li id="whatif1">Only Main</li><li id="whatif2">Only Services</li><li id="whatif3">Show All</li><li id="whatif4">Add tiny</li>
+        </ul>
+    </div>
+    <header>
+        <div class="logo home">
+            Analytical Business Solutions
+        </div>
+        <div class="tray">
+
+
+            <ul class="tray--inner">
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation" class="active">
+                            <a href="/lang-ru-RU/db159">Ru</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="/lang-en-US/db159">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span>
+                </li>
+                <li class="tray--item case-block" style="display:none;">
+                    <span id="basket-btn" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                        <span class="badge basket-num"></span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                    <div id="blind" class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">База данных:</span></div>
+                                <div class="right">ВебВерсия. Пустая </div>
+                            </div>
+                        </div>
+                        <div class="g-blind--controls">
+                            <button class="g-form--button small flat ghost-w" onclick="location.href='/account/login?returnUrl=%2flang-ru-RU%2fdb159%2fhome%2fmain'">Сменить базу данных</button>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">Grzegorz Brzęczyszczykiewicz</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">Grzegorz Brzęczyszczykiewicz</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/Manage" target="_blank">Профиль</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                <form action="/lang-ru-RU/db159/Account/LogOff" id="logoutForm" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="hQggqj0lhij5LgvBuvl2vm6mFiTamZWrtBP7ZRJljnqrCjIIr2CgTU2TtUdo2DstALd283syRxR866SwWWBIvGAy8dtDQUVavcgryVlVmY8U1xVIeZ9x6PZ4WejnEKqG0">                                    <button class="g-form--button flat ghost-w small" onclick="javascript:document.getElementById('logoutForm').submit()">Выход</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="toolbox">
+        <span class="control"></span>
+        <ul>
+            <li class="bg-preset--1"></li>
+            <li class="bg-preset--2"></li>
+            <li class="bg-preset--3"></li>
+            <li class="bg-preset--4"></li>
+            <li class="bg-preset--5"></li>
+            <li class="bg-preset--6 active"></li>
+            <li class="bg-preset--7"></li>
+            <li class="bg-preset--8"></li>
+            <li class="bg-preset--9"></li>
+        </ul>
+    </div>
+    <div class="wrapper">
+        <div class="apps">
+            <h1>Analytical Business Solutions</h1>
+            <div class="main" role="navigation">
+                <h3>Main modules</h3>
+                <div>
+                    <a href="#" class="dashboard"><span>Dashboard</span><span class="help" title="Dashboard help page"></span></a>
+                </div>
+                <div>
+                    <a href="#" class="wiki"><span>Wiki</span><span class="help" title="Dashboard help page"></span></a>
+                    <a href="#" class="check"><span>Check</span><span class="help" title="Dashboard help page"></span></a>
+                </div>
+                <div>
+                    <a href="#" class="monitoring"><span>Monitoring (soon)</span></a>
+                </div>
+                <div>
+                    <a href="#" class="text"><span>TextMiner</span><span class="help" title="Dashboard help page"></span></a>
+                    <a href="#" class="ontology"><span>Ontology Editor</span><span class="help" title="Dashboard help page"></span></a>
+                </div>
+                <div>
+                    <a href="#" class="compliance"><span>Compliance check</span><span class="help" title="Dashboard help page"></span></a>
+                </div>
+                <div>
+                    <a href="#" class="analyst"><span>Analyst</span></a>
+                </div>
+                <div>
+                    <a href="#"><span>Global Search</span></a>
+                </div>
+                <div>
+                    <a href="#" class="enterprise"><span>Enterprise Search</span></a>
+                </div>
+            </div>
+            <div class="services" role="navigation">
+                <h3>Service modules</h3>
+                <div>
+                    <a href="#" class="request"><span>Request Library</span></a>
+                </div>
+                <div>
+                    <a href="#" class="robot"><span>Robot's collection</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="feed hidden">
+            <span class="control"></span>
+            <h3>Update news</h3>
+            <div class="feed--wrapper">
+                <div class="feed--item">
+                    <span class="feed--date">02/11/2016</span>
+                    <span class="feed--title">Разработан новый робот к английскому ресурсу &laquo;Company House&raquo; &mdash; "Реестр дисквалифицированных сотрудников"</span>
+                    <span class="feed--intro">Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег,  Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение   России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение  отсудил у Gawker 31 миллион долларов за публикацию порновидео Халк Хоган отсудил у Gawker 31 миллион долларов за публикацию порновидео Халк Хоган отсудил у Gawker 31 миллион долларов за публикацию порновидео Gawker 31 миллион долларов за публикацию порновидео Халк Хоган отсудил у Gawker 31 миллион долларов за публикацию порновидео</span>
+                    <span class="close"></span>
+                </div>
+                <div class="feed--item">
+                    <span class="feed--date">02/11/2016</span>
+                    <span class="feed--title">Верховный суд посчитал преступным обеспечение боевиков одеждой и телефонами</span>
+                    <span class="feed--intro">Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение материальными ресурсами, такими как обмундирование и средства связи. Об этом говорится в постановлении пленума высшей судебной инстанции страны, поступившем в четверг, 3 ноября, в редакцию «Ленты.ру». Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение материальными ресурсами, такими как обмундирование и средства связи. Об этом говорится в постановлении пленума высшей судебной инстанции страны, поступившем в четверг, 3 ноября, в редакцию «Ленты.ру».</span>
+                    <span class="close"></span>
+                </div>
+                <div class="feed--item">
+                    <span class="feed--date">02/11/2016</span>
+                    <span class="feed--title">Верховный суд посчитал преступным обеспечение боевиков одеждой и телефонами</span>
+                    <span class="feed--intro">Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение материальными ресурсами, такими как обмундирование и средства связи. Об этом говорится в постановлении пленума высшей судебной инстанции страны, поступившем в четверг, 3 ноября, в редакцию «Ленты.ру». Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение материальными ресурсами, такими как обмундирование и средства связи. Об этом говорится в постановлении пленума высшей судебной инстанции страны, поступившем в четверг, 3 ноября, в редакцию «Ленты.ру».</span>
+                    <span class="close"></span>
+                </div>
+            </div>
+            <div class="feed-controls">
+                <button class="g-form--button ghost-w">Read all news</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul class="footer-nav">
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="#" id="news">News (3)</a></li>
+            <li><a href="#">Online support</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

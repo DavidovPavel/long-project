@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dossier Snippets</title>
+	<meta charset="utf-8" />
+    <link href="dosier.css" rel="stylesheet" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <script src="https://yastatic.net/jquery/3.1.0/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/mode-html.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://rawgithub.com/ajaxorg/ace-builds/master/src/ext-emmet.js"></script>
+    <script src="https://rawgithub.com/nightwing/emmet-core/master/emmet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.2.6/theme-chrome.js"></script>
+    <style>
+        html {
+            margin:0;
+            padding:0;
+        }
+        section {
+            background:#f5f5f5;
+            border:1px solid #d7d7d7;
+            margin:1em;
+            padding:1em;
+        }
+        section input[type="checkbox"] {
+            display:none;
+        }
+        section input[type="checkbox"] + label {
+            font-size:24px;
+            padding-left:34px;
+            position:relative;
+        }
+        
+        .code > div {
+            width:100%;
+            height:240px;
+        }
+        aside {
+            position:absolute;
+            height:100%;
+            width:280px;
+            background:#444;
+            color:#fff;
+            top:0;
+            left:0;
+            box-sizing:border-box;
+            padding:20px;
+        }
+    </style>
+</head>
+<body style="background:#f5f5f5; padding:44px 0 0 0 ; margin:0;">
+    <header>
+        <div class="logo main">Dosier Snippets</div>
+    </header>
+    <div class="wrapper" style="padding:0; margin:0;">
+        <div style="min-width:1170px;margin:0px auto; background:#fff; position:relative; padding:0 0 0 300px; box-sizing:border-box;">
+            <aside>
+                <h3>Навигация</h3>
+                <ul>
+                    <li><a href="#s1">Таблицы</a></li>
+                    <li><a href="#s2">Параграф</a></li>
+                    <li><a href="#s3">Списки</a></li>
+                    <li><a href="#s4">Цитата</a></li>
+                    <li><a href="#s5">Митата</a></li>
+                    <li><a href="#s6">Питata</a></li>
+                </ul>
+            </aside>
+            
+            <section>
+                <input type="checkbox" id="s1" />
+                <label for="s1">Таблицы</label>
+                <div class="code">
+                    <div id="editor-s1">//Поместите курсор в конец следующей строки и нажмите TAB
+table>thead>tr>th*2^^tbody>tr>td*2</div>
+                </div>
+            </section>
+
+            <section>
+                <input type="checkbox" id="s2" />
+                <label for="s2">Параграф</label>
+                <div class="code">
+                    <div id="editor-s2">p{Lorem Ipsum Dolor Sit Amet}</div>
+                </div>
+            </section>
+
+            <section>
+                <input type="checkbox" id="s3" />
+                <label for="s3">Списки</label>
+                <div class="code">
+                    <div id="editor-s3">//ненумерованные
+ul>li{list item}*4
+//нумерованные
+ol>li{ordered list item}*4
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <input type="checkbox" id="s4" />
+                <label for="s4">Цитата</label>
+                <div class="code">
+                    <div id="editor-s4">quot</div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <script>
+        var Emmet = require("ace/ext/emmet");
+
+        var editorS1 = ace.edit("editor-s1");
+        editorS1.setTheme("ace/theme/monokai");
+        editorS1.getSession().setMode("ace/mode/html");
+        editorS1.setOption("enableEmmet", true);
+        editorS1.setTheme("ace/theme/chrome");
+
+        var editorS2 = ace.edit("editor-s2");
+        editorS2.setTheme("ace/theme/monokai");
+        editorS2.getSession().setMode("ace/mode/html");
+        editorS2.setOption("enableEmmet", true);
+        editorS2.setTheme("ace/theme/chrome");
+
+        var editorS3 = ace.edit("editor-s3");
+        editorS3.setTheme("ace/theme/monokai");
+        editorS3.getSession().setMode("ace/mode/html");
+        editorS3.setOption("enableEmmet", true);
+        editorS3.setTheme("ace/theme/chrome");
+
+        var editorS4 = ace.edit("editor-s4");
+        editorS4.setTheme("ace/theme/monokai");
+        editorS4.getSession().setMode("ace/mode/html");
+        editorS4.setOption("enableEmmet", true);
+        editorS4.setTheme("ace/theme/chrome");
+    </script>
+</body>
+</html>

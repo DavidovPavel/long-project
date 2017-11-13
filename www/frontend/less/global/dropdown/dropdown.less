@@ -1,0 +1,339 @@
+﻿@import "../body/icons.less";
+
+.g-dropdown--menu {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+
+    & ~ label {
+        position: absolute;
+        top: -8%;
+        left: 0;
+        transition: all ease 250ms;
+        width: 100%;
+        text-align: left;
+        font-size: 11px;
+    }
+
+    &.block {
+        display: block;
+    }
+
+    &.blank {
+        .g-dropdown--placeholder {
+            background: #fff;
+
+            .item {
+                text-decoration: none;
+            }
+        }
+
+        .g-dropdown--container {
+            border-top: 1px #d7d7d7 solid;
+        }
+    }
+
+    .g-dropdown--placeholder {
+        max-height: 40px;
+        padding-right: 39px;
+        border: 1px #d7d7d7 solid;
+        //background:#d7d7d7;
+        display: block;
+        position: relative;
+        cursor: pointer;
+
+        &:before {
+            content: '';
+            position: absolute;
+            width: 39px;
+            height: ~"calc(100% - 2px)";
+            background: #fff;
+            top: 1px;
+            right: 1px;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            width: 10px;
+            height: 10px;
+            box-sizing: border-box;
+            border-top: 1px solid #999;
+            border-left: 1px solid #999;
+            border-bottom: 1px solid #fff;
+            border-right: 1px solid #fff;
+            position: absolute;
+            top: ~"calc(50% - 8px)";
+            transform: rotate(-135deg);
+            right: 12px;
+        }
+
+        &.expanded {
+            &:after {
+                transform: rotate(45deg) translate(50%, 50%);
+            }
+        }
+
+        .item {
+            width: 100%;
+            background: #fff;
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 1px;
+            padding: 11px 15px 10px 15px;
+            color: #444;
+            position: relative;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            line-height: normal !important;
+
+            &[tools="1"] {
+                padding-right: 36px;
+            }
+
+            &[tools="2"] {
+                padding-right: 66px;
+            }
+
+            &[tools="3"] {
+                padding-right: 96px;
+            }
+
+            &[tools="4"] {
+                padding-right: 126px;
+            }
+
+            &:before {
+                transition: all linear 0ms;
+            }
+
+            &.control {
+                padding-right: 33px !important;
+            }
+
+            &.controls {
+                padding-right: 66px !important;
+            }
+        }
+    }
+
+    .g-dropdown--container {
+        display: none;
+        box-shadow: 0 2px 5px rgba(0,0,0,.25);
+        text-align: left;
+        background: #d7d7d7;
+        position: absolute;
+        width: 100%;
+        max-height: 250px;
+        overflow-y: auto;
+        z-index: 30;
+
+        .item {
+            background: #fff;
+            position: relative;
+            display: block;
+            width: ~"calc(100% - 2px)";
+            line-height: normal !important;
+            box-sizing: border-box;
+            cursor: pointer;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            margin: 1px 1px 0;
+            padding: 11px 15px 10px 15px;
+            color: #444;
+            transition: all ease 250ms;
+
+            &:hover {
+                white-space: normal;
+                text-overflow: unset;
+            }
+
+            &[tools="1"] {
+                padding-right: 36px;
+            }
+
+            &[tools="2"] {
+                padding-right: 66px;
+            }
+
+            &[tools="3"] {
+                padding-right: 96px;
+            }
+
+            &[tools="4"] {
+                padding-right: 126px;
+            }
+
+            &:first-child {
+                margin-top: 0px;
+            }
+
+            &:last-child {
+                border-bottom: 1px #d7d7d7 solid;
+            }
+
+            &:hover {
+                background: #f5f5f5;
+            }
+
+            &.selected {
+                background: #efefef !important;
+
+                &:after {
+                    width: 3px;
+                    height: 100%;
+                    background: #444;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+    }
+
+    .close {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        display: block;
+        position: absolute;
+        top: ~"calc(50% - 15px)";
+        right: 1px;
+
+        &:before {
+            width: 1px;
+            height: 16px;
+            content: '';
+            position: absolute;
+            background: #666;
+            top: 8px;
+            left: 16px;
+            transform: rotate(-45deg);
+            transition: all linear 250ms;
+        }
+
+        &:after {
+            width: 1px;
+            height: 16px;
+            content: '';
+            position: absolute;
+            background: #666;
+            top: 8px;
+            left: 16px;
+            transform: rotate(45deg);
+            transition: all linear 250ms;
+        }
+
+        &:hover {
+            background: #f5f5f5;
+
+            &:before {
+                transform: rotate(45deg);
+                background: #b00;
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+                background: #b00;
+            }
+        }
+    }
+
+    .add {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        display: block;
+        position: absolute;
+        top: ~"calc(50% - 15px)";
+        right: 33px;
+        text-align: center !important;
+
+        &:before {
+            height: 100%;
+            font-size: 18px !important;
+            content: '...';
+        }
+
+        &:hover {
+            background: #f5f5f5;
+        }
+
+        &.single {
+            right: 1px !important;
+        }
+    }
+
+    .manage {
+        display: inline-block;
+        height: 30px;
+        position: absolute;
+        top: ~"calc(50% - 15px)";
+        right: 0;
+        text-align: right;
+
+        & > span {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            width: 30px;
+            height: 30px;
+
+            &:hover {
+                background: #f5f5f5;
+            }
+        }
+
+        & > .add {
+            position: static;
+
+            &:before {
+                height: 100%;
+                font-size: 18px !important;
+                content: '...';
+            }
+        }
+
+        & > .edit {
+            &:before {
+                width: 16px;
+                height: 16px;
+                background-position: -34px -17px !important;
+                position: absolute;
+                content: '';
+                top: ~"calc(50% - 8px)";
+                left: ~"calc(50% - 8px)";
+                background-color: transparent;
+                background-image: url(/Content/images/data-icon-all.svg);
+                background-repeat: no-repeat;
+                background-size: 544px 544px;
+                filter: grayscale(100%) brightness(0.5);
+            }
+        }
+
+        & > .clear {
+            &:before {
+                width: 16px;
+                height: 16px;
+                background-position: -34px 0 !important;
+                position: absolute;
+                content: '';
+                top: ~"calc(50% - 8px)";
+                left: ~"calc(50% - 8px)";
+                background-color: transparent;
+                background-image: url(/Content/images/data-icon-all.svg);
+                background-repeat: no-repeat;
+                background-size: 544px 544px;
+                filter: grayscale(100%) brightness(0.5);
+            }
+        }
+    }
+}
+.g-dialog--container {
+    .g-dropdown--menu {
+        display:block;
+    }
+}

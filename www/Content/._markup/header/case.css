@@ -1,0 +1,157 @@
+﻿.g-hide--wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 1170px;
+  height: 0px;
+  box-sizing: border-box;
+  background: #fff;
+  transition: height 300ms ease;
+  line-height: normal;
+  z-index: 6500;
+  overflow: hidden;
+}
+.g-hide--wrapper .g-hide--header {
+  height: 34px;
+  width: 100%;
+  background: #444;
+  color: #fefefe;
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 10px!important;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.g-hide--wrapper .g-hide--header[data-icon] {
+  margin-bottom: 0px!important;
+}
+.g-hide--wrapper .g-hide--header[data-icon]:before {
+  -webkit-filter: invert(100%);
+}
+.g-hide--wrapper .g-hide--header .close {
+  position: absolute;
+  right: 0;
+  width: 44px;
+  height: 34px;
+  background: transparent;
+  cursor: pointer;
+  top: 0;
+  will-change: transform;
+}
+.g-hide--wrapper .g-hide--header .close:before {
+  width: 1px;
+  height: 16px;
+  background: #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: calc(50% - 8px);
+  left: calc(50% - 0.5px);
+  transition: all linear 150ms;
+}
+.g-hide--wrapper .g-hide--header .close:after {
+  width: 1px;
+  height: 16px;
+  background: #fff;
+  content: '';
+  display: block;
+  position: absolute;
+  transform: rotate(45deg);
+  top: calc(50% - 8px);
+  left: calc(50% - 0.5px);
+  transition: all linear 150ms;
+}
+.g-hide--wrapper .g-hide--header .close:hover {
+  background: #b00;
+}
+.g-hide--wrapper .g-hide--header .close:hover:before {
+  transform: rotate(45deg);
+}
+.g-hide--wrapper .g-hide--header .close:hover:after {
+  transform: rotate(-45deg);
+}
+.g-hide--wrapper .g-hide--container {
+  height: calc(100% - 114px);
+  box-sizing: border-box;
+  padding: 20px 40px;
+  overflow-y: scroll;
+}
+.g-hide--wrapper .g-hide--container.noncontrol {
+  height: calc(100% - 34px);
+}
+.g-hide--wrapper .g-hide--container.hastoolbar {
+  height: calc(100% - 160px);
+}
+.g-hide--wrapper .g-hide--container.hastoolbar.noncontrol {
+  height: calc(100% - 80px);
+}
+.g-hide--wrapper .g-hide--controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  box-sizing: border-box;
+  background: #f5f5f5;
+  padding: 20px 40px;
+}
+.g-hide--wrapper .g-hide--controls:after {
+  position: static;
+  height: 0px;
+  clear: both;
+  content: '';
+  display: block;
+}
+.g-hide--wrapper .g-hide--toolbar {
+  height: 46px;
+  box-sizing: border-box;
+  border-top: 1px #d7d7d7 solid;
+  border-bottom: 1px #d7d7d7 solid;
+  background: #f5f5f5;
+}
+.g-hide--wrapper .g-hide--toolbar ul {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.g-hide--wrapper .g-hide--toolbar ul:after {
+  position: static;
+  height: 0px;
+  clear: both;
+  content: '';
+  display: block;
+}
+.g-hide--wrapper .g-hide--toolbar ul li {
+  display: block;
+  float: left;
+  min-width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  cursor: pointer;
+  padding: 13px;
+  position: relative;
+}
+.g-hide--wrapper .g-hide--toolbar ul li:hover {
+  background: #dcdcdc;
+}
+body,
+header {
+  transition: top 400ms ease;
+}
+body.case-on {
+  margin-top: 50vh;
+}
+body.case-on header {
+  top: 50vh;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35), 0 -3px 8px rgba(0, 0, 0, 0.55);
+}
+body.case-on .g-hide--wrapper {
+  height: 50vh;
+}

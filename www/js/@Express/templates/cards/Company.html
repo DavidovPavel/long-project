@@ -1,0 +1,52 @@
+﻿ <h2><%= Resources.checkTitle %> <%= Resources.organization %></h2>
+
+<div class="row object-card">
+    <div class="col-md-6 left">
+        <div class="row"><label><%= Resources.nameofcompany %>:</label><b><%= title_INTERN %></b></div>
+        <div class="row"><label><%= Resources.searchwiththesynonyms %>:</label><b><%= searchSin_INTERN?(Resources.on+" "+ Resources.synonims + ": "+synonyms_INTERN.length):("<i>"+Resources.off+"</i>") %></b></div>
+        <% if(searchSin_INTERN){ %>
+        <div class="synonimus">
+            <% _.each(synonyms_INTERN, function(s){ %>
+            <span><%= s %>; </span>
+            <% }) %>
+        </div>
+        <% } %>
+    </div>
+    
+    <div class="col-md-6 right">
+        <div class="row"><label><%= Resources.country %>:</label><b><%= Resources[selectedCountries[0]] %></b></div>
+        <div class="Country" id="ru-RU">
+            <div class="row"><label><%= Resources.inn %>:</label><b><%= inn__ru_RU?inn__ru_RU:("<i>"+Resources.notdefine+"</i>") %></b></div>
+            <div class="row"><label><%= Resources.ogrn %>:</label><b><%= ogrn__ru_RU?ogrn__ru_RU:("<i>"+Resources.notdefine+"</i>") %></b></div>
+            <div class="row"><label><%= Resources.okpo %>:</label><b><%= okpo__ru_RU?okpo__ru_RU:("<i>"+Resources.notdefine+"</i>") %></b></div>
+        </div>
+        <div class="Country" id="uk-UA">
+             <div class="row"><label><%= Resources.edrpou %>:</label><b><%= edrpou__uk_UA?edrpou__uk_UA:("<i>"+Resources.notdefine+"</i>") %></b></div>
+        </div>
+        <div class="Country" id="kk-KZ">
+             <div class="row"><label><%= Resources.iin %>:</label><b><%= inn__kk_KZ?inn__kk_KZ:("<i>"+Resources.notdefine+"</i>") %></b></div>
+             <div class="row"><label><%= Resources.rnn %>:</label><b><%= rnn__kk_KZ?rnn__kk_KZ:("<i>"+Resources.notdefine+"</i>") %></b></div>
+             <div class="row"><label><%= Resources.bin %>:</label><b><%= bin__kk_KZ?bin__kk_KZ:("<i>"+Resources.notdefine+"</i>") %></b></div>
+        </div>
+        <div class="Country"  id="be-BY">
+             <div class="row"><label><%= Resources.unp %>:</label><b><%= unp__bl_BL?unp__bl_BL:("<i>"+Resources.notdefine+"</i>") %></b></div>
+        </div>
+        <div class="Country"  id="vi-VN">
+             <div class="row"><label>TaxCode:</label><b><%= inn__vi_VN?inn__vi_VN:("<i>"+Resources.notdefine+"</i>") %></b></div>
+             <div class="row"><label>Business line code:</label><b><%= ogrn__vi_VN?ogrn__vi_VN:("<i>"+Resources.notdefine+"</i>") %></b></div>
+        </div>
+    </div>
+</div>
+
+<div class="row files-collection card">
+        <div class="title">
+            <svg class="svg-icon icon-attach"><use xlink:href="#icon-attach"></use></svg> <%= Resources.attach %> (<span class="amount-files">0</span>):
+            &nbsp;&nbsp; 
+            <span class="ring show-attach-manage"><%= Resources.add %> </span>
+            <span class="dropdown-menu_arrow"></span>
+            <div class="dropdown-menu attach-manage"></div>
+        </div>
+        <div class="attached-files-list"></div>
+    </div>
+
+<br /><br />

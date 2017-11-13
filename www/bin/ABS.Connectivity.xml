@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ABS.Connectivity</name>
+    </assembly>
+    <members>
+        <member name="T:ABS.Connectivity.SaConnectorBase.CachedItemType">
+            <summary>
+            Тип кэшируемых сведений
+            </summary>
+        </member>
+        <member name="M:ABS.Connectivity.SaConnectorBase.GetCachedCode(ABS.Connectivity.SaConnectorBase.CachedItemType,System.String,System.String,System.String,System.String)">
+            <summary>
+            Получить ключ элемента, по-которому расположен заданный ресурс
+            </summary>
+            <param name="itemType"></param>
+            <param name="dbid"></param>
+            <param name="prjid"></param>
+            <param name="serverName"></param>
+            <param name="userName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ABS.Connectivity.SaConnectorBase.InitReportingServices(System.String,System.Int32,System.Int32)">
+            <summary>
+            Инициализирует службу SQL Reporting
+            </summary>
+        </member>
+        <member name="M:ABS.Connectivity.SaConnectorBase.GetGlobalDatabase(System.String)">
+            <summary>
+            Возвращает SDK глобальной базы
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ABS.Connectivity.SaConnectorBase.ConnectToDatabase(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            dbName используется когда есть физическое имя базы, а Id - логический (не соответствует ID в глобальной базе)
+            Если известен физический id, то dbName можно не задавать
+            </summary>
+            <param name="dbName"></param>
+            <param name="userId"></param>
+            <param name="logicalDBID"></param>
+            <param name="projectID"></param>
+        </member>
+        <member name="M:ABS.Connectivity.SaConnectorBase.InitConnectionAndTry(System.Int32,System.String,System.String,System.Int32,ANBR.SemanticArchive.SDK.IDataBase@,System.String@)">
+            <summary>
+            Попытка установить соединение
+            </summary>
+            <param name="logicalDBID"></param>
+            <param name="databaseName"></param>
+            <param name="userId"></param>
+            <param name="prjID"></param>
+            <param name="saDb"></param>
+            <param name="errorMsg">Текст ошибки в случае не успеха</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

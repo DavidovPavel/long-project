@@ -1,0 +1,1900 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.Query.Common</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.Query.Common.ComplexReport">
+            <summary>
+            Описание комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReport.ComplexReportId">
+            <summary>
+            Идентификатор комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReport.Name">
+            <summary>
+            Наименовние комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReport.MetaTypeID">
+            <summary>
+            Идентификатор типа меда-танных, для которого данный отчет применим
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReport.Description">
+            <summary>
+            Описание отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReport.IsDefault">
+            <summary>
+            Испорльзовать как основной отчет для данного типа (MetaTypeID )
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ComplexReportGroup">
+            <summary>
+            Группа комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportGroup.ComplexReportGroupId">
+            <summary>
+            Идентификатор группы
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportGroup.ComplexReportId">
+            <summary>
+            Идентификатор комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportGroup.Name">
+            <summary>
+            Наименование группы
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportGroup.ParentGroupId">
+            <summary>
+            Идентификатор родительской группы
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ComplexReportDataView">
+            <summary>
+            Блок данных для комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.ComplexReportDataViewId">
+            <summary>
+            Идентификатор блока данных комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.ComplexReportGroupId">
+            <summary>
+            Идентификатор группы комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.ComplexReportId">
+            <summary>
+            Идентификатор комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.FilterId">
+            <summary>
+            Идентификатор фильтка
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.Name">
+            <summary>
+            Наименовние длока данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ComplexReportDataView.ViewType">
+            <summary>
+            Тип визуального представления блока данных
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ComplexReportResult">
+            <summary>
+            Вид результата комплексного отчета
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ComplexReportResult.HTML">
+            <summary>
+            В виде HTML
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ComplexReportResult.XML">
+            <summary>
+            В виде XML
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FilterInfo">
+            <summary>
+            Описание запроса-фильтра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.FilterId">
+            <summary>
+            Идентификатор фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.FilterFolderId">
+            <summary>
+            Идентификатор папки фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.UserName">
+            <summary>
+            Имя владельца фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.Name">
+            <summary>
+            Наименование фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.Description">
+            <summary>
+            Подробгле описание назначения фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.SqlText">
+            <summary>
+            Текст фильтра-запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.XmlText">
+            <summary>
+            фильтр-запос в виде XML структуры
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.MetaTypeId">
+            <summary>
+            Идентификатор типа метаданных, к которому может быть применен фильтр-запрос
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.VisualizerType">
+            <summary>
+            Тип визуализатора, который может отобразиь результаты запоса.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterInfo.FilterType">
+            <summary>
+            Тип фильтра-запоса
+            </summary>
+            <see cref="T:ANBR.Query.Common.ObjectFilterType"/>
+        </member>
+        <member name="T:ANBR.Query.Common.ObjectFilterType">
+            <summary>
+            Типы фильтров-запросов
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ObjectFilterType.SqlFilter">
+            <summary>
+            В виде T-SQL запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ObjectFilterType.SimpleFilter">
+            <summary>
+            Простой фильтр
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FilterFolderInfo">
+            <summary>
+            Папка дерева фильтров
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FilterFolderInfo.ParentFolder_ID">
+            <summary>
+            Идентификаторр предка
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FilterFolderInfo.FilterFolder_ID">
+            <summary>
+            Идентификатор папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FilterFolderInfo.UserName">
+            <summary>
+            Тия пользователя - владельца папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FilterFolderInfo.Name">
+            <summary>
+            Наимангвание папки для фильтров
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FilterFolderInfo.Description">
+            <summary>
+            Описание папки для фильтров
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.IQueryService">
+            <summary>
+            Контракт службы для работы с запосами к базе данных системы Семантический архив.
+            С помощью данной службы можно ваполнять запросы к базе данных формата Семантический архив, 
+            создавать новые шаблоны запосов для пользователей, создавать дерево папок для рубрикации запосов и т.д.
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.Test">
+            <summary>
+            Тестирование работоспособности службы 
+            </summary>
+            <returns>0 - служба работает</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.Init(ANBR.GlobalBase.Common.DatabaseInfo)">
+            <summary>
+            Инициализация 
+            </summary>
+            <param name="dbInfo">Информация о базе данных</param>
+            <see cref="T:ANBR.GlobalBase.Common.DatabaseInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryList(ANBR.Query.Common.TypeQuery,ANBR.Query.Common.TypeQueryApplication,ANBR.Query.Common.FolderType)">
+            <summary>
+            Возвращает дерево запросов 
+            </summary>
+            <param name="qType">Возвращать только запросы типа TypeQuery</param>
+            <param name="typeApplication">Возвращать только запросы для приложения типа TypeApplication</param>
+            <param name="folderType">Возвращает только запросы, находящиеся в паках типа FolderType</param>
+            <returns>Список обектов с описанием запосов типа QueryInfo</returns>
+            <see cref="T:ANBR.Query.Common.TypeQuery"/>
+            <see cref="T:ANBR.Query.Common.TypeQueryApplication"/>
+            <see cref="T:ANBR.Query.Common.FolderType"/>
+            <see cref="T:ANBR.Query.Common.QueryInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryFolderList(ANBR.Query.Common.TypeQueryApplication,ANBR.Query.Common.FolderType)">
+            <summary>
+            Вернуть спосок папок с запросами
+            </summary>
+            <param name="typeApplication">Возвращать только паки для приложения типа TypeApplication</param>
+            <param name="folderType">Возвращает только папки типа FolderType</param>
+            <returns>Список обектов с описанием папок типа QueryFolderInfo</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryAdd(ANBR.Query.Common.QueryInfo)">
+            <summary>
+            Сохранить в базе новый запос. Описание запоса в объекте класса QueryInfo
+            </summary>
+            <param name="queryInfo">Описание нового запоса</param>
+            <returns>Идентификатор вновь созданного запоса</returns>
+            <see cref="T:ANBR.Query.Common.QueryInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryDelete(System.Int32)">
+            <summary>
+            Удаление запроса из базы данных.
+            </summary>
+            <param name="queryId">Идентификатор удаляемого запоса</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryGet(System.Int32)">
+            <summary>
+            Возвращает описание запроса по его идентификатору из базы данных. Запос описывается классом QueryInfo.
+            </summary>
+            <param name="queryId">Идентификатор запроса</param>
+            <returns>Описание запоса</returns>
+            <see cref="T:ANBR.Query.Common.QueryInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QuerySave(ANBR.Query.Common.QueryInfo)">
+            <summary>
+            Сохраняет изменения в запосе в базу данных. Запос описывается классом QueryInfo.
+            </summary>
+            <param name="queryInfo"></param>
+            <see cref="T:ANBR.Query.Common.QueryInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryFolderGet(System.Int32)">
+            <summary>
+            Возвращает описание папки запросов по идентификатору из базы данных. Папка описывается классом QueryFolderInfo
+            </summary>
+            <param name="folderId">Идентификатор папки</param>
+            <returns>Описание папки запросов </returns>
+            <see cref="T:ANBR.Query.Common.QueryFolderInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryFolderCreate(ANBR.Query.Common.QueryFolderInfo)">
+            <summary>
+            Создает новую папаку запосов в базе данных.  Папка описывается классом QueryFolderInfo.
+            Нельзя создавать две одноименные папки в подпапке или на верхнем уровне дерева папок
+            </summary>
+            <param name="queryFolderInfo">Описание папки.</param>
+            <returns>Идентификатор вновь созданной папки.</returns>
+            <see cref="T:ANBR.Query.Common.QueryFolderInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryFolderDelete(System.Int32)">
+            <summary>
+            Удаляет папку запосов из базы данных по идентификатору.
+            Папка не должна содержать вложенных элементов
+            </summary>
+            <param name="queryFolderId">Идентификатор удаляемой папки</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QuerySelect(System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="sqlSelectCommand">Текст запоса на T-SQL</param>
+            <param name="asSystem">Выполнять запрос с системными привилегиями.</param>
+            <returns>Возвращает результат выполнения запоса в виде класса SaQueryResult</returns>
+            <see cref="T:ANBR.Query.Common.SaQueryResult"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QuerySelectPageing(ANBR.Query.Common.TextPageQuery,System.Boolean)">
+            <summary>
+            Выполняет произвольный запрос к базе данных. Запрос описывается классом TextPageQuery.
+            </summary>
+            <param name="textPageQuery">Описание выполняемого запоса.</param>
+            <param name="asSystem">Выполнять запрос с системными привилегиями.</param>
+            <returns>Возвращает результат выполнения запоса в виде класса BasePageResult</returns>
+            <see cref="T:ANBR.Common.BasePageResult"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterList">
+            <summary>
+            Возвращает список фильтров из базы данных. Фильтр описывается классом  FilterInfo.
+            </summary>
+            <returns>Список фильтров, зарегистрированных вбазе данных.</returns>
+            <see cref="T:ANBR.Query.Common.FilterInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterFolderList">
+            <summary>
+            Список папок для хранения фильтров в базе данных. Папка оисывается классом FilterFolderInfo.
+            </summary>
+            <returns>Сисок папок для хранения фильтров</returns>
+            <see cref="T:ANBR.Query.Common.FilterFolderInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterAdd(ANBR.Query.Common.FilterInfo)">
+            <summary>
+            Сохраняет новый фильт в базе данных.
+            </summary>
+            <param name="filterInfo">Описание нового фильтра</param>
+            <returns>Идентификатор вновь сожданного фильтра</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterDelete(System.Int32)">
+            <summary>
+            Удаляет фильтр из базы данных по идентификатору
+            </summary>
+            <param name="filterId">Идентиыикатор удаляемого фильтра</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterGet(System.Int32)">
+            <summary>
+            Получить объект с описание фильтра по идентификатору
+            </summary>
+            <param name="filterId">Идентиыикатор фильтра</param>
+            <returns>Описание фильтра</returns>
+            <see cref="T:ANBR.Query.Common.FilterInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterSave(ANBR.Query.Common.FilterInfo)">
+            <summary>
+            Сохранить существующего описаие фильта в базе данных.
+            </summary>
+            <param name="filterInfo">Описаие фильтра.</param>
+            <see cref="T:ANBR.Query.Common.FilterInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterFolderCreate(ANBR.Query.Common.FilterFolderInfo)">
+            <summary>
+            Создать новую папку для фильтров
+            </summary>
+            <param name="filterFolderInfo">Описание папки</param>
+            <returns>Идентификатор вновь созданной папки фильтров</returns>
+            <see cref="T:ANBR.Query.Common.FilterFolderInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FilterFolderDelete(System.Int32)">
+            <summary>
+            Удаление папки фильтров из базы данных по идентификатору. Папка должна быть пуста от вложенных элементов.
+            </summary>
+            <param name="filterFolderId">Идентификатор папки</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.LoadQueries">
+            <summary>
+            Загрузить все запросы системы в виде набора данных DataSet
+            </summary>
+            <returns>Набор данных с описанием запосов</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.CreateQuery(System.Nullable{System.Int32},System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Создать повые запрос в базе данных.
+            </summary>
+            <param name="folderId">Папка, в которой бедет находиться запос</param>
+            <param name="name">Наименование запоса</param>
+            <param name="userName">Имя пользователя-владельца запоса</param>
+            <param name="type">Тип запроса</param>
+            <param name="xmlText">XML описание запроса</param>
+            <returns>Идентификатор созданного запроса.</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.UpdateQuery(System.Int32,System.Nullable{System.Int32},System.String,System.String,System.Int32,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="queryId"></param>
+            <param name="folderId"></param>
+            <param name="name"></param>
+            <param name="userName"></param>
+            <param name="type"></param>
+            <param name="xmlText"></param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.RemoveQuery(System.Int32)">
+            <summary>
+            Удаление запоса по идентификатору
+            </summary>
+            <param name="queryId"></param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.TestChannel">
+            <summary>
+            Тесторование канала связи со службой
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryFolderSave(ANBR.Query.Common.QueryFolderInfo)">
+            <summary>
+            Сохранить изменения папки запосов. Папака должна сужествовать в баз данных.
+            </summary>
+            <param name="queryFolder">Описание папки запосов</param>
+            <see cref="T:ANBR.Query.Common.QueryFolderInfo"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteQuery(ANBR.Query.Common.SaQuery,System.Boolean)">
+            <summary>
+            Выполнить запрос к базе данных, заданного классом SaQuery
+            </summary>
+            <param name="query">Запос к базы данных.</param>
+            <param name="asSystem">Выполнять с системными привилегиями</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.GetComplexReports">
+            <summary>
+            Получить список комплексных отчетов из базы данных.
+            </summary>
+            <returns>Список объектов класса ComplexReport с описаием комплексных отчетов </returns>
+            <see cref="T:ANBR.Query.Common.ComplexReport"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.GetComplexReportGroups(System.Int32)">
+            <summary>
+            Получить список групп дла комплексного отчета  
+            </summary>
+            <param name="complexReportId">Идентификатор комплексного отчета</param>
+            <returns>Коллекция объектов типа ComplexReportGroup</returns>
+            <see cref="T:ANBR.Query.Common.ComplexReportGroup"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.GetComplexReportDataView(System.Int32)">
+            <summary>
+            Получить список длокаов данных для комплексного отчета
+            </summary>
+            <param name="complexReportId"></param>
+            <returns>Коллекция объектов типа ComplexReportDataView</returns>
+            <see cref="T:ANBR.Query.Common.ComplexReportDataView"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteComplexReport(System.Int32,System.Int32,ANBR.Query.Common.ReportParams,ANBR.Query.Common.ComplexReportResult)">
+            <summary>
+            Сформировать комплексный отчет
+            </summary>
+            <param name="reportId">Идентификатор шаблона комплексного отчета</param>
+            <param name="objectId">Идентификатор объекта, для которого будет построен комплексный отчет</param>
+            <param name="reportParams">Параметры построения отчета</param>
+            <param name="complexReportResult">Вид результата комплексного отчета (HTML или XML)</param>
+            <returns>Результат в виде HTML или XML</returns>
+            <see cref="T:ANBR.Query.Common.ReportParams"/>
+            <see cref="T:ANBR.Query.Common.ComplexReportResult"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportCreate(ANBR.Query.Common.ComplexReport)">
+            <summary>
+            Создать новый комплексный отчет на основе данных из complexReport
+            </summary>
+            <param name="complexReport"></param>
+            <returns>Идентификатор нового комплексного отчета</returns>
+            <see cref="T:ANBR.Query.Common.ComplexReport"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportUpdate(ANBR.Query.Common.ComplexReport)">
+            <summary>
+            Обновить описание комплексного отчета
+            </summary>
+            <param name="complexReport">Новое описание комплексного отчета</param>
+            <see cref="T:ANBR.Query.Common.ComplexReport"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportDelete(ANBR.Query.Common.ComplexReport)">
+            <summary>
+            Удалить комплексный отчет из базы
+            </summary>
+            <param name="complexReport">Описание комплексного отчета</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportGroupCreate(ANBR.Query.Common.ComplexReportGroup)">
+            <summary>
+            Создать новую группу для комплексного отчета
+            </summary>
+            <param name="complexReport">Описание новой группы комплексного отчета</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportGroupUpdate(ANBR.Query.Common.ComplexReportGroup)">
+            <summary>
+            Обновление описание группы для комплексного отчета
+            </summary>
+            <param name="complexReport">Новое описание новой группы комплексного отчета</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportGroupDelete(ANBR.Query.Common.ComplexReportGroup)">
+            <summary>
+            Удаление группы из комплексного отчета
+            </summary>
+            <param name="complexReport">Описание группы</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportDataViewCreate(ANBR.Query.Common.ComplexReportDataView)">
+            <summary>
+            Создать блок представления данных  комплексного отчета
+            </summary>
+            <param name="complexReport"></param>
+            <returns>Идентификатор нового блока представления данных</returns>
+            <see cref="T:ANBR.Query.Common.ComplexReportDataView"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportDataViewUpdate(ANBR.Query.Common.ComplexReportDataView)">
+            <summary>
+            Обновление блок представления данных   комплексного отчета
+            </summary>
+            <param name="complexReport"></param>
+            <see cref="T:ANBR.Query.Common.ComplexReportDataView"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ComplexReportDataViewDelete(ANBR.Query.Common.ComplexReportDataView)">
+            <summary>
+            Удалить блок представления данных   комплексного отчета
+            </summary>
+            <param name="complexReport"></param>
+            <see cref="T:ANBR.Query.Common.ComplexReportDataView"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteComplexReportBySimpleFilter(System.Int32,System.Int32,ANBR.Query.Common.ComplexReportResult)">
+            <summary>
+            Вернуит результаты по фильтру для отбъекта с идентификатором objectId
+            </summary>
+            <param name="filterId">Идентификатор фильтра</param>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="reportResult">Вид возвращаемого результата</param>
+            <returns>Строка с HTML или XML в зависимомти от reportResult</returns>
+            <see cref="T:ANBR.Query.Common.ComplexReportResult"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteComplexReportByProfiler(System.Int32,ANBR.Query.Common.ProfileReportConfiguration,ANBR.Query.Common.ComplexReportResult)">
+            <summary>
+            Выполнить построение отчета для объекта objectId
+            </summary>
+            <param name="objectId"></param>
+            <param name="configuretion"></param>
+            <param name="reportResult"></param>
+            <returns></returns>
+            <see cref="T:ANBR.Query.Common.ProfileReportConfiguration"/>
+            <see cref="T:ANBR.Query.Common.ComplexReportResult"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FinderObjects(ANBR.Query.Common.ObjectFilter)">
+            <summary>
+            Поиск объекта по фильтру ObjectFilter objectFilter
+            </summary>
+            <param name="objectFilter">Фильтр </param>
+            <returns>Возвращает результат в виде объекта SaQueryResult</returns>
+            <see cref="T:ANBR.Query.Common.ObjectFilter"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteSystemQuery(ANBR.Query.Common.SystemQueryRequest)">
+            <summary>
+            Выполнить системный сохраненный запрос к базе данных запрос к базе данных
+            </summary>
+            <param name="systemQueryRequest">Описание системного запроса в виде класса SystemQueryRequest</param>
+            <returns>Результат выполнения запроса в виде класса SystemQueryResponse </returns>
+            <see cref="T:ANBR.Query.Common.SystemQueryRequest"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.GetSystemQueries">
+            <summary>
+            Вернуть список системных запосов
+            </summary>
+            <returns>Коллекция объектов класса DSystemQuery</returns>
+            <see cref="T:ANBR.Query.Common.DSystemQuery"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteTimeLineFilter(ANBR.Query.Common.TimeLineFilterBase)">
+            <summary>
+            Получить данные для шкалы времени по фильтру
+            </summary>
+            <param name="timeLineFilter">Фильтр данных для шкалы времени</param>
+            <returns>DataSet с данными, которые мужет показывать компонент "Шкала времени" </returns>
+            <see cref="T:ANBR.Query.Common.TimeLineFilterBase"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.FindTimeAction(ANBR.Query.Common.TimeActionQuery)">
+            <summary>
+            Найти объекты типа Действие для шкалы времени
+            </summary>
+            <param name="transactionQuery"></param>
+            <returns>Объект типа TimeActionResults , содержащий список, удовлетваряющий запросу </returns>
+            <see cref="T:ANBR.Query.Common.TimeActionQuery"/>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.ExecuteNativeSQLQueryAsIs(ANBR.Query.Common.SQLQuery)">
+            <summary>
+            Выполнить SQL запрос, описанный классом SQLQuery.  
+            </summary>
+            <param name="query">Запос к базе данных в виде класса SQLQuery</param>
+            <returns>Результат выполнения запоса в виде класса SqlQueryResult</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryService.QueryImport(ANBR.Query.Common.QueryFolderInfo,System.Collections.Generic.List{ANBR.Query.Common.QueryFolderInfo},System.Collections.Generic.List{ANBR.Query.Common.QueryInfo})">
+            <summary>
+            Импортировать созраненные запросы
+            </summary>
+            <param name="to">В какую папку</param>
+            <param name="folders">Список подпапок</param>
+            <param name="queries">Список запросов</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.TimeActionQuery">
+            <summary>
+            Запрос для получения данных для шкалы времени
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionQuery.ObjectsId">
+            <summary>
+            Идентификаторы объектов для которых будут возвращаться события и факты
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionQuery.FromDate">
+            <summary>
+            Начальная дата событий/фактов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionQuery.ToDate">
+            <summary>
+            Конечная дата событий/фактов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionQuery.FactTypeId">
+            <summary>
+            Ограничение на типы фактов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionQuery.FindMode">
+            <summary>
+            Режим поиска
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FindMode">
+            <summary>
+            Режим поиска фактов для шкалы времени
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FindMode.ThisObjectOnly">
+            <summary>
+            Будут возвращены события и факты связанные только с переданными объектами
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FindMode.OtherObject">
+            <summary>
+            Будут возвращены события и факты связанные с переданными объектами и любыми другими объектами
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TimeActionResults">
+            <summary>
+            Результат выполнения запроса для временной шкалы
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionResults.Objects">
+            <summary>
+            Список объектов
+            </summary>
+            <see cref="T:ANBR.Query.Common.TRObjectInfo"/>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionResults.TimeActions">
+            <summary>
+            Список событий и фактов, удовлетворяющих условиям запроса
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TRObjectInfo">
+            <summary>
+            Описание объекта для шкалы времени
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TRObjectInfo.ObjectId">
+            <summary>
+            Идентификтор
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TRObjectInfo.TypeId">
+            <summary>
+            Идентификатор типа объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TRObjectInfo.DisplayName">
+            <summary>
+            Наименование объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TRObjectInfo.ShortName">
+            <summary>
+            Короткое наименование объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TRObjectInfo.Image">
+            <summary>
+            Главная картинка объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TimeActionInfo">
+            <summary>
+            Описания события/факта временной шкалы
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ActionId">
+            <summary>
+            Идентификатор объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ActionTypeId">
+            <summary>
+            Идентификатор типа 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.FromObjectId">
+            <summary>
+            Идентификатор объекта, от которого идет связь
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ToObjectId">
+            <summary>
+            Идентификатор объекта, к которову идет связь
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.Bidirectional">
+            <summary>
+            Признак двунаправленности связи
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.FullText">
+            <summary>
+            Полное наименовае факта/события
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ShortText">
+            <summary>
+            Краткое наименовае факта/события
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ActionFromDate">
+            <summary>
+            Дата начала события/факта
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeActionInfo.ActionToDate">
+            <summary>
+            Дата окончания события/факта
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TimeLineFilterBase">
+            <summary>
+            Фильтр для получения данных для временной шкалы
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeLineFilterBase.FromDate">
+            <summary>
+            Дата начала данных. Может быть NULL - без ограничения по дате начала
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeLineFilterBase.ToDate">
+            <summary>
+            Дата окончания данных. Может быть NULL - без ограничения по дате окончания 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeLineFilterBase.ObjectIds">
+            <summary>
+            Идентификаторы объектов, для которых выбираются данные. Например для расчетного счета - транзакции, для номера телефона - звонки 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeLineFilterBase.ThisObjectsOnly">
+            <summary>
+            Строить связи только между переданными объектами. 
+            Если нет, то будут построены связи с другими объектами на 1 шаг.
+            Если в ObjectIds - один объектк - игнорируется
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TimeLineFilterBase.ReturnFact">
+            <summary>
+            Какие типы фактов возвращать
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FactTypes">
+            <summary>
+            Типы возвращаемых фактов для шкалы времени
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FactTypes.Actions">
+            <summary>
+            Действия
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FactTypes.Relation">
+            <summary>
+            Отношения
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FactTypes.States">
+            <summary>
+            Состояния
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SystemQueryRequest">
+            <summary>
+            Описание системного запоса к базе данных
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SystemQueryRequest.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryRequest.SystemName">
+            <summary>
+            СИстемное имя запоса. Должен знать программист для использования
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryRequest.FromRow">
+            <summary>
+            Номер возвращаемой страницы 0 - первая
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryRequest.ToRow">
+            <summary>
+            Размер одной страницы. 0 - все данные, но не более общего ограничения в системе.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryRequest.Parameters">
+            <summary>
+            Список параметров запроса. Должен знать программист на момент использования
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TextPageQuery">
+            <summary>
+            Простой запрос к базе данных в виде SQL
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.TextPageQuery.SqlScript">
+            <summary>
+            Текст запроса на T-SQL, может содержать параметры.
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SystemQueryResponse">
+            <summary>
+            Результат выполнения системного запроса
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.DSystemQuery">
+            <summary>
+            Класс для описания системных запосов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.DSystemQuery.Name">
+            <summary>
+            Наименование системного запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.DSystemQuery.Description">
+            <summary>
+            Описание системного запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.DSystemQuery.SystemName">
+            <summary>
+            Системное (уникальное, идентификационное) имя системного запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.DSystemQuery.SystemQueryId">
+            <summary>
+            Идкнтификатор системного запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.DSystemQuery.SystemQueryInfo">
+            <summary>
+            Информация о запросе
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SaQueryResult">
+            <summary>
+            Результат выполнения запроса к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryResult.Result">
+            <summary>
+            Набор данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryResult.TotalResultCount">
+            <summary>
+            Всего результатов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryResult.ExecuteTime">
+            <summary>
+            Время ваполнения
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryResult.ErrorMessage">
+            <summary>
+            Сообщения об ошибке.
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SaQueryResult.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SaQueryResult.#ctor(System.Data.DataSet)">
+            <summary>
+            Конструктор с результатом выполнения запроса с набором данных
+            </summary>
+            <param name="dataSet"></param>
+        </member>
+        <member name="T:ANBR.Query.Common.ReportParams">
+            <summary>
+            Параметры комплексного отчета
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ReportParams.FilterExecs">
+            <summary>
+            Список фильтров для выплнения и вывода на комплексном отчеты
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FilterExec">
+            <summary>
+            Описание яильта для построения комплексного отчета 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterExec.FilterId">
+            <summary>
+            Идентификатор сохраненного фильтра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterExec.ObjectId">
+            <summary>
+            Идентификатор объекта для выполнения фильтра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FilterExec.Parameters">
+            <summary>
+            Параметры запроса
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FolderType">
+            <summary>
+            Тип папки сохраненных запросов
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FolderType.CommonFolder">
+            <summary>
+            Общая папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.FolderType.UserFolder">
+            <summary>
+            Пользовательские папки
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SQLQuery">
+            <summary>
+            Параметризированный запрос к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SQLQuery.Text">
+            <summary>
+            Текст запроса на T-SQL с параметрами 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SQLQuery.QueryParameters">
+            <summary>
+            Список параметров запроса в виде коллекции объектов SaQueryParameter
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SaQuery">
+            <summary>
+            Постраничный SQL запос к базе данных с параметрами
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQuery.Text">
+            <summary>
+            Текс запроса на T-SQL
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQuery.QueryParameters">
+            <summary>
+            Список параметров запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQuery.PageSize">
+            <summary>
+            Количество результатов на странице
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQuery.StartPage">
+            <summary>
+            Порядковый номер страницы
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SaQueryParameter">
+            <summary>
+            Параметр запроса к базе данных на T-SQL
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryParameter.Name">
+            <summary>
+            Наименование параметра , например @ObjectName
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryParameter.DbType">
+            <summary>
+            Тип параметра DbType
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryParameter.Value">
+            <summary>
+            Значение параметра. Можно передавать массив значений. Параметр должен быть вида TypID in (@TypeID) 
+            Если передать массив 1,2,3, то запрос примет вид TypID in (1,2,3) 
+            IsMultiValues должно быт равно true
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SaQueryParameter.IsMultiValues">
+            <summary>
+            Признак того, что жто параметр типа IN TypID in (@TypeID). Смотри Value
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SystemQueryInfo">
+            <summary>
+            Описание системного запроса
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SystemQueryInfo.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryInfo.SqlText">
+            <summary>
+            Текст запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryInfo.CommandType">
+            <summary>
+            Тип комманда
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryInfo.Parameters">
+            <summary>
+            Список параметров запроса
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SystemQueryParameter">
+            <summary>
+            Параметр системного запорса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryParameter.SystemName">
+            <summary>
+            Системное имя параметра 
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryParameter.DisplayName">
+            <summary>
+            Наименование параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryParameter.DbType">
+            <summary>
+            Тип данных параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryParameter.IsInCondition">
+            <summary>
+            Признак параметра IN   COL in  (0,1,2,3)
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SystemQueryParameter.IsContains">
+            <summary>
+            Полнотекстовый параметр
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.IQueryServiceNew">
+            <summary>
+            Обновленный интерфейс для работы с сохраненными запросами
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.GetAllFolder(System.String)">
+            <summary>
+            Вернуть все папки для пользователя userName
+            </summary>
+            <param name="userName">Имя пользователя</param>
+            <returns>Список всех папок, доступных этому пользователю</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.CreateFolder(ANBR.Query.Common.Folder)">
+            <summary>
+            Создать новую папку в дереве сохраненных запосов
+            </summary>
+            <param name="folder">Описание новой папки</param>
+            <returns>Идентификатор вновь созданной папки</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.EditFolder(ANBR.Query.Common.Folder)">
+            <summary>
+            Изменить существующую папку в дерве запосов
+            </summary>
+            <param name="folder">Описание существующей папки. Должен быть проставлен идентификатор</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.DeleteFolder(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Удалить папку из дерева сохраненных запросов. Папка должнв быть пустая или передан флаг withElements = true и withChildren=true
+            </summary>
+            <param name="folderId">Идентификатор удаляемой папки</param>
+            <param name="withChildren">Удалять вложенные папки</param>
+            <param name="withElements">Удалять вложенные елементы</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.GetFolderElementTypes">
+            <summary>
+            Получить список типов для папок
+            </summary>
+            <returns>Список типов для папок в виде объектов класса ElementType</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.GetFolderElements(System.String)">
+            <summary>
+            Вернуть список всех елементов из дерева запросов доступных пользователю userName
+            </summary>
+            <param name="userName"></param>
+            <returns> Сисок элементов из дерева запросов</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.CreateFolderElement(ANBR.Query.Common.FolderElement)">
+            <summary>
+            Создать новый элемент в дереве папок
+            </summary>
+            <param name="folderElement">Описание нового элемета</param>
+            <returns>Идентификатор вновь созданного элемента</returns>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.EditFolderElement(ANBR.Query.Common.FolderElement)">
+            <summary>
+            Изменить данные элемента в дереве запросов
+            </summary>
+            <param name="folderElement">Обновленные данные элемента. Должен быть известено идентификатор</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.DeleteFolderElement(System.Int32)">
+            <summary>
+            Удалить элемент из дерева запросов
+            </summary>
+            <param name="folderElementId">Идентификатор удаляемого элемента</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.UpdateFolterTypeElementType(System.Int32,System.String,System.Byte[])">
+            <summary>
+            Изменить данные о типе папок в дереве запросов
+            </summary>
+            <param name="id">Идентфикатор изменяемого типа </param>
+            <param name="displayName">Новое наименование</param>
+            <param name="image">Новая иконка/логотип 16х16</param>
+        </member>
+        <member name="M:ANBR.Query.Common.IQueryServiceNew.ExecuteQueryPage(ANBR.Query.Common.TextPageQuery)">
+            <summary>
+            Выполнить постраничный запос к базе данных
+            </summary>
+            <param name="textPageQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.FolderElement">
+            <summary>
+            Базовый класс для элементов в дереве сохраненных запосов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.FolderElementId">
+            <summary>
+            Идентификатор элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.FolderElementTypeId">
+            <summary>
+            Идентификатор типа элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.FolderId">
+            <summary>
+            Идентификатор папки, в которой расположен элемент
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.DisplayName">
+            <summary>
+            Наименование элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.Description">
+            <summary>
+            Более полное опиание элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.IsCommon">
+            <summary>
+            Признак того, что элемент является общим
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.IsSystem">
+            <summary>
+            Признак того, что элемент является системным. Системные элементы запрещено редактировать обычным пользователям
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.OwnerName">
+            <summary>
+            Имя владельца элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.FolderElement.ElementData">
+            <summary>
+            Содержимое элемента в виде текста. 
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ElementType">
+            <summary>
+            Тип элемента в дереве сохраненных запросов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ElementType.ElementTypeId">
+            <summary>
+            Идентификатор типа элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ElementType.DisplayName">
+            <summary>
+            Наименование типа элемента
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ElementType.Image">
+            <summary>
+            Картинка тип  элемента
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.Folder">
+            <summary>
+            Описание папки в дереве сохраненных запросов
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.FolderId">
+            <summary>
+            Идентификатор папки
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.ParentFolder_ID">
+            <summary>
+            Идентификатородительской папки
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.DisplayName">
+            <summary>
+            Наименование папки
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.IsCommon">
+            <summary>
+            Признак, что папка является общей
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.IsSystem">
+            <summary>
+            Признак, что папкая является системной
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.OwnerName">
+            <summary>
+            Имя владельца папки
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Folder.Image">
+            <summary>
+            Картинка 16х16 папки
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ObjectFilter">
+            <summary>
+            Базовый класс для генерации запросов к базе данных к объектам
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.DisplayName">
+            <summary>
+            Наименование фильтра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.ObjectFilterId">
+            <summary>
+            Идентификатор фильтра
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.FindBySynonym">
+            <summary>
+            Использовать синонимы объектов для поиска
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.NoTotalCount">
+            <summary>
+            Не расчитывать общее количество результатов при постраничном запосе
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.MetaTypeId">
+            <summary>
+            Идентификатор типа, для которого создан фильтр
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.TotalCountSql">
+            <summary>
+            Виртуальный метод для генерации запроса по подсчету объего количества результатов  по фильтру
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.Sql">
+            <summary>
+            Виртуальный метод, возвращающий SQL запрос по описанию фильтра
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectFilter.GenerateFullTextTerms">
+            <summary>
+            Абстрактный метод для генерации полнотекстового условия
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectFilter.GenerateLikeTemlateSql">
+            <summary>
+            Абстрактный метод, для генереции LIKE eckjdbz
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectFilter.GenerateFulltextTemlateSql">
+            <summary>
+            Генерация полнотекстововой части SQL-запроса
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectFilter.GetViewName">
+            <summary>
+            Абстрактный метод, возвращающий имя представления (VIEW) для построения запроса
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectFilter.GenerateSqlQuery">
+            <summary>
+            Генерация итогового SQL pfgjcf
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.ToRow">
+            <summary>
+            До какой записи возвращать данные
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.ColumnListType">
+            <summary>
+            Какие колонки возвращать в результате
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.ObjectFilter.CustomColumnList">
+            <summary>
+            Список возвращаемых колонок
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ObjectQuery">
+            <summary>
+            Запрос для поиска  объета Семантического Архива
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectQuery.GenerateSqlQury">
+            <summary>
+            Генерирует итоговый запос к базе данных
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.ObjectQuery.AddObjectFilter(ANBR.Query.Common.ObjectFilter)">
+            <summary>
+            Добавить объектный фильтр для связанного объекта
+            </summary>
+            <param name="of"></param>
+        </member>
+        <member name="T:ANBR.Query.Common.ResultColumnListType">
+            <summary>
+            Варианты возвращаемых колонок 
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.ObjectIdOnly">
+            <summary>
+            Возвращает только идентификатор объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.MainColumns">
+            <summary>
+            Возвращает Object_ID, Type_ID, Display_Name
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.RelevanteColumn">
+            <summary>
+            Возвращает только основные колонки , описанные в  метамодели
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.AllSimpleColumn">
+            <summary>
+            Возвращает все колонки, кроме больших (text, Varchar(max), binnary )
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.AllColumn">
+            <summary>
+            Возвращает все колонки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.ResultColumnListType.CustomColumnList">
+            <summary>
+            ПОльзовательский список колонок
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.PersonFilter">
+            <summary>
+            Фильтр для поиска объектов типа персона
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.FirstName">
+            <summary>
+            Имя персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.LastName">
+            <summary>
+            Фамилия персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.MiddleName">
+            <summary>
+            Отчество персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.MaidenName">
+            <summary>
+            Девичья фамилия
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.INN">
+            <summary>
+            ИНН персоны
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.OGRNIP">
+            <summary>
+            ОГРН персоны (индивидуального предпринимателя)
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.BirthDateFrom">
+            <summary>
+            Дата раждения с
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.BirthDateTo">
+            <summary>
+            Дата раждения до
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.PersonFilter.Passport">
+            <summary>
+            Паспорт персоны
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.PersonFilter.GetViewName">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.PersonFilter.GetNameSearch(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="colName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.OrganizationFilter">
+            <summary>
+            Фильтр для поиска организации
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.OrganizationFilter.INN">
+            <summary>
+            ИНН огранизации
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.OrganizationFilter.OGRN">
+            <summary>
+            ОГРН огранизации
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.OrganizationFilter.OKPO">
+            <summary>
+            ОКПО организации
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.FactFilter">
+            <summary>
+            Фильтр получения фактов
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.FactFilter.GenerateSqlQuery">
+            <summary>
+            Генерирует запос для получения фактов по фильтру
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.SourceFilter">
+            <summary>
+            Фильтр получения источников
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SourceFilter.GenerateSqlQuery">
+            <summary>
+            Генерирует запос для получения фактов по фильтру
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.RelationFilterBase">
+            <summary>
+            Базовый фильтр для поиска по связям
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.RelationFilterBase.FromObjectFilterId">
+            <summary>
+            Идентификатор фильтра по связям
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.RelationFilterBase.FromRoleId">
+            <summary>
+            Идентификатор типа роли
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.RelationFilterBase.ToRoleId">
+            <summary>
+            Идентификатор типа роли
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.RelationFilterBase.RelationTypeId">
+            <summary>
+            Идентификатор типа связи
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.RelationFilter">
+            <summary>
+            Фильтер на связи
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.RelationFilter.ToObjectFilterId">
+            <summary>
+            Идентификатор объекта к которому нужна связь
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleRelationFilter">
+            <summary>
+            Простой фильтр для связи
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.ProfileReportConfiguration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.QueryInfo">
+            <summary>
+            Запрос 
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.Query_ID">
+            <summary>
+            Идентификатор запоса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.QueryFolder_ID">
+            <summary>
+            Идентификатор папки, в которой находится запрос
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.Type">
+            <summary>
+            Тип запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.TypeListView">
+            <summary>
+            Тип возвращаемых запосом данных
+            </summary>
+            <see cref="T:ANBR.Common.Filters.TypeObjectListView"/>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.TypeApplication">
+            <summary>
+            Тип приложения, для которого создан запрос
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.UserName">
+            <summary>
+            Имя пользователя - владельча запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.QueryInfo.Name">
+            <summary>
+            Наименование запоса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.Description">
+            <summary>
+            Более полное описание запоса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.SqlText">
+            <summary>
+            Текст запроса на SQL
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryInfo.XmlText">
+            <summary>
+            Запрос в виде XML структуры
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TypeQuery">
+            <summary>
+            Тип запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQuery.NoType">
+            <summary>
+            Признак папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQuery.Template">
+            <summary>
+            Расширенный шаблон запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQuery.Unknown">
+            <summary>
+            Признак поврежденного запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQuery.TemplateSimple">
+            <summary>
+            Простой шаблон запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQuery.Favorites">
+            <summary>
+            Избранное
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.TypeQueryApplication">
+            <summary>
+            Тип  приложения в котором будет использоваться ЗАпрос
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQueryApplication.Universal">
+            <summary>
+            Универсальный
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQueryApplication.Analyst">
+            <summary>
+            Аналитик
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQueryApplication.Operator">
+            <summary>
+            Оператор
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.TypeQueryApplication.Alarms">
+            <summary>
+            сигнал тревоги
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.QueryFolderInfo">
+            <summary>
+            Описание папки с подзапросами
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.ParentFolder_ID">
+            <summary>
+            Идентификатор папки-предка
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.QueryFolder_ID">
+            <summary>
+            Идентификатор самой папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.UserName">
+            <summary>
+            Владелец папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.Name">
+            <summary>
+            Наименование папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.Description">
+            <summary>
+            Описание назначения папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.QueryFolderInfo.TypeApplication">
+            <summary>
+            Типы приложений, для которых видна папка
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.QueryFolderInfo.CompareTo(System.Object)">
+            <summary>
+            Сравнение двух папок на идентичность 
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Query.Common.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.Properties.Resources.DefaultSimpleQueryName">
+            <summary>
+              Looks up a localized string similar to Простой запрос 1.
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleQueryEntityType">
+            <summary>
+            Текущий тип простого запроса
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.AbstractElement">
+            <summary>
+            Абстрактный элемент
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.Object">
+            <summary>
+            Объект
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.Organization">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.Fact">
+            <summary>
+            Факт
+            </summary>
+        </member>
+        <member name="F:ANBR.Query.Common.SimpleQueryEntityType.Document">
+            <summary>
+            Документ
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.IDefaultSearchSettings">
+            <summary>
+            Интервал поисковых дат по умолчанию, используемый в визуальном поиске.
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQuery">
+            <summary>
+            Xml-представление простого запроса
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SimpleSearch.SimpleQuery.FromXmlContent(System.String)">
+            <summary>
+            Инициализация фильтра из строки
+            </summary>
+            <param name="xmlContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.SimpleSearch.SimpleQuery.ToXmlContent">
+            <summary>
+            Конвертация в строковое представление в формате xml
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Query.Common.SimpleSearch.SimpleQuery.ToString">
+            <summary>
+            Строковое представление sql-запроса
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.EntityType">
+            <summary>
+            Текущая сущность запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.FirstLevelFilter">
+            <summary>
+            Тип сущности поиска для группы объектов (в фильтре)
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.VisualizerType">
+            <summary>
+            Тип визуализатора результатов поиска.
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.QueryName">
+            <summary>
+            Имя запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.AbstractElement">
+            <summary>
+            Запрос по абстрактным элементам
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.Object">
+            <summary>
+            Запрос по объектам
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.Fact">
+            <summary>
+            Запрос по фактам
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.Organization">
+            <summary>
+            Запрос по организациям
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.Person">
+            <summary>
+            Запрос по персонам
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.SimpleQuery.Source">
+            <summary>
+            Запрос по источникам
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.QueryMetaEntity">
+            <summary>
+            Сущность, содержащаяся в запросе
+            </summary>
+        </member>
+        <member name="M:ANBR.Query.Common.SimpleSearch.QueryMetaEntity.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.QueryMetaEntity.ID">
+            <summary>
+            Идентификатор сущности
+            </summary>
+        </member>
+        <member name="P:ANBR.Query.Common.SimpleSearch.QueryMetaEntity.DisplayName">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryAbstractElement">
+            <summary>
+            Xml-представление простого запроса. Абстрактные элементы
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryEntity">
+            <summary>
+            Базовый класс запроса по сущности. Вспомогательные сущности
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryFact">
+            <summary>
+            Xml-представление простого запроса. Факты
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryObject">
+            <summary>
+            Xml-представление простого запроса. Объекты
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryOrganization">
+            <summary>
+            Xml-представление простого запроса. Организации
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQueryPerson">
+            <summary>
+            Xml-представление простого запроса. Персоны
+            </summary>
+        </member>
+        <member name="T:ANBR.Query.Common.SimpleSearch.SimpleQuerySource">
+            <summary>
+            Xml-представление простого запроса. Источник
+            </summary>
+        </member>
+    </members>
+</doc>

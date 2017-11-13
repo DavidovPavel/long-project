@@ -1,0 +1,252 @@
+﻿@import "../../.libs/lib";
+
+/* оформление виджета */
+.decoration {
+    & .pattern {
+        width: 180px;
+        height: 144px;
+        background-color: #c8bca2;
+        padding: 4px;
+        font-size: 13px;
+        color: #333;
+
+        & .pat-title {
+            padding: 4px 0;
+            font-size: 18px;
+        }
+
+        & .pat-link {
+            color: #467fd4;
+            margin-top: 35px;
+        }
+
+        & .pat-content {
+            border: solid 1px #c8bca2; 
+            height: 104px;
+            background-color: #fff;
+            text-align: center;
+            padding-top: 27px;
+        }
+    }
+
+    & .marker {
+        display: flex;
+        flex-direction: column;
+        height: 144px;
+        justify-content: space-between;
+        position: absolute;
+        margin-left: 160px;
+
+        & > div {
+            flex-basis: 30px;
+            line-height: 30px;
+            color: #333333;
+        }
+
+        & .font-icon-type {
+            font-size: 24px;
+            color: #666;
+            vertical-align: middle;
+            cursor: default;
+        }
+        //& div.sp-replacer { display: inline-block; }
+        & div {
+            & svg {
+                fill: #666666;
+                width: 24px;
+                height: 24px;
+                vertical-align: middle;
+            }
+
+            & hr {
+                width: 40px;
+                display: inline-block;
+                vertical-align: middle;
+                border-color: #666;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    & nav {
+        margin-top: 20px;
+        position: relative;
+        bottom: -1px;
+        height: 43px;
+
+        & svg {
+            fill: #666666;
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+
+        & .font-icon-type {
+            font-size: 24px;
+            color: #666;
+            vertical-align: middle;
+            cursor: default;
+        }
+
+        & > div:hover {
+            background-color: #cfcfcf;
+            border-color: #cfcfcf;
+        }
+
+        & > div {
+            width: 56px;
+            height: 43px;
+            cursor: pointer;
+            float: left;
+            line-height: 43px;
+            text-align: center;
+            border: solid 1px #f0f0f0;
+            border-bottom-color: #cdcdcd;
+        }
+
+            & > div.ac {
+                border: solid 1px #cdcdcd;
+                border-bottom-color: #f0f0f0;
+                background-color: #f0f0f0;
+            }
+    }
+
+    & .tabs {
+        clear: left;
+        margin-bottom: 30px;
+    }
+
+    & div.tab-content {
+        width: 495px;
+        min-height: 212px;
+        border: solid 1px #cdcdcd;
+        padding: 35px 24px;
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+
+    & .set-background {
+        border-bottom: solid 1px #bbb;
+        margin-bottom: 24px;
+        padding-bottom: 10px;
+
+        & label {
+            line-height: 34px;
+            margin: 0;
+        }
+
+        & span {
+            float: right;
+
+            & svg {
+                width: 16px;
+                height: 16px;
+                fill: #666;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    & .sp-replacer {
+        border: 0;
+        display: inline-block;
+
+        & .sp-preview {
+            width: 29px;
+            height: 29px;
+            border-color: #888;
+        }
+
+        & .sp-dd {
+            color: #888;
+            line-height: 30px;
+            padding: 0;
+        }
+    }
+
+    & .RadioBtnBlock {
+        display: flex;
+        justify-content: space-between;
+
+        & span {
+            & label {
+                margin: 0;
+                vertical-align: middle;
+            }
+
+            & input {
+                margin-top: 2px;
+                vertical-align: middle;
+            }
+        }
+    }
+
+    & .select-image {
+        margin-bottom: 10px;
+
+        & * {
+            vertical-align: middle;
+        }
+
+        & .icon-clear {
+            cursor: pointer;
+            float: right;
+            width: 26px;
+            height: 24px;
+            text-align: center;
+            line-height: 22px;
+
+            &:hover {
+                background-color: #bbb;
+            }
+
+            & svg {
+                width: 12px;
+                height: 12px;
+                fill: #6b6b6b;
+            }
+        }
+    }
+}
+
+/*#decor-chbx {
+    & div {height:30px; }
+    & .font-icon-checkbox {
+        background:none; 
+        & label {float:right;margin-top:2px;margin-left:5px;cursor:pointer; }
+        &.checked label,
+        & label:hover { color:#666; }
+    }
+}*/
+
+
+/*SHARED USERS SCROLL*/
+#right-property {
+    & .tab-content {
+        &.two {
+            &.show {
+                & > div {
+                    max-height:400px;
+                    overflow-x:auto;
+                }
+            }
+        }
+    }
+}
+
+/*КОСТЫЛЬ 3636 */
+.name-vitrina {
+    max-height:54px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    word-wrap:break-word;
+}
+
+/*3473*/
+
+.message-text {
+    word-wrap:break-word;
+}

@@ -1,0 +1,14 @@
+﻿<div id="uploadFileBlock" data-id="CE669C9B-4E43-4E24-B968-D97679A5A1A0">
+<div class="progress">
+    <div class="bar"></div>
+    <div class="percent">0%</div>
+</div>
+<form id="uploadFile" method="post" action="<%= linktoupload %>" enctype="multipart/form-data">
+    <input id="fileToUpload" class="input" type="file" name="fileToUpload" />
+    <input type="hidden" name="objId" />
+    <button type="submit"><%= Resources.upload %></button>
+</form>
+<div id="status"></div>
+</div>
+<div id="linkToFile"></div>
+<div id="inLoad" style="overflow: auto;"></div>

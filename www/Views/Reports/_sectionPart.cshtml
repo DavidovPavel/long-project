@@ -1,0 +1,32 @@
+﻿@model ABS.WReportsProcessing.Contracts.ModelReportABSGeneralSection
+
+@{
+    var secID = (Model.Level + 1) + "_" + (Model.Index);
+}
+<section class="expanded">
+    <div class="section-title" id="@secID">
+        @Html.Raw(Model.Title)
+        @if (Model.Level + 1 > 1)
+        {
+            <span class="count-articles">(@Model.Articles.Count)</span>
+        }
+    </div>
+    @if (Model.Articles.Count > 0)
+    {
+        <div class="articles">
+            @for (int i = 0; i < Model.Articles.Count; i++)
+            {
+                Html.RenderPartial("~/Views/Reports/_articlePart.cshtml", Model.Articles[i]);
+            }
+        </div>
+    }
+    @if (Model.Sections.Count > 0)
+    {
+        <div class="sections level_@(Model.Level + 2)">
+            @for (int i = 0; i < Model.Sections.Count; i++)
+            {
+                Html.RenderPartial("~/Views/Reports/_sectionPart.cshtml", Model.Sections[i]);
+            }
+        </div>
+    }
+</section>

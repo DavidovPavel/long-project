@@ -1,0 +1,60 @@
+﻿<h2><%= Resources.titleFormPerson %></h2>
+<div class="Main">
+    <table>
+        <tr>
+            <td style="padding-right: 45px;">
+                <input type="text" placeholder="<%= Resources.surname %>" name='lname' />
+                <br />
+                <input type="text" placeholder="<%= Resources.name %>" name='fname' />
+                <br />
+                <input type="text" placeholder="<%= Resources.patronymic %>" name='mname' />
+                <br />
+                <input type="text" placeholder="<%= Resources.previousname %>" name="pname" />
+
+                <div style="margin-bottom: 7px;"><span class="Cbx"><input type="hidden" name="searchSin" /></span>
+                    <label><%= Resources.searchwiththesynonyms %></label></div>
+            </td>
+            <td>
+                <div style="margin-bottom: 8px;">
+                    <label><%= Resources.bdate %></label></div>
+                <input type="text" class="ejdatepicker" name="bdate" style="width:30%;min-width:200px;" placeholder="<%= Resources.formatDate %>" />
+                <br /><br/>
+                <div style="margin-bottom: 8px;">
+                    <label><%= Resources.appage %></label></div>
+                <input type="text" style="width: 10%;min-width:65px;" name="ageFrom" placeholder="<%= Resources.from %>" />
+                <input type="text" style="width: 10%;min-width:65px;" name="ageTo" placeholder="<%= Resources.to %>" />
+            </td>
+        </tr>
+    </table>
+</div>
+<br/><br/>
+<div class="Main">
+    <table>
+        <tr>
+            <td style="padding-right: 45px;">
+                <div style="margin-bottom: 7px;"><%= Resources.passport %></div>
+                <input type="text" style="width: 10%;min-width:65px;" placeholder="<%= Resources.serial %>" name="pasSerial" />&nbsp;<input type="text" style="width: 18%;min-width:65px;" placeholder="<%= Resources.number %>" name="pasNumber" />
+                <br />
+                <div style="margin-bottom: 7px;"><%= Resources.idate %></div>
+                <input type="text" class="ejdatepicker" name="pasDate" style="width:30%;min-width:200px;" placeholder="<%= Resources.formatDate %>" />
+            </td>
+            <td>
+                <div><input type="text" style="width: 60%;" placeholder="<%= Resources.inn %>" name="inn" /><span class="checkInn"><img src="/Images/ar2.png" alt="" />&nbsp;<%= Resources.linn %></span></div>
+                <br/>
+                <input type="text" style="width: 60%;" placeholder="<%= Resources.ogrnip %>" name="ogrnip" />
+            </td>
+        </tr>
+    </table>
+</div>
+<br/><br/>
+<p style="padding-left: 72px;padding-right: 150px;">
+    <button class="shape gr_blue search"><%= Resources.checkId %></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="shape gr_blue create"><%= Resources.createNew %></button> 
+    <button class="shape gr_blue right clear"><%= Resources.clearall %></button>
+</p>
+<br/><br/>
+<h2><%= Resources.titleMatchResult %></h2>
+<div id="SearchResult">
+    <table class="List"></table>
+</div>
+
+<br/><br/>

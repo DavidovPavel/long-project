@@ -1,0 +1,104 @@
+﻿@using ANBR.Common
+@using Microsoft.IdentityModel.Claims
+@using Thinktecture.IdentityModel.Extensions
+@using www.SaGateway
+
+@functions {
+}
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="/Scripts/jquery.signalR-2.2.2.min.js" type="text/javascript"></script>
+    <script src="/signalr/hubs" type="text/javascript"></script>
+
+    <style>
+        #logging {height:400px;overflow:auto;border:solid 2px orange;padding:4px 6px;}
+        #logging p {border-bottom:dashed 1px #f1f1f1;margin:3px 0;padding:2px;}
+    </style>
+
+</head>
+<body>
+    <div>
+    </div>
+
+    @{
+        var lapdata = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+        var isAuth = ANBR.Security.Common.SecurityEnvironment.IsAuthenticate(new Guid("81FD5BE8-960B-4694-8714-D4CE016E7083")) ? "yes" : "no";
+        ClaimsPrincipal claimsPrincipal = System.Threading.Thread.CurrentPrincipal as ClaimsPrincipal;
+
+        string uid = "";
+        string userName = "";
+        dynamic principal = System.Threading.Thread.CurrentPrincipal;
+        if (principal != null && principal.ToString() == "System.Security.Claims.ClaimsPrincipal")
+        {
+            dynamic uidClaim = principal.FindFirst("http://idsrv.anbr.ru/claims/userkey");
+            if (uidClaim != null && !String.IsNullOrWhiteSpace(uidClaim.Value))
+            {
+                uid = uidClaim.Value;
+                userName = principal.FindFirst(ClaimTypes.Name).Value;
+            }
+        }
+
+        string r = "hi";
+    }
+    
+    @{
+        var filename = lapdata + "\\test.xlsx";
+        //File.WriteAllText(filename, "test");        
+    }
+    
+    <p>@lapdata</p>
+    <p>@filename</p>
+
+    <div id="logging"></div>
+
+    <script>
+        $(function () {
+            var z = '@WebSaUtilities.GetCurrentUserName()';
+            var a = '@uid';
+            var b = '@userName';
+            var z = '@System.Threading.Thread.CurrentPrincipal.Identity.GetType()';
+            var zz = '@r';
+
+            /*
+                        var connection = $.hubConnection();
+                        var contosoChatHubProxy = connection.createHubProxy('contosoChatHub');
+                        contosoChatHubProxy.on('addContosoChatMessageToPage', function (name, message) {
+                            alert(name + ' ' + message);
+                        });
+                        connection.start().done(function () {
+                            contosoChatHubProxy.invoke('newContosoChatMessage', "1", "one");
+                        });
+            */
+        });
+
+        function logging(kind, message) {
+            $("#logging").prepend($("<p>" + kind + " :: " + message + "</p>"));
+        }
+
+        var ticker = $.connection.Ticker;
+        $.connection.hub.logging = true;
+
+        ticker.client.log = function (kind, message) {
+            logging(kind, message);
+        };
+
+        $.connection.hub.start()
+            .done(function () {
+                logging("Connection", "done");
+            });
+
+    </script>
+</body>
+</html>

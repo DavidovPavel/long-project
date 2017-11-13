@@ -1,0 +1,48 @@
+﻿<div style="padding:20px;">
+<div id="tabsDoc">
+    <ul>
+        <li><a href="#doc3"><%= Resources.upload %> <%= Resources.fromfile %></a></li>
+        <li><a href="#doc2"><%= Resources.originaldoc %></a></li>
+    </ul>
+    <div id="doc3">
+        <div class="progress">
+            <div class="bar"></div>
+            <div class="percent">0%</div>
+        </div>
+        <form id="uploadFile" method="post" action="<%= linktoupload %>" enctype="multipart/form-data">
+            <input id="fileToUpload" type="file" name="fileToUpload" />
+            <input type="hidden" name="objID" value="<%= id %>" />
+            <input type="hidden" name="title" value="<%= Display_Name %>" />
+            <input type="hidden" name="typeid" value="<%= typeid %>" />
+            <input type="hidden" name="smi" value="<%= MassMedia %>" />
+            <input type="hidden" name="author" value="<%= Author %>" />
+            <input type="hidden" name="pdate" value="<%= Дата_публикации %>" />
+            <input type="hidden" name="rubricid" />
+        </form>
+        <div id="status"></div>
+        <div id="linkToFile"></div>
+    </div>
+    <div id="doc2">
+        <p><input type="checkbox" name="IsMedia" class="Chbx" />&nbsp;<label><%= Resources.isMedia %></label></p>
+        <textarea class="htmlEditor"></textarea>
+    </div>
+</div>
+    <p>
+        <button class="shape gr_blue send"><%= Resources.save %></button>&nbsp;&nbsp;<button class="shape gr_blue clear"><%= Resources.clearall %></button></p>
+<div class="Main">
+    <input type="text" class="title Valid" name="title" value="<%= Display_Name %>" placeholder="<%= Resources.title %>"/>
+    <br />
+    <input type="text" class="smi" name="smi" value="<%= MassMedia %>" placeholder="<%= Resources.smi %>" />
+    <br />
+    <input type="text" class="author" name="author" value="<%= Author %>" placeholder="<%= Resources.author %>" />
+    <br />
+    <input type="text" class="datepicker" name="pdate" value="<%= Дата_публикации %>" placeholder="<%= Resources.pdate %>" />
+    
+    <div class="TreeTypes">
+        <h2><%= Resources.type %>&nbsp;<span class="titleType"><%= Resources.source %></span></h2>
+        <div class="loadTree"></div>
+    </div>
+
+    
+</div>
+</div>

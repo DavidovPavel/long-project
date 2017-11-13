@@ -1,0 +1,9 @@
+﻿{
+  "items":[
+    {"title":"App", "id":"app", "class": "all-inquiry"},
+    {"title":"Context", "id":"context", "class": "list-inquiry"},
+    {"title":"Dashboard", "id":"dash" , "class": "all-inquiry"},
+    {"title":"Data-Icon", "id":"icon" , "class": "list-inquiry"},
+    {"title":"Dialog", "id":"dialog", "class":"list-inquiry"},
+    {"title":"Dosier", "id":"dosier" , "class": "all-inquiry"}
+]}

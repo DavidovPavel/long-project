@@ -1,0 +1,87 @@
+﻿.control-icon {
+    width:24px;
+    height:24px;
+    position:relative;
+    display:inline-block;
+    cursor:pointer;
+    line-height:0px;
+    font-size:0px;
+}
+.control-icon-sm {
+    width:16px;
+    height:16px;
+}
+.control-icon-xl {
+    width:32px;
+    height:32px;
+}
+.control-icon-xxl {
+    width:40px;
+    height:40px;
+}
+.control-icon-xxxl {
+    width:48px;
+    height:48px;
+}
+
+/*PRESETS*/
+.control-icon__close {
+    background:#0094ff;
+    transition: all linear 150ms;
+}
+    .control-icon__close:before, .control-icon__close:after {
+        position:absolute;
+        content:'';
+        width:2px;
+        height:16px;
+        background:#fff;
+        top:calc(50% - 8px);
+        left:calc(50% - 1px);
+        transition:all linear 150ms;
+    }
+    .control-icon__close:before {
+        transform:rotate(45deg);
+    }
+        .control-icon__close:after {
+        transform:rotate(-45deg);
+    }
+    .control-icon__close:hover {
+        background:#bb0000;
+    }
+        .control-icon__close:hover:after {
+            transform:rotate(45deg);
+        }
+        .control-icon__close:hover:before {
+            transform:rotate(-45deg);
+        }
+
+.control-icon__larr {
+    background:#0094ff;
+    transition:all linear 150ms;
+}
+    .control-icon__larr:before {
+        content:'';
+        width:16px;
+        height:2px;
+        background:#fff;
+        position:absolute;
+        top:calc(50% - 1px);
+        left:calc(50% - 8px);
+    }
+    .control-icon__larr:after {
+        content:'';
+        width:8px;
+        height:8px;
+        transform:rotate(45deg);
+        border-top:2px solid #fff;
+        border-right:2px solid #fff;
+        position:absolute;
+        top:calc(50% - 5px);
+        left:calc(50% - 4px);
+    }
+    .control-icon__larr:hover:before{
+        transform:translateX(3px);
+    }
+    .control-icon__larr:hover:after {
+        transform:translateX(3px) rotate(45deg);
+    }

@@ -1,0 +1,31 @@
+﻿@model www.Models.LoginModel
+@{
+    ViewBag.Title = "Login";
+    ViewBag.Name = "login";
+    www.Root.GetCurrentLang();
+    var currentLang = ViewBag.CurrentLang;
+    Layout = "~/Views/Shared/ANBR/_Layout.cshtml";
+}
+
+<style type="text/css">
+    h2 {font-weight: normal;font-size: 24px;padding-left: 30px;}
+    h4 {font-size: 18px;color: #878787;font-weight: normal;margin: 10px 0;}
+    select {height: 36px;width: 100%;font-size: 18px;margin-bottom: 32px; padding-left: 12px;color: #575757;}
+    select option {}
+    .Main {padding:30px;}
+    .T { border-collapse: collapse;width: 100%;}
+    .T td {background-color: #f7f7f7;vertical-align: top;}
+    .arr3 {text-decoration: none;text-transform: uppercase;color: #878787;font-size: 14px;}
+    .arr3 * { vertical-align: middle;}
+</style>
+
+<h2>@Resources.Client.selWorkArea</h2>
+<table class="T"><tr><td style="width: 50%">
+<div class="Main"></div>
+</td><td style="background-color: #fff;"><div style="width: 45px;"></div></td><td style="width: 50%;">@Html.Partial("_LoginPartial")</td></tr></table>
+<script type="text/javascript">
+    require.config({
+        config: { i18n: { locale: '@currentLang.ToLower()' } }
+    });
+    define("access", { data: { "NetVersion": "Internet" } });
+</script>

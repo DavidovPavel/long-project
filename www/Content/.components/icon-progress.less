@@ -1,0 +1,27 @@
+﻿@-webkit-keyframes ico-ProgressBar {
+    0% { }
+    10% { -webkit-transform:scaleY(1.5)}
+    20% { -webkit-transform:scaleY(1) } 
+    30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {}
+}
+@keyframes ico-ProgressBar {
+    0% { }
+    10% { transform:scaleY(1.5)}
+    20% { transform:scaleY(1) } 
+    30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {} }
+
+.icon-progress { width: 60px; height: 18px; display: inline-block; }
+    .icon-progress span { display: inline-block; width: 7px; height: 12px;background-color:#6c9adf;border:solid 1px #f5f5f5; float:left;margin-right:-1px;margin-top:3px; 
+                          -webkit-animation: ico-ProgressBar 1.0s linear infinite; animation: ico-ProgressBar 1.0s linear infinite;
+    }
+
+        .icon-progress span:nth-child(1) { }
+        .icon-progress span:nth-child(2) { -webkit-animation-delay: 0.03s;animation-delay: 0.03s;}
+        .icon-progress span:nth-child(3) { -webkit-animation-delay: 0.06s;animation-delay: 0.06s;}
+        .icon-progress span:nth-child(4) { -webkit-animation-delay: 0.09s;animation-delay: 0.09s;}
+        .icon-progress span:nth-child(5) { -webkit-animation-delay: 0.12s;animation-delay: 0.12s;}
+        .icon-progress span:nth-child(6) { -webkit-animation-delay: 0.15s;animation-delay: 0.15s;}
+        .icon-progress span:nth-child(7) { -webkit-animation-delay: 0.18s;animation-delay: 0.18s;}
+        .icon-progress span:nth-child(8) { -webkit-animation-delay: 0.21s;animation-delay: 0.21s;}
+        .icon-progress span:nth-child(9) { -webkit-animation-delay: 0.27s;animation-delay: 0.27s;}
+        .icon-progress span:nth-child(10) { -webkit-animation-delay: 0.3s;animation-delay: 0.3s;}

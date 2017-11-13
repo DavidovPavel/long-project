@@ -1,0 +1,18 @@
+﻿@model System.Security.Principal.IPrincipal
+
+@if (Model is System.Security.Claims.ClaimsPrincipal)
+{
+    var id = Model.Identity as System.Security.Claims.ClaimsIdentity;
+
+    foreach (var claim in id.Claims)
+    { 
+        <b>@claim.Type</b>
+        <br />
+        @claim.Value
+        <br />
+        @claim.Issuer @:(@claim.OriginalIssuer)
+        <br />
+        <br />
+        <br />
+    } 
+}

@@ -1,0 +1,249 @@
+﻿ul.g-tree {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+ul.g-tree li {
+  display: block;
+  padding: 3px 0;
+  margin: 0;
+  line-height: normal;
+  position: relative;
+}
+ul.g-tree li:before {
+  content: '';
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: transparent;
+}
+ul.g-tree li:hover:before {
+  background: #f5f5f5;
+}
+ul.g-tree li.active:before {
+  background: #a3dbff;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) {
+  display: none;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check):disabled + label {
+  opacity: 0;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check):disabled + label:before {
+  cursor: default;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check):checked + label:before {
+  transform: rotate(90deg);
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check):checked ~ ul {
+  display: block;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) + label {
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  border: none;
+  box-sizing: border-box;
+  position: relative;
+  vertical-align: baseline;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) + label:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.5px 0 6.5px 6px;
+  border-color: transparent transparent transparent #999;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  transition: transform 200ms ease-in;
+  cursor: pointer;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 13px;
+  position: relative;
+  height: 13px;
+  box-sizing: border-box;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="file"] {
+  background: transparent;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="file"]:before {
+  width: 10px;
+  height: 13px;
+  border: 1px #d7d7d7 solid;
+  background: #f5f5f5;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 1.5px;
+  box-sizing: border-box;
+  border-top-right-radius: 3px;
+  transition: none;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="file"]:after {
+  opacity: 0.4;
+  width: 6px;
+  height: 1px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(360deg);
+  background: #7d7d7d;
+  transition: none;
+  box-shadow: 0 3px 0px 0px #7d7d7d, 0 -3px 0px 0px #7d7d7d;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="root"] {
+  background: transparent;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="root"]:before {
+  width: 13px;
+  height: 9px;
+  content: '';
+  background: #ff6a00;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="root"]:after {
+  width: 6px;
+  height: 1px;
+  content: '';
+  background: #333;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="folder"] {
+  background: transparent;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="folder"]:before {
+  width: 13px;
+  height: 9px;
+  content: '';
+  background: #2a7eed;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ i[tree-icon="folder"]:after {
+  width: 6px;
+  height: 1px;
+  content: '';
+  background: #333;
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ input[type="text"] {
+  display: inline;
+  vertical-align: baseline;
+  min-width: 0;
+  width: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px solid #eee;
+  font-size: 13px;
+  box-sizing: border-box;
+  background: transparent;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ input[type="text"][readonly] {
+  border: 1px solid transparent;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ button {
+  width: 18px;
+  height: 18px;
+  margin: -2.5px 0 0;
+  background: transparent;
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  top: 3px;
+  outline: none;
+  cursor: pointer;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ button:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  background-image: url('/Content/images/data-icon-all.svg');
+  background-repeat: no-repeat;
+  background-size: 544px 544px;
+  filter: grayscale(100%) brightness(0.5);
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ button[data-value="ok"]:before {
+  background-position: -153px -51px !important;
+  filter: grayscale(0%) brightness(1) hue-rotate(240deg) !important;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ button[data-value="cancel"]:before {
+  background-position: -170px -51px !important;
+  filter: grayscale(0%) brightness(1) hue-rotate(140deg) !important;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+ul.g-tree li > input[type="checkbox"]:not(.g-tree--check) ~ ul li {
+  padding-left: 14px;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check {
+  display: none;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check + label {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 13px;
+  height: 13px;
+  position: absolute;
+  vertical-align: baseline;
+  position: relative;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check + label:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #666;
+  cursor: pointer;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check + label:after {
+  content: '';
+  width: 4px;
+  height: 13px;
+  position: absolute;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  transform: rotate(45deg);
+  top: -5px;
+  left: 6px;
+  cursor: pointer;
+  display: none;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check:disabled + label {
+  opacity: 0.2;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check:disabled + label:before {
+  cursor: not-allowed;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check:checked + label:after {
+  display: block;
+}
+ul.g-tree li > input[type="checkbox"].g-tree--check:checked ~ span {
+  color: #00b;
+}

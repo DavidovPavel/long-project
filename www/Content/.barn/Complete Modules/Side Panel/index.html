@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="master.min.css" rel="stylesheet" />
+    <script src="../../../../js/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.Shna button').on('click', function () {
+                if ($(this).is('#left')) {
+                    $('.g-sidepanel.left').addClass('active');
+                    $('.g-sidepanel.right').removeClass('active');
+                    $('.overlay').show();
+                }
+                else {
+                    $('.g-sidepanel.right').addClass('active');
+                    $('.g-sidepanel.left').removeClass('active');
+                    $('.overlay').show();
+                }
+            });
+            $('aside .controls > .close').on('click', function () {
+                $(this).parents('.g-sidepanel').removeClass('active');
+                $('.overlay').hide();
+            });
+            $('.widget-types li').on('mouseover', function () {
+                $('p.description').fadeIn();
+            });
+            $('#WidgetTable').on('click', function () {
+                $('#temp').hide();
+                $('#temp2').show();
+                $('.g-sidepanel.active').attr('actions', 'true');
+                if ($('#temp2').is(':visible')) {
+                    $('button.next').removeAttr('disabled');
+                    $('button#cancel').addClass('prev');
+                    $('button.next').on('click', function () {
+                        $('#temp2').hide();
+                        $('.g-sidepanel.active').attr('actions', 'true');
+                        $('#decor').show();
+                        $(this).text('Finish');
+                    });
+                }
+            });
+            $('#cancel').on('click', function () {
+                $('.g-sidepanel section.content > div').hide();
+                $('#temp').show();
+            });
+            $('i.remove').on('click', function () {
+                var c = $(this).parents('ul').children('li').length;
+                if (c > 1) {
+                    $(this).parents('li').remove();
+                }
+                else {
+                    $(this).parents('li').html('<span class="g-form--input">No data</span>');
+                }
+            });
+            $('i[data-icon="icon-script"]').on('click', function () {
+                $('#dialog2').show();
+                $('.g-dialog--wrapper i.close').on('click', function () {
+                    $(this).parents('.g-dialog--wrapper').hide();
+                });
+                $('.g-dialog--content').on('click', function () {
+                    $(this).children('.g-dialog--overlay').show();
+                    $('.g-dialog--overlay').on('dblclick', function () {
+                        $(this).hide();
+                        $(this).parents('.g-dialog--wrapper').hide();
+                    });
+                });
+            });
+
+            /*FOR BEAUTY ONLY*/
+            $('i[data-icon="icon-reload"]').on('click', function () {
+                $('.widget-queries li').hide();
+                function callback($e) {
+                    $e.delay(300).show(0, function () {
+                        callback($(this).next('li'));
+                    });
+                }
+                callback($('.widget-queries li:first'));
+            });
+        });
+    </script>
+</head>
+<body>
+    <header></header>
+    <main class="g-dashboard--wrapper" style="background-image:url('http://localhost/Storage/Wall/2016-12-15/7eaa02c9-d24b-4a9a-b8be-286bea7b0dfe_tubik_free_book_logo_design.jpg')">
+        <div class="Shna" style="display:block; text-align:center;">
+            <button id="left">Left</button>
+            <button id="right">Right</button>
+        </div>
+        <aside class="g-sidepanel active left" actions="false">
+            <div class="controls"><i class="close"></i></div>
+            <section class="content">
+                <div id="temp">
+                    <section>
+                        <span class="g-sidepanel--title">Добавить виджет</span>
+                        <div class="widget-collection">
+                            <ul class="widget-types">
+                                <li id="WidgetTable" class="WidgetTable">
+                                    <span>Таблица</span>
+                                </li>
+                                <li id="WidgetRunning">
+                                    <span>Бегущая строка</span>
+                                </li>
+                                <li id="WidgetMap">
+                                    <span>Карта</span>
+                                </li>
+                                <li id="WidgetGraph">
+                                    <span>Графики, диаграммы</span>
+                                </li>
+                                <li id="WidgetSource">
+                                    <span>Источник</span>
+                                </li>
+                                <li id="WidgetReporting">
+                                    <span>Отчет</span>
+                                </li>
+                                <li id="WidgetHtml">
+                                    <span>Декоративный виджет</span>
+                                </li>
+                            </ul>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla a varius lacus, ut vestibulum mi. Quisque imperdiet et ante id molestie. Nunc et nisl quis nisl dignissim porta. Fusce vehicula suscipit lacus, at scelerisque metus tincidunt in. Vestibulum massa elit, fringilla in urna vulputate, elementum vehicula ligula. Quisque libero justo, finibus vel quam quis, aliquam euismod lorem. Proin ac lacus vulputate, euismod orci ultricies, auctor quam. Ut laoreet imperdiet odio, nec vehicula nisi pretium vel.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div id="temp2" style="display:none">
+                    <section>
+                        <span class="g-sidepanel--title">
+                            Виджет таблица
+                        </span>
+                        <span class="g-form--input">
+                            <input type="text" placeholder="Название виджета" class="g-form--input" id="widget-title" />
+                            <label class="g-form--label" for="widget-title">Название виджета</label>
+                        </span>
+                    </section>
+                    <section>
+                        <span class="controls">
+                            <span tooltip="Что за звук?" flow="left">
+                                <i data-icon="icon-script"></i>
+                            </span>
+                            <span tooltip="Какой звук?" flow="left">
+                                <i data-icon="icon-reload"></i>
+                            </span>
+                        </span>
+                        <span class="g-sidepanel--title">Связать с запросами:</span>
+                        <ul class="widget-queries">
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio1" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio1">20161220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio2" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio2">20161220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio3" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio3">20161220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio4" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio4">20161220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio5" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio5">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio6" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio6">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio7" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio7">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio8" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio8">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio9" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio9">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio10" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio10">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="g-form--input">
+                                    <input type="radio" value="" id="radio11" class="g-form--radio" name="test2-radio" />
+                                    <label for="radio11">20161sdadasd1212312123sadasd220_Стандартный поиск статей (по объектам)</label>
+                                    <span class="g-form--control right">
+                                        <i data-icon="icon-trash" class="remove" style="display:block;"></i>
+                                    </span>
+                                </span>
+                            </li>
+                        </ul>
+                        <p class="description static">
+                            Введите имя виджета и выберите запрос.<br />Отмеченный запрос будет интегрирован в данный виджет.<br />
+                            Результат выполнения запроса станет информационным наполнением виджета (таблица, график, карта - в зависимости от запроса).
+                        </p>
+                    </section>
+                </div>
+
+                <div id="decor" style="display:none;">
+                    <section>
+                        <span class="g-sidepanel--title">
+                            Оформление виджета
+                        </span>
+
+                        <div class="decoration">
+                            <div class="marker">
+                                <div>
+                                    <hr><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="CaptionBackground" value="rgba(200, 188, 162, 1)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(200, 188, 162);"></div></div><div class="sp-dd">▼</div></div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="CaptionForeground" value="rgba(51, 51, 51, 1)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(51, 51, 51);"></div></div><div class="sp-dd">▼</div></div>
+                                </div>
+                                <div>
+                                    <hr><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="ContainerBackground" value="rgba(255, 255, 255, 1)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(255, 255, 255);"></div></div><div class="sp-dd">▼</div></div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="ContainerForeground" value="rgba(51, 51, 51, 1)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(51, 51, 51);"></div></div><div class="sp-dd">▼</div></div>
+                                </div>
+                                <div>
+                                    <hr><svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#marker-decoration"></use></svg><input type="text" class="Decoration" name="LinkBackground" value="rgba(0, 0, 0, 0)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgba(0, 0, 0, 0);"></div></div><div class="sp-dd">▼</div></div>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="font-icon font-icon-type"></span><input type="text" class="Decoration" name="LinkForeground" value="rgba(70, 127, 212, 1)" style="display: none;"><div class="sp-replacer sp-light awesome"><div class="sp-preview"><div class="sp-preview-inner" style="background-color: rgb(70, 127, 212);"></div></div><div class="sp-dd">▼</div></div>
+                                </div>
+                            </div>
+                            <div class="pattern">
+                                <div class="title">Title</div>
+                                <div class="content">
+                                    Content
+                                    <div class="link"><span>Link</span></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </div>
+
+            </section>
+            <div class="actions">
+                <div class="row">
+                    <button id="cancel" class="g-form--button flat">Cancel</button>
+                    <button class="g-form--button flat right next" disabled>Save</button>
+                </div>
+            </div>
+        </aside>
+        <aside class="g-sidepanel right">
+            <div class="controls"><i class="close"></i></div>
+            <div class="actions"></div>
+        </aside>
+        <div class="overlay" style="display:block;"></div>
+        <div class="g-dialog--wrapper medium" id="dialog2">
+            <div class="g-dialog--header" data-icon="icon-folder">Success<i class="close"></i></div>
+            <div class="g-dialog--content">
+                <div class="g-dialog--overlay">
+                    <i class="loading" size="xl" speed="medium"></i>
+                </div>
+                <div class="g-dialog--container noncontrol">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

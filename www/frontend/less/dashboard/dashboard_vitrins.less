@@ -1,0 +1,62 @@
+﻿
+/*Нижняя панель - список превью витрин */          
+#vitrin-list { 
+    position: fixed;left: 0px;right: 0px;bottom: 0px;z-index: 500;background-color: @color-4;min-height: 121px;transition:all 0.5s ease-out;
+    &.abs {bottom:-116px;}
+    & .bolt { background-color: @color-F3;height:5px;position:relative;}
+    & .bolt-lug {
+        position:absolute;left:50%;transform:translateX(-50%);width:42px;height:22px;overflow:hidden;top:-22px;cursor:pointer;margin-left:-22px; 
+        & div {width:42px;height:42px;border-radius:42px;background-color: @color-F3;position:relative; }
+    }
+    & span.arrow {left:50%;top:30%;transform:translate(-50%, -50%);
+        &:before {transition-delay: 0.5s;border:1px solid @color-4!important; background-color:transparent!important;}
+    }
+    & .list {
+       padding:0 18px;border-top: solid 1px @color-58; 
+       & .arrow {
+            position:absolute;top:0;height:116px;
+            &.west { right:18px;}
+            &:before { border-color: #666!important; background:transparent!important; }
+       }
+         & .le {left:103px;}
+    }
+    & .show-add-vitrin {
+        .size(77px);border:solid 1px @color-9;cursor:pointer;position:absolute;left:17px;top:50%;transform:translateY(-50%);
+        & svg { width: 22px; height: 22px;position:relative;top:50%;left:50%; transform:translate(-50%,-50%);}
+    }    
+    & .items-wrap { 
+        margin-left:125px;margin-right:100px;height:116px;overflow:hidden;position:relative;
+        & > .slider {height:100%;position:absolute; }
+    }
+    & .vitrina {
+        float:left;margin:0 5px; 
+        & div.edit {height:22px;text-align:right; }
+        &.current div.panel-vitrin {position:relative;border:solid 2px #378dda;
+            &:before {content:'';width: 0;height: 0;border-style: solid;border-width: 0 12px 12px 12px;
+                    border-color: transparent transparent #378dda transparent;position:absolute;
+                    top:-12px;left:50%;margin-left:-12px;}
+        }
+        & div.panel-vitrin {
+            width:263px;height:71px;cursor: pointer;padding:9px;color:@color-dark;font-size:12px; background-color:@color-F0; .boxshadow(0 1px, rgba(0,0,0,.1));
+            & img {width:96px;height:55px;float:left;margin-right:10px; }
+            & .name-vitrin { height: 50px;overflow:hidden;font-size:12px; }
+        }        
+    }
+    & span[role='button'] {.size(24px); text-align:center;display: none; cursor: pointer;}
+    & .edit-vitrina{
+        & svg { width:10px;height:10px;stroke:@color-F4;vertical-align:middle;}
+        &:hover { background-color:@color-5; }
+    }
+    & .delete-vitrina{
+        & svg { width:16px;height:16px;fill:@color-F4;vertical-align:middle;}
+        &:hover {background-color:@color-red; }
+    }
+    & .continue { 
+        position:absolute;width:27px;height:6px;right:60px;top:90px;display:none; 
+        & span {.size(6px);border-radius:6px;background-color:@color-F3;margin-right:3px; }
+    }
+    &.right-property { right:555px; }
+    &.left-property { left:555px; }
+}
+
+

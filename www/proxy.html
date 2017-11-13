@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        window.onresize = function () {
+            var hash = document.location.hash;
+            //alert(hash);
+            if (hash != '') {
+                hash = hash.split('#');
+                //var params = hash[1].split(':');
+                window.top.Config(hash[1]); //.document.getElementsByTagName('body')[0].style.background = params[1];
+            }
+        };
+    </script>
+</head>
+<body>
+</body>
+</html>

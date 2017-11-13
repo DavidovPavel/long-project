@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>TIP</title>
+	<meta charset="utf-8" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <link href="tips.css" rel="stylesheet" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <link href="../dialog/dialog.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.help').click(function () {
+                $(this).siblings('.g-tip').toggle();
+            });
+            $('.g-tip kbd').click(function () {
+                $(this).parent('.g-tip').toggle();
+            });
+            $('button').click(function () {
+                $('#modal').toggle();
+            });
+        });
+    </script>
+</head>
+<body style="padding:44px 0 0;">
+    <header></header>
+    <div class="wrapper" style="width:960px; margin:0 auto; padding:40px 0;">
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="fox" placeholder="What does the fox say?" value="" />
+            <label for="fox">What does the fox say?</label>
+            <i class="help rtl-1"></i>
+            <i class="clear rtl-2"></i>
+            <span class="g-tip bottom">
+                <kbd></kbd>
+                <span>
+                    <h4>What does the fox say?</h4>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Vivamus dapibus a risus quis tincidunt. Praesent ut tortor sed mauris efficitur facilisis. Nam eu ipsum tincidunt, tempor mauris at, scelerisque nulla. </p>
+                </span>
+            </span>
+        </span>
+
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="fox" placeholder="What does the fox say?" value="" />
+            <label for="fox">What does the fox say?</label>
+            <i class="help rtl-1"></i>
+            <i class="clear rtl-2"></i>
+            <span class="g-tip bottom">
+                <kbd></kbd>
+                <span>
+                    <h4>What does the fox say?</h4>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Vivamus dapibus a risus quis tincidunt. Praesent ut tortor sed mauris efficitur facilisis. Nam eu ipsum tincidunt, tempor mauris at, scelerisque nulla. </p>
+                </span>
+            </span>
+        </span>
+
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="fox" placeholder="What does the fox say?" value="" />
+            <label for="fox">What does the fox say?</label>
+            <i class="help rtl-1"></i>
+            <i class="clear rtl-2"></i>
+            <span class="g-tip bottom">
+                <kbd></kbd>
+                <span>
+                    <h4>What does the fox say?</h4>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Vivamus dapibus a risus quis tincidunt. Praesent ut tortor sed mauris efficitur facilisis. Nam eu ipsum tincidunt, tempor mauris at, scelerisque nulla. </p>
+                </span>
+            </span>
+        </span>
+
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="fox" placeholder="What does the fox say?" value="" />
+            <label for="fox">What does the fox say?</label>
+            <i class="help rtl-1"></i>
+            <i class="clear rtl-2"></i>
+            <span class="g-tip top">
+                <kbd></kbd>
+                <span>
+                    <h4>What does the fox say?</h4>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Vivamus dapibus a risus quis tincidunt. Praesent ut tortor sed mauris efficitur facilisis. Nam eu ipsum tincidunt, tempor mauris at, scelerisque nulla. </p>
+                </span>
+            </span>
+        </span>
+
+        <hr />
+        <div class="tac">
+            <button class="g-form--button blue flat">OPEN MODAL WINDOW</button>
+        </div>
+        <div class="g-dialog--wrapper" id="modal" style="text-align: left; width: 35vw; height: 410px;">
+            <div class="g-dialog--header" data-icon="icon-user">Grzegorz&nbsp;Brzęczyszczykiewicz <i class="size"></i><i class="close"></i></div>
+            <div class="g-dialog--manage" id="grzegorz">
+                <span>Are you Grzegorz&nbsp;Brzęczyszczykiewicz form Chrząszczyżewoszyce?</span>
+                <div class="row">
+                    <button class="left g-form--button small flat">No</button>
+                    <button class="right g-form--button blue small flat">Yes</button>
+                    <button class="right g-form--button blue small flat nest-left">Maybe</button>
+                </div>
+            </div>
+            <div class="g-dialog--toolbar">
+                <ul>
+                    <li>
+                        <span class="g-form--input">
+                            <input type="text" id="input112" name="noname" value="" class="g-form--input" placeholder="Input label">
+                            <label for="input112">Input label</label>
+                        </span>
+                    </li>
+                    <li class="tlbr--export"></li>
+                    <li class="tlbr--doc"></li>
+                    <li class="tlbr--fact" disabled=""></li>
+                    <li class="tlbr--erase right" id="eros"></li>
+                </ul>
+            </div>
+            <div class="g-dialog--content hastoolbar">
+                <div class="g-dialog--container">
+                    <div class="row">
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" id="input7" name="noname" value="Grzegorz Brzęczyszczykiewicz" class="g-form--input filled" placeholder="Input label">
+                                <label for="input10">Mein name ist</label>
+                                <i class="help rtl-1"></i>
+                                <span class="g-tip bottom">
+                                    <kbd></kbd>
+                                    <span>
+                                        <h4>What does the fox say?</h4>
+                                        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur</a> adipiscing elit. Vivamus dapibus a risus quis tincidunt. Praesent ut tortor sed mauris efficitur facilisis. Nam eu ipsum tincidunt, tempor mauris at, scelerisque nulla. </p>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="grid--1-2">
+                            <span class="g-form--input">
+                                <input type="text" id="input7" name="noname" value="Privatunternehmerschaft" class="g-form--input filled" placeholder="Input label">
+                                <label for="input9">Kategorie</label>
+                                <i class="clear rtl-2"></i>
+                                <i class="search rtl-1"></i>
+                                <i class="add rtl-3"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-2">
+                            <span class="g-form--input">
+                                <input type="text" id="input7" name="noname" value="die einfache Wahrheit" class="g-form--input filled" placeholder="Input label">
+                                <label for="input10">Suche</label>
+                                <i class="search rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" id="input7" name="noname" value="" class="g-form--input" placeholder="Input label">
+                                <label for="input10">Input label</label>
+                                <i class="add rtl-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="g-dialog--controls">
+                    <button type="button" class="g-form--button prev left">Button prev</button>
+                    <button type="button" class="g-form--button next right">Button next</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

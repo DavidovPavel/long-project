@@ -1,0 +1,93 @@
+﻿footer {
+  height: 44px;
+  box-sizing: border-box;
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  bottom: -44px;
+  width: 100%;
+  background: #444;
+  overflow: hidden;
+  padding: 5px 0;
+  color: #dedede;
+  z-index: 300;
+}
+footer:after {
+  content: '';
+  display: block;
+  position: static;
+  height: 0px;
+  line-height: 0px;
+  clear: both;
+}
+footer.active {
+  bottom: 0;
+}
+footer .step {
+  width: calc(20%);
+  float: left;
+  height: 34px;
+  box-sizing: border-box;
+  background: #333;
+  margin: 0;
+  color: #808080;
+  padding: 7px 24px;
+  cursor: pointer;
+  position: relative;
+}
+footer .step > span {
+  background: #222;
+  display: inline-block;
+  border-radius: 100%;
+  width: 2em;
+  text-align: center;
+  font-size: 8px;
+}
+footer .step:hover {
+  background: #444;
+}
+footer .step:before {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 0 17px 10px;
+  border-color: transparent transparent transparent #333;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+footer .step:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 17px 0 17px 10px;
+  border-color: transparent transparent transparent #333;
+  top: 0;
+  right: -10px;
+  z-index: 2;
+}
+/* GLOBAL ENVIRMOMENT */
+body.hasfooter aside {
+  height: calc(100% - 88px);
+}
+body.hasfooter .workbench {
+  height: calc(100% - 88px);
+}
+body.hasfooter .workbench .workbench--content {
+  height: calc(100% - 132px);
+}
+/*
+    TEMP WIZARD
+*/
+main .step {
+  display: none;
+}
+main .step.show {
+  display: block;
+}

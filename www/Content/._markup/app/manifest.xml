@@ -1,0 +1,37 @@
+﻿<root>
+  <description><![CDATA[ 
+  Основная верстка приложения Compliance check
+  ]]></description>
+
+  <link>/content/_less/inquiry/compliance.less</link>
+
+  <relations view="html"><![CDATA[
+    ссылки на используемые компоненты:
+    <ul>
+      <li>Workbench<br/>
+      <i><a href=''>/content/.modules/workbench.less</a></i></li>
+    <li>
+      Sidebar<br/>
+      <i><a href=''>/content/.modules/sidebar.less</a></i></li>
+    <li>
+      Crumbs<br/>
+      <i><a href=''>/content/.modules/crumbs.less</a></i></li>
+    </ul>
+    ]]></relations>
+  
+  <snippet><![CDATA[
+  
+    emmet snippet:
+    body.hls>.workbench>.crumbs+.g-toolbar+.workbench--content^aside.g-sidebar--left>.control>i
+    
+    Назначение:
+    .workbench - [основной контейнер с настройками и тулбарами]
+    __ .crumbs - [контейнер для хлебных крошек.]
+    ____ ul > li * X - [где X уровни вложенности.]
+    __ .g-toolbar - [тулбар]
+    ____ ul > li     - [элементы управления]
+    __ .workbench--content [Блок для контента с ограниченной высотой для скролла страницы без потери управления]
+    aside.g-sidebar--left [контейнер для сайдбара. модифицируется классом .expanded, для того чтобы адаптировать ширину контента под сайдбар, надо к BODY применить класс ls-on (для правого сайдбара .rs-on) ]
+  ]]></snippet>
+
+</root>

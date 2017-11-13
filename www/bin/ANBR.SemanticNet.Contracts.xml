@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.SemanticNet.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.SemanticNet.Contracts.ISemanticNetService">
+            <summary>
+            Контракт взаимодействия со службой построения семантических сетей
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareSemanticNetByQuery(System.Int32,System.String,System.Boolean)">
+            <summary>
+            Начать построение семантической сети для объекта object_ID используя запрос sql
+            </summary>
+            <param name="objectId">BltynbBlabrfnjh </param>
+            <param name="sql">T-SQL запрос</param>
+            <param name="asTree">true - Строить сеть в виде дерева. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.TestChannel">
+            <summary>
+            Проверка канала связи со службой.
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareForObjects(System.Int32[],System.Int32,System.Boolean,ANBR.SemanticNet.Contracts.SemanticNetComplexFilter,ANBR.SemanticNet.Contracts.ExtendedProperties)">
+            <summary>
+            Запустить построение семантической сети
+            </summary>
+            <param name="objectId">Идентификаторы объектов, для которух будет построена семантическая сеть</param>
+            <param name="levels">На сколько уровней будет построена семантическая сеть</param>
+            <param name="asTree">Структура сети в виде дерева</param>
+            <param name="semanticNetFilter">Фильтр семантической сети</param>
+            <param name="extendedProperties">Дополнительные параметры</param>
+            <returns>Идентификатор задача по построению семантической сети</returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareForObjectByFilter(System.Int32,System.Int32,ANBR.SemanticNet.Contracts.SemanticNetStruct,ANBR.SemanticNet.Contracts.SemanticNetComplexFilter,ANBR.SemanticNet.Contracts.ExtendedProperties)">
+            <summary>
+            Запустить построение семантической сети для одного объекта
+            </summary>
+            <param name="objectId">Идентификаторы объектов, для которух будет построена семантическая сеть</param>
+            <param name="levels">На сколько уровней будет построена семантическая сеть</param>
+            <param name="semanticNetStruct">Вид структуры семантической сети</param>
+            <param name="semanticNetFilter">Фильтр семантической сети</param>
+            <param name="extendedProperties">Дополнительные параметры</param>
+            <returns>Идентификатор задача по построению семантической сети</returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareForObjectsByFilter(System.Int32[],System.Int32,ANBR.SemanticNet.Contracts.SemanticNetStruct,ANBR.SemanticNet.Contracts.SemanticNetComplexFilter,ANBR.SemanticNet.Contracts.ExtendedProperties)">
+            <summary>
+            Запустить построение семантической сети для нескольких объектов
+            </summary>
+            <param name="objectsId">Идентификаторы объектов, для которух будет построена семантическая сеть</param>
+            <param name="levels">На сколько уровней будет построена семантическая сеть</param>
+            <param name="semanticNetStruct">Вид структуры семантической сети</param>
+            <param name="semanticNetFilter">Фильтр семантической сети</param>
+            <param name="extendedProperties">Дополнительные параметры</param>
+            <returns>Идентификатор задача по построению семантической сети</returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareForObjectBySql(System.Int32,ANBR.SemanticNet.Contracts.SemanticNetStruct,ANBR.Query.Common.SaQuery,ANBR.SemanticNet.Contracts.ExtendedProperties)">
+            <summary>
+            Начать построение семантической сети по SQL запросу ( не используется)
+            </summary>
+            <param name="objectId">Идентификатор объекта , для которого строится семантическая сеть</param>
+            <param name="semanticNetStruct">Структура семантической сети</param>
+            <param name="sql">Запрос для построения сети</param>
+            <param name="extendedProperties">Дополнительный параметры построения семантической сети</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.StopSemanticNetBuid(System.Guid)">
+            <summary>
+            Прервать процесс построения семантической сети по идентификатор процесса, полученного при его запуске.
+            </summary>
+            <param name="guid">Идентификатор процесса построения семантической сети.</param>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.GetSemNetObjectInfo(System.Int32)">
+            <summary>
+            Получить информация для семантичекой сети по идентификатору
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetService.BeginPrepareSemanticNet(System.Int32[],ANBR.SemanticNet.Contracts.SemanticNetStruct,ANBR.SemanticNet.Contracts.SemanticNetFilterBase,ANBR.SemanticNet.Contracts.ExtendedProperties)">
+            <summary>
+            Запустить построение семантической сети для одного объектов
+            </summary>
+            <param name="objectId">Идентификаторы объектов, для которух будет построена семантическая сеть</param>
+            <param name="semanticNetStruct">Вид структуры семантической сети</param>
+            <param name="semanticNetFilter">Фильтр семантической сети</param>
+            <param name="extendedProperties">Дополнительные параметры</param>
+            <returns>Идентификатор задача по построению семантической сети</returns>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.DSemNetObjectInfo">
+            <summary>
+            Информация по оъекту для семантической сети
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.#ctor">
+            <summary>
+            Конструктор 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.DisplayName">
+            <summary>
+             Наименование объекта  (какое было при создании или перевод на язык базы)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.DisplayNameOriginal">
+            <summary>
+             Оригинальное наименование объекта  (если был перевод на язык базы)
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.TypeName">
+            <summary>
+            Наименование типа объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.Picture">
+            <summary>
+            Главная картинка/фото/логотип объекта
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.DSemNetObjectInfo.Properties">
+            <summary>
+            Список свойство=значение
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.FactNameFormat">
+            <summary>
+            Формат наименования фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.FactNameFormat.FullName">
+            <summary>
+            Полные имена фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.FactNameFormat.ShortName">
+            <summary>
+            Краткие имена фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.FactNameFormat.iElement">
+            <summary>
+            (i) - вместо названия и генерация легенды с названиями фактов
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.ExtendedProperties">
+            <summary>
+            Разширенные свойства построения семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.FactNameFormat">
+            <summary>
+            Формат вывода названий фактов на семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.ShowLegend">
+            <summary>
+            Показывать ли легенду на семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.StrategTypeGroupLevel">
+            <summary>
+            Признак группировки по типу для стратегичекой семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.DeleteMainObjects">
+            <summary>
+            С конечной семантической сети будет удален главный объект со всеми связями
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.ShowMainProperties">
+            <summary>
+            Показывать значения главных свойст на семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.LanguageOption">
+            <summary>
+            На каком языке возвращать результаты построения семантической сети.
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ExtendedProperties.Write(System.Xml.XmlWriter)">
+            <summary>
+            Сохранить настройки в виде XML
+            </summary>
+            <param name="writer">Результаты записать в XmlWriter </param>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ExtendedProperties.Read(System.Xml.XmlReader)">
+            <summary>
+            Восстановить настройки в виде XML
+            </summary>
+            <param name="reader">Прочитать настройки из объекта калсса XmlReader</param>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.MaxObjectCount">
+            <summary>
+            Максимальное количество объектов на семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.ExtendedProperties.MaxObjectCountInColumn">
+            <summary>
+            Максимальное кол-во объектов в колонке на стратегической семантической сети. 0- без ограничений.
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.SemanticNetStruct">
+            <summary>
+            Структура семантической сети
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.StrategicNet">
+            <summary>
+            Стратегическая семантическая сеть. Группировка по типам объектов.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.Tree">
+            <summary>
+            Семантическая сеть в виде дерева (объекты могут повторяться).
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.Graph">
+            <summary>
+            Семантическая сеть в виде графа. Каждый объект присутствует на сети один раз.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.StrategicNetByRole">
+            <summary>
+            Стратегическая семантическая сеть. Группировка по ролям.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.ConcatenationOfFacts">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.FactInDocuments">
+            <summary>
+            Факты в документе в порядке упоминания. Главным объектом может быть только документ.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.StrategWithGroupSfera">
+            <summary>
+             Стратегическая семантическая сеть. Группировка по сферам деятельности.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.ChainSearchGraphMode">
+            <summary>
+            Семантическая сеть в виде цепочки последовательности фактов.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.ChainSearchLineMode">
+            <summary>
+            Семантическая сеть в виде поиска цепочек. Для построения требуются начальный и конечный объекты.
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.SemanticNetStruct.StrategicNetByDossierSection">
+            <summary>
+            Стратегическая семантическая сеть. Группировка по разделам досье.
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.LanguageOptions">
+            <summary>
+            Указывает, какое наименование объекта выводить (перевод или оригинал)
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.LanguageOptions.DisplayName">
+            <summary>
+            Текст из Display_Name
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.LanguageOptions.Original">
+            <summary>
+            Текст из OriginalDisplay_Name - если его нет - то Display_Name
+            </summary>
+        </member>
+        <member name="F:ANBR.SemanticNet.Contracts.LanguageOptions.Both">
+            <summary>
+            На сети будут оба текста, переведенный и оригинальный.
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.ISemanticNetServiceCallback">
+            <summary>
+            Контракт обратного вызова службы Семантических сетей
+            </summary>
+        </member>
+        <member name="M:ANBR.SemanticNet.Contracts.ISemanticNetServiceCallback.SemanticNetComplited(System.Guid,System.String,System.Boolean)">
+            <summary>
+            Вызывает клиента, когда семантческая сеть с идентификатором quid построена
+            </summary>
+            <param name="guid">Идентификатор задачи построения семантической сети</param>
+            <param name="xml">Семантическая сеть в XML формате</param>
+            <param name="withError">Признак того, что процесс построения завершился с ошибкой</param>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.SemanticNetFilterBase">
+            <summary>
+            Базовый класс для фильтров семантической сети
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter">
+            <summary>
+            Фильтр семанической сети 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.ObjectLevels">
+            <summary>
+            Количество уровней построения семантической сети. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.MaxCount">
+            <summary>
+            Максимальное количество объектов на семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.ExcludeObjectTypes">
+            <summary>
+            Типы объектов, исключаемых с семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.ExcludeRelationTypes">
+            <summary>
+            Типы связей, исключаемых из семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.IncludeObjectTypes">
+            <summary>
+            Типы объектов, присутствие которых обязательно в цепочках при построении семантической сети.
+            Если в найденной цепочке нет объектов даного типа, то вся цепочка исключается из результата
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.IncludeRelationTypes">
+            <summary>
+            Типы связей, присутствие которых обязательно в цепочках при построении семантической сети.
+            Если в найденной цепочке нет связей даного типа, то вся цепочка исключается из результата
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.Rubrics">
+            <summary>
+            С семантической сети учавствуют только объекты и з этих рубрик
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetComplexFilter.ExcludeObjects">
+            <summary>
+            Список объектов, которые не могут присутствовать на семантической сети.
+            
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.SemanticNetSqlFilter">
+            <summary>
+            Фильтр семанической сети в виде SQL запорса
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SemanticNetSqlFilter.Query">
+            <summary>
+            SQL запрос для фильтрации семантической сети
+            </summary>
+        </member>
+        <member name="T:ANBR.SemanticNet.Contracts.SnLevelFilter">
+            <summary>
+            ФИльтор семантической сети на определеннов шаге построения
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SnLevelFilter.IncludeObjectTypes">
+            <summary>
+            Типы объектов, присутствие которых обязательно в цепочках при построении семантической сети.
+            Если в найденной цепочке нет объектов даного типа, то вся цепочка исключается из результата
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SnLevelFilter.ExcluteObjectTypes">
+            <summary>
+            Типы объектов, исключаемых с семантической сети
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SnLevelFilter.IncludeRelationTypes">
+            <summary>
+            Типы объектов, присутствие которых обязательно в цепочках при построении семантической сети.
+            Если в найденной цепочке нет объектов даного типа, то вся цепочка исключается из результата
+            </summary>
+        </member>
+        <member name="P:ANBR.SemanticNet.Contracts.SnLevelFilter.ExcluteRelationTypes">
+            <summary>
+            Типы связей, исключаемых из семантической сети
+            </summary>
+        </member>
+    </members>
+</doc>

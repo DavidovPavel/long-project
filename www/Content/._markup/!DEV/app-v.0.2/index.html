@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wireframe ver. 0.2</title>
+	<meta charset="utf-8" />
+    <link href="/Content/._markup/header/header-new.min.css" rel="stylesheet" />
+    <link href="/Content/._markup/typo/typo.css" rel="stylesheet" />
+    <link href="/Content/._markup/form/form.css" rel="stylesheet" />
+    <link href="/Content/._markup/dropdown/dropdown.css" rel="stylesheet" />
+    <link href="/Content/._markup/dialog/dialog.css" rel="stylesheet" />
+    <link href="/Content/._markup/data-icon/data-icon.css" rel="stylesheet" />
+    <link href="/Content/._markup/context/context.css" rel="stylesheet" />
+    <link href="/Content/._markup/blind/blind.css" rel="stylesheet" />
+    <link href="/Content/._markup/!DEV/app-v.0.2/master.css" rel="stylesheet" />
+    <script src="/js/dist/jquery.js"></script>
+    <script src="/Content/._markup/!DEV/app-v.0.1/app.js"></script>
+</head>
+<body class="hassidebar">
+    <header>
+        <!-- NAV -->
+        <div class="nav-btn">
+            <span></span>
+        </div>
+        <!-- LOGO -->
+        <div class="logo compliance">
+            Compliance Check
+        </div>
+        <!-- TRAY -->
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation" class="active">
+                            <a href="/lang-ru-RU/db159/inquiry">Ru</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="/lang-en-US/db159/inquiry">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span>
+                </li>
+                <li class="tray--item case-block" style="">
+                    <span id="basket-btn" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                        <span class="badge basket-num">33</span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                    <div id="blind" class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">База данных:</span></div>
+                                <div class="right">ВебВерсия. Пустая </div>
+                            </div>
+                        </div>
+                        <div class="g-blind--controls">
+                            <button class="g-form--button small flat ghost-w" onclick="location.href='/account/login?returnUrl=%2flang-ru-RU%2fdb159%2finquiry%2finquiry'">Сменить базу данных</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">ABS\ISafronov</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">ABS\ISafronov</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/Manage" target="_blank">Профиль</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                <form action="/lang-ru-RU/db159/Account/LogOff" id="logoutForm" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="RcylMFxYT0R0IeVenNoS9Drkib6zQfqTa_C0N3Vt6s2FsfvYoQoxyQvM7XB8FP6uq-43BKNEWlLh1j88N_fAKTdkfHp_vcCJ1_lS5wUQDukxIMPsHgRgIsI2iDAn1OkW0">                                    <button class="g-form--button flat ghost-w small" onclick="javascript:document.getElementById('logoutForm').submit()">Выход</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        Lorem ipsum dolor sit amet
+    </main>
+    <aside class="g-sidebar--left">
+        <div class="control">
+            <i></i>
+        </div>
+    </aside>
+    <aside class="g-sidebar--right">
+        <div class="control">
+            <i></i>
+        </div>
+    </aside>
+    <footer></footer>
+</body>
+</html>

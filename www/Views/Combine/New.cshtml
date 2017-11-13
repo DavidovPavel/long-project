@@ -1,0 +1,131 @@
+﻿@model IEnumerable<DirectoryInfo>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>WEB BARN</title>
+    <link href="~/Content/._markup/!DEV/barn/master.css" rel="stylesheet" />
+    <script src="~/js/dist/underscore.js"></script>
+    <script src="~/js/dist/backbone.js"></script>
+    <script src="~/js/dist/jquery.min.js"></script>
+    <script src="~/Content/._markup/app/app.js"></script>
+
+</head>
+<body class="">
+    <header>
+        <div class="logo main">WEB BARN</div>
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item settings-block">
+                    <span id="global-settings"></span>
+                    <div class="g-notification">
+                        <div class="g-notification--header">
+                            <h4>Global Settings</h4>
+                        </div>
+                        <div class="g-notification--container">
+                            s
+                        </div>
+                        <div class="g-notification--controls">
+                            <div class="row">
+                                <button class="g-form--button flat left blue">Discard</button>
+                                <button class="g-form--button flat right" disabled="">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="workbench">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <span>Main page</span>
+                </li>
+            </ul>
+        </div>
+        <div class="g-toolbar">
+            <ul>
+                <li>
+                    <span toolbar-icon="save">
+                        <i>Save</i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="workbench--content">
+            content
+        </div>
+    </div>
+
+    <aside class="g-sidebar--left">
+        <div class="control">
+            <i></i>
+        </div>
+        <ul>
+            @foreach(var dir in Model) {
+               <li id="@dir.Name.Replace(" ", string.Empty)">
+                <span class="reports">@dir.Name</span>
+                <i class="toggler"></i>
+                <ul>
+                    @foreach (var inner in dir.GetDirectories())
+                    {
+                    <li id="@dir.Name.Replace(" ", string.Empty)-@inner.Name.Replace(" ", string.Empty)" data-path="/content/.barn/@dir.Name/@inner.Name">
+                        <span>@inner.Name</span>
+                    </li>
+                    }
+                </ul>
+            </li>
+            }
+        </ul>
+    </aside>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var route = Backbone.Router.extend({
+
+                routes: {
+
+                    "content/.barn/:dir/:module": function (dir, module) {
+
+                        var p = '/content/.barn/' + dir + '/' + module;
+
+                        $.ajax(p).done(function (data) {
+
+                            $('.g-sidebar--left span.active').removeClass('active');
+
+                            $('#' + dir.replace(' ', '')).addClass('expanded');
+                            $('#' + dir.replace(' ', '') + '-' + module.replace(' ', '') + ' span').addClass('active');
+
+                            $('.workbench--content').html(data);
+                        });
+
+
+                    }
+                }
+            });
+
+            new route;
+            Backbone.history.start();
+
+
+            $('.g-sidebar--left li').on('click', function (e) {
+                e.stopPropagation();
+                var p = $(e.target).closest('li').attr('data-path');
+                if (p)
+                    Backbone.history.navigate(p, { trigger: true });
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>

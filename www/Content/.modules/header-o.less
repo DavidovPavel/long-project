@@ -1,0 +1,123 @@
+﻿
+@import "../.modules/blind";
+@import "../.components/form";
+body {
+    padding-top:44px;
+}
+
+header { height: 44px; width: 100%; background: #444444; box-sizing: content-box; position: fixed; z-index: 9600; top: 0; left: 0; box-shadow:0 3px 5px rgba(0,0,0,0.35);
+    & .dash { margin-top: -1px; width: 45px; height: 45px; vertical-align: top; background: #5b8cd6;
+        & button { width: 44px; height: 44px; padding: 0; border: 0; }
+        & .dropdown-menu { min-width: 221px;
+            & li { float: left; display: block; margin-bottom: 5px;
+                &:nth-child(2n+1) { margin-left: 5px; }
+                &:last-child,
+                & a { color: #666666; font-size: 13px; text-align: center; width: 97px; height: 76px; border: solid 1px transparent; -webkit-transition: border-color 250ms; transition: border-color 250ms; vertical-align: bottom; position: relative; padding: 0;
+                    &:hover { background: transparent; border: solid 1px #dadada; }
+                    & span { position: absolute; bottom: 8px; left: 0; right: 0; }
+                    & .icon { display: block; margin: 0 auto;
+                        &.logo-main { margin-top: 13px; width: 31px; height: 29px; }
+                        &.logo-analyst { margin-top: 13px; width: 35px; height: 31px; }
+                        &.logo-check { margin-top: 14px; width: 30px; height: 30px; }
+                        &.logo-dashboard { margin-top: 13px; width: 32px; height: 32px; }
+                        &.logo-wiki { margin-top: 13px; width: 30px; height: 28px; }
+                        &.logo-profile { margin-top: 12px; width: 32px; height: 32px; }
+                        &.logo-inquiry { margin-top: 12px; width: 36px; height: 36px; }
+                    }
+                }
+            }
+        }
+    }
+
+    & .logo { margin-left: 59px; height: 44px; font-size: 18px; font-weight: 300; color: #e1e1e1; text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); line-height: 40px; cursor: pointer;
+        & svg { width: 36px; height: 36px; display: inline-block; vertical-align: middle; margin-right: 3px; }
+        & span { font-weight: 700; text-transform: capitalize; }
+    }
+
+    & .alert-btn { position: absolute; width: 44px; height: 44px; left: 50%; margin-left: -22px; top: 7px; padding-bottom: 52px; display: none; }
+    & .alert-btn button { padding: 0; border: 0; background: #c75050; height: 44px; width: 44px;
+                          border-radius: 50%; -webkit-transition: all 300ms; transition: all 300ms;
+                          box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.15); position: relative;
+        &:hover { background: #ba4343; box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.15); }
+        &:focus { background: #ba4343; }
+        & .icon { width: 18px; height: 24px; fill: white; }
+        &:before,
+        &:after { content: ''; position: absolute; display: block; top: 0; left: 0; right: 0; bottom: 0; }
+        &.animation-on { display: block;
+            &:before,
+            &:after { border: solid 1px #c75050; border-radius: 50%; }
+            &:before { -webkit-animation: puls 1s infinite; animation: puls 1s infinite; }
+            &:after { -webkit-animation: puls 1s 0.5s infinite; animation: puls 1s 0.5s infinite; }
+            /*& .icon { -webkit-animation: buzz 500ms infinite; animation: buzz 500ms infinite; }*/ }
+    }
+    & .alert-btn.open button { box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), inset 0 1px 2px rgba(255, 255, 255, 0.15) !important; }
+    & .alert-btn .dropdown-menu { padding: 20px; }
+
+    & .enter-btn { padding: 11px 14px 0 0; }
+    & .enter-btn button { padding: 0; margin: 0; }
+
+    & .nav-lang { display: inline-block; margin: 0; margin-top: -1px; font-size: 0; height: 44px; vertical-align: top; line-height: 47px;
+        & li { vertical-align: top; display: inline-block;
+            & span[role=button],
+            & a { display: inline-block; vertical-align: middle; font-family: "Verdana", sans-serif; font-size: 10px; text-transform: uppercase; width: 30px; height: 22px; padding: 0; text-align: center; line-height: 19px;
+                &:hover, &:focus { text-decoration: none; }
+            }
+            &:not(.active) span[role=button],
+            &:not(.active) a { background: #444; border-top: solid 1px #575757; border-bottom: solid 1px #363636; color: #acacac; -webkit-transition: all 250ms; transition: all 250ms; }
+            &:not(.active) span[role=button]:hover,
+            &:not(.active) a:hover { background: #515151; border-top: solid 1px #7e7e7e; border-bottom: solid 1px #363636; }
+            &.active span[role=button],
+            &.active a { background: #303030; border-top: solid 1px #333333; border-bottom: solid 1px #575757; color: #fff; cursor: default; }
+            &:first-child {
+                & a { border-top-left-radius: 8px; border-bottom-left-radius: 8px; padding: 0 8px; }
+            }
+            &:last-child {
+                & a { border-top-right-radius: 8px; border-bottom-right-radius: 8px; padding: 0 8px; }
+            }
+        }
+    }
+
+    & > .pull-right { line-height: 42px; }
+    & .user-login { display: inline-block; height: 24px; line-height: 24px; font-size: 12px; color: #bbbbbb; margin-left: 11px; padding-left: 9px; border-left: solid 1px #575757; margin-right: 6px; }
+    & .user-login:before { content: none; display: inline-block; width: 0; height: 24px; border-left: solid 1px #444444; position: absolute; top: 0; left: -2px; bottom: 0; }
+
+    & .btn-case { display: inline-block; color: #467fd4; font-size: 12px; margin-left: 5px; margin-right: 5px; padding: 0 13px; height: 24px; border: solid 1px #666666; border-radius: 13px; line-height: 20px; text-decoration: none; -webkit-transition: all 300ms; transition: all 300ms; background: transparent; }
+    & .btn-case:hover { background: #333333; }
+    & .btn-case:hover svg { fill: #cfcfcf; }
+    & .btn-case svg { width: 14px; height: 14px; display: inline-block; margin-right: 11px; fill: #999999; -webkit-transition: all 300ms; transition: all 300ms; }
+
+    & .pull-right .btn-group { vertical-align: top; }
+
+    & .pull-right .btn-group.data-base { margin-left: 5px; margin-right: 5px; }
+            & .pull-right .btn-group.data-base button svg { width: 14px; height: 15px; }
+            & .pull-right .btn-group.data-base .dropdown-menu.dropdown-menu-right { right: -38px; }
+                & .pull-right .btn-group.data-base .dropdown-menu.dropdown-menu-right .dropdown-menu_arrow { right: 39px; }
+
+        & .pull-right .btn-group.user-btn { margin-left: 6px; padding-right: 13px; }
+            & .pull-right .btn-group.user-btn .dropdown-menu { width: 205px; }
+        
+            /*& .pull-right .btn-group.data-base button,*/ 
+            & .pull-right .btn-group.user-btn button { padding: 0; border: 0; width: 16px; height: 16px;line-height:16px; }
+                & .pull-right .btn-group.data-base button svg, & .pull-right .btn-group.user-btn button svg { fill: #acacac; -webkit-transition: all 250ms; transition: all 250ms; }
+                & .pull-right .btn-group.data-base button:hover svg, & .pull-right .btn-group.user-btn button:hover svg { fill: #cfcfcf; }
+    
+    & .pull-right .btn-group.open button svg { fill: #fefefe; }
+    
+                                                                                                                                             
+    & .pull-right .btn-group.open button:hover svg { fill: #fefefe; }
+
+    & .menu_user { padding: 7px 11px; font-size: 13px; }
+    & .menu_user-icon { width: 30px; height: 30px; float: left; margin-right: 10px; }
+    & .menu_user-icon .icon { width: 30px; height: 30px; }
+    & .menu_user-data p { margin-bottom: 5px; margin-top: -3px; }
+    & .menu_user-data p b { color: #333333; }
+
+    /*& .menu_data-base { padding: 7px 11px; width: 243px; }
+        & .menu_data-base p { color: #666666; margin-bottom: 3px; position: relative; }
+            & .menu_data-base p:before { content: '.....................................................................'; white-space: nowrap; overflow: hidden; display: inline-block; position: absolute; left: 0; right: 0; z-index: -1; top: 0px; letter-spacing: 1px; font-size: 10px; }
+            & .menu_data-base p + p { margin-bottom: 9px; }
+            & .menu_data-base p b { font-weight: 600; color: #333333; float: right; background: white; padding-left: 3px; }
+            & .menu_data-base p span { display: inline-block; background: white; padding-right: 3px; }*/ 
+
+}
+@import "../_less/nav/nav";

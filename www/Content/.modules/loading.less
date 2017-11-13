@@ -1,0 +1,91 @@
+﻿i.loading {
+    position:absolute;
+    top:~"calc(50% - 8px)";
+    left:~"calc(50% - 8px)";
+    display:block;
+    height:16px;
+    width:16px;
+    box-sizing:border-box;
+    border-color:transparent transparent #0094ff #0094ff;
+    border-width:2px;
+    border-style:solid;
+    border-radius:50%;
+    box-shadow:0 0 2px rgba(0,0,0,0.25);
+    animation: loading 750ms linear infinite;
+    z-index:900;
+    background:transparent!important;
+    &:before {
+        width:~"calc(100% + 4px)";
+        height:~"calc(100% + 4px)";
+        box-sizing:border-box;
+        content:'';
+        border-color:#00ff90 #00ff90 transparent transparent;
+        border-width:2px;
+        border-style:solid;
+        border-radius:50%;
+        display:block;
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        animation: loading 500ms linear infinite;
+        background:transparent!important;
+    }
+    &:after {
+        width:~"calc(100% + 4px)";
+        height:~"calc(100% + 4px)";
+        box-sizing:border-box;
+        content:'';
+        border-color: transparent #ff0000 #ff0000  transparent;
+        border-width:2px;
+        border-style:solid;
+        border-radius:50%;
+        display:block;
+        position:absolute;
+        top:-2px;
+        left:-2px;
+        animation: loading 250ms linear infinite;
+        background:transparent!important;
+    }
+    @keyframes loading {
+        100%   {transform:rotate(360deg);}
+    }
+    &[speed^="slow"] {
+        animation:loading 2000ms linear infinite;
+        &:before {
+            animation: loading 1500ms linear infinite;
+        }
+        &:after {
+            animation: loading 1250ms linear infinite;
+        }
+    }
+    &[speed^="medium"] {
+        animation:loading 1500ms linear infinite;
+        &:before {
+            animation: loading 1000ms linear infinite;
+        }
+        &:after {
+            animation: loading 750ms linear infinite;
+        }
+    }
+    &[speed^="fast"] {
+        animation:loading 250ms linear infinite;
+        &:before {
+            animation: loading 125ms linear infinite;
+        }
+        &:after {
+            animation: loading 62ms linear infinite;
+        }
+    }
+    &[size^="l"] {
+        width:24px;
+        height:24px;
+        top:~"calc(50% - 12px)";
+        left:~"calc(50% - 12px)";
+    }
+    &[size^="xl"] {
+        width:32px;
+        height:32px;
+        top:~"calc(50% - 16px)";
+        left:~"calc(50% - 16px)";
+    }
+}

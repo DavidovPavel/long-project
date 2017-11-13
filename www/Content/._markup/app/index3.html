@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Global Environment</title>
+    <link href="/Content/._markup/app/master.css" rel="stylesheet" />
+    <script src="/js/dist/jquery.js"></script>
+    <script src="/Content/._markup/app/app.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body class="hls hasfooter">
+    <header>
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item alert-block">
+                    <span class="alert"></span>
+                    <div class="alert--container">
+                        <div class="alert--header">
+                            <h4>Внимание!</h4>
+                            <span>Ответьте, пожалуйста, на запрос системы.</span>
+                        </div>
+                        <div class="alert--list">
+                            <ul>
+                                <li>
+                                    <span>Lorem Ipsum Dolor Sit Amet</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Consectetur Adipiscing Elit</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Sed Do Eiusmod Tempor Incididunt </span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ut Labore Et Dolore Magna Aliqua</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Quis Nostrud Exercitation </span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ullamco Laboris Nisi Ut Aliquip</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ex Ea Commodo Consequat</span>
+                                    <i class="erase"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation" class="active">
+                            <a href="/lang-ru-RU/db159/inquiry">Ru</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="/lang-en-US/db159/inquiry">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span>
+                </li>
+                <li class="tray--item case-block" style="">
+                    <span id="basket-btn" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                        <span class="badge basket-num">28</span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                    <div id="blind" class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">База данных:</span></div>
+                                <div class="right">ВебВерсия. Пустая </div>
+                            </div>
+                        </div>
+                        <div class="g-blind--controls">
+                            <button class="g-form--button small flat ghost-w" onclick="location.href='/account/login?returnUrl=%2flang-ru-RU%2fdb159%2finquiry%2finquiry'">Сменить базу данных</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">ABS\ISafronov</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">ABS\ISafronov</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/Manage" target="_blank">Профиль</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                <form action="/lang-ru-RU/db159/Account/LogOff" id="logoutForm" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="wdBoYtOSrYRuCAhUPH_LU31SB7sKXW_FdQoSYbR-xAKOwGd38wvDAFIt9O8ZMLUb8zlDYgay7wprGxkOPM6yEwhAA7D1ooNsDHHwssopp7LtKBzZa2Fc6erHgc0S2tHu0">                            <button class="g-form--button flat ghost-w small" onclick="javascript:document.getElementById('logoutForm').submit()">
+                                        Выход
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="workbench">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <span>Список заявок</span>
+                </li>
+                <li>
+                    <span>Название заявки</span>
+                </li>
+                <li>
+                    <span>Жириновский Владимир Вольфович</span>
+                </li>
+            </ul>
+        </div>
+        <div class="g-toolbar">
+            <ul>
+                <li><span class="origin">Повторная проверка</span></li>
+                <li><span class="blank">Добавить факт</span></li>
+                <li><span class="doc">Добавить документ</span></li>
+                <li class="right"><div class="g-dropdown--menu"><div class="g-dropdown--placeholder"><div class="item" data-icon="icon-all">Показать все</div></div><div class="g-dropdown--container"><div class="item selected" data-icon="icon-all">Показать все</div><div class="item" data-icon="icon-inwork">В работе</div><div class="item" data-icon="icon-finished">Завершено</div><div class="item" data-icon="icon-clock">Отложено</div><div class="item" data-icon="icon-archive">В архиве</div></div></div></li>
+            </ul>
+        </div>
+        <div class="workbench--content">
+        </div>
+    </div>
+    <aside class="g-sidebar--left">
+        <div class="control">
+            <i></i>
+        </div>
+        <ul>
+            <li class="expanded">
+                <span class="result active">Результаты</span>
+                <i class="toggler"></i>
+                <ul>
+                    <li><span>Парадное досье</span></li>
+                    <li><span>Отчеты</span></li>
+                    <li><span>Выписки</span></li>
+                    <li><span>Сем. схема</span></li>
+                    <li><span>Аналитическая записка</span></li>
+                </ul>
+            </li>
+            <li>
+                <span class="check">Проверки</span>
+                <i class="toggler"></i>
+                <ul>
+                    <li>
+                        <span>Все</span>
+                        <i class="toggler"></i>
+                        <ul>
+                            <li><span>Сведения (36)</span></li>
+                            <li><span>Факты (0)</span></li>
+                            <li><span>Документы (123)</span></li>
+                            <li><span>Реквизиты (0)</span></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>01.02.03 05:55</span>
+                    </li>
+                    <li>
+                        <span>01.02.03 05:55</span>
+                    </li>
+                    <li>
+                        <span>01.02.03 05:55</span>
+                    </li>
+                    <li>
+                        <span>01.02.03 05:55</span>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="origin4">Исходные данные</span>
+            </li>
+        </ul>
+    </aside>
+    <footer class="active">
+        <div class="step current">
+            <span>1</span>
+            Создание заявки
+        </div>
+        <div class="step">
+            <span>2</span>
+            Создание объекта
+        </div>
+        <div class="step">
+            <span>3</span>
+            Настройка проверки
+        </div>
+        <div class="step">
+            <span>4</span>
+            Работа с результатами
+        </div>
+        <div class="step">
+            <span>5</span>
+            Итоги проверки
+        </div>
+
+    </footer>
+</body>
+</html>

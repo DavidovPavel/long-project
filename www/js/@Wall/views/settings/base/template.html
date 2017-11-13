@@ -1,0 +1,24 @@
+﻿<script type="x-template/underscore" id="base-setting-template">
+    <% if(type==='text'){ %>
+    <span class="g-form--input">
+        <input class="g-form--input filled" type="text" name="<%- name %>" value="<%- value %>" placeholder="<%- displayName %>" maxlength="255" />
+        <label class="g-form--label"><%- displayName %></label>
+    </span>
+    <% } else if (type==='checkbox'){ %>
+    <div class="g-form--input">
+        <input type="checkbox" class="g-form--checkbox" id="<%- prefix + name %>" name="<%- name %>" <%- value?checked='checked':'' %> />
+        <label for="<%- prefix + name %>"><%- displayName %></label>
+    </div>
+    <% } else if (type==='select'){ %>
+    <div class="g-form--input">
+        <label class="g-form--label"><%- displayName %></label>
+        <select class="g-form--select" name="<%- name %>">
+            <% _.each(value, function(o){ %>
+            <option value="<%- o.value %>" <%= o.checked?'selected="selected"':"" %>><%- o.title %></option>
+            <% }) %>
+        </select>
+    </div>
+    <% } %>
+    <div id="params"></div>
+
+</script>

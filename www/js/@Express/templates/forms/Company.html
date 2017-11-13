@@ -1,0 +1,234 @@
+﻿<fieldset>
+    <legend class="text-center"><%= Resources.titleCompanyForm %></legend>
+        <div class="panel">
+            <div class="panel-body">
+                <div class="form-group">
+                    <label for="title_INTERN"><%= Resources.nameofcompany %></label>
+                    <input value="<%= title_INTERN %>" type="text" class="form-control" name='title_INTERN' placeholder="">
+                </div>
+                <div class="row">
+                    
+                    <div class="form-group col-sm-4">
+                        <label for="Countries"><%= Resources.Country %></label>
+                        <select class="form-control" id="Countries" name="selectedCountries"></select>
+                    </div>
+                    <!-- ru-RU -->
+                    <div class="Country" id="ru-RU">
+
+                        <div class="form-group col-sm-2 text-right">
+                            <div class="btn-group dropup egrul dropdown-list-menu">
+                                <button type="button" class="dropdown-toggle btn-baloon" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon icon-egrul">
+                                        <use xlink:href="#icon-egrul"></use>
+                                    </svg>
+                                    <svg class="icon icon-crossarrow">
+                                        <use xlink:href="#icon-crossarrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center">
+                                    <li class="checkUGRL"><span role="button"><span class="button-icon"><svg class="icon icon-build"><use xlink:href="#icon-build" /></svg></span><%= Resources.Refer3 %></span></li>
+                                    <!--<li><span role="button"><span class="button-icon"><svg class="icon icon-external"><use xlink:href="#icon-external" /></svg></span><%= Resources.Refer4 %></span></li>-->	
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="inn__ru_RU"><%= Resources.inn %></label>
+                            <input value="<%= inn__ru_RU %>" maxlength="16" type="text" class="form-control" name='inn__ru_RU' placeholder="">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="ogrn__ru_RU"><%= Resources.ogrn %></label>
+                            <input value="<%= ogrn__ru_RU %>" type="text" class="form-control" name='ogrn__ru_RU' placeholder="">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="okpo__ru_RU"><%= Resources.okpo %></label>
+                            <input value="<%= okpo__ru_RU %>" type="text" class="form-control" name='okpo__ru_RU' placeholder="">
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- kk-KZ -->
+                    <div class="Country" id="kk-KZ">
+                       <!-- <div class="form-group col-sm-2 text-right">
+                            <div class="btn-group dropup egrul dropdown-list-menu">
+                                <button type="button" class="dropdown-toggle btn-baloon" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon icon-egrul">
+                                        <use xlink:href="#icon-egrul"></use>
+                                    </svg>
+                                    <svg class="icon icon-crossarrow">
+                                        <use xlink:href="#icon-crossarrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center">
+                                    <li><span role="button"><button type="button"><svg class="icon icon-build"><use xlink:href="#icon-build" /></svg></button><span><%= Resources.Refer3 %></span></span></li>
+                                    <li><span role="button"><button type="button"><svg class="icon icon-external"><use xlink:href="#icon-external" /></svg></button><span><%= Resources.Refer4 %></span></span></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="form-group col-sm-2">
+                            <label for="inn__kk_KZ"><%= Resources.iin %></label>
+                            <input value="<%= inn__kk_KZ %>" type="text" class="form-control" name='inn__kk_KZ' placeholder="">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="ogrn__ru_RU"><%= Resources.rnn %></label>
+                            <input value="<%= rnn__kk_KZ %>" type="text" class="form-control" name='rnn__kk_KZ' placeholder="">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="okpo__ru_RU"><%= Resources.bin %></label>
+                            <input value="<%= bin__kk_KZ %>" type="text" class="form-control" name='bin__kk_KZ' placeholder="">
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- be-BY -->
+                    <div class="Country" id="be-BY">
+                       <!-- <div class="form-group col-sm-2 text-right">
+                            <div class="btn-group dropup egrul dropdown-list-menu">
+                                <button type="button" class="dropdown-toggle btn-baloon" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon icon-egrul">
+                                        <use xlink:href="#icon-egrul"></use>
+                                    </svg>
+                                    <svg class="icon icon-crossarrow">
+                                        <use xlink:href="#icon-crossarrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center">
+                                    <li><span role="button"><button type="button"><svg class="icon icon-build"><use xlink:href="#icon-build" /></svg></button><span><%= Resources.Refer3 %></span></span></li>
+                                    <li><span role="button"><button type="button"><svg class="icon icon-external"><use xlink:href="#icon-external" /></svg></button><span><%= Resources.Refer4 %></span></span></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="form-group col-sm-2">
+                            <label for="unp__bl_BL"><%= Resources.unp %></label>
+                            <input value="<%= unp__bl_BL %>" type="text" class="form-control" name='unp__bl_BL' placeholder="">
+                        </div>
+                       
+                    </div>
+                    <!-- -->
+                    <!-- uk-UA -->
+                    <div class="Country" id="uk-UA">
+                        <!--<div class="form-group col-sm-2 text-right">
+                            <div class="btn-group dropup egrul dropdown-list-menu">
+                                <button type="button" class="dropdown-toggle btn-baloon" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon icon-egrul">
+                                        <use xlink:href="#icon-egrul"></use>
+                                    </svg>
+                                    <svg class="icon icon-crossarrow">
+                                        <use xlink:href="#icon-crossarrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center">
+                                    <li><span role="button"><button type="button"><svg class="icon icon-build"><use xlink:href="#icon-build" /></svg></button><span><%= Resources.Refer3 %></span></span></li>
+                                    <li><span role="button"><button type="button"><svg class="icon icon-external"><use xlink:href="#icon-external" /></svg></button><span><%= Resources.Refer4 %></span></span></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="form-group col-sm-2">
+                            <label for="edrpou__uk_UA"><%= Resources.edrpou %></label>
+                            <input value="<%= edrpou__uk_UA %>" type="text" class="form-control" name='edrpou__uk_UA' placeholder="">
+                        </div>
+                    </div>
+                    <!-- -->
+                    <!-- vi-VN -->
+                    <div class="Country" id="vi-VN">
+                       <!-- <div class="form-group col-sm-2 text-right">
+                            <div class="btn-group dropup egrul dropdown-list-menu">
+                                <button type="button" class="dropdown-toggle btn-baloon" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon icon-egrul">
+                                        <use xlink:href="#icon-egrul"></use>
+                                    </svg>
+                                    <svg class="icon icon-crossarrow">
+                                        <use xlink:href="#icon-crossarrow"></use>
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-center">
+                                    <li><span role="button"><button type="button"><svg class="icon icon-build"><use xlink:href="#icon-build" /></svg></button><span><%= Resources.Refer3 %></span></span></li>
+                                    <li><span role="button"><button type="button"><svg class="icon icon-external"><use xlink:href="#icon-external" /></svg></button><span><%= Resources.Refer4 %></span></span></li>
+                                </ul>
+                            </div>
+                        </div>-->
+                        <div class="form-group col-sm-2">
+                            <label for="inn__vi_VN">TaxCode</label>
+                            <input value="<%= inn__vi_VN %>" type="text" class="form-control" name='inn__vi_VN' placeholder="">
+                        </div>
+                        <div class="form-group col-sm-2">
+                            <label for="ogrn__vi_VN">Business line code</label>
+                            <input value="<%= ogrn__vi_VN %>" type="text" class="form-control" name='ogrn__vi_VN' placeholder="">
+                        </div>
+                    </div>
+                    <!-- -->
+                </div>
+                
+
+                <div id="sinManage" class="btn-group dropright"></div>
+
+	  				
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-sm-4">                            
+
+                            <div id="synonims-button">
+                                <div class="dropdown-menu dropdown-alert dropdown-menu-center synonims-info">
+                                    <span class="dropdown-menu_arrow"></span>
+                                    <div class="dropdown-title"><%= Resources.alert %></div>
+                                    <div class="dropdown-content"><%= Resources.Refer6 %></div>
+                                </div>
+                                <span class="font-icon font-icon-checkbox">
+                                    <input type="checkbox" name="searchSin_INTERN" <%= searchSin_INTERN?"checked='checked'":"" %> /></span>&nbsp;<label for="searchSin_INTERN"><%= Resources.searchwiththesynonyms %></label>
+                                &nbsp;
+                                <svg class="icon icon-info"><use xlink:href="#icon-info"></use></svg>
+                            </div>                                   
+        
+                        </div>
+                        <div class="col-sm-4 text-center checkMatches">
+                            <span role="button"><svg class="icon icon-check-entries"><use xlink:href="#icon-check-entries"></use></svg><%= Resources.checkId %></span>
+                        </div>
+                        <div class="col-sm-4 pull-right text-right">
+                            <span role="button" id="clearForm"><svg class="icon icon-trash-s"><use xlink:href="#icon-trash-s"></use></svg><%= Resources.clear1 %></span>
+                        </div>
+			  				
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row files-collection">
+             <div class="col-sm-4">
+                <svg class="svg-icon icon-attach"><use xlink:href="#icon-attach"></use></svg> <%= Resources.attach %> <span class=" show-refer7">[ <span class="ring">?</span></span>
+                 <div class="dropdown-menu dropdown-info dropdown-menu-center refer7">
+                     <span class="dropdown-menu_arrow"></span>
+                     <div class="dropdown-content"><%= Resources.Refer7 %></div>
+                 </div>
+                 ]: 
+                 <span class="ring show-attach-manage"><%= Resources.added %> [<span class="amount-files">0</span>]</span>
+                 
+                 <div class="dropdown-menu attach-manage"></div>
+
+             </div>
+
+             <div class="col-sm-6 pull-right text-right clear">
+                 <svg class="svg-icon icon-book"><use xlink:href="#icon-book"></use></svg> <%= Resources.sourceCollection %>: <span class="ring show-source-collection-manage"></span>
+
+                 <div class="dropdown-menu source-collection-manage">
+                     <span class="dropdown-menu_arrow"></span>
+                     <span class="dropdown-menu_close hide-source-collection-manage"><svg class="icon icon-close"><use xlink:href="#icon-close" /></svg></span>
+                     <div class="menu-info-message">
+                         <div class="form-group">
+                             <label for="add-collection"><%= Resources.addnewcolsources %></label>
+                             <div class="input-group">
+                                 <input type="text" class="form-control" name="add-collection" id="add-collection" placeholder="<%= Resources.nameVidget %>" />
+                                 <div class="input-group-addon add-btn">
+                                     <svg class="icon icon-plus"><use xlink:href="#icon-close" /></svg>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="list-cmd-panel"></div>
+                 </div>
+             </div>
+         </div>
+
+        <div class="matchesList"></div>
+        <div style="padding-top:20px;">
+            <button type="button" name="tolist" class="btn btn-flagy-rev btn-blue mrg-r-11"><%= Resources.tolist %></button>
+            <button type="button" name="start" class="btn btn-flagy btn-blue mrg-l-11 right"><%= Resources.startSearch %></button>
+        </div>
+</fieldset>

@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+	<meta charset="utf-8" />
+    <meta name="theme-color" content="#BB0000">
+    <link href="form.min.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.min.css" rel="stylesheet" />
+    <link href="../dialog/dialog.min.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../!DEV/combine/css/combine.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            if ($('#temp').hasClass('readonly')) {
+                $('#temp input, #temp textarea').attr('readonly', true);
+            }
+            $('#dialog').click(function () {
+                $("#popup").show();
+            });
+            $('#edit').click(function () {
+                $('#temp').toggleClass('readonly')
+                $(this).toggleClass('blue');
+                if ($('#temp').hasClass('readonly')) {
+                    $('#temp input, #temp textarea').attr('readonly', true);
+                }
+                else {
+                    $('#temp input, #temp textarea').attr('readonly', false);
+                }
+                if ($(this).hasClass('blue')) {
+                    $(this).text('ENABLE EDIT MODE');
+                }
+                else {
+                    $(this).text('ENABLE READ MODE');
+                }
+            });
+            $('#dialog2').click(function () {
+                $("#popup2").show();
+            });
+            $('#popup .size, #popup2 .size').click(function () {
+                $(this).parent('.g-dialog--header').parent('.g-dialog--wrapper').toggleClass('large');
+                $(this).toggleClass('active');
+            });
+            $('#popup .close').click(function () {
+                $("#popup").hide();
+            });
+            $('#popup2 .close').click(function () {
+                $("#popup2").hide();
+            });
+            $('.g-form--switch').click(function () {
+                if ($(this).attr('mode') === 'off') {
+                    $(this).attr('mode', 'on');
+                }
+                else {
+                    $(this).attr('mode', 'off');
+                }
+            });
+            $('#eros').click(function () {
+                $("#grzegorz").slideToggle(200);
+            });
+            $('#grzegorz button').click(function () {
+                $("#grzegorz").slideToggle(200);
+            });
+
+            // INPUT MAGIC GOES HERE
+            (function (window) {
+
+                'use strict';
+
+                // class helper functions from bonzo https://github.com/ded/bonzo
+
+                function classReg(className) {
+                    return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+                }
+                var hasClass, addClass, removeClass;
+
+                if ('classList' in document.documentElement) {
+                    hasClass = function (elem, c) {
+                        return elem.classList.contains(c);
+                    };
+                    addClass = function (elem, c) {
+                        elem.classList.add(c);
+                    };
+                    removeClass = function (elem, c) {
+                        elem.classList.remove(c);
+                    };
+                }
+                else {
+                    hasClass = function (elem, c) {
+                        return classReg(c).test(elem.className);
+                    };
+                    addClass = function (elem, c) {
+                        if (!hasClass(elem, c)) {
+                            elem.className = elem.className + ' ' + c;
+                        }
+                    };
+                    removeClass = function (elem, c) {
+                        elem.className = elem.className.replace(classReg(c), ' ');
+                    };
+                }
+
+                function toggleClass(elem, c) {
+                    var fn = hasClass(elem, c) ? removeClass : addClass;
+                    fn(elem, c);
+                }
+
+                var classie = {
+                    // full names
+                    hasClass: hasClass,
+                    addClass: addClass,
+                    removeClass: removeClass,
+                    toggleClass: toggleClass,
+                    // short names
+                    has: hasClass,
+                    add: addClass,
+                    remove: removeClass,
+                    toggle: toggleClass
+                };
+
+                // transport
+                if (typeof define === 'function' && define.amd) {
+                    // AMD
+                    define(classie);
+                } else {
+                    // browser global
+                    window.classie = classie;
+                }
+
+            })(window);
+
+
+            (function () {
+                if (!String.prototype.trim) {
+                    (function () {
+                        var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+                        String.prototype.trim = function () {
+                            return this.replace(rtrim, '');
+                        };
+                    })();
+                }
+                [].slice.call(document.querySelectorAll('input.g-form--input')).forEach(function (inputEl) {
+                    if (inputEl.value.trim() !== '') {
+                        classie.add(inputEl, 'filled');
+                    }
+                    inputEl.addEventListener('focus', onInputFocus);
+                    inputEl.addEventListener('blur', onInputBlur);
+                });
+                function onInputFocus(ev) {
+                    classie.add(ev.target, 'filled');
+                }
+                function onInputBlur(ev) {
+                    if (ev.target.value.trim() === '') {
+                        classie.remove(ev.target, 'filled');
+                    }
+                }
+            })();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <span>Элементы форм</span>
+    </header>
+    <div class="combine-nav">
+        <ul>
+            <li><a href="#inputs">Inputs</a></li>
+            <li><a href="#buttons">Buttons</a></li>
+            <li><a href="#3">item</a></li>
+            <li><a href="#4">item</a></li>
+            <li><a href="#5">item</a></li>
+            <li><a href="#6">item</a></li>
+            <li><a href="#7">item</a></li>
+            <li><a href="#8">item</a></li>
+        </ul>
+    </div>
+    <div class="wrapper tac">
+        <div class="row">
+            <h1 id="inputs">Inputs</h1>
+            <div class="grid--1-3">
+                <div>
+                    <div>Input default</div>
+                    <input type="button" id="dialog" class="g-form--button" value="Click me to view dialog" />
+                    <pre style="margin:1em;">type="button" class="g-form--button"</pre>
+                </div>
+            </div>
+            <div class="grid--1-3">
+                <div>
+                    <div>Input blue</div>
+                    <input type="button" id="dialog2" class="g-form--button blue" value="Click me to view readonly form" />
+                    <pre style="margin:1em;">type="button" class="g-form--button blue"</pre>
+                </div>
+            </div>
+            <div class="grid--1-3">
+                <div>
+                    <div>Input disabled</div>
+                    <input type="button" class="g-form--button" disabled value="Click me to view readonly form" />
+                    <pre style="margin:1em;">type="button" class="g-form--button" disabled</pre>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <h1 id="buttons">Buttons</h1>
+            <div class="grid--1-3">
+                <div>
+                    <div>Button default</div>
+                    <button class="g-form--button blue">Simple button</button>
+                    <pre>class="g-form--button blue"</pre>
+                </div>
+            </div>
+            <div class="grid--1-3">
+                <div>Button blue</div>
+                <button class="g-form--button blue">Simple blue button</button>
+                <pre>class="g-form--button blue"</pre>
+            </div>
+            <div class="grid--1-3">
+                <div>Button disabled</div>
+                <button class="g-form--button" disabled>Simple blue button</button>
+                <pre>class="g-form--button blue"</pre>
+            </div>
+        </div>
+
+        <div style="padding:20px;"></div>
+        <button type="button" class="g-form--button prev">Button prev</button>
+        <button class="g-form--button ghost-b">Ghost button</button>
+        <button type="button" class="g-form--button next">Button next</button>
+        <div style="padding:20px; background:#444; margin:2em -40px">
+            <button type="button" class="g-form--button prev" disabled="disabled"><span class="loader"></span>Button<span class="loader"></span>prev<span class="loader"></span></button>
+            <button class="g-form--button ghost-w">Ghost button</button>
+            <button class="g-form--button">Regular button</button>
+            <button type="button" class="g-form--button next disabled"><span class="loader"></span>Button<span class="loader"></span>next<span class="loader"></span></button>
+        </div>
+        <div style="padding:20px; background:#444; margin:2em -40px">
+            <button type="button" class="g-form--button prev">Button prev</button>
+            <button class="g-form--button ghost-w small">Ghost button</button>
+            <button class="g-form--button small">Regular button</button>
+            <button type="button" class="g-form--button next">Button next</button>
+        </div>
+        <button type="button" data-icon="icon-send" class="g-form--button flat">Data icon button</button>
+        <button type="button" data-icon="icon-trash" class="g-form--button flat">Data icon button</button>
+        <button type="button" data-icon="icon-settings" class="g-form--button flat" disabled>Data icon button</button>
+        <div style="padding:20px;"></div>
+        <button type="button" data-icon="icon-send" class="g-form--button">Data icon button</button>
+        <button type="button" data-icon="icon-trash" class="g-form--button">Data icon button</button>
+        <button type="button" data-icon="icon-settings" class="g-form--button" disabled>Data icon button</button>
+        <div style="padding:20px;"></div>
+
+        <div class="tac">
+            <div class="row">
+                <div class="grid--1-3">
+                    <div>
+                        <input type="radio" id="id2" class="g-form--radio" name="radio" value="0">
+                        <label for="id2">Default Radio 1</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="id3" class="g-form--radio" name="radio" value="1">
+                        <label for="id3">Default Radio 2</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="id4" class="g-form--radio" name="radio" value="2">
+                        <label for="id4">Default Radio 3</label>
+                    </div>
+                </div>
+                <div class="grid--1-3">
+                    <div>
+                        <input type="checkbox" id="id01" class="g-form--checkbox">
+                        <label for="id01">Checkbox 1</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="id02" class="g-form--checkbox">
+                        <label for="id02">Checkbox 2</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="id03" class="g-form--checkbox">
+                        <label for="id03">Checkbox 3</label>
+                    </div>
+                </div>
+                <div class="grid--1-3">
+                    <div style="padding:6px 0;">
+                        <button class="g-form--switch" id="switch1" mode="off"></button>
+                        <label for="switch1">Default switcher</label>
+                    </div>
+                    <div style="padding:6px 0;">
+                        <button class="g-form--switch" mode="off" id="switch2" disabled></button>
+                        <label for="switch2">Disabled switcher</label>
+
+                    </div>
+                    <div style="padding:6px 0;">
+                        <button class="g-form--switch fancy" id="switch3" mode="on"></button>
+                        <label for="switch3">Colored switcher</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <span class="g-form--input">
+                <input type="text" id="input1" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                <label for="input1">Input label</label>
+            </span>
+        </div>
+        <div>
+            <span class="g-form--input">
+                <input type="text" id="input2" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                <label for="input2">Input label</label>
+            </span>
+        </div>
+        <div class="row">
+            <div class="grid--1-2">
+                <span class="g-form--input">
+                    <input type="text" id="input3" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                    <label for="input3">Input label</label>
+                    <i class="clear rtl-2"></i>
+                    <i class="search rtl-1"></i>
+                    <i class="add rtl-3"></i>
+                </span>
+            </div>
+            <div class="grid--1-2">
+                <span class="g-form--input">
+                    <input type="text" id="input4" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                    <label for="input4">Input label</label>
+                    <i class="search rtl-1"></i>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="grid--1-3">
+                <span class="g-form--input">
+                    <input type="text" id="input5" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                    <label for="input5">Input label</label>
+                </span>
+            </div>
+            <div class="grid--1-3">
+                <span class="g-form--input">
+                    <input type="text" id="input6" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                    <label for="input6">Input label</label>
+                </span>
+            </div>
+            <div class="grid--1-3">
+                <span class="g-form--input">
+                    <input type="text" id="input7" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                    <label for="input7">Input label</label>
+                </span>
+            </div>
+            <div class="grid--1-1">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+            <div class="grid--1-2">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+            <div class="grid--1-2">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+            <div class="grid--1-3">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+            <div class="grid--1-3">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+            <div class="grid--1-3">
+                <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+            </div>
+
+        </div>
+    </div>
+    <div class="g-dialog--wrapper" id="popup" style="text-align:left; width:35vw; height:410px;">
+        <div class="g-dialog--header" data-icon="icon-user">Grzegorz&nbsp;Brzęczyszczykiewicz <i class="size"></i><i class="close"></i></div>
+        <div class="g-dialog--manage" id="grzegorz">
+            <span>Are you Grzegorz&nbsp;Brzęczyszczykiewicz form Chrząszczyżewoszyce?</span>
+            <div class="row">
+                <button class="left g-form--button small flat">No</button>
+                <button class="right g-form--button blue small flat">Yes</button>
+                <button class="right g-form--button blue small flat nest-left">Maybe</button>
+            </div>
+        </div>
+        <div class="g-dialog--toolbar">
+            <ul>
+                <li>
+                    <span class="g-form--input">
+                        <input type="text" id="input112" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                        <label for="input112">Input label</label>
+                    </span>
+                </li>
+                <li class="tlbr--export"></li>
+                <li class="tlbr--doc"></li>
+                <li class="tlbr--fact" disabled></li>
+                <li class="tlbr--task">
+                    Расписание
+                    <ul>
+                        <li class="tlbr--erase">Добавить</li>
+                        <li class="tlbr--clear">Отменить</li>
+                    </ul>
+                </li>
+                <li class="tlbr--erase right" id="eros"></li>
+            </ul>
+        </div>
+        <div class="g-dialog--content hastoolbar">
+            <div class="g-dialog--container">
+                <div class="row">
+                    <div class="grid--1-1">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="Grzegorz Brzęczyszczykiewicz" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Mein name ist</label>
+                        </span>
+                    </div>
+                    <div class="grid--1-2">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="Privatunternehmerschaft" class="g-form--input" placeholder="Input label" />
+                            <label for="input9">Kategorie</label>
+                            <i class="clear rtl-2"></i>
+                            <i class="search rtl-1"></i>
+                            <i class="add rtl-3"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-2">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="die einfache Wahrheit" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Suche</label>
+                            <i class="search rtl-1"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-1">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Input label</label>
+                            <i class="add rtl-1"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-dialog--controls">
+                <button type="button" class="g-form--button prev left">Button prev</button>
+                <button type="button" class="g-form--button next right">Button next</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="g-dialog--wrapper large" id="popup2" style="text-align:left; width:35vw; height:410px;">
+        <div class="g-dialog--header" data-icon="icon-user">Grzegorz&nbsp;Brzęczyszczykiewicz <i class="size active"></i><i class="close"></i></div>
+        <div class="g-dialog--manage" id="grzegorz">
+            <span>Are you Grzegorz&nbsp;Brzęczyszczykiewicz form Chrząszczyżewoszyce?</span>
+            <div class="row">
+                <button class="left g-form--button small flat">No</button>
+                <button class="right g-form--button blue small flat">Yes</button>
+                <button class="right g-form--button blue small flat nest-left">Maybe</button>
+            </div>
+        </div>
+        <div class="g-dialog--toolbar">
+            <ul>
+                <li>
+                    <span class="g-form--input">
+                        <input type="text" id="input112" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                        <label for="input112">Input label</label>
+                    </span>
+                </li>
+                <li class="tlbr--export"></li>
+                <li class="tlbr--doc"></li>
+                <li class="tlbr--fact" disabled></li>
+                <li class="tlbr--task text">
+                    Расписание
+                    <ul>
+                        <li class="tlbr--erase text">Добавить</li>
+                        <li class="tlbr--clear text">Отменить</li>
+                    </ul>
+                </li>
+                <li class="tlbr--erase right" id="eros"></li>
+            </ul>
+        </div>
+        <div class="g-dialog--content hastoolbar">
+            <div class="g-dialog--container">
+                <div style="text-align:center; padding:10px 0;"><button class="g-form--button small blue flat" id="edit">ENABLE EDIT MODE</button></div>
+
+                <div id="temp" class="row readonly">
+                    <div class="grid--1-1">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="Grzegorz Brzęczyszczykiewicz" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Mein name ist</label>
+                        </span>
+                    </div>
+                    <div class="grid--1-2">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="Privatunternehmerschaft" class="g-form--input" placeholder="Input label" />
+                            <label for="input9">Kategorie</label>
+                            <i class="clear rtl-2"></i>
+                            <i class="search rtl-1"></i>
+                            <i class="add rtl-3"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-2">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="die einfache Wahrheit" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Suche</label>
+                            <i class="search rtl-1"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-1">
+                        <span class="g-form--input">
+                            <input type="text" id="input7" name="noname" value="" class="g-form--input" placeholder="Input label" />
+                            <label for="input10">Input label</label>
+                            <i class="add rtl-1"></i>
+                        </span>
+                    </div>
+                    <div class="grid--1-1">
+                        <textarea class="g-form--textarea" readonly>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ut eros a dui ornare cursus. Integer rutrum pretium diam, ac tristique libero tincidunt in. Nullam porta tristique porta. Nulla facilisi. Vivamus venenatis viverra pulvinar. Quisque non lectus nulla. Suspendisse a erat vel felis aliquam ultricies eu ac mauris. Sed congue sapien eu nulla convallis vulputate. Fusce accumsan vulputate sapien, finibus venenatis mauris euismod eget. Suspendisse potenti. Sed condimentum ligula efficitur metus posuere tincidunt. Cras felis lacus, ultricies ac erat pulvinar, iaculis semper enim. Duis blandit, mi id tempus fermentum, ipsum elit cursus nisl, at molestie nisl est non risus. Nunc ut tempus mauris. Donec malesuada nec lorem eu sagittis. Praesent gravida urna libero, sit amet accumsan justo sodales a. Cras varius, ligula vitae suscipit feugiat, purus eros mollis dui, at tristique lectus quam eget lorem. Sed in pharetra augue, sit amet sodales urna. Nunc a odio aliquet, sollicitudin magna sed, vestibulum velit. Nullam ex lacus, feugiat vitae auctor et, imperdiet nec neque.</textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="g-dialog--controls">
+                <button type="button" class="g-form--button prev left">Button prev</button>
+                <button type="button" class="g-form--button next right">Button next</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

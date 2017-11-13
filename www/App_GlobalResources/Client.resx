@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="addOrganization" xml:space="preserve">
+    <value>Add organization</value>
+  </data>
+  <data name="addPerson" xml:space="preserve">
+    <value>Add person</value>
+  </data>
+  <data name="age" xml:space="preserve">
+    <value>Age</value>
+  </data>
+  <data name="browseproperties" xml:space="preserve">
+    <value>Browse properties</value>
+  </data>
+  <data name="clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Clearall" xml:space="preserve">
+    <value>Clear all</value>
+  </data>
+  <data name="create" xml:space="preserve">
+    <value>Create</value>
+  </data>
+  <data name="Dateofbirthunknown" xml:space="preserve">
+    <value>Date of birth is unknown</value>
+  </data>
+  <data name="Descriptionofparameters" xml:space="preserve">
+    <value>Parameter description</value>
+  </data>
+  <data name="enter" xml:space="preserve">
+    <value>Enter</value>
+  </data>
+  <data name="exactdateofbirth" xml:space="preserve">
+    <value>Exact date of birth</value>
+  </data>
+  <data name="Filterbytype" xml:space="preserve">
+    <value>Filter by type</value>
+  </data>
+  <data name="Find" xml:space="preserve">
+    <value>Find</value>
+  </data>
+  <data name="from" xml:space="preserve">
+    <value>from</value>
+  </data>
+  <data name="fullScreen" xml:space="preserve">
+    <value>fullscreen</value>
+  </data>
+  <data name="graph" xml:space="preserve">
+    <value>Graph</value>
+  </data>
+  <data name="hello" xml:space="preserve">
+    <value>Hello</value>
+  </data>
+  <data name="inputdate" xml:space="preserve">
+    <value>Input date</value>
+  </data>
+  <data name="level" xml:space="preserve">
+    <value>Level</value>
+  </data>
+  <data name="logOff" xml:space="preserve">
+    <value>Log off</value>
+  </data>
+  <data name="name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="nameofcompany" xml:space="preserve">
+    <value>Company name</value>
+  </data>
+  <data name="newWindow" xml:space="preserve">
+    <value>in new window</value>
+  </data>
+  <data name="objectInformation" xml:space="preserve">
+    <value>Object details</value>
+  </data>
+  <data name="passport" xml:space="preserve">
+    <value>Passport</value>
+  </data>
+  <data name="patronymic" xml:space="preserve">
+    <value>Patronymic</value>
+  </data>
+  <data name="Previousname" xml:space="preserve">
+    <value>Previous surname</value>
+  </data>
+  <data name="properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="report" xml:space="preserve">
+    <value>Report</value>
+  </data>
+  <data name="search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="searchResults" xml:space="preserve">
+    <value>Search results</value>
+  </data>
+  <data name="Searchwiththesynonyms" xml:space="preserve">
+    <value>Search with the synonyms</value>
+  </data>
+  <data name="semanticArchive" xml:space="preserve">
+    <value>Semantic archive</value>
+  </data>
+  <data name="semanticnet" xml:space="preserve">
+    <value>Semantic network</value>
+  </data>
+  <data name="surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="title" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="to" xml:space="preserve">
+    <value>to</value>
+  </data>
+  <data name="tree" xml:space="preserve">
+    <value>Tree</value>
+  </data>
+  <data name="treeТypes" xml:space="preserve">
+    <value>Types tree</value>
+  </data>
+  <data name="type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="viewadescription" xml:space="preserve">
+    <value>view description</value>
+  </data>
+  <data name="Yearofbirth" xml:space="preserve">
+    <value>Year of birth</value>
+  </data>
+  <data name="addSearchParam" xml:space="preserve">
+    <value>Search parameters</value>
+  </data>
+  <data name="searchBySource" xml:space="preserve">
+    <value>Search by sources</value>
+  </data>
+  <data name="Docs" xml:space="preserve">
+    <value>Documents</value>
+  </data>
+  <data name="Facts" xml:space="preserve">
+    <value>Facts</value>
+  </data>
+  <data name="Content" xml:space="preserve">
+    <value>Content</value>
+  </data>
+  <data name="strnet" xml:space="preserve">
+    <value>Network structure</value>
+  </data>
+  <data name="History" xml:space="preserve">
+    <value>Object browsing history</value>
+  </data>
+  <data name="N" xml:space="preserve">
+    <value>No data...</value>
+  </data>
+  <data name="gotoobject" xml:space="preserve">
+    <value>go to object</value>
+  </data>
+  <data name="message" xml:space="preserve">
+    <value>message</value>
+  </data>
+  <data name="deleteItem" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="editItem" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="restoreItem" xml:space="preserve">
+    <value>Restore</value>
+  </data>
+  <data name="save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="download" xml:space="preserve">
+    <value>download</value>
+  </data>
+  <data name="Original" xml:space="preserve">
+    <value>Document original</value>
+  </data>
+  <data name="preview" xml:space="preserve">
+    <value>view</value>
+  </data>
+  <data name="upload" xml:space="preserve">
+    <value>upload</value>
+  </data>
+  <data name="Profiles" xml:space="preserve">
+    <value>Profiles</value>
+  </data>
+  <data name="add" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="addDoc" xml:space="preserve">
+    <value>Add document</value>
+  </data>
+  <data name="addElement" xml:space="preserve">
+    <value>Add element</value>
+  </data>
+  <data name="addFact" xml:space="preserve">
+    <value>Add fact</value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Run</value>
+  </data>
+  <data name="MenageProfiles" xml:space="preserve">
+    <value>Profile control</value>
+  </data>
+  <data name="Phrase" xml:space="preserve">
+    <value>Phrase</value>
+  </data>
+  <data name="refresh" xml:space="preserve">
+    <value>resfresh</value>
+  </data>
+  <data name="translate" xml:space="preserve">
+    <value>translate</value>
+  </data>
+  <data name="filerByТypes" xml:space="preserve">
+    <value>Filter by type</value>
+  </data>
+  <data name="serverMessage" xml:space="preserve">
+    <value>Server message</value>
+  </data>
+  <data name="Extract" xml:space="preserve">
+    <value>Extracts</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTemplate" xml:space="preserve">
+    <value>Fact autoselect "{0}"</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Finished" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Indexed" xml:space="preserve">
+    <value>Indexed</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Processing" xml:space="preserve">
+    <value>Processing</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Splitted" xml:space="preserve">
+    <value>Splitted by sentences</value>
+  </data>
+  <data name="Docs_AutoExtractJobNameTempl_Started" xml:space="preserve">
+    <value>Started</value>
+  </data>
+  <data name="BackgroundThread_RobotsFinished" xml:space="preserve">
+    <value>Robots have finished the task</value>
+  </data>
+  <data name="Basket" xml:space="preserve">
+    <value>Cart</value>
+  </data>
+  <data name="avaDatabase" xml:space="preserve">
+    <value>Connectable databases</value>
+  </data>
+  <data name="avaProjects" xml:space="preserve">
+    <value>Connectable projects</value>
+  </data>
+  <data name="Connect" xml:space="preserve">
+    <value>Connect</value>
+  </data>
+  <data name="selWorkArea" xml:space="preserve">
+    <value>Select working area parameters</value>
+  </data>
+  <data name="workGroups" xml:space="preserve">
+    <value>Working groups</value>
+  </data>
+  <data name="Youlogin" xml:space="preserve">
+    <value>Your login</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="LogoPath" xml:space="preserve">
+    <value>/images/en/logo.gif</value>
+  </data>
+  <data name="ContentCollection_Rubrics" xml:space="preserve">
+    <value>Rubrics</value>
+  </data>
+  <data name="ModeView" xml:space="preserve">
+    <value>View mode</value>
+  </data>
+  <data name="toedit" xml:space="preserve">
+    <value>design</value>
+  </data>
+  <data name="addVitrin" xml:space="preserve">
+    <value>Add dashboard</value>
+  </data>
+  <data name="productsList" xml:space="preserve">
+    <value>Product list</value>
+  </data>
+  <data name="CheckNote" xml:space="preserve">
+    <value>На основе введенных данных обнаружено - &lt;span id='count'&gt;0&lt;/span&gt; досье. Для повторного запуска проверки в рамках существующего объекта, выберете его , после чего перейдите к выбору источников.</value>
+  </data>
+  <data name="Checks" xml:space="preserve">
+    <value>Checks</value>
+  </data>
+  <data name="Copying" xml:space="preserve">
+    <value>Extracts</value>
+  </data>
+  <data name="Statistic" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="ABS_ArtKeyPhrases" xml:space="preserve">
+    <value>Key phrases</value>
+  </data>
+  <data name="variantView" xml:space="preserve">
+    <value>Options for display</value>
+  </data>
+  <data name="Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>Return</value>
+  </data>
+  <data name="anbr" xml:space="preserve">
+    <value>Analytical Business Solutions</value>
+  </data>
+  <data name="typeContent" xml:space="preserve">
+    <value>Type of content</value>
+  </data>
+  <data name="SemNet_AutoTabName" xml:space="preserve">
+    <value>Automatic layout</value>
+  </data>
+  <data name="Info" xml:space="preserve">
+    <value>Information on the object</value>
+  </data>
+  <data name="Input" xml:space="preserve">
+    <value>Source data the verification</value>
+  </data>
+  <data name="Form" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="toolsShowOriginalDoc" xml:space="preserve">
+    <value>original document</value>
+  </data>
+  <data name="toolsToFullView" xml:space="preserve">
+    <value>whole view</value>
+  </data>
+  <data name="toolsToOriginalText" xml:space="preserve">
+    <value>back to original text</value>
+  </data>
+  <data name="toolsToShortView" xml:space="preserve">
+    <value>short view</value>
+  </data>
+  <data name="toolsTranslate" xml:space="preserve">
+    <value>translate</value>
+  </data>
+  <data name="CartDefaultName" xml:space="preserve">
+    <value>Default</value>
+  </data>
+  <data name="toolsAddToCart" xml:space="preserve">
+    <value>add to cart</value>
+  </data>
+  <data name="toolsGoToCart" xml:space="preserve">
+    <value>go to Cart</value>
+  </data>
+  <data name="AllChecks" xml:space="preserve">
+    <value>All checks</value>
+  </data>
+  <data name="ChangeDatabase" xml:space="preserve">
+    <value>Change Database</value>
+  </data>
+  <data name="Checklist" xml:space="preserve">
+    <value>Checklist</value>
+  </data>
+  <data name="CheckOrg" xml:space="preserve">
+    <value>Check organization</value>
+  </data>
+  <data name="CheckPerson" xml:space="preserve">
+    <value>Check person</value>
+  </data>
+  <data name="DataBase" xml:space="preserve">
+    <value>Database</value>
+  </data>
+  <data name="MyChecks" xml:space="preserve">
+    <value>My checks</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="Project" xml:space="preserve">
+    <value>Project</value>
+  </data>
+  <data name="SearchChecks" xml:space="preserve">
+    <value>Search checks</value>
+  </data>
+  <data name="slogan" xml:space="preserve">
+    <value>More Than Discovery</value>
+  </data>
+  <data name="soon" xml:space="preserve">
+    <value>soon</value>
+  </data>
+  <data name="reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="CheckStatus" xml:space="preserve">
+    <value>Check status</value>
+  </data>
+  <data name="SemanticConnection" xml:space="preserve">
+    <value>Semantic scheme</value>
+  </data>
+  <data name="SourceData" xml:space="preserve">
+    <value>Source data</value>
+  </data>
+  <data name="TitleLinks" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="TitleTranslate" xml:space="preserve">
+    <value>Translate</value>
+  </data>
+  <data name="Editing" xml:space="preserve">
+    <value>Editing</value>
+  </data>
+  <data name="myDashboard" xml:space="preserve">
+    <value>My dashboards</value>
+  </data>
+  <data name="shareDashboard" xml:space="preserve">
+    <value>Demonstration</value>
+  </data>
+  <data name="Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="Report_UploadReportsArchived" xml:space="preserve">
+    <value>Creating an archive of reports started.
+It may take several minutes. When job wil be finished you will be notified</value>
+  </data>
+  <data name="repOrganizationFactsByChapter" xml:space="preserve">
+    <value>Facts Report</value>
+  </data>
+  <data name="repOrganizationOnlineDataByChapter" xml:space="preserve">
+    <value>Records Report</value>
+  </data>
+  <data name="repPersonFactsByChapter" xml:space="preserve">
+    <value>Facts Report</value>
+  </data>
+  <data name="repPersonOnlineDataByChapter" xml:space="preserve">
+    <value>Records Report</value>
+  </data>
+  <data name="BackgroundThread_r13_EmailBody" xml:space="preserve">
+    <value>Greetings! 
+&lt;br&gt;
+Please review an auto-generated Semantic Archive report attached.  
+&lt;br&gt;
+This archive contains the check report named «{0}» dated {1}
+</value>
+  </data>
+  <data name="BackgroundThread_r13_EmailTitle" xml:space="preserve">
+    <value>Check report named «{0}» dated {1}</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgBody" xml:space="preserve">
+    <value>&lt;p&gt;
+Chosen results are successfully prepared on the "{1}".&lt;br&gt;
+You can download it by the link below.&lt;br&gt;
+&lt;a href="{0}"&gt;Download archive&lt;/a&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgTitle" xml:space="preserve">
+    <value>Archive reports  is ready for downloading ({0})</value>
+  </data>
+  <data name="Report_UploadReportsArchived_0" xml:space="preserve">
+    <value>The archive reports creating process has been started. After that it will be sent by email
+It may take several minutes. When job wil be finished you will be notified</value>
+  </data>
+  <data name="BackgroundThread_r13_MsgBodyEmail" xml:space="preserve">
+    <value>&lt;p&gt;
+Chosen results are successfully prepared on the "{1}".&lt;br&gt;
+You can download it by the link below.&lt;br&gt;
+&lt;a href="{0}"&gt;Download archive&lt;/a&gt;
+&lt;br&gt;&lt;br&gt;The file was sent to the specified e-mail address&lt;/p&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="WorkGroup" xml:space="preserve">
+    <value>Working group</value>
+  </data>
+  <data name="Export_GenerateDocsDigest" xml:space="preserve">
+    <value>Creating an documents digest started.
+It may take several minutes. When job wil be finished you will be notified</value>
+  </data>
+  <data name="Export_GenerateDocsDigest_AlertBody" xml:space="preserve">
+    <value>&lt;p&gt;Documents digest generation has been finished. &lt;br&gt;You can download digest by &lt;a href='{0}'&gt;this link&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Export_GenerateDocsDigest_AlertMsg" xml:space="preserve">
+    <value>Documents digest generation has been finished</value>
+  </data>
+  <data name="Export_GenerateFactDigest" xml:space="preserve">
+    <value>Creating an facts digest started.
+It may take several minutes. When job wil be finished you will be notified</value>
+  </data>
+  <data name="Export_GenerateFactDigest_AlertBody" xml:space="preserve">
+    <value>&lt;p&gt;Facts digest generation has been finished. &lt;br&gt;You can download digest by &lt;a href='{0}'&gt;this link&lt;/a&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Export_GenerateFactDigest_AlertMsg" xml:space="preserve">
+    <value>Facts digest generation has been finished</value>
+  </data>
+  <data name="Export_GenerateFactDigest_NoFacts" xml:space="preserve">
+    <value>There aren't any facts for selected entity. Digest couldn't be created</value>
+  </data>
+  <data name="AllInq" xml:space="preserve">
+    <value>All inquiries</value>
+  </data>
+  <data name="Inqlist" xml:space="preserve">
+    <value>List of inquiris</value>
+  </data>
+  <data name="InqOrg" xml:space="preserve">
+    <value>Inquiry for organization</value>
+  </data>
+  <data name="InqPerson" xml:space="preserve">
+    <value>Inquiry for person</value>
+  </data>
+  <data name="MyInq" xml:space="preserve">
+    <value>My inquiries</value>
+  </data>
+  <data name="SearchInq" xml:space="preserve">
+    <value>Search inquiry</value>
+  </data>
+  <data name="ObjectsInquiry" xml:space="preserve">
+    <value>Objects of inquiry</value>
+  </data>
+  <data name="InterestObjController_LabelRoles" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="CheckResume_GeneratedTitle" xml:space="preserve">
+    <value>Results of {0} on object "{1}". Result: {2}</value>
+  </data>
+  <data name="CheckResume_ModuleTitleCheck" xml:space="preserve">
+    <value>check</value>
+  </data>
+  <data name="CheckResume_ModuleTitleInquire" xml:space="preserve">
+    <value>request</value>
+  </data>
+  <data name="InquiryController_SAProject_CDate" xml:space="preserve">
+    <value>Created</value>
+  </data>
+  <data name="InquiryController_SAProject_Owner" xml:space="preserve">
+    <value>Executor</value>
+  </data>
+  <data name="InquiryController_SAProject_Title" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NewInq" xml:space="preserve">
+    <value>New Inquiry</value>
+  </data>
+  <data name="g1i" xml:space="preserve">
+    <value>Gallery images</value>
+  </data>
+  <data name="InquiryController_SAProject_ProjectCode" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="InquiryController_SAProject_Rubrics" xml:space="preserve">
+    <value>Rubric</value>
+  </data>
+  <data name="InquiryController_SAProject_State" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="InquiryController_SAProject_Status" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="InterestObjController_LabelMark" xml:space="preserve">
+    <value>Mark</value>
+  </data>
+  <data name="InterestObjController_LabelTypeName" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ChSta" xml:space="preserve">
+    <value>Change status</value>
+  </data>
+  <data name="CheckResume_GeneratedTitleForState" xml:space="preserve">
+    <value>State of {0} on object "{1}". State: {2}</value>
+  </data>
+  <data name="CheckResume_GeneratedTitleForAnnotatedNote" xml:space="preserve">
+    <value>Annotated note for "{0}"</value>
+  </data>
+  <data name="InterestObjController_CheckState_InWork" xml:space="preserve">
+    <value>In Progress</value>
+  </data>
+  <data name="Pchecks" xml:space="preserve">
+    <value>Previous checks</value>
+  </data>
+  <data name="Print" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="mm" xml:space="preserve">
+    <value>Main modules</value>
+  </data>
+  <data name="sap" xml:space="preserve">
+    <value>Semantic Archive Platform</value>
+  </data>
+  <data name="sm" xml:space="preserve">
+    <value>Service modules</value>
+  </data>
+  <data name="MBFResult_ErrorNet" xml:space="preserve">
+    <value>networking error</value>
+  </data>
+  <data name="MBFResult_ErrorProcessing" xml:space="preserve">
+    <value>processing error</value>
+  </data>
+  <data name="MBFResult_ErrorResource" xml:space="preserve">
+    <value>error on the side source</value>
+  </data>
+  <data name="MBFResult_ErrorSaveResult" xml:space="preserve">
+    <value>save result error</value>
+  </data>
+  <data name="MBFResult_Found" xml:space="preserve">
+    <value>found</value>
+  </data>
+  <data name="MBFResult_GeneralError" xml:space="preserve">
+    <value>general error</value>
+  </data>
+  <data name="MBFResult_NotenoughInputData" xml:space="preserve">
+    <value>not enough input data</value>
+  </data>
+  <data name="MBFResult_NotFound_v01" xml:space="preserve">
+    <value>not found</value>
+  </data>
+  <data name="MBFResult_UserIgnoreAlert" xml:space="preserve">
+    <value>no answer from user</value>
+  </data>
+  <data name="Inquiry" xml:space="preserve">
+    <value>Inquiry</value>
+  </data>
+  <data name="Object" xml:space="preserve">
+    <value>Object</value>
+  </data>
+  <data name="news" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="os" xml:space="preserve">
+    <value>Online support</value>
+  </data>
+  <data name="tc" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="MainPage_News" xml:space="preserve">
+    <value>Latest news</value>
+  </data>
+  <data name="MainPage_ReadAllNews" xml:space="preserve">
+    <value>All news</value>
+  </data>
+  <data name="UploadedImageInvalidFileName" xml:space="preserve">
+    <value>Uploaded file name is invalid.</value>
+  </data>
+  <data name="UploadedImageSizeConstraint" xml:space="preserve">
+    <value>The size of image shouldn't be more than 50 MB</value>
+  </data>
+  <data name="UploadedImageInvalidFormat" xml:space="preserve">
+    <value>Uploaded image has invalid file type</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Server" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="ComplianceCheck" xml:space="preserve">
+    <value>Compliance check</value>
+  </data>
+  <data name="MBFResult_Completed" xml:space="preserve">
+    <value>completed</value>
+  </data>
+  <data name="MBFResult_Created" xml:space="preserve">
+    <value>created</value>
+  </data>
+  <data name="MBFResult_InProgress" xml:space="preserve">
+    <value>in progress</value>
+  </data>
+  <data name="MBFResult_Invalid" xml:space="preserve">
+    <value>invalid</value>
+  </data>
+  <data name="MBFResult_Stopped" xml:space="preserve">
+    <value>stopped</value>
+  </data>
+  <data name="InquiryController_SAProject_CheckDate" xml:space="preserve">
+    <value>Check date</value>
+  </data>
+  <data name="ImportCheck_Message" xml:space="preserve">
+    <value>The import in progress.... You will be notified upon completion</value>
+  </data>
+  <data name="Check_MarkRelationNameTemplate" xml:space="preserve">
+    <value>"{0}" has a mark: "{1}"</value>
+  </data>
+  <data name="Check_RoleRelationNameTemplate" xml:space="preserve">
+    <value>"{0}" as a "{1}" in the inquery "{2}"</value>
+  </data>
+</root>

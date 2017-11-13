@@ -1,0 +1,656 @@
+﻿/*Toolbar in dialog window*/
+
+.g-toolbar, .g-dialog--toolbar {
+    display: block;
+    height: 44px;
+    background-color: #e5e5e5;
+    & > ul {
+        padding: 0 20px;
+        display: block;
+        position: relative;
+        white-space:nowrap;
+        &:after {
+            position: static;
+            height: 0;
+            clear: both;
+            line-height: 0;
+            display: block;
+        }
+
+        & > li {
+            display: block;
+            float: left;
+            margin: 0 5px 0 0;
+            &.right {
+                float:right;
+            }
+            & > .g-dropdown--menu {
+                margin-top:3px;
+            }
+            & > span.g-form--input {
+                min-width:200px;
+                padding:0;
+                & > input.g-form--input {
+                    margin-top:3px;
+                }
+            }
+            & > span, & > a {
+                display: block;
+                min-width: 44px;
+                min-height: 44px;
+                box-sizing: border-box;
+                position: relative;
+                padding: 0 10px;
+                white-space:nowrap;
+                color:#222;
+                text-decoration:none;
+                &.switch {
+                    padding-top:12px;
+                    & > label {
+                        margin-left:1em;
+                        color:#222;
+                    }
+                }
+                & > .g-dropdown--menu {
+                    margin-left:20px;
+                    margin-top:3px;
+                    & > .g-dropdown--placeholder {
+                        & > .item {
+                            min-width:120px;
+                            box-sizing:border-box;
+                            padding-right:88px!important;
+                        }
+                    }
+                }
+                & > i {
+                    font-style: normal;
+                    padding: 12px 0;
+                    display: inline-block;
+                    -webkit-user-select: none;
+                    user-select: none;
+                    cursor:pointer;
+                }
+                &[toolbar-icon] {
+                    padding-left: 44px;
+                    cursor:pointer;
+                    transition:background-color 150ms linear;
+                    &:hover {
+                        background:#fff;
+                    }
+                    &:active {
+                        background:#f6f6f6;
+                        transition:background-color 50ms linear;
+                        border-top:1px solid #fff;
+                    }
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 24px;
+                        height: 24px;
+                        top: ~"calc(50% - 12px)";
+                        left: 10px;
+                        background-image:url('/Content/images/all20px.svg');
+                        background-repeat:no-repeat;
+                        background-position:-100% -100%;
+                        background-size:1000px auto;
+                        -webkit-filter:invert(20%);
+                        filter:invert(20%);
+                    }
+                }
+            }
+        }
+    }
+}
+/*ICONS SET*/
+
+&[toolbar-icon="new-inquiry"], &[toolbar-icon="add"] {
+    &:before {
+        background-position: -625px 0% !important;
+    }
+}
+
+&[toolbar-icon="list-inquiry"] {
+    &:before {
+        background-position: -625px -25px !important;
+    }
+}
+
+&[toolbar-icon="my-inquiry"] {
+    &:before {
+        background-position: -575px -25px !important;
+    }
+}
+
+&[toolbar-icon="all-inquiry"] {
+    &:before {
+        background-position: -600px -25px !important;
+    }
+}
+
+&[toolbar-icon="find-inquiry"] {
+    &:before {
+        background-position: -650px 0 !important;
+    }
+}
+
+&[toolbar-icon="new-person"] {
+    &:before {
+        background-position: 0 0 !important;
+    }
+}
+
+&[toolbar-icon="new-vehicle"] {
+    &:before {
+        background-position: -50px 0 !important;
+    }
+}
+
+&[toolbar-icon="new-org"] {
+    &:before {
+        background-position: -25px 0 !important;
+    }
+}
+
+&[toolbar-icon="new-location"] {
+    &:before {
+        background-position: -75px 0 !important;
+    }
+}
+
+&[toolbar-icon="new-phone"] {
+    &:before {
+        background-position: -100px 0 !important;
+    }
+}
+
+&[toolbar-icon="new-email"], &[toolbar-icon="new-mail"], &[toolbar-icon="email"] {
+    &:before {
+        background-position: -125px 0 !important;
+    }
+}
+
+&[toolbar-icon="trash"] {
+    &:before {
+        background-position: -150px 0 !important;
+    }
+}
+
+&[toolbar-icon="gear"] {
+    &:before {
+        background-position: -175px 0 !important;
+    }
+}
+
+&[toolbar-icon="anchor"] {
+    &:before {
+        background-position: -200px 0 !important;
+    }
+}
+
+&[toolbar-icon="filter"] {
+    &:before {
+        background-position: -225px 0 !important;
+    }
+}
+
+&[toolbar-icon="chart"] {
+    &:before {
+        background-position: -250px 0 !important;
+    }
+}
+
+&[toolbar-icon="pacman"] {
+    &:before {
+        background-position: -275px 0 !important;
+    }
+}
+
+&[toolbar-icon="hand"] {
+    &:before {
+        background-position: -300px 0 !important;
+    }
+}
+
+&[toolbar-icon="fist"] {
+    &:before {
+        background-position: -325px 0 !important;
+    }
+}
+
+&[toolbar-icon="help"] {
+    &:before {
+        background-position: -350px 0 !important;
+    }
+}
+
+&[toolbar-icon="clean"], &[toolbar-icon~="erase"] {
+    &:before {
+        background-position: -375px 0 !important;
+    }
+}
+
+&[toolbar-icon="filter-cancel"] {
+    &:before {
+        background-position: -400px 0 !important;
+    }
+}
+
+&[toolbar-icon="inwork"] {
+    &:before {
+        background-position: -425px 0 !important;
+    }
+}
+
+&[toolbar-icon="status"] {
+    &:before {
+        background-position: -450px 0 !important;
+    }
+}
+
+&[toolbar-icon="done"] {
+    &:before {
+        background-position: -475px 0 !important;
+    }
+}
+
+&[toolbar-icon="undefined"] {
+    &:before {
+        background-position: -500px 0 !important;
+    }
+}
+
+&[toolbar-icon="pen"] {
+    &:before {
+        background-position: -525px 0 !important;
+    }
+}
+
+&[toolbar-icon="boob"] {
+    &:before {
+        background-position: -550px 0 !important;
+    }
+}
+
+&[toolbar-icon="book"] {
+    &:before {
+        background-position: -575px 0 !important;
+    }
+}
+
+&[toolbar-icon="find"] {
+    &:before {
+        background-position: -600px 0 !important;
+    }
+}
+
+&[toolbar-icon="check"] {
+    &:before {
+        background-position: -675px 0 !important;
+    }
+}
+
+&[toolbar-icon="attach"], &[toolbar-icon="attache"] {
+    &:before {
+        background-position: -700px 0 !important;
+    }
+}
+
+&[toolbar-icon="geo"] {
+    &:before {
+        background-position: -725px 0 !important;
+    }
+}
+
+&[toolbar-icon="rename"] {
+    &:before {
+        background-position: -750px 0 !important;
+    }
+}
+
+&[toolbar-icon="wrench"] {
+    &:before {
+        background-position: -775px 0 !important;
+    }
+}
+
+&[toolbar-icon="source-solid"] {
+    &:before {
+        background-position: -800px 0 !important;
+    }
+}
+
+&[toolbar-icon="source"] {
+    &:before {
+        background-position: -825px 0 !important;
+    }
+}
+
+&[toolbar-icon="blank"] {
+    &:before {
+        background-position: -850px 0 !important;
+    }
+}
+
+&[toolbar-icon="doc"] {
+    &:before {
+        background-position: -875px 0 !important;
+    }
+}
+
+&[toolbar-icon="semnet"] {
+    &:before {
+        background-position: -900px 0 !important;
+    }
+}
+
+&[toolbar-icon="semnet-solid"] {
+    &:before {
+        background-position: -925px 0 !important;
+    }
+}
+
+&[toolbar-icon="eye"] {
+    &:before {
+        background-position: -950px 0 !important;
+    }
+}
+
+&[toolbar-icon="save"] {
+    &:before {
+        background-position: -975px 0 !important;
+    }
+}
+
+&[toolbar-icon="monitoring-globe"] {
+    &:before {
+        background-position: -950px -25px !important;
+    }
+}
+
+&[toolbar-icon="monitoring-media"] {
+    &:before {
+        background-position: -975px -25px !important;
+    }
+}
+
+&[toolbar-icon="globe"] {
+    &:before {
+        background-position: 0px -50px !important;
+    }
+}
+
+&[toolbar-icon="through"] {
+    &:before {
+        background-position: -25px -50px !important;
+    }
+}
+
+&[toolbar-icon="lang"] {
+    &:before {
+        background-position: -50px -50px !important;
+    }
+}
+
+&[toolbar-icon="fullscreen"] {
+    &:before {
+        background-position: -75px -50px !important;
+    }
+}
+
+&[toolbar-icon="normalscreen"] {
+    &:before {
+        background-position: -100px -50px !important;
+    }
+}
+
+&[toolbar-icon="select-text"] {
+    &:before {
+        background-position: -125px -50px !important;
+    }
+}
+
+&[toolbar-icon="star"] {
+    &:before {
+        background-position: 0 -25px !important;
+    }
+}
+
+&[toolbar-icon="comment"] {
+    &:before {
+        background-position: -25px -25px !important;
+    }
+}
+
+&[toolbar-icon="geo2"] {
+    &:before {
+        background-position: -50px -25px !important;
+    }
+}
+
+&[toolbar-icon="geo-area"] {
+    &:before {
+        background-position: -75px -25px !important;
+    }
+}
+
+&[toolbar-icon="origin"] {
+    &:before {
+        background-position: -100px -25px !important;
+    }
+}
+
+&[toolbar-icon="origin2"] {
+    &:before {
+        background-position: -125px -25px !important;
+    }
+}
+
+&[toolbar-icon="origin3"] {
+    &:before {
+        background-position: -150px -25px !important;
+    }
+}
+
+&[toolbar-icon="origin4"] {
+    &:before {
+        background-position: -175px -25px !important;
+    }
+}
+
+&[toolbar-icon="result"] {
+    &:before {
+        background-position: -200px -25px !important;
+    }
+}
+
+&[toolbar-icon="inuiry-parent"] {
+    &:before {
+        background-position: -225px -25px !important;
+    }
+}
+
+&[toolbar-icon="inuiry-objects"] {
+    &:before {
+        background-position: -250px -25px !important;
+    }
+}
+
+&[toolbar-icon="dosier"] {
+    &:before {
+        background-position: -275px -25px !important;
+    }
+}
+
+&[toolbar-icon="reports"] {
+    &:before {
+        background-position: -300px -25px !important;
+    }
+}
+
+&[toolbar-icon="clipboard"] {
+    &:before {
+        background-position: -325px -25px !important;
+    }
+}
+
+&[toolbar-icon="write-comment"] {
+    &:before {
+        background-position: -350px -25px !important;
+    }
+}
+
+&[toolbar-icon="write-comment2"] {
+    &:before {
+        background-position: -375px -25px !important;
+    }
+}
+
+&[toolbar-icon="script-edit"] {
+    &:before {
+        background-position: -400px -25px !important;
+    }
+}
+
+&[toolbar-icon="script-create"] {
+    &:before {
+        background-position: -425px -25px !important;
+    }
+}
+
+&[toolbar-icon="widget-geo"] {
+    &:before {
+        background-position: -450px -25px !important;
+    }
+}
+
+&[toolbar-icon="list-view"] {
+    &:before {
+        background-position: -475px -25px !important;
+    }
+}
+
+&[toolbar-icon="sun"] {
+    &:before {
+        background-position: -500px -25px !important;
+    }
+}
+
+&[toolbar-icon="lamp"] {
+    &:before {
+        background-position: -525px -25px !important;
+    }
+}
+
+&[toolbar-icon="shuriken"] {
+    &:before {
+        background-position: -550px -25px !important;
+    }
+}
+
+&[toolbar-icon="object-add2"] {
+    &:before {
+        background-position: -650px -25px !important;
+    }
+}
+
+&[toolbar-icon="object-add"] {
+    &:before {
+        background-position: -675px -25px !important;
+    }
+}
+
+&[toolbar-icon="object-add-solid"] {
+    &:before {
+        background-position: -700px -25px !important;
+    }
+}
+
+&[toolbar-icon="appearance"] {
+    &:before {
+        background-position: -725px -25px !important;
+    }
+}
+
+&[toolbar-icon="pallet"] {
+    &:before {
+        background-position: -750px -25px !important;
+    }
+}
+
+&[toolbar-icon="script-template"] {
+    &:before {
+        background-position: -775px -25px !important;
+    }
+}
+
+&[toolbar-icon="script-settings"] {
+    &:before {
+        background-position: -800px -25px !important;
+    }
+}
+
+&[toolbar-icon="legend"] {
+    &:before {
+        background-position: -825px -25px !important;
+    }
+}
+
+&[toolbar-icon="dual-cols"] {
+    &:before {
+        background-position: -850px -25px !important;
+    }
+}
+
+&[toolbar-icon="triple-cols"], &[toolbar-icon="tripple-cols"] {
+    &:before {
+        background-position: -875px -25px !important;
+    }
+}
+
+&[toolbar-icon="single-cols"] {
+    &:before {
+        background-position: -900px -25px !important;
+    }
+}
+
+&[toolbar-icon="cols"] {
+    &:before {
+        background-position: -925px -25px !important;
+    }
+}
+
+&[toolbar-icon="export"] {
+    &:before {
+        background-position: -150px -50px !important;
+    }
+}
+
+&[toolbar-icon="import"] {
+    &:before {
+        background-position: -175px -50px !important;
+    }
+}
+
+&[toolbar-icon="master-fact"], &[toolbar-icon="fact"] {
+    &:before {
+        background-position: -200px -50px !important;
+    }
+}
+
+&[toolbar-icon="master-doc"] {
+    &:before {
+        background-position: -225px -50px !important;
+    }
+}
+
+&[toolbar-icon="task"] {
+    &:before {
+        background-position: -275px -50px !important;
+    }
+}
+
+&[toolbar-icon="clear"] {
+    &:before {
+        background-position: -250px -50px !important;
+    }
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ABS.Communication.Common</name>
+    </assembly>
+    <members>
+        <member name="T:ABS.Communication.Common.Client`1">
+            <summary>
+            Универсальная обертка клиент над контрактом службы c повторным использованием канала коммуникации
+            </summary>
+            <typeparam name="T">Интерфейс взанимодействия</typeparam>
+        </member>
+        <member name="M:ABS.Communication.Common.Gateway.RegisterCustomBehaviors(System.String,System.ServiceModel.Description.IEndpointBehavior[])">
+            <summary>
+            Позволяет для заданной конечной точки добавить требуемые поведения 
+            Необходимо выполнить один раз на момент инициализации
+            </summary>
+            <param name="endpoint">конечная точка</param>
+            <param name="behaviors">массив поведений</param>
+        </member>
+        <member name="M:ABS.Communication.Common.Gateway.ServiceRef``1(System.String)">
+            <summary>
+            Позволяет получить прокси для удаленного взаимодействия по заданному контракту
+            Следует использовать в паре с ServiceWrapper 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="endpoint"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ABS.Communication.Common.Gateway.ServiceRef``1(System.Uri)">
+            <summary>
+            Позволяет получить прокси для удаленного взаимодействия по заданному контракту
+            Следует использовать в паре с ServiceWrapper 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="endpoint"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ABS.Communication.Common.ServiceWrapper`1">
+            <summary>
+            Позволяет получить прокси для удаленного взаимодействия по заданному контракту
+            Следует использовать в паре с ServiceWrapper
+            </summary>
+            <typeparam name="T">Интерфейс удаленного взаимодействия</typeparam>
+            <code>
+            var proxy = Gateway.ServiceRef_IContract_(endpoint);
+            using (var proxy = new ServiceWrapper_IContract_(proxy))
+                proxy.Channel.Method(value>
+            </code>
+        </member>
+    </members>
+</doc>

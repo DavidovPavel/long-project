@@ -1,0 +1,36 @@
+﻿<div class="Bts">
+    <button disabled="disabled" id="AutoSelectDocs"><%= Resources.autoselect %></button>&nbsp;&nbsp;
+    <button class="paramsBtn"><%= Resources.parametrs %></button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class='sst'><span class='link' data-value='1'><%= Resources.selectall %></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class='link' data-value='2'><%= Resources.clearselect %></span>&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class='link' data-value='3'><%= Resources.inversion %></span></span>
+</div>
+
+<div id="AutoSelectParams" class="ui-corner-all">
+    <ul>
+        <li><input type="checkbox" id="AutoAllowDuplFacts" name="AutoAllowDuplFacts" />&nbsp;<label for="AutoAllowDuplFacts"><%= Resources.asp1 %></label></li>
+        <li><input type="checkbox" id="AutoGetObjects" name="AutoGetObjects" />&nbsp;<label for="AutoGetObjects"><%= Resources.asp2 %></label></li>
+        <li><input type="checkbox" id="AutoAllowDuplObjs" name="AutoAllowDuplObjs" />&nbsp;<label for="AutoAllowDuplObjs"><%= Resources.asp3 %></label></li>
+        <li><input type="checkbox" id="param4" />&nbsp;<label for="param4"><%= Resources.asp4 %></label></li>
+            
+        <ul>
+            <li>
+                <input type="checkbox" id="Marked_Persons" name="Marked_Persons" checked="checked" />&nbsp;<label for="Marked_Persons"><%= Resources.asp5 %></label></li>
+            <li>
+                <input type="checkbox" id="Marked_Orgs" name="Marked_Orgs" checked="checked" />&nbsp;<label for="Marked_Orgs"><%= Resources.asp6 %></label></li>
+            <li>
+                <input type="checkbox" id="Marked_Region" name="Marked_Region" checked="checked" />&nbsp;<label for="Marked_Region"><%= Resources.asp7 %></label></li>
+            <li>
+                <input type="checkbox" id="Marked_Object" name="Marked_Object" checked="checked" />&nbsp;<label for="Marked_Object"><%= Resources.asp8 %></label></li>
+            <li>
+                <input type="checkbox" id="Marked_Dates" name="Marked_Dates" />&nbsp;<label for="Marked_Dates"><%= Resources.asp9 %></label></li>
+            <li>
+                <input type="checkbox" id="Marked_Money" name="Marked_Money" />&nbsp;<label for="Marked_Money"><%= Resources.asp10 %></label></li>
+        </ul>
+
+        <li><input type="checkbox" id="ShowTasksForDocs" name="ShowTasksForDocs" checked="checked" />&nbsp;<label for="ShowTasksForDocs"><%= Resources.asp11 %></label></li>
+    </ul>
+</div>
+<div id="DocumentsList">
+    <table class="List"></table>
+</div>

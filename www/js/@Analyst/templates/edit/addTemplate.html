@@ -1,0 +1,15 @@
+﻿<table class="Form" style="width: 90%;">
+    <tr><td style="width: 100px;text-align: right; vertical-align: top;padding-top:8px;"><%= Resources.title %>:</td>
+        <td><input type="text" name="title" value="<%= m.title %>" class='ui-corner-all Valid Required' style="width:90%" /><i></i></td></tr>
+<tr><td style="text-align: right;"><%= Resources.description %>:</td><td><textarea name="description" class='ui-corner-all' style="width: 90%;"><%= m.description %></textarea></td></tr>
+</table>
+
+<p style='text-align:right;'>
+<button class='Clear'><%= Resources.clearall %></button>&nbsp;&nbsp;
+    <% if(m.id){ %>
+    <button class="Update" disabled='disabled'><%= Resources.editItem %></button>&nbsp;&nbsp;
+    <% } else { %>
+    <button class='Create' disabled='disabled'><%= Resources.create %></button>
+    <% } %>
+    <br /><i style="color:red;" class="Info"></i>
+</p>

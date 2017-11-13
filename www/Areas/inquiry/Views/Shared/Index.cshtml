@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Compliance check";
+    ViewBag.Name = "inquiry";
+    Layout = "~/views/shared/anbr/_Layout.cshtml";   
+    string report = www.SaGateway.WebSaUtilities.BuildBaseUrl() + "/sqlreporting.aspx";
+}
+<script src="~/frontend/public/js/inquiry/templates.js"></script>
+<script type="text/javascript">
+    define("report_url", "@report");
+</script>
+
+<main></main>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="icon-burger-menu" viewBox="0 0 10 10">
+        <path d="M0,0h10v2H0V0z" />
+        <path d="M0,4h10v2H0V4z" />
+        <path d="M0,8h10v2H0V8z" />
+    </symbol>
+
+</svg>

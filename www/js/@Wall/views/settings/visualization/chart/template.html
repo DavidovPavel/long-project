@@ -1,0 +1,318 @@
+﻿<script type="x-template/underscore" id="choice-chart-template">
+    <div class="graph-panel-container">
+        <p class="title"><%- Resources.gtitle %></p>
+        <div class="graph-panel-grid"></div>
+        <div class="graph-description">
+            <!--<p>Graph description</p>-->
+        </div>
+    </div>
+</script>
+
+
+<script type="x-template/underscore" id="visual-settings-template">
+
+    <h3><%- Resources.m1 %></h3>
+
+    <!-- named Chart -->
+
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="chartTitle" name="chartTitle" value="<%- chartTitle %>" placeholder="<%- Resources.vs11 %>" />
+            <label class="g-form--label" for="chartTitle"><%- Resources.vs11 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs112 %></span>
+            </span>
+        </span>
+    </div>
+
+    <!-- Tooltips -->
+    <h3><%- Resources.vs2 %></h3>
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>tooltipVisible" name="tooltipVisible" <%- tooltipVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>tooltipVisible"><%- Resources.vs22 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs222 %></span>
+                </span>
+            </span>
+        </div>
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>dataLabelVisible" name="dataLabelVisible" <%- dataLabelVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>dataLabelVisible"><%- Resources.vs21 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs212 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <!-- Task 4266 - Show data markers -->
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>markerVisible" name="markerVisible" <%- markerVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>markerVisible"><%- Resources.vs24 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs242 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="tooltipFormat" name="tooltipFormat" value="<%- tooltipFormat %>" placeholder="<%- Resources.vs23 %>" />
+            <label class="g-form--label" for="tooltipFormat"><%- Resources.vs23 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs232 %></span>
+            </span>
+        </span>
+    </div>
+
+    <!-- Legend -->
+    <h3><%- Resources.vs3 %></h3>
+
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>legendVisible" name="legendVisible" <%- legendVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>legendVisible"><%- Resources.vs31 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs312 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="legendTitle" name="legendTitle" value="<%- legendTitle %>" placeholder="<%- Resources.vs32 %>" />
+            <label class="g-form--label" for="legendTitle"><%- Resources.vs32 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs322 %></span>
+            </span>
+        </span>
+    </div>
+
+    <!--  Legend position / dropdown  -->
+    <div class="g-form--input">
+        <label class="g-form--label"><%- Resources.vs33 %></label>
+        <div class="g-dropdown--menu" id="legendPosition"></div>
+    </div>
+
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="legendRowCount" name="legendRowCount" value="<%- legendRowCount %>" placeholder="<%- Resources.vs34 %>" maxlength="1" />
+            <label class="g-form--label" for="legendRowCount"><%- Resources.vs34 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs342 %></span>
+            </span>
+        </span>
+    </div>
+
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="legendBorderSize" name="legendBorderSize" value="<%- legendBorderSize %>" placeholder="<%- Resources.vs35 %>" maxlength="1" />
+            <label class="g-form--label" for="legendBorderSize"><%- Resources.vs35 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs352 %></span>
+            </span>
+        </span>
+    </div>
+
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input filled"><%- Resources.vs36 %></span>
+            <!--<span class="g-form--input"><label class="g-form--label filled"><%- Resources.vs36 %></label></span>-->
+        </div>
+        <div class="grid--1-2">
+            <input type="text" id="<%- prefix %>_legendBorderColor" name="legendBorderColor" value="<%- legendBorderColor==='transparent'?'':legendBorderColor %>" />
+        </div>
+        <br />
+    </div>
+
+    <!-- Axis Settings -->
+    <% if(chart !== 'pie'){ %>
+
+    <h3><%- Resources.vs4 %></h3>
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>primaryXAxisVisible" name="primaryXAxisVisible" <%- primaryXAxisVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>primaryXAxisVisible"><%- Resources.vs41 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs412 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="primaryXAxisTitle" name="primaryXAxisTitle" value="<%- primaryXAxisTitle %>" placeholder="<%- Resources.vs42 %>" />
+            <label class="g-form--label" for="primaryXAxisTitle"><%- Resources.vs42 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs422 %></span>
+            </span>
+        </span>
+    </div>
+    <!--  X axis labels position / dropdown  -->
+    <div class="g-form--input">
+        <label class="g-form--label"><%- Resources.vs43 %></label>
+        <div class="g-dropdown--menu" id="axesXlabelAction"></div>
+    </div>
+
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>primaryYAxisVisible" name="primaryYAxisVisible" <%- primaryYAxisVisible?checked='checked':'' %> />
+                <label for="<%- prefix %>primaryYAxisVisible"><%- Resources.vs44 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs442 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="primaryYAxisTitle" name="primaryYAxisTitle" value="<%- primaryYAxisTitle %>" placeholder="<%- Resources.vs45 %>" />
+            <label class="g-form--label" for="primaryYAxisTitle"><%- Resources.vs45 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs452 %></span>
+            </span>
+        </span>
+    </div>
+
+    <% } %>
+
+    <!--  Column Settings  -->
+    <% if(['column', 'bar', 'stackingcolumn100', 'stackingcolumn'].indexOf(chart)!==-1){ %>
+    <h3><%- Resources.vs5 %></h3>
+    <br />
+    <div>
+        <span class="g-form--input">
+
+            <input type="range" min="0" max="1" step="0.1" class="g-form--input filled" id="columnWidth" name="columnWidth" value="<%- columnWidth %>" placeholder="<%- Resources.vs51 %> (0-1)">
+            <label class="g-form--label"><%- Resources.vs51 %> (<span><%- columnWidth %></span>)</label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs512 %></span>
+            </span>
+        </span>
+    </div>
+
+    <div>
+        <span class="g-form--input">
+            <input type="range" min="0" max="1" step="0.1" class="g-form--input filled" id="columnSpacing" name="columnSpacing" value="<%- columnSpacing %>" placeholder="<%- Resources.vs52 %> (0-1)" />
+            <label class="g-form--label"><%- Resources.vs52 %> (<span><%- columnSpacing %></span>)</label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs522 %></span>
+            </span>
+        </span>
+    </div>
+
+    <% } %>
+
+
+    <!--  Line Settings  -->
+    <% if(chart === 'line') { %>
+    <h3><%- Resources.vs6 %></h3>
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="lineWidth" name="lineWidth" value="<%- lineWidth %>" placeholder="<%- Resources.vs61 %>" />
+            <label class="g-form--label" for="lineWidth"><%- Resources.vs61 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs612 %></span>
+            </span>
+        </span>
+    </div>
+    <% } %>
+
+
+    <!--  Segment Settings  -->
+    <% if(chart === 'pie') { %>
+    <h3><%- Resources.vs7 %></h3>
+    <br />
+    <div>
+        <span class="g-form--input">
+            <input type="range" min="0" max="1" step="0.1" class="g-form--input filled" id="pieSize" name="pieSize" value="<%- pieSize %>" placeholder="<%- Resources.vs71 %> (0-1)" />
+            <label class="g-form--label" for="pieSize"><%- Resources.vs71 %> (<span><%- pieSize %></span>)</label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span><%- Resources.vs712 %></span>
+            </span>
+        </span>
+    </div>
+    <!--<div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="explodedIndex" name="explodedIndex" value="" placeholder="<%- Resources.vs72 %>" />
+            <label class="g-form--label" for="explodedIndex"><%- Resources.vs72 %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd><%- Resources.vs721 %></kbd>
+                <span><%- Resources.vs722 %></span>
+            </span>
+        </span>
+    </div>-->
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>explodeAllSegments" name="explodeAllSegments" <%- explodeAllSegments?checked='checked':'' %> />
+                <label for="<%- prefix %>explodeAllSegments"><%- Resources.vs73 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs732 %></span>
+                </span>
+            </span>
+        </div>
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>explodeOnMouseOver" name="explodeOnMouseOver" <%- explodeOnMouseOver?checked='checked':'' %> />
+                <label for="<%- prefix %>explodeOnMouseOver"><%- Resources.vs74 %></label>
+                <i class="help rtl-1"></i>
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span><%- Resources.vs742 %></span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <% } %>
+
+
+</script>
+
+

@@ -1,0 +1,114 @@
+﻿
+    <link href="/Content/.barn/Complete Modules/Tree/master.css" rel="stylesheet" />
+
+    <script>
+        $(function () {
+            $('.expander').on('click', function () {
+                $(this).parent('div').toggleClass('expanded');
+            });
+            $('span').on('dblclick', function () {
+                $(this).attr('contenteditable', 'true');
+            });
+            $('button').on('click', function () {
+                $(this).prev('span').attr('contenteditable', 'false');
+            });
+        });
+    </script>
+
+
+    <div class="wrapper">
+        <div style="width:400px; overflow:auto;">
+            <ul class="g-tree">
+                <li>
+                    <div class="expanded">
+                        <i class="expander"></i>
+                        <input type="checkbox" id="lvl0" />
+                        <label for="lvl0"></label>
+                        <span tree-icon="folder">
+                            ...
+                        </span>
+                        <button data-value="ok"></button>
+                        <button data-value="cancel"></button>
+                    </div>
+                    <ul>
+                        <li>
+                            <div>
+                                <i class="expander"></i>
+                                <input type="checkbox" id="lvl1-1" />
+                                <label for="lvl1-1"></label>
+                                <span tree-icon="folder">Local Drive (C:)</span>
+                                <button data-value="ok"></button>
+                                <button data-value="cancel"></button>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <i class="expander"></i>
+                                        <input type="checkbox" id="lvl2-1" />
+                                        <label for="lvl2-1"></label>
+                                        <span tree-icon="folder">Program Files</span>
+                                        <button data-value="ok"></button>
+                                        <button data-value="cancel"></button>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="expander"></i>
+                                        <input type="checkbox" id="lvl2-2" />
+                                        <label for="lvl2-2"></label>
+                                        <span tree-icon="folder">Users</span>
+                                        <button data-value="ok"></button>
+                                        <button data-value="cancel"></button>
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <div>
+                                                <i class="expander"></i>
+                                                <input type="checkbox" id="lvl3-1" />
+                                                <label for="lvl2-3"></label>
+                                                <span tree-icon="folder">Manxome</span>
+                                                <button data-value="ok"></button>
+                                                <button data-value="cancel"></button>
+                                            </div>
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <i class="expander" disabled></i>
+                                                        <input type="checkbox" id="lvl4-1" />
+                                                        <label for="lvl2-3"></label>
+                                                        <span tree-icon="file">Desktop</span>
+                                                        <button data-value="ok"></button>
+                                                        <button data-value="cancel"></button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div>
+                                        <i class="expander"></i>
+                                        <input type="checkbox" id="lvl2-3" />
+                                        <label for="lvl2-3"></label>
+                                        <span tree-icon="folder">Windows</span>
+                                        <button data-value="ok"></button>
+                                        <button data-value="cancel"></button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div>
+                                <i class="expander"></i>
+                                <input type="checkbox" id="lvl1-2" />
+                                <label for="lvl1-2"></label>
+                                <span tree-icon="folder">Local Drive (D:)</span>
+                                <button data-value="ok"></button>
+                                <button data-value="cancel"></button>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>

@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Widget</title>
+	<meta charset="utf-8" />
+    <link href="master.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="../app/app.js"></script>
+    <script>
+        $(function () {
+            var widgetTpl = '<div class="g-widget"><div class="g-widget--header" data-icon="icon-clock">Default Widget</div><div class="g-widget--container"></div></div>';
+
+            $('#add').click(function () {
+                $('#wrapper').append(widgetTpl);
+                $(".g-widget").draggable({ grid: [5, 5], handle: ".g-widget--header", containment: "parent" });
+                $(".g-widget").resizable({ grid: 5 });
+            });
+            $(".g-widget").draggable({ grid: [5, 5], handle: ".g-widget--header", containment: "#wrapper" });
+            $(".g-widget").resizable({ grid: 5 });
+            $('#gear').click(function () {
+                $(this).parent('li').toggleClass('active');
+                $('.dashboard-wrapper').toggleClass('ruller');
+            });
+        } );
+    </script>
+</head>
+<body>
+    <header>
+        <div class="default-start-nav collapsed" style="height: 44px; width: 44px;">
+            <div class="default-start-nav-header"><div class="default-start-nav-path"><span></span>На главную</div><div class="default-start-nav-close"><span></span></div><div class="clearfix"></div></div>
+            <div class="default-start-nav-inner">
+                <div class="default-start-tabs"><a class="active" href="#">Основные модули</a><a href="#">Сервисные модули</a></div>
+                <div class="default-start-tabs-toggler"><div class="default-start-tabs-inner"><ul><li><a href="/lang-ru-RU/wall?db=db159" class="btn-start btn-start--dashboard" target="_blank">Dashboard</a></li><li><a href="/lang-ru-RU/db159/wiki" class="btn-start btn-start--wiki" target="_blank">Wiki</a></li><li><a href="/lang-ru-RU/db159/check" class="btn-start btn-start--check" target="_blank">Check</a></li><li><a href="/lang-ru-RU/db159/inquiry" class="btn-start btn-start--compliance" target="_blank">Compliance check</a></li><li><a href="/lang-ru-RU/db159" class="btn-start btn-start--analyst" target="_blank">Analyst</a></li><li><a href="abscp:lang-ru-RU/module/start/gs?db=db159" class="btn-start btn-start--global" target="_blank">Global Search</a></li><li><a href="abscp:lang-ru-RU/module/start/ts?db=db159" class="btn-start btn-start--enterprise" target="_blank">Enterprise search</a></li></ul><ul><li><a href="/lang-ru-RU/db159/services/requestlibrary" class="btn-start btn-start--request" target="_blank">Request Library</a></li><li><a href="/lang-ru-RU/db159/services/sources" class="btn-start btn-start--robot" target="_blank">Robot's collection</a></li></ul></div></div>
+            </div>
+        </div>
+        <div class="tray"><ul class="tray--inner"><li class="tray--item lang-block"><ul class="nav-lang"><li role="presentation" class="active"><a href="/lang-ru-RU/wall">Ru</a></li><li role="presentation" class=""><a href="/lang-en-US/wall">En</a></li></ul></li><li class="tray--item info-block"><span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span></li></ul></div>
+    </header>
+    <div class="g-toolbar">
+        <ul>
+            <li><span class="gear" id="gear">Настройки</span></li>
+            <li><span class="new-inquiry" id="add">Добавить виджет</span></li>
+        </ul>
+    </div>
+    <div class="dashboard-wrapper" id="wrapper">
+        <div class="g-widget">
+            <div class="g-widget--header" data-icon="icon-time">
+                Default Widget
+                <div class="controls">
+                    <span data-icon="icon-filter"></span>
+                    <span data-icon="icon-copy"></span>
+                    <span data-icon="icon-locked" id="lock"></span>
+                </div>
+            </div>
+            <div class="g-widget--container">
+                <form>
+                    <div id="gr">
+                        <input type="checkbox" id="a1">
+                        <input type="checkbox" id="a2">
+                        <input type="checkbox" id="a3">
+                        <input type="checkbox" id="a4">
+                        <input type="checkbox" id="a5">
+                        <input type="checkbox" id="a6">
+                        <input type="checkbox" id="a7">
+                        <input type="checkbox" id="a8">
+                        <input type="checkbox" id="a9">
+
+                        <input type="checkbox" id="b1">
+                        <input type="checkbox" id="b2">
+                        <input type="checkbox" id="b3">
+                        <input type="checkbox" id="b4">
+                        <input type="checkbox" id="b5">
+                        <input type="checkbox" id="b6">
+                        <input type="checkbox" id="b7">
+                        <input type="checkbox" id="b8">
+                        <input type="checkbox" id="b9">
+
+                        <input type="checkbox" id="c1">
+                        <input type="checkbox" id="c2">
+                        <input type="checkbox" id="c3">
+                        <input type="checkbox" id="c4">
+                        <input type="checkbox" id="c5">
+                        <input type="checkbox" id="c6">
+                        <input type="checkbox" id="c7">
+                        <input type="checkbox" id="c8">
+                        <input type="checkbox" id="c9">
+
+                        <input type="checkbox" id="d1">
+                        <input type="checkbox" id="d2">
+                        <input type="checkbox" id="d3">
+                        <input type="checkbox" id="d4">
+                        <input type="checkbox" id="d5">
+                        <input type="checkbox" id="d6">
+                        <input type="checkbox" id="d7">
+                        <input type="checkbox" id="d8">
+                        <input type="checkbox" id="d9">
+
+                        <input type="checkbox" id="e1">
+                        <input type="checkbox" id="e2">
+                        <input type="checkbox" id="e3">
+                        <input type="checkbox" id="e4">
+                        <input type="checkbox" id="e5">
+                        <input type="checkbox" id="e6">
+                        <input type="checkbox" id="e7">
+                        <input type="checkbox" id="e8">
+                        <input type="checkbox" id="e9">
+
+
+                        <div id="pa">
+                            <label for="a1" id="aa1"></label>
+                            <label for="a2" id="aa2"></label>
+                            <label for="a3" id="aa3"></label>
+                            <label for="a4" id="aa4"></label>
+                            <label for="a5" id="aa5"></label>
+                            <label for="a6" id="aa6"></label>
+                            <label for="a7" id="aa7"></label>
+                            <label for="a8" id="aa8"></label>
+                            <label for="a9" id="aa9"></label>
+                        </div>
+
+                        <div id="pb">
+                            <label for="b1" id="bb1"></label>
+                            <label for="b2" id="bb2"></label>
+                            <label for="b3" id="bb3"></label>
+                            <label for="b4" id="bb4"></label>
+                            <label for="b5" id="bb5"></label>
+                            <label for="b6" id="bb6"></label>
+                            <label for="b7" id="bb7"></label>
+                            <label for="b8" id="bb8"></label>
+                            <label for="b9" id="bb9"></label>
+                        </div>
+
+                        <div id="pc">
+                            <label for="c1" id="cc1"></label>
+                            <label for="c2" id="cc2"></label>
+                            <label for="c3" id="cc3"></label>
+                            <label for="c4" id="cc4"></label>
+                            <label for="c5" id="cc5"></label>
+                            <label for="c6" id="cc6"></label>
+                            <label for="c7" id="cc7"></label>
+                            <label for="c8" id="cc8"></label>
+                            <label for="c9" id="cc9"></label>
+                        </div>
+
+                        <div id="pd">
+                            <label for="d1" id="dd1"></label>
+                            <label for="d2" id="dd2"></label>
+                            <label for="d3" id="dd3"></label>
+                            <label for="d4" id="dd4"></label>
+                            <label for="d5" id="dd5"></label>
+                            <label for="d6" id="dd6"></label>
+                            <label for="d7" id="dd7"></label>
+                            <label for="d8" id="dd8"></label>
+                            <label for="d9" id="dd9"></label>
+                        </div>
+
+                        <div id="pe">
+                            <label for="e1" id="ee1"></label>
+                            <label for="e2" id="ee2"></label>
+                            <label for="e3" id="ee3"></label>
+                            <label for="e4" id="ee4"></label>
+                            <label for="e5" id="ee5"></label>
+                            <label for="e6" id="ee6"></label>
+                            <label for="e7" id="ee7"></label>
+                            <label for="e8" id="ee8"></label>
+                            <label for="e9" id="ee9"></label>
+                        </div>
+
+                        <span id="o1">O</span>
+                        <span id="o2">O</span>
+                        <span id="o3">O</span>
+                        <span id="o4">O</span>
+                        <span id="o5">O</span>
+                        <span id="o6">O</span>
+                        <span id="o7">O</span>
+                        <span id="o8">O</span>
+                        <span id="o9">O</span>
+
+                        <span id="x1">X</span>
+                        <span id="x2">X</span>
+                        <span id="x3">X</span>
+                        <span id="x4">X</span>
+                        <span id="x5">X</span>
+                        <span id="x6">X</span>
+                        <span id="x7">X</span>
+                        <span id="x8">X</span>
+                        <span id="x9">X</span>
+
+                        <span id="d1">X</span>
+                        <span id="d2">X</span>
+                        <span id="d3">X</span>
+                        <span id="d4">X</span>
+                        <span id="d5">X</span>
+                        <span id="d6">X</span>
+                        <span id="d7">X</span>
+                        <span id="d8">X</span>
+                        <span id="d9">X</span>
+
+
+                        <p id="wx1">I win</p>
+                        <p id="wx2">I win</p>
+                        <p id="wx3">I win</p>
+                        <p id="wx4">I win</p>
+                        <p id="wx5">I win</p>
+                        <p id="wx6">I win</p>
+                        <p id="wx7">I win</p>
+                        <p id="wx8">I win</p>
+                        <p id="wx9">I win</p>
+
+                        <p id="dd1">draw</p>
+                        <p id="dd2">draw</p>
+                        <p id="dd3">draw</p>
+                        <p id="dd4">draw</p>
+                        <p id="dd5">draw</p>
+                        <p id="dd6">draw</p>
+                        <p id="dd7">draw</p>
+                        <p id="dd8">draw</p>
+                        <p id="dd9">draw</p>
+
+                        <p id="wo1">You win</p>
+                        <p id="wo2">You win</p>
+                        <p id="wo3">You win</p>
+                        <p id="wo4">You win</p>
+                        <p id="wo5">You win</p>
+                        <p id="wo6">You win</p>
+                        <p id="wo7">You win</p>
+                        <p id="wo8">You win</p>
+                        <p id="wo9">You win</p>
+
+                    </div>
+                    <input id="button1" type="reset" value="Click for new game">
+                </form>
+            </div>
+        </div>
+    </div>
+    <aside class="g-sidebar--right">
+        <div class="control">
+            <i></i>
+        </div>
+    </aside>
+</body>
+</html>

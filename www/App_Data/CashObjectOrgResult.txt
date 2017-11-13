@@ -1,0 +1,14 @@
+﻿
+<h3>Профиль 200: выберете компанию<h3>
+<p>Для того, чтобы сделать выбор, в ответном письме, заполните поле колонки "Ваш выбор" любым символом</p>
+<table border="1" cellspacing="3">
+  <tr>
+    <th bgcolor="#CCCCCC" scope="col">Ваш выбор (X)</th>
+    <th bgcolor="#CCCCCC" scope="col">Наименование</th>
+    <th bgcolor="#CCCCCC" scope="col">ИНН</th>
+    <th bgcolor="#CCCCCC" scope="col">ОГРН</th>
+    <th bgcolor="#CCCCCC" scope="col">ОПФ</th>
+    <th bgcolor="#CCCCCC" scope="col">Регион</th>
+  </tr>
+  {CUSTOM-CompanyList}
+</table>

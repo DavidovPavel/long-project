@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.AutoSearchMonitoredObj.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj">
+            <summary>
+            Представляет объект для выполнения поиска объектов мониторинга в документах/фактах 
+            и последующей привязки найденного объекта мониторинга к соответствующему документу/факту. 
+            </summary>
+        </member>
+        <member name="M:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj.SearchSelectedObjects(ANBR.GlobalBase.Common.DatabaseInfo,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Запускает поиск заданных объектов мониторинга во всех документах заданной базы данных. 
+            </summary>
+            <param name="database">База данных</param>
+            <param name="objects">Объекты мониторинга (идентификаторы)</param>
+        </member>
+        <member name="M:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj.SearchObjectsInSelectedSources(ANBR.GlobalBase.Common.DatabaseInfo,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Запускает поиск всех объектов мониторинга в заданных документах заданной базы данных. 
+            </summary>
+            <param name="database">База данных</param>
+            <param name="sources">Документы (идентификаторы)</param>
+        </member>
+        <member name="M:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj.SearchLinkedObjectsInFactsOfSelectedSources(System.String,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Ищет объекты (связанные с заданными документами заданной базы данных) 
+            в связанных с этими документами фактах. 
+            </summary>
+            <param name="server">Сервер</param>
+            <param name="database">База данных</param>
+            <param name="sources">Документы (идентификаторы)</param>
+            <returns>Результат поиска</returns>
+        </member>
+        <member name="M:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj.SearchMonitorObjectsInSelectedSources(System.String,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Ищет все объекты мониторинга в заданных документах заданной базы данных. 
+            </summary>
+            <param name="server">Сервер</param>
+            <param name="database">База данных</param>
+            <param name="sources">Документы (идентификаторы)</param>
+            <returns>Результат поиска</returns>
+        </member>
+        <member name="M:ANBR.AutoSearchMonitoredObj.IServiceSearchMonitoredObj.TestChannel">
+            <summary>
+            Выполняет тестовый вызов. 
+            </summary>
+        </member>
+    </members>
+</doc>

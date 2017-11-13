@@ -1,0 +1,90 @@
+﻿<table class="ResultSearch">
+    <tr>
+        <td style='width:100%;padding:10px;'>
+            <div id="DataObject" class='Form'>
+                
+                <table class="person">
+                    <tr>
+                        <td><%= Resources.surname %></td>
+                        <td><input type='text' class='forSearch ui-corner-all Valid Required' name='lname' /><i></i></td>
+                        <td><%= Resources.previousname %></td>
+                        <td><input type='text' class='forSearch ui-corner-all' name='oname' /><i></i></td>
+                    </tr>
+                    <tr>
+                        <td><%= Resources.name %></td>
+                        <td><input type='text' class='forSearch ui-corner-all' name='fname' /><i></i></td>
+                        <td><%= Resources.searchwiththesynonyms %></td>
+                        <td><input type='checkbox' checked='checked' class='ui-corner-all' name='wsin' /><i></i></td>
+                    </tr>
+                    <tr>
+                        <td><%= Resources.patronymic %></td>
+                        <td><input type='text' class='forSearch ui-corner-all' name='mname' /><i></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan='4' style='border-top:solid 1px #ccc;height:10px;'></td>
+                    </tr>
+                    <tr>
+                        <td><%= Resources.exactdateofbirth %></td><td><input type='text' class='datepicker ui-corner-all' name='bdate' /><i></i></td>
+                        <td><%= Resources.yearofbirth %></td><td><input type='text' class='ui-corner-all Valid' name='byear' maxlength='4' style='width:40px' /><i></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><%= Resources.dateofbirthunknown %></td>
+                        <td><input type='checkbox' class='ui-corner-all' name='nobdate' /><i></i></td>
+                        <td><%= Resources.age %> <%= Resources.from %></td>
+                        <td><input type='text' class='ui-corner-all Valid' name='sage' style='width:20px;' maxlength='2' />
+                            &nbsp;<%= Resources.to %>&nbsp;
+                            <input type='text' class='ui-corner-all' name='eage'  style='width:20px;' maxlength='2' /><i></i></td>
+                    </tr>
+                    <tr class="edit" style="display:none">
+                        <td style="width:50%"><%= Resources.surname %> <%= Resources.name %> <%= Resources.patronymic %></td>
+                        <td><input type='text' class='forSearch ui-corner-all Valid Required' name='title' value="<%= m.title %>" /><i></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="edit" style="display:none">
+                        <td><%= Resources.exactdateofbirth %></td>
+                        <td><input type='text' class='datepicker ui-corner-all' name='bdate' value="<%= m.bdate %>" /><i></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="a">
+                        <td colspan='4' style='border-top:solid 1px #ccc;height:10px;'></td>
+                    </tr>
+                    <tr class="a">
+                        <td><%= Resources.inn %></td>
+                        <td colspan='3'><input type='text' class='ui-corner-all' name='inn' value="<%= m.inn %>" /><i></i></td>
+                    </tr>
+                    <tr class="a">
+                        <td><%= Resources.ogrnip %></td>
+                        <td colspan='3'><input type='text' class='ui-corner-all' name='ogrnip' value="<%= m.ogrnip %>" /><i></i></td>
+                    </tr>
+                    <tr class="a">
+                        <td><%= Resources.passport %></td>
+                        <td><input type='text' class='ui-corner-all' name='pass' value="<%= m.pass %>" /><i></i></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+    <br />
+                <div style='text-align:right;'>
+                    <button class="Update" style="display:none;"><%= Resources.save %></button>&nbsp;&nbsp;
+                    <button class="Restore" style="display:none;"><%= Resources.restoreItem %></button>&nbsp;&nbsp;
+                    <button class='Clear'><%= Resources.clearall %></button>&nbsp;&nbsp;
+                    <button class='Search'><%= Resources.find %></button>&nbsp;&nbsp;
+                    <button class='Create' disabled='disabled'><%= Resources.create %></button>
+                </div>
+              
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="wList">
+            <h5><%= Resources.searchResults %></h5>
+            <div id="ResultSearchObjects"><table class="List"></table></div>
+        </td>
+    </tr>
+</table>

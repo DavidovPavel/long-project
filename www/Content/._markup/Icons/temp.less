@@ -1,0 +1,103 @@
+﻿@import "../../../frontend/less/components/icons";
+@import "../../../frontend/less/libs/roboto";
+body {
+    padding:0;
+    margin:0;
+    font-size:13px;
+}
+.counter {
+    position:fixed;
+    top:10px;
+    right:10px;
+}
+.modal {
+    position:fixed;
+    width:320px;
+    height:120px;
+    top:~"calc(50% - 160px)";
+    left:~"calc(50% - 160px)";
+    background:#f5f5f5;
+    padding:20px;
+    border-top:34px solid #333;
+    transition:transform linear 200ms;
+    box-shadow:0 5px 10px rgba(0,0,0,.1);
+    & > i[data-icon] {
+        padding:0!important;
+        cursor:default!important;
+        transform:scale(3);
+        margin:10px auto;
+        display:block;
+        box-shadow:0 0 5px rgba(0,0,60,.5);
+        &:hover {
+            cursor:default!important
+        }
+        &:before {
+            top:0;
+            left:0;
+            cursor:default!important;
+        }
+    }
+    & > i.close {
+        position:absolute;
+        top:-34px;
+        right:0;
+        background:#b00;
+        width:44px;
+        height:34px;
+        cursor:pointer;
+        &:before,&:after {
+            content:'';
+            width:1px;
+            height:16px;
+            background-color:#fff;
+            position:absolute;
+            top:~"calc(50% - 8px)";
+            left:~"calc(50% - .5px)";
+            transition:transform linear 200ms;
+        }
+        &:before{
+            transform:rotate(-45deg);
+        }
+        &:after{
+            transform:rotate(45deg);
+        }
+        &:hover {
+            &:before{
+                transform:rotate(45deg);
+            }
+            &:after{
+                transform:rotate(-45deg);
+            }
+        }
+    }
+}
+.icons-list {
+    width:648px;
+    margin:50px auto;
+    //box-shadow:0 0 15px rgba(0,0,0,.25);
+    & > div {
+        position:static;
+        width:24px;
+        padding:4px;
+        box-sizing:border-box;
+        height:24px;
+        float:left;
+        transition:all linear 200ms;
+        &:hover {
+            background-color:#ccc;
+        }
+        & > i {
+            padding:0!important;
+            &:before {
+                top:0;
+                left:0;
+            }
+        }
+    }
+    &:after {
+        position:static;
+        display:block;
+        clear:both;
+        content:'';
+    }
+}

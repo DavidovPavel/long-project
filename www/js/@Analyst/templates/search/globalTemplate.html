@@ -1,0 +1,23 @@
+﻿<div style="padding: 10px;">
+    <table>
+        <tr>
+            <td>
+                <label><%= Resources.title %>:</label><br/>
+                <input type='text' name='search' style="width: 100%" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label><%= Resources.type %>:</label><br/>
+                <div class='SemNetFilter'>
+                    <input type='text' name="type" disabled='disabled' /><div class='IcoParam'><div class="ClearValue btn"></div><span class="W1">&nbsp;</span><div class="ViewSelect btn"></div></div>
+                </div>
+                <input type='hidden' name="typeid" />
+            </td>
+        </tr>
+    </table>
+
+    <p style="clear: both;">
+        <button type='button' name="search"><%= Resources.find %></button>
+    </p>
+</div>

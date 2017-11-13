@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wizard</title>
+    <link href="../footer/footer.css" rel="stylesheet" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../dialog/dialog.css" rel="stylesheet" />
+    <link href="../dropdown/dropdown.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script src="wizard.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <div class="nav-btn"><span></span></div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="top-panel">
+                <h3 class="tac">Объект проверки: Организация</h3>
+            </div>
+            <div class="g-form--wizard">
+                <fieldset class="g-form--fieldset" name="main">
+                    <legend>Основные параметры</legend>
+                    <div class="row">
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="lastname" class="g-form--input" placeholder="Наименование компании" />
+                                <label for="lastname">Наименование компании</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-1">
+                            <div class="g-form--input">
+                                <div class="g-dropdown--menu block">
+                                    <div class="g-dropdown--placeholder">
+                                        <div class="item">Россия</div>
+                                    </div>
+                                    <div class="g-dropdown--container">
+                                        <div class="item selected">Россия</div>
+                                        <div class="item">Соединенные Штаты Армении</div>
+                                        <div class="item">Казахстан</div>
+                                        <div class="item">Беларусь</div>
+                                    </div>
+                                </div>
+                                <label>Страна</label>
+                            </div>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="surname" class="g-form--input" placeholder="ИНН" />
+                                <label for="surname">ИНН</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="oldlastname" class="g-form--input" placeholder="ОГРН" />
+                                <label for="oldlastname">ОГРН</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="uniname" class="g-form--input" placeholder="ОКПО" />
+                                <label for="uniname">ОКПО</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-2">
+                            <div class="g-form--input">
+                                <div class="g-dropdown--menu block">
+                                    <div class="g-dropdown--placeholder">
+                                        <div class="item">Основной заемщик</div>
+                                    </div>
+                                    <div class="g-dropdown--container">
+                                        <div class="item selected">Россия</div>
+                                        <div class="item">Соединенные Штаты Армении</div>
+                                        <div class="item">Казахстан</div>
+                                        <div class="item">Беларусь</div>
+                                    </div>
+                                </div>
+                                <label>Роль</label>
+                            </div>
+                        </div>
+                        <div class="grid--1-2">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="uniname" class="g-form--input" placeholder="Информационные признаки" />
+                                <label for="uniname">Информационные признаки</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="g-form--fieldset acc">
+                    <legend>Синонимы</legend>
+                    <div class="row">
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="synonim" class="g-form--input" placeholder="Добавить синоним" />
+                                <label for="synonim">Добавить синоним</label>
+                                <i class="rtl-1 clear"></i>
+                            </span>
+                            <span class="g-form--string">
+                                "ООО" Рога и копыта
+                                <i class="clear"></i>
+                            </span>
+                            <span class="g-form--string">
+                                Газпром
+                                <i class="clear"></i>
+                            </span>
+                            <span class="g-form--string">
+                                Глазпром
+                                <i class="clear"></i>
+                            </span>
+                            <span class="g-form--string">
+                                Газмяс
+                                <i class="clear"></i>
+                            </span>
+                        </div>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+        <div class="main-controls">
+            <div class="row">
+                <button class="g-form--button flat ghost-b nest-left left">Отмена</button>
+                <button class="g-form--button flat next nest-right right" disabled>Далее</button>
+                <button class="g-form--button flat blue nest-right right" >Создать</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="step">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+    </footer>
+</body>
+</html>

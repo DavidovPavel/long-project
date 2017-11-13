@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "_ErrorLayout.cshtml";
+    ViewBag.Title = "Unauthorized";
+}
+
+<div>
+    @User.Identity.Name, в текущий момент вы авторизованы, но был запрошен ресурс, к которому доступ отсуствует. Введите, пожалуйста, параметры другой учетной записи. 
+    <br />
+    Вам требуется         
+    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+            @Html.AntiForgeryToken()
+            <a href="javascript:document.getElementById('logoutForm').submit()">Выйти</a>
+    }
+
+
+, после чего авторизоваться под другой учетной записью. 
+</div>
+
+
+@*
+@if (User != null)
+{
+    <h1>Claims</h1>
+    
+    <p>@User.IsInRole("SA_ADMINISTRATOR")</p>
+
+    <br />
+    <br />
+    <b>Username: @User.Identity.Name</b>
+    <br />
+
+    <br />
+    <br />
+    <br />
+    @Html.Partial("_ClaimsPartial", ((System.Security.Principal.IPrincipal)User))
+}
+*@

@@ -1,0 +1,16 @@
+﻿[
+  {
+    "outputFileName": "@analyst.min.js",
+    "inputFiles": [
+      "js/@global/models/storagemodel.js",
+      "js/@analyst/app.js"
+    ]
+  },
+
+  {
+    "outputFileName": "views/shared/TemplateUnderscore.cshtml",
+    "inputFiles": [
+      "js/@inquiry/templates/searchinquiry.html"
+    ]
+  }
+]

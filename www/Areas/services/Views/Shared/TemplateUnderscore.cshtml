@@ -1,0 +1,96 @@
+<script type="x-template/underscore" id="services-library-template"><div id="dialog"></div>
+
+    <div class="left"></div>
+
+    <div class="main" style="margin-left:300px;">
+        <h4><%- Resources.parametrs %></h4>
+        <div class="params"></div>
+        <div class="g-form--input">
+            <button class="run g-form--button small flat" data-icon="icon-next"><%- Resources.runquest %></button>
+        </div>
+        <div class="result" style="margin:1em;"></div>
+    </div></script><script type="x-template/underscore" id="search-sources-template"><fieldset>
+        <!--<legend class="text-center"><%= Resources.selSourcesTitle %></legend>-->
+        <div class="row row-26 mrg-b-24">
+            <div class="col-sm-3">
+                <!--<button class="btn btn-flagy-rev btn-blue fullsize toform"><%= Resources.toform %></button>-->
+            </div>
+            <div class="col-sm-6">
+                <div class="text-center">
+                    <div id="source-select-meter" data-meter data-meter-min="0" data-meter-val="0"></div>
+                    <div class="text-left"> <%= Resources.selSources %>: <span id="selected-num">0</span>
+                        <br /><%= Resources.sum %>: <span id="select-amount">0.00</span>&nbsp;<span class="Currency"></span>
+                        <br /><%= Resources.balance %>: <span class="text-info">
+                            <span id="balance">0</span>&nbsp;<span class="Currency"></span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <!--<button class="btn btn-flagy btn-blue fullsize start disabled"><%= Resources.saveCollRobots %></button>-->
+            </div>
+        </div>
+        <div class="row row-26">
+            <div class="col-sm-3" id="Filters"></div>
+            <div class="col-sm-9" id="ListTemplate"></div>
+        </div>
+    </fieldset></script><script type="x-template/underscore" id="filter-sources-template"><div class="filter-title">
+        <span class="btn-link-clear"><%= R.cancelFilter %></span>
+    </div>
+
+    <div id="selections"></div>
+
+    <div class="filter-list">
+        
+        <span class="btn-collapse"><%= R.category %></span>
+        <div class="collapse">
+            <div id="ByPayment"></div>
+            <div id="ByStatus"></div>
+        </div>
+
+        <span class="btn-collapse"><%= R.selectCountry %></span>
+        <div class="collapse in on">
+            <div id="ByCountry"></div>
+        </div>
+
+        <span class="btn-collapse"><%= R.byTypeSurce %></span>
+        <div class="collapse">
+            <div id="BySrcKind"></div>
+        </div>
+
+        <span class="btn-collapse"><%= R.byInfo %></span>
+        <div class="collapse">
+            <div id="ByInfo"></div>
+        </div>
+
+    </div></script><script type="x-template/underscore" id="selections-sources-template"><span class="btn-collapse"><%- R.collectionSources %></span>
+    <div class="panel-collapse collapse in on">
+        <div class="IsSystem"></div>
+        <div class="Custom"></div>
+    </div></script><script type="x-template/underscore" id="list-sources-template"><div class="">
+            <span class="g-form--input" id="input-search">
+                <input type="text" id="search-text" name="search-text" value="" class="g-form--input" placeholder="<%- Resources.searchByWord %>">
+                <label for="search-text"><%- Resources.searchByWord %></label>
+                <i class="search rtl-1"></i>
+            </span>        
+        <div class="g-tabs">
+            <span class="btn-link-clear all active" role="button">
+                <svg class="icon icon-filtered"><use xlink:href="#icon-filtered"></use></svg> <%= Resources.allSources %>&nbsp;(<span class="amount-all">0</span>)
+            </span>
+            <span class="btn-link-clear sel" role="button">
+                <svg class="icon icon-select"><use xlink:href="#icon-select"></use></svg> <%= Resources.selected2 %>&nbsp;(<span class="amount-selected">0</span>)
+            </span>
+        </div>
+    </div>
+    <div id="info-window"></div>
+    <div id="all-list"></div>
+    <div id="selected-list" style="display:none;"></div></script><script type="x-template/underscore" id="source-info-template"><div class="menu-info-source">
+        <div class="source-logo"><img src="<%- logoUrl %>" alt="" /></div>
+        <div class="source-title"><%= title %></div>
+        <div class="source-desc">
+            <ul> <% _.each(property, function(item){ %> <li><%- item %></li> <% }) %> </ul>
+            <i><%= description %></i>
+            <p><%= text %></p>
+        </div>
+    </div>
+    <div><span><%- Resources.price %>:</span> - <%- price?price:Resources.freeTitle %></div></script>

@@ -1,0 +1,80 @@
+﻿.g-context--menu {
+  display: inline-block;
+  min-width: 100px;
+  div.g-context--container{
+    padding: 1px 1px 0 1px;
+    box-sizing: border-box;
+    width:100%;
+    background: #d7d7d7;
+    margin: 0;
+    display: block;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    .g-context--container {
+        display:none;
+        position:absolute;
+        top:-1px;
+        left:~"calc(100%)";
+        &.revert {
+            right:~"calc(100%)";
+            left:auto;
+            z-index:10000;
+        }
+    }
+    .item {
+      -webkit-user-select:none;
+      user-select:none;
+      margin-bottom: 1px;
+      white-space:nowrap;
+      text-align: left;
+      background: #fff;
+      display: block;
+      box-sizing: border-box;
+      color:#444;
+      cursor: pointer;
+      padding: 7px 15px 8px 15px;
+      position: relative!important;
+      transition: all linear 50ms;
+      &.disabled {
+        color: #bbb;
+        background: #eee;
+        cursor: not-allowed;
+        &:before {
+          opacity:0.5;
+        }
+        &:hover {
+          color:#bbb;
+          background: #eee;
+        }
+      }
+      &:hover {
+        background: #f5f5f5;
+        color:#222;
+        & > .g-context--container {
+              display:block;
+              &>.item {
+                  &:hover {
+                     &>.g-context--container {
+                         display:block;
+                     }
+                  }
+              }
+          }
+      }
+      &.haskids {
+          padding-right:50px!important;
+          &:after {
+                content:'';
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 4px 0 4px 6px;
+                border-color: transparent transparent transparent #ccc;
+                position:absolute;
+                top:~"calc(50% - 4px)";
+                right:5px;
+          }
+      }
+    }
+  }
+}

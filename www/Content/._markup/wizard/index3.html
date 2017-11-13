@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wizard</title>
+    <link href="../footer/footer.css" rel="stylesheet" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../dialog/dialog.css" rel="stylesheet" />
+    <link href="../dropdown/dropdown.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script src="wizard.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <div class="nav-btn"><span></span></div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="top-panel">
+                <h3 class="tac">Выбор коллекции источников проверки</h3>
+            </div>
+            <div class="g-form--wizard">
+                <fieldset class="g-form--fieldset">
+                    <legend>Базовые коллекции</legend>
+                    <div class="row">
+                    <div class="grid--1-3">
+                        <div class="g-panel selected">
+                            <h4>Стандартная проверка</h4>
+                            <table class="blank">
+                                <tbody>
+                                    <tr>
+                                        <td>Выбрано источников</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На сумму </td>
+                                        <td>1080 руб.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="g-panel--options tac">
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-eye"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-round-check"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-copy"></span>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid--1-3">
+                        <div class="g-panel">
+                            <h4>Экспресс проверка</h4>
+                            <table class="blank">
+                                <tbody>
+                                    <tr>
+                                        <td>Выбрано источников</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На сумму </td>
+                                        <td>1080 руб.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="g-panel--options tac">
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-eye"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-round-check"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-copy"></span>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid--1-3">
+                        <div class="g-panel">
+                            <h4>Полная проверка</h4>
+                            <table class="blank">
+                                <tbody>
+                                    <tr>
+                                        <td>Выбрано источников</td>
+                                        <td>50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>На сумму </td>
+                                        <td>1080 руб.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="g-panel--options tac">
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-eye"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-round-check"></span>
+                                </div>
+                                <div class="grid--1-3">
+                                    <span data-icon="icon-copy"></span>
+                                </div>
+                                <div style="clear:both"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </fieldset>
+                <fieldset class="g-form--fieldset">
+                    <legend>Мои коллекции</legend>
+                    <button id="add-collection" class="g-form--button flat">Добавить свою коллекцию</button>
+                    <div class="row" id="custom">
+                        <div class="grid--1-3">
+                            <div class="g-panel">
+                                <h4>Коллекция "Соцсети"</h4>
+                                <table class="blank">
+                                    <tbody>
+                                        <tr>
+                                            <td>Выбрано источников</td>
+                                            <td>50</td>
+                                        </tr>
+                                        <tr>
+                                            <td>На сумму </td>
+                                            <td>1080 руб.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="g-panel--options tac">
+                                    <div class="grid--1-3">
+                                        <span data-icon="icon-gear"></span>
+                                    </div>
+                                    <div class="grid--1-3">
+                                        <span data-icon="icon-round-check"></span>
+                                    </div>
+                                    <div class="grid--1-3">
+                                        <span data-icon="icon-trash"></span>
+                                    </div>
+                                    <div style="clear:both"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="main-controls">
+            <div class="row">
+                <button class="g-form--button flat ghost-b nest-left left">Отмена</button>
+                <button class="g-form--button flat next nest-right right" disabled>Далее</button>
+                <button class="g-form--button flat blue nest-right right" >Создать</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="step">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+    </footer>
+</body>
+</html>

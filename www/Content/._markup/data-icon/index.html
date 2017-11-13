@@ -1,0 +1,601 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Icons</title>
+	<meta charset="utf-8" />
+    <link href="data-icon.css" rel="stylesheet" />
+    <script src="https://yastatic.net/jquery/2.2.1/jquery.min.js"></script>
+    <style>
+        table {
+            border-collapse:collapse;
+            border:1px solid #d7d7d7;
+            width:100%;
+            box-shadow:0 10px 25px rgba(0,0,0,0.35);
+            border:1px solid #333;
+        }
+        table thead {
+            background:#f5f5f5;
+            font-weight:bold;
+            font-size:15px;
+            text-align:center;
+        }
+        table thead td {
+            padding:10px 5px;
+        }
+        table td {
+            border:1px solid #ccc;
+            padding:5px;
+        }
+        table td:first-child {
+            text-align:center;
+            width:30px;
+        }
+        table td span a {
+            display:block;
+        }
+        table thead th {
+            text-align:center;
+            background:#333;
+            color:#fff;
+            border:1px solid #ccc;
+            padding:5px;
+        }
+        table tbody tr:hover td {
+            background:#eee;
+        }
+        table tfoot td{
+            background:#333;
+            color:#fff;
+            padding:5px 10px;
+            text-align:right;
+        }
+    </style>
+</head>
+<body style="padding:20px 0 0;">
+    <div class="container" style="width:580px; margin:0 auto;">
+        <table>
+            <thead>
+                <tr>
+                    <th>Icon</th>
+                    <th>Attribute</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><span data-icon="icon-blank"></span></td>
+                    <td>data-icon="icon-blank"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-settings"></span></td>
+                    <td>data-icon="icon-settings"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-send"></span></td>
+                    <td>data-icon="icon-send"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-trash"></span></td>
+                    <td>data-icon="icon-trash"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-analyst"></span></td>
+                    <td>data-icon="icon-analyst"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-global"></span></td>
+                    <td>data-icon="icon-global"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-geo"></span></td>
+                    <td>data-icon="icon-geo"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-folder"></span></td>
+                    <td>data-icon="icon-folder"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-folder-colsed"></span></td>
+                    <td>data-icon="icon-folder-colsed"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-folder-empty"></span></td>
+                    <td>data-icon="icon-folder-empty"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-warn"></span></td>
+                    <td>data-icon="icon-warn"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-attention"></span></td>
+                    <td>data-icon="icon-attention"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-attention-solid"></span></td>
+                    <td>data-icon="icon-attention-solid"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-bell"></span></td>
+                    <td>data-icon="icon-bell"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-bell2"></span></td>
+                    <td>data-icon="icon-bell2"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db-blank"></span></td>
+                    <td>data-icon="icon-db-blank"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db-empty"></span></td>
+                    <td>data-icon="icon-db-empty"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db"></span></td>
+                    <td>data-icon="icon-db"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-info"></span></td>
+                    <td>data-icon="icon-info"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-import"></span></td>
+                    <td>data-icon="icon-import"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-user"></span></td>
+                    <td>data-icon="icon-user"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-case"></span></td>
+                    <td>data-icon="icon-case"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-case-plus"></span></td>
+                    <td>data-icon="icon-case-plus"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-loader"></span></td>
+                    <td>data-icon="icon-loader"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-all"></span></td>
+                    <td>data-icon="icon-all"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-status"></span></td>
+                    <td>data-icon="icon-status"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-inwork"></span></td>
+                    <td>data-icon="icon-inwork"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-finished"></span></td>
+                    <td>data-icon="icon-finished"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-clock"></span></td>
+                    <td>data-icon="icon-clock"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-time"></span></td>
+                    <td>data-icon="icon-time"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-assign"></span></td>
+                    <td>data-icon="icon-assign"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-archive"></span></td>
+                    <td>data-icon="icon-archive"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-next"></span></td>
+                    <td>data-icon="icon-next"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-bg"></span></td>
+                    <td>data-icon="icon-next"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-brush"></span></td>
+                    <td>data-icon="icon-brush"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-bg"></span></td>
+                    <td>data-icon="icon-bg"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-rename"></span></td>
+                    <td>data-icon="icon-rename"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-flag"></span></td>
+                    <td>data-icon="icon-flag"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-note"></span></td>
+                    <td>data-icon="icon-note"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-clip"></span></td>
+                    <td>data-icon="icon-clip"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-check"></span></td>
+                    <td>data-icon="icon-check"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-sun"></span></td>
+                    <td>data-icon="icon-sun"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-reload"></span></td>
+                    <td>data-icon="icon-reload"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-globe"></span></td>
+                    <td>data-icon="icon-globe"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-download"></span></td>
+                    <td>data-icon="icon-download"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-editor"></span></td>
+                    <td>data-icon="icon-editor"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-pen"></span></td>
+                    <td>data-icon="icon-pen"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-lib"></span></td>
+                    <td>data-icon="icon-lib"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-erase"></span></td>
+                    <td>data-icon="icon-erase"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-lang"></span></td>
+                    <td>data-icon="icon-lang"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-clean"></span></td>
+                    <td>data-icon="icon-clean"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-wrench"></span></td>
+                    <td>data-icon="icon-wrench"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-eye"></span></td>
+                    <td>data-icon="icon-eye"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-filter-full"></span></td>
+                    <td>data-icon="icon-filter-full"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-filter"></span></td>
+                    <td>data-icon="icon-filter"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-caps-underline"></span></td>
+                    <td>data-icon="icon-caps-underline"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-caps"></span></td>
+                    <td>data-icon="icon-caps"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-sheet-import"></span></td>
+                    <td>data-icon="icon-sheet-import"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-checkbox-fill"></span></td>
+                    <td>data-icon="icon-checkbox-fill"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-close-xl"></span></td>
+                    <td>data-icon="icon-close-xl"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-close-l"></span></td>
+                    <td>data-icon="icon-close-l"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-close-xs"></span></td>
+                    <td>data-icon="icon-close-xs"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-dots"></span></td>
+                    <td>data-icon="icon-dots"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-gear"></span></td>
+                    <td>data-icon="icon-gear"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-org"></span></td>
+                    <td>data-icon="icon-org"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-semantic"></span></td>
+                    <td>data-icon="icon-semantic"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-semantic-array"></span></td>
+                    <td>data-icon="icon-semantic-array"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-linked"></span></td>
+                    <td>data-icon="icon-linked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-source"></span></td>
+                    <td>data-icon="icon-source"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-digest"></span></td>
+                    <td>data-icon="icon-digest"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-loupe"></span></td>
+                    <td>data-icon="icon-loupe"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-star"></span></td>
+                    <td>data-icon="icon-star"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-book"></span></td>
+                    <td>data-icon="icon-book"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-chain"></span></td>
+                    <td>data-icon="icon-chain"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-file"></span></td>
+                    <td>data-icon="icon-file"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-file-text"></span></td>
+                    <td>data-icon="icon-file-text"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-file-unlocked"></span></td>
+                    <td>data-icon="icon-file-unlocked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-file-locked"></span></td>
+                    <td>data-icon="icon-file-locked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-globe-msg"></span></td>
+                    <td>data-icon="icon-globe-msg"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-script"></span></td>
+                    <td>data-icon="icon-script"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-mark"></span></td>
+                    <td>data-icon="icon-mark"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-selection"></span></td>
+                    <td>data-icon="icon-selection"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db-query"></span></td>
+                    <td>data-icon="icon-db-query"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db-export"></span></td>
+                    <td>data-icon="icon-db-export"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-db-export-part"></span></td>
+                    <td>data-icon="icon-db-export-part"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-printer"></span></td>
+                    <td>data-icon="icon-printer"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-highlighter"></span></td>
+                    <td>data-icon="icon-highlighter"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-marker"></span></td>
+                    <td>data-icon="icon-marker"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-lamp"></span></td>
+                    <td>data-icon="icon-lamp"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-unlocked"></span></td>
+                    <td>data-icon="icon-unlocked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-locked"></span></td>
+                    <td>data-icon="icon-locked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-save"></span></td>
+                    <td>data-icon="icon-save"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-text-checked"></span></td>
+                    <td>data-icon="icon-text-checked"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-text-add"></span></td>
+                    <td>data-icon="icon-text-add"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-external"></span></td>
+                    <td>data-icon="icon-external"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-copy"></span></td>
+                    <td>data-icon="icon-copy"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-basketball"></span></td>
+                    <td>data-icon="icon-basketball"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-eye-closed"></span></td>
+                    <td>data-icon="icon-eye-closed"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-visio"></span></td>
+                    <td>data-icon="icon-visio"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-excel"></span></td>
+                    <td>data-icon="icon-excel"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-word"></span></td>
+                    <td>data-icon="icon-word"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-bell-solid"></span></td>
+                    <td>data-icon="icon-bell-solid"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-shopping-cart"></span></td>
+                    <td>data-icon="icon-shopping-cart"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-scissors"></span></td>
+                    <td>data-icon="icon-scissors"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-palette"></span></td>
+                    <td>data-icon="icon-palette"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-tag"></span></td>
+                    <td>data-icon="icon-tag"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-round-add"></span></td>
+                    <td>data-icon="icon-round-add"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-round-check"></span></td>
+                    <td>data-icon="icon-round-check"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-round-del"></span></td>
+                    <td>data-icon="icon-round-del"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-clip-vertical"></span></td>
+                    <td>data-icon="icon-clip-vertical"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-fullscreen"></span></td>
+                    <td>data-icon="icon-fullscreen"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-paralell"></span></td>
+                    <td>data-icon="icon-paralell"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-book-closed"></span></td>
+                    <td>data-icon="icon-book-closed"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-court"></span></td>
+                    <td>data-icon="icon-court"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-coubit"></span></td>
+                    <td>data-icon="icon-coubit"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-orbit"></span></td>
+                    <td>data-icon="icon-orbit"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-earth"></span></td>
+                    <td>data-icon="icon-earth"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-calendar"></span></td>
+                    <td>data-icon="icon-calendar"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-anchor"></span></td>
+                    <td>data-icon="icon-anchor"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-up"></span></td>
+                    <td>data-icon="icon-up"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-down"></span></td>
+                    <td>data-icon="icon-down"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-first"></span></td>
+                    <td>data-icon="icon-first"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-last"></span></td>
+                    <td>data-icon="icon-last"</td>
+                </tr>
+
+                <tr>
+                    <td><span data-icon="icon-status--neutral"></span></td>
+                    <td>data-icon="icon-status--neutral"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-status--green"></span></td>
+                    <td>data-icon="icon-status--green"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-status--yellow"></span></td>
+                    <td>data-icon="icon-status--yellow"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-status--red"></span></td>
+                    <td>data-icon="icon-status--red"</td>
+                </tr>
+                <tr>
+                    <td><span data-icon="icon-status--grey"></span></td>
+                    <td>data-icon="icon-status--grey"</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2"><b class="place"></b> icons total</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <script>
+        $(function () {
+            var icons = $('span[data-icon]').length
+            $('.place').text(icons);
+            $('span[data-icon]').click(function () {
+                var colors = ["red", "blue", "green", "yellow"];
+                var randomColor = colors[Math.floor(Math.random() * colors.length)];
+                $(this).attr('color-icon', randomColor);
+                if (!$(this).parent('td').next('td').children('span').length > 0) {
+                    $(this).parent('td').next('td').append(' color-icon="<span></span>"');
+                }
+                $(this).parent('td').next('td').children('span').text($(this).attr('color-icon'));
+            });
+        });
+    </script>
+</body>
+</html>

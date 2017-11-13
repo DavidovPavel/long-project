@@ -1,0 +1,33 @@
+﻿<table class="CreatePanel">
+    <tr>
+        <td class="leftPart">
+            <div class="loadTree"></div>
+            <div class="loadLinks">
+                <div style="padding:10px;">
+                    <%= Resources.currentObj %>: <b class="soObjTitle"></b><br/>
+                    <span class="Cbx"><input type="hidden" name="searchSin" id="linkToObj" /></span>&nbsp;<label><%= Resources.linktoobj %></label>
+                </div>
+                <div id="linkList"><table class="linkList"></table></div>
+            </div>
+        </td>
+        <td>
+            <div style="padding-left:20px;">
+                <div class="searchBeforeCreate">
+                    <div class="titleType" style="height: 14px;"></div>
+                    <table>
+                        <tr>
+                            <td>
+                                <textarea name="title"></textarea>
+                            </td>
+                            <td style="width: 30px; padding: 4px;">
+                                <button class="shape gr_blue search"><%= Resources.search %></button></td>
+                        </tr>
+                    </table>
+                </div>
+                <p><button class="shape gr_blue create"><%= Resources.create %></button>&nbsp;<button class="clear shape gr_blue"><%= Resources.clear %></button></p>
+            <h2><%= Resources.searchResults %></h2>
+            <div id="SearchResult"><table class="List"></table></div>
+            </div>
+        </td>
+    </tr>
+</table>

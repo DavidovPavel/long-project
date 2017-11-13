@@ -1,0 +1,15 @@
+﻿
+@if (Request.IsAuthenticated)
+{<div style="padding-top: 160px;padding-right: 200px;padding-left: 45px;">
+    <div style="font-size: 16px;margin-bottom: 160px;">
+    <span style="color: #878787">@Context.GetGlobalResourceObject("Client", "Youlogin")</span>
+        <div style="padding-top: 10px;">@User.Identity.Name</div>
+    </div></div>
+    <div style="height: 60px;background-color: #ededed;margin-bottom:60px;text-align: center;padding-top: 30px;">
+    @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new {id = "logoutForm"}))
+    {
+        @Html.AntiForgeryToken()
+        <a class="arr3" href="javascript:document.getElementById('logoutForm').submit()"><img src="/Images/ar3.png" alt="" />&nbsp;<span>@Context.GetGlobalResourceObject("Client", "logOff")</span></a>
+    }
+        </div>
+}

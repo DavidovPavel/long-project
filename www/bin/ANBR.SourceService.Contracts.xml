@@ -1,0 +1,2037 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.SourceService.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.SourceService.Contracts.EntitiesAutoSearchResult">
+            <summary>
+            Результат автовыделения сущностей из документа
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ItemName">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ItemId">
+            <summary>
+            ID
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ItemNumber">
+            <summary>
+            Номер порядковый
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ItemsCount">
+            <summary>
+            Кол-во элементов (общее)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ProcessingState">
+            <summary>
+            Статус обработки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.ResultOfOperation">
+            <summary>
+            Результат выполнения
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.EntitiesAutoSearchResult.Entities">
+            <summary>
+            Найденные сущности
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.GetMentionsAssessments(System.Int32,System.Int32)">
+            <summary>
+            Возвращает список оценок упоминания. objectId и sourceId не могут быть 0 одновременно
+            </summary>
+            <param name="objectId">Идентификатор объекта. Может быть 0, тошда учитывается только sourceId</param>
+            <param name="sourceId">Мдентификатор документа.  Может быть 0, тошда учитывается только objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.CreateMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Создает новую оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.EditMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Изменяет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.DeleteMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Удаляет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.DeleteMentionsAssessment(System.Int32)">
+            <summary>
+            Создает новую оценку упоминания по идентификатору
+            </summary>
+            <param name="id">Идентификатор оцунки упоминания</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceDuplexClient.SetDocumentState(System.Int32,System.Int32)">
+            <summary>
+            Изменяет состояние документа
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FormatDescription">
+            <summary>
+            Описание формата файла. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.FormatDescription.FormatName">
+            <summary>
+            Название формата файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.FormatDescription.FormatGroupName">
+            <summary>
+            Название группы форматов файла
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.FormatDescription.FormatExtension">
+            <summary>
+            Расширение файла
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ISourceService">
+            <summary>
+            Представляет объект для работы с источниками информации. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetLanguagesWithFactTypeSynonyms">
+            <summary>
+            Получает языки, для которых есть синонимы типов фактов.  
+            </summary>
+            <returns>Языки</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetAllDocumentSets">
+            <summary>
+            Получает все наборы статей (названия и id, без списка статей). 
+            </summary>
+            <returns>Наборы статей</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.CreateDocumentSet(System.String)">
+            <summary>
+            Создает новый набор статей. 
+            </summary>
+            <param name="name">Имя набора статей</param>
+            <returns>Набор статей</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteDocumentSet(System.Int32)">
+            <summary>
+            Удалить набор статей
+            </summary>
+            <param name="idset">Набор статей</param>
+            <returns>Результат выполнения (true/false)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.RenameDocumentSet(System.Int32,System.String)">
+            <summary>
+            Переименовать набор статей
+            </summary>
+            <param name="idset">Набор статей</param>
+            <param name="newName">Новое Имя</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AddDocumentToSet(System.Int32,System.Int32)">
+            <summary>
+            Добавить статью в набор
+            </summary>
+            <param name="iddoc">Статья</param>
+            <param name="idset">Набор</param>
+            <returns>Результат выполнения (true/false)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteDocumentFromSet(System.Int32,System.Int32)">
+            <summary>
+            Удалить статью из набора
+            </summary>
+            <param name="iddoc">Статья</param>
+            <param name="idset">Набор</param>
+            <returns>Результат выполнения (true/false)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDocuments(System.Int32)">
+            <summary>
+            Получить список статей (без списка предложений)
+            </summary>
+            <param name="idset">Набор статей</param>
+            <returns>список статей</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetSentences(System.Int32)">
+            <summary>
+            Получить список предложений 
+            (без анализа - без списка типов фактов по группам)
+            </summary>
+            <param name="iddoc">Статья</param>
+            <returns>список предложений </returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFactTypesPlanned(System.Guid)">
+            <summary>
+            Получить список типов фактов, размеченных 
+            для автоизвлечения из предложения
+            </summary>
+            <param name="idsentence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AddFactType(System.Guid,System.Int32)">
+            <summary>
+            Добавить тип факта к списку типов, 
+            размеченных для автоизвлечения из предложения
+            </summary>
+            <param name="idsentence"></param>
+            <param name="facttype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.RemoveFactType(System.Guid,System.Int32)">
+            <summary>
+            Удалить тип факта из списка типов, размеченных для автоизвлечения из предложения
+            </summary>
+            <param name="idsentence"></param>
+            <param name="facttype"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFactTypesExtracted(System.Guid)">
+            <summary>
+            Получить список типов фактов, извлеченных из предложения
+            </summary>
+            <param name="idsentence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AnalyzeSentence(System.Guid)">
+            <summary>
+            Проанализировать предложение: 
+            получить список типов фактов по группам, после автоизвлечения фактов
+            </summary>
+            <param name="idsentence"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.RemoveAutoFactsByDocSet(System.Int32)">
+            <summary>
+            Удалить факты, автоизвлеченные из документов определенного набора
+            </summary>
+            <param name="iddocset">Набор статей</param>
+            <returns>кол-во удаленных фактов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AnalyzeFactTypeSynonymsExtracted(System.Guid)">
+            <summary>
+            Проанализировать предложение: 
+            получить список ID синонимов типов фактов, извлеченных из предложения (извлеченных/к-ые могли бы быть извлечены)
+            </summary>
+            <param name="idsentence">Предложение</param>
+            <returns>Список ID синонимов типов фактов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.Test">
+            <summary>
+            Тестовый вызов. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.TestChannel">
+            <summary>
+            Тестовый вызов. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.Wait(System.TimeSpan)">
+            <summary>
+            
+            </summary>
+            <param name="time"></param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtractFactByRequest(System.Int32,System.Int32[])">
+            <summary>
+            
+            </summary>
+            <param name="requestId"></param>
+            <param name="sources"></param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindProbableFacts(System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean)">
+            <summary>
+            Выделяет потенциальные факты из текстов источников
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="FindRelatedDatabaseObjects">Искать ли в фактах объекты БД
+            </param>
+            <param name="saveTempFacts">Сохранять ли временные факты в БД</param>
+            <returns>Список потенциальных фактов по каждому источнику</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFacts(System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean,System.Int32,System.Boolean)">
+            <summary>
+            Запускает автопоиск потенциальных фактов в текстах источников
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="findRelatedObjects">Искать ли в фактах объекты БД (ищет все, кроме фактов и документов)</param>
+            <param name="saveFactsInDB">Сохранять ли временные факты в БД</param>
+            <param name="sentencesCount">Сообщение после обработки каждых sentencesCount предложений</param>
+            <param name="returnFactsFound">Возвращать ли найденные факты</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsBatchX(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32)">
+            <summary>
+            Запускает автовыделение фактов в текстах документов во всей БД (или по избранным документам)
+            </summary>
+            <param name="sources">Документы (список идентификаторов) - (Еще не реализовано), 
+            если NULL или пустой список, то по всем документам</param>
+            <param name="findRelatedObjects">Искать ли в фактах любые объекты БД (ищет всё, кроме фактов и документов)</param>
+            <param name="maxTasksNumber">Кол-во одновременно обрабатываемых типов факта (Еще не реализовано)</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsBatchSelectedX(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32)">
+            <summary>
+            Запускает автовыделение фактов в текстах избранных документов по избранным документам
+            </summary>
+            <param name="sources">Документы</param>
+            <param name="objects">Объекты</param>
+            <param name="findRelatedObjects">Искать ли объекты внутри созданных фактов</param>
+            <param name="maxTasksNumber">не используется</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsAndEntities(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Запускает автовыделение фактов в текстах избранных документов и автовыделение сущностей из созданных фактов (опционально)
+            </summary>
+            <param name="sources">Документы</param>
+            <param name="objects">Объекты</param>
+            <param name="autoFindEntities">Искать ли сущности внутри созданных фактов</param>
+            <param name="whatEntitiesToFind">Каких типов сущности искать</param>
+            <param name="duplicateFacts">Создавать ли дубли фактов</param>
+            <param name="duplicateObjects">Создавать ли дубли объектов</param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsX(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32)" -->
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsWithSelectedObjects(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32,System.Boolean,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean)">
+            <summary>
+            Запускает автопоиск потенциальных фактов в текстах источников 
+            (вариант 2 - создает факты, 
+            только если в факте упомянут один из искомых объектов и привязывает к заданному списку рубрик)
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="saveFactsInDB">Сохранять ли временные факты в БД</param>
+            <param name="sentencesCount">Сообщение после обработки каждых sentencesCount предложений</param>
+            <param name="returnFactsFound">Возвращать ли найденные факты</param>
+            <param name="objectsToFind">Список искомых объектов</param>
+            <param name="rubricsToBind">Список связываемых рубрик</param>
+            <param name="findOnlyUniqueObjects">Искать в фактах уникальные объекты (поле IsUnique = true) 
+            и связывать с фактом, если объекты найдены в факте</param>
+            <param name="bindToSpheres">Искать ли сферы деятельности в фактах 
+            и связывать ли факты со сферами деятельности</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsWithSelectedObjectsX(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Запускает автопоиск фактов в текстах источников 
+            (вариант 2 - создает факты, 
+            только если в факте упомянут один из искомых объектов и привязывает к заданному списку рубрик)
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="objectsToFind">Список искомых объектов</param>
+            <param name="rubricsToBind">Список связываемых рубрик</param>
+            <param name="findUniqueObjects">Искать в фактах уникальные объекты (поле IsUnique = true) 
+            и связывать с фактом, если объекты найдены в факте</param>
+            <param name="bindToSpheres">Искать ли сферы деятельности в фактах 
+            и связывать ли факты со сферами деятельности</param>
+            <param name="maxTasksNumber">Кол-во одновременно обрабатываемых документов</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsWithMonitoredObjectsX(System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean,System.Int32)">
+            <summary>
+            Запускает автопоиск фактов в текстах источников 
+            (вариант 3 - создает факты, 
+            только если в факте упомянут один из объектов мониторинга (связанных/найденных в конкретном источнике)
+            и привязывает к заданному списку рубрик)
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="rubricsToBind">Список связываемых рубрик</param>
+            <param name="findUniqueObjects">Искать в фактах уникальные объекты (поле IsUnique = true) 
+            и связывать с фактом, если объекты найдены в факте</param>
+            <param name="bindToSpheres">Искать ли сферы деятельности в фактах 
+            и связывать ли факты со сферами деятельности</param>
+            <param name="maxTasksNumber">Кол-во одновременно обрабатываемых документов</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindAutoFactsWithMonitoredObjects(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32,System.Boolean,System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean)">
+            <summary>
+            Запускает автопоиск потенциальных фактов в текстах источников 
+            (вариант 3 - создает факты, 
+            только если в факте упомянут один из объектов мониторинга и привязывает к заданному списку рубрик)
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="saveFactsInDB">Сохранять ли временные факты в БД</param>
+            <param name="sentencesCount">Сообщение после обработки каждых sentencesCount предложений</param>
+            <param name="returnFactsFound">Возвращать ли найденные факты</param>
+            <param name="rubricsToBind">Список связываемых рубрик</param>
+            <param name="findUniqueObjects">Искать в фактах уникальные объекты (поле IsUnique = true) 
+            и связывать с фактом, если объекты найдены в факте</param>
+            <param name="bindToSpheres">Искать ли сферы деятельности в фактах 
+            и связывать ли факты со сферами деятельности</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtractFactsEntitiesComplexByDocs(System.Collections.Generic.List{System.Int32},System.Boolean,EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Запускает комплексное извлечение объектов/фактов из заданного списка документов.  
+            </summary>
+            <param name="docs">Список документов</param>
+            <param name="autoFindEntities">Извлекать ли новые сущности</param>
+            <param name="whatEntitiesToFind">Каких типов сущности искать</param>
+            <param name="duplicateFacts">Создавать ли дубли фактов</param>
+            <param name="duplicateObjects">Создавать ли дубли объектов</param>                
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtractFactsEntitiesComplexByDocsByJob(System.String,System.String,System.Collections.Generic.List{System.Int32},System.Boolean,EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Комплексное извлечение объектов и фактов из заданного списка документов (по ID задачи (JobID), для веб-версии)
+            </summary>
+            <param name="userID">ID пользователя</param>
+            <param name="jobName">Название задания</param>
+            <param name="docs">Документы</param>
+            <param name="autoFindEntities">Извлекать ли сущности из созданных фактов?</param>
+            <param name="whatEntitiesToFind">Каких типов сущности искать?</param>
+            <param name="duplicateFacts">Создавать ли дубли фактов?</param>
+            <param name="duplicateObjects">Создавать ли дубли объектов?</param>
+            <returns>ID задания пользователя userID</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtractFactsEntities(System.String,System.String,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.Boolean,EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Запускает автоизвлечение фактов в текстах избранных документов (sources)
+            и автоизвлечение сущностей из созданных фактов (опционально по флагу autoFindEntities)
+            по Заданию обработки документов (пользователя userID)
+            </summary>
+            <param name="userID">ID пользователя</param>
+            <param name="jobName">Название задания (если - пустое,то создаст как 'имя пользователя + текущая дата')</param>
+            <param name="sources">Документы</param>
+            <param name="objects">Объекты мониторинга</param>
+            <param name="autoFindEntities">Извлекать ли сущности из созданных фактов?</param>
+            <param name="whatEntitiesToFind">Каких типов сущности искать?</param>
+            <param name="duplicateFacts">Создавать ли дубли фактов?</param>
+            <param name="duplicateObjects">Создавать ли дубли объектов?</param>
+            <returns>Задание обработки документов (пользователя userID)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtract_GetDocJob(System.Guid)">
+            <summary>
+            Получает задание обработки документов (статус, имя и т.п.) по ID задания 
+            </summary>
+            <param name="jobId">ID задания</param>
+            <returns>Задание обработки документов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AutoExtract_GetAllDocJobs(System.String)">
+            <summary>
+            Получает все Задания обработки документов (статус, имя и т.п.) пользователя userId
+            </summary>
+            <param name="userId">ID пользователя</param>
+            <returns>Задания обработки документов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.SplitOfSentence(System.Int32)">
+            <summary>
+            Разбивает текст источника на предложения. 
+            </summary>
+            <param name="sourceId">Источник</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteSourceWithProperObjects(System.Int32)">
+            <summary>
+            Удаляет источник с объектами, упомянутыми только в нем. 
+            </summary>
+            <param name="sourceId">Источник</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetSourceFileName(System.Int32)">
+            <summary>
+            Получает имя файла источника. 
+            </summary>
+            <param name="value">Источник</param>
+            <returns>Имя файла источника</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ClearSourceRelation(System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Удаляет связи источника с объектами. 
+            </summary>
+            <param name="sourceId">Источник</param>
+            <param name="allObjectRelation">Связи с объектами</param>
+            <param name="allFactRelation">Связи с фактами</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.CreateSource(ANBR.SemanticArchive.DataContracts.Sources.Source)">
+            <summary>
+            Создает новый источник информации.
+            </summary> 
+            <param name="source">Источник</param>
+            <returns>Идентификатор созданного источника</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.UpdateSource(ANBR.SemanticArchive.DataContracts.Sources.Source)">
+            <summary>
+            Изменяет источник информации. (Свойство Object_ID обязательное)
+            </summary>
+            <param name="source">Источник</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ChangeText(System.Int32,System.String)">
+            <summary>
+            Изменяет текстовое содержимое источника информации. 
+            </summary>
+            <param name="source_id">Идентификатор источника информации</param>
+            <param name="text">Новое текстовое содержимое</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.SaveDocumentContentGetSavedName(System.IO.Stream)">
+            <summary>
+            Загружает исходный файл текстового источника информации во временное хранилище.
+            </summary>
+            <param name="content">Исходный файл (поток байт)</param>
+            <returns>Уникальное имя сохраненной копии исходного файла</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.SaveDocumentContentBySavedName(System.Int32,System.String,System.String,System.Boolean)">
+            <summary>
+            Загружает исходный файл текстового источника из временного хранилища 
+            в источник информации в БД СА (с идентификатором source_id).
+            </summary>
+            <param name="source_id">Идентификатор источника информации</param>
+            <param name="fileName">Имя исходного файла</param>
+            <param name="savedName">Уникальное имя сохраненной копии исходного файла</param>
+            <param name="extractText">Извлекать ли текстовое содержимое из файла</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDocumentContentStream(System.Int32)">
+            <summary>
+            Возвращает исходный файл источника информации.
+            </summary>
+            <param name="source_id">Идентификатор источника</param>
+            <returns>Исходный файл источника (поток байт)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourceByText(System.String)">
+            <summary>
+            Ищет источники по заданному тексту. 
+            </summary>
+            <param name="searchtext">Текст</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourceByTextPaging(ANBR.SourceService.Contracts.SourceByTextPagingQuery)">
+            <summary>
+            Ищет источники по заданному тексту. 
+            </summary>
+            <param name="sourceByTextPagingQuery">Текст</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourceByState(System.Int32)">
+            <summary>
+            Ищет источники по заданному статусу. 
+            </summary>
+            <param name="state">Статус</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourceObjectDataByText(System.String)">
+            <summary>
+            Ищет источники по заданному тексту. 
+            </summary>
+            <param name="searchtext">Текст</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetObjectDataFieldsInfo">
+            <summary>
+            Возвращает информацию о полях объектов. 
+            </summary>
+            <returns>Информация о полях объектов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteSource(System.Int32)">
+            <summary>
+            Удаляет источник.
+            </summary>
+            <param name="source_id">Идентификатор источника информации</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.RestoreSource(System.Int32)">
+            <summary>
+            Восстанавливает источник информации.
+            </summary>
+            <param name="source_id">Идентификатор источника информации</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDocumentById(System.Int32)">
+            <summary>
+            Возвращает документ. 
+            </summary>
+            <param name="id">Идентификатор источника информации</param>
+            <returns>Документ</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetSourcesByIDs(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Получает источники информации.  
+            </summary>
+            <param name="ids">Список идентификаторов источников</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourcesByRubrics(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Получает источники, связанные с рубриками. 
+            </summary>
+            <param name="rubrics">Список рубрик</param>
+            <returns>Список пар Источник-Рубрика</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFormats">
+            <summary>
+            Возвращает список форматов файлов (извлечение текста). 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetIdByUID(System.Guid)">
+            <summary>
+            Возвращает идентификатор источника информации по уникальному идентификатору. 
+            </summary>
+            <param name="uid">Уникальный идентификатор</param>
+            <returns>Идентификатор источника информации</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDocumentStates">
+            <summary>
+            Возвращает список возможных состояний документа.
+            </summary>
+            <returns>Список возможных состояний документа</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.SetDocumentState(System.Int32,System.Int32)">
+            <summary>
+            Устанавливает состояние документа. 
+            </summary>
+            <param name="sourceId">Идентификатор источника информации</param>
+            <param name="stateId">Состояние</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.SetDocumentOwner(System.Int32,System.String)">
+            <summary>
+            Назначает владельца документа. 
+            </summary>
+            <param name="sourceId">Идентификатор источника информации</param>
+            <param name="owner">Владелец</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ResetDocumentOwner(System.Int32)">
+            <summary>
+            Обнуляет владельца документа. 
+            </summary>
+            <param name="sourceId">Идентификатор источника информации</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetMentionedInSources(System.Int32)">
+            <summary>
+            Возвращает список источников, в которых упомянут объект. 
+            </summary>
+            <param name="objectId">Объект</param>
+            <returns>Список упоминаний</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSourcesByRubric(System.Int32,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Ищет источники по рубрике. 
+            </summary>
+            <param name="rubricID">Рубрика</param>
+            <param name="fragmentStatus">Статус фрагмента</param>
+            <param name="isBlocked">Занят ли</param>
+            <param name="sourceTypeID">Тип источника</param>
+            <returns>Источники</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AddMentionObject(ANBR.SemanticArchive.DataContracts.Sources.MentionObject)">
+            <summary>
+            Добавляет упоминание объекта. 
+            </summary>
+            <param name="mentionObject">Упоминание объекта</param>
+            <returns>Идентификатор упоминания</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteMentionObject(System.Int32)">
+            <summary>
+            Удаляет упоминание объекта. 
+            </summary>
+            <param name="idMentionObject">Идентификатор упоминания</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetMentionObject(System.Int32)">
+            <summary>
+            Возвращает список объектов, упомянутых в источнике.  
+            </summary>
+            <param name="source_id">Идентификатор источника</param>
+            <returns>Список упоминаний объектов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteMentionObject(System.Int32,System.Int32)">
+            <summary>
+            Удаляет упоминание объекта. 
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <param name="sourceId">Идентификатор источника</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetMentionsAssessments(System.Int32,System.Int32)">
+            <summary>
+            Возвращает список оценок упоминания. 
+            </summary>
+            <param name="objectId">Идентификатор объекта. Если равен 0, то учитывается только источник</param>
+            <param name="sourceId">Идентификатор источника. Если равен 0, то учитывается только объект</param>
+            <returns>Список оценок упоминания</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.CreateMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Создает новую оценку упоминания. 
+            </summary>
+            <param name="mentionsAssessment">Оценка упоминания</param>
+            <returns>Идентификатор оценки упоминания</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EditMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Изменяет оценку упоминания. 
+            </summary>
+            <param name="mentionsAssessment">Оценка упоминания</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Удаляет оценку упоминания. 
+            </summary>
+            <param name="mentionsAssessment">Оценка упоминания</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteMentionsAssessment(System.Int32)">
+            <summary>
+            Создает новую оценку упоминания. 
+            </summary>
+            <param name="id">Идентификатор оценки упоминания</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFragmentsBySourceId(System.Int32)">
+            <summary>
+            Получает фрагменты источника. 
+            </summary>
+            <param name="sourceId">Идентификатор источника</param>
+            <returns>Список фрагментов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.CreateFragment(ANBR.SemanticArchive.DataContracts.Sources.DocumentFragment)">
+            <summary>
+            Создает фрагмент.  
+            </summary>
+            <param name="fragment">Фрагмент</param>
+            <returns>Результат операции</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteFragmentById(System.Int32)">
+            <summary>
+            Удаляет фрагмент. 
+            </summary>
+            <param name="fragmentId">Идентификатор фрагмента</param>
+            <returns>Результат операции</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDocumentFragment(System.Int32)">
+            <summary>
+            Получает фрагмент документа. 
+            </summary>
+            <param name="documentFragmentID">Идентификатор фрагмента</param>
+            <returns>Фрагмент</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.UpdateDocumentFragment(ANBR.SemanticArchive.DataContracts.Sources.DocumentFragment)">
+            <summary>
+            Редактирует фрагмент. 
+            </summary>
+            <param name="documentFragment">Фрагмент</param>
+            <returns>Результат операции</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntities(System.Collections.Generic.List{System.Int32},System.Boolean)">
+            <summary>
+            Выделяет объекты (сущности) из текстов источников. 
+            </summary>
+            <param name="sources">Источники</param>
+            <param name="findSimilarObjectsInDatabase">
+            Ищет похожие объекты в БД</param>
+            <returns>Список выделенных сущностей</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntitiesInText(System.String,EntityFinder.EntityTypeSa,System.Boolean)">
+            <summary>
+            Выделяет сущности (типов whatToFindFilter) из отрывка текста (text) 
+            и ищет похожие объекты в БД.
+            </summary>
+            <param name="text">текст отрывка документа</param>
+            <param name="whatToFindFilter">Фильтр - что выделять из отрывка документа</param>
+            <param name="findSimilarObjectsInDB">Искать ли похожие объекты в объектах БД</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntitiesInDocPartCoords(System.Int32,System.Int32,System.Int32,EntityFinder.EntityTypeSa,System.Boolean)">
+            <summary>
+            Выделяет сущности (типов whatToFindFilter) из отрывка текста (позиции - от pstart до pend) документа с ID=doc
+            и ищет похожие объекты в связанных с документом объектах БД.
+            </summary>
+            <param name="doc">ID документа</param>
+            <param name="pstart">Начальная позиция отрывка текста</param>
+            <param name="pend">Конечная позиция отрывка текста</param>
+            <param name="whatToFindFilter">Фильтр - что выделять из документа</param>
+            <param name="findSimilarObjectsInLinked">Искать ли похожие объекты в связанных с документом объектах БД</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntitiesInDocPartCoordsEx(System.Int32,System.Int32,System.Int32,EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Выделяет сущности (типов whatToFindFilter) из отрывка текста (позиции - от pstart до pend) документа с ID=doc
+            и ищет похожие объекты в связанных с документом объектах БД  (или во всех объектах БД).
+            </summary>
+            <param name="doc">ID документа</param>
+            <param name="pstart">Начальная позиция отрывка текста</param>
+            <param name="pend">Конечная позиция отрывка текста</param>
+            <param name="whatToFindFilter">Фильтр - что выделять из документа</param>
+            <param name="findSimilarObjectsInLinked">Искать ли похожие объекты в связанных с документом объектах БД</param>
+            <param name="findSimilarObjectsInDB">Искать ли похожие объекты во всех объектах БД</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntitiesInDocs(System.Collections.Generic.List{System.Int32},EntityFinder.EntityTypeSa,System.Boolean,System.Boolean)">
+            <summary>
+            Выделяет сущности из текстов документов.
+            </summary>
+            <param name="docs">Список ID документов</param>
+            <param name="whatToFindFilter">Фильтр - что выделять из документа</param>
+            <param name="findSimilarObjectsInLinked">Искать ли похожие объекты в связанных с документом объектах БД</param>
+            <param name="sendEntitiesOnEachDoc">Отдавать ли найденные сущности после обработки каждого документа (true)
+            или только по окончании обработки всех документов (false)</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindEntitiesInDocsEx(System.Collections.Generic.List{System.Int32},EntityFinder.EntityTypeSa,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Выделяет сущности из текстов документов.
+            </summary>
+            <param name="docs">Список ID документов</param>
+            <param name="whatToFindFilter">Фильтр - что выделять из документа</param>
+            <param name="findSimilarObjectsInLinked">Искать ли похожие объекты в связанных с документом объектах БД</param>
+            <param name="sendEntitiesOnEachDoc">Отдавать ли найденные сущности после обработки каждого документа (true)
+            или только по окончании обработки всех документов (false)</param>
+            <param name="findSimilarObjectsInDB">Искать ли похожие объекты во всех объектах БД</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.FindSimilarObjectsInDB(EntityFinder.K_Entity)">
+            <summary>
+            Ищет похожие объекты в БД для конкретной (уже выделенной) сущности.
+            </summary>
+            <param name="foundEntity">Выделенная сущность</param>
+            <returns>Выделенная сущность со списком найденных в БД похожих объектов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.RemoveTemporaryFacts">
+            <summary>
+            Удаляет все временные факты текущего пользователя. 
+            </summary>
+            <returns>Количество удаленных фактов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetRootFactTypeWithHierarchy">
+            <summary>
+            Получает иерархию типов Факта. 
+            </summary>
+            <returns>Корневой тип Факта с иерархией типов Факта</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFactTypeSynonyms(System.Int32)">
+            <summary>
+            Получает все синонимы заданного типа факта.
+            </summary>
+            <param name="factTypeId">Id типа факта</param>
+            <returns>Список синонимов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AddFactTypeSynonym(EntityFinder.K_FactTypeSynonym)">
+            <summary>
+            Добавляет синоним типа факта.
+            </summary>
+            <param name="syn">Синоним</param>
+            <returns>Id  созданного в БД синонима</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteFactTypeSynonym(System.Int32)">
+            <summary>
+            Удаляет синоним типа факта.
+            </summary>
+            <param name="synId">Id синонима</param>
+            <returns>кол-во удаленных синонимов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.DeleteFactTypeSynonymsByFactTypeId(System.Int32)">
+            <summary>
+            Удаляет все синонимы заданного типа факта. 
+            </summary>
+            <param name="factTypeId">Id типа факта</param>
+            <returns>кол-во удаленных синонимов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ModifyFactTypeSynonym(EntityFinder.K_FactTypeSynonym)">
+            <summary>
+            Редактирует синоним типа факта.
+            </summary>
+            <param name="syn">Синоним с новыми значениями (кроме Id)</param>
+            <returns>кол-во измененных синонимов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetSAObjectDbState(System.Int32)">
+            <summary>
+            Проверяет статус объекта СА. 
+            </summary>
+            <param name="idObject">Идентификатор</param>
+            <returns>Статус</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulOfOrganizationSaveBytes(System.Int32,System.Byte[])">
+            <summary>
+            Создает объект типа Сведения из БД. 
+            </summary>
+            <param name="idOrganization">Организация</param>
+            <param name="bytesEgrul">Данные ЕГРЮЛ</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulFileEntitiesExtract(System.Int32,System.Int32)">
+            <summary>
+            Разбирает данные ЕГРЮЛ и создает объекты/факты с информацией ЕГРЮЛ.  
+            </summary>
+            <param name="idEgrul">Идентификатор выписки ЕГРЮЛ в СА</param>
+            <param name="idOrganization">Организация</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulFileEntitiesExtractByPerson(System.Int32,System.Byte[],System.Boolean,System.String)">
+            <summary>
+            Сохраняет данные ЕГРЮЛ как источник (минимум) и 
+            Разбирает данные ЕГРЮЛ и создает объекты/факты с информацией ЕГРЮЛ
+            (если extractEntities = true) или 
+            только создает факт связи между Персоной и ЕГРЮЛ-данными (extractEntities = false).
+            </summary>
+            <param name="idPerson">Персона</param>
+            <param name="fileEgrul">Данные ЕГРЮЛ</param>
+            <param name="extractEntities">Извлекать ли сущности</param>
+            <param name="commentOfLink">Комментарий "Как связаны Персона и Организация"</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulOfOrganizationSave(System.Int32,System.String)">
+            <summary>
+            Создает объект типа "Сведения из БД" и сохраняет в него выписку ЕГРЮЛ.
+            </summary>
+            <param name="idOrganization">Организация</param>
+            <param name="filenameEgrul">Имя файла с выпиской 
+            (на сервере приложений, только имя, без пути)</param>
+            <returns>Результат создания объекта типа "Сведения из БД"</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulLinkPersonToEgrulCreateFact(System.Int32,System.Int32)">
+            <summary>
+            Создает Факт типа Отношение, связывая Персону с Выпиской ЕГРЮЛ. 
+            </summary>
+            <param name="idPerson">Персона</param>
+            <param name="idEgrul">Выписка ЕГРЮЛ</param>
+            <returns>Созданный Факт</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulFileStructureAnalyze(System.Int32,System.Int32)">
+            <summary>
+            Анализирует структуру выписки ЕГРЮЛ. 
+            </summary>
+            <param name="idEgrul">Выписка ЕГРЮЛ</param>
+            <param name="idOrganization">Организация</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulFilePreAnalyze(System.Int32,System.Int32)">
+            <summary>
+            Анализирует ИНН, ОГРН выписки ЕГРЮЛ в сравнении с теми же данными объекта БД. 
+            </summary>
+            <param name="idEgrul">Выписка ЕГРЮЛ</param>
+            <param name="idOrganization">Организация</param>
+            <returns>Статус анализа</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.EgrulGetReceivedFilesFolder">
+            <summary>
+            Возвращает путь к Папке полученных файлов (например, выписок ЕГРЮЛ и т.п.). 
+            </summary>
+            <returns>Путь</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetDigestsInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.String,System.String,System.Nullable{System.Int64},System.Nullable{System.Int64},System.Nullable{System.DateTime},System.Nullable{System.DateTime})">
+            <summary>
+            Ищет дайджесты в БД СА. 
+            </summary>
+            <param name="LinkedObject_ID">Связанный Объект</param>
+            <param name="Bank_ID">Рубрика (Банк данных)</param>
+            <param name="LinkedProject_ID">Проект</param>
+            <param name="Creator">Создатель</param>
+            <param name="FileName">Часть имени файла</param>
+            <param name="Name">Часть имени</param>
+            <param name="ContentSizeKBytesFrom">Размер КБ - от</param>
+            <param name="ContentSizeKBytesUpTo">Размер КБ - до</param>
+            <param name="DateFrom">Дата создания - от</param>
+            <param name="DateUpTo">Дата создания - до</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetPictureByURI(System.String)">
+            <summary>
+            Получает картинку объекта по его URI формата http://server/database/objectID
+            </summary>
+            <param name="uri">URI формата http://server/database/objectID</param>
+            <returns>Картинка (массив байт)</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ReprocessingSources(System.Int32[])">
+            <summary>
+            Изменяет статус источников. 
+            </summary>
+            <param name="objectsId">Источники</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.AddSynonym(System.Int32,System.String)">
+            <summary>
+            Добавляет синоним synonym объекту 
+            (все флаги ON, кроме ПолнотекстовыйПоиск). 
+            </summary>
+            <param name="idObject">объект</param>
+            <param name="synonym">синоним</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.UTIL_AreObjectsLinked(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Вычисляет, являются ли 2 объекта связанными 
+            через не более чем (levels) промежуточных объектов.         
+            </summary>
+            <param name="idObj1">Объект 1 - исходный</param>
+            <param name="idObj2">Объект 2 - искомый</param>
+            <param name="levels">кол-во промежуточных уровней</param>
+            <returns>связаны ли объекты</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetOriginalFileInfo(System.Int32)">
+            <summary>
+            Получает информацию об источнике. 
+            </summary>
+            <param name="sourceId">Источник</param>
+            <returns>Информация об источнике</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.CheckSourceExists(System.String,System.Int64)">
+            <summary>
+            Проверяет существование источника. 
+            </summary>
+            <param name="fullName">Имя</param>
+            <param name="length">Длина</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.ReLoadDossieSections">
+            <summary>
+            Ищет в БД СА разделы досье и создает ссылку на них в службе источников  
+            (вызвать при удалении всех данных БД и создании разделов с новыми идентификаторами). 
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetObjectsLinkedToFacts(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Получает объекты, связанные с набором фактов. 
+            </summary>
+            <param name="facts">Факты</param>
+            <returns>Объекты и связи с фактами</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.ISourceService.GetFactsLinkedToObjectsByKeyPhrase(System.Collections.Generic.List{System.Int32},System.Int32,System.String)">
+            <summary>
+            Получает факты определенного типа, связанные с набором объектов 
+            и имеющие заданную фразу в тексте факта.  
+            </summary>
+            <param name="objects">Объекты</param>
+            <param name="facttype">Тип факта</param>
+            <param name="keyphrase">Фраза для поиска</param>
+            <returns>Факты</returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ObjectsLinkedFacts">
+            <summary>
+            Объекты и связанные факты. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectsLinkedFacts.Objects">
+            <summary>
+            Объекты
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectsLinkedFacts.ObjectsFacts">
+            <summary>
+            Пары Объект-Факт
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ObjectMainProperties">
+            <summary>
+            Основная информация об объекте. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectMainProperties.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectMainProperties.Type">
+            <summary>
+            Тип
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectMainProperties.Name">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FactMainInfo">
+            <summary>
+            Краткая информация по факту. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactMainInfo.CreatedDate">
+            <summary>
+            Дата создания
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SourceProcessingState">
+            <summary>
+            Статус обработки документа  (автопоиск фактов)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingState.Started">
+            <summary>
+            Начало обработки документа
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingState.Processing">
+            <summary>
+            Обработка (сообщение после обработки каждого N-ого предложения, 
+            N: sentencesCount в вызове метода службы FindAutoFacts)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingState.Completed">
+            <summary>
+            Завершена обработка документа
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingState.EndOfAllProcessing">
+            <summary>
+            Завершена обработка всех документов 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SourceProcessingAction">
+            <summary>
+            Действие по обработке документа (автопоиск фактов)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingAction.Stop">
+            <summary>
+            Остановить обработку 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingAction.StopAndRemoveFacts">
+            <summary>
+            Остановить обработку и удалить созданные факты и связи с объектами и источниками
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SourceProcessingAction.Continue">
+            <summary>
+            Обрабатывать документы без остановки
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.StepProcessingAction">
+            <summary>
+            Действие по обработке следующего шага
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.StepProcessingAction.Stop">
+            <summary>
+            Остановить
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.StepProcessingAction.Continue">
+            <summary>
+            Продолжить
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ItemProcessingAction">
+            <summary>
+            Действие по обработке элемента
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingAction.Stop">
+            <summary>
+            Остановить обработку 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingAction.StopAndRollbackActions">
+            <summary>
+            Остановить обработку и откатить все изменения
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingAction.Continue">
+            <summary>
+            Обрабатывать элементы без остановки
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FactsAutoSearchResult">
+            <summary>
+            Результат автопоиска фактов 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.sourceId">
+            <summary>
+            Источник
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.sourceName">
+            <summary>
+            Имя источника
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.sourceState">
+            <summary>
+            Статус обработки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.sentenceCount">
+            <summary>
+            Количество предложений в документе
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.sentenceNumber">
+            <summary>
+            Обрабатываемое предложение (№ - номера начинаются с 1)
+            Имеет смысл при SourceProcessingState.Processing
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.factsFound">
+            <summary>
+            Найдено фактов (всего) 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchResult.facts">
+            <summary>
+            Найденные факты на каждом шаге (от предыдущего до текущего сообщения)
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ResultOfOperation">
+            <summary>
+            Результат операции
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.NumericalResult">
+            <summary>
+            Результат в численном виде (кол-во найденных или созданных и т.п. сущностей)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.Success">
+            <summary>
+            Успех или неудача
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.MessageEnglish">
+            <summary>
+            Error message 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.MessageLocal">
+            <summary>
+            Сообщение об ошибке
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.MessageEnglishDetails">
+            <summary>
+            Error message details
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ResultOfOperation.MessageLocalDetails">
+            <summary>
+            Сообщение об ошибке детально
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult">
+            <summary>
+            Результат автопоиска фактов по Типу факта
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ProcessingItemKind">
+            <summary>
+            Вид обрабатываемого элемента - документ, тип факта или объект
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ProcessingState">
+            <summary>
+            Статус обработки
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ItemName">
+            <summary>
+            Название элемента
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ItemId">
+            <summary>
+            ID элемента
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ItemNumber">
+            <summary>
+            Номер элемента
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ItemsCount">
+            <summary>
+            Кол-во элементов (суммарное)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ResultsCount">
+            <summary>
+            Результаты обработки 
+            (документ - кол-во предложений, тип факта - кол-во созданных фактов, 
+            объект - кол-во фактов, в которых найден данный объект)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.FactsAutoSearchByFactTypeResult.ResultOfOperation">
+            <summary>
+            Результат выполнения
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ItemProcessingState">
+            <summary>
+            Статус обработки элемента
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingState.Started">
+            <summary>
+            Начало обработки 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingState.Processing">
+            <summary>
+            Обработка 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingState.Completed">
+            <summary>
+            Завершена обработка 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingState.EndOfAllProcessing">
+            <summary>
+            Завершена обработка всех элементов 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ItemProcessingState.StartedAllProcessing">
+            <summary>
+            Начата обработка всех элементов 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ProcessingItemKind">
+            <summary>
+            Вид обрабатываемого элемента данных
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.DocJob">
+            <summary>
+            Задание обработки документов
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.DocJobProcessStatus">
+            <summary>
+            Статус Задания обработки документов
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DocJobProcessStatus.Started">
+            <summary>
+            Задание Создано/Запущено
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DocJobProcessStatus.Processing">
+            <summary>
+            Задание Обрабатывается
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DocJobProcessStatus.Finished">
+            <summary>
+            Задание Завершено
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DocJobProcessStatus.DocSplittedToSentences">
+            <summary>
+            Документы Задания разбиты на предложения
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DocJobProcessStatus.SentencesIndexed">
+            <summary>
+            Документы Задания проиндексированы
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.IFactsAutoSearchCallBack">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.IFactsAutoSearchCallBack.ComplexAutoExtractAction(ANBR.MonitorObj.Contracts.ComplexAutoExtractResult)">
+            <summary>
+            Передает клиенту результаты выполнения шага комплексного извлечения сущностей
+            </summary>
+            <param name="result">Результаты шага</param>
+            <returns>Действие сервера по дальнейшей обработке</returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.CheckSourceResult">
+            <summary>
+            Результат проверки источника. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CheckSourceResult.None">
+            <summary>
+            Не определен
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CheckSourceResult.FullNameAndLength">
+            <summary>
+            Совпадение полного пути и длины файла
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CheckSourceResult.FullNameAndNoLength">
+            <summary>
+            Совпадение полного пути, но длина файла иная
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CheckSourceResult.FileNameAndLength">
+            <summary>
+            Совпадение имени файла и длины файла 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.CheckSourceResult.FileNameAndNoLength">
+            <summary>
+            Совпадение имени файла, но не длины файла 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.PairDocRubric">
+            <summary>
+            Пара Документ-Рубрика
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.PairDocRubric.DocId">
+            <summary>
+            Идентификатор документа
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.PairDocRubric.RubricId">
+            <summary>
+            Идентификатор рубрики
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ObjectLocationInfo">
+            <summary>
+            Информация об объекте (Сервер, БД, Идентификатор)
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectLocationInfo.Database">
+            <summary>
+            БД
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectLocationInfo.Server">
+            <summary>
+            Сервер
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.ObjectLocationInfo.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SplitSentencesParams">
+            <summary>
+            Параметры разбиения на предложения. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SplitSentencesParams.UseEnterAsSentenceDelimiter">
+            <summary>
+            Использовать ли "Enter" как разделитель предложений 
+            (по умолчанию - нет)
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SphereOfAction">
+            <summary>
+            Раздел досье.
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SphereOfAction.#ctor(System.String)">
+            <summary>
+            Создает раздел досье. 
+            </summary>
+            <param name="nam">Имя</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SphereOfAction.#ctor(System.String,System.String)">
+            <summary>
+            Создает раздел досье. 
+            </summary>
+            <param name="nam">Имя</param>
+            <param name="type">Тип</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SphereOfAction.#ctor(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Создает раздел досье. 
+            </summary>
+            <param name="nam">Имя</param>
+            <param name="type">Тип</param>
+            <param name="numOfSection">Номер</param>
+            <param name="parentId">Родительский раздел</param>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.Identifiers">
+            <summary>
+            Идентификаторы раздела 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.ExistInDatabase">
+            <summary>
+            Существует ли в БД СА
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.Type">
+            <summary>
+            Тип
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.NumberOfSection">
+            <summary>
+            Номер
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.ParentId">
+            <summary>
+            Номер родителя 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SphereOfAction.ParentSphere">
+            <summary>
+            Родительский раздел 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.DOC_SplitState">
+            <summary>
+            Статус документа 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DOC_SplitState.Candidate">
+            <summary>
+            Новый документ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DOC_SplitState.Success">
+            <summary>
+            Обработан и успешно разбит на предложения
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DOC_SplitState.Failure">
+            <summary>
+            Не обработан 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DOC_SplitState.Lock">
+            <summary>
+            Занятый документ
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.DOC_SplitState.Empty">
+            <summary>
+            Документ с пустым текстом
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.Help">
+            <summary>
+            Вспомогательный класс. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.Help.IsNothing(System.Object)">
+            <summary>
+            Compare object with NULL
+            </summary>
+            <param name="obj">object</param>
+            <returns>True if object is null, False otherwise</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.Help.IsSomething(System.Object)">
+            <summary>
+            Compare object with NULL
+            </summary>
+            <param name="obj">object</param>
+            <returns>True if object is not null, False otherwise</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.Help.IsEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Answers whether collection is empty 
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="collection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SpheresOfAction">
+            <summary>
+            Разделы досье. 
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SpheresOfAction.RootDummySphereOrg">
+            <summary>
+            Фиктивный раздел (корневой) для разделов досье организации
+            </summary>
+        </member>
+        <member name="F:ANBR.SourceService.Contracts.SpheresOfAction.RootDummySpherePerson">
+            <summary>
+            Фиктивный раздел (корневой) для разделов досье персоны
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SpheresOfAction.#ctor">
+            <summary>
+            Создает разделы досье. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoOtherSources">
+            <summary>
+            Иное. Официальные источники 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoOtherSourcesMAIN">
+            <summary>
+            Иное. Официальные источники (основное)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoOtherSourcesSEC">
+            <summary>
+            Иное. Официальные источники (дополнительное)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonOrganization">
+            <summary>
+            Общие сведения (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonMainOrganization">
+            <summary>
+            Общие сведения (основное) (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonSecOrganization">
+            <summary>
+            Общие сведения (дополнительное) (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoFinanceMainOrganization">
+            <summary>
+            Финансы (основное) (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoFinanceOrganization">
+            <summary>
+            Финансы (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoStructureMainOrganization">
+            <summary>
+            Структура компании и акционеры (основное) (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoStructureOrganization">
+            <summary>
+            Структура компании и акционеры (Организация)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoOwnerMainPerson">
+            <summary>
+            Учреждение и владение организациями (основное)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoOwnerPerson">
+            <summary>
+            Учреждение и владение организациями
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonPerson">
+            <summary>
+            Общие сведения
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonPersonMain">
+            <summary>
+            Общие сведения (основное)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoCommonPersonSec">
+            <summary>
+            Общие сведения (дополнительное)
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoLaborPersonMain">
+            <summary>
+            Трудовая и общественная деятельность (основное) 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoLaborPerson">
+            <summary>
+            Трудовая и общественная деятельность 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoEmplOrgMain">
+            <summary>
+            Руководители и сотрудники (основное) 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SpheresOfAction.InfoEmplOrg">
+            <summary>
+            Руководители и сотрудники 
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.AutoFactFoundNotifier">
+            <summary>
+            
+            </summary>
+            <param name="factCreated"></param>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SourceByTextPagingQuery">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SourceObjectData">
+            <summary>
+            Данные полей источника. 
+            </summary>
+        </member>
+        <member name="P:ANBR.SourceService.Contracts.SourceObjectData.Data">
+            <summary>
+            Данные полей источника
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceObjectData.#ctor(System.Data.DataTable)">
+            <summary>
+            Создает объект. 
+            </summary>
+            <param name="tSource">Данные полей источника</param>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.SourceObjectData.DefaultFields">
+            <summary>
+            Поля по умолчанию
+            </summary>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.GetMentionsAssessments(System.Int32,System.Int32)">
+            <summary>
+            Возвращает список оценок упоминания. objectId и sourceId не могут быть 0 одновременно
+            </summary>
+            <param name="objectId">Идентификатор объекта. Может быть 0, тошда учитывается только sourceId</param>
+            <param name="sourceId">Мдентификатор документа.  Может быть 0, тошда учитывается только objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.CreateMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Создает новую оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.EditMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Изменяет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.DeleteMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Удаляет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.DeleteMentionsAssessment(System.Int32)">
+            <summary>
+            Создает новую оценку упоминания по идентификатору
+            </summary>
+            <param name="id">Идентификатор оцунки упоминания</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.SetDocumentState(System.Int32,System.Int32)">
+            <summary>
+            Изменяет состояние документа
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.FindAutoFactsWithMonitoredObjects(System.Collections.Generic.List{System.Int32},System.Boolean,System.Int32,System.Boolean,System.Collections.Generic.List{System.Int32},System.Boolean,System.Boolean)">
+            <summary> Запускает автопоиск потенциальных фактов в текстах источников 
+            (вариант 3 - создает факты, 
+            только если в факте упомянут один из объектов мониторинга и привязывает к заданному списку рубрик)
+            </summary>
+            <param name="sources">Источники (список идентификаторов)</param>
+            <param name="saveFactsInDB">Сохранять ли временные факты в БД</param>
+            <param name="sentencesCount">Сообщение после обработки каждых sentencesCount предложений</param>
+            <param name="returnFactsFound">Возвращать ли найденные факты</param>
+            <param name="rubricsToBind">Список связываемых рубрик</param>
+            <param name="findUniqueObjects">Искать в фактах уникальные объекты (поле IsUnique = true) 
+            и связывать с фактом, если объекты найдены в факте</param>
+            <param name="bindToSpheres">Искать ли сферы деятельности в фактах 
+            и связывать ли факты со сферами деятельности</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClient.SplitOfSentence(System.Int32)">
+            <summary>
+            Разбить текст на предложения
+            </summary>
+            <param name="sourceId"></param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.CreateSource(ANBR.SemanticArchive.DataContracts.Sources.Source)">
+            <summary>
+            Создание нового источника информации.
+            </summary>
+            <param name="source"></param>
+            <returns>Возвращает идентификатор созданного источника.</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.UpdateSource(ANBR.SemanticArchive.DataContracts.Sources.Source)">
+            <summary>
+            Изменение источника информации. Поле Object_ID должно быть заполнено.
+            Возвращает кол-во обновленных записей.
+            </summary>
+            <param name="source">Изменение источника</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.ChangeText(System.Int32,System.String)">
+            <summary>
+            Изменение текстового содержимого источника информации
+            </summary>
+            <param name="source_id">Идентификатор источника информации</param>
+            <param name="text">Новый текст</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.SaveDocumentContentGetSavedName(System.IO.Stream)">
+            <summary>
+            Загрузка исходного документа текстового источника.
+            </summary>
+            <param name="content"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.SaveDocumentContentBySavedName(System.Int32,System.String,System.String,System.Boolean)">
+            <summary>
+            Загрузка исходного документа текстового источника.
+            </summary>
+            <param name="source_id"></param>
+            <param name="fileName"></param>
+            <param name="savedName"></param>
+            <param name="extractText"></param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.GetDocumentContentStream(System.Int32)">
+            <summary>
+            Возвращает содержимое документа.
+            </summary>
+            <param name="source_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.FindSourceByText(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="searchtext"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.DeleteSource(System.Int32)">
+            <summary>
+            Удаление источника данных.
+            </summary>
+            <param name="source_id"></param>
+            
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.RestoreSource(System.Int32)">
+            <summary>
+            Восстановление источника данных.
+            </summary>
+            <param name="source_id"></param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.AddMentionObject(ANBR.SemanticArchive.DataContracts.Sources.MentionObject)">
+            <summary>
+            Добавить упоминание объекта
+            </summary>
+            <param name="mentionObject">Упоминание объекта. В DataObjectInfo необходимо и достаточно заполнить Object_ID</param>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.GetMentionObject(System.Int32)">
+            <summary>
+            Возвпащает список упомянутых объектов в источнике
+            </summary>
+            <param name="source_id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.GetMentionsAssessments(System.Int32,System.Int32)">
+            <summary>
+            Возвращает список оценок упоминания. objectId и sourceId не могут быть 0 одновременно
+            </summary>
+            <param name="objectId">Идентификатор объекта. Может быть 0, тошда учитывается только sourceId</param>
+            <param name="sourceId">Мдентификатор документа.  Может быть 0, тошда учитывается только objectId</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.CreateMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Создает новую оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.EditMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Изменяет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.DeleteMentionsAssessment(ANBR.SemanticArchive.DataContracts.Sources.MentionsAssessment)">
+            <summary>
+            Удаляет оценку упоминания
+            </summary>
+            <param name="mentionsAssessment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.DeleteMentionsAssessment(System.Int32)">
+            <summary>
+            Создает новую оценку упоминания по идентификатору
+            </summary>
+            <param name="id">Идентификатор оцунки упоминания</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.GetFormats">
+            <summary>
+            Возвращает список форматов файлов
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.GetFragmentsBySourceId(System.Int32)">
+            <summary>
+            Получает фрагменты по идентификатору источника
+            </summary>
+            <param name="sourceId">идентификатор источника</param>
+            <returns>список фрагментов</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.CreateFragment(ANBR.SemanticArchive.DataContracts.Sources.DocumentFragment)">
+            <summary>
+            Создает фрагмент
+            </summary>
+            <param name="fragment">фрагмент</param>
+            <returns>результат операции</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.DeleteFragmentById(System.Int32)">
+            <summary>
+            Удаляет фрагмент
+            </summary>
+            <param name="fragmentId">идентификатор фрагмента</param>
+            <returns>результат операции</returns>
+        </member>
+        <member name="M:ANBR.SourceService.Contracts.SourceServiceClientProxy.SetDocumentState(System.Int32,System.Int32)">
+            <summary>
+            Изменяет состояние документа
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:ANBR.SourceService.Contracts.SourceServiceClientProxy.ActionEntityFind">
+            <summary>
+            Событие автопоиска сущностей
+            </summary>
+        </member>
+        <member name="E:ANBR.SourceService.Contracts.SourceServiceClientProxy.Action">
+            <summary>
+            Событие автопоиска фактов
+            </summary>
+        </member>
+        <member name="E:ANBR.SourceService.Contracts.SourceServiceClientProxy.ActionBatchAutoFacts">
+            <summary>
+            Событие автопоиска фактов (пакетный вариант)
+            </summary>
+        </member>
+        <member name="E:ANBR.SourceService.Contracts.SourceServiceClientProxy.ActionComplexAutoExtract">
+            <summary>
+            Событие комплексного извлечения сущностей
+            </summary>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FactsAutoSearchAction">
+            <summary>
+            Тип обработчика события автопоиска фактов
+            </summary>
+            <param name="result">Результаты поиска фактов</param>
+            <returns>Действие службы по дальнейшему поиску фактов</returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.FactsAutoSearchActionBatch">
+            <summary>
+            Тип обработчика события автопоиска фактов (пакетный вариант). 
+            </summary>
+            <param name="result">Результаты поиска фактов</param>
+            <returns>Действие службы</returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.EntitiesAutoSearchAction">
+            <summary>
+            Тип обработчика события автовыделения сущностей. 
+            </summary>
+            <param name="result">Результаты автовыделения сущностей</param>
+            <returns>Действие службы</returns>
+        </member>
+        <member name="T:ANBR.SourceService.Contracts.ComplexAutoExtractAction">
+            <summary>
+            Тип обработчика события комплексного извлечения сущностей. 
+            </summary>
+            <param name="result"></param>
+            <returns></returns>
+        </member>
+        <member name="T:AutoExtractTuner.DocumentSet">
+            <summary>
+            Набор статей
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSet.Id">
+            <summary>
+            Идентификатор набора статей
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSet.Name">
+            <summary>
+            Название набора статей 
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSet.Documents">
+            <summary>
+            Статьи
+            </summary>
+        </member>
+        <member name="T:AutoExtractTuner.Document">
+            <summary>
+            Статья
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.Document.Id">
+            <summary>
+            Id статьи
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.Document.Name">
+            <summary>
+            Название статьи
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.Document.CreatedDate">
+            <summary>
+            Дата ввода в БД
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.Document.Sentences">
+            <summary>
+            Предложения статьи
+            </summary>
+        </member>
+        <member name="T:AutoExtractTuner.DocumentSentence">
+            <summary>
+            Предложение
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSentence.Id">
+            <summary>
+            Id предложения в БД
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSentence.Name">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSentence.OrderNumber">
+            <summary>
+            Порядковый номер предложения в статье
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSentence.IdDoc">
+            <summary>
+            Статья, из которой взято предложение
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.DocumentSentence.FactTypes">
+            <summary>
+            Типы фактов
+            </summary>
+        </member>
+        <member name="T:AutoExtractTuner.FactType">
+            <summary>
+            Тип факта
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.FactType.Id">
+            <summary>
+            Идентификатор типа факта
+            </summary>
+        </member>
+        <member name="P:AutoExtractTuner.FactType.Kind">
+            <summary>
+            Вид типа факта 
+            </summary>
+        </member>
+        <member name="T:AutoExtractTuner.FactTypeKind">
+            <summary>
+            Вид типа факта  
+            </summary>
+        </member>
+        <member name="F:AutoExtractTuner.FactTypeKind.InitialState">
+            <summary>
+            Начальное состояние
+            </summary>
+        </member>
+        <member name="F:AutoExtractTuner.FactTypeKind.True">
+            <summary>
+            Размеченный пользователем и извлеченный автовыделением
+            (ВЕРНЫЙ)
+            </summary>
+        </member>
+        <member name="F:AutoExtractTuner.FactTypeKind.NotFound">
+            <summary>
+            Размеченный пользователем, но не извлеченный автовыделением
+            (НЕ НАЙДЕННЫЙ)
+            </summary>
+        </member>
+        <member name="F:AutoExtractTuner.FactTypeKind.Mistaken">
+            <summary>
+            Извлеченный автовыделением, но не размеченный пользователем
+            (ЛИШНИЙ)
+            </summary>
+        </member>
+    </members>
+</doc>

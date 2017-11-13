@@ -1,0 +1,8 @@
+﻿  <tr>
+    <td id='eid-{CUSTOM-ENTITYID}'></td>
+    <td bgcolor="#E9E9E9">{CUSTOM-DisplayName}</td>
+    <td bgcolor="#E9E9E9">{CUSTOM-Inn}</td>
+    <td bgcolor="#E9E9E9" id='ogrn'>{CUSTOM-OGRN}</td>
+    <td bgcolor="#E9E9E9">{CUSTOM-OPF}</td>
+    <td bgcolor="#E9E9E9">{CUSTOM-Region}</td>
+  </tr>

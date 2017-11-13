@@ -1,0 +1,7 @@
+﻿.svg-icon {
+    display:inline-block;
+    width:24px;
+    height:24px;
+    position:relative;
+    background:url(svg-sprite.svg) 0 0;
+}

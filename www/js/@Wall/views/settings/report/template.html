@@ -1,0 +1,31 @@
+﻿<script type="x-template/underscore" id="type-reporting-settings">
+
+    <div class="notice"></div>
+
+    <nav>
+        <span data-name='list-report'><span class='font-icon font-icon-result'></span></span>
+        <span data-name='add-set'><svg><use xlink:href='#add-set' /></svg></span>
+    </nav>
+    <section class='list-report'></section>
+    <section class='add-set'>
+        <br />
+        <select class='list-publishers'></select>
+        <br /><br />
+        <label><%- Resources.typere %></label>
+        <select class='type-rep'></select>
+        <br />
+        <div class='load-tree'></div>
+        <br />
+    </section>
+</script>
+
+<script type="x-template/underscore" id="item-report-template">
+    <span class='font-icon font-icon-delete'></span>
+    <div>
+        <label><%= Resources.typeso %></label>
+        <div><%= ReportSysName %></div>
+    </div>
+    <div>
+        <label><%= Resources.typere %></label><div><%= TypeSysName %></div>
+    </div>
+</script>

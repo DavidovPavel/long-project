@@ -1,0 +1,679 @@
+﻿body {
+  transition: padding linear 200ms;
+}
+body.hls {
+  padding-left: 44px;
+}
+body.ls-on {
+  padding-left: 264px;
+}
+body.hrs {
+  padding-right: 44px;
+}
+body.rs-on {
+  padding-right: 264px;
+}
+aside[class*='g-sidebar'] {
+  position: fixed;
+  width: 44px;
+  height: calc(100vh - 44px);
+  background: #333;
+  top: 44px;
+  z-index: 800;
+  left: 0;
+  box-sizing: border-box;
+  padding: 44px 0 0;
+  transition: all linear 200ms;
+  overflow: hidden;
+  color: #acacac;
+}
+aside[class*='g-sidebar'].g-sidebar--right {
+  left: auto;
+  right: 0;
+}
+aside[class*='g-sidebar'].g-sidebar--right.expanded > .control > i:before {
+  transform: rotate(45deg);
+  top: -3.5px;
+  width: 75%;
+  left: auto;
+  right: -2px;
+}
+aside[class*='g-sidebar'].g-sidebar--right.expanded > .control > i:after {
+  width: 75%;
+  transform: rotate(135deg);
+  bottom: -3.5px;
+  left: auto;
+  right: -2px;
+}
+aside[class*='g-sidebar'].g-sidebar--right > .control {
+  left: 0;
+  right: auto;
+}
+aside[class*='g-sidebar'].g-sidebar--right > .title {
+  top: 0;
+  left: 44px;
+}
+aside[class*='g-sidebar'].g-sidebar--left {
+  left: 0;
+  right: auto;
+}
+aside[class*='g-sidebar'].g-sidebar--left.expanded > .control > i:before {
+  transform: rotate(45deg);
+  top: -3.5px;
+  width: 75%;
+  left: auto;
+  right: -2px;
+}
+aside[class*='g-sidebar'].g-sidebar--left.expanded > .control > i:after {
+  width: 75%;
+  transform: rotate(135deg);
+  bottom: -3.5px;
+  left: auto;
+  right: -2px;
+}
+aside[class*='g-sidebar'].g-sidebar--left > .control {
+  left: auto;
+  right: 0;
+  transform: rotate(-180deg);
+}
+aside[class*='g-sidebar'].g-sidebar--left > .title {
+  top: 0;
+  left: 0;
+}
+aside[class*='g-sidebar'] > .title {
+  position: absolute;
+  width: calc(100% - 44px);
+  color: #efefef;
+  font-size: 15px;
+  padding: 13px 0;
+  text-indent: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  user-select: none;
+  cursor: default;
+  height: 44px;
+  box-sizing: border-box;
+}
+aside[class*='g-sidebar'] > .control {
+  height: 44px;
+  width: 44px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: background linear 200ms;
+}
+aside[class*='g-sidebar'] > .control:hover {
+  background: #222;
+}
+aside[class*='g-sidebar'] > .control:hover > i {
+  background: #fff;
+}
+aside[class*='g-sidebar'] > .control:hover > i:before,
+aside[class*='g-sidebar'] > .control:hover > i:after {
+  background: #fff;
+}
+aside[class*='g-sidebar'] > .control > i {
+  background: #acacac;
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  left: calc(50% - 8px);
+  transition: all linear 200ms;
+}
+aside[class*='g-sidebar'] > .control > i:before,
+aside[class*='g-sidebar'] > .control > i:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #acacac;
+  display: block;
+  left: 0;
+  transition: all linear 200ms;
+}
+aside[class*='g-sidebar'] > .control > i:before {
+  top: -6px;
+}
+aside[class*='g-sidebar'] > .control > i:after {
+  bottom: -6px;
+}
+aside[class*='g-sidebar'].expanded {
+  width: 264px;
+}
+aside[class*='g-sidebar'].expanded > .control > i {
+  width: 16px;
+  left: calc(50% - 8px);
+}
+aside[class*='g-sidebar'].expanded > .control > i:before {
+  transform: rotate(-45deg);
+  top: -3.5px;
+  width: 75%;
+  left: -2px;
+}
+aside[class*='g-sidebar'].expanded > .control > i:after {
+  width: 75%;
+  transform: rotate(-135deg);
+  bottom: -3.5px;
+  left: -2px;
+}
+aside[class*='g-sidebar'] > ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  max-height: calc(100vh - 88px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+aside[class*='g-sidebar'] > ul::-webkit-scrollbar {
+  width: 10px;
+}
+aside[class*='g-sidebar'] > ul::-webkit-scrollbar-track {
+  background: #222;
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.15);
+}
+aside[class*='g-sidebar'] > ul::-webkit-scrollbar-thumb {
+  background: #666;
+}
+aside[class*='g-sidebar'] > ul .loading {
+  left: 15px;
+}
+aside[class*='g-sidebar'] > ul > li {
+  margin: 0;
+  padding: 0;
+  min-width: 176px;
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+aside[class*='g-sidebar'] > ul > li > ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+aside[class*='g-sidebar'] > ul > li > span {
+  position: relative;
+  color: #eee;
+  box-sizing: border-box;
+  height: 44px;
+  background: #333;
+  display: block;
+  padding: 12px;
+  padding-left: 44px;
+  /*TEMP NEW*/
+}
+aside[class*='g-sidebar'] > ul > li > span.active {
+  background: #000;
+}
+aside[class*='g-sidebar'] > ul > li > span:hover {
+  background: #282828;
+}
+aside[class*='g-sidebar'] > ul > li > span:before {
+  width: 24px;
+  height: 24px;
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url(/Content/images/icon24.svg);
+  background-repeat: no-repeat;
+  background-position: -100% -100%;
+  background-size: 1200px 51px;
+  -webkit-filter: invert(80%);
+  transform: scale(1);
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  filter: invert(80%);
+  top: calc(50% - 12px);
+  left: 9.5px;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-inquiry:before {
+  background-position: -625px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.list-inquiry:before {
+  background-position: -625px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.my-inquiry:before {
+  background-position: -575px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.all-inquiry:before {
+  background-position: -600px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.find-inquiry:before {
+  background-position: -650px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-person:before {
+  background-position: 0 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-vehicle:before {
+  background-position: -50px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-org:before {
+  background-position: -25px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-location:before {
+  background-position: -75px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-phone:before {
+  background-position: -100px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.new-email:before,
+aside[class*='g-sidebar'] > ul > li > span.new-mail:before {
+  background-position: -125px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.trash:before {
+  background-position: -150px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.gear:before {
+  background-position: -175px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.anchor:before {
+  background-position: -200px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.filter:before {
+  background-position: -225px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.chart:before {
+  background-position: -250px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.pacman:before {
+  background-position: -275px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.hand:before {
+  background-position: -300px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.fist:before {
+  background-position: -325px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.help:before {
+  background-position: -350px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.clean:before {
+  background-position: -375px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.filter-cancel:before {
+  background-position: -400px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.inwork:before {
+  background-position: -425px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.status:before {
+  background-position: -450px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.done:before {
+  background-position: -475px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.undefined:before {
+  background-position: -500px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.pen:before {
+  background-position: -525px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.boob:before {
+  background-position: -550px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.book:before {
+  background-position: -575px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.find:before {
+  background-position: -600px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.check:before {
+  background-position: -675px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.attache:before {
+  background-position: -700px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.geo:before {
+  background-position: -725px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.rename:before {
+  background-position: -750px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.wrench:before {
+  background-position: -775px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.source-solid:before {
+  background-position: -800px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.source:before {
+  background-position: -825px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.blank:before {
+  background-position: -850px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.doc:before {
+  background-position: -875px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.semnet:before {
+  background-position: -900px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.semnet-solid:before {
+  background-position: -925px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.eye:before {
+  background-position: -950px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.save:before {
+  background-position: -975px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.monitoring-globe:before {
+  background-position: -1000px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.monitoring-media:before {
+  background-position: -1025px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.globe:before {
+  background-position: -1050px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.through:before {
+  background-position: -1075px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.lang:before {
+  background-position: -1100px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.fullscreen:before {
+  background-position: -1125px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.normalscreen:before {
+  background-position: -1150px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.select-text:before {
+  background-position: -1175px 0;
+}
+aside[class*='g-sidebar'] > ul > li > span.star:before {
+  background-position: 0 -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.comment:before {
+  background-position: -25px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.geo2:before {
+  background-position: -50px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.geo-area:before {
+  background-position: -75px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.origin:before {
+  background-position: -100px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.origin2:before {
+  background-position: -125px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.origin3:before {
+  background-position: -150px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.origin4:before {
+  background-position: -175px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.result:before {
+  background-position: -200px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.inuiry-parent:before {
+  background-position: -225px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.inuiry-objects:before {
+  background-position: -250px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.dosier:before {
+  background-position: -275px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.reports:before {
+  background-position: -300px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.clipboard:before {
+  background-position: -325px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.write-comment:before {
+  background-position: -350px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.write-comment2:before {
+  background-position: -375px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.script-edit:before {
+  background-position: -400px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.script-create:before {
+  background-position: -425px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.widget-geo:before {
+  background-position: -450px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.list-view:before {
+  background-position: -475px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.sun:before {
+  background-position: -500px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.lamp:before {
+  background-position: -525px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.shuriken:before {
+  background-position: -550px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.object-add2:before {
+  background-position: -650px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.object-add:before {
+  background-position: -675px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.object-add-solid:before {
+  background-position: -700px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.appearance:before {
+  background-position: -725px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.pallet:before {
+  background-position: -750px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.script-template:before {
+  background-position: -775px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.script-settings:before {
+  background-position: -800px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.legend:before {
+  background-position: -825px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.dual-cols:before {
+  background-position: -850px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.tripple-cols:before {
+  background-position: -875px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.single-cols:before {
+  background-position: -900px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.cols:before {
+  background-position: -925px -25px;
+}
+aside[class*='g-sidebar'] > ul > li > span.permission:before {
+  background-image: url('/Content/images/all20px.svg');
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  background-position: -525px -50px;
+}
+aside[class*='g-sidebar'] > ul > li > span.thumb:before {
+  background-image: url('/Content/images/all20px.svg');
+  background-repeat: no-repeat;
+  background-size: 1000px auto;
+  background-position: -825px -125px;
+}
+aside[class*='g-sidebar'] > ul > li.expanded {
+  background: #282828;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > i.toggler:before {
+  transform: rotate(90deg);
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span:first-child {
+  box-shadow: inset 0px 3px 3px rgba(0, 0, 0, 0.25);
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span {
+  background-color: #282828;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul {
+  display: block;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li {
+  position: relative;
+  padding: 0;
+  display: block;
+  margin: 0;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > i.toggler {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > i.toggler:before,
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > i.toggler:after {
+  width: 1px;
+  height: 11px;
+  position: absolute;
+  content: '';
+  display: block;
+  top: calc(50% - 5.5px);
+  left: calc(50% - .5px);
+  background: #ddd;
+  transition: transform ease 200ms;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > i.toggler:after {
+  transform: rotate(90deg);
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > span {
+  height: 34px;
+  display: block;
+  padding: 7px 44px 7px 44px;
+  transition: all 200ms ease;
+  box-sizing: border-box;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > span.active {
+  background-color: #000;
+  color: #fff;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > span:hover {
+  background: #222;
+  color: #fff;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li > ul {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li.expanded > i.toggler:before {
+  transform: rotate(90deg);
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li.expanded > ul {
+  display: block;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li.expanded > ul > li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li.expanded > ul > li > span {
+  padding-left: 64px;
+}
+aside[class*='g-sidebar'] > ul > li.expanded > span ~ ul li.expanded > ul > li > span.active {
+  background: #000;
+  color: #fff;
+}
+aside[class*='g-sidebar'] > ul > li.expanded:after {
+  width: 4px;
+  height: 100%;
+  box-sizing: border-box;
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #0094ff;
+  top: 0;
+  right: 0;
+  z-index: 500;
+}
+aside[class*='g-sidebar'] > ul > li > i.toggler {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+aside[class*='g-sidebar'] > ul > li > i.toggler:before,
+aside[class*='g-sidebar'] > ul > li > i.toggler:after {
+  width: 1px;
+  height: 11px;
+  position: absolute;
+  content: '';
+  display: block;
+  top: calc(50% - 5.5px);
+  left: calc(50% - .5px);
+  background: #ddd;
+  transition: transform ease 200ms;
+}
+aside[class*='g-sidebar'] > ul > li > i.toggler:after {
+  transform: rotate(90deg);
+}
+.g-tabs {
+  width: calc(100% - 4em);
+  display: block;
+  margin: 2em;
+  box-sizing: border-box;
+}
+.g-tabs .g-tabs--controls {
+  display: block;
+  height: 34px;
+  overflow: hidden;
+}
+.g-tabs .g-tabs--controls > div {
+  float: left;
+  padding: 8px 16px;
+  background: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  margin-right: -1px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  height: 34px;
+}
+.g-tabs .g-tabs--controls > div.active {
+  background: #f5f5f5;
+  color: #333;
+  border-bottom: 1px solid #f5f5f5;
+  position: relative;
+  z-index: 2;
+}
+.g-tabs .g-tabs--controls:after {
+  content: '';
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  display: block;
+  position: static;
+  clear: both;
+}
+.g-tabs .g-tabs--content {
+  background: #f5f5f5;
+  border: 1px solid #cdcdcd;
+  margin-top: -1px;
+  padding: 1em;
+}
+.g-tabs .g-tabs--content > div {
+  display: none;
+}
+.g-sidebar--right.dashboard {
+  top: 91px;
+  right: 0;
+  height: calc(100vh - 88px - 141px);
+  z-index: 90;
+}
+.g-sidebar--right.dashboard.expanded {
+  width: 264px;
+  opacity: 1;
+}

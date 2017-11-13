@@ -1,0 +1,20 @@
+﻿/* легенда для виджета типа карта */
+#legendManage {
+    & div.addItem { clear: both;padding-top: 8px;display: none;}
+    & input {width: 150px;float: none;}
+    & .BaseLegend {
+        & input { width: 160px;float: none;}
+        & .RbtnSet * { width: auto;vertical-align: middle;}
+    }
+    & .Btns {
+        margin-top: 2px;float: right;
+        & span { display: inline-block;cursor: pointer;}
+    }
+    & .Bull { height: 16px;display: inline-block;margin-right: 10px;}
+ 
+}
+   table.ListItemsLegend td { vertical-align: middle;}
+   .LegendContainer { 
+       position: absolute;width: auto;height: auto; max-width:200px; max-height:200px;overflow: auto;background: transparent;padding: 4px;z-index: 99;background-color: #fff;
+       table {margin:0;}
+   }

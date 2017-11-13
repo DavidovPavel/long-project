@@ -1,0 +1,701 @@
+﻿
+
+mark { background-color: #a6dbed; padding-left: 5px; padding-right: 5px; }
+
+
+#test span { text-decoration: underline;cursor: pointer;}
+
+/*.anbr_list>div { padding: 0 4px;}*/
+
+.left { float: left;}
+.right{ float: right;}
+.Red { color: red;}
+/*.step { border: solid 1px sienna;display: none;padding: 10px;position: absolute;margin-left: 250px;}*/
+.bd { border: dotted 1px #ccc;padding: 8px; }
+.node { cursor: pointer;}
+
+.Audiosource, .Videosource { background-color: #fff !important}
+
+#ImageGallery .List div { width: 100px;height: 100px;float: left;border: solid 1px #ccc;margin: 4px;overflow: hidden;text-align: center;padding: 2px;}
+#ImageGallery .List div img { width: 80px;cursor: pointer;}
+#ImageGallery .UploadPanel { background-color: #fff;position: absolute;display: none;width: 405px;height: 140px;bottom: 0;right: 0;}
+
+.Top { z-index: 1000000;}
+/*
+    */
+
+    .Login a {color: #31A2FF;}
+.Cubs { position: absolute;left: 14%;top: 200px;}
+.Cub {text-align: right;display: inline-block;position: absolute;color: #fff;cursor: pointer;background-color: #388ed5;  padding: 8px; width: 77px;height: 77px;box-shadow: 1px 2px 4px #9f9f9f;-webkit-box-shadow: 1px 2px 4px #9f9f9f;-moz-box-shadow: 1px 2px 4px #9f9f9f;margin: 5px;border: solid 1px #3f83ba;}
+div.Cub:hover{ background-color: #3a79ab;}
+.Cub h3 {font-weight: normal;}
+.Cub h3 span { display: none;}
+.Cub h3 a { color: #fff;font-family: Segoe UI;text-transform: uppercase;font-size: 2.4em;text-decoration: none;}
+.Cub .Description {font-family: Segoe UI;padding-left: 20px;font-size: 1.1em;display: inline-block;}
+.Cub span.ui-icon { position: absolute;top: 2px;right: 2px;background-color: #fff;}
+.Cub .addons {color: #666;display: none;border: solid 1px #ccc; position: absolute;width: 200px;height: 200px;overflow: auto;background-color: #fff;}
+.Cub input, .Cub textarea { width: 80%;}        
+.Projects {background-color: #fff;border: solid 1px #c4c4c4;position: absolute;height: 600px;width: 80%;padding: 10px;margin-left: 160px;display: none;}
+.editor {border: dashed 1px #eee;}
+.editor div { float: left;width: 98px;height: 98px;border: dashed 1px #eee;}
+.editor .ui-selecting { background: #FECA40; }
+.editor .ui-selected { background: #F39814; color: white; }
+.editor .added { border-color: orangered; }
+
+/*#DemoMode {cursor:pointer;
+           border:solid 1px #666;border-radius:26px;display:inline-block;width:26px;height:26px;text-align:center;transition:all 250ms;line-height:20px;
+
+}*/
+    /*#DemoMode svg {width: 4px;height: 14px;fill:#acacac;vertical-align:middle;transition:all 250ms; }
+    #DemoMode:hover { border-color:#cfcfcf; }
+        #DemoMode:hover svg { fill: #cfcfcf; }*/
+
+#Terms { position: absolute;min-width: 600px;overflow: hidden;z-index: 99;border:solid 1px #cdcdcd;background-color:#f9f9f9;display: none;min-height: 200px;}
+#Terms .NoMore {position:absolute;top:auto;bottom:0;height:72px;padding-top:20px;left:20px;right:20px;}
+    #Terms .NoMore button { float: right;border:solid 1px #ccc;background-color:#f5f5f5;font-weight:normal;font-size:13px;color:#666;}
+#Terms .NoMore p * { vertical-align: middle;}
+    #Terms .NoMore p label { margin: 0; }
+    #Terms .NoMore p input { margin: 0; }
+#Terms .Text {padding:16px;text-align:center;background-color:#fff;border:solid 1px #e5e5e5;overflow: auto;position: absolute;top: 32px; bottom: 72px;left: 20px;right: 20px; }
+
+
+.P1 { background: #7dbeff url(/images/bg1.png) no-repeat;border: 0;}
+.P2 { background: #ff3232 url(/images/bg2.png) no-repeat;border: 0;}
+.P3 { background: #ff6600 url(/images/bg3.png) no-repeat;border: 0;}
+.P4 { background: #666 url(/images/bg4.png) no-repeat;border: 0;}
+.P5 { background: #0099ff url(/images/bg5.png) no-repeat;border: 0;}
+.P5 h3 { padding-right: 120px;}
+/*
+    */
+.bar:hover {
+  fill: orangered ;
+}
+.bar {
+  fill: #31a354;
+  shape-rendering: crispEdges;
+  stroke: #a1d99b;
+}
+
+.bar text {
+  fill: #fff;
+  stroke: none;
+  font-weight: bold;
+}
+
+.axis path, .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.bar text.histogram-title {
+    font-size: 1em;
+    fill: #999;
+}
+
+.x .tick { display: none;}
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.Hint {width: 200px;top: -60px;left: -50px;padding: 10px 20px; position: relative;background-color: #fff;border: solid 1px #f4f4f4;box-shadow: 0px 0px 6px #787676;-webkit-box-shadow: 0px 0px 6px #787676;-moz-box-shadow: 0px 0px 6px #787676;}
+
+
+/* main layout
+----------------------------------------------------------*/
+
+ .Local { float: right;line-height: 21px;margin-top: 30px;margin-right: 25px;}
+    .Local a { display: inline-block;width: 35px;height: 21px;border: solid 1px #fff;color: #999;font-size: 12px;text-decoration: none;}
+    .Local a.C {color: #666;border-color: #ccc;}
+    .Local a:hover {color: #666;}
+    .Local a span { padding-left: 6px;}
+
+.MainMenu {padding-left: 20px;padding-top:5px;position:absolute;top:0;left:180px;z-index:9999;}
+.Item {width: 71px;float: left;}
+.Item.D div, .Item.S div { cursor: default;}
+.Item div { width: 27px;height: 27px;background: url(/images/sprite.png) no-repeat;cursor: pointer;}
+
+.Item.S div.Home {background-position: -54px -90px;}
+.Item div.Home {background-position: -27px -90px;}
+.Item.D div.Home {background-position: 0px -90px;}
+
+.Item.S div.Person { background-position: -134px -90px;}
+.Item div.Person { background-position: -107px -90px;}
+.Item.D div.Person { background-position: -81px -90px;}
+
+.Item.S div.PERSON { background-position: -134px -90px;}
+.Item div.PERSON { background-position: -107px -90px;}
+.Item.D div.PERSON { background-position: -81px -90px;}
+
+.Item.S div.Organization { background-position: -54px -117px;}
+.Item div.Organization { background-position: -27px -117px;}
+.Item.D div.Organization { background-position: 0px -117px;}
+
+.Item.S div.COMPANY { background-position: -54px -117px;}
+.Item div.COMPANY { background-position: -27px -117px;}
+.Item.D div.COMPANY { background-position: 0px -117px;}
+
+.Item.S div.Fact { background-position: -134px -117px;}
+.Item div.Fact { background-position: -107px -117px;}
+.Item.D div.Fact { background-position: -81px -117px;}
+
+.Item.S div.AUTO { background-position: -134px -117px;}
+.Item div.AUTO { background-position: -107px -117px;}
+.Item.D div.AUTO { background-position: -81px -117px;}
+
+.Item.S div.Document { background-position: -54px -144px;}
+.Item div.Document { background-position: -27px -144px;}
+.Item.D div.Document { background-position: 0px -144px;}
+
+.Item.S div.Element { background-position: -134px -144px;}
+.Item div.Element { background-position: -107px -144px;}
+.Item.D div.Element { background-position: -81px -144px;}
+
+.Item.S div.Import { background-position: -54px -171px;}
+.Item div.Import { background-position: -27px -171px;}
+.Item.D div.Import { background-position: 0px -171px;}
+
+.Item.S div.Connect { background-position: -134px -171px;}
+.Item div.Connect { background-position: -107px -171px;}
+.Item.D div.Connect { background-position: -81px -171px;}
+
+#NextPage { position: absolute;top: 80px;bottom: 0px;left: 0;right: 0; display: none;background-color: #fff;z-index: 100;}
+    #NextPage h2 {font-weight: normal;font-size: 24px;margin: 0;padding: 20px 0 20px 30px;}
+    #NextPage h4 {font-size: 18px;color: #878787;font-weight: normal;margin: 10px 0;}
+    #NextPage input {height: 33px;width: 90%;font-size: 18px;margin-bottom: 17px; padding-left: 12px;color: #575757;border: solid 1px #bababa;min-width: 200px;}
+    #NextPage select {height: 33px;width: 485px;font-size: 18px;margin-bottom: 13px; padding-left: 12px;color: #aaa;border: solid 1px #bababa;}
+    /*#NextPage .Checks input, #NextPage .Checks select { width: auto;}*/
+    #NextPage div span.Cbx { vertical-align: middle;}
+    #NextPage div label { vertical-align: middle;font-size: 14px;padding-left: 10px;}
+    #NextPage .Main {background-color: #f7f7f7;padding:24px 70px;}
+    #NextPage .Main table td { width: 50%;vertical-align: top;padding: 0;}
+    #NextPage table {width: 100%;font-size: 14px;}
+    #NextPage table td { padding: 5px 14px 26px;}
+    #NextPage .ui-datepicker { font-size: 1.2em;}
+    #NextPage .checkInn {text-transform:uppercase;color:#388ed5;font-size: 12px;padding-left: 16px;cursor:pointer;}
+
+
+#GW #history { position: absolute;top: 10px;right: 10px;background-color: #fff;padding: 2px;}
+#GW #history * { vertical-align: middle;}
+#GW #history span { display: inline-block;width: 8px;height: 8px;border: solid 1px #ccc;cursor: pointer;margin: 0 3px;background-color: orange; }
+#GW #history span:hover { border-color: red;}
+
+#GW .Nav { position: absolute;bottom: 5px;width: 97%;height: 40px;}
+#GW .RelatedDocs { position: absolute;display: none;width: 97%;min-height: 300px;top: 5px;background-color: #fff;}
+#GW div.Back { color: orange;text-decoration: underline;cursor: pointer;display: inline-block;}
+
+.ui-dialog { z-index: 99;}
+#Detail .ui-tabs { padding: 0;}
+
+.ui-datepicker { font-size: .8em; z-index:99}
+
+/*header { height: 17px; border-bottom: 1px solid #dddad3; background-color:#FFC835;padding:6px 20px; }
+    header div { float: left;font-size:1.2em; font-weight:bold; }
+        header div a { text-decoration: none; }*/
+
+.TopPanel {position: absolute; top: -2px; left: 200px;}
+
+div.wrapper { position: absolute; top:80px; left: 5px; right:5px; bottom: 5px; overflow:hidden; }
+div.wrapper div.W { position: absolute; overflow: hidden; top: 0;bottom: 0;}
+
+#Query {width: 370px;left:0;}   
+#Result { width: 30%; left:20%;background-color: #fff; }
+#Detail { width: 50%; left:50%;background-color: #fff;z-index: 2; }
+
+#Drag1 { left: 370px;  }
+#Drag2 { left: 50%;z-index: 3; }
+.Rotor { display: none;position: absolute;z-index: 9999;}
+#sho { position:absolute;background-color:#333;top:0;left:0;z-index:1999;display:none; }
+
+div.Dragger {z-index:1;width: 3px; cursor:col-resize; background:url(/images/bg_s0.gif) repeat-y;}
+div.Dragger:hover { background-image:url(/images/bg_s.gif) }
+
+div.wrapper div.Inner {padding:2px; background-color:#fff;}
+#Result div.Inner, #Detail div.Inner { padding-left: 8px;}
+
+
+section.AddButtons { display:none; }
+
+.Alarm {border-color: red;color: red !important}
+
+.Select { background-color: #a3dbff;display:flex;}
+#Error {cursor: pointer; border: solid 1px red;border-right-width: 0;position: absolute;z-index: 99999;bottom: 12px;right: 0;height: 16px;width: 18px;padding: 2px;display: none; }
+.Close { position: absolute; right: 2px; top: 1px;background-position: -36px -17px;cursor: pointer;border: solid 1px red; }
+
+.W1 { font-size: 2px;}
+
+#Query_Parameters div.IcoParam, #SemNetFilter div.IcoParam { position: absolute; right: 14px;margin-top:-30px; }
+
+#SemNet { padding: 2px;}
+#SemNet.fullScreenSupported { width: 100%;height: 100%;background-color: #fff;}
+/* Mozilla proposal (dash) */
+#SemNet:full-screen {width:100%;height:100%;background-color: #fff;}
+/* W3C proposal (no dash) */
+#SemNet:fullscreen {width:100%;height:100%;background-color: #fff;}
+/* currently working vendor prefixes */
+#SemNet:-webkit-full-screen, #SemNet:-moz-full-screen {width:100%;height:100%;background-color: #fff;}
+
+#SemNetFilter { position: relative;border-collapse: collapse; }
+#SemNetFilter td {padding: 1px 2px; }
+.SemNetFilter input { width: 160px}
+.SemNetFilter .IcoParam { float: right;margin-top: 4px;}
+
+.SemNetBlock {float: left;border: solid 1px #ccc;padding: 4px;margin-right:2px;margin-bottom: 2px;background-color: #dfeffc;}
+.SemNetBlock * { vertical-align: middle;}
+.SemNetBlock span {text-decoration: underline; cursor: pointer;font-size: 11px;}
+
+.Paging { padding: 8px 10px;background-color: #fff;height: 34px;font-size: 14px;text-align: right;}
+.Paging .pages span,div.Paging .tostart, div.Paging .toend  { cursor: pointer;padding: 0 4px; }
+.Paging .pages span:hover,div.Paging .tostart:hover, div.Paging .toend:hover { text-decoration: underline;}
+.Paging .pages span.active { font-weight: bold;color: lightcoral;text-decoration: none;cursor: default;}
+.Paging .wallpage { cursor: default;}
+#LoadResults .Paging:hover { background-color: #fff;}
+
+
+.ui-effects-transfer { border: dashed 1px #000;}
+
+div.PanelWithEars { position: absolute;width: 26px;right: 18px;display: none;margin-top: 80px;z-index: 1;}
+.PanelWithEars .Ear { height: 14px;width: 18px;margin-left: 3px;position: absolute;cursor: n-resize;padding-left: 2px;background-color: #ccc;}
+.PanelWithEars .Up { top: -4px;}
+.PanelWithEars .Up span { margin-top: -3px;}
+.PanelWithEars .Down { bottom: -4px; }
+.PanelWithEars .Down span { margin-top: 1px;}
+.PanelWithEars .Btns { background-color: #fff;position: relative;z-index: 2;padding-left: 1px;padding-top: 1px;}
+
+.Submenu { text-align: right;}
+.Submenu span { text-decoration: none;}
+.Submenu span:hover { text-decoration: underline;}
+.Submenu span.A { font-weight: bold;text-decoration: underline;}
+
+/* Buttons
+    -----------------------------------------*/
+
+/*.shape
+{
+    font-family: Segoe UI;font-size: 14px;text-transform: uppercase;color: #fff;cursor: pointer;
+    padding: 0 18px;
+	height: 45px;
+	-webkit-border-radius: 5px 6px 6px 5px/7px 7px 8px 8px;
+	-moz-border-radius: 5px 6px 6px 5px/7px 7px 8px 8px;
+	border-radius: 5px 6px 6px 5px/7px 7px 8px 8px;
+	-webkit-box-shadow: 2px 3px 15px rgba(0,0,0,.3);
+	-moz-box-shadow: 2px 3px 15px rgba(0,0,0,.3);
+	box-shadow: 2px 3px 15px rgba(0,0,0,.3);
+	border: solid 2px #dfcf72;
+}*/
+
+.main {width: 259px;}
+.min { font-size: 12px;width: 130px; height: 20px;}
+.b { text-decoration: none;padding: 2px 14px;}
+
+/*.gr_yellow {background: #edd653 url(/images/bg_yellow_n_45.png) repeat-x top;}
+.gr_yellow:hover {background: #edda69 url(/images/bg_yellow_o_45.png) repeat-x top;border-color: #e2d277;}
+.gr_yellow:active {background: #d0ba3b url(/images/bg_yellow_p_45.png) repeat-x top;border-color: #cfbe5a;}
+.gr_yellow:disabled {background: #bfbfbf url(/images/bg_yellow_d_45.png) repeat-x top;border-color: #cecece;}
+
+.gr_blue {background: #388ed5 url(/images/bg_blue_n_45.png) repeat-x top;border-color: #3f83ba;}
+.gr_blue:hover {background: #4ea1e5 url(/images/bg_blue_o_45.png) repeat-x top;border-color: #5092c9;}
+.gr_blue:active {background: #2a7fc5 url(/images/bg_blue_p_45.png) repeat-x top;border-color: #3374aa;}
+.gr_blue:disabled {background: #d3d3d3 url(/images/bg_blue_d_45.png) repeat-x top;border-color: #cecece;}*/
+
+.Tree .ui-icon { display: inline-block;margin: 0 4px;}
+
+#Query .ui-button-icon-primary { left: 0.2em;}
+#Query .ui-button { margin: 1px;padding:2px;}
+#Query .ui-state-disabled { color: #000;background-color: white;}
+
+.sButtons { min-width: 350px;}
+.sButtons button span.ui-icon { background-image: url(/images/sprite.png);display:inline-block; vertical-align:middle;margin-right:2px;}
+.Find { background-position: -1px -1px; }
+.Request { background-position: -108px -19px; }
+.sButtons .Tree { background-position: -126px -19px; }
+.Rubrics { background-position: -144px -19px; }
+
+button.runRequestBtn .runRequestIcon {background-image: url(/images/sprite.png);background-position: -162px -19px;background-repeat: no-repeat;}
+.btn2 {width: 24px;height: 24px;background-image: url(/images/sprite.png);cursor: pointer;display: inline-block;}
+
+/*.Buttons {border: solid 1px #d6cec4;padding: 2px 4px;cursor: pointer}
+.Buttons:hover { border-color: #a8968a;}
+.Buttons:active { background-color: #eae4d4;}*/
+
+div.PanelHead {color: #919191;height: 24px;padding: 0px 4px 8px;font-size: 14px; }
+div.PanelHead div { position:static; }
+    div.PanelHead div.right { background-position: 0px -200px; }
+    div.twoColumns {margin-left:8px;}
+    div.twoColumns button { font-size: .8em;display: none;}
+
+/*#Result div.PanelHead div.left { background-position: 0px -18px; }
+#Detail div.PanelHead div.left { background-position: 0px -36px; }*/
+
+#add_SelectViewPanel { position:absolute;width:120px;height:60px;background-color:#d3dce0;display:none;z-index:999; font-size:11px;top: 0;left: 0;display: none; }
+    #add_SelectViewPanel ul { margin: 0;padding:10px;list-style: none; }
+        #add_SelectViewPanel ul li { cursor: pointer; padding: 2px; text-decoration:underline; }
+            #add_SelectViewPanel ul li:hover { text-decoration: none; }
+
+div.ViewSelect { background-position: -55px -1px;border: 0;padding: 0;}
+div.ViewSelect:hover { background-position: -73px -1px;}
+div.ViewSelect:active {background-position: -91px -1px;}
+div.ClearValue { background-position: -109px -1px;border: 0;padding: 0;}
+div.ClearValue:hover { background-position: -127px -1px;}
+div.ClearValue:active {background-position: -145px -1px;}
+
+div.ViewProperties { margin-right: 4px;float: left;  /*background-position: -164px -1px;*/}
+
+.Clear {background-position: -90px -54px;}
+
+/*   */
+.floatPanel {background-color: #fff; position: absolute;right: 0;top: 0;}
+
+.editPanel .btn, 
+.editPanel .btn2 { float: left;margin-right: 4px; }
+.EditPanel { position: absolute;background-color: #fff;border: solid 1px #ccc;z-index: 1000000;padding: 2px 3px;overflow: hidden;width: auto;}
+/*.EditPanel div.draga {width: 6px;position: absolute;top:0;bottom: 0;left: 0;background: url(/images/dr.png) no-repeat 50%;cursor: move;border: solid 1px #fff;border-right-color: #a8968a; }
+.EditPanel div.draga:hover { border: solid 1px #ccc}
+.EditPanel ul { padding: 0;margin: 0;list-style-type: none;}
+.EditPanel ul li * { vertical-align: middle;}
+.EditPanel ul li span { padding-left: 10px;}*/
+
+.Inline { top: 0;right: 350px;}
+.Inline li { display: inline-block;}
+
+.Panel { background-color: #fff;border-top: 0;padding: 4px 8px;border: solid 1px #dddad3;height: 20px;float: left;margin-right: 5px;}
+.Panel div { margin: 0px 2px;}
+.Panel span {color: #333;float: left;font-weight:normal;}
+
+#Represent .TwoPresent {background-position: -18px -72px;}
+#Represent .ThreePresent {background-position: -36px -72px;}
+
+.ImportExel {background-position: -127px -72px;}
+
+/*#Alert {cursor: pointer;display: none;}
+#Alert div.Flag {background-position: -56px -72px; }
+.AlertsList { position: absolute;width: 400px;height: 300px;overflow: auto;padding-bottom: 8px; display: none;top: 3px;z-index: 9999;cursor: default;background-color: lightyellow;border: solid 1px orangered;}
+.AlertsList ul li { cursor: pointer;font-size: .8em;padding: 2px;margin: 4px;list-style: none;font-size: .8em;}
+.AlertsList ul { margin: 0;padding: 0;}
+#Alert ul li.hot span { color: red;}
+.AlertsList ul .showMessage { display: none;}
+#Alert ul li.frozen span { color: #3300ff;}
+.AlertsList div { float: none;margin: 0;font-weight: normal;font-size: 12px;}
+.AlertsList span {float: none;font-size: 10px;}
+.AlertsList .TitleMessage { max-width: 350px;}
+.AlertsList .startMonitoring, .AlertsList .stopMonitoring { cursor: pointer;}
+.AlertsList .startMonitoring:hover, .AlertsList .stopMonitoring:hover { text-decoration: underline;}
+
+.severity0 { background-color: #fff;}
+.severity500 { color: red;}
+.severity200 { color: darkgreen;}                               есть данные
+.severity404 { color: yellow;background-color: darkgray;}       не найдено сведений
+.severity501 { color: orange;}                                  Пользователь не выбрал объект в алерте
+.severity502 { color: orangered;}                               Не достаточно входных данных*/
+
+.inLoad { overflow: auto;}
+
+.link { text-decoration: underline;color:salmon;cursor: pointer;}
+
+.Swollen {position: absolute;z-index: 9999;display: none;background-color: #f5f5f5;border: solid 1px #666;padding: 10px;overflow: auto;}
+
+/*#feedBackdiv { position: absolute;z-index: 99999;display: none;background-color: #eee;border: solid 1px #666;padding: 10px;overflow: auto;}
+#feedBackdiv table.maintable { border-collapse: collapse;}
+#feedBackdiv table.maintable th {border: solid 1px #fff;padding: 4px 6px;}
+#feedBackdiv table.maintable td { border: solid 1px #A4AFB9;padding: 2px 4px;}*/
+
+.AddPerson {background-position: -72px -18px;}
+.AddOrg {background-position: -146px -54px;}
+.AddFact {background-position: -163px -54px;}
+.AddDoc {background-position: -181px -54px;}
+.Add {background-position: -90px -18px;}
+.History {background-position: -75px -200px;}
+
+.AddBasket, .addToCart {background-position: -100px -200px;}
+.goToCart {background-position: -125px -200px;}
+
+
+.Update {background-position: -72px -53px;}
+
+.EditItem { background-position: -25px -200px;display: none;}
+.DeleteItem { background-position: -50px -200px;display: none;}
+
+/* add
+    ------------------------*/
+
+table.CreatePanel { width: 98%;height: 98%;position: absolute;}
+table.CreatePanel td { vertical-align: top;}
+table.CreatePanel td.leftPart {width: 40%}
+table.CreatePanel td.leftPart div.loadTree {position: absolute;top:0; height: 300px; width: 40%; overflow: auto;border:solid 1px #ccc;}
+table.CreatePanel td.leftPart div.loadLinks {overflow: auto;position: absolute;bottom: 0; top:304px; width: 40%; border:solid 1px #ccc;}
+div.searchBeforeCreate { height: 58px; }
+div.searchBeforeCreate textarea {width: 100%;height: 32px; }
+div.searchBeforeCreate table { width: 100%;}
+div.searchBeforeCreate table td { border: 0;}
+.loadLinks * { vertical-align: middle;}
+
+#doc2 input.Chbx { display: inline-block;width: auto;height: auto;padding: 0;margin: 0;min-width: inherit;}
+
+/* Forms
+    ---------------------------------------------------------*/
+.ui-dialog { padding: 2px 8px;}
+#ui-dialog-title-Win { font-size: 12px;margin: 2px;}
+
+#Win { font-size: 11px;display: none;}
+#Win div * { vertical-align: middle;}
+#Win input { font-size: 11px;}
+
+table.ResultSearch { width: 100%;}
+table.ResultSearch td { border: solid 1px #ccc;vertical-align: top;padding: 2px;}
+table.ResultSearch table {border-collapse:collapse}
+table.ResultSearch table td { padding: 1px 3px; border: solid 1px #ccc}
+
+table.ResultSearch td div * { vertical-align: middle;}
+
+#ViewTypesTree { position: absolute;display: none;border: solid 1px #a8968a;width: 250px;height: 250px;overflow: auto;right: 10px;background-color: #fff;margin-top: 5px;padding: 2px 4px; }
+#ViewTypesTree2 { border: solid 1px #a8968a;width: 250px;height: 100px;overflow: auto;background-color: #fff;margin-top: 5px;padding: 2px 4px; }
+
+#DataObject table td { padding: 0;border: 0;padding-right: 10px;text-align: left;vertical-align: middle;white-space: nowrap;font-size: 11px; }
+.Form label { width: 150px;float:left;text-align: right;margin-right: 10px; }
+.Form input { margin-bottom: 6px;width: 140px;border: solid 1px #ccc;height: 26px;padding: 0px 4px;}
+.Form textarea { margin-bottom: 6px;width: 100%;border: solid 1px #ccc;padding: 0px 4px;}
+.Form br { clear: both;}
+.Form hr {border: 0; border-bottom: solid 1px #ccc;}
+.Form td i {padding-left: 6px; color: red;font-size: 0.8em;text-align: left;}
+.Form #Info { position: absolute;display: none;background-color: #eee;border: solid 1px red;color: red;padding: 10px;}
+
+/* Query 
+----------------------------------------------------------*/
+
+
+/* Tree component */
+div.wrapper section.Present { overflow: auto;min-height: 200px;}
+div.Tree { position: relative;}
+div.Tree span.OpenClose { display:inline-block;width:18px;height:18px; background:url(/images/sprite.png) no-repeat;background-position: -126px -36px; }
+    div.Tree span.OpenClose.Open {background-position: -162px -36px; }
+    div.Tree span.OpenClose.Noicon { width: 36px; }
+    div.Tree span.OpenClose.Noicon2 { width: 18px; background-position: 0px -54px;}
+    div.Tree span.OpenClose.Doc { background-position: 0px -54px;}
+    div.Tree span.OpenClose.Not { background: none; }
+    div.Tree span.OpenClose.Leaf { background: none; }
+div.Tree div { padding: 2px 0; clear:both; }
+div.Tree div.Nochild span.OpenClose {background: none;}
+/*div.Tree div.Nochild span.OpenClose.Noicon {width: 18px;background:url(/images/sprite.png) no-repeat 0px -54px;}*/ 
+div.Tree div.Container { margin-left: 22px;clear:both;display: none; }
+
+span.TreeElementTitle { padding: 0 2px;}
+span.TreeElementTitle span.ui-icon {border:solid 1px orange;background-color:linen;margin-bottom:3px;}
+
+div.Tree div * { vertical-align:middle; }
+div.Tree span { cursor: pointer; }
+    div.Tree span:hover { text-decoration: underline; }
+
+/* Search Task
+    */
+
+#robotsInProfile { padding-top: 6px;}
+#robotsInProfile span { display: inline-block;padding: 2px 4px;margin: 2px 8px 4px;border-bottom: dashed 1px #ccc;background-color: #fafafa;}
+
+.Cbx { display: inline-block;width: 18px;height: 18px;cursor: pointer; background: url(/images/sprite.png) no-repeat -162px -90px; }
+.checked { background: url(/images/sprite.png) no-repeat -162px -109px;}
+
+div.Tree span.OpenClose.Chbx {background-position: -36px -54px;}
+div.Tree span.Chbx {display:inline-block;width:18px;height:18px; background:url(/images/sprite.png) no-repeat;background-position: -36px -54px;}
+div.Tree span.OpenClose.Chbx.Sel, div.Tree span.Chbx.Sel { background-position: -18px -54px; }
+div.Tree span.OpenClose.Chbx.Sel2, div.Tree span.Chbx.Sel2 { background-position: -144px -71px;cursor: default; }
+div.Tree div.Container div span.Check,div.Tree div.Container div span.Setting { width: 18px;height: 18px; background:url(/images/sprite.png) no-repeat;display: inline-block;} 
+div.Tree div.Container div span.Check {background-position: -162px -36px;}
+div.Tree div.Container div span.Setting {background-position: -180px 0px;}
+
+#SearchBySource { overflow: hidden;}
+#SearchBySource span.Indicator { display: inline-block;width: 210px;height: 16px;background: url(/images/bar1.gif) no-repeat 0 3px;cursor: default; margin-left: 5px; font-size: 10px;font-style: italic;text-align: right;color: red; }
+#SearchBySource span.Indicator:hover{ text-decoration: none;}
+
+#treeTasks div { font-weight: bold;}
+#treeTasks .Container { margin-bottom: 10px; background-color: #eee;padding-left: 4px;}
+#treeTasks .Container div { display: inline-block;margin-right: 30px;font-weight: normal;}
+
+/* params query
+    -------------------------------------------------------*/
+
+#ViewParameters {border: solid 1px #ccc;padding: 4px;font-size: 10px;position: relative; height: 220px;overflow: auto;bottom: 0;display: none;}
+#ListBottomPanel {padding:8px 2px 0;font-size: 10px;position: relative; height: 220px;overflow: auto;bottom: 0;display: none;}
+
+#Query_Parameters {margin-top: 3px; bottom: 3px;padding: 1px;}
+#Query_Parameters table { border-collapse: collapse;width: 100%;} 
+#Query_Parameters table td { padding: 1px 2px;border-bottom: 1px solid #ccc;}
+td.Value {width: 100%}
+td.Value input {font-size: 11px;width: 100%;padding: 1px 2px;}
+#Query_Parameters table td div { margin-top: 4px;}
+#Query_Parameters span.Display { cursor: pointer;}
+#Query_Parameters_Description {height: 30px;}
+
+
+#Search input, #Search textarea { width: 100%;}
+
+/* List
+--------------------------------------------------*/
+
+tr.ui-selecting { background: #dff3fd; }
+tr.ui-selected { background: #a3dbff;  }
+.Zebra { background-color: #f6f6f6;}
+
+#List { font-size: 11px; }
+table.List { border-collapse: collapse; width: 99.8%; }
+table.List table td, table.List th { /*color: #fff;border: 1px solid #fff;*/padding: 2px 4px; }
+table.List td { border: 1px solid #fafafa;padding: 6px 8px;color: #575757;overflow: hidden;max-width: 300px;min-width: 10px; }
+table.List tr:hover { background-color:#dff3fd;cursor: pointer; }
+      
+table.Head { margin-right: 10px;width: 100%; }
+table.Head th { border: 1px solid #fff; }
+
+#LoadResults { overflow: auto;}
+
+.Area {position:absolute;top:30px;left:0;right:0;bottom: 0;z-index:9;display: none;}
+
+#ObjList { position: static;}
+
+.DisplayResult {text-align: right; padding:2px 10px 10px;height: 32px;display: none;}
+.DisplayResult select {font-size:10px;}
+
+/* Details
+---------------------------------------------------------------------*/
+
+.DetailItem { margin: 5px;margin-bottom: 25px;}
+
+#Details { overflow: auto;}
+.caption { font-weight: bold;font-size: 12px;}
+.HtmlReport .group { margin:2px;position: static;padding: 0;float: none;}
+.dataview { border: solid 1px #ccc; margin:4px 0; }
+.dataview table th { color: #999;font-weight: normal;font-size: 10px;}
+.dataview table td { padding:4px; border:solid 1px #ededed; }
+.dataview table td a { display: inline-block;padding: 1px 4px;text-decoration: none;border-bottom: dotted 1px orange;margin: 2px 4px;}
+.dataview table td a:hover { border-bottom: dotted 1px #fff; color: orange;}
+
+#LoadDetails { display: none;border: 0;}
+#LoadDetails ul li a { padding: 0.4em 0.5em 0.4em 0.2em;}
+#LoadDetails ul li span, .DetailItem li span {background-image: url(/images/sprite.png);background-repeat: no-repeat;width: 18px;height: 16px;float: left;margin-left: 0.2em;margin-top: 0.2em;}
+.Details span {background-position: -72px -37px;}
+.SemNet span {background-position: -36px -37px;}
+.Report span {background-position: -18px -37px;}
+.Search span {background-position: -54px -37px;}
+.Docs span {background-position: -90px -37px;}
+.Facts span {background-position: -108px -37px;}
+#LoadDetails div.ui-tabs-panel { padding: 10px 18px; }
+#graph0 text {cursor: pointer}
+#graph0 text:hover { text-decoration: underline;}
+
+#DocsBottom { display: none;position: absolute;left: 0;right: 0;bottom: 0;margin: 2px 6px;}
+#DocsBottom div div {height: 200px;overflow: auto;}
+
+.Bts {margin: 0; padding: 2px;display: none;}
+
+#Content { font-size: 1.2em;}
+.buttons {display: none; font-size: .8em;}
+.buttons>button { display: none;}
+.modView {display: none; margin-right: 10px; color: blue;}
+.modView .btn {margin-left: 4px; margin-top: -3px;}
+.modView #titleModView { color: orangered;}
+.RubricsLink { font-size: 11px;padding: 1px 10px;}
+.gotoresult { display: none;font-size: .8em;}
+
+#winProperty { display: none;width: 600px;position: absolute;top: 50px;bottom: 50px;z-index: 98;padding: 10px;overflow: auto;}
+#winProperty div.History {width:80px;height:36px;position:absolute;right:28px;text-align:right;cursor:pointer;}
+.linkToObject { cursor: pointer;text-decoration: underline;color: blue;}
+
+#HisoryContainer { position: absolute;width: 130px;height: 100px;overflow: auto;display: none;right: 2px;top: 32px;background-color: #fff;padding: 8px;border: solid 1px royalblue;}
+#HisoryContainer li { cursor: pointer;padding: 2px 0;display: list-item;margin-left: 10px;}
+
+#Facts div.divBottom { border: solid 1px #666;padding: 10px;position: absolute;left: 0;right: 0;bottom: 0;margin: 4px;height: 200px;overflow: auto;}
+
+.overflow { overflow: auto;}
+
+.profile { width: 300px;}
+
+form#uploadFile { display: block; margin: 10px auto; background: #eee; border-radius: 10px;padding: 10px;border: solid 1px #eee; }
+form#uploadFile input { border: 0;margin: 0;}
+.progress { position:relative; width:400px; border: 1px solid #ddd; padding: 1px; border-radius: 3px; }
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+
+#AutoSelectParams {position: absolute;display: none;width: 300px;height: 280px;border: solid 1px #ccc;background-color: #fff;}
+#AutoSelectParams ul { padding-left: 20px;}
+#AutoSelectParams li { padding: 2px;list-style-type: none;}
+#AutoSelectParams li label {cursor: pointer;}
+#AutoSelectParams li * { vertical-align: middle;}
+#AutoSelectParams li:hover {background-color: powderblue}
+
+#linkToFile * { display: inline-block;vertical-align: middle;}
+
+.Furniture { position: absolute;left: 60px;top: 90px;bottom: 40px;z-index: 97;border: solid cornflowerblue 1px;background-color: #fff;display: none;
+             box-shadow: 0 0 10px #616161;
+           -webkit-box-shadow: 0 0 10px #616161;
+           -moz-box-shadow: 0 0 10px #616161; 
+}
+.Furniture .Arrow { position: absolute;right: 0;width: 24px;height: 24px;background: url(/images/a.png) no-repeat;margin-right: -22px;}
+.Furniture #Load { margin: 10px;overflow: auto;}
+.Furniture .Close { top: -10px;right: -10px;background-color: #fff;}
+#Load {overflow: auto;padding: 6px;position: relative;}
+.Load { overflow: auto;padding: 6px;position: relative;}
+.Load h1, #Props h1 { padding: 0;margin: 0;}
+
+.ContainerTab .e-link { padding: 0 4px;font-size: 14px;}
+
+
+#Balance { float: right;width: 200px;height: auto;border: solid 1px #ccc;padding: 6px;}
+#Balance div {padding: 6px 6px;}
+#Balance b { float: right;}
+#Balance .List {margin: 2px 0;border-bottom: dotted 1px #ccc;border-top: dotted 1px #333; }
+#Balance .List div {padding: 0; margin: 6px 0;clear: both;}
+
+#ImportExcel { display: none;}
+
+.loaderSpan span { display: inline-block;margin-right: 2px;border: solid 1px #999;width: 2px;height: 3px;background-color: #eee;vertical-align: middle; }
+.loaderContainer {display: none; white-space: nowrap;position: absolute;z-index: 999999;background-color: yellow; padding: 10px;text-align: center;border: solid 1px red;min-width: 200px;}
+.loaderSpan span.loaderBegun { height: 5px;background-color: #333;}
+
+.DocDigestNotice * { vertical-align: middle;}
+
+.ItemListSche { text-decoration: underline;color: orange;cursor: pointer;}
+.ItemSche { max-width: 550px;}
+
+.getimg { cursor: pointer;}
+
+/* Marker
+    ---------------------------------------------------------*/
+
+.Mark { background-color: yellow;}
+.Mark2 { background-color: greenyellow;}
+.C { border: dashed 1px red;}
+
+.ui-datepicker-trigger { cursor: pointer;}
+
+div.ui-tooltip { z-index: 99999999999;position: absolute;}
+
+/* login
+----------------------------------------------------------*/
+/*#login { float:right;padding: 0 20px;}
+    #login a { background-color: #d3dce0; margin-left: 10px; margin-right: 3px; padding: 2px 3px; text-decoration: none; }
+        #login a.username { background: none; margin: 0; padding: 0; text-decoration: underline; }
+    #login ul { margin: 0; }
+    #login li { display: inline; list-style: none; }*/

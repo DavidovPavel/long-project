@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="www.Models.Data.In.DataRaw">
+    <Position X="2" Y="0.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAQAAAAAAAAAAAAAAABAAAAAAAQEAAAAAA=</HashCode>
+      <FileName>Models\Data\In\DataRaw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Out.Graph.Series">
+    <Position X="9" Y="0.5" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAQAAAAAAAAAAAAAAAAAQABAAAAAAAACAAAA=</HashCode>
+      <FileName>Models\Data\Out\Graph\Series.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Out.Graph.SeriesCollection">
+    <Position X="9" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Data\Out\Graph\SeriesCollection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="series" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="www.Models.Data.Logic.ParserDataRawGraphCd1">
+    <Position X="0.75" Y="11" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAEAA=</HashCode>
+      <FileName>Models\Data\Logic\ParserDataRawGraphCd1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Logic.ParserDataRawGraphCd2">
+    <Position X="4.25" Y="11" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACQAAAAAAEAA=</HashCode>
+      <FileName>Models\Data\Logic\ParserDataRawGraphCd2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Logic.ParserDataRawGraph">
+    <Position X="2.5" Y="8" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAACAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Models\Data\Logic\ParserDataRawGraph.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Logic.ParserDataRaw&lt;T&gt;">
+    <Position X="2.25" Y="5.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAEAAAAAAEAA=</HashCode>
+      <FileName>Models\Data\Logic\ParserDataRaw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Logic.ParserDataRaw">
+    <Position X="2.25" Y="2.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Data\Logic\ParserDataRaw.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="www.Models.Data.Logic.RulesTransformation">
+    <Position X="7" Y="6.5" Width="4.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAACAAAAAAAKAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Data\Logic\RulesTransformation.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="_registeredRules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="www.Models.Data.Logic.RuleTransformation">
+    <Position X="14" Y="5.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAACAAAAgAAQAAAAAAAAAgAAAAACABAA=</HashCode>
+      <FileName>Models\Data\Logic\RuleTransformation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="www.Models.Data.Out.Graph.AxisType" Collapsed="true">
+    <Position X="13.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAQAAAAAAAAACAA=</HashCode>
+      <FileName>Models\Data\Out\Graph\Series.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="www.Models.Data.Out.Graph.OutputDataFamily" Collapsed="true">
+    <Position X="15.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Models\Data\Out\Graph\Series.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,12 @@
+﻿
+<h3>Профиль 601: выберете персону<h3>
+<p>Для того, чтобы сделать выбор, в ответном письме, заполните поле колонки "Ваш выбор" любым символом</p>
+<table border="1" cellspacing="3">
+  <tr>
+    <th bgcolor="#CCCCCC" scope="col">Ваш выбор (X)</th>
+    <th bgcolor="#CCCCCC" scope="col">Фото</th>
+    <th bgcolor="#CCCCCC" scope="col">Инфо</th>
+    <th bgcolor="#CCCCCC" scope="col">URL</th>
+  </tr>
+  {CUSTOM-PersonsList}
+</table>

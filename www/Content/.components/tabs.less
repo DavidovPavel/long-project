@@ -1,0 +1,22 @@
+﻿/* tabs */
+
+.anbr-tabs {
+    & nav {
+        height: 43px;border-bottom:solid 1px @color-CD;
+        &>span {
+            float:left;width:56px;height:42px;text-align:center;line-height:60px;vertical-align:middle;cursor:pointer;
+            &:first-child.active {border-left:0;}
+            &.active {position:relative;height:44px;background-color:@color-F0;border:solid 1px @color-CD;border-bottom:0;top:-1px;}
+            &.active:hover {background-color:@color-F0;cursor:default;}
+            &.right {line-height:48px;}
+            &.right svg {.size(16px);}
+            &:hover {background-color:@color-DC;}
+            & svg {.size(24px);fill:@color-norm;}
+        }
+    }
+    & section {clear:both;display:none;}
+    & p {
+        padding:20px;margin:0;clear:both;
+        & button {float:right;}
+    }
+}

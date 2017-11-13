@@ -1,0 +1,105 @@
+﻿@{
+    Layout = "../Shared/_Layout.cshtml";
+}
+
+<div id="inLoad" style="width:500px;float: left;margin: 10px;"></div>
+<div id="inLoad2" style="width:400px;float: left;margin: 10px;"></div>
+<div id="inLoad3" style="width:400px;float: left;margin: 10px;"></div>
+
+ @*<style>
+  #container {
+    position: absolute;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    width: auto;
+    left: 0;
+    right: 0;
+    overflow: auto;
+  }
+
+  #foo {
+    height:1000px;
+    width:1000px;
+    background-color: #777;
+    display: block;
+  }
+
+  </style>
+
+ <div id="container">
+      <div id="foo"></div>
+    </div>
+
+    <script type="text/javascript">
+        document.getElementById('container').onscroll = function () {
+            alert("scrolling");
+        };
+    </script>*@
+
+
+@*<script type="text/javascript" src="https://saweb5.anbr.ru/areas/extsrv/js/main.js"></script>*@
+<script type="text/javascript" src="/areas/extsrv/js/main.js"></script>
+<script type="text/javascript">
+        //if (!anbr) {
+        //    var u = (("https:" == document.location.protocol) ? "https" : "http")
+        //        + "://saweb5.anbr.ru/areas/extsrv/";
+        //    var d = document, g = d.createElement("script"),
+        //        s = d.getElementsByTagName("script")[0];
+        //    g.type = "text/javascript";
+        //    g.defer = true;
+        //    g.async = true;
+        //    g.src = u + "js/main.js";
+        //    s.parentNode.insertBefore(g, s);
+    //}
+
+    new anbr.widget({
+        update: true,
+        layerid: "inLoad",
+        mainTitle: "Все новости по IT-тематике",
+        timeUpdate: 360000,
+        requestParameters: {
+            domain: "localhost",
+            dbase: 202,
+            requestid: 587,
+            param: [
+                { ParamName: "rid", ParamValues: ["518"] }
+            ],
+            page: 1,
+            pagesize: 10
+        }
+    });
+        new anbr.widget({
+            timeUpdate: 360000,
+            update: true,
+            layerid: "inLoad2",
+            mainTitle: "Новости по теме \"Информационная безопасность\"",
+            requestParameters: {
+                domain: "localhost",
+                dbase: 202,
+                requestid: 585,
+                param: [
+                    { ParamName: "rid", ParamValues: ["524"] }
+                ],
+                page: 1,
+                pagesize: 10
+            }
+        });
+        new anbr.widget({
+            timeUpdate: 360000,
+            layerid: "inLoad3",
+            mainTitle: "Habrahar. Публикации за сегодня",
+            update: true,
+            requestParameters: {
+                domain: "localhost",
+                dbase: 202,
+                requestid: 586,
+                param: [],
+                page: 1,
+                pagesize: 10
+            }
+        });
+
+</script>
+
+@*<script type="text/javascript" src="https://saweb5.anbr.ru/areas/extsrv/js/test.js?callback=jsonpCallback&rid=12345"></script>*@

@@ -1,0 +1,30 @@
+﻿<div id="accordion">
+<% _.each(c,function(el){ %>
+    <h3><%= el.Display_Name %></h3>
+    <div>
+       <% if(el.SystemTypeName=="VideoSource"){%>
+        <div>
+            <video id="videoFact" class="video-js vjs-default-skin" preload="none">
+                <source src="<%= el.MediaUrl %>#t=<%= el.PlayingAt %>,<%= el.PlayingUntil %>" type='video/mp4'>
+            </video>
+            <nav>
+                <button class="Play" data-start="<%= el.PlayingAt %>" data-end="<%= el.PlayingUntil %>">&nbsp;</button>
+                <span class="Duration"></span>
+            </nav>
+        </div>
+        <% } %>
+        <% if(el.SystemTypeName=="Audiosource"){%>
+        <div>
+            <video id="videoFact" class="video-js vjs-default-skin Audiosource" preload="none" poster="/images/Headphones128x128.png">
+                <source src="<%= el.MediaUrl %>#t=<%= el.PlayingAt %>,<%= el.PlayingUntil %>" type='audio/mp3'>
+            </video>
+            <nav>
+                <button class="Play" data-start="<%= el.PlayingAt %>" data-end="<%= el.PlayingUntil %>">&nbsp;</button>
+                <span class="Duration"></span>
+            </nav>
+        </div>
+       <% } %>
+       <%= (el.TextSource ? el.TextSource.replace(/(\r\n)|(\n)/g, '<br/>').replace(/\t/g, '&nbsp;&nbsp;&nbsp;&nbsp;') : '') %> 
+    </div>
+<% }); %>
+</div>

@@ -1,0 +1,1915 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.Reporting.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.Reporting.Contracts.DigestFolder">
+            <summary>
+            Контейнер дайджеста событий или статей. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder._instance">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.#ctor(System.Int32,System.String)">
+            <summary>
+            Конструктор.
+            </summary>
+            <param name="id">Идентификатор</param>
+            <param name="name">Имя</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.ToString">
+            <summary>
+            Строковое представление.
+            </summary>
+            <returns>Имя</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.AddFact(ANBR.Reporting.Contracts.DigestFact)">
+            <summary>
+            Добавляет факт.
+            </summary>
+            <param name="f">Факт</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.AddFolder(ANBR.Reporting.Contracts.DigestFolder)">
+            <summary>
+            Добавляет папку.
+            </summary>
+            <param name="f">Папка</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.AddObject(ANBR.Reporting.Contracts.DigestObject)">
+            <summary>
+            Добавляет объект.
+            </summary>
+            <param name="o">Объект</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.AddArticle(ANBR.Reporting.Contracts.ArticleStandard)">
+            <summary>
+            Добавляет статью. 
+            </summary>
+            <param name="a">Статья</param>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.Id">
+            <summary>
+            Идентификатор БД СА
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.Kind">
+            <summary>
+            Тип папки
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.RootObjectId">
+            <summary>
+            Идентификатор основного объекта БД СА
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.RootObjectName">
+            <summary>
+            Имя основного объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.RootObjectTextDossier">
+            <summary>
+            Текстовое досье основного объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.RootObjectPicture">
+            <summary>
+            Картинка основного объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.LinkedObjects">
+            <summary>
+            Упоминаемые объекты (для создания оглавления по ним)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.FolderNodes">
+            <summary>
+            Узлы-контейнеры нижележащего уровня
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.FactNodes">
+            <summary>
+            Узлы-факты нижележащего уровня
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.ArticleNodes">
+            <summary>
+            Узлы-статьи нижележащего уровня
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DigestFolder.ContainsFactsOnly">
+            <summary>
+            Содержит только факты
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DigestFolder.ContainsFoldersOnly">
+            <summary>
+            Содержит только контейнеры
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DigestFolder.ContainsArticlesOnly">
+            <summary>
+            Содержит только статьи
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.IsRootFolder">
+            <summary>
+            Корневая ли папка
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolder.Prefix">
+            <summary>
+            Префикс для нумерации (типа 1.1.2)
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFolder.GetAllObjects">
+            <summary>
+            Получает все объекты. 
+            </summary>
+            <returns>Объекты</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestFact">
+            <summary>
+            Факт дайджеста событий (фактов)
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFact.#ctor(System.Int32,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{ANBR.Reporting.Contracts.DigestObject})">
+            <summary>
+            Конструктор. 
+            </summary>
+            <param name="id">Идентификатор</param>
+            <param name="title">Заголовок</param>
+            <param name="textStrings">Текст</param>
+            <param name="linkedObjects">Связанные объекты</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFact.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFact.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestFact.AddObject(ANBR.Reporting.Contracts.DigestObject)">
+            <summary>
+            Добавляет объект.
+            </summary>
+            <param name="o">Объект</param>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.TypeName">
+            <summary>
+            Тип факта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.Title">
+            <summary>
+            Заголовок
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.TextByParagraphs">
+            <summary>
+            Текст факта по параграфам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.ShortInfoByParagraphs">
+            <summary>
+            Краткая справка по параграфам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.Source">
+            <summary>
+            Источник для факта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.LinkedObjects">
+            <summary>
+            Связанные с фактом объекты
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.ContainerId">
+            <summary>
+            Идентификатор контейнера
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFact.ContainerName">
+            <summary>
+            Контейнер
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestObject">
+            <summary>
+            Объект для дайджеста событий, связанный с фактом. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestObject.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestObject.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.Id">
+            <summary>
+            Идентификатор в БД
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.Name">
+            <summary>
+            Имя объекта 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.Title">
+            <summary>
+            Заголовок 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.TypeName">
+            <summary>
+            Имя типа объекта 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.TypeNameENG">
+            <summary>
+            Имя типа объекта 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.Description">
+            <summary>
+            Текстовое досье
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.Picture">
+            <summary>
+            Изображение
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestObject.FilePicturePath">
+            <summary>
+            Путь к изображению
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestGroupKind">
+            <summary>
+            Вид дайджеста фактов. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestGroupKind.BySphere">
+            <summary>
+            С группировкой по сферам деятельности
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestGroupKind.ByRegion">
+            <summary>
+            С группировкой по регионам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestGroupKind.ByObject">
+            <summary>
+            С группировкой по объектам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestGroupKind.Ungrouped">
+            <summary>
+            Без группировки
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestFolderKind">
+            <summary>
+            Вид папки. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolderKind.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolderKind.Organization">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolderKind.Others">
+            <summary>
+            Прочие объекты
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestFolderKind.NotApplicable">
+            <summary>
+            Неприменимо
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ArticleDigestGroupKind">
+            <summary>
+            Вид дайджеста статей. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleDigestGroupKind.Simple">
+            <summary>
+            Простой
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleDigestGroupKind.Standard">
+            <summary>
+            Стандартный
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestInfoX">
+            <summary>
+            Информация о дайджесте. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.ReportX">
+            <summary>
+            Имя и идентификатор дайджеста
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.User">
+            <summary>
+            Создатель 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.DigestType">
+            <summary>
+            Тип дайджеста
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.DigestKind">
+            <summary>
+            Вид дайджеста (Статей или Фактов)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.FileName">
+            <summary>
+            Имя файла источника
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestInfoX.BinaryDataExists">
+            <summary>
+            Есть ли содержимое (1-да, 0-нет)
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DigestInfoX.ToString">
+            <summary>
+            Строковое представление.
+            </summary>
+            <returns>Строковое представление</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestX">
+            <summary>
+            Дайджест с содержимым. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestX.Content">
+            <summary>
+            Файл Word (docx)
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DigestEntityX">
+            <summary>
+            Пара Имя-Идентификатор. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestEntityX.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.DigestEntityX.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.Synonym">
+            <summary>
+            Синоним объекта. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.Synonym_ID">
+            <summary>
+            Идентификатор синонима 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.Object_ID">
+            <summary>
+            Идентификатор объекта 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.ForHighLight">
+            <summary>
+            Для подсветки
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.IsFTSearch">
+            <summary>
+            Полнотекстовый пользовательский поиск
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.ForSearch">
+            <summary>
+            Включить в поиск
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.UseMorphologic">
+            <summary>
+            Использовать морфологию
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Synonym.SynonymName">
+            <summary>
+            Имя синонима
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.TypeOfDigest">
+            <summary>
+            Тип дайджеста.   
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.TypeOfDigest.ByRubric">
+            <summary>
+            По рубрикам 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.TypeOfDigest.ByObject">
+            <summary>
+            По объектам 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ObjectOfDigest">
+            <summary>
+            Объект дайджеста 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ObjectOfDigest.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ObjectOfDigest.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ObjectOfDigest.op_Equality(ANBR.Reporting.Contracts.ObjectOfDigest,ANBR.Reporting.Contracts.ObjectOfDigest)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ObjectOfDigest.op_Inequality(ANBR.Reporting.Contracts.ObjectOfDigest,ANBR.Reporting.Contracts.ObjectOfDigest)">
+            <summary>
+            Сравнивает на неравенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.Id">
+            <summary>
+            Идентификатор 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.Name">
+            <summary>
+            Название 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.NameOriginal">
+            <summary>
+            Название оригинальное 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.Text">
+            <summary>
+            Текстовое досье 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.TypeId">
+            <summary>
+            Идентификатор типа 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.TypeName">
+            <summary>
+            Название типа 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.Photo">
+            <summary>
+            Фото 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ObjectOfDigest.EntityType">
+            <summary>
+            Тип объекта дайджеста (обобщенный тип)
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.DateBirthPerson">
+            <summary>
+            Дата рождения
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.DateDeathPerson">
+            <summary>
+            Дата смерти
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.INNPerson">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.DateOrgFoundation">
+            <summary>
+            Дата основания
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.INNOrganization">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.OGRNOrganization">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.SiteOrganization">
+            <summary>
+            Сайт
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ObjectOfDigest.Address">
+            <summary>
+            Адрес
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.EntityTypeEnum">
+            <summary>
+            Тип объекта дайджеста 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.EntityTypeEnum.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.EntityTypeEnum.Organization">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.EntityTypeEnum.Other">
+            <summary>
+            Другое
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.FactOfDigest">
+            <summary>
+            Факт дайджеста 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.FactOfDigest.#ctor">
+            <summary>
+            Конструктор.
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.FactOfDigest.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.FactOfDigest.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.FactOfDigest.op_Equality(ANBR.Reporting.Contracts.FactOfDigest,ANBR.Reporting.Contracts.FactOfDigest)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.FactOfDigest.op_Inequality(ANBR.Reporting.Contracts.FactOfDigest,ANBR.Reporting.Contracts.FactOfDigest)">
+            <summary>
+            Сравнивает на неравенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.FactOfDigest.Sources">
+            <summary>
+            Источники, в которых упоминается факт 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.FactOfDigest.SourceServiceItem">
+            <summary>
+            Сервисное поле 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.FactOfDigest.Rubrics">
+            <summary>
+            Рубрики, с которыми связан факт 
+            (пустой - в случае дайджеста 'По объектам')  
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.FactOfDigest.Objects">
+            <summary>
+            Объекты, с которыми связан факт 
+            (пустой - в случае дайджеста 'По рубрикам')  
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.SourceOfDigest">
+            <summary>
+            Источник 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.SourceOfDigest.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.SourceOfDigest.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.SourceOfDigest.op_Equality(ANBR.Reporting.Contracts.SourceOfDigest,ANBR.Reporting.Contracts.SourceOfDigest)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.SourceOfDigest.op_Inequality(ANBR.Reporting.Contracts.SourceOfDigest,ANBR.Reporting.Contracts.SourceOfDigest)">
+            <summary>
+            Сравнивает на неравенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.SourceOfDigest.Id">
+            <summary>
+            Идентификатор 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.SourceOfDigest.Name">
+            <summary>
+            Название 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.SourceOfDigest.Media">
+            <summary>
+            СМИ 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.SourceOfDigest.URL">
+            <summary>
+            URL источника  
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.SourceOfDigest.DateOfPub">
+            <summary>
+            Дата публикации 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.RubricOfDigest">
+            <summary>
+            Рубрика 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.RubricOfDigest.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="obj">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.RubricOfDigest.GetHashCode">
+            <summary>
+            Хеш-код.
+            </summary>
+            <returns>Хеш-код</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.RubricOfDigest.op_Equality(ANBR.Reporting.Contracts.RubricOfDigest,ANBR.Reporting.Contracts.RubricOfDigest)">
+            <summary>
+            Сравнивает на равенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.RubricOfDigest.op_Inequality(ANBR.Reporting.Contracts.RubricOfDigest,ANBR.Reporting.Contracts.RubricOfDigest)">
+            <summary>
+            Сравнивает на неравенство. 
+            </summary>
+            <param name="o1">Объект</param>
+            <param name="o2">Объект</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.RubricOfDigest.Id">
+            <summary>
+            Идентификатор 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.RubricOfDigest.Name">
+            <summary>
+            Название 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.RubricOfDigest.IdParent">
+            <summary>
+            Идентификатор родительской рубрики (у корневых рубрик = null) 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.DataContainerOfDigest">
+            <summary>
+            Контейнер данных для дайджеста 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.DataContainerOfDigest.#ctor">
+            <summary>
+            Конструктор.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DataContainerOfDigest.Type">
+            <summary>
+            Тип дайджеста ('По рубрикам' или 'По объектам') 
+            по умолчанию 'По рубрикам' 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DataContainerOfDigest.Facts">
+            <summary>
+            Список фактов 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DataContainerOfDigest.Sources">
+            <summary>
+            Источники, в которых упоминаются факты дайджеста 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DataContainerOfDigest.Rubrics">
+            <summary>
+            Рубрики, с которыми связаны факты дайджеста 
+            (пустой - в случае дайджеста 'По объектам')  
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.DataContainerOfDigest.Objects">
+            <summary>
+            Объекты, с которыми связаны факты дайджеста 
+            (пустой - в случае дайджеста 'По рубрикам') 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportFormat">
+            <summary>
+            Формат файла выгрузки отчета SSRS.    
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportFormat.PDF">
+            <summary>
+            Файл Adobe Acrobat (расширение "pdf")
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportFormat.XML">
+            <summary>
+            Файл XML (расширение "xml")
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportFormat.MHTML">
+            <summary>
+            Веб-архив (расширение "mhtml")
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportFormat.WORD">
+            <summary>
+            Файл Microsoft Word 97-2003 (расширение "doc")
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportFormat.WORDOPENXML">
+            <summary>
+            Файл Microsoft Word 2010-2013 (расширение "docx") 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportType">
+            <summary>
+            Тип отчета SSRS в СА (используется в генерации составного отчета для нескольких объектов). 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportType.Description">
+            <summary>
+            Название отчета 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportType.IsDefault">
+            <summary>
+            Является ли отчетом по умолчанию
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportType.Id">
+            <summary>
+            Идентификатор отчета 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.Template">
+            <summary>
+            Шаблон Отчета.  
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Template.Id">
+            <summary>
+            Идентификатор шаблона
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Template.Name">
+            <summary>
+            Имя шаблона
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Template.Queries">
+            <summary>
+            Запросы в этом шаблоне
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Template.IsCorrect">
+            <summary>
+            Соответствуют ли запросы шаблона - запросам СА
+            (прошла ли валидация)
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Template.File">
+            <summary>
+            Исходный файл шаблона
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.Template.#ctor">
+            <summary>
+            Инициализирует шаблон. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.Template.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Имя шаблона отчета</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.File">
+            <summary>
+            Файл шаблона Отчета.  
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.File.Bytes">
+            <summary>
+            Содержание исходного файла шаблона
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.File.Name">
+            <summary>
+            Имя исходного файла шаблона
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.File.#ctor">
+            <summary>
+            Инициализирует файл шаблона. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.File.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Имя файла</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.Query">
+            <summary>
+            Запрос. 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.Id">
+            <summary>
+            Идентификатор запроса 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.Name">
+            <summary>
+            Имя запроса (например, Q1 - для точки вставки данных {Q1.Number})
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.DataPoints">
+            <summary>
+            Точки вставки данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.ChartTitle">
+            <summary>
+            Название диаграммы 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.QueryKind">
+            <summary>
+            Вид запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.ChartKind">
+            <summary>
+            Вид диаграммы
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.IdSaQuery">
+            <summary>
+            Идентификатор запроса СА
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.IdTemplate">
+            <summary>
+            Идентификатор шаблона отчета 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.ChartWidth">
+            <summary>
+            Ширина диаграммы (пункт, point)
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.Query.ChartHeight">
+            <summary>
+            Высота диаграммы (пункт, point)
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.Query.#ctor">
+            <summary>
+            Инициализирует запрос. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.Query.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Имя запроса</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.QueryKind">
+            <summary>
+            Вид Запроса. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.QueryKind.None">
+            <summary>
+            Нет значения 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.QueryKind.Table">
+            <summary>
+            Таблица
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.QueryKind.Chart">
+            <summary>
+            Диаграмма
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.QueryKind.GeoMap">
+            <summary>
+            ГеоКарта
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.ChartKind">
+            <summary>
+            Вид Диаграммы (если вид Запроса QueryKind.Chart). 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.ChartKind.None">
+            <summary>
+            Не задано (например, если Запрос не для Диаграммы)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.ChartKind.Bar">
+            <summary>
+            Линейчатая
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.ChartKind.Pie">
+            <summary>
+            Круговая
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.ChartKind.Column">
+            <summary>
+            Гистограмма
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportOffice.ChartKind.Pie_3D">
+            <summary>
+            Круговая. Объемная
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOffice.DataPoint">
+            <summary>
+            Точка вставки данных в шаблон Отчета. 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.DataPoint.Id">
+            <summary>
+            Идентификатор точки в БД СА
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.DataPoint.Name">
+            <summary>
+            Имя,  
+            (имя поля таблицы, если вид Запроса = Table (или Chart если Диаграмма)) 
+            например Number для точки вставки {Q1.Number}
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOffice.DataPoint.IdQuery">
+            <summary>
+            Идентификатор запроса
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOffice.DataPoint.#ctor">
+            <summary>
+            Инициализирует точку вставки. 
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.IReportingService">
+            <summary>
+            Представляет объект для работы с отчетами SSRS и данными для дайджестов статей/фактов. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetTemplateList">
+            <summary>
+            Получает список шаблонов отчетов (атрибуты: ID, Название, Корректность)
+            </summary>
+            <returns>Список шаблонов отчетов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetTemplate(System.Int32)">
+            <summary>
+            Получает шаблон отчета (с запросами и точками вставки данных, но без файла). 
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета</param>
+            <returns>Шаблон отчета</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetFile(System.Int32)">
+            <summary>
+            Получает файл шаблона отчета с исходным именем. 
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета в БД</param>
+            <returns>Файл шаблона отчета с исходным именем</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.CreateTemplate(System.String)">
+            <summary>
+            Создает новый шаблон отчета. 
+            </summary>
+            <param name="name">Имя шаблона отчета</param>
+            <returns>Идентификатор шаблона отчета в БД</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.UpdateTemplateName(System.Int32,System.String)">
+            <summary>
+            Изменяет имя шаблона отчета. 
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета</param>
+            <param name="newName">Новое имя шаблона отчета</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.AddFileWithDependencies(ANBR.Reporting.Contracts.ReportOffice.Template)">
+            <summary>
+            Загружает файл шаблона отчета, запросы, точки вставки данных
+            (сначала удаляя возможные имеющиеся данные этого шаблона). 
+            </summary>
+            <param name="template">Шаблон отчета
+            (Идентификатор должен быть задан в тот шаблон, куда загружается файл и связанные структуры)
+            </param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.SetTemplateCorrectState(System.Int32,System.Boolean)">
+            <summary>
+            Устанавливает статус корректности шаблона отчета. 
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета</param>
+            <param name="state">Статус корректности шаблона отчета</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.UpdateQuery(System.Int32,System.Int32,ANBR.Reporting.Contracts.ReportOffice.ChartKind,System.String,System.Int32,System.Int32)">
+            <summary>
+            Редактирует запрос шаблона отчета. 
+            </summary>
+            <param name="idQuery">Идентификатор запроса шаблона отчета</param>
+            <param name="idSaQuery">Идентификатор запроса СА</param>
+            <param name="chartKind">Вид диаграммы</param>
+            <param name="chartTitle">Название диаграммы</param>
+            <param name="chartHeight">Высота диаграммы (пункт)</param>
+            <param name="chartWidth">Ширина диаграмма (пункт)</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.DeleteTemplate(System.Int32)">
+            <summary>
+            Удаляет шаблон отчета полностью. 
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.DeleteFileWithDependencies(System.Int32)">
+            <summary>
+            Удаляет все, связанное с этим шаблоном, т.е. файл, запросы, точки вставки шаблона отчета 
+            (кроме самой записи о шаблоне отчета).         
+            </summary>
+            <param name="idTemplate">Идентификатор шаблона отчета</param>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.Test">
+            <summary>
+            Тестовый вызов. 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetReports(System.Nullable{System.Int32})">
+            <summary>
+            Возвращает список описаний отчетов, совместимых с указанным объектом. 
+            </summary>
+            <param name="objectId">Идентификатор объекта</param>
+            <returns>Список описаний отчетов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.RenderReportToBytes(System.String,System.String,System.Int32,ANBR.Reporting.Contracts.ReportFormat)">
+            <summary>
+            Сериализует отчет по указанному объекту.  
+            </summary>
+            <param name="serverPath">Путь к серверу отчетов</param>
+            <param name="reportPath">Путь к отчету</param>
+            <param name="objid">Идентификатор объекта</param>
+            <param name="format">Формат выгрузки</param>
+            <returns>Массив байт</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.RenderReportDatesToBytes(System.String,System.String,System.DateTime,System.DateTime,ANBR.Reporting.Contracts.ReportFormat)">
+            <summary>
+            Сериализует отчет.  
+            </summary>
+            <param name="serverPath">Путь к серверу отчетов</param>
+            <param name="reportPath">Путь к отчету</param>
+            <param name="format">Формат выгрузки</param>
+            <returns>Массив байт</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.AddReport(ANBR.Reporting.Contracts.ReportOnObject)">
+            <summary>
+            Добавляет ссылку на отчет SSRS в таблицу описаний отчетов. 
+            </summary>
+            <param name="report">Описание отчета</param>
+            <returns>Идентификатор отчета в базе данных</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.DeleteReport(System.Int32)">
+            <summary>
+            Удаляет отчет SSRS из таблицы описаний отчетов. 
+            </summary>
+            <param name="reportId">Идентификатор отчета в базе данных</param>
+            <returns>Результат операции</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetArticlesWithFacts(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Возвращает статьи со связанными с ними фактами 
+            ("Простой дайджест").
+            </summary>
+            <param name="articleIds">Идентификаторы статей</param>
+            <returns>Список статей с фактами</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetArticles(System.Collections.Generic.List{System.Int32},ANBR.Reporting.Contracts.ArticleDigestGroupKind)">
+            <summary>
+            Возвращает статьи ("Стандартный дайджест"). 
+            </summary>
+            <param name="articleIds">Идентификаторы статей</param>
+            <param name="digestKind">Тип дайджеста статей</param>
+            <returns>Контейнер со статьями</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetDigestFactInfoByFacts(System.Collections.Generic.List{System.Int32},ANBR.Reporting.Contracts.DigestGroupKind,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Возвращает информацию для дайджеста событий "По регионам или сферам". 
+            </summary>
+            <param name="factIds">Список идентификаторов фактов</param>
+            <param name="digestKind">Тип дайджеста (группировки фактов)</param>        
+            <param name="objecttypes">Список типов объектов, связанных с фактами дайджеста</param>
+            <returns>Контейнер информации дайджеста</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetDigestFactInfoByObject(System.Int32,ANBR.Reporting.Contracts.DigestGroupKind,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Возвращает информацию для дайджеста событий "По объектам". 
+            </summary>
+            <param name="rootObjectId">Идентификатор главного объекта дайджеста</param>
+            <param name="digestKind">Тип дайджеста (группировки фактов)</param>
+            <param name="objectTypes">Список типов объектов, связанных с фактами дайджеста</param>
+            <param name="relTypes">Список типов связей</param>
+            <returns>Контейнер информации дайджеста</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetDigestFactInfoByObjectFromDate(System.Int32,ANBR.Reporting.Contracts.DigestGroupKind,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32},System.DateTime)">
+            <summary>
+            Возвращает информацию для дайджеста событий "По объектам". 
+            </summary>
+            <param name="rootObjectId">Идентификатор главного объекта дайджеста</param>
+            <param name="digestKind">Тип дайджеста (группировки фактов)</param>
+            <param name="objectTypes">Список типов объектов, связанных с фактами дайджеста</param>
+            <param name="relTypes">Список типов связей</param>
+            <param name="fromDate">Выбирать для дайджеста только факты с датой создания, 
+            большей или равной указанной</param>
+            <returns>Контейнер информации дайджеста</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetPhraseForms(System.String)">
+            <summary>
+            Возвращает все возможные словоформы фразы. 
+            </summary>
+            <param name="phrase">Фраза</param>
+            <returns>Список словоформ фразы</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetObjectTypeId(System.Int32)">
+            <summary>
+            Возвращает тип объекта. 
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+            <returns>Тип</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.TestChannel">
+            <summary>
+            Тестирует канал связи. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetEntitySynsByObjectId(System.Int32)">
+            <summary>
+            Возвращает синонимы объекта. 
+            </summary>
+            <param name="id">Идентификатор объекта</param>
+            <returns>Синонимы</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetUsersList">
+            <summary>
+            Возвращает список пользователей. 
+            </summary>
+            <returns>Список пользователей</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetDigestsInfo(System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32})">
+            <summary>
+            Возвращает информацию о дайджестах. 
+            </summary>
+            <param name="userId">Пользователь</param>
+            <param name="digestKind">Вид дайджеста</param>
+            <param name="digestType">Тип дайджеста</param>
+            <returns>Список дайджестов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetOwnDigestsInfo">
+            <summary>
+            Возвращает информацию о собственных дайджестах. 
+            </summary>
+            <returns>Список дайджестов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetDigest(System.Int32)">
+            <summary>
+            Возвращает дайджест по идентификатору. 
+            </summary>
+            <param name="idDigest">Идентификатор дайджеста</param>
+            <returns>Дайджест</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.SaveDigest(ANBR.Reporting.Contracts.DigestX)">
+            <summary>
+            Сохраняет дайджест в БД СА. 
+            </summary>
+            <param name="dx">Дайджест</param>
+            <returns>Идентификатор сохраненного дайджеста (-1 при ошибке задания типа или вида дайджеста)
+            </returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.SA_GetObjectAndRelatedById(System.Int32)">
+            <summary>
+            Получает объект и связанное с ним.  
+            </summary>
+            <param name="idObject">Объект</param>
+            <returns>Объект и связанное с ним</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.SA_GetPersonAndRelatedById(System.Int32)">
+            <summary>
+            Получает персону и связанное с ней.  
+            </summary>
+            <param name="idObject">Объект</param>
+            <returns>Персона и связанное с ней</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetObjectAndFactsForDossier(System.Int32)">
+            <summary>
+            Получает объект и факты.  
+            </summary>
+            <param name="idObject">Объект</param>
+            <returns>Объект и факты</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetUserNameByLogin(System.String)">
+            <summary>
+            Возвращает имя пользователя. 
+            </summary>
+            <param name="account">Аккаунт</param>
+            <returns>Имя пользователя</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetFactDigestData(ANBR.Reporting.Contracts.TypeOfDigest,System.Collections.Generic.List{System.Int32},System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Возвращает данные для дайджеста фактов.  
+            </summary>
+            <param name="type">Тип дайджеста</param>
+            <param name="facts">Список фактов</param>
+            <param name="objects">Список объектов</param>
+            <returns>Данные для формирования дайджеста фактов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.GetReportTypesByObjectType(System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Возвращает типы совместимых отчетов СА SSRS для выбранных типов объектов. 
+            </summary>
+            <param name="objectTypes">Выбранные типы объектов</param>
+            <returns>Типы совместимых отчетов</returns>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.IReportingService.RenderCompositeReportToBytes(System.Collections.Generic.List{System.Tuple{System.Int32,System.Int32}},ANBR.Reporting.Contracts.ReportFormat)">
+            <summary>
+            Сериализует несколько отчетов (по нескольким объектам). 
+            </summary>
+            <param name="reportTypesByObject">
+            Список соответствий объект-тип отчета</param>
+            <param name="format">Формат выходного файла</param>
+            <returns>Результирующий байтовый массив</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportClickCommand">
+            <summary>
+            Вид команды для исполнения при щелчке по ссылке в отчете. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.None">
+            <summary>
+            Нет действия 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.DeleteObject">
+            <summary>
+            Удалить объект 
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.EditObjectDisplayName">
+            <summary>
+            Редактировать имя объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.EditObjectTextDossier">
+            <summary>
+            Редактировать текстовое досье объекта
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.EditObjectNegativeInfo">
+            <summary>
+            Редактировать негатив
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ReportClickCommand.EditObjectTextSource">
+            <summary>
+            Редактировать текст
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.ArticleDigestGroupKindSimple">
+            <summary>
+              Looks up a localized string similar to Простой.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.ArticleDigestGroupKindStandard">
+            <summary>
+              Looks up a localized string similar to Стандартный.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.DigestGroupKind1">
+            <summary>
+              Looks up a localized string similar to С группировкой по сферам деятельности.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.DigestGroupKind2">
+            <summary>
+              Looks up a localized string similar to С группировкой по регионам.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.DigestGroupKind3">
+            <summary>
+              Looks up a localized string similar to С группировкой по объектам.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.DigestGroupKind4">
+            <summary>
+              Looks up a localized string similar to Без группировки.
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.Properties.Resources.NotDefined">
+            <summary>
+              Looks up a localized string similar to &lt;не определено&gt;.
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ReportOnObject">
+            <summary>
+            Описание отчета SSRS в СА. 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.ReportId">
+            <summary>
+            Идентификатор в СА
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.ReportServer">
+            <summary>
+            Путь к серверу отчетов 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.ReportPath">
+            <summary>
+            Путь к отчету 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.ReportDescription">
+            <summary>
+            Описание
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.ObjectTypeId">
+            <summary>
+            Тип объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.IsDefault">
+            <summary>
+            По умолчанию
+            </summary>
+        </member>
+        <member name="P:ANBR.Reporting.Contracts.ReportOnObject.Connection">
+            <summary>
+            Строка соединения с БД 
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.ReportOnObject.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Описание</returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.Article">
+            <summary>
+            Статья (Источник) с упоминаемыми в ней фактами
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.Title">
+            <summary>
+            Название
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.TitleTranslated">
+            <summary>
+            Название (перевод)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.Headline">
+            <summary>
+            Заголовок
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.SourceReference">
+            <summary>
+            Ссылка на СМИ
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.HyperReference">
+            <summary>
+            Гиперссылка на источник
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.TextByParagraphs">
+            <summary>
+            Текст по параграфам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.TextTranslatedByParagraphs">
+            <summary>
+            Перевод по параграфам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.Text">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.TextTranslated">
+            <summary>
+            Перевод
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.Article.Facts">
+            <summary>
+            Связанные факты
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ArticleStandard">
+            <summary>
+            Статья (Источник) 
+            для стандартного дайджеста статей
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.ThematicBlockId">
+            <summary>
+            Тематика (идентификатор)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.ThematicBlock">
+            <summary>
+            Тематика
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.Rubrics">
+            <summary>
+            Рубрики
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.Annotation">
+            <summary>
+            Аннотация
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.Authors">
+            <summary>
+            Авторы
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.Date">
+            <summary>
+            Дата публикации
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ArticleStandard.FolderId">
+            <summary>
+            Папка (рубрика)
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.PairIntString">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.PairIntString.Key">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.PairIntString.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Reporting.Contracts.PairIntString.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.PairIntAndObject`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T2"></typeparam>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.K_FactDigestKind">
+            <summary>
+            Тип дайджеста фактов
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.K_FactDigestKind.BySphere">
+            <summary>
+            По сферам деятельности
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.K_FactDigestKind.ByRegion">
+            <summary>
+            По регионам
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.K_FactDigestKind.ByObject">
+            <summary>
+            Факты, связанные с определенным объектом (организация или персона)
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ObjectKindReportExt">
+            <summary>
+            Тип объекта (для отчетной системы)
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ObjectKindReportExt.Articles">
+            <summary>
+            статьи (источники) с оглавлением
+            </summary>
+        </member>
+        <member name="T:ANBR.Reporting.Contracts.ObjectExtReport">
+            <summary>
+            Нестандартный объект для отчетной системы
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ObjectExtReport.ObjectKind">
+            <summary>
+            тип объекта (например - Статьи: "Articles")
+            </summary>
+        </member>
+        <member name="F:ANBR.Reporting.Contracts.ObjectExtReport.ObjectIds">
+            <summary>
+            список идентификаторов
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_Database">
+            <summary>
+            Параметры БД.
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.SA_Database.Database">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.SA_Database.Server">
+            <summary>
+            Сервер
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_ObjectType">
+            <summary>
+            Тип объекта СА.
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_ObjectType.ID">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_ObjectType.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_Person">
+            <summary>
+            Объект Персона СА для создания досье. 
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.SA_Person.JobsOrgs">
+            <summary>
+            Факты работы в должности
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.SA_Person.CoownerPersonFacts">
+            <summary>
+            Факты учреждения организаций
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.SA_Person.RelativesFacts">
+            <summary>
+            Факты Родственники
+            </summary>
+        </member>
+        <member name="M:SAObjectsContracts.SA_Person.#ctor(System.Int32,System.Int32,System.String,System.String)">
+            <summary>
+            Конструктор. 
+            </summary>
+            <param name="id">Идентификатор</param>
+            <param name="typeid">Тип</param>
+            <param name="name">Имя</param>
+            <param name="typename">Имя типа</param>
+        </member>
+        <member name="M:SAObjectsContracts.SA_Person.#ctor">
+            <summary>
+            Конструктор. 
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_Object">
+            <summary>
+            Объект СА.
+            </summary>
+        </member>
+        <member name="M:SAObjectsContracts.SA_Object.#ctor">
+            <summary>
+            Конструктор. 
+            </summary>
+        </member>
+        <member name="M:SAObjectsContracts.SA_Object.#ctor(System.Int32,System.Int32,System.String,System.String,System.Collections.Generic.List{SAObjectsContracts.BankAccount},System.Collections.Generic.List{SAObjectsContracts.FactJobPerson},System.Collections.Generic.List{SAObjectsContracts.FactJobPerson},System.Collections.Generic.List{SAObjectsContracts.Person},System.Collections.Generic.List{SAObjectsContracts.Organization},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{SAObjectsContracts.Organization}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{SAObjectsContracts.Organization}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{SAObjectsContracts.Organization}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{SAObjectsContracts.Organization}},System.Collections.Generic.Dictionary{System.Int32,System.Collections.Generic.List{SAObjectsContracts.Person}},System.String)">
+            <summary>
+            Конструктор. 
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_ObjectHeader">
+            <summary>
+            Заголовок объекта СА
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_Property">
+            <summary>
+            Свойство объекта (тип свойства + значение)
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_PropertyValue">
+            <summary>
+            Значение свойства
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_PropertyType">
+            <summary>
+            Описание свойства
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_PropertyType.Id">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_PropertyType.TypeId">
+            <summary>
+            К какому типу принадлежит свойство
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_PropertyType.SysName">
+            <summary>
+            Системное имя свойства
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_DataTypeEnum">
+            <summary>
+            Тип данных свойства объекта
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_RelationType">
+            <summary>
+            Тип связи между объектами
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_RelationType.Id">
+            <summary>
+            Идентификатор типа связи
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_RelationType.SysName">
+            <summary>
+            Системное имя связи
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.SA_Relation">
+            <summary>
+            Связь определенного типа
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_Relation.Id">
+            <summary>
+            Идентификатор связи
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_Relation.RelationTypeId">
+            <summary>
+            Идентификатор типа связи
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_Relation.LeftObjectId">
+            <summary>
+            Объект слева
+            </summary>
+        </member>
+        <member name="P:SAObjectsContracts.SA_Relation.RightObjectId">
+            <summary>
+            Объект справа
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.BankAccount">
+            <summary>
+            Счет.
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.Organization">
+            <summary>
+            Организация.
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.FactJobPerson">
+            <summary>
+            Факт работы.
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.JobPerson">
+            <summary>
+            Факт работы в должности (Досье на Персону)
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.CoownerPersonFact">
+            <summary>
+            Факт учреждения организации (Досье на Персону). 
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.CommentAboutObject">
+            <summary>
+            Комментарий
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.Percents">
+            <summary>
+            Проценты
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.NameOrgan">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.IdFact">
+            <summary>
+            Факт
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.CoownerPersonFact.IdOrg">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="T:SAObjectsContracts.RelativeFact">
+            <summary>
+            Факт Родственник (Досье на Персону). 
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.RelativeFact.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.RelativeFact.BirthDate">
+            <summary>
+            Дата рождения
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.RelativeFact.Comment">
+            <summary>
+            Комментарий
+            </summary>
+        </member>
+        <member name="F:SAObjectsContracts.RelativeFact.KindRelation">
+            <summary>
+            Вид связи
+            </summary>
+        </member>
+    </members>
+</doc>

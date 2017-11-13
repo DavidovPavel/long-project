@@ -1,0 +1,43 @@
+﻿@import "../../../.modules/typo";
+@import "../../../.components/dialog";
+@import "../../../.components/data-icon";
+@import "../../../.components/form";
+
+ul.diagrams {
+    padding:40px 0 ;
+    margin:0;
+    li {
+        display:block;
+        position:relative;
+        &:before {
+            content:'';
+            position:absolute;
+            width:250px;
+            height:130px;
+            background:#999;
+            display:none;
+            top:~"calc(50% - 65px)";
+            left:~"calc(100% - 250px)";
+            z-index:1;
+        }
+        &:after {
+            content:'';
+            position:absolute;
+            width:240px;
+            height:120px;
+            background:#fff;
+            display:none;
+            top:~"calc(50% - 60px)";
+            left:~"calc(100% - 245px)";
+            z-index:2;
+        }
+        &:hover {
+            &:before {
+                display:block;
+            }
+            &:after {
+                display:block;
+            }
+        }
+    }
+}

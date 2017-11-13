@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.CartService.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.CartService.Contracts.Cart">
+            <summary>
+            Пользовательская корзина.  
+            </summary>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.Cart.#ctor">
+            <summary>
+            Создает корзину.  
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.Cart.Id">
+            <summary>
+            Идентификатор корзины 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.Cart.Name">
+            <summary>
+            Название корзины 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.Cart.Description">
+            <summary>
+            Описание корзины 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.Cart.Owner">
+            <summary>
+            Владелец корзины 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.Cart.ItemsCount">
+            <summary>
+            Количество объектов в корзине 
+            </summary>
+        </member>
+        <member name="T:ANBR.CartService.Contracts.ICartService">
+            <summary>
+            Представляет объект для работы с пользовательскими корзинами и объектами в корзине. 
+            </summary>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.AddObject(System.Int32,System.Int32)">
+            <summary>
+            Добавляет объект в корзину.  
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="obj">Объект (идентификатор)</param>
+            <returns>Количество объектов в корзине</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.AddObjects(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Добавляет объекты в корзину. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="objects">Объекты (идентификаторы)</param>
+            <returns>Количество объектов в корзине</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.AddObjectsBatch(System.Int32,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Добавляет объекты в корзину. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="objects">Объекты (идентификаторы)</param>
+            <returns>Количество объектов в корзине</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.RemoveObject(System.Int32,System.Int32)">
+            <summary>
+            Удаляет объект из корзины. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="obj">Объект (идентификатор)</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.RemoveObjects(System.Int32,System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Удаляет объекты из корзины. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="objects">Объекты (идентификаторы)</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.Clear(System.Int32)">
+            <summary>
+            Очищает корзину. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.GetObjects(System.Int32)">
+            <summary>
+            Возвращает список объектов корзины. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <returns>Список объектов корзины</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.DeleteObjectInCart(System.Int32,System.Boolean)">
+            <summary>
+             Удаляет объекты заданной корзины из корзины и из базы данных.  
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <param name="forever">Физическое (true) или 
+            логическое (false, по умолчанию) удаление объектов</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.CreateCart(ANBR.CartService.Contracts.Cart)">
+            <summary>
+            Создает корзину. 
+            </summary>
+            <param name="cart">Корзина</param>
+            <returns>Идентификатор созданной корзины</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.RemoveCart(System.Int32)">
+            <summary>
+            Удаляет корзину вместе с ее содержимым. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.UpdateCart(ANBR.CartService.Contracts.Cart)">
+            <summary>
+            Изменяет атрибуты корзины (название, описание, владельца).
+            </summary>
+            <param name="cart">Корзина</param>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.GetCarts">
+            <summary>
+            Возвращает список корзин текущего пользователя. 
+            </summary>
+            <returns>Список корзин</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.GetCart(System.Int32)">
+            <summary>
+            Возвращает корзину по идентификатору корзины. 
+            </summary>
+            <param name="cart">Корзина (идентификатор)</param>
+            <returns>Корзина</returns>
+        </member>
+        <member name="M:ANBR.CartService.Contracts.ICartService.TestChannel">
+            <summary>
+            Выполняет тестовый запрос к службе корзин. 
+            </summary>
+        </member>
+        <member name="T:ANBR.CartService.Contracts.ObjectShortly">
+            <summary>
+            Краткая информация об объекте.  
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.ObjectShortly.Id">
+            <summary>
+            Идентификатор объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.ObjectShortly.TypeId">
+            <summary>
+            Идентификатор типа объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.ObjectShortly.Name">
+            <summary>
+            Название объекта 
+            </summary>
+        </member>
+        <member name="P:ANBR.CartService.Contracts.ObjectShortly.TypeName">
+            <summary>
+            Тип объекта 
+            </summary>
+        </member>
+    </members>
+</doc>

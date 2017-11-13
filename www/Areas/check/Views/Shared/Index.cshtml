@@ -1,0 +1,106 @@
+﻿@using Resources
+@using www.Models
+@using www.SaGateway
+@{
+    ViewBag.Title = "Check";
+    Layout = "/views/shared/anbr/_Layout.cshtml";
+    var urldata = Url.RequestContext.RouteData.Values;
+    var baseurl = string.Format("/lang-{0}/db{1}", urldata["lang"], urldata["dbid"]);
+    var GUI = ViewBag.GLOBAL_SA as GLOBAL_SAModel;
+    var currentLang = ViewBag.CurrentLang;
+
+    string baseAddr = WebSaUtilities.BuildBaseUrl();
+    string report = baseAddr + "/sqlreporting.aspx";
+
+}
+
+<div id="Navigation">
+
+    <nav id="module-navigation" role="navigation">
+        <div class="nav-item" data-name="CheckList">
+            <svg class="icon icon-check-list"><use xlink:href="#icon-check-list" /></svg>
+            <span>@Client.Checklist</span>
+        </div>
+        <div class="nav-item" data-name="Person">
+            <svg class="icon icon-check-person"><use xlink:href="#icon-check-person" /></svg>
+            <span>@Client.CheckPerson</span>
+        </div>
+        <div class="nav-item" data-name="Company">
+            <svg class="icon icon-check-org"><use xlink:href="#icon-check-org" /></svg>
+            <span>@Client.CheckOrg</span>
+        </div>
+    </nav>
+
+    <div id="content" class="wrap" role="main">
+
+        <div class="level-one">
+            <div id="CheckList">
+                <!-- Списки проверок -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#my-checks" aria-controls="my-checks" role="tab" data-toggle="tab">@Client.MyChecks&nbsp;<span>(0)</span></a></li>
+                    <li role="presentation"><a href="#all-checks" aria-controls="all-checks" role="tab" data-toggle="tab">@Client.AllChecks&nbsp;<span>(0)</span></a></li>
+                    <li role="presentation"><a href="#search-checks" aria-controls="search-checks" role="tab" data-toggle="tab">@Client.SearchChecks</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="my-checks"></div>
+                    <div role="tabpanel" class="tab-pane" id="all-checks"></div>
+                    <div role="tabpanel" class="tab-pane" id="search-checks"></div>
+                </div>
+                <!-- конец списков -->
+            </div>
+            <div id="Person"></div>
+            <div id="Company"></div>
+        </div>
+
+        <div class="level-two">
+            <div id="Sources"></div>
+        </div>
+
+        <div id="ResultDetails">
+                <h1 class="obj-title">&nbsp;</h1>
+                <div id="statistic-info">
+                    <span></span>&nbsp;&nbsp;
+                    <span class="icon-progress"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+                </div>
+                <ul class="nav nav-tabs" role="tablist">
+                    <li><a class="jump" href="#check-process" aria-controls="check-process" role="tab" data-toggle="tab">@Client.CheckStatus</a></li>
+                    <li><a class="jump" href="#init-data" aria-controls="init-data" role="tab" data-toggle="tab">@Client.SourceData</a></li>
+                    <li><a class="jump" href="#check-reports" aria-controls="check-reports" role="tab" data-toggle="tab">@Client.reports</a></li>
+                    <li><a class="jump" href="#smantic-rel" aria-controls="smantic-rel" role="tab" data-toggle="tab">@Client.SemanticConnection</a></li>
+                    <li><a class="jump" href="#result" aria-controls="result" role="tab" data-toggle="tab">@Client.Results</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="check-process"></div>
+                    <div role="tabpanel" class="tab-pane" id="init-data"></div>
+                    <div role="tabpanel" class="tab-pane" id="check-reports"></div>
+                    <div role="tabpanel" class="tab-pane" id="smantic-rel"><div id="SemNet"><div id='svg-cd128757-b0fa-4fdd-a005-05f74ac632c8' style='clear:both;'></div></div></div>
+                    <div role="tabpanel" class="tab-pane" id="result"></div>
+                </div>
+        </div>
+
+        <div id="DetailContent">
+                <h3 class="obj-title"></h3>
+                <ul class="nav nav-pills">
+                    <li class="active"><a href="#source-content"><svg class="svg-icon"><use xlink:href="#reports"></use></svg><span>@Client.Content</span><span class="dropdown-menu_arrow"></span></a></li>
+                    <li class="sep"></li>
+                    <li><a href="#source-relation"><svg class="svg-icon"><use xlink:href="#relations"></use></svg><span>@Client.TitleLinks</span><span class="dropdown-menu_arrow"></span></a></li>
+                    <li class="sep"></li>
+                    <li><a href="#source-translate"><svg class="svg-icon"><use xlink:href="#source-translate"></use></svg><span>@Client.TitleTranslate</span><span class="dropdown-menu_arrow"></span></a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="source-content"></div>
+                    <div role="tabpanel" class="tab-pane" id="source-relation"></div>
+                    <div role="tabpanel" class="tab-pane" id="source-translate"></div>
+                </div>
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    define("baseurl", "@baseurl");
+    define("report_url", "@report");
+    define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+    require.config({
+        config: {
+            i18n: {locale: '@currentLang.ToLower()'}}});
+</script>

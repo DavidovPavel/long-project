@@ -1,0 +1,15 @@
+﻿@{
+    Layout = "";
+}
+
+@{
+    string msgHeader = (String)(TempData["MsgHeader"] ?? ViewData["MsgHeader"]);
+    string msgContent = (String)(TempData["MsgContent"] ?? ViewData["MsgContent"]);
+    
+}
+
+<h2>@msgHeader</h2>
+
+<p style="font-size: 1.2em;">
+    @msgContent
+</p>

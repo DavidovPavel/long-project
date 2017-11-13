@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Semantic Network</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/semantic.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <script src="js/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="js/base.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="top" role="banner">
+        <div id="Edge" class="default-start-nav"><span></span></div>
+        <div class="user-info"></div>
+      </header>
+      <section class="semantic-net">
+        <div class="semantic-wrapper">
+          <div class="semantic-sidebar">
+            <div id="tools-hamburger" class="hamburger"><span></span></div>
+            <div class="semantic-tools">
+              <ul>
+                <li><span title="Zoom" class="semantic-tools--zoom"></span>
+                  <ul>
+                    <li><span title="Zoom out" class="semantic-tools--zoomout"></span></li>
+                    <li><span title="Zoom in" class="semantic-tools--zoomin"></span></li>
+                    <li><span title="Fit to screen" class="semantic-tools--zoomfit"></span></li>
+                  </ul>
+                </li>
+                <li><span title="Drag tool" class="semantic-tools--hand"></span></li>
+                <li><span title="Select tool" class="semantic-tools--editor">            </span></li>
+              </ul>
+            </div>
+            <div class="semantic--tool-settings">
+              <div class="semantic--tool-editmode">
+                <label>Edit mode</label><span id="editmode"></span>
+              </div>
+              <div class="semantic--tool-viewmode">
+                <div class="semantic--tool-select">
+                  <label>Layout</label>
+                  <div class="g-select--wrapper">
+                    <div class="g-select--placeholder">Strategic</div>
+                    <ul class="g-select--options">
+                      <li class="g-select--option"><span class="flag--rus">Strategic</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Tree</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Graph</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="semantic--tool-select">
+                  <label>View mode</label>
+                  <div class="g-select--wrapper">
+                    <div class="g-select--placeholder">Default view</div>
+                    <ul class="g-select--options">
+                      <li class="g-select--option"><span class="flag--rus">View mode 2</span></li>
+                      <li class="g-select--option"><span class="flag--rus">View mode 3</span></li>
+                      <li class="g-select--option"><span class="flag--rus">View mode 4</span></li>
+                      <li class="g-select--option"><span class="flag--rus">View mode 5</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="semantic--tool-select">
+                  <label>Depth</label>
+                  <div class="g-select--wrapper">
+                    <div class="g-select--placeholder">Level 1</div>
+                    <ul class="g-select--options">
+                      <li class="g-select--option"><span class="flag--rus">Level 1</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Level 2</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Level 3</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Level 4</span></li>
+                      <li class="g-select--option"><span class="flag--rus">Level 5</span></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="semantic--tool-appearance">
+                  <label>Appearance</label>
+                  <div>
+                    <input type="checkbox" id="id1">
+                    <label for="id1">Hide main object(s)</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="id2">
+                    <label for="id2">Show legend</label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="id3">
+                    <label for="id3">Show main properties of objects</label>
+                  </div>
+                </div>
+                <div class="semantic--tool-filter">
+                  <div>
+                    <label>Filter</label>
+                  </div>
+                  <input type="button" value="Select type">
+                  <input type="button" value="Clear filter">
+                </div>
+                <hr class="ruller">
+                <div class="semantic--tool-form">
+                  <input type="button" value="Reload">
+                  <input type="button" value="Export">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="semantic-tabs"> 
+            <div class="control"></div>
+            <ul>
+              <li class="controls"><span class="semantic-tabs--settings"></span></li>
+              <li class="active"><span class="semTab default">Automatic layout</span></li>
+              <li><span class="semTab">Custom layout
+                  <div></div></span></li>
+              <li><span class="semTab">Another custom layout
+                  <div></div></span></li>
+              <li class="controls"><span class="semantic-tabs--add"></span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

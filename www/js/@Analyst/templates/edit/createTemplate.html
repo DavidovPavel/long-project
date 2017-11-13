@@ -1,0 +1,28 @@
+﻿<table class="CreatePanel">
+    <tr>
+        <td class="leftPart">
+            <div class="loadTree"></div>
+            <div class="loadLinks">
+                <div>
+                    Текущий объект: <b class="soObjTitle"></b><br/>
+                    <input type="checkbox" id="linkToObj" />&nbsp;<label><%= Resources.linktoobj %></label>
+                </div>
+                <div id="linkList"><table class="linkList"></table></div>
+            </div>
+        </td>
+        <td>
+            <div style="padding-left:10px;overflow: auto; ">
+            <div class="searchBeforeCreate">
+                <div class="titleType" style="height: 14px;"></div>
+                <table><tr><td><textarea name="title"></textarea></td>
+                           <td style="width: 30px;padding: 4px; vertical-align: middle;"><button class="Search"><%= Resources.search %></button></td></tr></table>
+            </div>
+                <b><%= Resources.searchResults %></b>
+                <div style="position: absolute;overflow: auto;bottom: 35px;top:75px;">
+                    <div id="searchResult"><table class="List"></table></div>
+                    </div>
+            <div style="position: absolute;bottom: 0;height: 30px;"><button class="Add"><%= Resources.create %></button>&nbsp;<button><%= Resources.clear %></button></div>
+                </div>
+        </td>
+    </tr>
+</table>

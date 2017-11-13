@@ -1,0 +1,1444 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.Common</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.Common.FileDescription">
+            <summary>
+            Класс с данными из файла-описателя
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.DocumentSource">
+            <summary>
+            Источник документа
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.Subscriber">
+            <summary>
+            Кем подписан
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.OutcomingNumber">
+            <summary>
+            Изходящий номер
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.IncomingNumber">
+            <summary>
+            Входящий номер
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.SubscriptDate">
+            <summary>
+            Дата подписания
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.Stamp">
+            <summary>
+            Статус доступа к документу
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.Resolution">
+            <summary>
+            Резолюция
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.Maintenance">
+            <summary>
+            Документ подлежит обычной обработке
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FileDescription.Bases">
+            <summary>
+            Список баз , в котоьрые должен попасть документ
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentStamp.NoSecret">
+            <summary>
+            Несекретно
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentStamp.Restricted">
+            <summary>
+            ДСП
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentStamp.Secret">
+            <summary>
+            секретно
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentStamp.TopSecret">
+            <summary>
+            Совершенно секретно
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.DocSource.ExtSourceId">
+            <summary>
+            Внешний идентификатор источника
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.DocSource.SourceName">
+            <summary>
+            Наименование источника
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.BaseConverter">
+            <summary>
+            Базовый класс для конвертеров значений. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.BaseConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.BaseConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.Int32Converter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Int32Converter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Int32Converter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.Int16Converter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Int16Converter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Int16Converter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.BoolConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.BoolConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.BoolConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.StringConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.StringConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.StringConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.DateTimeConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.DateTimeConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.DateTimeConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.UidConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.UidConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.UidConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.EnumConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.EnumConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.EnumConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.GuidConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.GuidConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.GuidConverter.ConvertToData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.BinnaryConverter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.BinnaryConverter.ConvertFromData(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.BasePageQuery">
+            <summary>
+            Базовый класс для постраничных запосов к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageQuery.FromRow">
+            <summary>
+            Номер начальной строки
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageQuery.RowCount">
+            <summary>
+            Кол-во результатов/строк 
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.BasePageResult">
+            <summary>
+            Базовый класс с результатами запроса к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageResult.Result">
+            <summary>
+            Набор результирующих данных в виде объекта DataSet
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageResult.TotalResultCount">
+            <summary>
+            Полное количество результатов по запосу, если бы не было постраничности
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageResult.ExecuteTime">
+            <summary>
+            Время выполнения запоса
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageResult.ErrorMessage">
+            <summary>
+            Сообщение об ошибки, в случаи ошибочного выполнения запоса
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.BasePageResult.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.BasePageResult.#ctor(System.Data.DataSet)">
+            <summary>
+            Конструктор
+            </summary>
+            <param name="dataSet">Набор данных с результатами запоса</param>
+        </member>
+        <member name="T:ANBR.Common.BasePageResultTyped`1">
+            <summary>
+            Результат постраничного запроса к базе данных в виде списка объектов
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:ANBR.Common.BasePageResultTyped`1.Result">
+            <summary>
+            Список объектов-результатов
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.BasePageResultTyped`1.TotalResultCount">
+            <summary>
+            Общее количество результатов
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SqlQueryResult">
+            <summary>
+            Класс представления результата запоса к базе данных
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.SqlQueryResult.Result">
+            <summary>
+            Набор данных
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.DataAdapterBase.DataReaderToArray``1(System.Data.IDataReader)">
+            <summary>
+            Конвертирует IDataReader в массив определенного типа. Для значение используется первый столбец. 
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.DataAdapterBase.DataReaderToArray``1(System.Data.IDataReader,System.Int32)">
+            <summary>
+            Конвертирует IDataReader в массив определенного типа. Для значение используется столбец columnIndex. 
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="dr"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.DataAdapterBase.DataReaderToFirstRow``1(System.Data.IDataReader,ANBR.Common.Converter{``0},``0,System.Boolean)">
+            <summary>
+            Функция для преобразования первой строки IDataReader в объект с помощью функции преобразования
+            </summary>
+            <typeparam name="T1"></typeparam>
+            <param name="dr"></param>
+            <param name="converter">Функция преобразования</param>
+            <param name="ifEmpty">Что вернуть, если IDataReader пустой</param>
+            <param name="closeDataReader">Закрывать IDataReader после окончания работы </param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.DataAdapterBase.PagingDataSet(System.Data.IDataReader,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Возвращает страницу из нбора данных
+            </summary>
+            <param name="dr"></param>
+            <param name="fromPage"></param>
+            <param name="pageRowCount"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.DataReaderExt">
+            <summary>
+            Разширение для интерфейса IDataReader. 
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.DataReaderExt.GetValue``1(System.Data.IDataReader,System.String,``0)">
+            <summary>
+            Возвращает значение колонки по имени, если оно не NULL, в противном случае возвращает defaultValue
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dr"></param>
+            <param name="columnName">Наименование колонки</param>
+            <param name="defaultValue">Возвращаемое значение, если значение в источнике DbNull</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.DataReaderExt.GetValue``1(System.Data.IDataReader,System.Int32,``0)">
+            <summary>
+            Возвращает значение колонки по индексу, если оно не NULL, в противном случае возвращает defaultValue
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="dr"></param>
+            <param name="columnIndex">Наименование колонки</param>
+            <param name="defaultValue">Возвращаемое значение, если значение в источнике DbNull</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.FavoritesQuery">
+            <summary>
+            Заброс "Избранное": класс хранения в xml
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FavoritesQuery.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FavoritesQuery.FromXmlContent(System.String)">
+            <summary>
+            Инициализация запроса из строки
+            </summary>
+            <param name="xmlContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.FavoritesQuery.ToXmlContent">
+            <summary>
+            Конвертация в строковое представление в формате xml
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Common.FavoritesQuery.ObjectId">
+            <summary>
+            Идентификатор объекта
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.FilterQueryViewType">
+            <summary>
+            Визуализатор фильтра запросов
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.QueryFileData">
+            <summary>
+            Данные файла сохраненного запроса
+            </summary>[XmlRoot]
+        </member>
+        <member name="T:ANBR.Common.Filters.MainQueryInfo">
+            <summary>
+            Описание запроса
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.FTDLQuery">
+            <summary>
+            Класс хранения запроса в формате xml
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLQuery.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLQuery.AsDataSource">
+            <summary>
+            Представление списка параметров в виде, понятном визуализаторам
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLQuery.ToString">
+            <summary>
+            Строковое представление запроса
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLQuery.Item(System.String)">
+            <summary>
+            Индексер по имени параметра
+            </summary>
+            <param name="parameterName">Имя параметра</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLQuery.Clone">
+            <summary>
+            Создание копии объекта
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLQuery.CheckGlobalParametersOnExecute(System.Int32,System.Int32)">
+            <summary>
+            Проверка на подстановку глобальных переменных перед выполнением запросв
+            </summary>
+            <param name="globalRubricId"></param>
+            <param name="globalObjectId"></param>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLQuery.FTDLText">
+            <summary>
+            Текст шаблона запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLQuery.ObjectTypeID">
+            <summary>
+            Тип обозреваемых объектов, возвращаемых в тексте запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLQuery.Parametrs">
+            <summary>
+            Массив параметров запроса, подставляемых в шаблон
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.QueryParameterType">
+            <summary>
+            Тип значения, используемого в параметре
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.FTDLParameter">
+            <summary>
+            Параметр щаблона запроса
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLParameter.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLParameter.ValidateValue">
+            <summary>
+            Проверка соответствия значения параметра его типу
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLParameter.ToString">
+            <summary>
+            Строковое представление параметра
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLParameter.GetNativeValue">
+            <summary> Приведение значения-строки параметра к действительному типу 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Filters.FTDLParameter.Clone">
+            <summary>
+            Создание копиии объекта
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.Name">
+            <summary>
+            Имя параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.Type">
+            <summary>
+            Тип значения параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.TypeID">
+            <summary>
+            Идентификатор типа - вспомогательное поле, используемое для типов объектов и словарей
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.Caption">
+            <summary>
+            Подсказка, выдаваемая пользователю при вводе параметра - русскоязычное название параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.Description">
+            <summary>
+            Описание параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.MultiValue">
+            <summary>
+            Признак составного значения
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.Value">
+            <summary>
+            Значение параметра
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Filters.FTDLParameter.ValueText">
+            <summary>
+            Строкое представление параметра (для объектов)
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.CQ_X">
+            <summary>
+            Параметр автоподстановки при drill-down из cross view в standard view по направлению x
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.CQ_Y">
+            <summary>
+            Параметр автоподстановки при drill-down из cross view в standard view по направлению y
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.IDCO">
+            <summary>
+            Идентификатор текущего объекта в фильтре запросов первого уровня
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.IDCO2">
+            <summary>
+            Идентификатор текущего объекта в фильтре запросов первого уровня
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.GlobalRubric">
+            <summary>
+            Идентификатор глобальной рубрики (пользовательские настройки базы данных).
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.GlobalObject">
+            <summary>
+            Идентификатор главного объекта (пользовательские настройки базы данных).
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.FTDLParameter.DefaultParameterName">
+            <summary>
+            Имя параметра по умолчанию
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Filters.TypeObjectListView">
+            <summary>
+            ТИп Отображения списка объектов
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.Table">
+            <summary>
+            Таблица
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.CrossTable">
+            <summary>
+            Кросс-Таблица
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.Map">
+            <summary>
+            Геокарта
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.Graph">
+            <summary>
+            График
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.Tree">
+            <summary>
+            Дерево
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Filters.TypeObjectListView.Gauge">
+            <summary>
+            Измеритель
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.FilterQuery">
+            <summary>
+            Фильтр запроса: класс хранения в xml
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FilterQuery.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FilterQuery.FromXmlContent(System.String)">
+            <summary>
+            Инициализация фильтра из строки
+            </summary>
+            <param name="xmlContent"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.FilterQuery.ToXmlContent">
+            <summary>
+            Конвертация в строковое представление в формате xml
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ANBR.Common.FilterQuery.Header">
+            <summary>
+            Заголовок фильтра
+            </summary>[XmlElement]
+        </member>
+        <member name="P:ANBR.Common.FilterQuery.FirstLevel">
+            <summary> Xml-представление первого уровня
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQuery.SecondLevel">
+            <summary> Xml-представление второго уровня
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.FilterQueryHeader">
+            <summary>
+            Заголовок фильтра запроса
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FilterQueryHeader.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.QueryName">
+            <summary>
+            Имя запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.UseSecondLevel">
+            <summary>
+            Флаг использования второго уровня
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.ViewType">
+            <summary>
+            Тип визуализатора запроса
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.TreeCommentName">
+            <summary>
+            Имя столбца, используемого в качестве preview для представления в виде дерева
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.IsSystem">
+            <summary>
+            Общий либо персональный доступ к фильтру
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.ShowParametersInEditor">
+            <summary>
+            Отображать ли параметры в окне списка фильтров
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryHeader.IsDefault">
+            <summary>
+            Является ли фильтром по умолчанию
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.FilterQueryLevel">
+            <summary>
+            Уровень фильтра
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.FilterQueryLevel.#ctor">
+            <summary>
+            Конструктор
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.FilterQueryLevel.ID">
+            <summary>
+            Идентификатор объекта уровня
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.FilterQueryLevel.SecondLevelID">
+            <summary>
+            Идентификатор объекта второго уровня
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.FilterQueryLevel.Comment">
+            <summary>
+            Комментарий к уровню
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.DocumentProcessed">
+            <summary>
+              Looks up a localized string similar to Документ обработан..
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.ErrorException1">
+            <summary>
+              Looks up a localized string similar to {0} Ошибка: {1} Сообщение {2}.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.ErrorException2">
+            <summary>
+              Looks up a localized string similar to             Внутренняя ошибка: {0} Сообщение {1}.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.ErrorProcessingFileX0X1">
+            <summary>
+              Looks up a localized string similar to Ошибка при обработке файла {0} : {1}.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.FileDeleted">
+            <summary>
+              Looks up a localized string similar to Удалить файл .
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.FileDeleting">
+            <summary>
+              Looks up a localized string similar to Удаление файла .
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.FilterQueryDefaultName">
+            <summary>
+              Looks up a localized string similar to Профессиональный фильтр 1.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.FilterQueryFirstLevelDefaultCaption">
+            <summary>
+              Looks up a localized string similar to Текущий объект первого уровня..
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.FilterQuerySecondLevelDefaultCaption">
+            <summary>
+              Looks up a localized string similar to Текущий объект второго уровня..
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.IDApplicationServerInitializationFailed">
+             <summary>
+               Looks up a localized string similar to Сбой при попытке инициализации ИД для сервера приложений!
+            logName - .
+             </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.IDApplicationServerInitializationSuccessful">
+             <summary>
+               Looks up a localized string similar to Инициализация ИД для сервера приложений , произведена успешно.
+            logName - .
+             </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.IncompatibleTypes">
+            <summary>
+              Looks up a localized string similar to Несовместимые типы!.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.InvalidFullTextSearchString">
+            <summary>
+              Looks up a localized string similar to Поисковая строка должна содержать по крайней мере три печатных символа подряд..
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.NewChangesInFolder">
+            <summary>
+              Looks up a localized string similar to Обнаружены изменения в папке!.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.NewFile">
+            <summary>
+              Looks up a localized string similar to Обнаружен файл!.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeBool">
+            <summary>
+              Looks up a localized string similar to Булево значение.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeDateTime">
+            <summary>
+              Looks up a localized string similar to Дата.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeDictionary">
+            <summary>
+              Looks up a localized string similar to Словарь.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeIdList">
+            <summary>
+              Looks up a localized string similar to Список идентификаторов.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeInt">
+            <summary>
+              Looks up a localized string similar to Число.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeObject">
+            <summary>
+              Looks up a localized string similar to Объект.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeRubric">
+            <summary>
+              Looks up a localized string similar to Рубрика.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeString">
+            <summary>
+              Looks up a localized string similar to Строка.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeText">
+            <summary>
+              Looks up a localized string similar to Текст.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.QueryParameterTypeType">
+            <summary>
+              Looks up a localized string similar to Тип.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.SubstitutionX">
+            <summary>
+              Looks up a localized string similar to Подстановка по X.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.SubstitutionY">
+            <summary>
+              Looks up a localized string similar to Подстановка по Y.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewCrossTable">
+            <summary>
+              Looks up a localized string similar to Кросс-Таблица.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewGauge">
+            <summary>
+              Looks up a localized string similar to Измеритель.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewGraph">
+            <summary>
+              Looks up a localized string similar to График.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewMap">
+            <summary>
+              Looks up a localized string similar to Геокарта.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewTable">
+            <summary>
+              Looks up a localized string similar to Таблица.
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Properties.Resources.TypeObjectListViewTree">
+            <summary>
+              Looks up a localized string similar to Дерево.
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Security.WCFScreen">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Security.WCFScreen.DiscoverAuthenticationTypeOnServerSideOnly">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Security.WCFScreen.PredifinedEndpoint(ANBR.Common.Security.WCFSAServiceMeta,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="saService"></param>
+            <param name="definedAddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Security.WCFScreen.PredifinedBinding(ANBR.Common.Security.WCFSAServiceMeta)">
+            <summary>
+            
+            </summary>
+            <param name="saService"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.Security.WCFScreen.PredefinedPort(ANBR.Common.Security.AuthenticationType,ANBR.Common.Security.WCFSAServiceMeta.SAServiceType)">
+            <summary>
+            
+            </summary>
+            <param name="authType"></param>
+            <param name="stype"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.Security.WCFSAServiceMeta">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.Security.WCFSAServiceMeta.SAServiceType">
+            <summary>
+            Вид службы 
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.Security.WCFSAServiceMeta.SAServiceType.Paint">
+            <summary>
+            Служба подсветки (новая) 
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.Security.WCFSAServiceMeta.#ctor(ANBR.Common.Security.WCFSAServiceMeta.SAServiceType,System.String,ANBR.Common.Security.AuthenticationType)">
+            <summary>
+            Инициализирует объект. 
+            </summary>
+            <param name="saServiceType"></param>
+            <param name="serverName"></param>
+            <param name="authType"></param>
+        </member>
+        <member name="P:ANBR.Common.Security.WCFSAServiceMeta.saServiceType">
+            <summary>
+            Тип службы
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Security.WCFSAServiceMeta.Address">
+            <summary>
+            Адрес
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Security.WCFSAServiceMeta.ServerName">
+            <summary>
+            Имя сервера
+            </summary>
+        </member>
+        <member name="P:ANBR.Common.Security.WCFSAServiceMeta.AuthType">
+            <summary>
+            Тип аутентификации
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SqlQueryBuilder.SqlResultColumn">
+            <summary>
+            Базовый класс результирующей колонки в запорсе.
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SqlQueryBuilder.SqlTableColumn">
+            <summary>
+            Результирующая колонка от таблицы
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SqlQueryBuilder.SqlAgregateColumn">
+            <summary>
+            Результирующая колонка-агрегат
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SqlQueryBuilder.SqlCustomColumn">
+            <summary>
+            Результирующая колонка-агрегат
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.DocumentFragmentWrapper">
+            <summary>
+            Класс-обертка координат упоминания фрагмента.
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentFragmentWrapper.StartPosition">
+            <summary>
+            Начало
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.DocumentFragmentWrapper.Length">
+            <summary>
+            Длина
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.MentionPositionWrapper">
+            <summary>
+            Класс-обертка координат упоминания объекта. 
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.MentionPositionWrapper.StartPosition">
+            <summary>
+            Начало
+            </summary>
+        </member>
+        <member name="F:ANBR.Common.MentionPositionWrapper.EndPosition">
+            <summary>
+            Конец
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.EntityDescription`1">
+            <summary>
+            Описание сущности
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.EnumDescription">
+            <summary>
+            Описание значения перечисления. Берется из его атрибута "Description"
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.SADescriptionAttribute">
+            <summary>
+            Атрибут описания сущности. Хранит именованный идентификатор имени строкового ресурса, используемого при локализации
+            </summary>\
+        </member>
+        <member name="M:ANBR.Common.SADescriptionAttribute.GetResourceDescription(System.Type)">
+            <summary>
+            Получить описание сущности из ресурса сборки по идентификатору
+            </summary>
+            <param name="attributeEntityType">Тип сущности, к которой применяется атрибут</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.K_TextLocationTranslator">
+            <summary>
+            Преобразователь позиции в тексте (RTF-тексте)
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.K_RangeInt">
+            <summary>
+            Границы диапазона
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.K_TranslateDirection">
+            <summary>
+            Направление преобразования позиции в тексте
+            </summary>
+        </member>
+        <member name="T:ANBR.Common.K_Helper">
+            <summary>
+            Вспомогательный класс (Алгоритмы + Строки)
+            </summary>
+        </member>
+        <member name="M:ANBR.Common.K_Helper.FindRangeOfLocation(System.Collections.Generic.List{System.Int32},System.Int32)">
+            <summary>
+            Ищет диапазон (границы o...o), в который попадет целое число (location: V)
+            |-----|---|--------o----V---o------------|
+            </summary>
+            <param name="borders">Список границ</param>
+            <param name="location">Число</param>
+            <returns>Левая и правая границы (индексы) найденного диапазона</returns>
+        </member>
+        <member name="M:ANBR.Common.K_Helper.IsEmpty(System.String)">
+            <summary>
+            Checks if string is empty (null or white space) [ANBR]
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.K_Helper.IsNotEmpty(System.String)">
+            <summary>
+            Checks if string is not empty (not 'null or white space') [ANBR]
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.K_Helper.IsEmpty(System.Object)">
+            <summary>
+            Checks if object reference is empty (==null) [ANBR]
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Common.K_Helper.IsNotEmpty(System.Object)">
+            <summary>
+            Checks if object reference is not empty (!=null) [ANBR]
+            </summary>
+            <param name="o"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Common.LanguageGlobal">
+            <summary>
+            Язык (документа, синонима типа факта...) 
+            </summary>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult">
+            <summary>
+            Результаты выполнения конкретного шага комплексного извлечения сущностей
+            из списка документов. 
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.Step">
+            <summary>
+            Шаг
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.StepProgressState">
+            <summary>
+            Состояние шага (Начало/Завершение)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.StepCompleteState">
+            <summary>
+            Состояние шага (Успех/Провал)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MessageOfStepEN">
+            <summary>
+            Message (or error message if happened) of whole step 
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MessageOfStepRU">
+            <summary>
+            Сообщение (или сообщение об ошибке) всего шага
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MessageOfStepDetails">
+            <summary>
+            Error message (detailed) of whole step (if it happened)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.ResultsByDoc">
+            <summary>
+            Результаты шага (сущности созданные/связанные/найденные) по документам
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.ALL_STARTED">
+            <summary>
+            Обработка запущена
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.ALL_FINISHED">
+            <summary>
+            Обработка завершена
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MONITOR_OBJS_SEARCH_STARTED">
+            <summary>
+            Поиск объектов мониторинга в документах запущен
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MONITOR_OBJS_SEARCH_STOPPED_BY_USER">
+            <summary>
+            Поиск объектов мониторинга в документах прерван Пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.DOCS_SPLITTING_STARTED">
+            <summary>
+            Разбиение документов на предложения запущено
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.DOCS_SPLITTING_STOPPED_BY_USER">
+            <summary>
+            Разбиение документов на предложения прервано Пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.FACTS_AUTOEXTRACT_STOPPED_BY_USER">
+            <summary>
+            Извлечение фактов из документов прервано Пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.FACTS_AUTOEXTRACT_STARTED">
+            <summary>
+            Извлечение фактов из документов запущено
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.FIND_OBJS_IN_FACTS_STARTED">
+            <summary>
+            Поиск объектов в фактах запущен
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.FIND_OBJS_IN_FACTS_STOPPED_BY_USER">
+            <summary>
+            Поиск объектов в фактах прерван Пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.OBJECTS_AUTOEXTRACT_STARTED">
+            <summary>
+            Извлечение новых объектов из фактов запущено
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.OBJS_AUTOEXTRACT_STOPPED_BY_USER">
+            <summary>
+            Извлечение новых объектов из фактов прервано Пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.MONITOR_OBJS_SEARCH_FAILURE_NO_INPUT">
+            <summary>
+            Поиск объектов мониторинга в документах завершен
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.FIND_OBJS_IN_FACTS_FAILURE_NO_INPUT">
+            <summary>
+            Поиск объектов в фактах завершен [не задан список документов]
+            </summary>
+        </member>
+        <member name="M:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.ToString">
+            <summary>
+            Строковое представление.
+            </summary>
+            <returns>Строковое представление</returns>
+        </member>
+        <member name="M:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.Equals(System.Object)">
+            <summary>
+            Сравнивает на равенство.
+            </summary>
+            <param name="obj"></param>
+            <returns>результат</returns>
+        </member>
+        <member name="M:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.op_Equality(ANBR.MonitorObj.Contracts.ComplexAutoExtractResult,ANBR.MonitorObj.Contracts.ComplexAutoExtractResult)">
+            <summary>
+            Сравнивает на равенство.
+            </summary>
+            <param name="r1"></param>
+            <param name="r2"></param>
+            <returns>результат</returns>
+        </member>
+        <member name="M:ANBR.MonitorObj.Contracts.ComplexAutoExtractResult.op_Inequality(ANBR.MonitorObj.Contracts.ComplexAutoExtractResult,ANBR.MonitorObj.Contracts.ComplexAutoExtractResult)">
+            <summary>
+            Сравнивает на неравенство.
+            </summary>
+            <param name="r1"></param>
+            <param name="r2"></param>
+            <returns>результат</returns>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.DocumentProcessingResult">
+            <summary>
+            Результаты шага комплексного извлечения сущностей из документа
+            (N = -1: поле неприменимо к этому шагу). 
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.LastErrorText">
+            <summary>
+            Последняя ошибка (если была; если нет - то пустая строка)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.Status">
+            <summary>
+            Статус обработки документа 
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.NObjsMonFound">
+            <summary>
+            Кол-во найденных объектов мониторинга  (шаг 1 - MonitorObjectSearch)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.NSentencesSplit">
+            <summary>
+            Кол-во предложений, на которые разбит документ (шаг 2 - DocSplitToSentences)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.NFactsCreated">
+            <summary>
+            Кол-во созданных фактов  (автоизвлечение) (шаг 3 - FactAutoExtract)
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.NObjsFoundLinked">
+            <summary>
+            Кол-во найденных объектов в фактах и затем привязанных к фактам (шаг 4 - ObjectSearch)
+            т.е. связей Объект-Факт по конкретному документу
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentProcessingResult.NObjsCreated">
+            <summary>
+            Кол-во созданных объектов (автоизвлечение) (шаг 5 - ObjectAutoExtract)
+            </summary>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.DocumentCompleteState">
+            <summary>
+            Статус обработки документа.
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentCompleteState.Success">
+            <summary>
+            Успех
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentCompleteState.Failure">
+            <summary>
+            Неудача
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentCompleteState.NotApplicable">
+            <summary>
+            Неприменимо (например, если документ еще не обрабатывался) 
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.DocumentCompleteState.PassedWithSomeErrors">
+            <summary>
+            Документ обработан, но с ошибками
+            </summary>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.StepProgressState">
+            <summary>
+            Фаза выполнения шага комплексного извлечения сущностей
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepProgressState.Started">
+            <summary>
+            Начало
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepProgressState.Finished">
+            <summary>
+            Конец
+            </summary>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.StepCompleteState">
+            <summary>
+            Статус выполнения шага комплексного извлечения сущностей из документа.
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepCompleteState.Success">
+            <summary>
+            Успех всего шага
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepCompleteState.Failure">
+            <summary>
+            Провал всего шага
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepCompleteState.PassedButSomeErrors">
+            <summary>
+            Шаг пройден, но были ошибки на некоторых объектах/документах
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepCompleteState.StoppedByUser">
+            <summary>
+            Остановлен пользователем
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.StepCompleteState.NotApplicable">
+            <summary>
+            Неприменимо, например, если шаг только начат (StepProgressState.Started)
+            </summary>
+        </member>
+        <member name="T:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep">
+            <summary>
+            Шаг комплексного извлечения сущностей из документа.
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.AllProcessingSteps">
+            <summary>
+            Весь цикл обработки документа
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.MonitorObjectSearch">
+            <summary>
+            Поиск объектов мониторинга в документе [шаг1]
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.DocSplitToSentences">
+            <summary>
+            Разбиение документа на предложения [шаг2]
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.FactAutoExtract">
+            <summary>
+            Автоизвлечение фактов из документа [шаг3]
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.ObjectSearchInFacts">
+            <summary>
+            Поиск объектов типов "Объект", "Регион", "Оценка упоминания" 
+            в фактах документа     [шаг4]
+            </summary>
+        </member>
+        <member name="F:ANBR.MonitorObj.Contracts.ComplexAutoExtractStep.ObjectAutoExtract">
+            <summary>
+            Автоизвлечение объектов из фактов  [шаг5]
+            </summary>
+        </member>
+    </members>
+</doc>

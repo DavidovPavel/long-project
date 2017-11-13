@@ -1,0 +1,197 @@
+.semantic-tabs {
+  position: fixed;
+  width: 100%;
+  height: 44px;
+  background: #555;
+  bottom:-44px;
+  left:0px;
+  z-index: 350;
+  transition: all linear 150ms;
+  &.active {
+    bottom:0px;
+    .control {
+      &:before {
+        transform: rotate(-135deg);
+      }
+      &:after {
+        transform: rotate(135deg);
+      }
+    }
+  }
+  .control {
+    position: absolute;
+    cursor: pointer;
+    top:-24px;
+    width: 48px;
+    height:24px;
+    background: #378dda;
+    left:~"calc(50% - 16px)";
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: -340;
+    box-sizing: border-box;
+    box-shadow: 0 -3px 10px 2px rgba(0,0,0,0.25);
+    &:before {
+      content: '';
+      width: 8px;
+      height: 2px;
+      position: absolute;
+      background: #fff;
+      display: block;
+      transform: rotate(-45deg);
+      top:10px;
+      left:17px;
+    }
+    &:after {
+      content: '';
+      width: 8px;
+      height: 2px;
+      position: absolute;
+      background: #fff;
+      display: block;
+      transform: rotate(45deg);
+      top:10px;
+      right:17px;
+    }
+  }
+  &.edit-mode {
+      background: #333!important;
+      .control {
+        display: none;
+      }
+    .semantic-tabs--settings {
+      background: #333!important;
+      &:before {
+        transform: rotate(90deg);
+        animation: 2s rotate360 infinite linear;
+        @keyframes rotate360 {
+          to { transform: rotate(360deg); }
+        }
+      }
+    }
+    span.semTab {
+      position: relative;
+      div {
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background: #b00;
+        top:~"calc(50% - 8px)";
+        left:~"calc(100% - 24px)";
+        &:before {
+          width: 1px;
+          height: 8px;
+          background: #fff;
+          content: '';
+          position: absolute;
+          transform: rotate(-45deg);
+          display: block;
+          top:~"calc(50% - 4px)";
+          left:~"calc(50% - 0.5px)";
+        }
+        &:after {
+          width: 1px;
+          height: 8px;
+          background: #fff;
+          content: '';
+          position: absolute;
+          transform: rotate(45deg);
+          display: block;
+          top:~"calc(50% - 4px)";
+          left:~"calc(50% - 0.5px)";
+        }
+      }
+    }
+  }
+  ul {
+    padding:0;
+    margin: 0;
+    li {
+      display: block;
+      float: left;
+      span {
+        width:220px;
+        box-sizing: border-box;
+        margin: 5px 5px 5px 0;
+        display: block;
+        height: 34px;
+        background: #aaa;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        color:#131313;
+        &:hover {
+          box-shadow: inset 0 0 3px rgba(0,0,0,0.5);
+        }
+      }
+      &.active {
+        span {
+          background: #eee;
+          box-shadow: none;
+          &:hover {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+  }
+  .semantic-tabs--add {
+    cursor: pointer;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    display: block;
+    background: #eee;
+    margin: 0;
+    box-shadow: none;
+    margin-top: 5px;
+    &:before {
+      width: 1px;
+      height: 17px;
+      background: #333;
+      position: absolute;
+      top:~"calc(50% - 8.5px)";
+      left:~"calc(50% - 0.5px)";
+      content: '';
+    }
+    &:after {
+      width: 17px;
+      height: 1px;
+      background: #333;
+      position: absolute;
+      left:~"calc(50% - 8.5px)";
+      top:~"calc(50% - 0.5px)";
+      content: '';
+    }
+    &:hover{
+      box-shadow: none;
+      background: #fff;
+    }
+  }
+  .semantic-tabs--settings {
+    cursor: pointer;
+    position: relative;
+    width: 44px;
+    height: 44px;
+    display: block;
+    background: #555;
+    margin: 0;
+    box-shadow:none!important;
+    &:before {
+      content: '';
+      width: 24px;
+      height: 24px;
+      background: url('../images/settings.png') no-repeat 0 0;
+      position: absolute;
+      top:~"calc(50% - 12px)";
+      left:~"calc(50% - 12px)";
+      transition: all linear 150ms;
+    }
+    &:hover {
+      &:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}

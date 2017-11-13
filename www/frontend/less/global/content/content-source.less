@@ -1,0 +1,42 @@
+﻿#source-content {
+    & .anbr-toolbar { display: none; background-color: #f9f9f9; border-bottom: solid 1px #d9d9d9; margin-bottom: 25px;
+        & * { vertical-align: middle; }
+        & > button { display: none;
+            &.visible { display: inline-block !important; }
+            &.translate { margin-left: 12px;
+                &:before { content: ''; position: absolute; width: 1px; height: 24px; border-left: solid 1px #ccc; left: -6px; top: 3px; }
+            }
+        }
+        & .link-source-original { float: right; margin: 5px 20px 0 0; display: none;
+            & > svg { margin-right: 4px; }
+            & .dropmenu-arrow { display: inline-block; width: 0; height: 0; border-color: #666 transparent #666 transparent; border-style: solid; border-width: 4px 4px 0 4px;margin-top:10px; }
+            & .dropdown-menu { display: none; position: absolute; width: 222px; background-color: #e5e5e5; padding: 0; top: inherit; left: inherit; margin-top: 8px; margin-left: -11px; }
+        }
+
+        & .goto-mark { padding: 0 14px; display: inline-block; width: 220px;
+            & * { vertical-align: middle; }
+            & .font-icon { cursor: pointer; }
+            &:before { content: ''; position: relative; width: 1px; height: 24px; border-left: solid 1px #ccc; left: -14px; top: 2px; }
+            & input { width: 40px; height: 22px; border: solid 1px #bbb; margin-left: 16px; margin-right: 7px; display: inline-block; padding: 0px 8px; color: #333; }
+            & .center-button { display: inline-block; width: 16px; height: 16px; border: solid 1px #777; border-radius: 50%; margin: 0 16px; cursor: pointer; }
+            & .down { transform: rotate(180deg); margin-top: 4px; }
+        }
+
+        & .title-mode { color: #999; display: inline-block; margin-right: 14px;
+            &.on { color: #666; }
+            &.switch-button[mode=on] { background-color: #666 !important; }
+        }
+    }
+
+    & .Mark { background-color: yellow; }
+
+    & .load { padding: 0 20px; overflow: auto;
+        & .format { background: transparent; border: 0; font-family: 'robotofssp'; }
+    }
+
+    & .link-rubrics { text-align: center; padding: 20px; font-size: 14px; margin-bottom: 10px; font-weight: 500; }
+}
+
+#DetailContent li:nth-last-child(1), #DetailContent li:nth-last-child(2) { display: none; }
+
+.radialmenu-home { background-image:url('/images/rm-home.png'); }

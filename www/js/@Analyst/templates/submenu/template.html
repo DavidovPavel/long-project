@@ -1,0 +1,8 @@
+﻿<%
+var c = 0; 
+_.each(models,function(m){ 
+c++;
+%>
+<span class="link" id="<%= m.id %>"><%= m.get("title") %></span>
+<%= c!=models.length?"&nbsp;|&nbsp;":"" %>
+<% }); %>

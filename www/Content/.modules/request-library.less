@@ -1,0 +1,86 @@
+﻿@import "../../frontend/less/components/typo";
+//@import "../.components/form";
+@import "../../frontend/less/components/form";
+@import "../../frontend/less/components/icons";
+#RequestLibrary { 
+    //position: fixed; top: 45px; bottom: 20px; left: 20px; right: 20px; background-color: #fff; z-index: 999;
+    &.isDemo { bottom: 0;
+        & .bottom * { display: none; }
+        & .authorise-block { display: none; }
+    }
+    & .notice { color: #fff; padding: 40px; border-radius: 6px; background-color: #1579c4; }
+    & .authorise-block {.panel(); position: absolute; top: 1px; left: 2px; right: 2px; bottom: 3px; z-index: 100;
+        & .bum { padding: 40px;}
+    }
+    & h2 { padding: 0; margin: 0; font-weight: normal; font-size: 16px; color: @color-norm; padding-left: 20px; line-height: 45px; border-bottom: solid 1px @color-DC; vertical-align: middle; background-color: @color-F3; }
+    & .toolsbar { line-height: 34px; height: 38px; border-bottom: solid 1px @color-DC; border-left: solid 1px @color-DC; background-color: @color-F3; color: @color-76; cursor: pointer; padding-left: 16px;
+        & > .notice { display: none; margin: 20px; position: absolute; top: 110px; left: 20px; line-height: normal; right: 60%; }
+        & > span { .size(26px); line-height: 20px; text-align: center; vertical-align: middle; overflow: hidden;
+            &.find { text-align: left; padding-left: 4px;
+                & * { vertical-align: middle; }
+                & input { width: 110px; height: 20px; border: 0; background-color: transparent; .noshadow(); padding: 0 2px 0 6px; }
+                & .font-icon-cancel { font-size: 10px; }
+                &.O { background-color: @color-E8;
+                    &:hover { background-color: @color-E8; }
+                }
+            }
+            &:hover { background-color: @color-E8; }
+            & > .font-icon { font-size: 16px; color: @color-norm; vertical-align: middle; vertical-align: middle; }
+        }
+    }
+    .params {
+        padding:20px 0;
+    }
+    & .left {
+        & .Tree { //margin: 10px 0 2px 30px; 
+                  }
+    }
+    & div.right { position: absolute; top: 6px; bottom: 81px; left: 40%; right: 1px; z-index: 1;
+        & > .font-icon { font-size: 21px; margin-left: -21px; margin-top: 6px; float: left; cursor: pointer; color: @color-norm; padding-top: 2px; padding-bottom: 4px; background-color: @color-F3; display: none;
+            &:hover { background-color: @color-E8; }
+        }
+        & > .notice { width: 515px; display: none; position: absolute; top: 110px; margin-left: 40px; }
+        & .params { color: @color-norm;
+            & .params-container {
+                & .tab { padding: 9px; background-color: #fff; border: solid 1px @color-DC; border-bottom: 0; float: left; margin-bottom: -1px; display: flex;
+                    & span { margin-left: 7px; display: inline-block; }
+                    & svg { fill: @color-blue; }
+                    & * { vertical-align: middle; }
+                }
+                & .tab-container { background-color: #fff; border: solid 1px @color-DC; clear: both; padding: 0 20px 15px;
+                    & h4 { font-size: 16px; font-weight: normal; margin: 0; padding: 15px 0; }
+                    & > div { display: flex;
+                        & label { color: @color-8; padding-right: 40px; text-align: right; width: 200px; height: 36px; flex-direction: row; align-items: center; justify-content: flex-end; display: flex; }
+                    }
+                    & .action { line-height: 20px; cursor: pointer;
+                        & svg { fill: @color-norm; height: 20px; width: 20px; }
+                        & * { vertical-align: middle; }
+                        &.loader { width: auto; }
+                    }
+                }
+            }
+        }
+        & .result { /*border:solid 1px @color-DC;*/ padding-top: 5px; display: none; background-color: #fff; }
+    }
+
+    & .bottom { height: 81px; border-top: solid 1px @color-D7; background-color: @color-F0; bottom: 0; position: absolute; width: 100%; padding: 13px 30px; text-align: right;
+        & .panel { .panel(); position: absolute; margin-top: -190px; top: 26px; left: 7px; min-width: 270px; padding-top: 12px; display: none; z-index: 1;
+            & .w { display: flex; flex-direction: column; justify-content: space-between; text-align: left;
+                & .font-icon-cancel { top: 3px; right: 3px; font-size: 10px; position: absolute; }
+                & .dropmenu-arrow { left: 28px;
+                    &:before { background-color: @color-F9; }
+                }
+                & div { padding: 6px 14px; display: flex; justify-content: space-between;
+                    & label, & b { background-color: #fff; padding: 3px; white-space: nowrap; }
+                    & .dot { border-bottom: dotted 1px @color-7; display: block; width: 100%; height: 17px; min-width: 50px; }
+                }
+                & > .link { height: 35px; border-top: solid 1px @color-E6; background-color: @color-F9; color: @color-blue; line-height: 35px; vertical-align: middle; padding: 0 20px; margin-top: 12px; cursor: pointer; }
+            }
+        }
+        & > div { float: left; cursor: pointer; margin-top: 20px;
+            & * { vertical-align: middle; }
+            & svg {.size(24px); fill: @color-dark; margin-right: 8px; }
+            & span { color: @color-dark; }
+        }
+    }
+}

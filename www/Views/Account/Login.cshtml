@@ -1,0 +1,49 @@
+﻿@model www.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+    ViewBag.Name = "login";
+    var currentLang = ViewBag.CurrentLang;
+    Layout = "~/Views/Shared/ANBR/_Layout.cshtml";
+}
+
+<section id="loginForm" style="margin: 20px;">
+    @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true)
+
+        <fieldset>
+            <legend>Авторизация</legend>
+            <ol>
+                <li>
+                    @Html.LabelFor(m => m.UserName)
+                    @Html.TextBoxFor(m => m.UserName)
+                    @Html.ValidationMessageFor(m => m.UserName)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.Password)
+                    @Html.PasswordFor(m => m.Password)
+                    @Html.ValidationMessageFor(m => m.Password)
+                </li>
+                <li>
+                    @Html.LabelFor(m => m.DatabaseID)
+                    @Html.TextBoxFor(m => m.DatabaseID)
+                    @Html.ValidationMessageFor(m => m.DatabaseID)
+                </li>
+                <li>
+                    @Html.CheckBoxFor(m => m.RememberMe)
+                    @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
+                </li>
+            </ol>
+            <input type="submit" value="Отправить" />
+        </fieldset>
+    }
+</section>
+
+<script type="text/javascript">
+    require.config({
+        config: { i18n: { locale: '@currentLang.ToLower()' } }
+    });
+    define("access", { data: [] });
+</script>

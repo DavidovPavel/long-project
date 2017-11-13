@@ -1,0 +1,112 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>components</title> 
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/modernizr")  
+<link href="~/Content/anbr/anbr.min.css" rel="stylesheet" />
+<style type="text/css">
+    .svg-icons svg { width:32px;height:32px; margin:16px; }
+    .cmd span { cursor: pointer; font-weight: bold;margin:4px 40px;display:inline-block; }
+    .components { margin:20px;line-height:30px; }
+        .components * { vertical-align: middle; }
+        .components sep {display:inline-block;width:20px; }
+            .components sep:after { content:'';height:20px;border-left:solid 1px #ccc;margin-left:10px; }
+
+</style> 
+    </head>
+    <body>
+
+<div class="components">
+    
+ <svg class="icon-close"><use xlink:href="#icon-close"></use></svg>
+<sep></sep>
+    <span class="font-icon font-icon-checkbox"><input type="checkbox" /></span>
+    <span class="font-icon font-icon-checkbox checked"><input type="checkbox" /></span>
+<sep></sep>
+    <span class="radio-button"><span></span><input type="radio" name="radio" /></span>
+    <span class="radio-button checked"><span></span><input type="radio" name="radio" /></span>
+<sep></sep>
+ 
+        <span class="font-icon font-icon-complited"></span>
+        <span class="font-icon font-icon-invalid"></span>
+
+        <span class="font-icon font-icon-processing"></span>
+        <span class="font-icon font-icon-stopped"></span>
+        <span class="font-icon font-icon-add"></span>
+        <span class="font-icon font-icon-repair"></span>
+        <span class="font-icon font-icon-refresh"></span>
+        <span class="font-icon font-icon-type"></span>
+        <span class="font-icon font-icon-share"></span>
+        <span class="font-icon font-icon-camera"></span>
+        <span class="font-icon font-icon-add"></span>
+
+        <span class="font-icon font-icon-arrow-back"></span>
+        <span class="font-icon font-icon-arrow-back-mirror"></span>
+    <span class="font-icon font-icon-go"></span>
+    <span class="font-icon font-icon-filter"></span>
+
+    <span class="font-icon font-icon-dislike"></span>
+    <span class="font-icon font-icon-like"></span>
+    <span class="font-icon font-icon-flag"></span>
+    <span class="font-icon font-icon-help"></span>
+    <span class="font-icon font-icon-play"></span>
+    <span class="font-icon font-icon-calendar"></span>
+    <span class="font-icon font-icon-find"></span>
+    <span class="font-icon font-icon-clear"></span>
+    <span class="font-icon font-icon-openpane"></span>
+
+    <span class="font-icon font-icon-cancel"></span>
+    <span class="font-icon font-icon-more"></span>
+    <span class="font-icon font-icon-sleft"></span>
+    <span class="font-icon font-icon-sright"></span>
+    <span class="font-icon font-icon-blist"></span>
+    <span class="font-icon font-icon-result"></span>
+    <span class="font-icon font-icon-delete"></span>
+    <span class="font-icon font-icon-edit"></span>
+    <span class="font-icon font-icon-newfolder"></span>
+    <span class="font-icon font-icon-rename"></span>
+    <span class="font-icon font-icon-comment"></span>
+    <span class="font-icon font-icon-copy"></span>
+    <span class="font-icon font-icon-link"></span>
+
+<sep></sep>
+<span class="loader"><svg><use xlink:href="#loader-rotator"></use></svg></span>
+
+<sep></sep>
+<button class="btn btn-flagy-rev btn-grey">button</button>
+&nbsp;
+<button class="btn btn-flagy">button</button>
+&nbsp;
+<button class="btn btn-flagy btn-blue">button</button>
+
+<sep></sep>
+
+<button class="switch-button" mode="off"><span></span></button>
+
+</div>
+
+<div class="cmd">
+    <span data-id="32">32px</span><span data-id="24">24px</span><span data-id="16">16px;</span>
+</div>
+<div class="svg-icons"></div>
+        @Html.Partial("anbr/SpriteSVG")
+<script type="text/javascript">
+    $(function () {
+        var svg = "<svg><use xlink:href='{0}' /></svg>";
+        $("svg symbol").each(function () {
+            $(".svg-icons").append($(svg.replace("{0}", ("#" + $(this).attr("id")))));
+        });
+        $(".cmd span").on("click", function () {
+            var w = $(this).attr("data-id");
+            $(".svg-icons svg").css({ width: w, height: w });
+        });
+    });
+</script>
+    </body>
+</html>

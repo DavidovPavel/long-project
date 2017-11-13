@@ -1,0 +1,596 @@
+﻿.g-dialog--wrapper {
+    will-change: contents;
+    //position:absolute;
+    display: none;
+    background: transparent;
+    min-width: 520px;
+    min-height: 380px;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%,-50%);
+    box-shadow: 0 15px 18px rgba(0,0,0,0.25);
+    z-index: 9000;
+    //transition: all ease-out 500ms;
+    &.feedback {
+        position: fixed;
+        top: ~"calc(50% - 40vh)";
+        left: ~"calc(50% - 45vw)";
+        width: 90vw;
+        height: 80vh;
+        transform: translate(0, 0);
+        transition: none !important;
+        z-index: 9900;
+    }
+
+    &[header="red"] {
+        & > .g-dialog--header {
+            background: #931313;
+        }
+    }
+
+    &[header="blue"] {
+        & > .g-dialog--header {
+            background: #115378;
+        }
+    }
+
+    &[header="yellow"] {
+        & > .g-dialog--header {
+            background: #c47d16;
+        }
+    }
+
+    &[header="green"] {
+        & > .g-dialog--header {
+            background: #206322;
+        }
+    }
+
+    &[context="true"] {
+        & > .g-dialog--context {
+            display: block;
+        }
+
+        & > .g-dialog--container {
+            height: ~"calc(100% - 54px)";
+            top: 54px;
+        }
+
+        &[toolbar="true"] {
+            & > .g-toolbar {
+                top: 54px;
+            }
+
+            & > .g-dialog--container {
+                height: ~"calc(100% - 98px)";
+                top: 98px;
+            }
+        }
+    }
+
+    &[toolbar="true"] {
+        & > .g-toolbar {
+            display: block;
+        }
+
+        & > .g-dialog--container {
+            height: ~"calc(100% - 78px)";
+            top: 78px;
+        }
+    }
+
+    &[sidebar="true"] {
+        & > .g-dialog--container {
+            & > .g-dialog--sidebar {
+                display: block;
+            }
+        }
+    }
+
+    &[size="max"] {
+        //width:100%!important;
+        //height:100%!important;
+        width: ~"calc(100vw - 265px)";
+        height: ~"calc(100vh - 210px)";
+        //top: 90px;
+        //left: 0;
+        //transform: translate(0,0);
+        & > .g-dialog--header {
+            & > .g-dialog--manage {
+                & > .size {
+                    &:before {
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        background: rgba(255,255,255,.25);
+                    }
+
+                    &:after {
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        left: calc(50% - 10px);
+                        background: rgba(255,255,255,.5);
+                        content: '';
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+
+    &[size="full"] {
+        width: 100vw;
+        height: ~"calc(100vh - 44px)";
+        top: 44px;
+        position: fixed !important;
+        left: 0;
+        transform: translate(0,0);
+
+        & > .g-dialog--header {
+            & > .g-dialog--manage {
+                & > .size {
+                    &:before {
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        background: rgba(255,255,255,.25);
+                    }
+
+                    &:after {
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        position: absolute;
+                        top: calc(50% - 10px);
+                        left: calc(50% - 10px);
+                        background: rgba(255,255,255,.5);
+                        content: '';
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+    }
+
+    &[size="def"] {
+        height: 480px;
+        width: 640px;
+    }
+
+    &[size="big"] {
+        width: 90vw;
+        height: 80vh;
+    }
+
+    &[size="med"] {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    &[size="min"] {
+        width: 460px;
+        height: 220px;
+        min-width: 460px;
+        min-height: 220px;
+        max-width: 460px;
+        max-height: 220px;
+    }
+
+    &[modal="true"] {
+        & + .g-dialog--overlay {
+            display: block;
+        }
+    }
+
+    &[footer="true"] {
+        & > .g-dialog--footer {
+            display: block;
+        }
+
+        &[context="true"] {
+            & > .g-dialog--container {
+                height: ~"calc(100% - 119px)";
+            }
+        }
+
+        &[toolbar="true"] {
+            & > .g-dialog--container {
+                height: ~"calc(100% - 143px)";
+            }
+
+            &[context="true"] {
+                & > .g-dialog--container {
+                    height: ~"calc(100% - 163px)";
+                }
+            }
+        }
+
+        & > .g-dialog--container {
+            height: ~"calc(100% - 99px)";
+        }
+    }
+
+    & > .g-dialog--header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 34px;
+        background: #333;
+        z-index: 150;
+
+        &[move="true"] {
+            cursor: move;
+        }
+
+        & > .g-dialog--title {
+            color: #fff;
+            padding-right: 142px;
+            padding-top: 9px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            user-select: none;
+
+            &[data-icon] {
+                &:before {
+                    top: ~"calc(50% - 5px)" !important;
+                    filter: brightness(50);
+                    cursor: default;
+                }
+            }
+        }
+
+        & > .g-dialog--manage {
+            position: absolute;
+            width: 142px;
+            height: 34px;
+            top: 0;
+            right: 0;
+
+            &:after {
+                display: block;
+                content: '';
+                position: static;
+                clear: both;
+                height: 0px;
+            }
+
+            & > i {
+                float: right;
+                width: 44px;
+                height: 100%;
+                position: relative;
+                cursor: default;
+                transition: background-color 200ms ease;
+                will-change: auto;
+                display: inline-block;
+
+                &.close {
+                    background-color: transparent;
+
+                    &:before, &:after {
+                        width: 2px;
+                        height: 16px;
+                        background: #fff;
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: ~"calc(50% - 8px)";
+                        left: ~"calc(50% - 1px)";
+                        transition: transform 200ms linear;
+                    }
+
+                    &:before {
+                        transform: rotate(-45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+
+                    &:hover {
+                        background-color: #900;
+
+                        &:before {
+                            transform: rotate(45deg);
+                        }
+
+                        &:after {
+                            transform: rotate(-45deg);
+                        }
+                    }
+                }
+
+                &.size {
+                    &:hover {
+                        background-color: rgba(255,255,255,0.1);
+                    }
+
+                    &:before {
+                        width: 14px;
+                        height: 14px;
+                        border: 2px solid #fff;
+                        position: absolute;
+                        top: ~"calc(50% - 7px)";
+                        left: ~"calc(50% - 7px)";
+                        content: '';
+                        box-sizing: border-box;
+                    }
+                }
+
+                &.menu {
+                    &:hover {
+                        background-color: rgba(255,255,255,0.1);
+                    }
+
+                    &:before {
+                        width: 16px;
+                        height: 14px;
+                        background: transparent;
+                        border-top: 2px solid #fff;
+                        border-bottom: 2px solid #fff;
+                        position: absolute;
+                        content: '';
+                        box-sizing: border-box;
+                        display: block;
+                        top: ~"calc(50% - 7px)";
+                        left: ~"calc(50% - 7px)";
+                    }
+
+                    &:after {
+                        width: 16px;
+                        height: 2px;
+                        background: #fff;
+                        content: '';
+                        position: absolute;
+                        top: ~"calc(50% - 1px)";
+                        left: ~"calc(50% - 7px)";
+                    }
+                }
+            }
+        }
+    }
+
+    & > .g-dialog--context {
+        position: absolute;
+        display: none;
+        top: 34px;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+        height: 20px;
+        overflow: visible;
+        border-bottom: 1px solid #efefef;
+        background: #fff;
+        z-index: 90;
+
+        & > ul {
+            display: block;
+            padding: 0;
+            margin: 0;
+            background: #f5f5f5;
+
+            & > li {
+                display: block;
+                position: relative;
+                float: left;
+                padding: 3px 7px;
+                background: #fff;
+                margin: 0;
+                line-height: 1em;
+                font-size: 13px;
+                user-select: none;
+                cursor: default;
+
+                & > ul {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    padding: 0;
+                    min-width: 128px;
+                    border: 1px solid #efefef;
+                    border-bottom: none;
+                    box-shadow: 2px 3px 4px rgba(0,0,0,0.25);
+
+                    & > li {
+                        display: block;
+                        padding: 7px 14px;
+                        margin: 0;
+                        list-style: none;
+                        background-color: #fff;
+                        border-bottom: 1px solid #efefef;
+                        white-space: nowrap;
+
+                        &:hover {
+                            background-color: #f0f0f0;
+                        }
+                    }
+                }
+
+                &:hover {
+                    & > ul {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    & > .g-dialog--promt {
+        display: none;
+        position: absolute;
+        top: 33px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #eee;
+        width: 75%;
+        max-width: 480px;
+        border-bottom-left-radius: 7.5px;
+        border-bottom-right-radius: 7.5px;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 25px;
+        z-index: 100;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+        border: 1px solid rgba(55, 141, 218, 0.23);
+
+        & > span {
+            font-size: 16px;
+            color: #111;
+            padding-bottom: 20px;
+            text-align: center;
+            display: block;
+        }
+    }
+
+    & > .g-dialog--blocker {
+        position: absolute;
+        display: none;
+        cursor: wait;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,.5);
+        z-index: 95;
+    }
+
+    & > .g-dialog--container {
+        color: #222;
+        position: absolute;
+        overflow: visible;
+        width: 100%;
+        height: ~"calc(100% - 34px)";
+        background-color: #fff;
+        left: 0;
+        top: 34px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+
+        & > .g-dialog--sidebar {
+            flex: 2;
+            overflow: auto;
+            display: none;
+            height: 100%;
+            order: 1;
+            box-sizing: border-box;
+            padding: 10px 0;
+            max-width: 300px;
+            border-right: 1px solid #ccc;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f5f5f5;
+                box-shadow: inset 0 0 2px rgba(0,0,0,.15);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #666;
+            }
+
+            &.hassidebbar {
+                padding: 0 !important;
+            }
+
+            &:after {
+                position: static;
+                content: '';
+                height: 0px;
+                clear: both;
+                display: block;
+            }
+        }
+
+        & > .g-dialog--content {
+            flex: 3;
+            height: 100%;
+            overflow: auto;
+            padding: 20px;
+            order: 2;
+            box-sizing: border-box;
+            width: 100%;
+            position: relative;
+
+            &::-webkit-scrollbar {
+                width: 10px;
+                height: 10px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: #f5f5f5;
+                box-shadow: inset 0 0 2px rgba(0,0,0,.15);
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background: #666;
+            }
+
+            &.hassidebbar {
+                padding: 0 !important;
+            }
+
+            &:after {
+                position: static;
+                content: '';
+                height: 0px;
+                clear: both;
+                display: block;
+            }
+        }
+    }
+
+    & > .g-toolbar {
+        display: none;
+        top: 34px;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    & > .g-dialog--status {
+    }
+
+    & > .g-dialog--footer {
+        height: 65px;
+        position: absolute;
+        width: 100%;
+        background: #f5f5f5;
+        box-sizing: border-box;
+        padding: 12px 20px;
+        white-space: nowrap;
+        left: 0;
+        bottom: 0;
+        display: none;
+
+        &:after {
+            display: block;
+            height: 0px;
+            content: '';
+            clear: both;
+        }
+    }
+}
+
+.g-dialog--overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    box-shadow: inset 0 0 50px rgba(0,0,0,.75);
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 8999;
+}

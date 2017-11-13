@@ -1,0 +1,27 @@
+﻿<table class="ResultSearch">
+    <tr>
+        <td style='width:100%;padding:10px 20px;'>
+            <div id="DataObject" class='Form'> 
+
+<table style="width: 100%;">
+<tr><td style="width:140px;"><%= Resources.nameofcompany %></td><td><input type='text' class='forSearch ui-corner-all Valid Required' name='title' style="width:100%" value='<%= m.title %>' /><i></i></td></tr>
+<tr><td><%= Resources.inn %></td><td><input type='text' class='ui-corner-all Valid Digits' maxlength="10" name='inn' value="<%= m.inn %>" /><i></i></td></tr>
+<tr><td><%= Resources.ogrn %></td><td><input type='text' class='ui-corner-all Valid Digits' maxlength="13" name='ogrn' value="<%= m.ogrn %>" /><i></i></td></tr>
+<tr><td><%= Resources.okpo %></td><td><input type='text' class='ui-corner-all Valid Digits' maxlength="8" name='okpo' value="<%= m.okpo %>" /><i></i></td></tr>
+</table>
+            <p style='text-align:right;'>
+                <button class="Update" style="display:none;"><%= Resources.editItem %></button>&nbsp;&nbsp;
+                <button class='Clear'><%= Resources.clearall %></button>&nbsp;&nbsp;
+                <button class='Search'><%= Resources.find %></button>&nbsp;&nbsp;
+                <button class='Create' disabled='disabled'><%= Resources.create %></button></p>
+                
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2" class="wList">
+            <h5><%= Resources.searchResults %></h5>
+            <div id="ResultSearchObjects"><table class="List"></table></div>
+        </td>
+    </tr>
+</table>

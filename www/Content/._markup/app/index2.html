@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Global Environment</title>
+    <link href="/Content/._markup/app/master.css" rel="stylesheet" />
+    <script src="/js/dist/jquery.js"></script>
+    <script src="/Content/._markup/app/app.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body class="hls ls-on">
+    <header>
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item alert-block">
+                    <span class="alert"></span>
+                    <div class="alert--container">
+                        <div class="alert--header">
+                            <h4>Внимание!</h4>
+                            <span>Ответьте, пожалуйста, на запрос системы.</span>
+                        </div>
+                        <div class="alert--list">
+                            <ul>
+                                <li>
+                                    <span>Lorem Ipsum Dolor Sit Amet</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Consectetur Adipiscing Elit</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Sed Do Eiusmod Tempor Incididunt </span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ut Labore Et Dolore Magna Aliqua</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Quis Nostrud Exercitation </span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ullamco Laboris Nisi Ut Aliquip</span>
+                                    <i class="erase"></i>
+                                </li>
+                                <li>
+                                    <span>Ex Ea Commodo Consequat</span>
+                                    <i class="erase"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation" class="active">
+                            <a href="/lang-ru-RU/db159/inquiry">Ru</a>
+                        </li>
+                        <li role="presentation" class="">
+                            <a href="/lang-en-US/db159/inquiry">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95"></span>
+                </li>
+                <li class="tray--item case-block" style="">
+                    <span id="basket-btn" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                        <span class="badge basket-num">28</span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                    <div id="blind" class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">База данных:</span></div>
+                                <div class="right">ВебВерсия. Пустая </div>
+                            </div>
+                        </div>
+                        <div class="g-blind--controls">
+                            <button class="g-form--button small flat ghost-w" onclick="location.href='/account/login?returnUrl=%2flang-ru-RU%2fdb159%2finquiry%2finquiry'">Сменить базу данных</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">ABS\ISafronov</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">ABS\ISafronov</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/Manage" target="_blank">Профиль</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                <form action="/lang-ru-RU/db159/Account/LogOff" id="logoutForm" method="post">
+                                    <input name="__RequestVerificationToken" type="hidden" value="wdBoYtOSrYRuCAhUPH_LU31SB7sKXW_FdQoSYbR-xAKOwGd38wvDAFIt9O8ZMLUb8zlDYgay7wprGxkOPM6yEwhAA7D1ooNsDHHwssopp7LtKBzZa2Fc6erHgc0S2tHu0">                            <button class="g-form--button flat ghost-w small" onclick="javascript:document.getElementById('logoutForm').submit()">
+                                        Выход
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <aside class="g-sidebar--left expanded" role="navigation">
+        <div class="control">
+            <i></i>
+        </div>
+        <ul>
+            <li>
+                <span class="inuiry-objects active">Объекты заявки</span>
+            </li>
+            <li>
+                <span class="origin4">Исходные данные</span>
+            </li>
+            <li>
+                <span class="result">Результаты</span>
+            </li>
+        </ul>
+    </aside>
+    <div class="workbench" role="main">
+        <div class="crumbs">
+            <ul>
+                <li>
+                    <span>Список заявок</span>
+                </li>
+                <li>
+                    <span>Название заявки</span>
+                </li>
+            </ul>
+        </div>
+        <div class="g-toolbar">
+            <ul>
+                <li><span class="new-person">Добавить персону</span></li>
+                <li><span class="new-org">Добавить организацию</span></li>
+                <li disabled><span class="new-vehicle">Добавить транспортное средство</span></li>
+
+                <li class="right"><div class="g-dropdown--menu"><div class="g-dropdown--placeholder"><div class="item" data-icon="icon-all">Показать все</div></div><div class="g-dropdown--container"><div class="item selected" data-icon="icon-all">Показать все</div><div class="item" data-icon="icon-inwork">В работе</div><div class="item" data-icon="icon-finished">Завершено</div><div class="item" data-icon="icon-clock">Отложено</div><div class="item" data-icon="icon-archive">В архиве</div></div></div></li>
+            </ul>
+        </div>
+        <div class="workbench--content">
+            <div class="list"><div><table class="table inquiry table-hover list"><thead><tr><th>№</th><th>Тип</th><th>Роль</th><th>Наименование</th><th>Исполнитель</th><th>Создано</th><th>Признак</th><th>Результат</th><th>Состояние</th><th></th></tr></thead><tbody class="ui-selectable"><tr class="ui-selectee"><td class="ui-selectee">1</td><td data-name="TypeName" class="ui-selectee">Персона</td><td data-name="RoleName" class="ui-selectee">Основной заемщик</td><td data-name="Display_Name" class="ui-selectee"><a href="/lang-ru-RU/db159/inquiry?prjid=22#id=699719" target="_blank" class="ui-selectee">Чичваркин Евгений </a></td><td data-name="Creator" class="ui-selectee">ABS\ISafronov</td><td data-name="CreatedDate" class="ui-selectee">13.10.2016, 12:37:11</td><td data-name="MarkNames" class="ui-selectee"></td><td data-name="Status" class="ui-selectee"><span class="status-icon red ui-selectee"></span><span class="font-icon font-icon-comment sup-icon ui-selectee"></span></td><td data-name="State" class="ui-selectee">В работе</td><td class="controls ui-selectee"><button type="button" class="btn-link ui-selectee"><svg class="icon icon-burger-menu ui-selectee"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger-menu" class="ui-selectee"></use></svg></button></td></tr><tr class="ui-selectee"><td class="ui-selectee">2</td><td data-name="TypeName" class="ui-selectee">Персона</td><td data-name="RoleName" class="ui-selectee">Основной заемщик</td><td data-name="Display_Name" class="ui-selectee"><a href="/lang-ru-RU/db159/inquiry?prjid=22#id=702940" target="_blank" class="ui-selectee">БУМЕРАНГ-Е, ООО ЧОП                            БУМЕРАНГ-Е, ООО ЧОП                БУМЕРАНГ-Е, ООО ЧОП  </a></td><td data-name="Creator" class="ui-selectee">ABS\ISafronov</td><td data-name="CreatedDate" class="ui-selectee">14.10.2016, 11:14:30</td><td data-name="MarkNames" class="ui-selectee"></td><td data-name="Status" class="ui-selectee"><span class="status-icon  ui-selectee"></span></td><td data-name="State" class="ui-selectee">В работе</td><td class="controls ui-selectee"><button type="button" class="btn-link ui-selectee"><svg class="icon icon-burger-menu ui-selectee"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger-menu" class="ui-selectee"></use></svg></button></td></tr><tr class="ui-selectee"><td class="ui-selectee">3</td><td data-name="TypeName" class="ui-selectee">Персона</td><td data-name="RoleName" class="ui-selectee">Созаемщик</td><td data-name="Display_Name" class="ui-selectee"><a href="/lang-ru-RU/db159/inquiry?prjid=22#id=705362" target="_blank" class="ui-selectee">Жириновский Владимир Вольфович</a></td><td data-name="Creator" class="ui-selectee">ABS\ISafronov</td><td data-name="CreatedDate" class="ui-selectee">19.10.2016, 13:41:18</td><td data-name="MarkNames" class="ui-selectee"></td><td data-name="Status" class="ui-selectee"><span class="status-icon  ui-selectee"></span></td><td data-name="State" class="ui-selectee">В архиве</td><td class="controls ui-selectee"><button type="button" class="btn-link ui-selectee"><svg class="icon icon-burger-menu ui-selectee"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger-menu" class="ui-selectee"></use></svg></button></td></tr><tr class="ui-selectee"><td class="ui-selectee">4</td><td data-name="TypeName" class="ui-selectee">Персона</td><td data-name="RoleName" class="ui-selectee">Основной заемщик</td><td data-name="Display_Name" class="ui-selectee"><a href="/lang-ru-RU/db159/inquiry?prjid=22#id=705596" target="_blank" class="ui-selectee">Медвдедв Дмитрий </a></td><td data-name="Creator" class="ui-selectee">ABS\ISafronov</td><td data-name="CreatedDate" class="ui-selectee">19.10.2016, 13:58:04</td><td data-name="MarkNames" class="ui-selectee"></td><td data-name="Status" class="ui-selectee"><span class="status-icon  ui-selectee"></span></td><td data-name="State" class="ui-selectee">В работе</td><td class="controls ui-selectee"><button type="button" class="btn-link ui-selectee"><svg class="icon icon-burger-menu ui-selectee"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-burger-menu" class="ui-selectee"></use></svg></button></td></tr></tbody><tfoot><tr><td colspan="10"><div class="context-menu" style="position:absolute;display:none;z-index:100;"><div class="g-context--menu"><div class="g-context--container"><div class="item" data-icon="icon-next">Запустить проверку</div><div class="item" data-icon="icon-case">Добавить в корзину</div><div class="item haskids" data-icon="icon-status">Изменить статус<div class="g-context--container"><div class="item" data-icon="icon-inwork">В работе</div><div class="item" data-icon="icon-finished">Завершено</div><div class="item" data-icon="icon-clock">Отложено</div><div class="item" data-icon="icon-archive">В архиве</div></div></div><div class="item" data-icon="icon-trash">Удалить</div><div class="item" data-icon="icon-analyst">Перейти в Analyst</div><div class="item disabled" data-icon="icon-global">Перейти в GS</div><div class="item" data-icon="icon-analyst">Открыть в SA Analyst</div><div class="item" data-icon="icon-import">Открыть в SA TextMiner</div></div></div></div></td></tr></tfoot></table><div class="paging-box"></div></div></div>
+        </div>
+    </div>
+</body>
+</html>

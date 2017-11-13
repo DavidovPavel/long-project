@@ -1,0 +1,47 @@
+﻿<script type="x-template/underscore" id="card-vertical-view-template">
+    <div class="card-image">
+        <%= image %>
+        <% if(rubrics){ %>
+        <div class="card-rubric">
+            <p><%- rubrics %></p>
+        </div>
+        <% } %>
+        <div class="card-date">
+            <p><%- pdate %></p>
+        </div>
+    </div>
+    <div class="card-content">
+        <h3><%- display_name %></h3>
+        <p><%= annotation %></p>
+        <% if(url) { %>
+        <div class="card-link">
+            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>    
+            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
+        </div>
+        <% } %>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="card-horizontal-view-template">
+    <div class="card-image">
+        <%= image %>
+    </div>
+    <div class="card-content">
+        <% if(rubrics){ %>
+        <div class="card-rubric">
+            <p><%- rubrics %></p>
+        </div>
+        <% } %>
+        <div class="card-date">
+            <p><%- pdate %></p>
+        </div>
+        <h3><%- display_name %></h3>
+        <p><%= annotation %></p>
+        <% if(url) { %>
+        <div class="card-link">
+            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>
+            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
+        </div>
+        <% } %>
+    </div>
+</script>

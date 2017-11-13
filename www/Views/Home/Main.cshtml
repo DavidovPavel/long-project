@@ -1,0 +1,93 @@
+﻿@using Resources
+@using www.Models
+@{
+    ViewBag.Title = Client.anbr;
+    ViewBag.Name = "main";
+    ViewBag.BodyClassName = "bg-preset--6";
+    ViewBag.ViewBottom = true;
+    Layout = "/views/shared/anbr/_Layout.cshtml";
+}
+<div class="wrapper">
+    <div class="apps">
+
+        <h1>@Client.anbr</h1>
+        <div class="items-edge">
+
+            @*<div class="main" role="navigation">
+        <h3>Main modules</h3>
+
+        <div>
+            <a href="#" class="dashboard"><span>Dashboard</span><span class="help" title="Dashboard help page"></span></a>
+        </div>
+        <div>
+            <a href="#" class="wiki"><span>Wiki</span><span class="help" title="Dashboard help page"></span></a>
+            <a href="#" class="check"><span>Check</span><span class="help" title="Dashboard help page"></span></a>
+        </div>
+        <div>
+            <a href="#" class="monitoring"><span>Monitoring (soon)</span></a>
+        </div>
+        <div>
+            <a href="#" class="text"><span>TextMiner</span><span class="help" title="Dashboard help page"></span></a>
+            <a href="#" class="ontology"><span>Ontology Editor</span><span class="help" title="Dashboard help page"></span></a>
+        </div>
+        <div>
+            <a href="#" class="compliance"><span>Compliance check</span><span class="help" title="Dashboard help page"></span></a>
+        </div>
+        <div>
+            <a href="#" class="analyst"><span>Analyst</span></a>
+        </div>
+        <div>
+            <a href="#"><span>Global Search</span></a>
+        </div>
+        <div>
+            <a href="#" class="enterprise"><span>Enterprise Search</span></a>
+        </div>
+
+    </div>
+
+    <div class="services" role="navigation">
+        <h3>Service modules</h3>
+
+        <div>
+            <a href="#" class="request"><span>Request Library</span></a>
+        </div>
+        <div>
+            <a href="#" class="robot"><span>Robot's collection</span></a>
+        </div>
+
+    </div>*@
+
+        </div>
+
+    </div>
+    <div class="feed hidden">
+        <span class="control"></span>
+        <h3>@Client.MainPage_News</h3>
+        <div class="feed--wrapper">
+            
+            @*<div class="feed--item">
+                <span class="feed--date">02/11/2016</span>
+                <span class="feed--title">Разработан новый робот к английскому ресурсу «Company House» — "Реестр дисквалифицированных сотрудников"</span>
+                <span class="feed--intro">Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег,  
+                Верховный суд (ВС) России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение   
+                России постановил считать финансированием экстремистской деятельности не только сбор денег, но и обеспечение  отсудил у Gawker 31
+                 миллион долларов за публикацию порновидео Халк Хоган отсудил у Gawker 31 миллион долларов за публикацию порновидео Халк Хоган отсудил у 
+                Gawker 31 миллион долларов за публикацию порновидео Gawker 31 миллион долларов за публикацию порновидео Халк Хоган отсудил у Gawker 31
+                 миллион долларов за публикацию порновидео</span>
+                <span class="close"></span>
+            </div>*@
+           
+        </div>
+        <div class="feed-controls">
+            <button class="g-form--button ghost-w">@Client.MainPage_ReadAllNews</button>
+        </div>
+    </div>
+</div>
+
+@*
+    <script type="text/javascript">
+        define("baseurl", "@baseurl");
+        define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+        require.config({config: {i18n: {locale: '@currentLang.ToLower()'}}});
+    </script>
+*@

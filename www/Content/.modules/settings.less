@@ -1,0 +1,67 @@
+﻿.g-notification {
+    position:fixed;
+    height:~"calc(100vh - 44px)";
+    width:440px;
+    right:-450px;
+    top:44px;
+    //background:rgba(0,0,0,0.95);
+    background:#f5f5f5;
+    z-index:90;
+    box-shadow: -4px 0 4px rgba(0, 0, 0, 0.15);
+    transition: right ease-out 300ms;
+    &.active {
+        right:0;
+    }
+    .g-notification--header {
+        color:#111;
+        height:88px;
+        padding:26px 0;
+        overflow:hidden;
+        box-sizing:border-box;
+        position:relative;
+        width:100%;
+        user-select:none;
+        cursor:default;
+        &:after {
+            display:block;
+            width:90%;
+            content:'';
+            height:2px;
+            border-bottom:#fff solid 1px;
+            border-radius:2px;
+            position:absolute;
+            bottom:0;
+            left:50%;
+            transform:translateX(-50%);
+            background:#c5c5c5;
+            z-index:100;
+            box-sizing:border-box;
+        }
+        h4 {
+            font-size:24px;
+            font-weight:300;
+            text-align:center;
+            display:block;
+            margin:0;
+            padding:0;
+            color:#111;
+        }
+    }
+    .g-notification--controls {
+        position:absolute;
+        bottom:0px;
+        background:#e5e5e5;
+        height:88px;
+        left:0;
+        width:100%;
+        box-sizing:border-box;
+        & > .row {
+            padding:25px 20px
+        }
+    }
+    .g-notification--container {
+        position:relative;
+        height:~"calc(100% - 176px)";
+        overflow-y:auto;
+    }
+}

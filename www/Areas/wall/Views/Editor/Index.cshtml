@@ -1,0 +1,38 @@
+﻿@using Resources
+@{
+    Layout = "../Shared/_Layout.cshtml";
+    var _dbid = Request.QueryString["db"];
+    var currentLang = ViewBag.CurrentLang;
+}
+
+<script type="text/javascript" src="~/areas/extsrv/js/main.js"></script>
+
+<div style="cursor: pointer;width: 80px;position: absolute;top:25px;left: 10px;z-index: 9;" id="Edge"><img src="/Images/m.png" alt="" title="@Client.productsList" /></div>
+
+<img src="~/Images/bigrotation2.gif" alt="" id="Rotor" class="Rotor" />
+
+<div id="MasterCreate"></div>
+<div id="ImageGallery"></div>
+<div class="ForKit"></div>
+
+<div class="ModeInfo ui-corner-all"><div class="ui-state-highlight" style="margin-bottom: 4px;padding: 2px;"><span class="ui-icon ico" title="@Client.ModeView"></span></div><button class='switch'>&nbsp;</button></div>
+
+<div class="Vitrins ui-corner-top"><div class="ui-corner-top bolt"></div>
+    <div class="ListVitrins"></div>    
+    <div class="FieldVitrin"><button class="addVitrin">@Client.addVitrin</button><input type='text' name='titleVitrina' /></div>
+    <div class="Addw ui-state-highlight"><span class="ui-icon ui-icon-circle-plus" title="@Client.addVitrin"></span></div>
+</div>
+
+<div id="DemoMode" data-id="FE195E4A-CAAD-4987-A1E8-2788F1796F95" class="ui-corner-right"></div><div id='Terms'></div>
+@if(ViewBag.isSupervizer)
+{
+    <div id="OnlineEditor"></div>
+}
+<script type="text/javascript">
+    //$(document).tooltip({ track: true });
+    require.config({
+        config: { i18n: { locale: '@currentLang.ToLower()' } }
+    });
+    define("bdid", "@_dbid");
+    define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+</script>

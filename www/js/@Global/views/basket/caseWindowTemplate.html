@@ -1,0 +1,128 @@
+﻿<script type="x-template/underscore" id="case-export-template">
+    <div class="row">
+        <div class="grid--1-2">
+            <h4><%= Resources.forobj %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_doc" id="obj_doc" />
+                <label for="obj_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact" id="obj_fact" />
+                <label for="obj_fact"><%= Resources.infact %></label>
+            </div>
+        </div>
+        <div class="grid--1-2">
+            <h4><%= Resources.forfact2 %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact_doc" id="obj_fact_doc" />
+                <label for="obj_fact_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="obj_fact_obj" id="obj_fact_obj" />
+                <label for="obj_fact_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="row" style="margin-bottom:30px;">
+        <div class="grid--1-2">
+            <h4><%= Resources.forfact %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="fact_doc" id="fact_doc" />
+                <label for="fact_doc"><%= Resources.indoc %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="fact_obj" id="fact_obj" />
+                <label for="fact_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+        <div class="grid--1-2">
+            <h4><%= Resources.fordoc %></h4>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="doc_fact" id="doc_fact" />
+                <label for="doc_fact"><%= Resources.infact %></label>
+            </div>
+            <div style="padding-left:20px;">
+                <input type="checkbox" class="g-form--checkbox" checked="checked" name="doc_obj" id="doc_obj" />
+                <label for="doc_obj"><%= Resources.inobj %></label>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="case-import-template">
+    <p><%- Resources.selExpItem %></p>
+    <div id="exp-items"></div>
+</script>
+
+<script type="x-template/underscore" id="case-factdigests-template">
+    <p><%= Resources.factdigestnotice %></p>
+    <p><b id="objForFactDigest"><%- Resources.selectobj %></b></p>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleTop %>" value="<%- TitleTop %>" name="TitleTop" id="TitleTop" class="g-form--input" />
+        <label for="TitleTop"><%- Resources.titleTop %></label>
+    </span>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleMiddle %>" value="<%- TitleMiddle %>" name="TitleMiddle" id="TitleMiddle" class="g-form--input" />
+        <label for="TitleMiddle"><%- Resources.titleMiddle %></label>
+    </span>
+    <span class="g-form--input">
+        <input type="text" placeholder="<%- Resources.titleBottom %>" value="<%- TitleBottom %>" name="TitleBottom" id="TitleBottom" class="g-form--input" />
+        <label for="TitleBottom"><%- Resources.titleBottom %></label>
+    </span>
+    <span class="g-form--input">
+        <label for="datebefore"><%- Resources.factsBefore %>:</label><input type="text" name="PointDateForSelection" id="datebefore" class="ejdatepicker">
+    </span>
+    <br />
+    <span class="g-form--input">
+        <input type="checkbox" id="show-sche" class="g-form--checkbox ignore" /><label for="show-sche"><%- Resources.byschedule %></label>
+    </span>
+
+    <div class="sche-container"></div>
+</script>
+
+<script type="x-template/underscore" id="case-docdigest-template">   
+    
+    <div class="DocDigestNotice">
+        <input type="radio" class="g-form--radio" name="ObjectByRequest" value="a" checked="checked" id="obra" /><label for="obra"><%= Resources.inbasket %></label>&nbsp;<span class="sources-from-basket"></span><br />
+        <input type="radio" class="g-form--radio" name="ObjectByRequest" value="b" id="obrb" /><label for="obrb"><%= Resources.byrequest %></label>&nbsp;<span id="sel-request"></span>
+    </div>
+    <br />
+    <p><button class="g-form--button next choose"><%- Resources.selectingObj %></button></p>
+    <div id="choose-dialog"></div>
+    <p class="notice"><%- Resources.docdigestnotice %>: [ <b><span class="selected-key-obj"><%- Resources.noselect %></span></b> ]</p>
+    <input type="text" placeholder="<%- Resources.titleTop %>" name="TitleTop" />
+    <br />
+    <br />
+    <input type="text" placeholder="<%- Resources.titleMiddle %>" name="TitleMiddle" />
+    <br />
+    <br />
+    <input type="text" placeholder="<%- Resources.titleBottom %>" name="TitleBottom" />
+
+    <span class="g-form--input"><input type="checkbox" id="show-sche" class="g-form--checkbox ignore" /><label for="show-sche"><%- Resources.byschedule %></label></span>
+    <div class="sche-container"></div>
+</script>
+
+<script type="x-template/underscore" id="case-schedules-template">
+    <div class="list-tasks"></div>
+    <br />
+    <div class="item-digest"></div>
+    <br />
+    <div class='item-sche'></div>
+</script>
+
+<script type="x-template/underscore" id="case-schedule-item-template">
+    <input type="text" name="Title" placeholder="<%= Resources.titleSchedule %>" style="width: 80%;" value="<%- Title %>" />
+    <p><label><%- Resources.startTime %></label>&nbsp;<input type="text" name="TimeStartExecution" class="ejtimepicker" value=""></p>
+
+    <table>
+        <tr>
+            <td style="padding: 2px 4px;width: 40%; vertical-align: top;" class="period"></td>
+            <td style="padding: 4px 6px;height: 80px; vertical-align: top;width:300px;" class="days-block"></td>
+        </tr>
+    </table>
+
+    <p><input type="text" name="Subscribers" placeholder="<%- Resources.subscribers %>" style="width: 80%;" value="<%- Subscribers %>" /></p>
+    <p><input type="text" name="EmailTopic" placeholder="<%- Resources.EmailTopic %>" style="width: 80%;" value="<%- EmailTopic %>" /></p>
+    <p><label><%- Resources.emailBody %></label><br /><textarea name="EmailBody" style="width: 80%;"><%- EmailBody %></textarea></p>
+</script>

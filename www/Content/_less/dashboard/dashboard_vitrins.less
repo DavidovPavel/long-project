@@ -1,0 +1,173 @@
+﻿@import "../../.libs/lib";
+
+/* список превью витрин */          
+#vitrin-list { 
+    position: fixed;left: 0px;right: 0px;bottom: 0px;z-index: 99;background-color: @color-62;min-height: 121px;transition:all 0.5s ease-out;
+    &.abs {bottom:-116px; }
+    & .bolt { background-color: @color-F3;height:5px;position:relative;}
+    & .bolt-lug {
+        position:absolute;left:50%;width:42px;height:22px;overflow:hidden;top:-22px;cursor:pointer;margin-left:-22px; 
+        & div {width:42px;height:42px;border-radius:42px;background-color: @color-F3;position:relative; }
+    }
+    & span.arrow {
+        left:15px;top:5px; 
+        &:before {  transition-delay: 0.5s;}
+    }
+    & .list {
+       padding:0 18px;border-top: solid 1px @color-58; 
+       & .arrow {
+            position:absolute;top:0px;height:115px;
+            &.west { right:18px;}
+            &:before { border-color: #666!important; background:transparent!important; }
+            
+       }
+         & .le {left:103px;}
+    }
+    & .show-add-vitrin {
+        width:80px;height:77px;border:solid 1px @color-9;cursor:pointer;position:absolute;left:17px;top:29px;
+        & svg { width: 22px; height: 20px;position:relative;top:27px;left:29px; }
+    }    
+    & .items-wrap { 
+        margin-left:125px;margin-right:100px;height:102px;overflow:hidden;position:relative;top:-1px;
+        & > .slider {height:110px;position:absolute; }
+    }
+    & .vitrina {
+        float:left;margin:0 5px; 
+        & div.edit {height:24px;text-align:right; }
+        &.current div.panel-vitrin { border:solid 2px @color-light-blue; }
+        & div.panel-vitrin {
+            width:263px;height:77px;cursor: pointer;padding:9px;color:@color-dark;font-size:12px; background-color:@color-F0; .boxshadow(0 1px, rgba(0,0,0,.1));
+            & img {width:96px;height:55px;float:left;margin-right:10px; }
+            & .name-vitrin { height: 50px;overflow:hidden;font-size:12px; }
+        }        
+    }
+    & span[role='button'] {.size(24px); text-align:center;display: none; cursor: pointer;}
+    & .edit-vitrina{
+        & svg { width:10px;height:10px;stroke:@color-F4;vertical-align:middle;}
+        &:hover { background-color:@color-5; }
+    }
+    & .delete-vitrina{
+        & svg { width:16px;height:16px;fill:@color-F4;vertical-align:middle;}
+        &:hover {background-color:@color-red; }
+    }
+    & .continue { 
+        position:absolute;width:27px;height:6px;right:60px;top:90px;display:none; 
+        & span {.size(6px);border-radius:6px;background-color:@color-F3;margin-right:3px; }
+    }
+    &.right-property { right:555px; }
+    &.left-property { left:555px; }
+}
+
+
+#first-page {
+    & .list {
+        position: relative !important;
+        height: ~"calc(100vh - 221px)" !important;
+        overflow-x: auto !important;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        & > div.create {
+            height: 160px !important;
+            width: 210px !important;
+            margin: 0 18px 120px;
+        }
+
+        & > div:not(.create) {
+            width: 210px;
+            height: 240px;
+            overflow: hidden;
+            position: relative;
+            box-sizing: border-box;
+            margin: 0 18px 20px !important;
+
+            & > i.remove {
+                width: 24px;
+                height: 24px;
+                background-color: #b00;
+                opacity: 0;
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 5;
+                transition: opacity linear 200ms;
+                text-align: center;
+
+                & svg {
+                    width: 16px;
+                    height: 16px;
+                    fill: @color-F4;
+                    vertical-align: middle;
+                }
+                /*&:before, &:after {
+                    content:'';
+                    width:1px;
+                    height:12px;
+                    display:block;
+                    position:absolute;
+                    background:#fff;
+                    top:~"calc(50% - 6px)";
+                    left:~"calc(50% - 0.5px)";
+                    transition:transform 200ms ease;
+                }
+                &:before {
+                    transform:rotate(-45deg);
+                }
+                &:after {
+                    transform:rotate(45deg);
+                }
+                &:hover {
+                    &:before {
+                        transform:rotate(45deg);
+                    }
+                    &:after {
+                        transform:rotate(-45deg);
+                    }
+                }*/
+            }
+
+            &:before {
+                content: '';
+                width: 210px;
+                height: 160px;
+                border: 1px solid #dadada;
+                box-sizing: border-box;
+                z-index: -1;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            & > img {
+                display: block;
+                width: auto;
+                height: 158px;
+                position: relative;
+                top: 1px;
+                left: 1px;
+                border: none;
+            }
+
+            & > span {
+                position: absolute;
+                top: 160px;
+                left: 0;
+                width: 100%;
+                height: auto;
+                padding: 5px 5px 0;
+                max-height: 60px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                background: rgba(255,255,255,.75);
+                color: #222;
+            }
+
+            &:hover {
+                & > i {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

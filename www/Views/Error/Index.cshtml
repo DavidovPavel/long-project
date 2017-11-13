@@ -1,0 +1,18 @@
+﻿@{
+    Layout = "_ErrorLayout.cshtml";
+    ViewBag.Title = "Index";
+}
+
+
+<h2>Index</h2>
+
+<p>@((ViewData.Model != null) ? "ErrorInfo" : "Empty")</p>
+<p>@(
+ ((HandleErrorInfo)ViewData.Model).Exception.GetType().ToString()
+    )
+</p>
+<p>@(
+    ((HandleErrorInfo)ViewData.Model).Exception.ToString()
+    )
+</p>
+     

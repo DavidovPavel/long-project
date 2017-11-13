@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript">
+        function sendtop() {
+            var fr = document.getElementById("proxyFrame");
+            var src = fr.src.split('#');
+            fr.src = (src[0] + '#submit');
+            //document.getElementById("info").innerText = fr.src;
+            document.getElementById("proxyFrame").width = parseInt(document.getElementById("proxyFrame").width) + 9;
+            return true;
+        }
+    </script>
+</head>
+<body>
+
+<div id="info"></div>
+<form name="frm" onsubmit="return sendtop();">
+<label>label</label><input type='text' name='title2' /><br/>
+<label>label2</label><input type="checkbox" name="boolean"/><br/>
+
+<input type="submit" value="send"/>
+
+</form>
+<iframe width="10" src='http://localhost/proxy.html' id="proxyFrame" style='height:1px;border:0'></iframe>
+
+</body>
+</html>

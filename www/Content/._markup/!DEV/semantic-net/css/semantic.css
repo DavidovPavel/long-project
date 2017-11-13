@@ -1,0 +1,560 @@
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+.semantic-tabs {
+  position: fixed;
+  width: 100%;
+  height: 44px;
+  background: #555;
+  bottom: -44px;
+  left: 0px;
+  z-index: 350;
+  transition: all linear 150ms;
+}
+.semantic-tabs.active {
+  bottom: 0px;
+}
+.semantic-tabs.active .control:before {
+  transform: rotate(-135deg);
+}
+.semantic-tabs.active .control:after {
+  transform: rotate(135deg);
+}
+.semantic-tabs .control {
+  position: absolute;
+  cursor: pointer;
+  top: -24px;
+  width: 48px;
+  height: 24px;
+  background: #378dda;
+  left: calc(50% - 16px);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  z-index: -340;
+  box-sizing: border-box;
+  box-shadow: 0 -3px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.semantic-tabs .control:before {
+  content: '';
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  display: block;
+  transform: rotate(-45deg);
+  top: 10px;
+  left: 17px;
+}
+.semantic-tabs .control:after {
+  content: '';
+  width: 8px;
+  height: 2px;
+  position: absolute;
+  background: #fff;
+  display: block;
+  transform: rotate(45deg);
+  top: 10px;
+  right: 17px;
+}
+.semantic-tabs.edit-mode {
+  background: #333!important;
+}
+.semantic-tabs.edit-mode .control {
+  display: none;
+}
+.semantic-tabs.edit-mode .semantic-tabs--settings {
+  background: #333!important;
+}
+.semantic-tabs.edit-mode .semantic-tabs--settings:before {
+  transform: rotate(90deg);
+  animation: 2s rotate360 infinite linear;
+}
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.semantic-tabs.edit-mode span.semTab {
+  position: relative;
+}
+.semantic-tabs.edit-mode span.semTab div {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #b00;
+  top: calc(50% - 8px);
+  left: calc(100% - 24px);
+}
+.semantic-tabs.edit-mode span.semTab div:before {
+  width: 1px;
+  height: 8px;
+  background: #fff;
+  content: '';
+  position: absolute;
+  transform: rotate(-45deg);
+  display: block;
+  top: calc(50% - 4px);
+  left: calc(50% - 0.5px);
+}
+.semantic-tabs.edit-mode span.semTab div:after {
+  width: 1px;
+  height: 8px;
+  background: #fff;
+  content: '';
+  position: absolute;
+  transform: rotate(45deg);
+  display: block;
+  top: calc(50% - 4px);
+  left: calc(50% - 0.5px);
+}
+.semantic-tabs ul {
+  padding: 0;
+  margin: 0;
+}
+.semantic-tabs ul li {
+  display: block;
+  float: left;
+}
+.semantic-tabs ul li span {
+  width: 220px;
+  box-sizing: border-box;
+  margin: 5px 5px 5px 0;
+  display: block;
+  height: 34px;
+  background: #aaa;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #131313;
+}
+.semantic-tabs ul li span:hover {
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.semantic-tabs ul li.active span {
+  background: #eee;
+  box-shadow: none;
+}
+.semantic-tabs ul li.active span:hover {
+  box-shadow: none;
+}
+.semantic-tabs .semantic-tabs--add {
+  cursor: pointer;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: block;
+  background: #eee;
+  margin: 0;
+  box-shadow: none;
+  margin-top: 5px;
+}
+.semantic-tabs .semantic-tabs--add:before {
+  width: 1px;
+  height: 17px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 8.5px);
+  left: calc(50% - 0.5px);
+  content: '';
+}
+.semantic-tabs .semantic-tabs--add:after {
+  width: 17px;
+  height: 1px;
+  background: #333;
+  position: absolute;
+  left: calc(50% - 8.5px);
+  top: calc(50% - 0.5px);
+  content: '';
+}
+.semantic-tabs .semantic-tabs--add:hover {
+  box-shadow: none;
+  background: #fff;
+}
+.semantic-tabs .semantic-tabs--settings {
+  cursor: pointer;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  display: block;
+  background: #555;
+  margin: 0;
+  box-shadow: none!important;
+}
+.semantic-tabs .semantic-tabs--settings:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background: url('../images/settings.png') no-repeat 0 0;
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  transition: all linear 150ms;
+}
+.semantic-tabs .semantic-tabs--settings:hover:before {
+  transform: rotate(90deg);
+}
+.semantic-sidebar {
+  position: absolute;
+  width: 44px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #444;
+  transition: all linear 100ms;
+}
+.semantic-sidebar.active {
+  width: 308px;
+  background: #f5f5f5;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25);
+}
+.semantic-sidebar.active .semantic--tool-settings {
+  display: block;
+}
+.semantic-sidebar .hamburger {
+  width: 44px;
+  height: 44px;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  background: #444;
+  transition: all linear 150ms;
+  float: left;
+}
+.semantic-sidebar .hamburger.active span {
+  transform: rotate(90deg);
+}
+.semantic-sidebar .hamburger span {
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: calc(50% - 1px);
+  transition: all linear 100ms;
+  left: calc(50% - 8px);
+}
+.semantic-sidebar .hamburger span:before {
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  top: -6px;
+  transition: all linear 250ms;
+}
+.semantic-sidebar .hamburger span:after {
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  bottom: -6px;
+  transition: all linear 250ms;
+}
+.semantic-sidebar .hamburger:hover {
+  background: #353535;
+}
+.semantic-sidebar .hamburger:hover span:before {
+  top: -7px;
+}
+.semantic-sidebar .hamburger:hover span:after {
+  bottom: -7px;
+}
+.semantic-sidebar .semantic-tools {
+  width: 44px;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  height: calc(100% - 44px);
+  background: #444;
+  z-index: 200;
+}
+.semantic-sidebar .semantic-tools ul {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.semantic-sidebar .semantic-tools ul li {
+  display: block;
+  position: relative;
+  list-style: none;
+  z-index: 250;
+}
+.semantic-sidebar .semantic-tools ul li ul {
+  z-index: 250;
+  display: none;
+  transition: all linear 100ms;
+  position: absolute;
+  top: 0;
+  left: 44px;
+  min-width: 132px;
+}
+.semantic-sidebar .semantic-tools ul li ul li {
+  float: left;
+}
+.semantic-sidebar .semantic-tools ul li:hover ul {
+  display: block;
+}
+.semantic-sidebar .semantic-tools ul li span {
+  height: 44px;
+  width: 44px;
+  background: #444;
+  display: block;
+  cursor: pointer;
+  position: relative;
+}
+.semantic-sidebar .semantic-tools ul li span.active {
+  background: #666;
+}
+.semantic-sidebar .semantic-tools ul li span:before {
+  content: '';
+  display: block;
+  background-image: url('../images/tools.svg');
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-size: 256px 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.semantic-sidebar .semantic-tools ul li span:hover {
+  background: #333;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--zoom:before {
+  background-position: 0 0;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--zoom:after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 8px 8px;
+  border-color: transparent transparent #999 transparent;
+  position: absolute;
+  right: 1px;
+  bottom: 1px;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--zoomout:before {
+  background-position: -16px 0;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--zoomin:before {
+  background-position: -32px 0;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--zoomfit:before {
+  width: 22px;
+  height: 22px;
+  background-position: -48px 0;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--hand:before {
+  background-position: -70px 0;
+}
+.semantic-sidebar .semantic-tools ul li span.semantic-tools--editor:before {
+  width: 12px;
+  height: 20px;
+  background-position: -86px 0;
+}
+.semantic-sidebar .semantic--tool-select {
+  margin-bottom: 16px;
+}
+.semantic-sidebar hr.ruller {
+  display: block;
+  margin: 15px 0;
+}
+.semantic-sidebar .semantic--tool-appearance {
+  margin-bottom: 16px;
+}
+.semantic-sidebar .semantic--tool-appearance label {
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.semantic-sidebar .semantic--tool-appearance input[type=checkbox] {
+  display: none;
+}
+.semantic-sidebar .semantic--tool-appearance input[type=checkbox] ~ label {
+  position: relative;
+  height: 1em;
+  padding-left: 24px;
+  display: inline-block;
+  margin: 5px 0;
+  vertical-align: bottom;
+  padding-top: 3px;
+}
+.semantic-sidebar .semantic--tool-appearance input[type=checkbox] ~ label:before {
+  display: block;
+  width: 15px;
+  height: 14px;
+  content: '';
+  border: 1px #888 solid;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.semantic-sidebar .semantic--tool-appearance input[type=checkbox]:checked ~ label:before {
+  background: #fff;
+  border-color: #85acac;
+}
+.semantic-sidebar .semantic--tool-appearance input[type=checkbox]:checked ~ label:after {
+  content: '';
+  position: absolute;
+  background: url('../images/chck.svg');
+  width: 15px;
+  height: 14px;
+  top: -3px;
+  left: 2px;
+}
+.semantic-sidebar .semantic--tool-filter,
+.semantic-sidebar .semantic--tool-form {
+  margin-bottom: 16px;
+}
+.semantic-sidebar .semantic--tool-filter input[type="button"],
+.semantic-sidebar .semantic--tool-form input[type="button"] {
+  width: 113px;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #888;
+  margin: 5px 0;
+  display: inline-block;
+}
+.semantic-sidebar .semantic--tool-filter input[type="button"]:last-child,
+.semantic-sidebar .semantic--tool-form input[type="button"]:last-child {
+  float: right;
+  display: block;
+}
+.semantic-sidebar .semantic--tool-settings {
+  display: none;
+  margin-left: 44px;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode {
+  color: #fff;
+  background: #444;
+  height: 44px;
+  width: 100%;
+  position: relative;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode label {
+  display: block;
+  position: absolute;
+  right: 56px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ccc;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode span {
+  width: 35px;
+  cursor: pointer;
+  display: block;
+  height: 14px;
+  background: #666;
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  margin-top: -8px;
+  border-radius: 8px;
+  transition: all linear 200ms;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode span:before {
+  width: 12px;
+  height: 12px;
+  content: '';
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background: #fff;
+  border-radius: 50% ;
+  transition: all linear 200ms;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode span.enabled {
+  background: #5b8cd6;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-editmode span.enabled:before {
+  top: 1px;
+  left: 22px;
+  transition: all linear 200ms;
+}
+.semantic-sidebar .semantic--tool-settings .semantic--tool-viewmode {
+  padding: 12px;
+}
+section.semantic-net {
+  transition: all linear 250ms;
+  position: relative;
+  height: calc(100vh - 224px);
+  margin-top: 180px;
+  background: url('../images/bg.png') no-repeat 0 0;
+}
+section.semantic-net.edit-mode:before {
+  transition: all linear 250ms;
+  width: 100%;
+  height: 100%;
+  content: '';
+  z-index: -1;
+  position: absolute;
+  background-image: url('../images/grid.svg');
+  background-size: 70px 70px;
+  background-repeat: repeat;
+}
+.g-select--wrapper {
+  display: inline-block;
+  vertical-align: baseline;
+  position: relative;
+  background: #fff;
+  margin-top: 5px;
+  width: 100%;
+}
+.g-select--wrapper .g-select--placeholder {
+  padding: 8px 30px 8px 10px;
+  box-sizing: border-box;
+  display: block;
+  cursor: pointer;
+  min-width: 160px;
+  width: 100%;
+  color: #131313;
+  border: 1px #888 solid;
+}
+.g-select--wrapper .g-select--placeholder:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: transparent;
+  transform: rotate(135deg);
+  border-top: 1px #333 solid;
+  border-right: 1px #333 solid;
+  position: absolute;
+  top: calc(50% - 5px);
+  left: calc(100% - 15px);
+}
+.g-select--wrapper .g-select--placeholder.expanded:before {
+  transform: rotate(-45deg);
+  top: calc(50% - 1px);
+}
+.g-select--wrapper .g-select--options {
+  display: none;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  width: 100%;
+  border: 1px solid #888888;
+  box-sizing: border-box;
+  z-index: 100 ;
+}
+.g-select--wrapper .g-select--options li {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  color: #000;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  transition: all linear 100ms;
+}
+.g-select--wrapper .g-select--options li:hover {
+  background: #666;
+  color: #fff;
+}

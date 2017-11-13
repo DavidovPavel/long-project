@@ -1,0 +1,1492 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SparkContracts</name>
+    </assembly>
+    <members>
+        <member name="T:SparkContracts.CompanyOfPair">
+            <summary>
+            Компания (поиск пар Персона-Компания по ФИО)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyOfPair.SparkId">
+            <summary>
+            СПАРК ID
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyOfPair.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyOfPair.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyOfPair.OKPO">
+            <summary>
+            ОКПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyOfPair.FullName">
+            <summary>
+            Полное наименование
+            </summary>
+        </member>
+        <member name="T:SparkContracts.PersonOfPair">
+            <summary>
+            Персона (СПАРК)
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CompanyPersonPair">
+            <summary>
+            Компания, связанная с Персоной (СПАРК)
+            </summary>
+        </member>
+        <member name="M:SparkContracts.CompanyPersonPair.#ctor">
+            <summary>
+            Конструктор. 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyPersonPair.Company">
+            <summary>
+            Компания
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyPersonPair.Person">
+            <summary>
+            Персона 
+            </summary>
+        </member>
+        <member name="M:SparkContracts.CompanyPersonPair.SelectByPersonInn(System.String,System.Collections.Generic.List{SparkContracts.CompanyPersonPair})">
+            <summary>
+            Выбирает по ИНН. 
+            </summary>
+            <param name="inn">ИНН</param>
+            <param name="pairs">Пары Компания-Персона</param>
+            <returns>Результат</returns>
+        </member>
+        <member name="M:SparkContracts.CompanyPersonPair.ToString">
+            <summary>
+            Строковое представление.
+            </summary>
+            <returns>Строковое представление</returns>
+        </member>
+        <member name="T:SparkContracts.CompanySearchSaveStatus">
+            <summary>
+            Статус поиска (сохранения) в СА.  
+            </summary>        
+        </member>
+        <member name="F:SparkContracts.CompanySearchSaveStatus.Message">
+            <summary>
+            Сообщение 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySearchSaveStatus.Status">
+            <summary>
+            Статус 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySearchSaveStatus.IdObjectList">
+            <summary>
+            Список идентификаторов СА созданных или использованных объектов
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkSearchStatus">
+            <summary>
+            Статус поиска в СПАРК. 
+            </summary>        
+        </member>
+        <member name="F:SparkContracts.SparkSearchStatus.Message">
+            <summary>
+            Сообщение 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkSearchStatus.Status">
+            <summary>
+            Результат
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkSearchStatus.Objects">
+            <summary>
+            Задействованные объекты
+            (not yet implemented!)
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CompanySearchResult">
+            <summary>
+            Результат поиска компаний по ФИО Персоны. 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySearchResult.Status">
+            <summary>
+            Статус
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySearchResult.CompaniesOfPerson">
+            <summary>
+            Список пар Персона-Компания 
+            </summary>
+        </member>
+        <member name="T:SparkContracts.KindOfLeader">
+            <summary>
+            Тип Персоны 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.KindOfLeader.Director">
+            <summary>
+            Руководитель (по умолчанию)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.KindOfLeader.CoFounder">
+            <summary>
+            Учредитель
+            </summary>
+        </member>
+        <member name="T:SparkContracts.KindOfCompanySearchByFIO">
+            <summary>
+            Признак поиска компаний (действующие/ликвидированные)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.KindOfCompanySearchByFIO.Live">
+            <summary>
+            Действующие (по умолчанию)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.KindOfCompanySearchByFIO.Dead">
+            <summary>
+            Ликвидированные
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCompanyShort">
+            <summary>
+            Краткая информация о компании в СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.SparkId">
+            <summary>
+            Идентификатор объекта  
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.OKPO">
+            <summary>
+            ОКПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.FullName">
+            <summary>
+            Полное наименование
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.Address">
+            <summary>
+            Юридический адрес
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyShort.Industry">
+            <summary>
+            Основная отрасль 
+            </summary>
+        </member>
+        <member name="M:SparkContracts.SparkCompanyShort.TransformNormalize(System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Преобразование имени (замена имени на сокращенное) 
+            </summary>
+        </member>
+        <member name="T:SparkContracts.ResultOfSearchCompanyByFIO">
+            <summary>
+            Результат поиска компаний по ФИО руководителя/учредителя
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfSearchCompanyByFIO.FoundCompaniesList">
+            <summary>
+            Список компаний
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfSearchCompanyByFIO.ResultInfo">
+            <summary>
+            Статус поиска компаний 
+            </summary>
+        </member>
+        <member name="T:SparkContracts.ResultOfSearchStructureCompanyByCodes">
+            <summary>
+            Результат поиска структуры организации по кодам ИНН, ОГРН, СПАРК_ИД
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfSearchStructureCompanyByCodes.FoundCompanyStructures">
+            <summary>
+            Список компаний
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfSearchStructureCompanyByCodes.ResultInfo">
+            <summary>
+            Информация о результате поиска
+            </summary>
+        </member>
+        <member name="T:SparkContracts.ResultOfCompaniesSearch">
+            <summary>
+            Информация о результате поиска компаний
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.INITIAL_STATUS">
+            <summary>
+            Начальный статус (поиск еще не выполнялся)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.TRUE">
+            <summary>
+            Хотя бы одна компания найдена
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.DATA_NOT_FOUND">
+            <summary>
+            Не найдено ни одной компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.ERROR">
+            <summary>
+            Ошибка при вызове метода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.TOO_MANY_ROWS">
+            <summary>
+            Найдено более 10000 компаний (показано первых 10000)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompaniesSearch.AUTH_ERR">
+            <summary>
+            Ошибка аутентификации
+            </summary>
+        </member>
+        <member name="T:SparkContracts.ResultOfCompanyStructureSearch">
+            <summary>
+            Информация о результате поиска структуры компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.INITIAL_STATUS">
+            <summary>
+            Начальный статус (поиск еще не выполнялся)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.TRUE">
+            <summary>
+            Хотя бы одна компания найдена!
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.MORE_THAN_ONE_FOUND">
+            <summary>
+            Более одной компании найдено!
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.DATA_NOT_FOUND">
+            <summary>
+            Не найдено ни одной компании!
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.ERROR">
+            <summary>
+            Ошибка при вызове метода!
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.COMPANY_IS_BRANCH">
+            <summary>
+            исследуемая компания – филиал
+            </summary>
+        </member>
+        <member name="F:SparkContracts.ResultOfCompanyStructureSearch.AUTH_ERR">
+            <summary>
+            Ошибка аутентификации!
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCode">
+            <summary>
+            Класс элемента классификатора СПАРК
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkRegion">
+            <summary>
+            Регион РФ от СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkRegion.Code">
+            <summary>
+            Код региона (первые две цифры от кода ОКАТО)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkRegion.NameRus">
+            <summary>
+            Наименование региона на русском языке
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkRegion.NameEng">
+            <summary>
+            Наименование региона на английском языке
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkOKFS">
+            <summary>
+             Код ОКФС от СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKFS.Code">
+            <summary>
+            Код ОКФС
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKFS.NameRus">
+            <summary>
+            Расшифровка кода на русском языке
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKFS.NameEng">
+            <summary>
+            Расшифровка кода на английском языке
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkOKOPF">
+            <summary>
+             Код ОКОПФ от СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKOPF.Code">
+            <summary>
+            Код ОКОПФ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKOPF.NameRus">
+            <summary>
+            Расшифровка кода на русском языке
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkOKOPF.NameEng">
+            <summary>
+            Расшифровка кода на английском языке
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkUserAccountInfo">
+            <summary>
+            Текущий баланс пользователя СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkUserAccountInfo.State">
+            <summary>
+            Статус пользователя СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkUserAccountInfo.Summa">
+            <summary>
+            Сумма в рублях
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCallInfo">
+            <summary>
+            Вызов метода СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCallInfo.Name">
+            <summary>
+            Имя метода СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCallInfo.Price">
+            <summary>
+            Стоимость вызова метода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCallInfo.CallDate">
+            <summary>
+            Дата и время вызова
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCallInfo.IP">
+            <summary>
+            IP компьютера
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCallInfo.BillingKey">
+            <summary>
+            Идентификатор компании в СПАРК
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CodeClassifier">
+            <summary>
+             Код ИНН-ОГРН организации 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CodeClassifier.Code">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CodeClassifier.Kind">
+            <summary>
+            Тип кода (ИНН - 1, ОГРН - 0)
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCompanyExtReport">
+            <summary>
+            Отчет по компании из СПАРК (расширенная справка)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.Status">
+            <summary>
+            Статус компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.EGRPOIncluded">
+            <summary>
+            Признак наличия компании в ЕГРПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.EGRULLikvidation">
+            <summary>
+            Сведения о ликвидации из ФНС
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.DateFirstReg">
+            <summary>
+            Дата регистрации
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.ShortNameRus">
+            <summary>
+            Краткое наименование компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.ShortNameEn">
+            <summary>
+            Краткое наименование компании на английском языке
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.FullNameRus">
+            <summary>
+            Полное наименование компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.NormName">
+            <summary>
+            Нормализованное наименование компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.KPP">
+            <summary>
+            КПП
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.FCSMCode">
+            <summary>
+            Код ФСФР
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.RTS">
+            <summary>
+            Код РТС
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.OKATO">
+            <summary>
+            ОКАТО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.OKFS">
+            <summary>
+            ОКОФС
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.OKOGU">
+            <summary>
+            ОКОГУ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.OKOPF">
+            <summary>
+            ОКОПФ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.OKVEDs">
+            <summary>
+            Список всех ОКВЭД
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.CharterCapital">
+            <summary>
+            Уставной капитал
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.Leaders">
+            <summary>
+            История смены руководителей с указанием даты актуализации
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.AdjustAddress">
+            <summary>
+            Адрес (уточненный)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.LegalAddresses">
+            <summary>
+            Адреса (юридические)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.PrevAddresses">
+            <summary>
+            Адреса (предыдущие)  
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.PhoneList">
+            <summary>
+            Телефоны
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.FaxList">
+            <summary>
+            Факсы
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.Email">
+            <summary>
+            E-mail
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.Www">
+            <summary>
+            Веб-сайт
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.WorkersRange">
+            <summary>
+            Диапазон численности персонала
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.CreditRisk">
+            <summary>
+            Кредитный риск
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.IncludeInList">
+            <summary>
+            Списки СПАРКа, в которые вошла компания 
+            (сведения о вхождении компании в реестр недобросовестных поставщиков, 
+            список стратегических предприятий, 
+            список системообразующих предприятий).
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.StructureInfoShort">
+            <summary>
+            Структура организации (коротко)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.VestnikMessage">
+            <summary>
+            Список сообщений Вестника государственной регистрации
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.BankruptcyMessage">
+            <summary>
+            Список сообщений о банкротствах
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.CompanyWithSameInfo">
+            <summary>
+            Компании с аналогичной информацией
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.IndexOfDueDiligence">
+            <summary>
+            Индекс должной осмотрительности
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.AccessibleFinData">
+            <summary>
+            Доступная  бухотчетность (список периодов)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.CompanySize">
+            <summary>
+            Размер компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyExtReport.Finance">
+            <summary>
+            Бухотчетность
+            </summary>
+        </member>
+        <member name="P:SparkContracts.SparkCompanyExtReport.NegativeInfo">
+            <summary>
+            Негативная информация
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Finance">
+            <summary>
+            Бухгалтерская отчетность
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CompanySize">
+            <summary>
+            Размер компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySize.Description">
+            <summary>
+            Градация размера
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanySize.Revenue">
+            <summary>
+            Выручка
+            </summary>
+        </member>
+        <member name="T:SparkContracts.FinPeriod">
+            <summary>
+            Период
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinPeriod.IDPeriod">
+            <summary>
+            ИД
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinPeriod.Name">
+            <summary>
+            Наименование периода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinPeriod.EndDate">
+            <summary>
+            Дата окончания периода
+            </summary>
+        </member>
+        <member name="T:SparkContracts.FinancePeriod">
+            <summary>
+            Период  
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriod.PeriodName">
+            <summary>
+            Наименование периода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriod.DateEnd">
+            <summary>
+            Дата окончания периода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriod.DateBegin">
+            <summary>
+            Дата начала периода
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriod.Strings">
+            <summary>
+            Строки баланса
+            </summary>
+        </member>
+        <member name="T:SparkContracts.FinancePeriodString">
+            <summary>
+            Строка баланса
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriodString.Form">
+            <summary>
+            Форма
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriodString.Section">
+            <summary>
+            Раздел
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriodString.Name">
+            <summary>
+            Описание строки
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriodString.Code">
+            <summary>
+            Код строки
+            </summary>
+        </member>
+        <member name="F:SparkContracts.FinancePeriodString.Value">
+            <summary>
+            Значение
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CreditRisk">
+            <summary>
+            Кредитный риск
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CreditRisk.CreditRiskValue">
+            <summary>
+            Значение
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CreditRisk.CreditRiskDesc">
+            <summary>
+            Описание
+            </summary>
+        </member>
+        <member name="T:SparkContracts.StructureInfoShort">
+            <summary>
+            Структура организации (коротко)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountCoownerFCSM">
+            <summary>
+            Количество Совладелец/Учредитель (Данные компании/ФСФР)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountCoownerRosstat">
+            <summary>
+            Количество Совладелец/Учредитель (Росстат)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountCoownerEGRUL">
+            <summary>
+            Количество Совладелец/Учредитель (ЕГРЮЛ)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountBranch">
+            <summary>
+            Количество Филиалы (Данные компании)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountBranchRosstat">
+            <summary>
+            Количество Филиалы (Росстат)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountAffiliatedCompanyFCSM">
+            <summary>
+            Количество Дочерние компании (Данные компании)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.CountAffiliatedCompanyRosstat">
+            <summary>
+            Количество Дочерние компании (Росстат)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.StructureInfoShort.NonprofitOrganizationRosstat">
+            <summary>
+            Количество Некоммерческие партнерства (Росстат)
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkMessage">
+            <summary>
+            Сообщение
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkMessage.Date">
+            <summary>
+            Дата сообщения
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkMessage.MType">
+            <summary>
+            Тип сообщения
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CompanyWithSameInfo">
+            <summary>
+            Компании с аналогичной информацией
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyWithSameInfo.TelephoneCount">
+            <summary>
+            Количество компаний с аналогичным телефоном
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyWithSameInfo.AddressCount">
+            <summary>
+            Количество компаний с аналогичным адресом
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyWithSameInfo.ManagerCountInCountry">
+            <summary>
+            Количество компаний с аналогичным директором (поиск по ФИО директора среди всех компаний)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CompanyWithSameInfo.ManagerCountInRegion">
+            <summary>
+            Количество компаний с аналогичным директором 
+            </summary>
+        </member>
+        <member name="T:SparkContracts.IndexOfDueDiligence">
+            <summary>
+            Индекс должной осмотрительности
+            </summary>
+        </member>
+        <member name="F:SparkContracts.IndexOfDueDiligence.Index">
+            <summary>
+            Индекс
+            </summary>
+        </member>
+        <member name="F:SparkContracts.IndexOfDueDiligence.IndexDesc">
+            <summary>
+            Описание значения индекса
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CompanyState">
+            <summary>
+            Статус компании
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Leader">
+            <summary>
+            Руководитель компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.ActualDate">
+            <summary>
+            Дата актуальности
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.FIO">
+            <summary>
+            ФИО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.Position">
+            <summary>
+            Должность
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.Identifiers">
+            <summary>
+            Список идентификаторов Персон, найденных по равенству с ФИО Leader
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.IsPerson">
+            <summary>
+            Персона ли (создается по умолчанию)? (иначе создается Организация)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.INN">
+            <summary>
+            ИНН организации (если создается орг вместо перс)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Leader.DoubleCheckingVariant">
+            <summary>
+            Вариант проверки организации на дубли в БД 
+            (
+            1 - Если параметр INN НЕ задан либо его длина != 10 символов,
+            2 - Если параметр INN задан и состоит из 10 символов
+            0 - Не проверять на дубли
+            )
+            </summary>
+        </member>
+        <member name="T:SparkContracts.OKATO">
+            <summary>
+            ОКАТО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKATO.Code">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKATO.RegionName">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKATO.RegionCode">
+            <summary>
+            Код региона
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Classifier">
+            <summary>
+            Классификатор (ОКОГУ, ОКФС, ОКОПФ)
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Classifier.Code">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Classifier.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="T:SparkContracts.OKVED">
+            <summary>
+             ОКВЭД
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKVED.Code">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKVED.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="F:SparkContracts.OKVED.IsMain">
+            <summary>
+            Признак основного ОКВЭД
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Address">
+            <summary>
+            Юридический  Адрес
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Address.PostCode">
+            <summary>
+            Индекс
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Address.AddressStr">
+            <summary>
+            Адрес
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Address.ActualDate">
+            <summary>
+            Дата актуальности
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Phone">
+            <summary>
+            Телефон - факс
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Phone.Code">
+            <summary>
+            Код
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Phone.Number">
+            <summary>
+            Номер
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Phone.Status">
+            <summary>
+            Статус
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCompanyStructure">
+            <summary>
+            Информация о совладельцах, филиалах, дочерних компаниях и 
+            некоммерческих партнерствах компании по данным самой компании 
+            (из анкеты эмитента), Росстата и ЕГРЮЛ. 
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.SparkId">
+            <summary>
+            СПАРК ID
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.ShortName">
+            <summary>
+            Краткое наименование компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.EGRPOIncluded">
+            <summary>
+            Признак наличия компании в ЕГРПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.EGRULLikvidation">
+            <summary>
+            Сведения о ликвидации из ФНС
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.OKPO">
+            <summary>
+            ОКПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.CoownersFCSM">
+            <summary>
+            Совладельцы по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.CoownersRosstat">
+            <summary>
+            Совладельцы по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.CoownersEGRUL">
+            <summary>
+            Совладельцы по данным ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.BranchesRosstat">
+            <summary>
+            Филиалы по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.Branches">
+            <summary>
+            Филиалы по данным компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.AffiliatedCompaniesFCSM">
+            <summary>
+            Дочерние компании по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.AffiliatedCompaniesRosstat">
+            <summary>
+            Дочерние компании по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompanyStructure.NonprofitOrganizationRosstat">
+            <summary>
+            Некоммерческие организации по данным Росстата
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownersFCSM">
+            <summary>
+            Совладельцы по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersFCSM.ActualDate">
+            <summary>
+            Дата актуальности  сведений
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersFCSM.ShareHoldersCount">
+            <summary>
+            Общее количество акционеров
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersFCSM.CoownerFCSMs">
+            <summary>
+            Совладельцы
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownersRosstat">
+            <summary>
+            Совладельцы по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersRosstat.ActualDate">
+            <summary>
+            Дата актуальности  сведений
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersRosstat.CoownerRosstats">
+            <summary>
+            Совладельцы
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownerRosstat">
+            <summary>
+            Совладелец по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerRosstat.SharePart">
+            <summary>
+            Доля в УК, %.
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerRosstat.SharePartRUR">
+            <summary>
+            Доля в УК, руб.
+            </summary>
+        </member>
+        <member name="T:SparkContracts.SparkCompany">
+            <summary>
+            Компания в СПАРК
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.ActualDate">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.Name">
+            <summary>
+            Наименование
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.Address">
+            <summary>
+            Местонахождение
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.SparkId">
+            <summary>
+            СПАРК ID
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.INN">
+            <summary>
+            ИНН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.OGRN">
+            <summary>
+            ОГРН
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.OKPO">
+            <summary>
+            ОКПО
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.FullName">
+            <summary>
+            Полное наименование компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.RegionName">
+            <summary>
+            Наименование региона
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.OKOPFName">
+            <summary>
+            Наименование организационно-правовой формы
+            </summary>
+        </member>
+        <member name="F:SparkContracts.SparkCompany.Manager">
+            <summary>
+            Руководитель
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownerFCSM">
+            <summary>
+            Совладелец по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerFCSM.TypeHolder">
+            <summary>
+            Вид зарегистрированного лица
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerFCSM.IsCompany">
+            <summary>
+            Признак юридического лица
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerFCSM.SharePart">
+            <summary>
+            Доля в УК, %.
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownersEGRUL">
+            <summary>
+            Совладельцы по данным ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersEGRUL.ActualDate">
+            <summary>
+            Дата актуальности  сведений
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownersEGRUL.CoownerEGRULs">
+            <summary>
+            Совладельцы
+            </summary>
+        </member>
+        <member name="T:SparkContracts.CoownerEGRUL">
+            <summary>
+            Совладелец по данным ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerEGRUL.InputDate">
+            <summary>
+            Дата включения в ЕГРЮЛ
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerEGRUL.CoownerType">
+            <summary>
+            Вид совладельца
+            </summary>
+        </member>
+        <member name="F:SparkContracts.CoownerEGRUL.SharePartRUR">
+            <summary>
+            Доля в УК, руб.
+            </summary>
+        </member>
+        <member name="T:SparkContracts.Branch">
+            <summary>
+            Филиал по данным компании
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Branch.OpenDate">
+            <summary>
+            Дата открытия филиала
+            </summary>
+        </member>
+        <member name="F:SparkContracts.Branch.TermDate">
+            <summary>
+            Срок действия лицензии
+            </summary>
+        </member>
+        <member name="T:SparkContracts.BranchRosstat">
+            <summary>
+            Филиал по данным Росстата
+            </summary>
+        </member>
+        <member name="T:SparkContracts.AffiliatedCompaniesFCSM">
+            <summary>
+            Дочерние компании по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompaniesFCSM.ActualDate">
+            <summary>
+            Дата актуальности  сведений
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompaniesFCSM.AffiliatedCompanies">
+            <summary>
+            Дочерние компании по данным анкеты эмитента
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompanyFCSM.SharePart">
+            <summary>
+            Доля в УК, %.
+            </summary>
+        </member>
+        <member name="T:SparkContracts.AffiliatedCompaniesRosstat">
+            <summary>
+            Дочерние компании по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompaniesRosstat.ActualDate">
+            <summary>
+            Дата актуальности  сведений
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompaniesRosstat.AffiliatedCompaniesRosstats">
+            <summary>
+            Дочерние компании по данным Росстата
+            </summary>
+        </member>
+        <member name="T:SparkContracts.AffiliatedCompanyRosstat">
+            <summary>
+            Дочерняя компания по данным Росстата
+            </summary>
+        </member>
+        <member name="F:SparkContracts.AffiliatedCompanyRosstat.SharePart">
+            <summary>
+            Доля в УК, %.
+            </summary>
+        </member>
+        <member name="T:SparkContracts.NonprofitOrganizationRosstat">
+            <summary>
+            Некоммерческие организации по данным Росстата
+            </summary>
+        </member>
+        <member name="T:SparkContracts.HelperPrint">
+            <summary>
+            Вспомогательный класс для 
+            преобразования списков компаний 
+            в строковый вид
+            </summary>
+        </member>
+        <member name="M:SparkContracts.HelperPrint.FormatDateShort(System.String)">
+            <summary>
+            Возвращает дату в кратком формате
+            </summary>
+            <param name="date">Дата (строковое представление)</param>
+            <returns>Дата (краткий формат даты)</returns>
+        </member>
+        <member name="T:SparkContracts.SphereSpark">
+            <summary>
+            Сфера деятельности
+            </summary>
+        </member>
+        <member name="M:SparkContracts.HelpListsString.NameStartsWithWord(System.String,System.String,System.String@)">
+            <summary>
+            Возвращает результат проверки - является ли первое слово словом word, 
+            и остаток строки - remainder
+            </summary>
+            <param name="name"></param>
+            <param name="word"></param>
+            <param name="remainder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SparkContracts.HelpListsString.RemoveAllQuotes(System.String)">
+            <summary>
+            Удаляет все возможные символы двойных кавычек (заменяет на пробел)
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:SparkContracts.HelpListsString.CutName(System.String,System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Преобразование имени (замена имени на сокращенное) 
+            </summary>
+        </member>
+        <member name="M:SparkContracts.HelpListsString.IsWordInsideString(System.String,System.String)">
+            <summary>
+            Проверяет, есть ли заданное слово (целиком) в строке (учитывая границы слова)
+            </summary>
+            <param name="source">Проверяемый текст</param>
+            <param name="word">Искомое слово</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.SparkService.ISparkService">
+            <summary>
+            Представляет объект для работы со службой СПАРК. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.TestChannel">
+            <summary>
+            Выполняет тестовый вызов. 
+            </summary>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetCodesByOrgId(System.Int32)">
+            <summary>
+            Получает из СА коды ИНН и ОГРН организации по идентификатору организации.          
+            </summary>
+            <param name="id">Идентификатор организации в СА</param>
+            <returns>Коды ИНН, ОГРН</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetSparkInfo(System.Collections.Generic.List{SparkContracts.CodeClassifier},System.Int32)">
+            <summary>
+            Получает из СПАРК информацию об организации по кодам ИНН, ОГРН. 
+            </summary>
+            <param name="codes">Коды ИНН, ОГРН</param>
+            <param name="excludeBranch">Исключить ли филиалы из результата 
+            (1 - исключить, 0 - не исключать)</param>
+            <returns>Информация об организации</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.UpdateOrgTextWithSparkData(System.Int32,System.String)">
+            <summary>
+            Обновляет поле Текстовое Досье организации данными СПАРК. 
+            </summary>
+            <param name="id">Идентификатор организации в СА</param>
+            <param name="sparkData">Данные СПАРК</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.UpdateDBWithSparkData(System.Int32,SparkContracts.SparkCompanyStructure)">
+            <summary>
+            Обновляет данные организации в СА данными из СПАРК (может создавать новые объекты/связи).  
+            </summary>
+            <param name="id">Идентификатор организации в СА</param>
+            <param name="structure">Информация о структуре организации из СПАРК</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetSparkCompanyStructure(System.String,System.String,System.String)">
+            <summary>
+            Получает из СПАРК актуальную информацию о совладельцах, филиалах, 
+            дочерних компаниях и некоммерческих партнерствах компании 
+            по данным самой компании (из анкеты эмитента), Росстата и ЕГРЮЛ.
+            </summary>
+            <param name="inn">Код ИНН</param>
+            <param name="ogrn">Код ОГРН</param>
+            <param name="sparkid">Идентификатор организации в СПАРК (необязательное)</param>
+            <returns>Объекты с информацией о структуре организации из СПАРК</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.UpdateDBObjectsOfCompanyStructure(System.Int32,System.String,System.String,System.String,SparkContracts.ResultOfSearchStructureCompanyByCodes)">
+            <summary>
+            Обновляет данные организации в СА данными из СПАРК (может создавать новые объекты/связи). 
+            </summary>
+            <param name="idOrg">Идентификатор организации в СА</param>
+            <param name="inn">Код ИНН</param>
+            <param name="ogrn">Код ОГРН</param>
+            <param name="sparkid">Идентификатор организации в СПАРК (необязательное)</param>
+            <param name="result">Объекты с информацией о структуре организации из СПАРК</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetSparkCompanyExtReport(System.String,System.String,System.String)">
+            <summary>
+            Получает из СПАРК 
+            расширенную справку о компании по идентификатору СПАРК, ИНН или ОГРН. 
+            (Если указаны как ИНН, так и ОГРН, то поиск происходит по логическому И. 
+            При поиске по ИНН/ОГРН поиск по филиалам не проводится.) 
+            </summary>
+            <param name="inn">ИНН</param>
+            <param name="ogrn">ОГРН</param>
+            <param name="sparkid">СПАРК идентификатор</param>
+            <returns>Список расширенных справок об организации</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.UpdateDBWithSparkExtReport(System.Int32,SparkContracts.SparkCompanyExtReport)">
+            <summary>
+            Обновляет данные по организации данными СПАРК, 
+            создает и обновляет Объекты , Факты, Связи 
+            по информации СПАРК. 
+            </summary>
+            <param name="id">Организация</param>
+            <param name="report">Расширенная справка СПАРК</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.FindSparkInfoFromExtReport(System.Int32)">
+            <summary>
+            Обновляет данные по организации данными СПАРК, 
+            создает и обновляет Объекты , Факты, Связи 
+            по информации СПАРК (Расширенная справка). 
+            </summary>
+            <param name="idOrg">Организация</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.FindSparkExtendedReport(System.Int32)">
+            <summary>
+            Обновляет данные по организации данными СПАРК,
+            создает и обновляет Объекты , Факты, Связи 
+            по информации СПАРК (Расширенная справка).</summary>
+            <param name="organization">Организация</param>
+            <returns>Статус операции</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetSparkCompanyListByFIO(System.String,SparkContracts.KindOfLeader,SparkContracts.KindOfCompanySearchByFIO)">
+            <summary>
+            Получает из СПАРК список компаний 
+            по ФИО действующего руководителя или актуального учредителя. 
+            </summary>
+            <param name="fio">ФИО Персоны</param>
+            <param name="kleader">Тип Персоны (руководитель/учредитель)</param>
+            <param name="ksearch">Вид компаний (действующие/ликвидированные)</param>
+            <returns>Результат поиска компаний по ФИО руководителя/учредителя</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.UpdateDBObjectsFactsOfPerson(System.Int32,System.String,SparkContracts.KindOfLeader,SparkContracts.KindOfCompanySearchByFIO,SparkContracts.ResultOfSearchCompanyByFIO)">
+            <summary>
+            Обновляет информацию по Персоне, по связанным с Персоной компаниям 
+            информацией из СПАРК 
+            (результатом поиска компаний по ФИО руководителя/учредителя)
+            </summary>
+            <param name="idPerson">Персона (идентификатор в СА)</param>
+            <param name="fio">ФИО Персоны</param>
+            <param name="kleader">Тип Персоны (руководитель/учредитель)</param>
+            <param name="ksearch">Вид компаний (действующие/ликвидированные)</param>
+            <param name="result">Результат поиска компаний по ФИО руководителя/учредителя</param>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.GetCompaniesOfPerson(System.String,System.String)">
+            <summary>
+            Получает из СПАРК данные о компаниях Персоны, по ФИО и ИНН Персоны. 
+            (Если задано только ФИО, то возвращает все найденные соответствия Персона-Компания для такого ФИО. 
+            Если задано ФИО и ИНН, то возвращает все найденные соответствия Персона-Компания 
+            для таких ФИО и ИНН, или для такого ФИО и без ИНН.)       
+            </summary>
+            <param name="fio">ФИО Персоны</param>
+            <param name="inn">ИНН Персоны</param>
+            <returns>Результат поиска компаний по ФИО Персоны</returns>
+        </member>
+        <member name="M:ANBR.SparkService.ISparkService.SaveCompaniesOfPerson(System.Collections.Generic.List{SparkContracts.CompanyPersonPair},System.Int32)">
+            <summary>
+            Сохраняет в СА найденные в СПАРК соответствия Персона-Компания 
+            (найденные методом GetCompaniesOfPerson), создавая соответствующие связанные факты. 
+            </summary>
+            <param name="companies">Соответствия Персона-Компания</param>
+            <param name="idPerson">Персона (идентификатор в СА)</param>
+            <returns>Результат сохранения</returns>
+        </member>
+    </members>
+</doc>

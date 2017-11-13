@@ -1,0 +1,30 @@
+﻿@using www
+@{
+    Layout = null;
+    var currentLang = ViewBag.CurrentLang;
+    var objectID = ViewBag.ObjectID;
+}
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width" />
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/themes/base/css")
+</head>
+<body>
+    <div>
+        <div id="SemNet"></div>
+    </div>
+    <script data-main="/js/netsem" src="/js/libs/require/require.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        require.config(
+            {urlArgs: "v=1.1", config: {i18n: {locale: '@currentLang.ToLower()'}}});
+        define("objID", "@objectID");
+        define("access",{data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable((object)ViewBag.GLOBAL_SA))});
+    </script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿.request-library {
+    position:relative;
+    height:100%;
+    width:100%;
+    &.isDemo  {
+        margin:0;
+        position:fixed;
+        height:~"calc(100vh - 44px)";
+        width:100vw;
+        top:44px;
+        left:0;
+        & > .left {
+            width:25%;
+            padding:20px 0;
+            display:block;
+        }
+        & > .main {
+            width:75%;
+        }
+    }
+    & > .left {
+        width:35%;
+        float:none!important;
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        overflow: auto;
+        padding: 20px;
+        &::-webkit-scrollbar {
+            width: 10px;
+            height:10px;
+        }
+        &::-webkit-scrollbar-track {
+            background:#ccc;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background:#666;
+        }
+    }
+    & > .main {
+        float:none;
+        position:absolute;
+        width:65%;
+        top:0;
+        right:0;
+        height:100%;
+        padding:20px;
+        overflow:auto;
+        &::-webkit-scrollbar {
+            width: 10px;
+            height:10px;
+        }
+        &::-webkit-scrollbar-track {
+            background:#ccc;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background:#666;
+        }
+        & h4 {margin-bottom: 20px;}
+    }
+}
+
+#request-library {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    & .request-library {
+        & .authorisation-block {padding-top: 20px;}
+    }
+}

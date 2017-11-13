@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Header</title>
+	<meta charset="utf-8" />
+    <link href="header-new.min.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../dialog/dialog.css" rel="stylesheet" />
+    <link href="../form/form.min.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.min.css" rel="stylesheet" />
+    <link href="case.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('.nav-lang li:first').addClass('active');
+            $('.nav-lang li').click(function () {
+                $('.nav-lang li').removeClass('active');
+                $(this).addClass('active');
+            });
+            $('#DemoMode').click(function () {
+                $(this).toggleClass('active');
+                $('#dialog2').toggle();
+            });
+            $('#close, .g-dialog--header i.close ').click(function () {
+                $('#dialog2, #case-window').hide();
+            });
+            $('#basket-btn').click(function () {
+                $(this).toggleClass('active');
+                $('#case-window').toggle();
+                $('#case-window .g-dialog--wrapper').toggle();
+            });
+            $('#InfoDB').click(function () {
+                $('#blind-user').toggleClass('active');
+                $(this).toggleClass('active');
+                if ($('#blind-db').hasClass('active')) {
+                    $('#blind-db').toggleClass('active')
+                }
+            });
+            $('#InfoUser').click(function () {
+                $('#blind-db').toggleClass('active');
+                $(this).toggleClass('active');
+                if ($('#blind-user').hasClass('active')) {
+                    $('#blind-user').toggleClass('active')
+                }
+                
+            });
+            $('.btn-link').click(function () {
+                $(this).toggleClass('animation-on');
+                $('body').toggleClass('case-on');
+            });
+            $('.g-hide--header .close ').click(function () {
+                $('body').toggleClass('case-on');
+                $('.btn-link').toggleClass('animation-on');
+            });
+            $('.tlbr--erase').click(function () {
+                $('#sure').slideToggle(200);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="top" role="banner">
+        <div class="default-start-nav collapsed" id="Edge">
+            <div class="default-start-nav-header">
+                <div class="default-start-nav-path"><span></span>На главную</div>
+                <div id="startNav" class="default-start-nav-close"><span></span></div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="default-start-nav-inner">
+                <div class="default-start-tabs"><a href="#" class="active">Основные модули</a><a href="#">Сервисные модули</a></div>
+                <div class="default-start-tabs-toggler">
+                    <div class="default-start-tabs-inner"><ul><li><a href="/lang-ru-RU/wall?db=db159" class="btn-start btn-start--dashboard" target="_blank">Dashboard</a></li><li><a href="/lang-ru-RU/db159/wiki" class="btn-start btn-start--wiki" target="_blank">Wiki</a></li><li><a href="/lang-ru-RU/db159/check" class="btn-start btn-start--check" target="_blank">Check</a></li><li><a href="/lang-ru-RU/db159/inquiry" class="btn-start btn-start--inquiry" target="_blank">Compliance check</a></li><li><a href="/lang-ru-RU/db159" class="btn-start btn-start--analyst" target="_blank">Analyst</a></li><li><a href="abscp:lang-ru-RU/module/start/gs?db=db159" class="btn-start btn-start--global" target="_blank">Global Search</a></li><li><a href="abscp:lang-ru-RU/module/start/ts?db=db159" class="btn-start btn-start--enterprice" target="_blank">Enterprise search</a></li><div class="clearfix"></div></ul><ul><li><a href="/lang-ru-RU/db159/services/requestlibrary" class="btn-start btn-start--lib" target="_blank">Request Library</a></li><li><a href="/lang-ru-RU/db159/services/sources" class="btn-start btn-start--robot" target="_blank">Robot's collection</a></li><div class="clearfix"></div></ul></div>
+                </div>
+            </div>
+        </div>
+        <div class="alert-btn" id="magic">
+            <button class="btn-link animation-on"></button>
+        </div>
+        <div class="tray">
+            <ul class="tray--inner">
+                <li class="tray--item lang-block">
+                    <ul class="nav-lang">
+                        <li role="presentation">
+                            <a href="#">Ru</a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#">En</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="tray--item info-block">
+                    <span id="DemoMode"></span>
+                </li>
+                <li class="tray--item case-block">
+                    <span id="basket-btn">
+                        <span class="badge">666666666666</span>
+                    </span>
+                </li>
+                <li class="tray--item db-block">
+                    <span id="InfoDB"></span>
+                </li>
+                <li class="tray--item account-block">
+                    <span id="InfoUser">
+                        <span>ABS\iSafronov</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ACCOUNT BLIND -->
+    <div id="blind-user" class="g-blind--wrapper">
+        <div class="g-blind--container">
+            <div class="row">
+                <div class="left">
+                    <span class="user-icon">Сафронов Иван</span>
+                </div>
+                <div class="right">
+                    <a href="#">Профиль</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="g-blind--controls">
+            <button class="g-form--button small flat ghost-w">Выход</button>
+        </div>
+    </div>
+    <!-- / DB BLIND -->
+    
+    <!-- DB BLIND -->
+    <div id="blind-db" class="g-blind--wrapper">
+        <div class="g-blind--container">
+            <div class="row">
+                <div class="left">
+                    <span class="db-icon">База данных:</span>
+                </div>
+                <div class="right">
+                    Веб версия (пустая)
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <span class="project-icon">Проект:</span>
+                </div>
+                <div class="right">
+                    Демо 1
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="left">
+                    <span class="group-icon">Рабочая группа:</span>
+                </div>
+                <div class="right">
+                    Демо площадка
+                </div>
+            </div>
+
+        </div>
+        <div class="g-blind--controls">
+            <button class="g-form--button small flat ghost-w">Сменить базу данных</button>
+        </div>
+    </div>
+    <!-- / DB BLIND -->
+
+    <!-- CASE WINDOW -->
+    <div id="case-window">
+        <div class="g-dialog--wrapper">
+            <div class="g-dialog--header " data-icon="icon-case">Case<i class="close"></i></div>
+            <div class="g-dialog--manage" id="sure">
+                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                <div class="row">
+                    <button class="g-form--button left  flat">Cancel</button>
+                    <button class="g-form--button right flat blue nest-left">Save</button>
+                </div>
+            </div>
+            <div class="g-dialog--toolbar">
+                <ul>
+                    <li class="tlbr--export"></li>
+                    <li class="tlbr--import"></li>
+                    <li class="tlbr--fact"></li>
+                    <li class="tlbr--doc"></li>
+                    <li class="tlbr--task"></li>
+                    <li class="tlbr--clear"></li>
+                    <li class="right tlbr--erase"></li>
+                </ul>
+            </div>
+            <div class="g-dialog--content hastoolbar">
+                <div class="g-dialog--container noncontrol">
+                    <div class="action-container"><div class="export-container"></div><div class="import-container"></div><div class="factdigest-container"></div><div class="docdigest-container"></div><div class="schetasks-container"></div></div>
+                    <div id="ObjList" style="height: 100%"><table class="table table-hover table-scroll-head"><thead><tr><th style="width: 100%">Наименование</th><th>Тип</th><th></th></tr></thead></table><div class="scroll-wrap mCustomScrollbar _mCS_2 mCS_no_scrollbar" style="height: 350px;"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" tabindex="0"><div id="mCSB_2_container" class="mCSB_container mCS_y_hidden mCS_no_scrollbar_y" style="position:relative; top:0; left:0;" dir="ltr"><table class="table table-hover"><thead style="display: none;"><tr><th>Наименование</th><th>Тип</th><th></th></tr></thead><tbody class="ui-selectable"></tbody><tfoot><tr><td colspan="6"><div class="dropdown-list-menu"></div></td></tr></tfoot></table></div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: none;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; top: 0px; height: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div><div class="paging-box" style="display: none;"><div class="paginator" id="paginationview235"></div><div class="paginator_pages">Страниц: <span>0</span></div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- / CASE WINDOW --> 
+
+    <!-- INFO WINDOW --> 
+    <div class="g-dialog--wrapper large" id="dialog2">
+        <div class="g-dialog--header " data-icon="icon-info">Information<i class="close"></i></div>
+        <div class="g-dialog--content">
+            <div class="g-dialog--container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            </div>
+            <div class="g-dialog--controls">
+                <div class="left" style="padding-top:10px">
+                    <input type="checkbox" class="g-form--checkbox" id="nevermore" />
+                    <label for="nevermore">Не показывать снова.</label>
+                </div>
+                <button class="g-form--button right blue" id="close">Ok</button>
+            </div>
+        </div>
+    </div>
+    <!-- / INFO WINDOW --> 
+    <div class="g-hide--wrapper">
+        <div class="g-hide--header" data-icon="icon-folder">Hidden block title<i class="close"></i></div>
+        <div class="g-hide--toolbar">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div class="g-hide--container hastoolbar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam congue risus ut faucibus condimentum. Nulla id ligula a velit convallis rutrum ac nec elit. Nullam et rhoncus ex. Nulla leo nulla, congue a dui eu, elementum porta eros. Praesent magna magna, molestie vel neque in, rhoncus condimentum dui. Nulla cursus diam ac sapien posuere, sit amet porta lacus convallis. Nam tempus nibh justo, nec semper metus bibendum vitae. Vestibulum tempus rhoncus feugiat. Nulla at cursus metus. Sed sapien leo, sollicitudin eget lectus et, convallis lacinia augue. Cras a sapien venenatis, fringilla libero quis, lobortis augue.</p>
+        </div>
+        <div class="g-hide--controls">
+            <div class="left" style="padding-top:10px">
+                <input type="checkbox" class="g-form--checkbox" id="nevermore2" />
+                <label for="nevermore2">Читать не буду.</label>
+            </div>
+            <button class="g-form--button flat right blue">Button</button>
+        </div>
+    </div>
+</body>
+</html>

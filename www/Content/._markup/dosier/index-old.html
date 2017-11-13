@@ -1,0 +1,337 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dosier</title>
+	<meta charset="utf-8" />
+    <link href="dosier.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function(){
+            $('.sidebar-toggler').click(function () {
+                $(this).toggleClass('active');
+                $('.sidebar').toggleClass('active');
+                $('.main').toggleClass('single');
+            });
+            $('#fs').click(function () {
+                $('.dosier').toggleClass('fs');
+                $(this).toggleClass('active');
+            });
+            $('.save').click(function () {
+                $("#dialog-save").show();
+            });
+            $('#dialog-save .close').click(function(){
+                $("#dialog-save").hide();
+            });
+            $('li[data-folder="true"] i').click(function () {
+                $(this).parent('span').parent('li').toggleClass('expanded');
+            });
+            $('li[data-folder] span').click(function () {
+                $('li[data-folder] span').removeClass('current');
+                $(this).toggleClass('current');
+            });
+        });
+    </script>
+    <style>
+        body {
+            font-size:13px;
+            font-family:Roboto;
+            color:#444;
+            padding:0;
+            margin:0;
+        }
+        .wrapper {
+            width:90%;
+            position:relative;
+            margin:0 auto;
+            padding-top:160px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="dosier fs">
+            <div role="toolbar">
+                <div class="left-panel">
+                    <ul>
+                        <li class="sidebar-toggler active" title="Toggle navigation"></li>
+                        <li class="save" title="Save document"></li>
+                        <li class="msword" title="Export to MS Word"></li>
+                    </ul>
+                    <div class="send">
+                        <label for="dosier-send-input">Send archive to:</label>
+                        <input type="text" name="dosier-send-input" id="dosier-send-input" value="" placeholder="example@test.com"/>
+                    </div>
+                </div>
+                <div id="fs" class="enlarge active" title="Fullscreen mode"></div>
+                <div class="clearfix"></div>
+            </div>
+            <div role="navigation" class="sidebar active">
+                <ul>
+                    <li data-folder="root" class="contain"><span class="current"><i></i>Оглавление</span>
+                    </li>
+                    <li data-folder="root">
+                        <span><i></i>Основные сведения о компании</span>
+                        <ul>
+                            <li data-folder="false"><span><i></i>Карточка организации</span></li>
+                            <li data-folder="false"><span><i></i>Выписки</span></li>
+                        </ul>
+                    </li>
+                    <li data-folder="root">
+                        <span><i></i>Сведения о деятельности компании</span>
+                        <ul>
+                            <li data-folder="true">
+                                <span><i></i>Негативные сведения</span>
+                                <ul>
+                                    <li data-folder="false"><span><i></i>Сообщения о банкротстве, ликвидации или ликвидации или ликвидации</span></li>
+                                    <li data-folder="false"><span><i></i>Нахождение в неблагополучных реестрах или</span></li>
+                                    <li data-folder="false"><span><i></i>Информация о залогах, продаже имущества</span></li>
+                                    <li data-folder="false"><span><i></i>Сообщения об отмене доверенностей, лиценз</span></li>
+                                    <li data-folder="false"><span><i></i>Судебная практика: арбитраж, уголовные или</span></li>
+                                    <li data-folder="false"><span><i></i>Розыски, криминал, терроризм, участие в</span></li>
+                                    <li data-folder="false"><span><i></i>Санкции, запреты, штрафы</span></li>
+                                    <li data-folder="false"><span><i></i>Недействительные, просроченные  или </span></li>
+                                    <li data-folder="false"><span><i></i>Прочие негативные сообщения</span></li>
+                                </ul>
+                            </li>
+                            <li data-folder="true"><span><i></i>Сомнительные сведения</span>
+                                <ul>
+                                    <li data-folder="false"><span><i></i>Вносимые изменения в ЕГРЮЛ</span></li>
+                                    <li data-folder="false"><span><i></i>Регистрационные изменения в ЕГРЮЛ</span></li>
+                                    <li data-folder="false"><span><i></i>Сообщения о реорганизации компании</span></li>
+                                    <li data-folder="false"><span><i></i>Жалобы</span></li>
+                                    <li data-folder="false"><span><i></i>Прочие сомнительные сообщения</span></li>
+                                </ul>
+                            </li>
+                            <li data-folder="true">
+                                <span><i></i>Нейтральные или положительные сведения</span>
+                                <ul>
+                                    <li data-folder="false"><span><i></i>Контракты, тендера</span></li>
+                                    <li data-folder="false"><span><i></i>Торги, закупки</span></li>
+                                    <li data-folder="false"><span><i></i>Гранты</span></li>
+                                    <li data-folder="false"><span><i></i>Внешнеэкономическая деятельность</span></li>
+                                    <li data-folder="false"><span><i></i>Лицензии</span></li>
+                                    <li data-folder="false"><span><i></i>Права, разрешения</span></li>
+                                    <li data-folder="false"><span><i></i>Проверки</span></li>
+                                    <li data-folder="false"><span><i></i>Сообщения эмитентов</span></li>
+                                    <li data-folder="false"><span><i></i>Аренда, покупка недвижимости</span></li>
+                                    <li data-folder="false"><span><i></i>Владение недвижимостью, ТС</span></li>
+                                    <li data-folder="false"><span><i></i>Общие сведения о нахождении в разнообраз</span></li>
+                                    <li data-folder="false"><span><i></i>Прочие нейтральные сообщения</span></li>
+                                    <li data-folder="false"><span><i></i>Прочие положительные сообщения</span></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="main" role="main">
+                <header class="object-intro">
+                    <div class="check-date">
+                        <span class="check-date--label">Проверка организации</span>
+                        <span class="check-date--value">20.07.2016</span>
+                    </div>
+                    <div class="object-role">
+                        Участник тендера
+                    </div>
+                    <div class="object-title">
+                        <div class="object-logo">
+                            <img src="images/LOGO.jpg" />
+                        </div>
+                        <div class="object-name">Общество с ограниченной ответственностью ООО&nbsp;“Интерстеллар”</div>
+                    </div>
+                </header>
+                <article>
+                    <div id="summary" class="section-title">
+                        Основные сведения о компании
+                    </div>
+                    <div class="g-form--pulsar">
+                        <input type="checkbox" id="dosier-card"/>
+                        <label for="dosier-card">Карточка организации</label>
+                        <div class="g-form--pulsar-container">
+                            <div class="dosier--source">
+                                <span>ЕГРЮЛ</span>
+                                <span>Полная выписка из ЕГРЮЛ</span>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td>Полное наименование</td>
+                                    <td>Общество с ограниченной ответственностью “Интерстеллар”</td>
+                                </tr>
+                                <tr>
+                                    <td>Сокращенное наименование</td>
+                                    <td>ООО “Интерстеллар”</td>
+                                </tr>
+                                <tr>
+                                    <td>Статус</td>
+                                    <td>Действующее</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата регистрации</td>
+                                    <td>28.10.1994</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>7801045373</td>
+                                </tr>
+                                <tr>
+                                    <td>ОГРН</td>
+                                    <td>1027800548753</td>
+                                </tr>
+                                <tr>
+                                    <td>Адрес регистрации</td>
+                                    <td>город Санкт-Петербург, улица Весельная, 6, корпус 3, офис 146</td>
+                                </tr>
+                                <tr>
+                                    <td>Уставной капитал</td>
+                                    <td>1 000 000 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td>Основной вид деятельности</td>
+                                    <td>51.70 Прочая оптовая торговля</td>
+                                </tr>
+                            </table>
+                            <h4 class="dosier--ah">Руководитель</h4>
+                            <table class="blue">
+                                <tr>
+                                    <td>ФИО</td>
+                                    <td>Паничев Никоолай Борисович</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>780621858659</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата внесения в ЕГРЮЛ</td>
+                                    <td>21.07.2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Должность</td>
+                                    <td>Генеральный директор</td>
+                                </tr>
+                            </table>
+                            <h4 class="dosier--ah">Учредители</h4>
+                            <table class="green">
+                                <tr>
+                                    <td>ФИО</td>
+                                    <td>Паничев Никоолай Борисович</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>780621858659</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата внесения в ЕГРЮЛ</td>
+                                    <td>21.07.2011</td>
+                                </tr>
+                                <tr>
+                                    <td>Доля в рублях</td>
+                                    <td>500 000 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Доля в процентах</td>
+                                    <td>50%</td>
+                                </tr>
+                            </table>
+                            <table class="green">
+                                <tr>
+                                    <td>ФИО</td>
+                                    <td>Гуляев Александр Валентинович</td>
+                                </tr>
+                                <tr>
+                                    <td>ИНН</td>
+                                    <td>876205816895</td>
+                                </tr>
+                                <tr>
+                                    <td>Дата внесения в ЕГРЮЛ</td>
+                                    <td>21.09.2009</td>
+                                </tr>
+                                <tr>
+                                    <td>Доля в рублях</td>
+                                    <td>500 000 рублей</td>
+                                </tr>
+                                <tr>
+                                    <td>Доля в процентах</td>
+                                    <td>50%</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="g-form--pulsar">
+                        <input type="checkbox" id="dosier-extract" />
+                        <label for="dosier-extract">Выписки (2)</label>
+                        <div class="g-form--pulsar-container">
+                            <div class="dosier--source">
+                                <span>Croinform</span>
+                            </div>
+                            <p>Проверка ООО “Интерстеллар” (ИНН 7801045373, ОГРН 1027800548753) 20.07.2016</p>
+                            <p>Интегральный коэффициент риска (ИКР) - 7</p>
+                            <p><strong>Oсновная информация:</strong></p>
+                            <p>Данные регистрации, аффилированности и бухгалтерской отчетности, повлиявшие на величину ИКР:</p>
+                            <ol>
+                                <li>ООО "МОРТРАНС" зарегистрировано с организационно-правовой формой «Общество с ограниченной ответственностью».</li>
+                                <li>В отношении ООО "МОРТРАНС" отсутствуют действующие решения ФНС РФ о приостановлении операций по банковским счетам.</li>
+                                <li>Анализ баланса за последний отчетный период, проведенный с использованием критериев Положения ЦБ РФ от 26.03.2004 г. № 254-П, показывает, что финансовое состояние ООО "МОРТРАНС" оценивается как «ХОРОШЕЕ».</li>
+                                <li>ООО "МОРТРАНС" зарегистрировано с минимально допустимым на момент регистрации уставным капиталом равным 10'000 руб.</li>
+                            </ol>
+                            <div class="note">
+                                <p><strong>Примечание</strong>: Значение ИКР является скоринговым показателем, рассчитываемым на основании авторских методик с использованием публично доступной информации в отношении ЮЛ. Данная оценка является лишь нашим мнением и не дает каких-либо гарантий и рекомендаций для принятия на ее основе коммерческих или иных решений.
+Значение ИКР является скоринговым показателем, рассчитываемым.</p>
+                            </div>
+                            <p><strong>Второстепенная информация:</strong></p>
+                            <p>Данные регистрации, аффилированности и бухгалтерской отчетности, повлиявшие на величину ИКР:</p>
+                            <ul>
+                                <li>ООО "МОРТРАНС" зарегистрировано с организационно-правовой формой «Общество с ограниченной ответственностью».</li>
+                                <li>В отношении ООО "МОРТРАНС" отсутствуют действующие решения ФНС РФ о приостановлении операций по банковским счетам.</li>
+                                <li>Анализ баланса за последний отчетный период, проведенный с использованием критериев Положения ЦБ РФ от 26.03.2004 г. № 254-П, показывает, что финансовое состояние ООО "МОРТРАНС" оценивается как «ХОРОШЕЕ».</li>
+                                <li>ООО "МОРТРАНС" зарегистрировано с минимально допустимым на момент регистрации уставным капиталом равным 10'000 руб.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+                <footer class="object-footer">
+                    <div class="section-title">
+                        Сведения о деятельности компании
+                    </div>
+                    <div class="g-form--pulsar red">
+                        <input type="checkbox" id="dosier-red" />
+                        <label for="dosier-red">Негативные сведения (3)</label>
+                        <div class="g-form--pulsar-container">
+                        </div>
+                    </div>
+                    <div class="g-form--pulsar yellow">
+                        <input type="checkbox" id="dosier-yellow" />
+                        <label for="dosier-yellow">Сомнительные сведения (0)</label>
+                        <div class="g-form--pulsar-container">
+                        </div>
+                    </div>
+                    <div class="g-form--pulsar blue">
+                        <input type="checkbox" id="dosier-blue" />
+                        <label for="dosier-blue">Нейтральные сведения (0)</label>
+                        <div class="g-form--pulsar-container">
+                        </div>
+                    </div>
+                    <div class="g-form--pulsar green">
+                        <input type="checkbox" id="dosier-green" />
+                        <label for="dosier-green">Положительные сведения (3)</label>
+                        <div class="g-form--pulsar-container">
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="clearfix"></div>
+        </section>
+    </div>
+    <div class="g-dialog--wrapper" id="dialog-save">
+        <div class="g-dialog--header">Dialog title <i class="close"></i></div>
+        <div class="g-dialog--content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde nesciunt ducimus non soluta itaque dolore ratione, architecto, consequuntur quis laboriosam eveniet ut, commodi. Eaque adipisci reprehenderit, nulla assumenda, corporis error!
+            </p>
+            <hr />
+            <div style="float:left"><button type="button" class="g-form--button prev">Button prev</button></div>
+            <div style="float:right"><button type="button" class="g-form--button next">Button next</button></div>
+            <div style="clear:both"></div>
+        </div>
+    </div>
+</body>
+</html>

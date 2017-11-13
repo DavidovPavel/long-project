@@ -1,0 +1,17 @@
+﻿{
+  "js": [
+    "js/dist/jquery.form.js",
+    "js/dist/c3.js",
+    "js/dist/limarquee/jquery.limarquee.js",
+    "js/dist/jqcloud-1.0.4.js",
+    "js/@global/views/maps/geomapgoogleview.js",
+    "js/@global/views/charts/ejchartview.js",
+    "js/@global/views/charts/settingsmodel.js",
+    "js/@ReqLibrary/views/libraryview.js"
+  ],
+
+  "tpl": [
+    "js/@reqlibrary/views/services-request-library.tpl"
+  ]
+}
+

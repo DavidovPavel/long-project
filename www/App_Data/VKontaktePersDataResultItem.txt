@@ -1,0 +1,6 @@
+﻿  <tr>
+    <td></td>
+    <td bgcolor="#E9E9E9"><img src="{CUSTOM-Photo}"/></td>
+    <td bgcolor="#E9E9E9">{CUSTOM-Info}</td>
+    <td bgcolor="#E9E9E9"><a target=_blank" href="{CUSTOM-Url}">{CUSTOM-Url}</a></td>
+  </tr>

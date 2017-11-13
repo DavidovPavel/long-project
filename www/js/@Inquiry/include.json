@@ -1,0 +1,18 @@
+﻿{
+  "js": [
+    "js/dist/jquery.form.js",
+    "js/dist/gtkMeter.min.js",
+    "js/@global/models/storagemodel.js",
+    "js/@global/views/files/attachfile.js",
+    "js/@global/views/semnet/layoutview.js",
+    "js/@seasources/views/filter/filtersview.js",
+    "js/@seasources/views/list/listsourcesview.js",
+    "js/@seasources/views/mainview.js"
+  ],
+  "html": [
+    "js/@seasources/**/*.html"
+  ],
+  "tpl": [
+    "js/@seasources/**/*.tpl"
+  ]
+}

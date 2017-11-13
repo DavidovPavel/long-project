@@ -1,0 +1,141 @@
+﻿@import "../../libs/lib";
+
+.e-widget .e-in-wrap {
+    //border: 0;
+    border: solid 1px #bbb;
+}
+
+.e-widget:focus {
+    //border: 0;
+   
+}
+
+.e-widget .e-select {
+    background-color: transparent;
+    border-color: #EEE7DB;
+}
+
+    .e-widget .e-select:hover {
+        background-color: transparent;
+    }
+
+.e-widget input.e-input {
+    border: solid 1px #bbb;
+    box-sizing: border-box;
+}
+
+.e-datepicker .e-header,
+.e-datepicker .e-footer {
+    background-color: #666;
+    font-size: 13px;
+}
+
+.e-datepicker table td:hover, .e-datepicker td.e-state-hover, .e-datepicker .current-month.e-state-default.e-special-day:hover {
+    background-color: #666;
+}
+
+.e-datepicker .today {
+    background-color: #f0f0f0;
+}
+
+.e-datepicker .e-footer:hover {
+    background-color: #666;
+    border: 0;
+}
+
+.e-widget .e-icon.e-date {
+    .font-icon();
+    text-align: center;
+}
+
+    .e-widget .e-icon.e-date:before {
+        content: '\E787';
+        font-size: 16px;
+        color: @color-norm;
+        margin-top: 3px;
+    }
+
+
+
+// DATE PICKER
+.e-datepicker .e-calendar {
+    .e-header {
+        .e-datepicker-headertext {
+            color: #fff;
+            background: #666;
+        }
+
+        .e-prev, .e-next {
+            cursor: pointer;
+            position: relative;
+            top: -13px;
+
+            .e-icon {
+                color: #fff;
+            }
+        }
+
+        .e-prev {
+            left: -13px;
+        }
+
+        .e-next {
+            right: 4px;
+        }
+    }
+}
+.e-datepicker {
+    .e-week-header {
+        th {
+            color: #222;
+
+            &:before, &:after {
+                background: #dedede;
+            }
+        }
+    }
+
+    table {background: #fff;
+        tr {
+            &:nth-child(even), &:nth-child(odd) {
+                td {
+                    background: #fff !important;
+                }
+            }
+
+            &:hover {
+                td {
+                    background: #fff;
+                }
+            }
+
+            td {
+                &:hover {
+                    background: #52b6e4 !important;
+                }
+
+                &.e-active {
+                    background: #179bd7 !important;
+                }
+
+                &.today {
+                    border: 1px solid #179bd7 !important;
+                }
+            }
+        }
+    }
+}
+
+//Добавлена иконка image
+.e-rte-toolbar-icon.image:before, .e-rte-toolbar-icon.imageProperties:before {
+    content: "\e7a8";
+}
+
+//Изменена высота Области редактирования в Мастере
+#master-create .editarea {
+    height: 200px !important;
+}
+
+#master-create #ejControl_42_wrapper {
+    height: 320px !important;
+}

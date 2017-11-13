@@ -1,0 +1,119 @@
+﻿@color-dark: #333; 
+@color-norm: #666;
+@color-light: #999;
+
+@color-white: #fff;
+@color-blue: #5b8cd6;
+@color-light-blue: #7eb1ff;
+
+@color-dark-blue: #1e88e5;
+@color-active-blue: #417cd6;
+@color-red: #c44747;
+@color-orange-red:#cc4b3e;
+@color-light-yellow:#fff4c9;
+@color-yellow: #e9bd72;
+@color-pink: #d07878;
+
+@color-D7:#d7d7d7; // border-color
+
+@color-4: #444;
+@color-5: #555;
+@color-7: #777;
+@color-76: #767676;
+@color-8: #888;
+@color-9: #999;
+@color-B: #bbb;
+@color-C: #ccc;
+@color-C5: #c5c5c5;
+
+@color-58: #585858;
+@color-62: #626262;
+@color-6D: #6d6d6d;
+@color-9F: #9f9f9f;
+@color-B0: #b0b0b0;
+@color-E8: #e8e8e8;
+@color-F0: #f0f0f0; // bg dark
+@color-F3: #f3f3f3;
+@color-F4: #f4f4f4;
+@color-F5: #f5f5f5;
+@color-F9: #f9f9f9;
+@color-CD: #cdcdcd;
+@color-DC: #dcdcdc;
+@color-D3: #d3d3d3;
+@color-D4: #d4d4d4;
+@color-D9: #d9d9d9;
+@color-E6: #e6e6e6;
+@color-EA: #eaeaea;
+
+@images: "/images";
+
+
+.font-icon(){
+    font-family: Segoe MDL2 Assets;display: inline-block; font-style: normal; font-weight: normal; line-height: 1; 
+}
+
+.transform(@p){
+    -webkit-transform: @p;-ms-transform: @p;transform: @p;
+}
+
+.arrow-top(@border, @bg){
+    position:absolute;overflow:hidden;width:12px;height:8px;top:-8px;
+    &:after {content:'';background-color: @bg;border: 1px solid @border;.size(12px, 12px);position: relative;.transform(rotate(45deg))}
+}
+.arrow-bottom(@border, @bg){
+    position:absolute;overflow:hidden;width:12px;height:8px;bottom:-8px;left:20px;
+    &:after {content:'';background-color: @bg;border: 1px solid @border;.size(12px, 12px);position: relative;.transform(rotate(45deg));top:-13px;}
+}
+.arrow-left(@border, @bg){
+    position:absolute;overflow:hidden;width:6px;height:16px;left:-6px;
+    &:after {content:'';background-color: @bg;border: 1px solid @border;.size(12px, 12px);position: relative;.transform(rotate(45deg));left:2px;}
+}
+
+.size(@w){
+    .size(@w, @w);
+}
+.size(@w, @h, @d:inline-block){
+    width: @w; height: @h; display: @d;
+}
+
+.noshadow() {
+    -webkit-box-shadow:none; 
+    -moz-box-shadow:none; 
+    box-shadow:none; 
+}
+.boxshadow(@p, @c) when (iscolor(@c)){
+    -webkit-box-shadow:@p @c ; 
+    -moz-box-shadow: @p @c; 
+    box-shadow: @p @c; 
+}
+
+.panel(){
+    .panel(@color-white,@color-CD);
+}
+
+.panel (@bg, @border-color) when (iscolor(@bg)) { 
+    background-color: @bg; 
+    border: solid 1px @border-color;
+    .boxshadow(0 2px 2px, rgba(0,0,0,.1));
+}
+
+.bg(@color, @img, @position: 0px, @repeat: no-repeat) {
+    background-color:@color;
+    background-image:url(@img);
+    background-position: @position; 
+    background-repeat: @repeat;
+}
+
+.animation(@param){
+    -webkit-animation: @param;
+    animation: @param;
+}
+
+.transform(@param){
+    -webkit-transform: @param;
+    transform: @param;
+}
+
+.button(@width){
+    background-color: @color-F5;border: solid 1px @color-C;padding: 4px;width: @width;
+}

@@ -1,0 +1,495 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EntityFinderContracts</name>
+    </assembly>
+    <members>
+        <member name="T:EntityFinder.K_Entity">
+            <summary>
+            Сущность, найденная в тексте документа
+            </summary>
+        </member>
+        <member name="M:EntityFinder.K_Entity.#ctor(System.String,EntityFinder.EntityTypeSa,System.Int32)">
+            <summary>
+            Простейший конструктор сущности
+            </summary>
+            <param name="name">Название сущности</param>
+            <param name="typeSa">Тип сущности, используемый далее в СА</param>
+            <param name="idDoc">Номер документа, из которого извлечена сущность</param>
+        </member>
+        <member name="M:EntityFinder.K_Entity.#ctor(System.String,EntityFinder.EntityTypeRco,System.Int32)">
+            <summary>
+            Конструктор сущности с преобразованием типа сущности из типа сущности RCO
+            </summary>
+            <param name="name">Название сущности</param>
+            <param name="typeRco">Тип сущности RCO</param>
+            <param name="idDoc">Номер документа, из которого извлечена сущность</param>
+        </member>
+        <member name="P:EntityFinder.K_Entity.Name">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.Synonyms">
+            <summary>
+            Синонимы
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.EntityTypeRco">
+            <summary>
+            Тип объекта RCO
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.EntityTypeSa">
+            <summary>
+             Предлагаемый Тип объекта СА
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.IdDoc">
+            <summary>
+            Из какого документа выделена сущность
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.EntityLocations">
+            <summary>
+            Положения сущности в тексте
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.EntityFoundState">
+            <summary>
+            Найдена ли сущность в связанных с документом объектах
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.SimilarObjects">
+            <summary>
+            Похожие объекты в БД
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Entity.Duplicates">
+            <summary>
+            Дубликаты данной сущности (т.е. равные ей, но выделенные из других документов)
+            </summary>
+        </member>
+        <member name="M:EntityFinder.K_Entity.AddSimilarObject(EntityFinder.K_SimilarObject)">
+            <summary>
+            Описание типа, не используется
+            </summary>
+        </member>
+        <member name="M:EntityFinder.K_Entity.TransformNormalize(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Преобразование сущности (замена имени на сокращенное и добавление длинного имени как синонима) 
+            </summary>
+        </member>
+        <member name="T:EntityFinder.K_EntityLocation">
+            <summary>
+            Положение сущности в тексте документа
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_EntityLocation.Start">
+            <summary>
+            Начальная позиция
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_EntityLocation.Length">
+            <summary>
+            Длина
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_EntityLocation.IdDoc">
+            <summary>
+            ID документа, из которого выделена сущность
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_EntityLocation.TextFound">
+            <summary>
+            Текст
+            </summary>
+        </member>
+        <member name="T:EntityFinder.K_Sentence">
+            <summary>
+            Предложение
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_Sentence.PronounInside">
+            <summary>
+            Есть ли местоимение в предложении
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_Sentence.SentenceNumber">
+            <summary>
+            Порядковый номер предложения в тексте (первое = 1)
+            </summary>
+        </member>
+        <member name="T:EntityFinder.EntityTypeSa">
+            <summary>
+            Тип объекта Семантического Архива 
+            (Фильтр по типам искомых сущностей - какого типа сущности искать в документе)
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.None">
+            <summary>
+            Тип не задан
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Organization">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Region">
+            <summary>
+            Регион
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Object">
+            <summary>
+            Объект (фильтр 'Прочие Объекты')
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Date">
+            <summary>
+            Дата
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeSa.Money">
+            <summary>
+            Денежная сумма
+            </summary>
+        </member>
+        <member name="T:EntityFinder.KEntityFoundState">
+            <summary>
+            Статус сущности после поиска в связанных с документом объектах
+            </summary>
+        </member>
+        <member name="F:EntityFinder.KEntityFoundState.Found">
+            <summary>
+            Найдена в связанных с документом объектах
+            </summary>
+        </member>
+        <member name="F:EntityFinder.KEntityFoundState.NotFound">
+            <summary>
+            Не найдена в связанных с документом объектах
+            </summary>
+        </member>
+        <member name="T:EntityFinder.EntityTypeRco">
+            <summary>
+            Семантический тип сущности  (RCO тип)
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.None">
+            <summary>
+            Тип не задан
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.NamedObject">
+            <summary>
+            Именованный объект, 
+            семантический разряд которого достоверно установить не удается
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.Organization">
+            <summary>
+            Организация
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.Person">
+            <summary>
+            Персона
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.GeoObject">
+            <summary>
+            Географический объект
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.Date">
+            <summary>
+            Дата или обстоятельство времени
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.Money">
+            <summary>
+            Денежная сумма
+            </summary>
+        </member>
+        <member name="F:EntityFinder.EntityTypeRco.Special">
+            <summary>
+            Все прочие особые объекты и конструкции,
+            специфицированные пользователем
+            </summary>
+        </member>
+        <member name="T:EntityFinder.SAtoRCOtypeConverter">
+            <summary>
+            Конвертор типа СА в тип RCO и наоборот
+            </summary>
+        </member>
+        <member name="M:EntityFinder.SAtoRCOtypeConverter.ConvertRCOtoNativeType(EntityFinder.EntityTypeRco)">
+            <summary>
+            Преобразует тип сущности RCO в тип сущности СА, используется при создании объекта СА из объекта RCO
+            </summary>
+            <param name="typeRcoRco">тип RCO (единичный)</param>
+            <returns></returns>
+        </member>
+        <member name="T:EntityFinder.K_Fact">
+            <summary>
+            Потенциальный факт (выделен автоматически из текста источника)
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.Id">
+            <summary>
+            Идентификатор факта 
+            (Выделенный факт: -1, Сохраненный в БД: > 0, заполняется из БД реальным значением)
+            </summary>        
+        </member>
+        <member name="P:EntityFinder.K_Fact.FactName">
+            <summary>
+            Наименование факта (=текст факта)
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.FactType">
+            <summary>
+            Тип факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.Objects">
+            <summary>
+            Список объектов БД в факте
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.UniqueObjects">
+            <summary>
+            Список уникальных объектов БД в факте
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.Spheres">
+            <summary>
+            Список сфер деятельности в факте
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.Location">
+            <summary>
+            Позиция в тексте
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.ContainsMonitoredObj">
+            <summary>
+            Содержит ли объект мониторинга
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.FactDate">
+            <summary>
+            Дата факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.FactPlace">
+            <summary>
+            Место факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_Fact.SourceId">
+            <summary>
+            Источник факта
+            </summary>        
+        </member>
+        <member name="T:EntityFinder.K_SearchKind">
+            <summary>
+            Вид поиска
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_SearchKind.ExactPhraseInflectional">
+            <summary>
+            Точная фраза
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_SearchKind.AllWordsNotSequential">
+            <summary>
+            Все слова, необязательно последовательно друг за другом
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_SearchKind.SomeWords">
+            <summary>
+            Какие-либо из слов
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.Synonyms">
+            <summary>
+            Синонимы
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.IsUnique">
+            <summary>
+            Unique? 
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.Name">
+            <summary>
+            Имя объекта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.TypeDescription">
+            <summary>
+            Описание типа объекта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.Id">
+            <summary>
+            Id объекта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.Type">
+            <summary>
+            Тип объекта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.IsMonitored">
+            <summary>
+            Объект ли мониторинга
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_SimilarObject.Syn">
+            <summary>
+            Internal Use!
+            </summary>
+        </member>
+        <member name="M:EntityFinder.HelpListsString.NameStartsWithWord(System.String,System.String,System.String@)">
+            <summary>
+            Возвращает результат проверки - является ли первое слово словом word, 
+            и остаток строки - remainder
+            </summary>
+            <param name="name"></param>
+            <param name="word"></param>
+            <param name="remainder"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EntityFinder.HelpListsString.RemoveAllQuotes(System.String)">
+            <summary>
+            Удаляет все возможные символы двойных кавычек (заменяет на пробел)
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="T:EntityFinder.K_FactTypeSynonyms">
+            <summary>
+            Тип факта (с синонимами)
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonyms.TypeName">
+            <summary>
+            Имя типа
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonyms.TypeId">
+            <summary>
+            Id типа
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonyms.Synonyms">
+            <summary>
+            Синонимы
+            </summary>
+        </member>
+        <member name="T:EntityFinder.K_FactType">
+            <summary>
+            Тип факта
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_FactType.Name">
+            <summary>
+            Имя типа факта
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_FactType.Id">
+            <summary>
+            Id типа факта
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_FactType.ParentId">
+            <summary>
+            Id родительского типа факта 
+            </summary>
+        </member>
+        <member name="F:EntityFinder.K_FactType.ChildrenNodes">
+            <summary>
+            Наследники от этого типа факта
+            </summary>
+        </member>
+        <member name="T:EntityFinder.K_FactTypeSynonym">
+            <summary>
+            Синоним типа факта
+            (если синоним найден в тексте, то создается факт соответствующего типа)
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.Id">
+            <summary>
+            Id синонима типа факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.TypeId">
+            <summary>
+            Id типа факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.Name">
+            <summary>
+            Имя синонима типа факта
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.LanguageId">
+            <summary>
+            Язык синонима
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.IsFullText">
+            <summary>        
+            Является ли пользовательским полнотекстовым запросом
+            (если true, то Name - пользовательский текст, часть предложения CONTAINS(...))
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.UseMorphologic">
+            <summary>
+            Использовать ли морфологию при поиске
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.ForHighlight">
+            <summary>
+            Использовать ли для подсветки 
+            (на будущее...)
+            </summary>
+        </member>
+        <member name="P:EntityFinder.K_FactTypeSynonym.ForSearch">
+            <summary>
+            Использовать ли для поиска фактов этого типа
+            (если false - синоним выключен из поиска)
+            </summary>
+        </member>
+        <member name="M:EntityFinderWcf.IEntityFinderService.FindEntitiesEx(ANBR.Common.Contracts.PairIntString,EntityFinder.EntityTypeSa)">
+            <summary>
+            Ищет сущности в тексте документа с ID = pairIdText.Object_Id
+            </summary>
+            <param name="pairIdText">пара ID-текст документа</param>
+            <param name="whatToFind">что искать (комбинация типов объекта - KNativeType)</param>
+            <returns>список сущностей, найденных в документе</returns>
+        </member>
+        <member name="M:EntityFinderWcf.IEntityFinderService.FindEntitiesExRLP(ANBR.Common.Contracts.PairIntString,EntityFinder.EntityTypeSa)">
+            <summary>
+            Ищет сущности в тексте документа с ID = pairIdText.Object_Id
+            </summary>
+            <param name="pairIdText">пара ID-текст документа</param>
+            <param name="whatToFind">что искать (комбинация типов объекта - KNativeType)</param>
+            <returns>список сущностей, найденных в документе</returns>
+        </member>
+        <member name="M:EntityFinderWcf.IEntityFinderService.FindEntitiesInDocPart(System.String,EntityFinder.EntityTypeSa)">
+            <summary>
+            Ищет сущности  в части документа (text)
+            </summary>
+            <param name="text">текст документа</param>
+            <param name="whatToFind">что искать (комбинация типов объекта - KNativeType)</param>        
+            <returns>список сущностей, найденных в части документа</returns>
+        </member>
+    </members>
+</doc>

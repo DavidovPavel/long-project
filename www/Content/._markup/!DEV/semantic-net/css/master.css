@@ -1,0 +1,540 @@
+body {
+  font-family: 'Roboto';
+  position: relative;
+}
+header#top {
+  width: 100%;
+  height: 44px;
+  background: #444;
+}
+.button-close {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  background: transparent;
+}
+.button-close:before {
+  content: '';
+  width: 2px;
+  height: 16px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(45deg);
+  top: calc(50% - 8px);
+  left: calc(50% - 1px);
+  transition: all linear 150ms;
+}
+.button-close:after {
+  content: '';
+  width: 2px;
+  height: 16px;
+  background: #fff;
+  position: absolute;
+  transform: rotate(-45deg);
+  top: calc(50% - 8px);
+  left: calc(50% - 1px);
+  transition: all linear 150ms;
+}
+.button-close:hover {
+  background: #b00;
+}
+.button-close:hover:before {
+  transform: rotate(-45deg);
+}
+.button-close:hover:after {
+  transform: rotate(45deg);
+}
+.clearfix {
+  clear: both;
+}
+.default-start-nav {
+  width: 44px;
+  height: 44px;
+  background: #378dda;
+  position: relative;
+  transition: all linear 150ms;
+  cursor: pointer;
+}
+.default-start-nav span {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  display: block;
+  transition: all linear 150ms;
+}
+.default-start-nav span:before {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  content: '';
+  width: 2px;
+  height: 16px;
+  background: #378dda;
+}
+.default-start-nav span:after {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 0;
+  content: '';
+  width: 16px;
+  height: 2px;
+  background: #378dda;
+}
+.default-start-nav:hover span {
+  transform: rotate(180deg);
+}
+.monitoring--wrapper {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  min-height: calc(100% - 44px);
+  min-width: 1000px;
+}
+.container-flex {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+  min-height: 943px;
+}
+.container-flex .monitoring--sidebar {
+  width: 44px;
+  background: #333;
+  color: #cdcdcd;
+  padding-top: 44px;
+  transition: all linear 150ms;
+  overflow: hidden;
+  min-height: 100%;
+}
+.container-flex .monitoring--sidebar .hamburger {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  transition: all linear 150ms;
+}
+.container-flex .monitoring--sidebar .hamburger span {
+  width: 18px;
+  height: 2px;
+  background: #cdcdcd;
+  position: absolute;
+  top: calc(50% - 0.5px);
+  left: calc(50% - 9px);
+  transition: all linear 150ms;
+}
+.container-flex .monitoring--sidebar .hamburger span:before {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: -6px;
+  background: #cdcdcd;
+  left: 0;
+  content: '';
+  transition: all linear 30ms;
+}
+.container-flex .monitoring--sidebar .hamburger span:after {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: -6px;
+  background: #cdcdcd;
+  left: 0;
+  content: '';
+  transition: all linear 30ms;
+}
+.container-flex .monitoring--sidebar .hamburger:hover {
+  background: #252525;
+}
+.container-flex .monitoring--sidebar.active {
+  width: 240px;
+}
+.container-flex .monitoring--sidebar.active .hamburger span {
+  transform: rotate(90deg);
+}
+.monitoringSources--list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.monitoringSources--list li {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+.monitoringSources--list li a {
+  display: block;
+  text-decoration: none;
+  color: #cdcdcd;
+  height: 44px;
+  margin-top: 22px;
+  position: relative;
+  padding-left: 50px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.monitoringSources--list li a span {
+  padding-top: 16px;
+  display: inline-block;
+}
+.monitoringSources--list li a:before {
+  content: '';
+  position: absolute;
+  background: url('../images/monitoring.svg');
+  background-repeat: no-repeat;
+  background-size: 150px 44px;
+}
+.monitoringSources--list li a:hover {
+  background: #252525;
+}
+.monitoringSources--list .monitoringSources--all:before {
+  width: 18px;
+  height: 20px;
+  left: 13px;
+  top: calc(50% - 10px);
+  background-position: -22px 0;
+}
+.monitoringSources--list .monitoringSources--check:before {
+  width: 22px;
+  height: 22px;
+  left: 11px;
+  top: calc(50% - 11px);
+  background-position: -40px 0;
+}
+.monitoringSources--list .monitoringSources--mass-media:before {
+  width: 22px;
+  height: 22px;
+  left: 11px;
+  top: calc(50% - 11px);
+  background-position: 0 0;
+}
+.monitoringSources--list .monitoringSources--deep-internet:before {
+  width: 21px;
+  height: 21px;
+  left: 11px;
+  top: calc(50% - 10.5px);
+  background-position: -62px 0;
+}
+.monitoringSources--list .monitoringSources--through-search:before {
+  width: 22px;
+  height: 20px;
+  left: 13px;
+  top: calc(50% - 10px);
+  background-position: -83.5px 0;
+}
+.monitoringSources--list .monitoringSources--search-engines:before {
+  width: 21px;
+  height: 22px;
+  left: 12px;
+  top: calc(50% - 11px);
+  background-position: -105.5px 0;
+}
+.monitoringSources--list .monitoringSources--add:before {
+  width: 21.5px;
+  height: 21px;
+  left: 12px;
+  top: calc(50% - 10.5px);
+  background-position: -127.2px 0;
+}
+.monitoringSources--list .active span {
+  color: #63b7b7;
+}
+.monitoringSources--list .active .monitoringSources--all:before {
+  width: 18px;
+  height: 20px;
+  left: 13px;
+  top: calc(50% - 10px);
+  background-position: -22px 100%;
+}
+.monitoringSources--list .active .monitoringSources--check:before {
+  width: 22px;
+  height: 22px;
+  left: 11px;
+  top: calc(50% - 11px);
+  background-position: -40px 100%;
+}
+.monitoringSources--list .active .monitoringSources--mass-media:before {
+  width: 22px;
+  height: 22px;
+  left: 11px;
+  top: calc(50% - 11px);
+  background-position: 0 100%;
+}
+.monitoringSources--list .active .monitoringSources--deep-internet:before {
+  width: 21px;
+  height: 21px;
+  left: 11px;
+  top: calc(50% - 10.5px);
+  background-position: -62px 100%;
+}
+.monitoringSources--list .active .monitoringSources--through-search:before {
+  width: 22px;
+  height: 20px;
+  left: 13px;
+  top: calc(50% - 10px);
+  background-position: -83.5px 100%;
+}
+.monitoringSources--list .active .monitoringSources--search-engines:before {
+  width: 21px;
+  height: 22px;
+  left: 12px;
+  top: calc(50% - 11px);
+  background-position: -105.5px 100%;
+}
+.monitoringSources--list .active .monitoringSources--add:before {
+  width: 21.5px;
+  height: 21px;
+  left: 12px;
+  top: calc(50% - 10.5px);
+  background-position: -127.2px 100%;
+}
+/*MONITORING MAIN*/
+.monitoring--main {
+  min-height: 100%;
+  width: 100%;
+  font-size: 13px;
+}
+.monitoring--main .monitoring--searchbar {
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+  background: #2f3b4d;
+  color: #fff;
+}
+.monitoring--main .monitoring--searchbar input[type=text].monitoring--search--input {
+  border: 1px #eee solid;
+  box-sizing: border-box;
+  padding: 10px;
+  width: calc(100% - 169px);
+}
+.monitoring--main .monitoring--searchbar input[type=submit].monitoring--search--submit {
+  border: 0;
+  box-sizing: border-box;
+  padding: 11px;
+  width: 169px;
+  text-align: center;
+  color: #fff;
+  background: #57aeae;
+  margin-left: -4px;
+  cursor: pointer;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox {
+  margin: 20px 0 0 0;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter {
+  background: #2a3240;
+  float: left;
+  width: calc(100% - 400px);
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global {
+  width: 40px;
+  height: 36px;
+  display: block;
+  background: #475c79;
+  float: left;
+  cursor: pointer;
+  margin-right: 1px;
+  position: relative;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  background: url('../images/toolbox.svg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 48px 16px;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global:hover,
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global.active {
+  background: #374b66;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global-list {
+  width: 40px;
+  height: 36px;
+  display: block;
+  background: #475c79;
+  float: left;
+  cursor: pointer;
+  margin-right: 1px;
+  position: relative;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global-list:before {
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  background: url('../images/toolbox.svg');
+  background-repeat: no-repeat;
+  background-position: -16px 0;
+  background-size: 48px 16px;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--global-list:hover {
+  background: #374b66;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container {
+  float: left;
+  width: calc(100% - 82px);
+  white-space: nowrap;
+  height: 36px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list {
+  padding: 0;
+  margin: 0;
+  display: block;
+  list-style: none;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li {
+  display: block;
+  float: left;
+  background: #475c79;
+  border: 1px solid #475c79;
+  margin-right: 1px;
+  height: 36px;
+  padding: 10px 40px 10px 20px ;
+  box-sizing: border-box;
+  color: #cad8ef;
+  position: relative;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li:hover {
+  background: #374b66;
+  border-color: #374b66;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li.active {
+  border: 1px solid #7e91b0;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  content: '';
+  top: calc(50% - 7.5px);
+  background: transparent;
+  right: 8px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span:before {
+  width: 1px;
+  height: 7px;
+  position: absolute;
+  content: '';
+  background: #cad8ef;
+  transition: all linear 150ms;
+  transform: rotate(45deg);
+  top: calc(50% - 3.5px);
+  left: calc(50% - 0.5px);
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span:after {
+  width: 1px;
+  height: 7px;
+  position: absolute;
+  content: '';
+  background: #cad8ef;
+  transition: all linear 150ms;
+  transform: rotate(-45deg);
+  top: calc(50% - 3.5px);
+  left: calc(50% - 0.5px);
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span:hover {
+  background: #c75050;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span:hover:after {
+  transform: rotate(45deg);
+  background: #fff;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--filter .filter--container ul.filter--container-list li span:hover:before {
+  transform: rotate(-45deg);
+  background: #fff;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options {
+  width: 400px;
+  height: 36px;
+  float: left;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  vertical-align: middle;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options a {
+  color: #57aeae;
+  text-decoration: none;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options input[type=checkbox] {
+  display: none;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options input[type=checkbox] ~ label {
+  display: inline-block;
+  padding-left: 26px;
+  position: relative;
+  margin: 0 10px 0 35px;
+  cursor: pointer;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options input[type=checkbox] ~ label:before {
+  position: absolute;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  box-sizing: border-box;
+  border: 1px solid #b5b5b5;
+  top: 0;
+  left: 0;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options input[type=checkbox] ~ label:after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 14px;
+  background: url('../images/chck.svg');
+  box-sizing: border-box;
+  top: -3px;
+  left: 3px;
+  visibility: hidden;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .toolbox--options input[type=checkbox]:checked ~ label:after {
+  visibility: visible;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .monitoring--settings-btn {
+  position: relative;
+  display: inline-block;
+  padding-left: 25px;
+  cursor: pointer;
+  margin-left: 35px;
+}
+.monitoring--main .monitoring--searchbar .monitoring--searchbar--toolbox .monitoring--settings-btn:before {
+  position: absolute;
+  left: 0;
+  top: calc(50% - 8px;);
+  background: url('../images/toolbox.svg');
+  background-repeat: no-repeat;
+  background-size: 48px 16px;
+  content: '';
+  width: 16px;
+  height: 16px;
+  background-position: -32px 0;
+}
+.monitoring--main .worldmap--wrapper {
+  background: url('../images/worldmap.svg') no-repeat 50% 50% #a8d0f3;
+  height: 0px;
+  position: relative;
+  transition: all linear 200ms;
+  -webkit-filter: saturate(2) brightness(0.9);
+}
+.monitoring--main .worldmap--wrapper.active {
+  height: 640px;
+}

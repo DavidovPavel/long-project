@@ -1,0 +1,263 @@
+﻿/*TEMP NAV BUTTON*/
+.nav-btn {
+    width:44px;
+    height:44px;
+    background:#0094ff;
+    position:absolute;
+    top:0;
+    left:0;
+    cursor:pointer;
+    /*filter:grayscale(100%) invert(100%);*/
+    transition:all linear 300ms;
+    &:hover {
+        filter:grayscale(0%);
+        & > span {
+            transform:rotate(270deg);
+        }
+    }
+    & > span {
+        background:#fff;
+        position:absolute;
+        top:~"calc(50% - 8px)";
+        left:~"calc(50% - 8px)";
+        width:16px;
+        height:16px;
+        transition: all linear 300ms;
+        &:before, &:after {
+            width:100%;
+            height:2px;
+            position:absolute;
+            content:'';
+            background:#0094ff;
+            top:~"calc(50% - 1px)";
+            left:0;
+        }
+        &:after {
+            transform:rotate(90deg)
+        }
+    }
+}
+body {
+    margin:0;
+    padding:44px 0 0;
+    transition: all linear 200ms;
+    &.hassidebar {
+        padding-left:44px;
+    }
+    &.sidebar-expanded {
+        padding-left:264px;
+    }
+}
+
+main {
+    padding:10px;
+}
+aside {
+    position:fixed;
+    width:44px;
+    height:~"calc(100vh - 44px)";
+    background:#444;
+    top:44px;
+    z-index:10000;
+    left:0;
+    box-sizing:border-box;
+    padding:44px 0 0;
+    transition:all linear 200ms;
+    overflow:hidden;
+    color:#acacac;
+    &.g-sidebar--right {
+        left:auto; right:0;
+    }
+    &.expanded {
+        width:264px;
+        &:hover {
+            & > .control {
+                & > i {
+                    background:transparent;
+                }
+            }
+        }
+        & > .control {
+            transform:rotate(90deg);
+            & > i {
+                background:transparent;
+                &:before {
+                    transform:rotate(-45deg);
+                    top:~"calc(50% - 1px)";
+
+                }
+                &:after {
+                    transform:rotate(-135deg);
+                    top:~"calc(50% - 1px)";
+
+                }
+            }
+        }
+    }
+    & > .control {
+        height:44px;
+        width:44px;
+        position:absolute;
+        top:0;
+        left:0;
+        cursor:pointer;
+        transition:all linear 200ms;
+        &:hover {
+            & > i {
+                background:#fff;
+                &:before, &:after {
+                    background:#fff;
+                }
+            }
+        }
+        & > i {
+            background:#acacac;
+            width:16px;
+            height:2px;
+            position:absolute;
+            top:~"calc(50% - 1px)";
+            left:~"calc(50% - 8px)";
+            transition:all linear 200ms;
+            &:before, &:after {
+                content:'';
+                position:absolute;
+                width:100%;
+                height:100%;
+                background:#acacac;
+                display:block;
+                left:0;
+                transition:all linear 200ms;
+            }
+            &:before {
+                top:-6px;
+            }
+            &:after {
+                bottom:-6px;
+            }
+        }
+    }
+    & > ul {
+        display:block;
+        padding:0;
+        margin:0;
+        list-style:none;
+        & > li {
+            margin:0 0 0 44px;
+            padding:0 0 0 0;
+            min-width:220px;
+            box-sizing:border-box;
+            & > ul {
+                display:block;
+                padding:0;
+                margin:0;
+                & > li {
+                    position:relative;
+                    display:block;
+                    padding:0 16px;
+                    & > span {
+                        padding:5px;
+                        display:block;
+                        background:#333333;
+                        border:1px solid #444;
+                    }
+                }
+            }
+        }
+    }
+}
+li.checks {
+    position:relative;
+    min-height:44px;
+    cursor:pointer;
+    background:#333;
+    min-height:~"calc(100vh - 88px)";
+    & > span {
+        height:44px;
+        box-sizing:border-box;
+        padding:12px;
+        display:block;
+    }
+    &:before {
+        width:44px;
+        height:44px;
+        position:absolute;
+        top:0;
+        left:-44px;
+        background:#333;
+        content:'';
+        display:block;
+    }
+    &:after {
+        content:'';
+        width:20px;
+        height:20px;
+        position:absolute;
+        top:12px;
+        left:-32px;
+        background:#444;
+    }
+}
+li.search {
+    position:relative;
+    min-height:44px;
+    cursor:pointer;
+    background:#333;
+    min-height:~"calc(100vh - 88px)";
+    & > span {
+        height:44px;
+        box-sizing:border-box;
+        padding:12px;
+        display:block;
+    }
+    &:before {
+        width:44px;
+        height:44px;
+        position:absolute;
+        top:0;
+        left:-44px;
+        background:#333;
+        content:'';
+        display:block;
+    }
+    &:after {
+        content:'';
+        width:20px;
+        height:20px;
+        position:absolute;
+        top:12px;
+        left:-32px;
+        background:#444;
+    }
+}
+li.add {
+    position:relative;
+    min-height:44px;
+    cursor:pointer;
+    background:#333;
+    min-height:~"calc(100vh - 88px)";
+    & > span {
+        height:44px;
+        box-sizing:border-box;
+        padding:12px;
+        display:block;
+    }
+    &:before {
+        width:44px;
+        height:44px;
+        position:absolute;
+        top:0;
+        left:-44px;
+        background:#333;
+        content:'';
+        display:block;
+    }
+    &:after {
+        content:'';
+        width:20px;
+        height:20px;
+        position:absolute;
+        top:12px;
+        left:-32px;
+        background:#444;
+    }
+}

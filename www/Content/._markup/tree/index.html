@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Tree</title>
+    <meta charset="utf-8" />
+    <link href="master.min.css" rel="stylesheet" />
+    <link href="../typo/typo.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.g-tree li').on('click', function (e) {
+                $(this).toggleClass('active');
+            });
+            $('input[type="text"]').on('dblclick', function (e) {
+                $(this).removeAttr('readonly');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="g-tree">
+            <li data-level="root">
+                <input type="checkbox" id="treeLevelRoot" checked />
+                <label for="treeLevelRoot"></label>
+                <input type="checkbox" class="g-tree--check" id="treeLevelRoot-check"/>
+                <label for="treeLevelRoot-check"></label>
+                <i tree-icon="root"></i>
+                <input type="text" value="..." readonly="readonly">
+                <ul>
+                    <li>
+                        <input type="checkbox" id="treeLevel1" checked />
+                        <label for="treeLevel1"></label>
+                        <input type="checkbox" class="g-tree--check" id="treeLevel1-check" disabled/>
+                        <label for="treeLevel1-check"></label>
+                        <i tree-icon="folder"></i>
+                        <input type="text" value="New Folder" readonly="readonly">
+                        <ul>
+                            <li>
+                                <input type="checkbox" id="treeLevel2" checked />
+                                <label for="treeLevel2"></label>
+                                <input type="checkbox" class="g-tree--check" id="treeLevel2-check" />
+                                <label for="treeLevel2-check"></label>
+                                <i tree-icon="folder"></i>
+                                <input type="text" value="New Folder 2" readonly="readonly">
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="treeLevel3-1" disabled />
+                                        <label for="treeLevel3-1"></label>
+                                        <input type="checkbox" class="g-tree--check" id="treeLevel3-1-check" />
+                                        <label for="treeLevel3-1-check"></label>
+                                        <i tree-icon="file"></i>
+                                        <input type="text" value="New Folder 3" readonly="readonly">
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="treeLevel3-2" disabled />
+                                        <label for="treeLevel3-2"></label>
+                                        <input type="checkbox" class="g-tree--check" id="treeLevel3-2-check" />
+                                        <label for="treeLevel3-2-check"></label>
+                                        <i tree-icon="file"></i>
+                                        <input type="text" value="Editable tree item"><button data-value="ok"></button><button data-value="cancel"></button>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="treeLevel3-3" disabled />
+                                        <label for="treeLevel3-3"></label>
+                                        <input type="checkbox" class="g-tree--check" id="treeLevel3-3-check" />
+                                        <label for="treeLevel3-3-check"></label>
+                                        <i tree-icon="file"></i>
+                                        <input type="text" value="New Folder 5" readonly="readonly">
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

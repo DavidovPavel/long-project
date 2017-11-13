@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style type="text/css">
+    h2 {font-weight: normal;font-size: 24px;padding-left: 30px;}
+    h4 {font-size: 18px;color: #878787;font-weight: normal;margin: 10px 0;}
+    input {height: 33px;width: 100%;font-size: 18px;margin-bottom: 17px; padding-left: 12px;color: #575757;border: solid 1px #bababa;min-width: 200px;}
+    select {height: 33px;width: 485px;font-size: 18px;margin-bottom: 13px; padding-left: 12px;color: #aaa;border: solid 1px #bababa;}
+    div span.Cbx { vertical-align: middle;}
+    div label { vertical-align: middle;font-size: 14px;padding-left: 10px;}
+    .Main {background-color: #f7f7f7;padding:24px 70px;}
+    .Main table td { width: 50%;vertical-align: top;padding: 0;}
+
+    table {width: 100%;font-size: 14px;}
+    table td { padding: 5px 14px 26px;}
+
+</style>
+
+
+<h2>Персона. Что нам известно о человеке?</h2>
+
+<div class="Main">
+    <table>
+        <tr>
+            <td style="padding-right: 45px;">
+                <input type="text" placeholder="Фамилия" />
+                <br />
+                <input type="text" placeholder="Имя" />
+                <br />
+                <input type="text" placeholder="Отчество" />
+                <br />
+                <input type="text" placeholder="Предыдущая фамилия" />
+
+                <div style="margin-bottom: 7px;"><span class="Cbx"></span>
+                    <label>Искать с учетом синонимов</label></div>
+            </td>
+            <td>
+                <div style="margin-bottom: 8px;"><span class="Cbx"></span>
+                    <label>Дата рождения</label></div>
+                <select style="width: 10%;min-width:80px;"><option>День</option></select>
+                <select style="width: 20%;min-width:100px;"><option>Месяц</option></select>
+                <select style="width: 10%;min-width:80px;"><option>Год</option></select>
+                <br /><br/>
+                <div style="margin-bottom: 8px;"><span class="Cbx"></span>
+                    <label>Примерный возраст</label></div>
+                <select style="width: 10%;min-width:65px;"><option>От</option></select>
+                <select style="width: 10%;min-width:65px;"><option>До</option></select>
+                <br /><br/>
+                <div style="margin-bottom: 7px;"><span class="Cbx"></span>
+                    <label>Дата рождения неизвестна</label></div>
+            </td>
+        </tr>
+    </table>
+</div>
+<br/><br/>
+<div class="Main">
+    <table>
+        <tr>
+            <td style="padding-right: 45px;">
+                <div style="margin-bottom: 7px;">Паспорт</div>
+                <input type="text" style="width: 10%;min-width:65px;" placeholder="Серия" />&nbsp;<input type="text" style="width: 20%;min-width:65px;" placeholder="Номер" />
+                <br />
+                <div style="margin-bottom: 7px;">Дата выдачи паспорта</div>
+                <select style="width: 12%;min-width:80px;"><option>День</option></select>&nbsp;<select style="width: 20%;min-width:100px;"><option>Месяц</option></select>&nbsp;<select style="width: 10%;min-width:80px;"><option>Год</option></select>
+            </td>
+            <td>
+                <div><input type="text" style="width: 60%;" placeholder="ИНН" /><span style="text-transform:uppercase;color:#388ed5;font-size: 12px;padding-left: 16px;cursor:pointer;"><img src="/Images/ar2.png" alt="" />&nbsp;узнать ИНН</span></div>
+                <br/>
+                <input type="text" style="width: 60%;" placeholder="ОГРНИП"/>
+            </td>
+        </tr>
+    </table>
+</div>
+<br/><br/>
+<p style="padding-left: 72px;padding-right: 150px;">
+    <button class="shape gr_blue">Проверить на совпадение</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="shape gr_blue">Создать новую запись</button> <button class="shape gr_blue right">Очистить все</button>
+</p>
+<br/><br/>
+<h2>Совпадения. Похожие персоны</h2>
+<div style="padding: 0 32px;">
+    <table><tr>
+               <td style="font-size: 18px;">1.</td>
+               <td style="font-size: 18px;">Иванов Никифор Бальзакович</td>
+               <td>09.06.2014</td>
+               <td>4607 123456</td>
+               <td>123456789123</td>
+               <td>СГГККХХХХХХХХХЧ</td>
+               <td><img src="/Images/d.png" alt=""/></td>
+               <td><img src="/Images/ar.png" alt=""/></td>
+           </tr>
+        <tr>
+               <td style="font-size: 18px;">2.</td>
+               <td style="font-size: 18px;">Иванов Никифор Бальзакович</td>
+               <td>09.06.2014</td>
+               <td>4607 123456</td>
+               <td>123456789123</td>
+               <td>СГГККХХХХХХХХХЧ</td>
+               <td><img src="/Images/d.png" alt=""/></td>
+               <td><img src="/Images/ar.png" alt=""/></td>
+           </tr>
+    </table>
+</div>
+
+<br/><br/>

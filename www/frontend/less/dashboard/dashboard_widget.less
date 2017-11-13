@@ -1,0 +1,216 @@
+﻿
+/* widget ------------ */
+.anbr-widget {
+	position: absolute;
+	box-sizing: content-box;
+	border: dashed 1px transparent;
+	.boxshadow(0 2px 2px, rgba(0,0,0,.1));
+
+	&.noshadow {
+		.noshadow();
+	}
+
+	& .view-all-list {
+		width: 20px;
+		height: 20px;
+		display: none;
+		float: right;
+		cursor: pointer;
+		fill: @color-norm;
+		margin-right: 35px;
+	}
+
+	& .sub-settings {
+		position: absolute;
+		right: 20px;
+
+		& button {
+			padding: 2px;
+			height: 24px;
+
+			& svg {
+				cursor: pointer;
+				width: 16px;
+				height: 16px;
+				fill: @color-norm;
+			}
+
+			& .anbr-tooltip {
+				margin-left: -20px;
+				margin-top: -43px;
+			}
+		}
+	}
+
+	& .filter-panel {
+		min-height: 160px;
+		display: none;
+
+		& .g-form--input {
+			width:90%;
+		}
+
+		& nav > span {
+			width: auto;
+			padding: 1px 10px;
+
+			& label {
+				margin: 0;
+				line-height: 46px;
+				vertical-align: top;
+			}
+		}
+
+		& h3 {
+			font-size: 16px;
+			font-weight: normal;
+			padding: 14px 20px 10px;
+			margin: 0;
+		}
+
+		& section div.content {
+			height: 227px;
+			background-color: @color-white;
+			overflow: auto;
+		}
+
+		& #rubrics-panel div.item {
+			background-color: transparent;
+			border: 0;
+			padding-left: 20px;
+			margin-top: 5px;
+		}
+
+		#rubrics-panel .list-area {
+			padding-left: 20px;
+			overflow: auto;
+			max-height: 150px;
+			border: 0;
+
+			& .g-form--input {
+				width: auto;
+				display: inline;
+			}
+		}
+	}
+
+	& .anbr_head {
+
+		& .widget-title {
+			word-wrap: break-word;
+			margin-right: 44px;
+			display: inline-block;
+		}
+
+		& .Preloader {
+			display: none;
+		}
+
+		& i[data-icon="icon-trash"],
+		& .font-icon-filter {
+			position: absolute;
+			top: 8px;
+			right: 34px;
+			display: none;
+			cursor: pointer;
+		}
+
+		& svg.icon-trash {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			display: none;
+		}
+	}
+}
+
+.anbr-widget .before, .anbr-widget .after, 
+.widget-editing .after.several, 
+.widget-editing .before.several { display:none; }
+
+.widget-editing {
+    border: dashed 1px @color-dark-blue;
+
+    & .before,
+    & .after {
+        .size(48px, 48px, block);
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        line-height: 46px;
+        border-radius: 48px;
+        background-color: @color-62;
+        border: solid 1px @color-62;
+        text-align: center;
+    }
+
+    & .before {
+        left: -70px;
+    }
+
+    & .after {
+        right: -70px;
+    }
+
+    & .before svg {
+        .size(24px);
+        fill: @color-white;
+        vertical-align: middle;
+    }
+
+    & .after:before {
+        content: '\E713';
+        font-family: Segoe MDL2 Assets;
+        vertical-align: top;
+        color: @color-white;
+        font-size: 24px;
+    }
+
+    & .after:hover,
+    & .before:hover {
+        background-color: @color-dark;
+    }
+
+    & .anbr_head i[data-icon="icon-trash"],
+    & .anbr_head svg.icon-trash {
+        display:block;
+    }
+}    
+/* ---- end widget */
+
+
+.anbr_list { position: relative;
+    & .font-icon-filter { cursor: pointer; color: @color-F0; position: absolute; top: 8px; right: 8px; z-index: 1; }
+    & .number-update { margin-left: 10px; background-color: red; color: #fff; font-size: 11px; font-weight: normal; padding: 5px 4px 0 4px; display: none; border-radius: 25px; min-width: 25px; height: 25px; vertical-align: middle; text-align: center; cursor: pointer; }
+}
+
+.transparent {
+    & table, & .widget-table {
+        & > tbody {
+            & > tr {
+                & > td {
+                    color:#222;
+                    background-color:rgba(255,255,255,0.1);
+                    border:none;
+                }
+                &:nth-child(even) {
+                    & > td {
+                        background-color:rgba(220,220,220,0.5);
+                    }
+                }
+                &:hover {
+                    &:nth-child(odd) {
+                        & > td {
+                            background-color:rgba(255,255,255,0.5)!important;
+                        }
+                    }
+                    &:nth-child(even) {
+                        & > td {
+                            background-color:rgba(200,200,200,0.75)!important;
+                        }
+                    }
+                }
+            }
+        }
+    } 
+}

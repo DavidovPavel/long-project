@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Semantic Network</title>
+	<meta charset="utf-8" />
+    <link href="semantic-net.min.css" rel="stylesheet" />
+    <link href="../dropdown/dropdown.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            if (localStorage.getItem('semantic-sidebar') === '1') {
+                $('.semantic-sidebar').not('.right').addClass('active');
+                $('.hamburger').addClass('active');
+            }
+            if (localStorage.getItem('semantic-tabs') === '1') {
+                $('.semantic-tabs').addClass('active');
+            }
+            $('#tools-hamburger').click(function () {
+                $(this).parent('.semantic-sidebar').toggleClass('active');
+                $(this).toggleClass('active');
+                if ($('.semantic-sidebar').hasClass('active')) {
+                    localStorage.setItem('semantic-sidebar', '1')
+                } else {
+                    localStorage.setItem('semantic-sidebar', '0')
+                }
+            });
+            $('.control').click(function () {
+                $(this).parent('.semantic-tabs').toggleClass('active');
+                if ($('.semantic-tabs').hasClass('active')) {
+                    localStorage.setItem('semantic-tabs', '1')
+                } else {
+                    localStorage.setItem('semantic-tabs', '0')
+                }
+            });
+            $('.semTab').click(function () {
+                $('.semantic-tabs ul li').removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+            $('.semantic-tabs--settings').click(function () {
+                $('.semantic-tabs').toggleClass('edit-mode');
+            });
+            $('.semTab div').click(function () {
+                alert('Are you sure?');
+                $(this).parent('span').parent('li').remove();
+            });
+            $('.settings-tab').click(function () {
+                $(this).siblings('.settings-tab').removeClass('active');
+                $(this).addClass('active');
+                $('.sidebar--mode-wrpapper>div').toggle();
+            });
+            $('#editmode').click(function () {
+                $(this).toggleClass('enabled');
+                $('.semnet').toggleClass('edit-mode');
+            });
+            $('.semantic-tools span').click(function () {
+                $('.semantic-tools span').removeClass('active');
+                $(this).toggleClass('active');
+            });
+
+            $(function () {
+                $('.g-dropdown--placeholder').click(function () {
+                    $(this).siblings('.g-dropdown--container').slideToggle(100);
+                    $(this).toggleClass('expanded');
+                });
+            });
+            $('#sfs').click(function () {
+                $('section.semnet').toggleClass('fullscreen');
+                $(this).toggleClass('active');
+            });
+            
+        });
+
+    </script>
+</head>
+<body style="margin:0; padding:0; position:relative;">
+    <section class="semnet" style="margin:0; padding:0; position:relative; height:85vh; margin-top:15vh">
+        <div class="semantic-wrapper">
+            <div class="semantic-board ">
+                <div class="inner">
+                    <div class="svg-content edit-mode" style="width:4000px; height:4000px;">
+                    </div>
+                </div>
+            </div>
+            <div class="semantic-sidebar">
+                <div id="tools-hamburger" class="hamburger"><span></span></div>
+                <div class="semantic-tools">
+                    <ul>
+                        <li>
+                            <span title="Zoom" class="semantic-tools--zoom"></span>
+                            <ul>
+                                <li><span title="Zoom out" class="semantic-tools--zoomout"></span></li>
+                                <li><span title="Zoom in" class="semantic-tools--zoomin"></span></li>
+                                <li><span title="Fit to screen" class="semantic-tools--zoomfit"></span></li>
+                            </ul>
+                        </li>
+                        <li><span title="Drag tool" class="semantic-tools--hand"></span></li>
+                        <li><span title="Select tool" class="semantic-tools--editor">            </span></li>
+                    </ul>
+                </div>
+                <div class="semantic--tool-settings">
+                    <div class="semantic--tool-editmode">
+                        <label>Edit mode</label><span id="editmode"></span>
+                    </div>
+                    <div class="semantic--tool-viewmode">
+                        <div class="g-dropdown--wrapper">
+                            <label>Layout</label>
+                            <div class="g-dropdown--menu">
+                                <div class="g-dropdown--placeholder">
+                                    <div class="item">Select iconless item</div>
+                                </div>
+                                <div class="g-dropdown--container">
+                                    <div class="item">Iconless item 1</div>
+                                    <div class="item">Iconless item 2</div>
+                                    <div class="item">Iconless item 3</div>
+                                    <div class="item">Iconless item 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-dropdown--wrapper">
+                            <label>View mode</label>
+                            <div class="g-dropdown--menu">
+                                <div class="g-dropdown--placeholder">
+                                    <div class="item">Default view</div>
+                                </div>
+                                <div class="g-dropdown--container">
+                                    <div class="item">Default view</div>
+                                    <div class="item">View mode 1</div>
+                                    <div class="item">View mode 2</div>
+                                    <div class="item">View mode 3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="g-dropdown--wrapper">
+                            <label>Depth</label>
+                            <div class="g-dropdown--menu">
+                                <div class="g-dropdown--placeholder">
+                                    <div class="item">Level 1</div>
+                                </div>
+                                <div class="g-dropdown--container">
+                                    <div class="item">Level 1</div>
+                                    <div class="item">Level 2</div>
+                                    <div class="item">Level 3</div>
+                                    <div class="item">Level 4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="semantic--tool-appearance">
+                            <label>Appearance</label>
+                            <div>
+                                <input type="checkbox" id="id1">
+                                <label for="id1">Hide main object(s)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="id2">
+                                <label for="id2">Show legend</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="id3">
+                                <label for="id3">Show main properties of objects</label>
+                            </div>
+                        </div>
+                        <div class="semantic--tool-filter">
+                            <div>
+                                <label>Filter</label>
+                            </div>
+                            <input type="button" value="Select type ">
+                            <input type="button" value="Clear filter">
+                            <div class="g-form--filter">
+                                <span>Random</span><span>Square</span><span>Some long filter title</span><span>Other filter title</span><span>Amazingly long filter title</span>
+                            </div>
+                        </div>
+                        <hr class="ruller">
+                        <div class="semantic--tool-form">
+                            <input type="button" value="Reload">
+                            <input type="button" value="Export">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="semantic-sidebar right">
+                <div class="semantic-tools">
+                    <ul>
+                        <li>
+                            <span title="Fullscreen mode" id="sfs" class="semantic-tools--fullscreen"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="semantic-tabs">
+                <div class="control"></div>
+                <ul>
+                    <li class="controls"><span class="semantic-tabs--settings"></span></li>
+                    <li class="active"><span class="semTab default">Automatic layout</span></li>
+                    <li>
+                        <span class="semTab">
+                            Custom layout
+                            <i></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="semTab">
+                            Another custom layout
+                            <i></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="semTab">
+                            Another custom layout
+                            <i></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="semTab">
+                            Another custom layout
+                            <i></i>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="semTab">
+                            Another custom layout
+                            <i></i>
+                        </span>
+                    </li>
+                    <li class="controls"><span class="semantic-tabs--add"></span></li>
+                </ul>
+            </div>
+            <div>
+                <div class="hand-mode" style="position:fixed; z-index:900; height:200px; width:200px; top:50%; left:50%; background:#ccc; transform:translate(-50%, -50%)" title="DRAG MODE"></div>
+                <div class="zoom-mode" style="position:fixed; z-index:900; height:200px; width:200px; top:50%; left:75%; background:#ccc; transform:translate(-50%, -50%)" title="ZOOM MODE"></div>
+                <div class="editor-mode" style="position:fixed; z-index:900; height:200px; width:200px; top:50%; left:25%; background:#ccc; transform:translate(-50%, -50%)" title="REDACTOR MODE"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

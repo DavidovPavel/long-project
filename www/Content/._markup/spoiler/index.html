@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Spoiler</title>
+    <meta charset="utf-8" />
+    <link href="master.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            $('.spoiler .control').click(function () {
+                $(this).parent('.spoiler').toggleClass('active');
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="spoiler active">
+        <div class="spoiler--content">
+            <div>Ololo</div>
+            <div>Azazaz</div>
+            <div>Kekeke</div>
+            <div>Ololo</div>
+            <div>Azazaz</div>
+            <div>Kekeke</div>
+        </div>
+        <div class="control"></div>
+    </div>
+</body>
+</html>

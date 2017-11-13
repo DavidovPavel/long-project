@@ -1,0 +1,107 @@
+﻿@using www.Models
+@using Resources
+@{
+    var currentLang = ViewBag.CurrentLang;
+    var GUI = ViewBag.GLOBAL_SA as GLOBAL_SAModel;
+    var ruRuting = ViewBag.CureentDatabaseID != -1 ? new { lang = "ru-RU", dbid = ViewBag.CureentDatabaseID } : (object)new { lang = "ru-RU" };
+    var enRuting = ViewBag.CureentDatabaseID != -1 ? new { lang = "en-US", dbid = ViewBag.CureentDatabaseID } : (object)new { lang = "en-US" };
+    var conecturl = GUI.NetVersion == "Internet" ? string.Format("/lang-{0}/account/loginex", currentLang) : "/lang-{0}/account/login";
+    conecturl = string.Concat(conecturl, "?returnUrl=", HttpUtility.UrlEncode(Request.Url.PathAndQuery));
+    var link = GUI.WGID != 0 ? "wg-@GUI.WGID/Personal" : "Manage";
+}
+    <header>
+        <div id="edge"></div>
+        <div class="logo @ViewBag.Name">@ViewBag.Title</div>
+
+        <div class="tray">
+            <ul class="tray--inner">
+
+                <li class="tray--item alert-block"></li>
+
+                @if (Request.IsAuthenticated)
+                {
+                    <li class="tray--item lang-block">
+                        <ul class="nav-lang">
+                            <li role="presentation" class="@(currentLang == "ru-RU" ? "active" : string.Empty)">
+                                <a href="@Url.RouteUrl(ruRuting)">Ru</a>
+                            </li>
+                            <li role="presentation" class="@(currentLang == "en-US" ? "active" : string.Empty)">
+                                <a href="@Url.RouteUrl(enRuting)">En</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="tray--item info-block"><span></span></li>
+
+                    if (!string.IsNullOrWhiteSpace(GUI.Database))
+                    {
+                        <li class="tray--item case-block" data-id="A9E96399-21B4-4F4D-8A0B-91998B1E6C1A">
+                            <span>
+                                <span class="badge"></span>
+                            </span>
+                        </li>
+
+                        <li class="tray--item db-block">
+                            <span id="InfoDB"></span>
+                            <div id="blind" class="g-blind--wrapper">
+                                <div class="g-blind--container">
+                                    <div class="row">
+                                        <div class="left"><span class="db-icon">@Client.DataBase:</span></div>
+                                        <div class="right">@GUI.Database </div>
+                                    </div>
+                                    @if (!string.IsNullOrWhiteSpace(GUI.Project))
+                                    {
+                                        <div class="row">
+                                            <div class="left"><span class="project-icon">@Client.Project:</span></div>
+                                            <div class="right">@GUI.Project</div>
+                                        </div>
+                                    }
+                                    @if (!string.IsNullOrWhiteSpace(GUI.Workgroup))
+                                    {
+                                        <div class="row">
+                                            <div class="left"><span class="group-icon">@Client.WorkGroup:</span></div>
+                                            <div class="right">@GUI.Workgroup</div>
+                                        </div>
+                                    }
+                                </div>
+                                <div class="g-blind--controls">
+                                    <button class="g-form--button small flat ghost-w" onclick="location.href='@conecturl'">@Client.ChangeDatabase</button>
+                                </div>
+                            </div>
+
+                        </li>
+
+                    }
+                }
+
+                <li class="tray--item account-block">
+                    <span id="InfoUser">@User.Identity.Name</span>
+                    <div class="g-blind--wrapper">
+                        <div class="g-blind--container">
+                            <div class="row">
+                                <div class="left"><span class="db-icon">@User.Identity.Name</span></div>
+                                <div class="right"><a href="https://semarch.anbr.ru/lang-ru-RU/private/@link" target="_blank">@Client.Profile</a></div>
+                            </div>
+                            <div class="g-blind--controls">
+                                @using (Html.BeginForm("LogOff", "Account", new { Area = "" }, FormMethod.Post, new { id = "logoutForm" }))
+                                {
+                                    @Html.AntiForgeryToken()
+                                    <button class="g-form--button flat ghost-w small"
+                                            onclick="javascript:document.getElementById('logoutForm').submit()">
+                                        @Client.logOff
+                                    </button>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="demo-block"></div>
+        <div id="case-window"></div>
+
+    </header>
+
+    <div id="feedback-alerts-panel" class="g-dialog--wrapper feedback warning" header="red"></div>
+    <div id="message-area"></div>

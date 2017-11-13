@@ -1,0 +1,40 @@
+﻿@{ 
+    var urldata = Url.RequestContext.RouteData.Values;
+    var baseurl = string.Format("/lang-{0}/db{1}", urldata["lang"], urldata["dbid"] != null && !String.IsNullOrWhiteSpace(urldata["dbid"].ToString()) ? urldata["dbid"].ToString() : "0");
+    var dbid = urldata["dbid"];
+    var GUI = ViewBag.GLOBAL_SA as www.Models.GLOBAL_SAModel;
+}
+<footer>
+    <script type="text/javascript">
+        define("bdid", "@dbid");
+        define("baseurl", "@baseurl");
+        define("access", { data: @Html.Raw(ANBR.Helpful.Misc.Js.Helper.JSObjectVariable(GUI)) });
+        require.config({ config: { i18n: { locale: '@ViewBag.CurrentLang.ToLower()' } } });
+    </script>
+
+    @if (ViewBag.ViewBottom != null)
+    {
+        <span class="version">
+            Server: @ViewBag.wwwVersion<br/>
+            Client: @ViewBag.clientVersion
+        </span>
+
+        <ul class="footer-nav">
+            <li><a href="#">@Resources.Client.tc</a></li>
+            <li><a href="#" id="news">@Resources.Client.news (0)</a></li>
+            <li><a href="#">@Resources.Client.os</a></li>
+        </ul>
+    }
+
+    <img src="~/Images/bigrotation2.gif" alt="" id="Rotor" class="Rotor"/>
+
+    @Html.Partial("TemplateUnderscore")
+    @Html.Partial("TemplateUnderscoreGlobal")
+
+</footer>
+
+@if (ViewBag.isSupervizer)
+{
+    <div id="OnlineEditor"></div>
+}
+  

@@ -1,0 +1,22 @@
+﻿<script type="x-template/underscore" id="file-upload-template">
+    <form class="uploadFile" method="post" enctype="multipart/form-data">
+        
+        <label class="uploadbutton">
+            <span class="progress">
+                <span class="bar"></span>
+                <span class="percent">0%</span>
+            </span>
+            <span class="button blue">
+                <span data-icon="icon-import" color-icon="white"></span>
+            </span>
+            <!--<span class="button">
+                <span data-icon="icon-folder"></span>
+            </span>-->
+            <span class="input"><%= Resources.selFile %></span><input type="file" name="fileToUpload" />
+        </label>
+        <span class="anbr-tooltip bottom">
+            <span position="bottom"></span><%= Resources.findimg %>
+        </span>
+
+    </form>
+</script>

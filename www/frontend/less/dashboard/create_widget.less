@@ -1,0 +1,32 @@
+﻿
+/* мастер создания виджета */
+#master-create { margin-top: 40px; padding: 0 30px; color: @color-norm;
+    & .font-icon { cursor: pointer; }
+    & .title { font-size: 18px; margin-bottom: 15px; text-align: center;}
+    & .title2 { font-size: 16px; margin-top: 32px; margin-bottom: 14px; position:relative; }
+    & .description { padding: 46px 20px 72px 1em; }
+    & .step-panel { display: none; }
+    & .types-widget { .size(496px,auto,flex); flex-wrap: wrap; align-content: space-between;
+        & span {.size(115px); cursor: pointer; flex-basis: 115px; text-align: center; margin-right: 5px;
+            & label { color: @color-norm; width: 80%; text-align: center; display: inline-block; cursor: pointer;}
+            &:hover { border: solid 1px @color-C5;
+                & label { color: @color-dark; }
+                & svg { fill: @color-blue; }
+            }
+        }
+    }
+    & .cmd { position:absolute; bottom: 50px; left: 50%; transform: translateX(-50%); display: flex; display: flex;
+        & button { border: 0; border-radius: 0; color: @color-white; font-size: 13px; height: 36px; min-width: 126px;
+            &#next { .bg(@color-blue, '@{images}/a-f-b-r.png', 100%); padding-right: 7px;
+                     &:disabled { background-color: @color-dark-blue;}
+            }
+            &#back { .bg(@color-8, '@{images}/a-f-b-l.png'); padding-left: 7px; }
+        }
+    }
+
+    
+/*Отображение Панели редактирования*/
+    iframe {height: 200px!important;background-color: #ffffff!important;border: 1px solid #5C5C5C;border-radius: 0 0 4px 4px;}
+}
+
+input#titleWidget, input#titleVitrina  { width: 100%; padding:10px;}    

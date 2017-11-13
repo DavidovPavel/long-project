@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<edconfig>
+  <metatypes>
+    <mtype systemname="Organization">
+      <parameters>
+        <param systemname="Display_Name" title ="Наименование"/>
+        <param systemname="INN_Org" title ="ИНН Организации"/>
+      </parameters>
+    </mtype>
+
+    <mtype systemname="Person">
+      <parameters>
+        <param systemname="Display_Name" title ="ФИО"/>
+        <param systemname="INN_Person" title ="ИНН Персоны"/>
+        <param systemname="Паспортные_данные" title ="Паспортные данные"/>
+        <!--
+        <param systemname="INN_Person" title ="ИНН Персоны">
+          <profiles>
+            <profile uid ="75ab7ec0-6424-4279-9bd5-daaa4e887463" title ="Профиль 1 ИНН ПЕР">
+              <task uid ="00d8c015-d30d-4c39-8419-906307476a72" name=""/>
+              <task uid ="113c0863-9ca7-45d9-91b9-07f80527af3c" name=""/>
+              <task uid ="10bcb523-1843-480a-a5d7-48b24d7ab503" name=""/>
+            </profile>
+          </profiles>
+        </param>-->
+      </parameters>
+    </mtype>
+
+    <!--<mtype systemname="Vehicle">
+      <parameters>
+        <param systemname="Nomer_TS" title ="Номерной знак">
+          <profiles>
+            <profile uid ="0e305576-0c3f-439e-925b-4ae024a584e9" title ="Профиль 1 НЗ">
+              <task uid ="b3717f11-d247-4a82-824c-f96fe02ffe6b" name=""/>
+              <task uid ="2d335c9f-ae9f-4bba-9bb5-6fc0f005cb72" name=""/>
+              <task uid ="9ad39d94-1926-43ab-a2d9-8d0478379574" name=""/>
+            </profile>
+          </profiles>
+        </param>
+      </parameters>
+    </mtype>-->
+  </metatypes>
+</edconfig>

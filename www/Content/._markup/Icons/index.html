@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Icons</title>
+	<meta charset="utf-8" />
+    <link href="temp.min.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('#data-icons i[data-icon]').on('click', function () {
+                $('.modal').remove();
+                var a = $(this).attr('data-icon');
+                var t = '<div class="modal"><i class="close"></i><i data-icon="'+ a +'"></i><br/><p>Attr: data-icon="'+ a +'"</p></div>';
+                console.log(a)
+                $('body').append(t);
+                $('.modal .close').on('click', function () {
+                    $(this).parent('.modal').remove();
+                });
+            })
+            var c = $('#data-icons i').length;
+            var counter = $('.counter');
+            counter.text('total '+ c +' icons');
+        });
+    </script>
+</head>
+<body>
+    <div id="data-icons" class="icons-list">
+        <div>
+            <i data-icon="icon-blank"></i>
+        </div>
+        <div>
+            <i data-icon="icon-settings"></i>
+        </div>
+        <div>
+            <i data-icon="icon-send"></i>
+        </div>
+        <div>
+            <i data-icon="icon-trash"></i>
+        </div>
+        <div>
+            <i data-icon="icon-analyst"></i>
+        </div>
+        <div>
+            <i data-icon="icon-global"></i>
+        </div>
+        <div>
+            <i data-icon="icon-geo"></i>
+        </div>
+        <div>
+            <i data-icon="icon-folder"></i>
+        </div>
+        <div>
+            <i data-icon="icon-folder-colsed"></i>
+        </div>
+        <div>
+            <i data-icon="icon-folder-empty"></i>
+        </div>
+        <div>
+            <i data-icon="icon-warn"></i>
+        </div>
+        <div>
+            <i data-icon="icon-attention"></i>
+        </div>
+        <div>
+            <i data-icon="icon-attention-solid"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db-blank"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db-empty"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db"></i>
+        </div>
+        <div>
+            <i data-icon="icon-info"></i>
+        </div>
+        <div>
+            <i data-icon="icon-bell"></i>
+        </div>
+        <div>
+            <i data-icon="icon-bell2"></i>
+        </div>
+        <div>
+            <i data-icon="icon-archive"></i>
+        </div>
+        <div>
+            <i data-icon="icon-import"></i>
+        </div>
+        <div>
+            <i data-icon="icon-user"></i>
+        </div>
+        <div>
+            <i data-icon="icon-case"></i>
+        </div>
+        <div>
+            <i data-icon="icon-case-plus"></i>
+        </div>
+        <div>
+            <i data-icon="icon-status"></i>
+        </div>
+        <div>
+            <i data-icon="icon-clock"></i>
+        </div>
+        <div>
+            <i data-icon="icon-time"></i>
+        </div>
+        <div>
+            <i data-icon="icon-inwork"></i>
+        </div>
+        <div>
+            <i data-icon="icon-finished"></i>
+        </div>
+        <div>
+            <i data-icon="icon-assign"></i>
+        </div>
+        <div>
+            <i data-icon="icon-next"></i>
+        </div>
+        <div>
+            <i data-icon="icon-all"></i>
+        </div>
+        <div>
+            <i data-icon="icon-brush"></i>
+        </div>
+        <div>
+            <i data-icon="icon-bg"></i>
+        </div>
+        <div>
+            <i data-icon="icon-rename"></i>
+        </div>
+        <div>
+            <i data-icon="icon-flag"></i>
+        </div>
+        <div>
+            <i data-icon="icon-note"></i>
+        </div>
+        <div>
+            <i data-icon="icon-clip"></i>
+        </div>
+        <div>
+            <i data-icon="icon-check"></i>
+        </div>
+        <div>
+            <i data-icon="icon-sun"></i>
+        </div>
+        <div>
+            <i data-icon="icon-reload"></i>
+        </div>
+        <div>
+            <i data-icon="icon-globe"></i>
+        </div>
+        <div>
+            <i data-icon="icon-download"></i>
+        </div>
+        <div>
+            <i data-icon="icon-editor"></i>
+        </div>
+        <div>
+            <i data-icon="icon-lib"></i>
+        </div>
+        <div>
+            <i data-icon="icon-pen"></i>
+        </div>
+        <div>
+            <i data-icon="icon-clean"></i>
+        </div>
+        <div>
+            <i data-icon="icon-erase"></i>
+        </div>
+        <div>
+            <i data-icon="icon-lang"></i>
+        </div>
+        <div>
+            <i data-icon="icon-wrench"></i>
+        </div>
+        <div>
+            <i data-icon="icon-eye"></i>
+        </div>
+        <div>
+            <i data-icon="icon-filter-full"></i>
+        </div>
+        <div>
+            <i data-icon="icon-filter"></i>
+        </div>
+        <div>
+            <i data-icon="icon-caps-underline"></i>
+        </div>
+        <div>
+            <i data-icon="icon-caps"></i>
+        </div>
+        <div>
+            <i data-icon="icon-sheet-import"></i>
+        </div>
+        <div>
+            <i data-icon="icon-checkbox-fill"></i>
+        </div>
+        <div>
+            <i data-icon="icon-close-xl"></i>
+        </div>
+        <div>
+            <i data-icon="icon-close-l"></i>
+        </div>
+        <div>
+            <i data-icon="icon-close-xs"></i>
+        </div>
+        <div>
+            <i data-icon="icon-dots"></i>
+        </div>
+        <div>
+            <i data-icon="icon-gear"></i>
+        </div>
+        <div>
+            <i data-icon="icon-org"></i>
+        </div>
+        <div>
+            <i data-icon="icon-semantic"></i>
+        </div>
+        <div>
+            <i data-icon="icon-semantic-array"></i>
+        </div>
+        <div>
+            <i data-icon="icon-linked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-source"></i>
+        </div>
+        <div>
+            <i data-icon="icon-digest"></i>
+        </div>
+        <div>
+            <i data-icon="icon-loupe"></i>
+        </div>
+        <div>
+            <i data-icon="icon-star"></i>
+        </div>
+        <div>
+            <i data-icon="icon-book"></i>
+        </div>
+        <div>
+            <i data-icon="icon-chain"></i>
+        </div>
+        <div>
+            <i data-icon="icon-file"></i>
+        </div>
+        <div>
+            <i data-icon="icon-file-text"></i>
+        </div>
+        <div>
+            <i data-icon="icon-file-unlocked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-file-locked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-globe-msg"></i>
+        </div>
+        <div>
+            <i data-icon="icon-script"></i>
+        </div>
+        <div>
+            <i data-icon="icon-mark"></i>
+        </div>
+        <div>
+            <i data-icon="icon-selection"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db-query"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db-export"></i>
+        </div>
+        <div>
+            <i data-icon="icon-db-export-part"></i>
+        </div>
+        <div>
+            <i data-icon="icon-printer"></i>
+        </div>
+        <div>
+            <i data-icon="icon-highlighter"></i>
+        </div>
+        <div>
+            <i data-icon="icon-marker"></i>
+        </div>
+        <div>
+            <i data-icon="icon-lamp"></i>
+        </div>
+        <div>
+            <i data-icon="icon-unlocked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-locked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-save"></i>
+        </div>
+        <div>
+            <i data-icon="icon-text-checked"></i>
+        </div>
+        <div>
+            <i data-icon="icon-text-add"></i>
+        </div>
+        <div>
+            <i data-icon="icon-external"></i>
+        </div>
+        <div>
+            <i data-icon="icon-copy"></i>
+        </div>
+        <div>
+            <i data-icon="icon-basketball"></i>
+        </div>
+        <div>
+            <i data-icon="icon-eye-closed"></i>
+        </div>
+        <div>
+            <i data-icon="icon-visio"></i>
+        </div>
+        <div>
+            <i data-icon="icon-excel"></i>
+        </div>
+        <div>
+            <i data-icon="icon-word"></i>
+        </div>
+        <div>
+            <i data-icon="icon-bell-solid"></i>
+        </div>
+        <div>
+            <i data-icon="icon-shopping-cart"></i>
+        </div>
+        <div>
+            <i data-icon="icon-scissors"></i>
+        </div>
+        <div>
+            <i data-icon="icon-pallet"></i>
+        </div>
+        <div>
+            <i data-icon="icon-tag"></i>
+        </div>
+        <div>
+            <i data-icon="icon-round-add"></i>
+        </div>
+        <div>
+            <i data-icon="icon-round-check"></i>
+        </div>
+        <div>
+            <i data-icon="icon-round-del"></i>
+        </div>
+        <div>
+            <i data-icon="icon-clip-vertical"></i>
+        </div>
+        <div>
+            <i data-icon="icon-fullscreen"></i>
+        </div>
+        <div>
+            <i data-icon="icon-paralell"></i>
+        </div>
+        <div>
+            <i data-icon="icon-book-closed"></i>
+        </div>
+        <div>
+            <i data-icon="icon-court"></i>
+        </div>
+        <div>
+            <i data-icon="icon-coubit"></i>
+        </div>
+        <div>
+            <i data-icon="icon-orbit"></i>
+        </div>
+        <div>
+            <i data-icon="icon-earth"></i>
+        </div>
+        <div>
+            <i data-icon="icon-calendar"></i>
+        </div>
+        <div>
+            <i data-icon="icon-anchor"></i>
+        </div>
+        <div>
+            <i data-icon="icon-up"></i>
+        </div>
+        <div>
+            <i data-icon="icon-down"></i>
+        </div>
+        <div>
+            <i data-icon="icon-first"></i>
+        </div>
+        <div>
+            <i data-icon="icon-last"></i>
+        </div>
+        <div>
+            <i data-icon="icon-loader"></i>
+        </div>
+        <div>
+            <i data-icon="icon-script-settings"></i>
+        </div>
+        <div>
+            <i data-icon="icon-cols"></i>
+        </div>
+    </div>
+    <div class="counter"></div>
+</body>
+</html>

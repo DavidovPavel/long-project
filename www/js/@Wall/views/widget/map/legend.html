@@ -1,0 +1,19 @@
+﻿<script type="x-template/underscore" id="widget-map-legend-template">
+    <div class='LegendContainer'>
+        <h4><%- Title %></h4>
+        <table class='ListItemsLegend'>
+            <% _.each(WidgetsLegendItems, function(a){ %>
+            <tr>
+                <td>
+                    <% if(a.MarkerUrl){ %>
+                    <img class='Bull' src='<%= a.MarkerUrl %>' alt='' />
+                    <% } else { %>
+                    <span class='Blam' style='background-color:<%- a.MarkerColor %>'></span>
+                    <% } %>
+                </td>
+                <td><%- a.MarkerDescription %></td>
+            </tr>
+            <% }); %>
+        </table>
+    </div>
+</script>

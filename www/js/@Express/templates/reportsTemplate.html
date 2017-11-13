@@ -1,0 +1,22 @@
+﻿<h2><%= Resources.reportsTitle %></h2><div class="row"><div class="col-md-8"></div><div class="col-md-4"><%= Resources.cdate %>:<select class="form-control check-date"></select></div></div>
+<ul class="nav nav-pills">
+    <li><a class="jump" href="#reports-all"><svg class="svg-icon"><use xlink:href="#all-reports"></use></svg><span><%= Resources.all %></span><span class="dropdown-menu_arrow"></span></a></li>
+    <li class="sep"></li>
+    <li><a class="jump" href="#reports-reports"><svg class="svg-icon"><use xlink:href="#reports"></use></svg><span><%= Resources.reports %></span><span class="dropdown-menu_arrow"></span></a></li>
+</ul>
+<div class="anbr-toolbar">
+    <button class="tool-upload"><svg class="svg-icon"><use xlink:href="#icon-upload"></use></svg><span class="anbr-tooltip"><span position="top"></span><%= Resources.createReport %></span></button>
+    <div class="right"><label><%= Resources.sendon %>:</label> 
+    <input type="text" name="sender" placeholder="<%= Resources.email %>" /><span class="icon-email" title="<%= Resources.sendReport %>"><svg class="svg-icon">
+        <use xlink:href="#m4"></use></svg></span></div>
+</div>
+<div role="tabpanel" class="tab-pane" id="reports-all">
+    <table class="table table-hover"><thead><tr><th><span class="font-icon font-icon-checkbox head"><input type="hidden" /></span><span><%= Resources.title %></span></th></tr></thead></table>
+    <!--
+    <h4 class="result"><br /><%= Resources.resultReport %></h4>
+    <table class="table table-hover result" data-role="Sec1Reports"><tbody></tbody></table>-->    
+    <h4 class="reports"><br /><%= Resources.reports %></h4><table class="table table-hover reports" data-role="Sec2Reports"><tbody></tbody></table>
+    
+    <h4 class="extracts"><br /><%= Resources.titleExtract %></h4><table class="table table-hover extracts" data-role="Sec3Reports"><tbody></tbody></table>
+</div>
+<div role="tabpanel" class="tab-pane" id="reports-reports"><div style="height: 2100px;"><iframe src="<%= report_url %>" style="border: 0;width:100%;height: 99%" id="SqlRepFrame"></iframe></div></div>

@@ -1,0 +1,14 @@
+﻿@import "../../.modules/sidebar";
+@import "../../.modules/tabs";
+.g-sidebar--right {
+    &.dashboard {
+        top:91px;
+        right:0;
+        height:~"calc(100vh - 88px - 141px)";
+        z-index:90;
+        &.expanded {
+            width:264px;
+            opacity:1;
+        }
+    }
+}

@@ -1,0 +1,373 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.DictionaryService.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.DictionaryService.Contracts.DictionaryContract">
+            <summary>
+            Справочник. 
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.EntityContract">
+            <summary>
+            Метаданные справочника. (служебное)
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.IsHierarchical">
+            <summary>
+            Иерархический
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.FieldNames">
+            <summary>
+            Имена полей
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.FieldNamesLocal">
+            <summary>
+            Имена полей (локализованные)
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.IdFieldTypes">
+            <summary>
+            Типы полей
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.FieldLengths">
+            <summary>
+            Длины полей
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.FieldPrecisions">
+            <summary>
+            Точности полей
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.DictionaryContract.FieldScales">
+            <summary>
+            Масштабы полей
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryContract.#ctor(ANBR.DictionaryService.Contracts.MetaEntityContract)">
+            <summary>
+            Инициализирует справочник метаданными. 
+            </summary>
+            <param name="entityContract">Метаданные справочника</param>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryContract.#ctor">
+            <summary>
+            Инициализирует справочник. 
+            </summary>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.DictionaryConverter">
+            <summary>
+            Вспомогательный класс для конвертации значения справочника. 
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryConverter.ConvertFromData(System.Object)">
+            <summary>
+            Конвертирует объект в значение справочника. 
+            </summary>
+            <param name="value">Объект</param>
+            <returns>Значение справочника</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryConverter.ConvertToData(System.Object)">
+            <summary>
+            Конвертирует значение справочника в объект. 
+            </summary>
+            <param name="value">Значение справочника</param>
+            <returns>Объект</returns>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.IDictionaryService">
+            <summary>
+            Представляет объект для работы со справочниками и значениями справочников. 
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.CreateDictionary(ANBR.DictionaryService.Contracts.DictionaryContract,System.Int32@)">
+            <summary>
+            Создает справочник. 
+            </summary>
+            <param name="contractDictionary">Атрибуты справочника</param>
+            <param name="idDictionaryCreated">Идентификатор созданного справочника</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.GetDictionariesFullInfo">
+            <summary>
+            Получает полную информацию о справочниках. 
+            </summary>
+            <returns>Информация о справочниках</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.GetDictionaryFullInfoById(System.Int32)">
+            <summary>
+            Получает полную информацию о справочнике. 
+            </summary>
+            <param name="idDictionary">Идентификатор справочника</param>
+            <returns>Информация о справочнике</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.GetDictionaryFullInfoByName(System.String)">
+            <summary>
+            Получает полную информацию о справочнике. 
+            </summary>
+            <param name="dictionaryName">Имя справочника</param>
+            <returns>Информация о справочнике</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.AddNewDictionaryRecordOutputId(ANBR.DictionaryService.Contracts.DictionaryValue,System.Int32@)">
+            <summary>
+            Добавляет значение справочника. 
+            </summary>
+            <param name="recordNewData">Новое значение справочника</param>
+            <param name="recordNewNumber">Идентификатор нового значения</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.UpdateDictionaryRecord(ANBR.DictionaryService.Contracts.DictionaryValue)">
+            <summary>
+            Обновляет значение справочника. 
+            </summary>
+            <param name="recordNewData">Значение</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.ValidateDictionaryValue(System.Int32,System.Nullable{System.Int32},System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Осуществляет валидацию значения.  
+            </summary>
+            <param name="dictionaryId">Идентификатор справочника</param>
+            <param name="parentValueId">Идентификатор родителя</param>
+            <param name="displayName">Имя</param>
+            <param name="restoreDeleted">Восстановленное</param>
+            <param name="updateDisplayName">Измененное</param>
+            <returns>Результат валидации</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.DeleteDictionaryRecordById(System.Int32)">
+            <summary>
+            Удаляет значение справочника. 
+            </summary>
+            <param name="idRecordToDelete">Идентификатор значения</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.DeleteDictionaryRecord(ANBR.DictionaryService.Contracts.DictionaryValue)">
+            <summary>
+            Удаляет значение справочника. 
+            </summary>
+            <param name="recordToDelete">Значение</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.DeleteDictionaryRecordCascadeById(System.Int32)">
+            <summary>
+            Удаляет значение справочника каскадно. 
+            </summary>
+            <param name="idRecordToDelete">Идентификатор значения</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.DeleteDictionaryRecordCascade(ANBR.DictionaryService.Contracts.DictionaryValue)">
+            <summary>
+            Удаляет значение справочника каскадно. 
+            </summary>
+            <param name="recordToDelete">Значение</param>
+            <returns>Успешность операции</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.ReadDictionaryRecords(System.Int32)">
+            <summary>
+            Возвращает неудаленные значения справочника. 
+            </summary>
+            <param name="idDictionary">Идентификатор справочника</param>
+            <returns>Значения справочника</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.ReadDictionaryAllRecords(System.Int32)">
+            <summary>
+            Возвращает все значения справочника. 
+            </summary>
+            <param name="idDictionary">Идентификатор справочника</param>
+            <returns>Значения справочника</returns>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.TestChannel">
+            <summary>
+            Выполняет тестовый вызов. 
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.IDictionaryService.GetCountryIDbyCode(System.String)">
+            <summary>
+            Возвращает идентификатор страны в СА. 
+            </summary>
+            <param name="code">Код страны</param>
+            <returns>Идентификатор страны в СА</returns>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.MetaEntityContract">
+            <summary>
+            Метаданные. 
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Meta_Entity_ID">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.SystemName">
+            <summary>
+            Имя системное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.DisplayName">
+            <summary>
+            Имя для отображения
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Description">
+            <summary>
+            Описание
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.IsSystem">
+            <summary>
+            Системное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Image16">
+            <summary>
+            Иконка 16*16
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Image32">
+            <summary>
+            Иконка 32*32
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Image64">
+            <summary>
+            Иконка 64*64
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.Deleted">
+            <summary>
+            Удаленное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.MetaEntityContract.IsVisible">
+            <summary>
+            Видимое
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.MetaEntityContract.#ctor">
+            <summary>
+            Инициализирует Метаданные.
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.MetaEntityContract.#ctor(System.Int32,System.String,System.String,System.String,System.Boolean,System.Byte[],System.Byte[],System.Byte[],System.Nullable{System.Int16},System.Boolean)">
+            <summary>
+            Инициализирует Метаданные.
+            </summary>
+            <param name="id">Идентификатор</param>
+            <param name="sysName">Имя системное</param>
+            <param name="displayName">Имя для отображения</param>
+            <param name="description">Описание</param>
+            <param name="isSystem">Системное</param>
+            <param name="image16">Иконка 16*16</param>
+            <param name="image32">Иконка 32*32</param>
+            <param name="image64">Иконка 64*64</param>
+            <param name="deleted">Удаленное</param>
+            <param name="isVisible">Видимое</param>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.DictionaryValue">
+            <summary>
+            Значение справочника. 
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.IdRec">
+            <summary>
+            Идентификатор
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.IdDictionary">
+            <summary>
+            Идентификатор справочника
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.IdParent">
+            <summary>
+            Идентификатор родительского значения справочника
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.DisplayName">
+            <summary>
+            Имя
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.Icon">
+            <summary>
+            Иконка
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.Deleted">
+            <summary>
+            Удаленное
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.DictionaryValue.FieldsExt">
+            <summary>
+            Дополнительные поля 
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryValue.#ctor(System.Int32,System.Int32,System.Nullable{System.Int32},System.String,System.Byte[],System.Nullable{System.Boolean})">
+            <summary>
+            Инициализирует значение справочника. 
+            </summary>
+            <param name="idRec">Идентификатор</param>
+            <param name="idDic">Идентификатор справочника</param>
+            <param name="idParent">Идентификатор родительского значения</param>
+            <param name="displayName">Имя</param>
+            <param name="ico">Иконка</param>
+            <param name="deleted">Удаленное</param>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryValue.#ctor">
+            <summary>
+            Инициализирует значение справочника. 
+            </summary>
+        </member>
+        <member name="M:ANBR.DictionaryService.Contracts.DictionaryValue.ToString">
+            <summary>
+            Строковое представление. 
+            </summary>
+            <returns>Строковое представление</returns>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.ValidationResult">
+            <summary>
+            Результат проверки значения справочника. 
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.ValidationResult.NotFound">
+            <summary>
+            Не найденное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.ValidationResult.Renamed">
+            <summary>
+            Переименованное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.ValidationResult.Restored">
+            <summary>
+            Восстановленное
+            </summary>
+        </member>
+        <member name="F:ANBR.DictionaryService.Contracts.ValidationResult.Valid">
+            <summary>
+            Разрешенное
+            </summary>
+        </member>
+        <member name="T:ANBR.DictionaryService.Contracts.RecordValidation">
+            <summary>
+            Значение справочника с результатом его проверки. 
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.RecordValidation.ValidationResult">
+            <summary>
+            Результат проверки
+            </summary>
+        </member>
+        <member name="P:ANBR.DictionaryService.Contracts.RecordValidation.Value">
+            <summary>
+            Значение справочника
+            </summary>
+        </member>
+    </members>
+</doc>

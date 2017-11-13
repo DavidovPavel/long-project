@@ -1,0 +1,136 @@
+﻿@using Resources
+@using www.Models
+@{
+    var currentLang = ViewBag.CurrentLang;
+    var GUI = ViewBag.GLOBAL_SA as GLOBAL_SAModel;
+    var urldata = Url.RequestContext.RouteData.Values;
+    var ruRuting = new { lang = "ru-RU", dbid = ViewBag.CureentDatabaseID };
+    var enRuting = new { lang = "en-US", dbid = ViewBag.CureentDatabaseID };
+    var dbid = urldata["dbid"];
+    var baseurl = string.Format("/lang-{0}/db{1}", urldata["lang"], String.IsNullOrWhiteSpace(urldata["dbid"].ToString()) ? "0" : urldata["dbid"].ToString());
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>@Client.semanticArchive</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="~/Content/themes/anbr/jquery-ui.css" rel="stylesheet" />
+    <link href="~/Content/anbr/analyst.min.css" rel="stylesheet" />
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    
+    @Scripts.Render("~/bundles/modernizr")
+
+    <script src="~/frontend/public/js/vendor.js"></script>    
+
+    <script src="/pdf/shared/util.js"></script>
+    <script src="/pdf/display/api.js"></script>
+    <script src="/pdf/display/metadata.js"></script>
+    <script src="/pdf/display/canvas.js"></script>
+    <script src="/pdf/display/webgl.js"></script>
+    <script src="/pdf/display/pattern_helper.js"></script>
+    <script src="/pdf/display/font_loader.js"></script>
+    <script src="/pdf/display/annotation_helper.js"></script>
+
+    <script src="~/js/dist/video-js/video.js"></script>
+
+    <script src="~/Scripts/IWC-master/iwc-all.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>   
+
+</head>
+    <body>
+                 
+      @Html.Partial("BodyHeader")
+
+       <div id="feedback-alerts-panel" class="g-dialog--wrapper feedback warning"></div> 
+        <div id="message-area"></div>
+
+    <div class="MainMenu">
+       
+        <div class='Item @(urldata["controller"].ToString().ToLower() == "home" ? "S" : "")'>
+            <div class="Home" title="@Client.Main"></div>
+        </div>
+        @if (GUI.Check("2C7B82CF-37FE-4B6E-9166-6B191AE1E703"))
+        {
+            <div class="Item">
+                <div class="Person" title="@Client.addPerson"></div>
+            </div>
+            <div class="Item">
+                <div class="Organization" title="@Client.addOrganization"></div>
+            </div>
+            <div class="Item">
+                <div class="Fact" title="@Client.addFact"></div>
+            </div>
+            <div class="Item">
+                <div class="Document" title="@Client.addDoc"></div>
+            </div>
+            <div class="Item">
+                <div class="Element" title="@Client.addElement"></div>
+            </div>
+        }
+        else
+        {
+            <div class="Item D">
+                <div class="Person"></div>
+            </div>
+            <div class="Item D">
+                <div class="Organization"></div>
+            </div>
+            <div class="Item D">
+                <div class="Fact"></div>
+            </div>
+            <div class="Item D">
+                <div class="Document"></div>
+            </div>
+            <div class="Item D">
+                <div class="Element"></div>
+            </div>
+        }
+        @if (GUI.Check("44ECE076-7C41-4DE9-BF60-73424F68FD07"))
+        {
+            @*<div class="Item D">
+                <div class="Import" title="@Client.Import"></div>
+            </div>*@
+        }
+       
+        @*<div id="Alert" class="ui-corner-bottom Panel" data-id="E6324295-2B83-4D13-BE3B-DF6A18DEB193"></div>*@
+    </div>
+
+        <div id="DetailsInWindow"></div>
+        <div id="ImageGallery"></div>
+        <div id="feedBackdiv" class="ui-corner-all"></div>
+        <div id="OriginalAll" class="Swollen ui-corner-all"></div>
+        <div id="NextPage">
+            <div class="Person"></div>
+            <div class="Organization"></div>
+            <div class="Fact"></div>
+            <div class="Document"></div>
+            <div class="Element"></div>
+        </div>
+
+        <script data-main="/js/entry" src="~/js/dist/require.min.js" type="text/javascript"></script>
+
+        @RenderBody()
+        <script type="text/javascript">
+            define("bdid", "@dbid");
+            define("baseurl", "@baseurl" );
+        </script>
+        <footer>
+            <div class="Furniture ui-corner-all"><div class='btn Close'></div><div id='Load'></div></div>
+            <div id="Error" class="ui-corner-left ui-state-error"><span class="ui-icon ui-icon-info"></span></div>
+            <img src="~/Images/bigrotation2.gif" alt="" id="Rotor" class="Rotor" />
+            @Html.Partial("TemplateUnderscore")
+            @Html.Partial("TemplateUnderscoreGlobal")
+        </footer>
+        <div id="message-area"></div>
+
+
+
+        @Html.Partial("~/Views/Shared/ANBR/SpriteSVG.cshtml")
+       
+    </body>
+</html>

@@ -1,0 +1,115 @@
+// output: ../index.html
+doctype html
+html
+  head
+    title Semantic Network
+    link(rel="stylesheet" href="../../monitoring/css/reset.css")
+    link(rel="stylesheet" href="../../monitoring/css/master.css")
+    link(rel="stylesheet" href="css/semantic.css")
+    link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto")
+    script(src='js/jquery.js')
+    script(src='https://code.jquery.com/ui/1.12.0/jquery-ui.js')
+    script(src='js/base.js')
+  body
+   .wrapper
+     include ../../../monitoring/jade/header.jade
+     section.semantic-net
+       .semantic-wrapper
+        //-  include sidebar.jade
+        .semantic-sidebar
+          .hamburger#tools-hamburger
+            span
+          .semantic-tools
+            ul
+              li
+                span(title="Zoom" class="semantic-tools--zoom")
+                ul
+                  li
+                    span(title="Zoom out" class="semantic-tools--zoomout")
+                  li
+                    span(title="Zoom in" class="semantic-tools--zoomin")
+                  li
+                    span(title="Fit to screen" class="semantic-tools--zoomfit")
+              li
+                span(class="semantic-tools--hand" title="Drag tool")
+              li
+                span(class="semantic-tools--editor" title="Select tool")             
+          .semantic--tool-settings
+            .semantic--tool-editmode
+              label Edit mode
+              span#editmode
+            .semantic--tool-viewmode
+              .semantic--tool-select
+                label Layout
+                .g-select--wrapper
+                  div.g-select--placeholder Strategic
+                  ul.g-select--options
+                    li.g-select--option
+                      span.flag--rus Strategic
+                    li.g-select--option
+                      span.flag--rus Tree
+                    li.g-select--option
+                      span.flag--rus Graph
+              .semantic--tool-select
+                label View mode
+                .g-select--wrapper
+                  div.g-select--placeholder Default view
+                  ul.g-select--options
+                    li.g-select--option
+                      span.flag--rus View mode 2
+                    li.g-select--option
+                      span.flag--rus View mode 3
+                    li.g-select--option
+                      span.flag--rus View mode 4
+                    li.g-select--option
+                      span.flag--rus View mode 5
+              .semantic--tool-select
+                label Depth
+                .g-select--wrapper
+                  div.g-select--placeholder Level 1
+                  ul.g-select--options
+                    li.g-select--option
+                      span.flag--rus Level 1
+                    li.g-select--option
+                      span.flag--rus Level 2
+                    li.g-select--option
+                      span.flag--rus Level 3
+                    li.g-select--option
+                      span.flag--rus Level 4
+                    li.g-select--option
+                      span.flag--rus Level 5
+              .semantic--tool-appearance
+                label Appearance
+                div
+                  input(type="checkbox" id="id1")
+                  label(for="id1") Hide main object(s)
+                div
+                  input(type="checkbox" id="id2") 
+                  label(for="id2") Show legend
+                div
+                  input(type="checkbox" id="id3") 
+                  label(for="id3") Show main properties of objects
+              .semantic--tool-filter
+                div
+                  label Filter
+                input(type="button" value="Select type")
+                input(type="button" value="Clear filter")
+              hr.ruller
+              .semantic--tool-form
+                input(type="button" value="Reload")
+                input(type="button" value="Export")
+         .semantic-tabs 
+           .control
+           ul
+             li.controls
+               span.semantic-tabs--settings
+             li.active
+               span.semTab.default Automatic layout
+             li
+               span.semTab Custom layout
+                 div
+             li
+               span.semTab Another custom layout
+                 div
+             li.controls
+               span.semantic-tabs--add

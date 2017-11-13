@@ -1,0 +1,190 @@
+﻿.g-tree {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.g-tree ul {
+  padding: 0;
+  margin: 0;
+}
+.g-tree li {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.g-tree li > div {
+  display: block;
+  padding: 4px;
+  white-space: nowrap;
+}
+.g-tree li > div + ul {
+  display: none;
+}
+.g-tree li > div:hover {
+  background: #f5f5f5;
+}
+.g-tree li > div.expanded > .expander {
+  transform: rotate(90deg);
+}
+.g-tree li > div.expanded + ul {
+  display: block;
+}
+.g-tree li > div > .expander {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-left: 4px;
+  transition: transform linear 100ms;
+  cursor: pointer;
+  transform: rotate(0deg);
+}
+.g-tree li > div > .expander:before,
+.g-tree li > div > .expander:after {
+  width: 2px;
+  height: 8.5px;
+  content: '';
+  display: block;
+  position: absolute;
+  left: 6px;
+  background: #333;
+}
+.g-tree li > div > .expander:before {
+  top: 0;
+  transform: rotate(-45deg);
+}
+.g-tree li > div > .expander:after {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.g-tree li > div > .expander[disabled] {
+  opacity: 0;
+}
+.g-tree li > div > input[type="checkbox"] {
+  display: none;
+}
+.g-tree li > div > input[type="checkbox"]:checked + label:after {
+  display: block;
+}
+.g-tree li > div > input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+}
+.g-tree li > div > input[type="checkbox"] + label:before {
+  content: '';
+  width: 13px;
+  height: 13px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+.g-tree li > div > input[type="checkbox"] + label:after {
+  display: none;
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 16px;
+  box-sizing: border-box;
+  border-right: 2px solid #333;
+  border-bottom: 2px solid #333;
+  border-top: 2px solid transparent;
+  transform: rotate(40deg);
+  top: -5px;
+  left: 6px;
+}
+.g-tree li > div > span {
+  margin-left: 22px;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+.g-tree li > div > span ~ button {
+  display: none;
+  position: static;
+}
+.g-tree li > div > span ~ button[data-value="ok"] {
+  width: 16px;
+  height: 16px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('/Content/images/data-icon-all.svg');
+  background-repeat: no-repeat;
+  background-size: 544px 544px;
+  background-position: -153px -51px !important;
+  filter: grayscale(0%) brightness(1) hue-rotate(240deg) !important;
+  border: none;
+}
+.g-tree li > div > span ~ button[data-value="cancel"] {
+  width: 16px;
+  height: 16px;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url('/Content/images/data-icon-all.svg');
+  background-repeat: no-repeat;
+  background-size: 544px 544px;
+  background-position: -170px -51px !important;
+  filter: grayscale(0%) brightness(1) hue-rotate(140deg) !important;
+  border: none;
+}
+.g-tree li > div > span[contenteditable="true"] {
+  outline: 1px solid #ccc;
+  padding: 0 4px;
+  background-color: #fff;
+}
+.g-tree li > div > span[contenteditable="true"] ~ button {
+  display: inline-block;
+}
+.g-tree li > div > span[tree-icon="folder"]:before {
+  outline: none;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 6.5px);
+  background: url('/Content/images/tree.svg');
+  background-size: 170px auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+.g-tree li > div > span[tree-icon="file"]:before {
+  outline: none;
+  content: '';
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
+  left: -20px;
+  top: calc(50% - 6.5px);
+  background: url('/Content/images/tree.svg');
+  background-size: 170px auto;
+  background-repeat: no-repeat;
+  background-position: -68px 0;
+}
+.g-tree li div + ul div {
+  padding-left: 20px;
+}
+.g-tree li div + ul div + ul div {
+  padding-left: 40px;
+}
+.g-tree li div + ul div + ul div + ul div {
+  padding-left: 60px;
+}
+.g-tree li div + ul div + ul div + ul div + ul div {
+  padding-left: 80px;
+}
+.g-tree li div + ul div + ul div + ul div + ul div + ul div {
+  padding-left: 100px;
+}

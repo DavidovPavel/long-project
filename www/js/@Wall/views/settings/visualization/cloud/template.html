@@ -1,0 +1,38 @@
+﻿<script type="x-template/underscore" id="cloud-settings-template">
+
+    <div id="form-settings"></div>
+
+    <div id="color-rows"></div>
+
+</script>
+
+<script type="x-templte/underscore" id="cloud-form-template">
+    <div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="min-font-size" maxlength="2" name="minFontSizeCloud" value="<%- minFontSizeCloud %>" placeholder="<%- Resources.cfsmi %>" />
+            <label class="g-form--label" for="min-font-size"><%- Resources.cfsmi %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span></span>
+            </span>
+        </span>
+    </div>
+
+    <!--<div>
+        <span class="g-form--input">
+            <input type="text" class="g-form--input" id="max-font-size" maxlength="2" name="maxFontSizeCloud" value="<%- maxFontSizeCloud %>" placeholder="<%- Resources.cfsma %>" />
+            <label class="g-form--label" for="max-font-size"><%- Resources.cfsma %></label>
+            <i class="help rtl-1"></i>
+            <span class="g-tip bottom" style="display: none;">
+                <kbd></kbd>
+                <span></span>
+            </span>
+        </span>
+    </div>-->
+
+    <div class="g-form--input">
+        <label class="g-form--label"><%- Resources.csh %></label>
+        <div class="g-dropdown--menu" id="cloud-shape"></div>
+    </div>
+</script>

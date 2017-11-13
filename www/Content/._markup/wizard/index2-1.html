@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Wizard</title>
+    <link href="../footer/footer.css" rel="stylesheet" />
+    <link href="../header/header-new.css" rel="stylesheet" />
+    <link href="../typo/typo.css" rel="stylesheet" />
+    <link href="../dialog/dialog.css" rel="stylesheet" />
+    <link href="../dropdown/dropdown.css" rel="stylesheet" />
+    <link href="../form/form.css" rel="stylesheet" />
+    <link href="../data-icon/data-icon.css" rel="stylesheet" />
+    <script src="../../../js/dist/jquery.min.js"></script>
+    <script src="wizard.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <header>
+        <div class="nav-btn"><span></span></div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="top-panel">
+                <h3 class="tac">Идентификация организации</h3>
+            </div>
+            <div class="g-form--wizard">
+                <fieldset class="g-form--fieldset" name="main">
+                    <legend>Основные параметры</legend>
+                    <div class="row">
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="lastname" class="g-form--input" placeholder="Наименование компании" />
+                                <label for="lastname">Наименование компании</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="surname" class="g-form--input" placeholder="ИНН" />
+                                <label for="surname">ИНН</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="oldlastname" class="g-form--input" placeholder="ОГРН" />
+                                <label for="oldlastname">ОГРН</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-3">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="uniname" class="g-form--input" placeholder="ОКПО" />
+                                <label for="uniname">ОКПО</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                        <div class="grid--1-1">
+                            <span class="g-form--input">
+                                <input type="text" value="" id="lastname" class="g-form--input" placeholder="Адрес" />
+                                <label for="lastname">Адрес</label>
+                                <i class="clear rtl-1"></i>
+                            </span>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="top-panel">
+                    <h3 class="tac">Предварительная проверка по источникам</h3>
+                </div>
+                <fieldset class="g-form--fieldset acc">
+                    <legend>Проверка сведений о государственной регистрации</legend>
+                    <button class="g-form--button flat accept">принять</button>
+                    <button class="g-form--button flat ">Запустить проверку</button>
+                    <div class="row">
+                        <div class="grid--1-1">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Наименование:</td>
+                                        <td>ООО "Лорем Ипсум Долор Сит Амет"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ИНН:</td>
+                                        <td>1234567891231</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ОГРН:</td>
+                                        <td>6445613354456321</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Адрес:</td>
+                                        <td>127001, г. Москва, ул. Пушкина, дом Колотушкина, кв. 13, оф. 112, строение 220, корпус металлический.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="g-form--fieldset acc">
+                    <legend>Проверка статуса организации</legend>
+                    <button class="g-form--button flat" disabled>Запустить проверку</button>
+                    <div class="row">
+                        <div class="grid--1-1">
+                            Статус: Действующая
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="g-form--fieldset acc">
+                    <legend>Посмотреть свежую выписку из ЕГРЮЛ перед проверкой</legend>
+                    <button class="g-form--button flat" disabled>Запустить проверку</button>
+                    <div class="row">
+                        <div class="grid--1-1">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset class="g-form--fieldset acc">
+                    <legend>Проверка действительности ИНН организации (по базе данных ФНС РФ)</legend>
+                    <button class="g-form--button flat" disabled>Запустить проверку</button>
+                    <div class="row">
+                        <div class="grid--1-1">
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+        <div class="main-controls">
+            <div class="row">
+                <button class="g-form--button flat ghost-b nest-left left">Отмена</button>
+                <button class="g-form--button flat next nest-right right" disabled>Далее</button>
+                <button class="g-form--button flat blue nest-right right" >Создать</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="step">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+    </footer>
+</body>
+</html>

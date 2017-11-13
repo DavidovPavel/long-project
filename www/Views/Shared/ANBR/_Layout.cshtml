@@ -1,0 +1,22 @@
+﻿@{ 
+    Layout = null;
+    var wwwVersion = ViewBag.wwwVersion;
+}
+<!doctype html>
+<html>
+    <head>	
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0"/>
+        <title> :: @ViewBag.Title</title>
+        <link href="@Url.Content(string.Format("~/frontend/public/css/{0}.css?v={1}", ViewBag.Name, wwwVersion))" rel="stylesheet" />        
+        <script src="~/frontend/public/js/vendor.js"></script>
+        <script src="~/Scripts/IWC-master/iwc-all.min.js"></script>
+        <script src="~/Scripts/jquery.signalR-2.2.2.min.js"></script>         
+        <script data-main="/js/entry" src="~/js/dist/require.min.js"></script>
+    </head>
+    <body class="@ViewBag.BodyClassName">                 
+       @Html.Partial("BodyHeader")      
+       @RenderBody()
+       @Html.Partial("BodyFooter")
+    </body>
+</html>

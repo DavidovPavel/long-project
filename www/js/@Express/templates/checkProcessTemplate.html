@@ -1,0 +1,17 @@
+﻿<h2><%= Resources.resultTitle %></h2><div class="row">
+    <div class="col-md-8">
+        <%= Resources.sources %>:<span class="open-sources"><span class="all"><%= Resources.all %></span><span class="dropdown-menu_arrow"></span><span class="list-sources"></span></span>
+        <div id="sources-window"><span class="arrow-left"></span><div class="anbr-head"><svg class="icon-close right"><use xlink:href="#icon-close" /></svg><span><%= Resources.sources %></span></div><div class="content-table"></div></div>
+    </div><div class="col-md-4"><%= Resources.cdate %>:<select class="form-control check-date"></select></div>                    
+</div>
+<ul class="nav nav-pills">
+    <li><a class="jump" href="#result-extract"><svg class="svg-icon"><use xlink:href="#extract"></use></svg><span><%= Resources.info2 %></span> <span class="numchild"></span><span class="dropdown-menu_arrow"></span></a></li>
+    <li class="sep"></li>
+    <li><a class="jump" href="#result-facts"><svg class="svg-icon"><use xlink:href="#facts"></use></svg><span><%= Resources.titleFacts %></span> <span class="numchild"></span><span class="dropdown-menu_arrow"></span></a></li>
+    <li class="sep"></li>
+    <li><a class="jump" href="#result-documents"><svg class="svg-icon"><use xlink:href="#documents"></use></svg><span><%= Resources.titleDocs %></span> <span class="numchild"></span><span class="dropdown-menu_arrow"></span></a></li>
+    <li class="sep"></li>
+    <li><a class="jump" href="#result-requisites"><svg class="svg-icon"><use xlink:href="#requisites"></use></svg><span><%= Resources.info3 %></span> <span class="numchild"></span><span class="dropdown-menu_arrow"></span></a></li>
+</ul>
+<div class="anbr-toolbar"><button class="tool-extra1"><svg class="svg-icon"><use xlink:href="#extra"></use></svg><span class="anbr-tooltip"><span position="top"></span><%= Resources.runAutoSelect %></span></button></div>
+<div role="tabpanel" class="tab-pane" id="result-extract"></div><div role="tabpanel" class="tab-pane" id="result-facts"></div><div role="tabpanel" class="tab-pane" id="result-documents"></div><div role="tabpanel" class="tab-pane" id="result-requisites"></div>

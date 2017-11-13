@@ -1,0 +1,494 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ANBR.Helpful.Misc</name>
+    </assembly>
+    <members>
+        <member name="T:ANBR.Helpful.Misc.Graphic.Helper">
+            <summary>
+            Набор инструментов на участке работы с графикой
+            </summary>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Graphic.Helper.ColorParseKind">
+            <summary>
+            Варианты сериализованного цвета
+            </summary>
+        </member>
+        <member name="F:ANBR.Helpful.Misc.Graphic.Helper.ColorParseKind.rgba">
+            <summary>
+            rgba(200, 188, 162, 1)
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.ColorInvert(System.Drawing.Color)">
+            <summary>
+            Инвертировать цвет
+            </summary>
+            <param name="bg">Исходны цвет для инвертирования</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.ColorLighter(System.Drawing.Color,System.Byte)">
+            <summary>
+            Получить цвет мягче, светлее заданного за счет изменения прозрачности
+            </summary>
+            <param name="c">Цвет</param>
+            <param name="alfaDelta">Степень прозрачности</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.ColorGenerateRolloverState(System.Drawing.Color,System.Drawing.Color)">
+            <summary>
+            Генерирует палитру состояний  rollover-а: [0-hover, 1-visited, 2-active], на основе базового набора цветов
+            </summary>
+            <param name="baseColorBG">цвет фона</param>
+            <param name="baseColorFG">цвет текста</param>
+            <returns>0-hover [item1-фон, item2-текст], 1-visited [item1-фон, item2-текст], 2-active [item1-фон, item2-текст]</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.Serialize(ANBR.Helpful.Misc.Graphic.Helper.ColorParseKind,System.Drawing.Color)">
+            <summary>
+            Преобразует цвет в строку заданного формата
+            </summary>
+            <param name="kind"></param>
+            <param name="val"></param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.ColorsBlend(System.Drawing.Color,System.Drawing.Color,System.Double)">
+            <summary>Blends the specified colors together.</summary>
+            <param name="color">Color to blend onto the background color.</param>
+            <param name="bgColor">Color to blend the other color onto.</param>
+            <param name="amount">How much of <paramref name="color"/> to keep,
+            “on top of” <paramref name="bgColor"/>.</param>
+            <returns>The blended colors.</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.Helper.Parse(ANBR.Helpful.Misc.Graphic.Helper.ColorParseKind,System.String)">
+            <summary>
+            Преобразует строку заданного формата в цвет
+            </summary>
+            <param name="kind"></param>
+            <param name="val"></param>
+            <returns></returns>
+            <exception cref="T:System.InvalidOperationException"></exception>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Graphic.ColorGenerator">
+            <summary>
+            Решает задачи генерации групп контрастных цветов, цветов и группу связанных сервисных методов
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.ColorByHLS(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Конвертация цвета из модели HLS -> RGB
+            </summary>
+            <param name="h"></param>
+            <param name="l"></param>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GetNext">
+            <summary>
+            Возвращает очердную пару контрастных цветов: цвет фона, цвет шрифта на нем
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateColors(System.Int32)">
+            <summary>
+            Генерация заданного количества контрастных цветов
+            </summary>
+            <param name="count">Кол-во цветов</param>
+            <returns>Массив цветов</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateRandomColor">
+            <summary>
+            Случайный цвет 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.ToHtmlVersion(System.Drawing.Color[])">
+            <summary>
+            ВОзвращает список цветов для применения в HTML коде
+            </summary>
+            <param name="colors"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.ToHtmlVersion(System.Drawing.Color)">
+            <summary>
+            Возвращает цвет для применения в HTML коде
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateLightColors(System.Int32,System.Nullable{System.Single})">
+            <summary>
+            Генерация заданного количества цветов в светлых тонах
+            </summary>
+            <param name="count">Кол-во цветов</param>
+            <param name="saturation">Насыщенность</param>
+            <returns>Массив цветов</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateDarkColors(System.Int32,System.Nullable{System.Single})">
+            <summary>
+            Генерация заданного количества цветов в мрачных тонах
+            </summary>
+            <param name="count">Кол-во цветов</param>
+            <param name="saturation">Насыщенность</param>
+            <returns>Массив цветов</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateColorsSimple(System.Int32)">
+            <summary>
+            Создает простую палитру цветов
+            </summary>
+            <param name="count">Кол-во цветов в палитре</param>
+            <returns>Строка из целых значений, где каждое целое это цвет в формате Windows</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateLightColorsSimple(System.Int32)">
+            <summary>
+            Создает светлую палитру цветов
+            </summary>
+            <param name="count">Кол-во цветов в палитре</param>
+            <returns>Строка из целых значений, где каждое целое это цвет в формате Windows</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.ColorGenerator.GenerateDarkColorsSimple(System.Int32)">
+            <summary>
+            Создает темную палитру цветов
+            </summary>
+            <param name="count">Кол-во цветов в палитре</param>
+            <returns>Строка из целых значений, где каждое целое это цвет в формате Windows</returns>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Graphic.HSBColor">
+            <summary>
+            Описывает цветовую модел HSB
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.#ctor(System.Single,System.Single,System.Single)">
+            <summary>
+            Инициализация цвета в модели HSB
+            </summary>
+            <param name="h">Hue - цветовой тон</param>
+            <param name="s">Saturation - насыщенность</param>
+            <param name="b">Brightness - яркость</param>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.#ctor(System.Int32,System.Single,System.Single,System.Single)">
+            <summary>
+            Инициализация цвета в модели HSB
+            </summary>
+            <param name="a">Степень прозрачности</param>
+            <param name="h">Hue - цветовой тон</param>
+            <param name="s">Saturation - насыщенность</param>
+            <param name="b">Brightness - яркость</param>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.#ctor(System.Drawing.Color)">
+            <summary>
+            Инициализация цвета в модели HSB
+            </summary>
+            <param name="color">заданный цвет</param>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Graphic.HSBColor.H">
+            <summary>
+            Hue - цветовой тон
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Graphic.HSBColor.S">
+            <summary>
+            Saturation - насыщенность
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Graphic.HSBColor.B">
+            <summary>
+            Brightness - яркость
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Graphic.HSBColor.A">
+            <summary>
+            Alfa - степень прозрачности
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Graphic.HSBColor.Color">
+            <summary>
+            Цвет
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.ShiftHue(System.Drawing.Color,System.Single)">
+            <summary>
+            Изменить тон цвета, используя сдвиг 
+            </summary>
+            <param name="c">Цвет</param>
+            <param name="hueDelta">Сдвиг для изменения тона</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.ShiftSaturation(System.Drawing.Color,System.Single)">
+            <summary>
+            Изменить насыщенность, используя сдвиг
+            </summary>
+            <param name="c">Цвет</param>
+            <param name="saturationDelta">Сдвиг для изменения насыщенности</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.ShiftBrighness(System.Drawing.Color,System.Single)">
+            <summary>
+            Изменить яркость, используя сдвиг
+            </summary>
+            <param name="c">Цвет</param>
+            <param name="brightnessDelta">Сдвиг для изменения яркости</param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.FromHSB(ANBR.Helpful.Misc.Graphic.HSBColor)">
+            <summary>
+            Конвертация цвета и HSB->Color 
+            </summary>
+            <param name="hsbColor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Graphic.HSBColor.FromColor(System.Drawing.Color)">
+            <summary>
+            Получить цвет в модели HSB Color->HSB
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Html.Helper.FindRegexSubStr(System.String,System.String)">
+            <summary>
+            Возвращает подстроку в группе id 
+            (?&lt;id&gt;\d{1,})
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Js.Helper.JSVariable(System.String,System.Object)">
+            <summary>
+            Создает JavaScript переменную инициализированную заданым значением 
+            </summary>
+            <param name="variableName"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Js.Helper.JSObjectVariable(System.Object)">
+            <summary>
+            Объект -> Json 
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Path.Helper.PathEval(System.String)">
+            <summary>
+            Вычисляет пути типа: 
+            "%SpecialFolder.Programs%\Аналитические Бизнес Решения\Global search.appref-ms";
+            "%APPDATA%\Microsoft\....
+            </summary>
+            <param name="path">Шаблон пути</param>
+            <returns>Реальный путь</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Path.Helper.ExtractModuleName(System.String)">
+            <summary>
+            Вычисляет имя модуля: 
+            из *.appref-ms";
+            из *.lnk
+            из *.exe
+            </summary>
+            <param name="path">Шаблон пути</param>
+            <returns>Реальный путь</returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Path.Helper.ReplaceInvalidCharsInFileName(System.String,System.String)">
+            <summary>
+            Заменяет в имени файла недопустимые символы на заданный
+            </summary>
+            <param name="fileName">Наименование файла</param>
+            <param name="ch">Строка замены недопустимых символов</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Properties.Resources.MHTTemplate">
+             <summary>
+               Looks up a localized string similar to Content-Type: multipart/related; start=&lt;op.mhtml.1323945480536&gt;; boundary=----------zTGDX1xlzsTcTVXFai4WSG
+            MIME-Version: 1.0
+            
+            ------------zTGDX1xlzsTcTVXFai4WSG
+            Content-Disposition: inline; filename=1.html
+            Content-Type: text/html; name=1.html
+            Content-ID: &lt;op.mhtml.1323945480536&gt;
+            Content-Transfer-Encoding: Base64
+            
+            {0}
+            
+            ------------zTGDX1xlzsTcTVXFai4WSG--.
+             </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.Serialize``1(``0,System.String)">
+            <summary>
+            Сериализация объекта в файл (бинарный тип)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="obj"></param>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.Deserialize``1(System.String)">
+            <summary>
+            Десериализация объекта из файла (бинарный тип)
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="fileName"></param>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.JsonSerializer``1(``0)">
+            <summary>
+            JSON Serialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.XmlSerializer``1(``0)">
+            <summary>
+            XML Serialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.JsonDeserialize``1(System.String,System.Runtime.Serialization.Json.DataContractJsonSerializerSettings)">
+            <summary>
+            JSON Deserialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.XmlDeserialize``1(System.String,System.Runtime.Serialization.DataContractSerializerSettings)">
+            <summary>
+            XML Deserialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.JsonSerializeAnonym(System.Object)">
+            <summary>
+            JSON Serialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.JsonDeserializeAnonym(System.String)">
+            <summary>
+            JSON Deserialization
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.GetBytes(System.String)">
+            <summary>
+            Быстрая сериализация строки в массив байт
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Serializer.Helper.GetString(System.Byte[])">
+            <summary>
+            Быстрая дессериализация массива байт в строку
+            </summary>
+            <param name="bytes"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Text.Helper.ReEncodingText(System.Text.Encoding,System.Text.Encoding,System.String)">
+            <summary>
+            Перекодирует текст из одной кодировки в другую
+            </summary>
+            <param name="fromEncoding"></param>
+            <param name="toEncoding"></param>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Text.Helper.ReverseString(System.String)">
+            <summary>
+            Переворачивает строку
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Text.Helper.GetHashString(System.String)">
+            <summary>
+            Возвращает md5 hash
+            </summary>
+            <param name="inputString"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.CallContextScope">
+            <summary>
+            Обеспечивает безопасное создание и удаление контекста вызова
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Uniclasses.CallContextScope.Capture(System.String,System.Object)">
+            <summary>
+            Захват контекста
+            </summary>
+            <param name="name">Имя конеткса</param>
+            <param name="data">Произвольные данные</param>
+            <returns></returns>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.CallContextScope.Cleaner">
+            <inheritdoc />
+            <summary>
+            Обертка обеспечивающая удаление ранее захваченного контекста
+            </summary>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.ProgressData">
+            <summary>
+            Описывает данные состояния сложной операции (шаги, ход, описание) 
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Uniclasses.ProgressData.StageCountTotal">
+            <summary>
+            Общее число этапов
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Uniclasses.ProgressData.StageTitles">
+            <summary>
+            Наименование каждого из этапов
+            </summary>
+        </member>
+        <member name="P:ANBR.Helpful.Misc.Uniclasses.ProgressData.CurrentProgress">
+            <summary>
+            Текущий прогресс в рамках каждого этапа в формате (наименование прогресса: процент)
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Uniclasses.ProgressData.SetProgress(System.Int32,System.Int32,System.String)">
+            <summary>
+            Устанавливает текущие состояние прогресса
+            </summary>
+            <param name="stage">номер этапа</param>
+            <param name="progress">процент</param>
+            <param name="title">текущее наименование</param>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.IStateInfo">
+            <summary>
+            Поддержка работы с состоянием прогресса  
+            </summary>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData">
+            <summary>
+            Сервисный класс очистки созданных временных файлов
+            </summary>
+        </member>
+        <member name="T:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.ItemType">
+            <summary>
+            Описывает элемент подлежащий удалению
+            </summary>
+        </member>
+        <member name="F:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.ItemType.Directory">
+            <summary>
+            Папка
+            </summary>
+        </member>
+        <member name="F:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.ItemType.File">
+            <summary>
+            Файл
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.#ctor(System.String[],System.TimeSpan,System.Func{System.String,ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.ItemType,System.Boolean},System.Int32)">
+            <summary>
+            Инициализация класс очистки временных файлов
+            </summary>
+            <param name="folders">Папки, где хранятся временные файлы</param>
+            <param name="regularity">Частота процудуры очистки</param>
+            <param name="validateItemForDelete">Делегат позволяющий отфильтровать файлы, если не задан, то удалению подлежат все файлы</param>
+            <param name="olderThanDayCount">Осуществляет удаление папок и файлов дата создания которых старше указанного количества дней относительно текущей даты</param>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Uniclasses.ServiceCleanTemporaryData.Dispose">
+            <summary>
+            Остановка таймера, по которому осуществляется запуск очистки
+            </summary>
+        </member>
+    </members>
+</doc>

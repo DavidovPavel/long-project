@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Dialog v. 0.1</title>
+	<meta charset="utf-8" />
+    <link href="dialog.min.css" rel="stylesheet" />
+    <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <section class="tools">
+        <span id="action-modal">Modal mode</span>
+        <span id="restore">Restore dialog</span>
+        <span id="context">Toggle context</span>
+        <span id="promt">Toggle promt</span>
+        <span id="blocker">Toggle blocker</span>
+        <span id="sidebar">Toggle sidebar</span>
+        <span id="toolbar">Toggle toolbar</span>
+    </section>
+
+    <div class="g-dialog--wrapper" modal="false" toolbar="true">
+        <div class="g-dialog--header" move="true">
+            <div class="g-dialog--title" data-icon="icon-loader">Dialog window default title &mdash; Lorem Ipsum dolor sit amet</div>
+            <div class="g-dialog--manage">
+                <i class="close"></i>
+                <i class="size"></i>
+                <i class="menu"></i>
+            </div>
+        </div>
+        <div class="g-toolbar">
+            <ul>
+                <li>
+                    <span toolbar-icon="dual-cols">
+                        <i>dual-cols</i>
+                    </span>
+                </li>
+                <li>
+                    <span toolbar-icon="triple-cols">
+                        <i>triple-cols</i>
+                    </span>
+                </li>
+                <li class="disabled" disabled="disabled">
+                    <span toolbar-icon="single-cols" disabled="disabled">
+                        <i>single-cols</i>
+                    </span>
+                </li>
+                <li>
+                    <span toolbar-icon="cols">
+                        <i>cols</i>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        <div class="g-dialog--context">
+            <ul>
+                <li>
+                    File
+                    <ul>
+                        <li>Save</li>
+                        <li>Open</li>
+                        <li>Save as</li>
+                        <li>Settings</li>
+                        <li>Quit</li>
+                    </ul>
+                </li>
+                <li>
+                    Edit
+                    <ul>
+                        <li>Cut</li>
+                        <li>Copy</li>
+                        <li>Paste</li>
+                        <li>Undo</li>
+                    </ul>
+                </li>
+                <li>
+                    View
+                    <ul>
+                        <li>Markup</li>
+                        <li>Toolbox</li>
+                        <li>Full Screen</li>
+                    </ul>
+                </li>
+                <li>
+                    Window
+                    <ul>
+                        <li>Minimize</li>
+                        <li>Split</li>
+                        <li>Float</li>
+                    </ul>
+                </li>
+                <li>
+                    Help
+                    <ul>
+                        <li>View Help (F1)</li>
+                        <li>Register Product</li>
+                        <li>Technical Support</li>
+                        <li>About Dialog v. 0.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="g-dialog--promt">
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+            <div class="row">
+                <button class="g-form--button left  flat">Cancel</button>
+                <button class="g-form--button right flat blue">Save</button>
+            </div>
+        </div>
+        <div class="g-dialog--blocker">
+            <i class="loading" size="xl" speed="medium"></i>
+        </div>
+        <div class="g-dialog--container" sidebar="false">
+            <div class="g-dialog--content">
+                <h3>Sample Title</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquam scelerisque orci, non consequat augue efficitur et. Phasellus congue mollis eros. Phasellus mattis, sapien ut iaculis finibus, ex nisl blandit purus, a dignissim mi quam at ipsum. Morbi nec lacinia mauris. Phasellus cursus est eu egestas sollicitudin. Sed in lectus non nibh molestie pretium et vel metus. Quisque ex lorem, accumsan eget malesuada eu, fringilla quis risus. Vivamus dignissim quis turpis sed auctor. Duis placerat a tellus quis sodales. Maecenas pulvinar euismod augue quis gravida. Aenean in consequat dolor. Sed pharetra ante non sagittis aliquam. Suspendisse hendrerit sagittis lectus ac aliquam. Sed sollicitudin suscipit ligula eu consequat. Aliquam sem diam, finibus sed tortor laoreet, molestie placerat quam.</p>
+                <p>Pellentesque sagittis bibendum arcu et fermentum. Vivamus fermentum finibus eros, a finibus dolor pellentesque vitae. Vivamus id vehicula nisl. Nam venenatis dui ante, vitae pellentesque tortor condimentum ut. Vivamus id semper augue. Praesent mattis diam ipsum, nec accumsan sapien congue vel. Proin justo tellus, malesuada id nulla ac, condimentum sollicitudin turpis. Ut hendrerit quis urna eget cursus. Sed quis consectetur felis. Mauris cursus eros id tortor sollicitudin, vel lobortis ante accumsan. Mauris semper enim sit amet arcu ornare tincidunt. Mauris ac diam eget libero feugiat porta sed vitae elit. Aliquam vel varius turpis. Nam nec ante eleifend, efficitur libero eu, hendrerit ante.</p>
+            </div>
+            <div class="g-dialog--sidebar">
+                <ul class="g-tree">
+                    <li>
+                        <div class="expanded">
+                            <i class="expander"></i>
+                            <input type="checkbox" id="lvl0">
+                            <label for="lvl0"></label>
+                            <span tree-icon="folder">
+                                ...
+                            </span>
+                            <button data-value="ok"></button>
+                            <button data-value="cancel"></button>
+                        </div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <i class="expander"></i>
+                                    <input type="checkbox" id="lvl1-1">
+                                    <label for="lvl1-1"></label>
+                                    <span tree-icon="folder">Local Drive (C:)</span>
+                                    <button data-value="ok"></button>
+                                    <button data-value="cancel"></button>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <i class="expander"></i>
+                                            <input type="checkbox" id="lvl2-1">
+                                            <label for="lvl2-1"></label>
+                                            <span tree-icon="folder">Program Files</span>
+                                            <button data-value="ok"></button>
+                                            <button data-value="cancel"></button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="expander"></i>
+                                            <input type="checkbox" id="lvl2-2">
+                                            <label for="lvl2-2"></label>
+                                            <span tree-icon="folder">Users</span>
+                                            <button data-value="ok"></button>
+                                            <button data-value="cancel"></button>
+                                        </div>
+                                        <ul>
+                                            <li>
+                                                <div>
+                                                    <i class="expander"></i>
+                                                    <input type="checkbox" id="lvl3-1">
+                                                    <label for="lvl2-3"></label>
+                                                    <span tree-icon="folder">Manxome</span>
+                                                    <button data-value="ok"></button>
+                                                    <button data-value="cancel"></button>
+                                                </div>
+                                                <ul>
+                                                    <li>
+                                                        <div>
+                                                            <i class="expander" disabled=""></i>
+                                                            <input type="checkbox" id="lvl4-1">
+                                                            <label for="lvl2-3"></label>
+                                                            <span tree-icon="file">Desktop</span>
+                                                            <button data-value="ok"></button>
+                                                            <button data-value="cancel"></button>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <i class="expander"></i>
+                                            <input type="checkbox" id="lvl2-3">
+                                            <label for="lvl2-3"></label>
+                                            <span tree-icon="folder">Windows</span>
+                                            <button data-value="ok"></button>
+                                            <button data-value="cancel"></button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div>
+                                    <i class="expander"></i>
+                                    <input type="checkbox" id="lvl1-2">
+                                    <label for="lvl1-2"></label>
+                                    <span tree-icon="folder">Local Drive (D:)</span>
+                                    <button data-value="ok"></button>
+                                    <button data-value="cancel"></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="g-dialog--overlay"></div>
+</body>
+</html>

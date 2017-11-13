@@ -1,0 +1,64 @@
+﻿<script type="x-template/underscore" id="decoration-settings-template">
+    <div class="marker">
+        <div>
+            <hr /><svg><use xlink:href="#marker-decoration"></use></svg>
+            <input type="text" class="Decoration ignore" name="CaptionBackground" id="<%- prefix %>_CaptionBackground" value="<%- CaptionBackground %>" />
+            &nbsp;&nbsp;&nbsp;
+            <span class="font-icon font-icon-type"></span>
+            <input type="text" class="Decoration ignore" name="CaptionForeground" id="<%- prefix %>_CaptionForeground" />
+        </div>
+        <div>
+            <hr /><svg><use xlink:href="#marker-decoration"></use></svg>
+            <input type="text" class="Decoration ignore" name="ContainerBackground" id="<%- prefix %>_ContainerBackground" />
+            &nbsp;&nbsp;&nbsp;
+            <span class="font-icon font-icon-type"></span>
+            <input type="text" class="Decoration ignore" name="ContainerForeground" id="<%- prefix %>_ContainerForeground" />
+        </div>
+        <div>
+            <hr /><svg><use xlink:href="#marker-decoration"></use></svg>
+            <input type="text" class="Decoration ignore" name="LinkBackground" id="<%- prefix %>_LinkBackground" />
+            &nbsp;&nbsp;&nbsp;
+            <span class="font-icon font-icon-type"></span>
+            <input type="text" class="Decoration ignore" name="LinkForeground" id="<%- prefix %>_LinkForeground" />
+        </div>
+    </div>
+
+    <div id="maket"></div>
+
+    <br />
+
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input class="g-form--checkbox" type="checkbox" id="<%- prefix %>_CaptionIsVisible" name="CaptionIsVisible" <%- CaptionIsVisible?checked="checked":"" %> />
+                <label for="<%- prefix %>_CaptionIsVisible"><%- Resources.captionVisible %></label>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input class="g-form--checkbox" type="checkbox" id="<%- prefix %>_BorderIsVisible" name="BorderIsVisible" <%- BorderIsVisible?checked="checked":"" %> />
+                <label for="<%- prefix %>_BorderIsVisible"><%- Resources.borderVisible %></label>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid--1-1">
+            <span class="g-form--input">
+                <input class="g-form--checkbox" type="checkbox" id="<%- prefix %>_ContainerIsTransparent" name="ContainerIsTransparent" <%- ContainerIsTransparent?checked="checked":"" %> />
+                <label for="<%- prefix %>_ContainerIsTransparent"><%- Resources.containerTransparent %></label>
+            </span>
+        </div>
+    </div>
+</script>
+
+<script type="x-template/underscore" id="maket-template">
+    <% if(CaptionIsVisible) {  %>
+        <div class="pat-title" style="background-color:<%- CaptionBackground %>;color:<%- CaptionForeground %>;">Title</div>
+    <% } %>
+        <div class="pat-content" style="<%- CaptionIsVisible?'':'height:136px;' %>background-color:<%- !ContainerIsTransparent? ContainerBackground: 'transparent' %>;color:<%- ContainerForeground %>;border: <%- BorderIsVisible?'solid 2px '+ CaptionBackground:'transparent' %>">
+            Content
+            <div class="pat-link" style="color:<%- LinkForeground %>"><span style="background-color:<%- LinkBackground %>;">Link</span></div>
+        </div>
+</script>

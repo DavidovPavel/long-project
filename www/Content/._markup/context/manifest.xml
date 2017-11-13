@@ -1,0 +1,31 @@
+﻿<root>
+
+  <description><![CDATA[ 
+  Элементы контекстного меню.
+  ]]></description>
+
+  <link>/content/.components/context.less</link>
+
+  <relations view="html"><![CDATA[
+    ссылки на используемые компоненты
+    <ul>
+      <li>one<br/>
+      <i><a href=''>/content/.components/...</a></i></li>
+
+    <li>
+      two<br/>
+      <i><a href=''>/content/.components/...</a></i></li>
+    </ul>
+    ]]></relations>
+  
+  <snippet><![CDATA[
+блок для отображения хтмл
+<a href="/">root</a>
+    <div>
+      контейнер
+      <span>содержимое</span>
+    </div>
+
+  ]]></snippet>
+
+</root>
