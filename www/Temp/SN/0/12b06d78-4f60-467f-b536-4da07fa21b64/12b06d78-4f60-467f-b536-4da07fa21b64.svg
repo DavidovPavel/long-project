@@ -1,0 +1,1325 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 976)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-4,4 -4,-976 680,-976 680,4 -4,4"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom="#edge1_18,#edge1_16,#edge1_12,#edge1_9,#edge1_7,#edge1_5,#edge1_3"  data-objectid="727922" data-text="The National Assembly of Armenia"  width="136" height="40" x="0" y="-456.5" transform="translate(0,-456.5)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="142" height="42"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>The National Assembly of Armenia</title>
+    <rect width="136" height="40" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="136" height="40" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="vertical-align: middle;overflow:hidden;color:White;height:40px;width:136px" title="The National Assembly of Armenia">The National Assembly of Armenia</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="136" id='727922' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="68" y="1"><tspan dy='10' x='68' fill='black'>The National Assembly of Armenia</tspan></text>    
+      </switch>
+    <image x="36" y="12.46875" width="64" height="25" xlink:href="/Temp/SN/0/12b06d78-4f60-467f-b536-4da07fa21b64/727922.jpg" />
+</g>
+<!-- 3 -->
+
+<g id="el3" class="node" data-edgesTo="#edge1_3" data-edgesFrom="#edge3_2"  data-objectid="0" data-text="Unlawful Action"  width="65" height="15" x="179" y="-863" transform="translate(179,-863)">
+      <clipPath id="clip3">
+        <rect x="-1" y="-1" width="71" height="17"/>
+      </clipPath>
+    
+    <title>Unlawful Action</title>
+    <rect width="65" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="65" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:65px" title="Unlawful Action">Unlawful Action</span>
+        </foreignObject>
+        <text clip-path="url(#clip3)" width="65" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="32.5" y="1"><tspan dy='10' x='32.5' fill='black'>Unlawful Action</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge1_3" class="edge"><title>1&#45;&#45;3</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M74.6086,-456.693C89.1311,-508.412 129.785,-649.657 172,-764.5 183.482,-795.736 199.671,-831.889 206.84,-847.569"/>
+</g>
+<!-- 5 -->
+
+<g id="el5" class="node" data-edgesTo="#edge1_5" data-edgesFrom="#edge5_10,#edge5_4"  data-objectid="0" data-text="Activities"  width="41" height="15" x="191" y="-755" transform="translate(191,-755)">
+      <clipPath id="clip5">
+        <rect x="-1" y="-1" width="47" height="17"/>
+      </clipPath>
+    
+    <title>Activities</title>
+    <rect width="41" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="41" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:41px" title="Activities">Activities</span>
+        </foreignObject>
+        <text clip-path="url(#clip5)" width="41" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="20.5" y="1"><tspan dy='10' x='20.5' fill='black'>Activities</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;5 -->
+<g id="edge1_5" class="edge"><title>1&#45;&#45;5</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M78.2842,-456.906C106.26,-518.392 188.929,-700.089 206.989,-739.783"/>
+</g>
+<!-- 7 -->
+
+<g id="el7" class="node" data-edgesTo="#edge1_7" data-edgesFrom="#edge7_6"  data-objectid="0" data-text="Contact"  width="37" height="15" x="193" y="-560" transform="translate(193,-560)">
+      <clipPath id="clip7">
+        <rect x="-1" y="-1" width="43" height="17"/>
+      </clipPath>
+    
+    <title>Contact</title>
+    <rect width="37" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="37" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:37px" title="Contact">Contact</span>
+        </foreignObject>
+        <text clip-path="url(#clip7)" width="37" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18.5" y="1"><tspan dy='10' x='18.5' fill='black'>Contact</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;7 -->
+<g id="edge1_7" class="edge"><title>1&#45;&#45;7</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M93.6474,-456.706C125.478,-482.8 179.361,-526.973 201.044,-544.748"/>
+</g>
+<!-- 9 -->
+
+<g id="el9" class="node" data-edgesTo="#edge1_9" data-edgesFrom="#edge9_14,#edge9_13,#edge9_8"  data-objectid="0" data-text="Opinion"  width="37" height="15" x="193" y="-444" transform="translate(193,-444)">
+      <clipPath id="clip9">
+        <rect x="-1" y="-1" width="43" height="17"/>
+      </clipPath>
+    
+    <title>Opinion</title>
+    <rect width="37" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="37" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:37px" title="Opinion">Opinion</span>
+        </foreignObject>
+        <text clip-path="url(#clip9)" width="37" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18.5" y="1"><tspan dy='10' x='18.5' fill='black'>Opinion</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;9 -->
+<g id="edge1_9" class="edge"><title>1&#45;&#45;9</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M136.021,-436.5C157.022,-436.5 178.462,-436.5 192.913,-436.5"/>
+</g>
+<!-- 12 -->
+
+<g id="el12" class="node" data-edgesTo="#edge1_12" data-edgesFrom="#edge12_11"  data-objectid="0" data-text="Conflict"  width="36" height="15" x="193.5" y="-378" transform="translate(193.5,-378)">
+      <clipPath id="clip12">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+    <title>Conflict</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Conflict">Conflict</span>
+        </foreignObject>
+        <text clip-path="url(#clip12)" width="36" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Conflict</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;12 -->
+<g id="edge1_12" class="edge"><title>1&#45;&#45;12</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M112.224,-416.339C140.019,-403.374 174.531,-387.277 194.384,-378.017"/>
+</g>
+<!-- 16 -->
+
+<g id="el16" class="node" data-edgesTo="#edge1_16" data-edgesFrom="#edge16_15"  data-objectid="0" data-text="Deputy"  width="35" height="15" x="194" y="-279" transform="translate(194,-279)">
+      <clipPath id="clip16">
+        <rect x="-1" y="-1" width="41" height="17"/>
+      </clipPath>
+    
+    <title>Deputy</title>
+    <rect width="35" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="35" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:35px" title="Deputy">Deputy</span>
+        </foreignObject>
+        <text clip-path="url(#clip16)" width="35" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="17.5" y="1"><tspan dy='10' x='17.5' fill='black'>Deputy</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;16 -->
+<g id="edge1_16" class="edge"><title>1&#45;&#45;16</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M86.3507,-416.268C117.789,-379.609 182.857,-303.733 203.83,-279.278"/>
+</g>
+<!-- 18 -->
+
+<g id="el18" class="node" data-edgesTo="#edge1_18" data-edgesFrom="#edge18_19,#edge18_17"  data-objectid="0" data-text="Working in Position"  width="79" height="15" x="172" y="-140" transform="translate(172,-140)">
+      <clipPath id="clip18">
+        <rect x="-1" y="-1" width="85" height="17"/>
+      </clipPath>
+    
+    <title>Working in Position</title>
+    <rect width="79" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="79" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:79px" title="Working in Position">Working in Position</span>
+        </foreignObject>
+        <text clip-path="url(#clip18)" width="79" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="39.5" y="1"><tspan dy='10' x='39.5' fill='black'>Working in Position</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;18 -->
+<g id="edge1_18" class="edge"><title>1&#45;&#45;18</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M78.5039,-416.082C106.698,-355.509 189.024,-178.64 207.005,-140.009"/>
+</g>
+<!-- 2 -->
+
+<g id="el2" class="node" data-edgesTo="#edge3_2" data-edgesFrom="#edge2_39,#edge2_24"  data-objectid="777756" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;"  width="281" height="61" x="287.5" y="-962" transform="translate(287.5,-962)">
+      <clipPath id="clip2">
+        <rect x="-1" y="-1" width="287" height="63"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</title>
+    <rect width="281" height="61" rx="5" ry="5" fill='url(#grad2)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="61" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:61px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip2)" width="281" id='777756' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам</tspan><tspan dy='10' x='140.5' fill='black'>СНГ. В заявлении депутаты призывают парламенты западных стран</tspan><tspan dy='10' x='140.5' fill='black'>&quot;исследовать неопровержимые доказательства преступлений против</tspan><tspan dy='10' x='140.5' fill='black'>человечества, признать их и осудить&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 24 -->
+
+<g id="el24" class="node" data-edgesTo="#edge2_24" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-972" transform="translate(619,-972)">
+      <clipPath id="clip24">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad24" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad24)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip24)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 2&#45;&#45;24 -->
+<g id="edge2_24" class="edge"><title>2&#45;&#45;24</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-953.374C588.187,-956.456 606.054,-959.257 618.944,-961.278"/>
+</g>
+<!-- 39 -->
+
+<g id="el39" class="node" data-edgesTo="#edge2_39" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-939" transform="translate(622.5,-939)">
+      <clipPath id="clip39">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad39" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad39)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip39)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 2&#45;&#45;39 -->
+<g id="edge2_39" class="edge"><title>2&#45;&#45;39</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-931.5C590.015,-931.5 609.363,-931.5 622.41,-931.5"/>
+</g>
+<!-- 3&#45;&#45;2 -->
+<g id="edge3_2" class="edge"><title>3&#45;&#45;2</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M233.851,-863.065C258.754,-871.888 301.486,-887.029 340.436,-900.829"/>
+</g>
+<!-- 4 -->
+
+<g id="el4" class="node" data-edgesTo="#edge5_4" data-edgesFrom="#edge4_46,#edge4_35,#edge4_31,#edge4_20"  data-objectid="777760" data-text="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном"  width="282" height="70" x="287" y="-867.5" transform="translate(287,-867.5)">
+      <clipPath id="clip4">
+        <rect x="-1" y="-1" width="288" height="72"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</title>
+    <rect width="282" height="70" rx="5" ry="5" fill='url(#grad4)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="70" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:70px;width:282px" title="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном">Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip4)" width="282" id='777760' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>Спикер Государственной Думы РФ Сергей Нарышкин посетит</tspan><tspan dy='10' x='141' fill='black'>в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт</tspan><tspan dy='10' x='141' fill='black'>нижней палаты российского парламента.Об этом сообщает РИА</tspan><tspan dy='10' x='141' fill='black'>НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель</tspan><tspan dy='10' x='141' fill='black'>Госдумы РФ встретится с&#160;председателем Национального собрания</tspan><tspan dy='10' x='141' fill='black'>Армении Галустом Саакяном, президентом Сержем Саргсяном, главой</tspan><tspan dy='10' x='141' fill='black'>правительства Овиком Абраамяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 20 -->
+
+<g id="el20" class="node" data-edgesTo="#edge4_20" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-906" transform="translate(619,-906)">
+      <clipPath id="clip20">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad20" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad20)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip20)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;20 -->
+<g id="edge4_20" class="edge"><title>4&#45;&#45;20</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M540.722,-867.529C570.636,-876.908 599.85,-886.068 618.65,-891.963"/>
+</g>
+<!-- 31 -->
+
+<g id="el31" class="node" data-edgesTo="#edge4_31" data-edgesFrom=""  data-objectid="777850" data-text="марта"  width="32" height="15" x="624.5" y="-873" transform="translate(624.5,-873)">
+      <clipPath id="clip31">
+        <rect x="-1" y="-1" width="38" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad31" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>марта</title>
+    <rect width="32" height="15" rx="5" ry="5" fill='url(#grad31)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="32" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:32px" title="марта">марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip31)" width="32" id='777850' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="16" y="1"><tspan dy='10' x='16' fill='black'>марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;31 -->
+<g id="edge4_31" class="edge"><title>4&#45;&#45;31</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-854.466C591.514,-857.977 611.539,-861.117 624.448,-863.14"/>
+</g>
+<!-- 35 -->
+
+<g id="el35" class="node" data-edgesTo="#edge4_35" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-840" transform="translate(622.5,-840)">
+      <clipPath id="clip35">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad35" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad35)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip35)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;35 -->
+<g id="edge4_35" class="edge"><title>4&#45;&#45;35</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-832.5C590.303,-832.5 609.367,-832.5 622.293,-832.5"/>
+</g>
+<!-- 46 -->
+
+<g id="el46" class="node" data-edgesTo="#edge4_46" data-edgesFrom=""  data-objectid="777852" data-text="текущей недели"  width="71" height="15" x="605" y="-807" transform="translate(605,-807)">
+      <clipPath id="clip46">
+        <rect x="-1" y="-1" width="77" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad46" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>текущей недели</title>
+    <rect width="71" height="15" rx="5" ry="5" fill='url(#grad46)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="71" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:71px" title="текущей недели">текущей недели</span>
+        </foreignObject>
+        <text clip-path="url(#clip46)" width="71" id='777852' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="35.5" y="1"><tspan dy='10' x='35.5' fill='black'>текущей недели</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;46 -->
+<g id="edge4_46" class="edge"><title>4&#45;&#45;46</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-810.534C582.13,-808.494 594.345,-806.579 604.827,-804.936"/>
+</g>
+<!-- 5&#45;&#45;4 -->
+<g id="edge5_4" class="edge"><title>5&#45;&#45;4</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M231.535,-755.043C255.63,-764.591 298.785,-781.692 338.427,-797.401"/>
+</g>
+<!-- 10 -->
+
+<g id="el10" class="node" data-edgesTo="#edge5_10" data-edgesFrom="#edge10_40,#edge10_25"  data-objectid="777794" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ"  width="281" height="34" x="287.5" y="-764.5" transform="translate(287.5,-764.5)">
+      <clipPath id="clip10">
+        <rect x="-1" y="-1" width="287" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad10" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</title>
+    <rect width="281" height="34" rx="5" ry="5" fill='url(#grad10)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</span>
+        </foreignObject>
+        <text clip-path="url(#clip10)" width="281" id='777794' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;10 -->
+<g id="edge5_10" class="edge"><title>5&#45;&#45;10</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M232.295,-747.5C245.985,-747.5 265.558,-747.5 287.07,-747.5"/>
+</g>
+<!-- 6 -->
+
+<g id="el6" class="node" data-edgesTo="#edge7_6" data-edgesFrom="#edge6_47,#edge6_36,#edge6_32,#edge6_21"  data-objectid="777769" data-text="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном"  width="282" height="70" x="287" y="-669.5" transform="translate(287,-669.5)">
+      <clipPath id="clip6">
+        <rect x="-1" y="-1" width="288" height="72"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</title>
+    <rect width="282" height="70" rx="5" ry="5" fill='url(#grad6)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="70" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:70px;width:282px" title="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном">Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip6)" width="282" id='777769' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>Спикер Государственной Думы РФ Сергей Нарышкин посетит</tspan><tspan dy='10' x='141' fill='black'>в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт</tspan><tspan dy='10' x='141' fill='black'>нижней палаты российского парламента.Об этом сообщает РИА</tspan><tspan dy='10' x='141' fill='black'>НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель</tspan><tspan dy='10' x='141' fill='black'>Госдумы РФ встретится с&#160;председателем Национального собрания</tspan><tspan dy='10' x='141' fill='black'>Армении Галустом Саакяном, президентом Сержем Саргсяном, главой</tspan><tspan dy='10' x='141' fill='black'>правительства Овиком Абраамяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 21 -->
+
+<g id="el21" class="node" data-edgesTo="#edge6_21" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-708" transform="translate(619,-708)">
+      <clipPath id="clip21">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad21" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad21)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip21)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;21 -->
+<g id="edge6_21" class="edge"><title>6&#45;&#45;21</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M540.722,-669.529C570.636,-678.908 599.85,-688.068 618.65,-693.963"/>
+</g>
+<!-- 32 -->
+
+<g id="el32" class="node" data-edgesTo="#edge6_32" data-edgesFrom=""  data-objectid="777850" data-text="марта"  width="32" height="15" x="624.5" y="-675" transform="translate(624.5,-675)">
+      <clipPath id="clip32">
+        <rect x="-1" y="-1" width="38" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad32" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>марта</title>
+    <rect width="32" height="15" rx="5" ry="5" fill='url(#grad32)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="32" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:32px" title="марта">марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip32)" width="32" id='777850' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="16" y="1"><tspan dy='10' x='16' fill='black'>марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;32 -->
+<g id="edge6_32" class="edge"><title>6&#45;&#45;32</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-656.466C591.514,-659.977 611.539,-663.117 624.448,-665.14"/>
+</g>
+<!-- 36 -->
+
+<g id="el36" class="node" data-edgesTo="#edge6_36" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-642" transform="translate(622.5,-642)">
+      <clipPath id="clip36">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad36" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad36)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip36)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;36 -->
+<g id="edge6_36" class="edge"><title>6&#45;&#45;36</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-634.5C590.303,-634.5 609.367,-634.5 622.293,-634.5"/>
+</g>
+<!-- 47 -->
+
+<g id="el47" class="node" data-edgesTo="#edge6_47" data-edgesFrom=""  data-objectid="777852" data-text="текущей недели"  width="71" height="15" x="605" y="-609" transform="translate(605,-609)">
+      <clipPath id="clip47">
+        <rect x="-1" y="-1" width="77" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad47" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>текущей недели</title>
+    <rect width="71" height="15" rx="5" ry="5" fill='url(#grad47)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="71" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:71px" title="текущей недели">текущей недели</span>
+        </foreignObject>
+        <text clip-path="url(#clip47)" width="71" id='777852' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="35.5" y="1"><tspan dy='10' x='35.5' fill='black'>текущей недели</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;47 -->
+<g id="edge6_47" class="edge"><title>6&#45;&#45;47</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-612.534C582.13,-610.494 594.345,-608.579 604.827,-606.936"/>
+</g>
+<!-- 7&#45;&#45;6 -->
+<g id="edge7_6" class="edge"><title>7&#45;&#45;6</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M230.053,-559.21C253.216,-568.065 295.697,-584.305 335.29,-599.441"/>
+</g>
+<!-- 8 -->
+
+<g id="el8" class="node" data-edgesTo="#edge9_8" data-edgesFrom="#edge8_48,#edge8_37,#edge8_33,#edge8_22"  data-objectid="777780" data-text="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном"  width="282" height="70" x="287" y="-541.5" transform="translate(287,-541.5)">
+      <clipPath id="clip8">
+        <rect x="-1" y="-1" width="288" height="72"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad8" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</title>
+    <rect width="282" height="70" rx="5" ry="5" fill='url(#grad8)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="70" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:70px;width:282px" title="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном">Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip8)" width="282" id='777780' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>Спикер Государственной Думы РФ Сергей Нарышкин посетит</tspan><tspan dy='10' x='141' fill='black'>в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт</tspan><tspan dy='10' x='141' fill='black'>нижней палаты российского парламента.Об этом сообщает РИА</tspan><tspan dy='10' x='141' fill='black'>НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель</tspan><tspan dy='10' x='141' fill='black'>Госдумы РФ встретится с&#160;председателем Национального собрания</tspan><tspan dy='10' x='141' fill='black'>Армении Галустом Саакяном, президентом Сержем Саргсяном, главой</tspan><tspan dy='10' x='141' fill='black'>правительства Овиком Абраамяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22 -->
+
+<g id="el22" class="node" data-edgesTo="#edge8_22" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-576" transform="translate(619,-576)">
+      <clipPath id="clip22">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad22" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad22)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip22)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;22 -->
+<g id="edge8_22" class="edge"><title>8&#45;&#45;22</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M548.09,-541.576C575.439,-549.632 601.52,-557.314 618.771,-562.395"/>
+</g>
+<!-- 33 -->
+
+<g id="el33" class="node" data-edgesTo="#edge8_33" data-edgesFrom=""  data-objectid="777850" data-text="марта"  width="32" height="15" x="624.5" y="-543" transform="translate(624.5,-543)">
+      <clipPath id="clip33">
+        <rect x="-1" y="-1" width="38" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad33" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>марта</title>
+    <rect width="32" height="15" rx="5" ry="5" fill='url(#grad33)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="32" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:32px" title="марта">марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip33)" width="32" id='777850' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="16" y="1"><tspan dy='10' x='16' fill='black'>марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;33 -->
+<g id="edge8_33" class="edge"><title>8&#45;&#45;33</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-525.803C591.514,-528.889 611.539,-531.648 624.448,-533.426"/>
+</g>
+<!-- 37 -->
+
+<g id="el37" class="node" data-edgesTo="#edge8_37" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-510" transform="translate(622.5,-510)">
+      <clipPath id="clip37">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad37" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad37)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip37)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;37 -->
+<g id="edge8_37" class="edge"><title>8&#45;&#45;37</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-503.838C590.303,-503.435 609.367,-503.073 622.293,-502.827"/>
+</g>
+<!-- 48 -->
+
+<g id="el48" class="node" data-edgesTo="#edge8_48" data-edgesFrom=""  data-objectid="777852" data-text="текущей недели"  width="71" height="15" x="605" y="-477" transform="translate(605,-477)">
+      <clipPath id="clip48">
+        <rect x="-1" y="-1" width="77" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad48" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>текущей недели</title>
+    <rect width="71" height="15" rx="5" ry="5" fill='url(#grad48)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="71" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:71px" title="текущей недели">текущей недели</span>
+        </foreignObject>
+        <text clip-path="url(#clip48)" width="71" id='777852' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="35.5" y="1"><tspan dy='10' x='35.5' fill='black'>текущей недели</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;48 -->
+<g id="edge8_48" class="edge"><title>8&#45;&#45;48</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-481.872C582.13,-479.584 594.345,-477.437 604.827,-475.595"/>
+</g>
+<!-- 9&#45;&#45;8 -->
+<g id="edge9_8" class="edge"><title>9&#45;&#45;8</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M230.209,-442.855C245.27,-448.218 267.495,-456.033 287,-462.5 295.827,-465.427 304.983,-468.413 314.194,-471.383"/>
+</g>
+<!-- 13 -->
+
+<g id="el13" class="node" data-edgesTo="#edge9_13" data-edgesFrom="#edge13_42,#edge13_27"  data-objectid="777805" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ"  width="281" height="34" x="287.5" y="-453.5" transform="translate(287.5,-453.5)">
+      <clipPath id="clip13">
+        <rect x="-1" y="-1" width="287" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad13" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</title>
+    <rect width="281" height="34" rx="5" ry="5" fill='url(#grad13)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</span>
+        </foreignObject>
+        <text clip-path="url(#clip13)" width="281" id='777805' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;13 -->
+<g id="edge9_13" class="edge"><title>9&#45;&#45;13</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M230.053,-436.5C243.861,-436.5 264.533,-436.5 287.366,-436.5"/>
+</g>
+<!-- 14 -->
+
+<g id="el14" class="node" data-edgesTo="#edge9_14" data-edgesFrom="#edge14_43,#edge14_28"  data-objectid="777806" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;"  width="281" height="61" x="287.5" y="-401" transform="translate(287.5,-401)">
+      <clipPath id="clip14">
+        <rect x="-1" y="-1" width="287" height="63"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad14" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</title>
+    <rect width="281" height="61" rx="5" ry="5" fill='url(#grad14)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="61" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:61px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip14)" width="281" id='777806' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам</tspan><tspan dy='10' x='140.5' fill='black'>СНГ. В заявлении депутаты призывают парламенты западных стран</tspan><tspan dy='10' x='140.5' fill='black'>&quot;исследовать неопровержимые доказательства преступлений против</tspan><tspan dy='10' x='140.5' fill='black'>человечества, признать их и осудить&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;14 -->
+<g id="edge9_14" class="edge"><title>9&#45;&#45;14</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M230.166,-430.013C245.201,-424.57 267.412,-416.711 287,-410.5 297,-407.329 307.437,-404.136 317.906,-401.009"/>
+</g>
+<!-- 25 -->
+
+<g id="el25" class="node" data-edgesTo="#edge10_25" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-774" transform="translate(619,-774)">
+      <clipPath id="clip25">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad25" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad25)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip25)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 10&#45;&#45;25 -->
+<g id="edge10_25" class="edge"><title>10&#45;&#45;25</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-760.094C588.187,-761.868 606.054,-763.481 618.944,-764.645"/>
+</g>
+<!-- 40 -->
+
+<g id="el40" class="node" data-edgesTo="#edge10_40" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-741" transform="translate(622.5,-741)">
+      <clipPath id="clip40">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad40" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad40)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip40)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 10&#45;&#45;40 -->
+<g id="edge10_40" class="edge"><title>10&#45;&#45;40</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-738.22C590.015,-736.791 609.363,-735.504 622.41,-734.637"/>
+</g>
+<!-- 11 -->
+
+<g id="el11" class="node" data-edgesTo="#edge12_11" data-edgesFrom="#edge11_41,#edge11_26"  data-objectid="777800" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ"  width="281" height="34" x="287.5" y="-321.5" transform="translate(287.5,-321.5)">
+      <clipPath id="clip11">
+        <rect x="-1" y="-1" width="287" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad11" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</title>
+    <rect width="281" height="34" rx="5" ry="5" fill='url(#grad11)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</span>
+        </foreignObject>
+        <text clip-path="url(#clip11)" width="281" id='777800' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам СНГ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 26 -->
+
+<g id="el26" class="node" data-edgesTo="#edge11_26" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-312" transform="translate(619,-312)">
+      <clipPath id="clip26">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad26" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad26)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip26)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 11&#45;&#45;26 -->
+<g id="edge11_26" class="edge"><title>11&#45;&#45;26</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-304.5C588.187,-304.5 606.054,-304.5 618.944,-304.5"/>
+</g>
+<!-- 41 -->
+
+<g id="el41" class="node" data-edgesTo="#edge11_41" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-279" transform="translate(622.5,-279)">
+      <clipPath id="clip41">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad41" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad41)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip41)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 11&#45;&#45;41 -->
+<g id="edge11_41" class="edge"><title>11&#45;&#45;41</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M537.641,-287.468C570.615,-282.299 603.144,-277.2 622.266,-274.202"/>
+</g>
+<!-- 12&#45;&#45;11 -->
+<g id="edge12_11" class="edge"><title>12&#45;&#45;11</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M224.103,-362.794C238.329,-353.702 263.457,-338.78 287,-330.5 296.678,-327.096 306.898,-324.113 317.229,-321.503"/>
+</g>
+<!-- 27 -->
+
+<g id="el27" class="node" data-edgesTo="#edge13_27" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-444" transform="translate(619,-444)">
+      <clipPath id="clip27">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad27" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad27)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip27)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;27 -->
+<g id="edge13_27" class="edge"><title>13&#45;&#45;27</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-436.5C588.187,-436.5 606.054,-436.5 618.944,-436.5"/>
+</g>
+<!-- 42 -->
+
+<g id="el42" class="node" data-edgesTo="#edge13_42" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-411" transform="translate(622.5,-411)">
+      <clipPath id="clip42">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad42" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad42)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip42)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;42 -->
+<g id="edge13_42" class="edge"><title>13&#45;&#45;42</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M537.641,-419.468C570.615,-414.299 603.144,-409.2 622.266,-406.202"/>
+</g>
+<!-- 28 -->
+
+<g id="el28" class="node" data-edgesTo="#edge14_28" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-378" transform="translate(619,-378)">
+      <clipPath id="clip28">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad28" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad28)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip28)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 14&#45;&#45;28 -->
+<g id="edge14_28" class="edge"><title>14&#45;&#45;28</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-370.5C588.187,-370.5 606.054,-370.5 618.944,-370.5"/>
+</g>
+<!-- 43 -->
+
+<g id="el43" class="node" data-edgesTo="#edge14_43" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-345" transform="translate(622.5,-345)">
+      <clipPath id="clip43">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad43" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad43)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip43)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 14&#45;&#45;43 -->
+<g id="edge14_43" class="edge"><title>14&#45;&#45;43</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-348.626C590.015,-345.258 609.363,-342.225 622.41,-340.179"/>
+</g>
+<!-- 15 -->
+
+<g id="el15" class="node" data-edgesTo="#edge16_15" data-edgesFrom="#edge15_44,#edge15_29"  data-objectid="777830" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;"  width="281" height="61" x="287.5" y="-269" transform="translate(287.5,-269)">
+      <clipPath id="clip15">
+        <rect x="-1" y="-1" width="287" height="63"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad15" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</title>
+    <rect width="281" height="61" rx="5" ry="5" fill='url(#grad15)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="61" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:61px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip15)" width="281" id='777830' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам</tspan><tspan dy='10' x='140.5' fill='black'>СНГ. В заявлении депутаты призывают парламенты западных стран</tspan><tspan dy='10' x='140.5' fill='black'>&quot;исследовать неопровержимые доказательства преступлений против</tspan><tspan dy='10' x='140.5' fill='black'>человечества, признать их и осудить&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 29 -->
+
+<g id="el29" class="node" data-edgesTo="#edge15_29" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-246" transform="translate(619,-246)">
+      <clipPath id="clip29">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad29" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad29)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip29)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 15&#45;&#45;29 -->
+<g id="edge15_29" class="edge"><title>15&#45;&#45;29</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-238.5C588.187,-238.5 606.054,-238.5 618.944,-238.5"/>
+</g>
+<!-- 44 -->
+
+<g id="el44" class="node" data-edgesTo="#edge15_44" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-213" transform="translate(622.5,-213)">
+      <clipPath id="clip44">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad44" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad44)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip44)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 15&#45;&#45;44 -->
+<g id="edge15_44" class="edge"><title>15&#45;&#45;44</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-216.626C590.015,-213.258 609.363,-210.225 622.41,-208.179"/>
+</g>
+<!-- 16&#45;&#45;15 -->
+<g id="edge16_15" class="edge"><title>16&#45;&#45;15</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M229.331,-268.911C243.158,-266.783 264.203,-263.546 287.484,-259.964"/>
+</g>
+<!-- 17 -->
+
+<g id="el17" class="node" data-edgesTo="#edge18_17" data-edgesFrom="#edge17_49,#edge17_38,#edge17_34,#edge17_23"  data-objectid="777832" data-text="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном"  width="282" height="70" x="287" y="-167.5" transform="translate(287,-167.5)">
+      <clipPath id="clip17">
+        <rect x="-1" y="-1" width="288" height="72"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad17" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</title>
+    <rect width="282" height="70" rx="5" ry="5" fill='url(#grad17)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="70" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:70px;width:282px" title="Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном">Спикер Государственной Думы РФ Сергей Нарышкин посетит в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт нижней палаты российского парламента.Об этом сообщает РИА НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель Госдумы РФ встретится с&#160;председателем Национального собрания Армении Галустом Саакяном, президентом Сержем Саргсяном, главой правительства Овиком Абраамяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip17)" width="282" id='777832' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>Спикер Государственной Думы РФ Сергей Нарышкин посетит</tspan><tspan dy='10' x='141' fill='black'>в&#160;начале текущей недели с&#160;рабочим визитом Армению, сообщает сайт</tspan><tspan dy='10' x='141' fill='black'>нижней палаты российского парламента.Об этом сообщает РИА</tspan><tspan dy='10' x='141' fill='black'>НовостиКак ожидается, в&#160;период с&#160;30 по&#160;31 марта председатель</tspan><tspan dy='10' x='141' fill='black'>Госдумы РФ встретится с&#160;председателем Национального собрания</tspan><tspan dy='10' x='141' fill='black'>Армении Галустом Саакяном, президентом Сержем Саргсяном, главой</tspan><tspan dy='10' x='141' fill='black'>правительства Овиком Абраамяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 23 -->
+
+<g id="el23" class="node" data-edgesTo="#edge17_23" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-180" transform="translate(619,-180)">
+      <clipPath id="clip23">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad23" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad23)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip23)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 17&#45;&#45;23 -->
+<g id="edge17_23" class="edge"><title>17&#45;&#45;23</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-159.125C588.487,-162.806 606.084,-166.15 618.837,-168.574"/>
+</g>
+<!-- 34 -->
+
+<g id="el34" class="node" data-edgesTo="#edge17_34" data-edgesFrom=""  data-objectid="777850" data-text="марта"  width="32" height="15" x="624.5" y="-147" transform="translate(624.5,-147)">
+      <clipPath id="clip34">
+        <rect x="-1" y="-1" width="38" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad34" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>марта</title>
+    <rect width="32" height="15" rx="5" ry="5" fill='url(#grad34)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="32" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:32px" title="марта">марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip34)" width="32" id='777850' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="16" y="1"><tspan dy='10' x='16' fill='black'>марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 17&#45;&#45;34 -->
+<g id="edge17_34" class="edge"><title>17&#45;&#45;34</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-137.159C591.514,-137.904 611.539,-138.57 624.448,-138.999"/>
+</g>
+<!-- 38 -->
+
+<g id="el38" class="node" data-edgesTo="#edge17_38" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-114" transform="translate(622.5,-114)">
+      <clipPath id="clip38">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad38" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad38)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip38)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 17&#45;&#45;38 -->
+<g id="edge17_38" class="edge"><title>17&#45;&#45;38</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.114,-115.194C590.303,-112.577 609.367,-110.222 622.293,-108.625"/>
+</g>
+<!-- 49 -->
+
+<g id="el49" class="node" data-edgesTo="#edge17_49" data-edgesFrom=""  data-objectid="777852" data-text="текущей недели"  width="71" height="15" x="605" y="-81" transform="translate(605,-81)">
+      <clipPath id="clip49">
+        <rect x="-1" y="-1" width="77" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad49" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>текущей недели</title>
+    <rect width="71" height="15" rx="5" ry="5" fill='url(#grad49)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="71" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:71px" title="текущей недели">текущей недели</span>
+        </foreignObject>
+        <text clip-path="url(#clip49)" width="71" id='777852' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="35.5" y="1"><tspan dy='10' x='35.5' fill='black'>текущей недели</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 17&#45;&#45;49 -->
+<g id="edge17_49" class="edge"><title>17&#45;&#45;49</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M553.882,-97.4976C576.014,-91.2941 596.946,-85.4273 612.573,-81.0473"/>
+</g>
+<!-- 18&#45;&#45;17 -->
+<g id="edge18_17" class="edge"><title>18&#45;&#45;17</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M251.344,-132.5C261.968,-132.5 274.13,-132.5 286.985,-132.5"/>
+</g>
+<!-- 19 -->
+
+<g id="el19" class="node" data-edgesTo="#edge18_19" data-edgesFrom="#edge19_45,#edge19_30"  data-objectid="777841" data-text="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;"  width="281" height="61" x="287.5" y="-71" transform="translate(287.5,-71)">
+      <clipPath id="clip19">
+        <rect x="-1" y="-1" width="287" height="63"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad19" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</title>
+    <rect width="281" height="61" rx="5" ry="5" fill='url(#grad19)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="281" height="61" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:61px;width:281px" title="Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;">Решение о совместном заявлении было принято по итогам заседания постоянной комиссии Национального собрания Армении по вопросам внешних отношений и комитета Госдумы РФ по делам СНГ. В заявлении депутаты призывают парламенты западных стран &quot;исследовать неопровержимые доказательства преступлений против человечества, признать их и осудить&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip19)" width="281" id='777841' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140.5" y="1"><tspan dy='10' x='140.5' fill='black'>Решение о совместном заявлении было принято по итогам</tspan><tspan dy='10' x='140.5' fill='black'>заседания постоянной комиссии Национального собрания Армении по</tspan><tspan dy='10' x='140.5' fill='black'>вопросам внешних отношений и комитета Госдумы РФ по делам</tspan><tspan dy='10' x='140.5' fill='black'>СНГ. В заявлении депутаты призывают парламенты западных стран</tspan><tspan dy='10' x='140.5' fill='black'>&quot;исследовать неопровержимые доказательства преступлений против</tspan><tspan dy='10' x='140.5' fill='black'>человечества, признать их и осудить&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 18&#45;&#45;19 -->
+<g id="edge18_19" class="edge"><title>18&#45;&#45;19</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M223.721,-124.89C237.971,-115.46 263.536,-99.315 287,-88.5 300.534,-82.2619 315.122,-76.3865 329.592,-71.0298"/>
+</g>
+<!-- 30 -->
+
+<g id="el30" class="node" data-edgesTo="#edge19_30" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="619" y="-48" transform="translate(619,-48)">
+      <clipPath id="clip30">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad30" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad30)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip30)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 19&#45;&#45;30 -->
+<g id="edge19_30" class="edge"><title>19&#45;&#45;30</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-40.5C588.187,-40.5 606.054,-40.5 618.944,-40.5"/>
+</g>
+<!-- 45 -->
+
+<g id="el45" class="node" data-edgesTo="#edge19_45" data-edgesFrom=""  data-objectid="777851" data-text="Россия"  width="36" height="15" x="622.5" y="-15" transform="translate(622.5,-15)">
+      <clipPath id="clip45">
+        <rect x="-1" y="-1" width="42" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad45" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Россия</title>
+    <rect width="36" height="15" rx="5" ry="5" fill='url(#grad45)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="36" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:36px" title="Россия">Россия</span>
+        </foreignObject>
+        <text clip-path="url(#clip45)" width="36" id='777851' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18" y="1"><tspan dy='10' x='18' fill='black'>Россия</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 19&#45;&#45;45 -->
+<g id="edge19_45" class="edge"><title>19&#45;&#45;45</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M568.528,-18.6263C590.015,-15.2577 609.363,-12.2245 622.41,-10.1792"/>
+</g>
+</g>
+</svg>

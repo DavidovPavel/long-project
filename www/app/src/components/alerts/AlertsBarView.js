@@ -1,4 +1,5 @@
 ﻿//define('c/AlertsView', ['i18n!nls/resources.min', 'Feedback'], function (Resources, feedbackView) {
+
 import Resources from 'i18n!nls/resources.min';
 import feedbackView from './Feedback';
 import './alert.less';

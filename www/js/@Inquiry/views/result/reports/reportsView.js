@@ -103,14 +103,16 @@
 
         onRender: function () {
 
-            let path = Backbone.history.fragment;
+        	let path = Backbone.history.fragment.replace('reports', 'proof/0/docs');
 
             this.showChildView('reports', new tableView({
+
                 collection: new Backbone.Collection,
                 rowOptions: { baseurl: baseurl, originoid: this.model.id },
+
                 rowTemplate: `
                     <td>
-                        <input type="checkbox" id="cbx<%- id %>" class ="g-form--checkbox">
+                        <input type="checkbox" id="cbx<%- id %>" class ="g-form--checkbox" />
                         <label for="cbx<%- id %>">
                             <a href="<%- baseurl %>/SqlRepPage.aspx?rid=<%- id %>&pid=<%- originoid %>" target="_blank" class="link"><%= title %></a>
                         </label>
@@ -118,9 +120,21 @@
             }));
 
             this.showChildView('extracts', new tableView({
-                collection: new Backbone.Collection,
-                rowOptions: { baseurl: baseurl, originoid: this.model.id },
-                rowTemplate: '<td><input type="checkbox" id="cbx<%- id %>" class="g-form--checkbox"><label for="cbx<%- id %>"><% if(size){ %><a href="#' + path + 'doc/<%- id %>" class="link"><%- title %> (<%- source %>)</a><% }else{ %><span><%- title %> (<%- source %>)</span><% } %></label></td>'
+
+            	collection: new Backbone.Collection,
+            	rowOptions: { baseurl: baseurl, originoid: this.model.id },
+
+            	rowTemplate: `
+					<td>
+						<input type="checkbox" id="cbx<%- id %>" class="g-form--checkbox" />
+						<label for="cbx<%- id %>">
+							<% if(size) { %>
+								<a href="#${path}/<%- id %>" class ="link"> <%-title %> (<%-source %>) </a>
+							<% }else{ %>
+								<span> <%- title %> ( <%- source %> )</span>
+							<% } %>
+						</label>
+					</td>`
             }));
            
             this.getChildView('reports').collection.url = `/api/report/${this.model.id}`;

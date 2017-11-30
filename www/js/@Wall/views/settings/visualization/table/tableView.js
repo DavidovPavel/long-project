@@ -1,6 +1,12 @@
-﻿define('settings.visualization.table', ['i18n!nls/resources.min', 'settings.visualisation.table.column', 'settings.visualisation.table.fields', 'global.behaviors.input'],
+﻿define('settings.visualization.table',
+	[
+		'i18n!nls/resources.min',
+		'settings.visualisation.table.column',
+		'settings.visualisation.table.fields',
+		'global.behaviors.input'
+	],
 
-    function (Resources, columnsOrg, fieldOrg, input) {
+function (Resources, columnsOrg, fieldOrg, input) {
 
         var content = {
             table: columnsOrg,
@@ -12,7 +18,7 @@
 
             behaviors: [input],
 
-            template: '#table-visualisation-template',
+            template: templates['table-visualisation-template'],
             templateContext: function () {
                 return {
                     Resources: Resources,

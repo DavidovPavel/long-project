@@ -1,0 +1,2921 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 2119.5)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-4,4 -4,-2119.5 823,-2119.5 823,4 -4,4"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom="#edge1_22,#edge1_18,#edge1_13,#edge1_11,#edge1_8,#edge1_5,#edge1_3"  data-objectid="1047685" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="0" y="-1013" transform="translate(0,-1013)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:White;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="118" id='1047685' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3 -->
+
+<g id="el3" class="node" data-edgesTo="#edge1_3" data-edgesFrom="#edge3_2"  data-objectid="0" data-text="Показатель"  width="53" height="15" x="183" y="-1904" transform="translate(183,-1904)">
+      <clipPath id="clip3">
+        <rect x="-1" y="-1" width="59" height="17"/>
+      </clipPath>
+    
+    <title>Показатель</title>
+    <rect width="53" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="53" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:53px" title="Показатель">Показатель</span>
+        </foreignObject>
+        <text clip-path="url(#clip3)" width="53" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="26.5" y="1"><tspan dy='10' x='26.5' fill='black'>Показатель</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge1_3" class="edge"><title>1&#45;&#45;3</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M60.7776,-1013.15C66.3937,-1067.79 102.012,-1404.42 154,-1674.5 170.353,-1759.46 198.376,-1860.71 206.335,-1888.89"/>
+</g>
+<!-- 5 -->
+
+<g id="el5" class="node" data-edgesTo="#edge1_5" data-edgesFrom="#edge5_32,#edge5_31,#edge5_30,#edge5_29,#edge5_28,#edge5_27,#edge5_26,#edge5_25,#edge5_20,#edge5_19,#edge5_6,#edge5_4"  data-objectid="0" data-text="Факт"  width="27" height="15" x="196" y="-1665" transform="translate(196,-1665)">
+      <clipPath id="clip5">
+        <rect x="-1" y="-1" width="33" height="17"/>
+      </clipPath>
+    
+    <title>Факт</title>
+    <rect width="27" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="27" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:27px" title="Факт">Факт</span>
+        </foreignObject>
+        <text clip-path="url(#clip5)" width="27" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="13.5" y="1"><tspan dy='10' x='13.5' fill='black'>Факт</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;5 -->
+<g id="edge1_5" class="edge"><title>1&#45;&#45;5</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M61.7712,-1013.28C77.3804,-1081.81 191.259,-1581.8 206.756,-1649.84"/>
+</g>
+<!-- 8 -->
+
+<g id="el8" class="node" data-edgesTo="#edge1_8" data-edgesFrom="#edge8_37,#edge8_36,#edge8_9,#edge8_7"  data-objectid="0" data-text="ОТНОШЕНИЕ"  width="63" height="15" x="178" y="-1128" transform="translate(178,-1128)">
+      <clipPath id="clip8">
+        <rect x="-1" y="-1" width="69" height="17"/>
+      </clipPath>
+    
+    <title>ОТНОШЕНИЕ</title>
+    <rect width="63" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="63" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:63px" title="ОТНОШЕНИЕ">ОТНОШЕНИЕ</span>
+        </foreignObject>
+        <text clip-path="url(#clip8)" width="63" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="31.5" y="1"><tspan dy='10' x='31.5' fill='black'>ОТНОШЕНИЕ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;8 -->
+<g id="edge1_8" class="edge"><title>1&#45;&#45;8</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M69.7435,-1013.05C96.5863,-1033.83 171.411,-1091.78 198.526,-1112.78"/>
+</g>
+<!-- 11 -->
+
+<g id="el11" class="node" data-edgesTo="#edge1_11" data-edgesFrom="#edge11_38,#edge11_10"  data-objectid="0" data-text="Владение недвижимостью"  width="111" height="15" x="154" y="-1013" transform="translate(154,-1013)">
+      <clipPath id="clip11">
+        <rect x="-1" y="-1" width="117" height="17"/>
+      </clipPath>
+    
+    <title>Владение недвижимостью</title>
+    <rect width="111" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="111" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:111px" title="Владение недвижимостью">Владение недвижимостью</span>
+        </foreignObject>
+        <text clip-path="url(#clip11)" width="111" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="55.5" y="1"><tspan dy='10' x='55.5' fill='black'>Владение недвижимостью</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;11 -->
+<g id="edge1_11" class="edge"><title>1&#45;&#45;11</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M118.265,-1005.5C129.966,-1005.5 142.223,-1005.5 153.797,-1005.5"/>
+</g>
+<!-- 13 -->
+
+<g id="el13" class="node" data-edgesTo="#edge1_13" data-edgesFrom="#edge13_42,#edge13_41,#edge13_40,#edge13_39,#edge13_16,#edge13_15,#edge13_14,#edge13_12"  data-objectid="0" data-text="Работа в должности"  width="87" height="15" x="166" y="-724" transform="translate(166,-724)">
+      <clipPath id="clip13">
+        <rect x="-1" y="-1" width="93" height="17"/>
+      </clipPath>
+    
+    <title>Работа в должности</title>
+    <rect width="87" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="87" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:87px" title="Работа в должности">Работа в должности</span>
+        </foreignObject>
+        <text clip-path="url(#clip13)" width="87" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="43.5" y="1"><tspan dy='10' x='43.5' fill='black'>Работа в должности</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;13 -->
+<g id="edge1_13" class="edge"><title>1&#45;&#45;13</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M63.972,-997.77C85.0509,-956.748 183.645,-764.87 204.585,-724.12"/>
+</g>
+<!-- 18 -->
+
+<g id="el18" class="node" data-edgesTo="#edge1_18" data-edgesFrom="#edge18_17"  data-objectid="0" data-text="Противоправное действие"  width="111" height="15" x="154" y="-557" transform="translate(154,-557)">
+      <clipPath id="clip18">
+        <rect x="-1" y="-1" width="117" height="17"/>
+      </clipPath>
+    
+    <title>Противоправное действие</title>
+    <rect width="111" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="111" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:111px" title="Противоправное действие">Противоправное действие</span>
+        </foreignObject>
+        <text clip-path="url(#clip18)" width="111" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="55.5" y="1"><tspan dy='10' x='55.5' fill='black'>Противоправное действие</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;18 -->
+<g id="edge1_18" class="edge"><title>1&#45;&#45;18</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M62.1853,-997.885C72.1447,-963.291 114.454,-817.54 154,-699.5 172.396,-644.591 197.08,-579.36 205.524,-557.259"/>
+</g>
+<!-- 22 -->
+
+<g id="el22" class="node" data-edgesTo="#edge1_22" data-edgesFrom="#edge22_35,#edge22_34,#edge22_33,#edge22_24,#edge22_23,#edge22_21"  data-objectid="0" data-text="Родство"  width="40" height="15" x="189.5" y="-230" transform="translate(189.5,-230)">
+      <clipPath id="clip22">
+        <rect x="-1" y="-1" width="46" height="17"/>
+      </clipPath>
+    
+    <title>Родство</title>
+    <rect width="40" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="40" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:40px" title="Родство">Родство</span>
+        </foreignObject>
+        <text clip-path="url(#clip22)" width="40" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="20" y="1"><tspan dy='10' x='20' fill='black'>Родство</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;22 -->
+<g id="edge1_22" class="edge"><title>1&#45;&#45;22</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M61.4698,-997.75C75.9286,-921.513 192.503,-306.848 207.018,-230.313"/>
+</g>
+<!-- 2 -->
+
+<g id="el2" class="node" data-edgesTo="#edge3_2" data-edgesFrom=""  data-objectid="1047686" data-text="Состояние заявки по объекту &quot;Давыдов Павел Николаевич&quot;. Состояние: В работе"  width="241" height="24" x="321.5" y="-2115.5" transform="translate(321.5,-2115.5)">
+      <clipPath id="clip2">
+        <rect x="-1" y="-1" width="247" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Состояние заявки по объекту &quot;Давыдов Павел Николаевич&quot;. Состояние: В работе</title>
+    <rect width="241" height="24" rx="5" ry="5" fill='url(#grad2)' stroke='#595959' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="241" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:241px" title="Состояние заявки по объекту &quot;Давыдов Павел Николаевич&quot;. Состояние: В работе">Состояние заявки по объекту &quot;Давыдов Павел Николаевич&quot;. Состояние: В работе</span>
+        </foreignObject>
+        <text clip-path="url(#clip2)" width="241" id='1047686' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="120.5" y="1"><tspan dy='10' x='120.5' fill='black'>Состояние заявки по объекту &quot;Давыдов Павел Николаевич&quot;.</tspan><tspan dy='10' x='120.5' fill='black'>Состояние: В работе</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3&#45;&#45;2 -->
+<g id="edge3_2" class="edge"><title>3&#45;&#45;2</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M211.653,-1904.12C216.446,-1932.92 237.611,-2035.95 301,-2082.5 307.24,-2087.08 314.064,-2090.86 321.234,-2093.95"/>
+</g>
+<!-- 4 -->
+
+<g id="el4" class="node" data-edgesTo="#edge5_4" data-edgesFrom=""  data-objectid="1047707" data-text="test"  width="22" height="15" x="431" y="-2073" transform="translate(431,-2073)">
+      <clipPath id="clip4">
+        <rect x="-1" y="-1" width="28" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>test</title>
+    <rect width="22" height="15" rx="5" ry="5" fill='url(#grad4)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="22" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:22px" title="test">test</span>
+        </foreignObject>
+        <text clip-path="url(#clip4)" width="22" id='1047707' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="11" y="1"><tspan dy='10' x='11' fill='black'>test</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;4 -->
+<g id="edge5_4" class="edge"><title>5&#45;&#45;4</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M212.462,-1665.18C219.714,-1693.65 245.582,-1795.81 265,-1880.5 282.066,-1954.93 244.623,-1996.99 301,-2048.5 338.056,-2082.35 405.54,-2072.89 430.957,-2067.78"/>
+</g>
+<!-- 6 -->
+
+<g id="el6" class="node" data-edgesTo="#edge5_6" data-edgesFrom="#edge6_99,#edge6_87"  data-objectid="1012361" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА - 2012&#187;)"  width="268" height="34" x="308" y="-2039.5" transform="translate(308,-2039.5)">
+      <clipPath id="clip6">
+        <rect x="-1" y="-1" width="274" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА - 2012&#187;)</title>
+    <rect width="268" height="34" rx="5" ry="5" fill='url(#grad6)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="268" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:268px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА - 2012&#187;)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА - 2012&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip6)" width="268" id='1012361' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134" y="1"><tspan dy='10' x='134' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134' fill='black'>РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25 (данные из Ларикс 2013,</tspan><tspan dy='10' x='134' fill='black'>раздел &#171;АДРЕСА - 2012&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;6 -->
+<g id="edge5_6" class="edge"><title>5&#45;&#45;6</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M212.319,-1665.24C223.967,-1714.67 288.008,-1984.47 301,-1996.5 304.538,-1999.77 308.349,-2002.7 312.371,-2005.31"/>
+</g>
+<!-- 19 -->
+
+<g id="el19" class="node" data-edgesTo="#edge5_19" data-edgesFrom="#edge19_77,#edge19_43"  data-objectid="1012347" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2013)"  width="268" height="24" x="308" y="-1987.5" transform="translate(308,-1987.5)">
+      <clipPath id="clip19">
+        <rect x="-1" y="-1" width="274" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad19" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2013)</title>
+    <rect width="268" height="24" rx="5" ry="5" fill='url(#grad19)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="268" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:268px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip19)" width="268" id='1012347' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134" y="1"><tspan dy='10' x='134' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134' fill='black'>Петра Романова ул.д.14 кв.25 (данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;19 -->
+<g id="edge5_19" class="edge"><title>5&#45;&#45;19</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M211.903,-1665.26C219.553,-1706.78 257.498,-1902.18 301,-1942.5 310.89,-1951.67 322.838,-1958.43 335.534,-1963.41"/>
+</g>
+<!-- 20 -->
+
+<g id="el20" class="node" data-edgesTo="#edge5_20" data-edgesFrom="#edge20_78,#edge20_63"  data-objectid="1012348" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2013)"  width="268" height="24" x="308" y="-1933.5" transform="translate(308,-1933.5)">
+      <clipPath id="clip20">
+        <rect x="-1" y="-1" width="274" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad20" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2013)</title>
+    <rect width="268" height="24" rx="5" ry="5" fill='url(#grad20)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="268" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:268px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip20)" width="268" id='1012348' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134" y="1"><tspan dy='10' x='134' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134' fill='black'>Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;20 -->
+<g id="edge5_20" class="edge"><title>5&#45;&#45;20</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M211.7,-1665.06C216.785,-1694.69 239.212,-1804.27 301,-1864.5 324.02,-1886.94 357.066,-1900.96 385.271,-1909.47"/>
+</g>
+<!-- 25 -->
+
+<g id="el25" class="node" data-edgesTo="#edge5_25" data-edgesFrom="#edge25_102,#edge25_82,#edge25_61"  data-objectid="1012353" data-text="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)"  width="279" height="34" x="302.5" y="-1855.5" transform="translate(302.5,-1855.5)">
+      <clipPath id="clip25">
+        <rect x="-1" y="-1" width="285" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad25" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</title>
+    <rect width="279" height="34" rx="5" ry="5" fill='url(#grad25)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="279" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:279px" title="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)">ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip25)" width="279" id='1012353' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="139.5" y="1"><tspan dy='10' x='139.5' fill='black'>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='139.5' fill='black'>РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел</tspan><tspan dy='10' x='139.5' fill='black'>&#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;25 -->
+<g id="edge5_25" class="edge"><title>5&#45;&#45;25</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M215.342,-1665.28C227.636,-1684.52 261.872,-1735.09 301,-1766.5 330.199,-1789.94 368.241,-1808.91 397.299,-1821.49"/>
+</g>
+<!-- 26 -->
+
+<g id="el26" class="node" data-edgesTo="#edge5_26" data-edgesFrom="#edge26_103,#edge26_83,#edge26_58"  data-objectid="1012354" data-text="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)"  width="279" height="34" x="302.5" y="-1757.5" transform="translate(302.5,-1757.5)">
+      <clipPath id="clip26">
+        <rect x="-1" y="-1" width="285" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad26" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</title>
+    <rect width="279" height="34" rx="5" ry="5" fill='url(#grad26)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="279" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:279px" title="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)">ДАВЫДОВА СВЕТЛАНА ИВАНОВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip26)" width="279" id='1012354' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="139.5" y="1"><tspan dy='10' x='139.5' fill='black'>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='139.5' fill='black'>РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел</tspan><tspan dy='10' x='139.5' fill='black'>&#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;26 -->
+<g id="edge5_26" class="edge"><title>5&#45;&#45;26</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M223.221,-1662.08C255.121,-1673.57 339.812,-1704.06 393.692,-1723.46"/>
+</g>
+<!-- 27 -->
+
+<g id="el27" class="node" data-edgesTo="#edge5_27" data-edgesFrom="#edge27_104,#edge27_84,#edge27_55"  data-objectid="1012355" data-text="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)"  width="273" height="34" x="305.5" y="-1674.5" transform="translate(305.5,-1674.5)">
+      <clipPath id="clip27">
+        <rect x="-1" y="-1" width="279" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad27" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</title>
+    <rect width="273" height="34" rx="5" ry="5" fill='url(#grad27)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="273" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:273px" title="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)">ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip27)" width="273" id='1012355' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="136.5" y="1"><tspan dy='10' x='136.5' fill='black'>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА проживал(а) по адресу г.</tspan><tspan dy='10' x='136.5' fill='black'>Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013,</tspan><tspan dy='10' x='136.5' fill='black'>раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;27 -->
+<g id="edge5_27" class="edge"><title>5&#45;&#45;27</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M223.221,-1657.5C240.02,-1657.5 271.461,-1657.5 305.332,-1657.5"/>
+</g>
+<!-- 28 -->
+
+<g id="el28" class="node" data-edgesTo="#edge5_28" data-edgesFrom="#edge28_105,#edge28_101,#edge28_85"  data-objectid="1012357" data-text="ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)"  width="273" height="34" x="305.5" y="-1592.5" transform="translate(305.5,-1592.5)">
+      <clipPath id="clip28">
+        <rect x="-1" y="-1" width="279" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad28" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</title>
+    <rect width="273" height="34" rx="5" ry="5" fill='url(#grad28)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="273" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:273px" title="ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)">ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip28)" width="273" id='1012357' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="136.5" y="1"><tspan dy='10' x='136.5' fill='black'>ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ проживал(а) по адресу г.</tspan><tspan dy='10' x='136.5' fill='black'>Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013,</tspan><tspan dy='10' x='136.5' fill='black'>раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;28 -->
+<g id="edge5_28" class="edge"><title>5&#45;&#45;28</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M223.221,-1652.97C255.027,-1641.66 339.312,-1611.68 393.213,-1592.5"/>
+</g>
+<!-- 29 -->
+
+<g id="el29" class="node" data-edgesTo="#edge5_29" data-edgesFrom="#edge29_106,#edge29_100,#edge29_86"  data-objectid="1012359" data-text="ДУНАЕВА НИНА СЕРГЕЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)"  width="269" height="34" x="307.5" y="-1493.5" transform="translate(307.5,-1493.5)">
+      <clipPath id="clip29">
+        <rect x="-1" y="-1" width="275" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad29" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДУНАЕВА НИНА СЕРГЕЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</title>
+    <rect width="269" height="34" rx="5" ry="5" fill='url(#grad29)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="269" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:269px" title="ДУНАЕВА НИНА СЕРГЕЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)">ДУНАЕВА НИНА СЕРГЕЕВНА проживал(а) по адресу г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел &#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</span>
+        </foreignObject>
+        <text clip-path="url(#clip29)" width="269" id='1012359' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134.5" y="1"><tspan dy='10' x='134.5' fill='black'>ДУНАЕВА НИНА СЕРГЕЕВНА проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134.5' fill='black'>РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25 (данные из Ларикс 2013, раздел</tspan><tspan dy='10' x='134.5' fill='black'>&#171;АДРЕСА И СВЯЗАННЫЕ ЛИЦА - 2011&#187;)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;29 -->
+<g id="edge5_29" class="edge"><title>5&#45;&#45;29</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M215.37,-1649.81C227.729,-1630.78 262.102,-1580.76 301,-1549.5 330.485,-1525.8 368.864,-1506.44 397.98,-1493.63"/>
+</g>
+<!-- 30 -->
+
+<g id="el30" class="node" data-edgesTo="#edge5_30" data-edgesFrom="#edge30_96,#edge30_64"  data-objectid="1012325" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживает по адресу г. Москва, Петра Романова ул. д.14 кв.25 (данные из Ларикс 2011)"  width="261" height="24" x="311.5" y="-1405.5" transform="translate(311.5,-1405.5)">
+      <clipPath id="clip30">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad30" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживает по адресу г. Москва, Петра Романова ул. д.14 кв.25 (данные из Ларикс 2011)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad30)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживает по адресу г. Москва, Петра Романова ул. д.14 кв.25 (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживает по адресу г. Москва, Петра Романова ул. д.14 кв.25 (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip30)" width="261" id='1012325' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживает по адресу г. Москва,</tspan><tspan dy='10' x='130.5' fill='black'>Петра Романова ул. д.14 кв.25 (данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;30 -->
+<g id="edge5_30" class="edge"><title>5&#45;&#45;30</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M211.7,-1649.94C216.785,-1620.31 239.212,-1510.73 301,-1450.5 324.02,-1428.06 357.066,-1414.04 385.271,-1405.53"/>
+</g>
+<!-- 31 -->
+
+<g id="el31" class="node" data-edgesTo="#edge5_31" data-edgesFrom="#edge31_97,#edge31_65"  data-objectid="1012326" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2011)"  width="268" height="24" x="308" y="-1339.5" transform="translate(308,-1339.5)">
+      <clipPath id="clip31">
+        <rect x="-1" y="-1" width="274" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad31" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2011)</title>
+    <rect width="268" height="24" rx="5" ry="5" fill='url(#grad31)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="268" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:268px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Петра Романова ул.д.14 кв.25 (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip31)" width="268" id='1012326' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134" y="1"><tspan dy='10' x='134' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134' fill='black'>Петра Романова ул.д.14 кв.25 (данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;31 -->
+<g id="edge5_31" class="edge"><title>5&#45;&#45;31</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M210.533,-1649.61C211.123,-1612.69 218.551,-1455.24 301,-1372.5 316.948,-1356.5 338.601,-1346.18 360.109,-1339.53"/>
+</g>
+<!-- 32 -->
+
+<g id="el32" class="node" data-edgesTo="#edge5_32" data-edgesFrom="#edge32_66,#edge32_62"  data-objectid="1012328" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2011)"  width="268" height="24" x="308" y="-1273.5" transform="translate(308,-1273.5)">
+      <clipPath id="clip32">
+        <rect x="-1" y="-1" width="274" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad32" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#D9FFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A6FFFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2011)</title>
+    <rect width="268" height="24" rx="5" ry="5" fill='url(#grad32)' stroke='#65F7F7' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="268" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:268px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва, Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip32)" width="268" id='1012328' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="134" y="1"><tspan dy='10' x='134' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ проживал(а) по адресу г. Москва,</tspan><tspan dy='10' x='134' fill='black'>Кустанайская ул. д.2 корп.1 кв.84 (данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;32 -->
+<g id="edge5_32" class="edge"><title>5&#45;&#45;32</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M211.455,-1649.93C217.428,-1603.67 251.026,-1359.5 301,-1306.5 316.063,-1290.53 336.806,-1280.21 357.711,-1273.54"/>
+</g>
+<!-- 87 -->
+
+<g id="el87" class="node" data-edgesTo="#edge6_87" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-2094" transform="translate(660,-2094)">
+      <clipPath id="clip87">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad87" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad87)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip87)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;87 -->
+<g id="edge6_87" class="edge"><title>6&#45;&#45;87</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M551.037,-2039.5C561.977,-2042.36 572.804,-2045.67 583,-2049.5 600.34,-2056.01 601.563,-2064.25 619,-2070.5 631.866,-2075.11 646.15,-2078.4 659.773,-2080.74"/>
+</g>
+<!-- 99 -->
+
+<g id="el99" class="node" data-edgesTo="#edge6_99" data-edgesFrom=""  data-objectid="1012360" data-text="г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25"  width="200" height="15" x="619" y="-2061" transform="translate(619,-2061)">
+      <clipPath id="clip99">
+        <rect x="-1" y="-1" width="206" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad99" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25</title>
+    <rect width="200" height="15" rx="5" ry="5" fill='url(#grad99)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="200" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:200px" title="г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip99)" width="200" id='1012360' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="100" y="1"><tspan dy='10' x='100' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛИЦА Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;99 -->
+<g id="edge6_99" class="edge"><title>6&#45;&#45;99</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.07,-2037.5C602.255,-2040.45 628.656,-2043.43 651.466,-2046"/>
+</g>
+<!-- 7 -->
+
+<g id="el7" class="node" data-edgesTo="#edge8_7" data-edgesFrom="#edge7_88"  data-objectid="1012362" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2013)"  width="231" height="24" x="326.5" y="-1216.5" transform="translate(326.5,-1216.5)">
+      <clipPath id="clip7">
+        <rect x="-1" y="-1" width="237" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad7" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2013)</title>
+    <rect width="231" height="24" rx="5" ry="5" fill='url(#grad7)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="231" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:231px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip7)" width="231" id='1012362' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="115.5" y="1"><tspan dy='10' x='115.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения:</tspan><tspan dy='10' x='115.5' fill='black'>ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 88 -->
+
+<g id="el88" class="node" data-edgesTo="#edge7_88" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1203" transform="translate(660,-1203)">
+      <clipPath id="clip88">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad88" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad88)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip88)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 7&#45;&#45;88 -->
+<g id="edge7_88" class="edge"><title>7&#45;&#45;88</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M557.633,-1200.75C592.856,-1199.6 630.139,-1198.38 659.884,-1197.4"/>
+</g>
+<!-- 8&#45;&#45;7 -->
+<g id="edge8_7" class="edge"><title>8&#45;&#45;7</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M218.705,-1128.22C233.721,-1141.87 267.201,-1170.06 301,-1183.5 309.907,-1187.04 319.349,-1189.99 328.957,-1192.45"/>
+</g>
+<!-- 9 -->
+
+<g id="el9" class="node" data-edgesTo="#edge8_9" data-edgesFrom="#edge9_89"  data-objectid="1012363" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2013)"  width="243" height="24" x="320.5" y="-1174.5" transform="translate(320.5,-1174.5)">
+      <clipPath id="clip9">
+        <rect x="-1" y="-1" width="249" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad9" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2013)</title>
+    <rect width="243" height="24" rx="5" ry="5" fill='url(#grad9)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="243" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:243px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip9)" width="243" id='1012363' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="121.5" y="1"><tspan dy='10' x='121.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные:</tspan><tspan dy='10' x='121.5' fill='black'>(495)2776823, (495)6776823 (данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;9 -->
+<g id="edge8_9" class="edge"><title>8&#45;&#45;9</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M240.54,-1128.1C258.095,-1132.38 280.72,-1137.63 301,-1141.5 317.9,-1144.72 336.025,-1147.75 353.442,-1150.46"/>
+</g>
+<!-- 36 -->
+
+<g id="el36" class="node" data-edgesTo="#edge8_36" data-edgesFrom="#edge36_70"  data-objectid="1012335" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2011)"  width="231" height="24" x="326.5" y="-1132.5" transform="translate(326.5,-1132.5)">
+      <clipPath id="clip36">
+        <rect x="-1" y="-1" width="237" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad36" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2011)</title>
+    <rect width="231" height="24" rx="5" ry="5" fill='url(#grad36)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="231" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:231px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения: ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip36)" width="231" id='1012335' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="115.5" y="1"><tspan dy='10' x='115.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет место рождения:</tspan><tspan dy='10' x='115.5' fill='black'>ИВАНОВСКАЯ ОБЛ.. (данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;36 -->
+<g id="edge8_36" class="edge"><title>8&#45;&#45;36</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M241.109,-1120.5C263.335,-1120.5 294.923,-1120.5 326.442,-1120.5"/>
+</g>
+<!-- 37 -->
+
+<g id="el37" class="node" data-edgesTo="#edge8_37" data-edgesFrom="#edge37_71"  data-objectid="1012336" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2011)"  width="243" height="24" x="320.5" y="-1090.5" transform="translate(320.5,-1090.5)">
+      <clipPath id="clip37">
+        <rect x="-1" y="-1" width="249" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad37" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2011)</title>
+    <rect width="243" height="24" rx="5" ry="5" fill='url(#grad37)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="243" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:243px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные: (495)2776823, (495)6776823 (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip37)" width="243" id='1012336' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="121.5" y="1"><tspan dy='10' x='121.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет контактные данные:</tspan><tspan dy='10' x='121.5' fill='black'>(495)2776823, (495)6776823 (данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;37 -->
+<g id="edge8_37" class="edge"><title>8&#45;&#45;37</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M240.54,-1112.9C258.095,-1108.62 280.72,-1103.37 301,-1099.5 317.9,-1096.28 336.025,-1093.25 353.442,-1090.54"/>
+</g>
+<!-- 89 -->
+
+<g id="el89" class="node" data-edgesTo="#edge9_89" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1170" transform="translate(660,-1170)">
+      <clipPath id="clip89">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad89" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad89)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip89)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;89 -->
+<g id="edge9_89" class="edge"><title>9&#45;&#45;89</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M563.619,-1162.5C596.956,-1162.5 631.636,-1162.5 659.662,-1162.5"/>
+</g>
+<!-- 10 -->
+
+<g id="el10" class="node" data-edgesTo="#edge11_10" data-edgesFrom="#edge10_90,#edge10_44"  data-objectid="1012364" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2013)"  width="278" height="34" x="303" y="-1048.5" transform="translate(303,-1048.5)">
+      <clipPath id="clip10">
+        <rect x="-1" y="-1" width="284" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad10" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2013)</title>
+    <rect width="278" height="34" rx="5" ry="5" fill='url(#grad10)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="278" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:278px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip10)" width="278" id='1012364' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="139" y="1"><tspan dy='10' x='139' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу:</tspan><tspan dy='10' x='139' fill='black'>г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4</tspan><tspan dy='10' x='139' fill='black'>(данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 44 -->
+
+<g id="el44" class="node" data-edgesTo="#edge10_44" data-edgesFrom=""  data-objectid="1012346" data-text="г. Москва, Петра Романова ул.д.14 кв.25"  width="165" height="15" x="636.5" y="-1071" transform="translate(636.5,-1071)">
+      <clipPath id="clip44">
+        <rect x="-1" y="-1" width="171" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad44" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Петра Романова ул.д.14 кв.25</title>
+    <rect width="165" height="15" rx="5" ry="5" fill='url(#grad44)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="165" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:165px" title="г. Москва, Петра Романова ул.д.14 кв.25">г. Москва, Петра Романова ул.д.14 кв.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip44)" width="165" id='1012346' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="82.5" y="1"><tspan dy='10' x='82.5' fill='black'>г. Москва, Петра Романова ул.д.14 кв.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 10&#45;&#45;44 -->
+<g id="edge10_44" class="edge"><title>10&#45;&#45;44</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.306,-1047.59C606.451,-1050.52 631.56,-1053.44 653.269,-1055.97"/>
+</g>
+<!-- 90 -->
+
+<g id="el90" class="node" data-edgesTo="#edge10_90" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1038" transform="translate(660,-1038)">
+      <clipPath id="clip90">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad90" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad90)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip90)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 10&#45;&#45;90 -->
+<g id="edge10_90" class="edge"><title>10&#45;&#45;90</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.306,-1031C608.992,-1030.9 636.635,-1030.8 659.744,-1030.71"/>
+</g>
+<!-- 11&#45;&#45;10 -->
+<g id="edge11_10" class="edge"><title>11&#45;&#45;10</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M265.125,-1011.66C276.707,-1012.97 289.432,-1014.4 302.575,-1015.89"/>
+</g>
+<!-- 38 -->
+
+<g id="el38" class="node" data-edgesTo="#edge11_38" data-edgesFrom="#edge38_98,#edge38_72"  data-objectid="1012337" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2011)"  width="278" height="34" x="303" y="-996.5" transform="translate(303,-996.5)">
+      <clipPath id="clip38">
+        <rect x="-1" y="-1" width="284" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad38" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2011)</title>
+    <rect width="278" height="34" rx="5" ry="5" fill='url(#grad38)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="278" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:278px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2011)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу: г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4 (данные из Ларикс 2011)</span>
+        </foreignObject>
+        <text clip-path="url(#clip38)" width="278" id='1012337' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="139" y="1"><tspan dy='10' x='139' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ владеет недвижимостью по адресу:</tspan><tspan dy='10' x='139' fill='black'>г. Москва, ПЕТРА РОМАНОВА УЛ. Д.14 Кв.25, общая площадь 77.4</tspan><tspan dy='10' x='139' fill='black'>(данные из Ларикс 2011)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 11&#45;&#45;38 -->
+<g id="edge11_38" class="edge"><title>11&#45;&#45;38</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M265.125,-999.338C276.707,-998.032 289.432,-996.597 302.575,-995.114"/>
+</g>
+<!-- 12 -->
+
+<g id="el12" class="node" data-edgesTo="#edge13_12" data-edgesFrom="#edge12_91,#edge12_51"  data-objectid="1012365" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2013, на октябрь 2006 года)"  width="261" height="24" x="311.5" y="-910.5" transform="translate(311.5,-910.5)">
+      <clipPath id="clip12">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad12" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2013, на октябрь 2006 года)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad12)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2013, на октябрь 2006 года)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2013, на октябрь 2006 года)</span>
+        </foreignObject>
+        <text clip-path="url(#clip12)" width="261" id='1012365' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>ГОРОД-ИНФО (данные из Ларикс 2013, на октябрь 2006 года)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 51 -->
+
+<g id="el51" class="node" data-edgesTo="#edge12_51" data-edgesFrom=""  data-objectid="1012338" data-text="ЗАО &quot;ГОРОД-ИНФО&quot;"  width="89" height="15" x="674.5" y="-939" transform="translate(674.5,-939)">
+      <clipPath id="clip51">
+        <rect x="-1" y="-1" width="95" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad51" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;ГОРОД-ИНФО&quot;</title>
+    <rect width="89" height="15" rx="5" ry="5" fill='url(#grad51)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="89" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:89px" title="ЗАО &quot;ГОРОД-ИНФО&quot;">ЗАО &quot;ГОРОД-ИНФО&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip51)" width="89" id='1012338' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="44.5" y="1"><tspan dy='10' x='44.5' fill='black'>ЗАО &quot;ГОРОД-ИНФО&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 12&#45;&#45;51 -->
+<g id="edge12_51" class="edge"><title>12&#45;&#45;51</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-910.507C588.21,-915.925 639.19,-922.043 674.418,-926.27"/>
+</g>
+<!-- 91 -->
+
+<g id="el91" class="node" data-edgesTo="#edge12_91" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-906" transform="translate(660,-906)">
+      <clipPath id="clip91">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad91" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad91)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip91)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 12&#45;&#45;91 -->
+<g id="edge12_91" class="edge"><title>12&#45;&#45;91</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-898.5C603.306,-898.5 634.264,-898.5 659.722,-898.5"/>
+</g>
+<!-- 13&#45;&#45;12 -->
+<g id="edge13_12" class="edge"><title>13&#45;&#45;12</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M213.077,-724.022C221.581,-747.69 251.086,-821.272 301,-858.5 318.629,-871.648 340.444,-880.48 361.565,-886.41"/>
+</g>
+<!-- 14 -->
+
+<g id="el14" class="node" data-edgesTo="#edge13_14" data-edgesFrom="#edge14_92,#edge14_48"  data-objectid="1012366" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2013, на 1999 год)"  width="276" height="34" x="304" y="-849.5" transform="translate(304,-849.5)">
+      <clipPath id="clip14">
+        <rect x="-1" y="-1" width="282" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad14" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2013, на 1999 год)</title>
+    <rect width="276" height="34" rx="5" ry="5" fill='url(#grad14)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="276" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:276px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2013, на 1999 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2013, на 1999 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip14)" width="276" id='1012366' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="138" y="1"><tspan dy='10' x='138' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА</tspan><tspan dy='10' x='138' fill='black'>УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2013, на</tspan><tspan dy='10' x='138' fill='black'>1999 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;14 -->
+<g id="edge13_14" class="edge"><title>13&#45;&#45;14</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M218.291,-724.222C233.161,-738.572 267.135,-769.519 301,-787.5 322.872,-799.114 348.269,-808.387 371.38,-815.426"/>
+</g>
+<!-- 15 -->
+
+<g id="el15" class="node" data-edgesTo="#edge13_15" data-edgesFrom="#edge15_93,#edge15_46"  data-objectid="1012367" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2013, на 2003 год)"  width="261" height="24" x="311.5" y="-778.5" transform="translate(311.5,-778.5)">
+      <clipPath id="clip15">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad15" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2013, на 2003 год)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad15)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2013, на 2003 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2013, на 2003 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip15)" width="261" id='1012367' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>&quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2013, на 2003 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;15 -->
+<g id="edge13_15" class="edge"><title>13&#45;&#45;15</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M242.289,-724.071C259.622,-728.15 281.465,-733.211 301,-737.5 327.305,-743.276 356.46,-749.365 381.325,-754.464"/>
+</g>
+<!-- 16 -->
+
+<g id="el16" class="node" data-edgesTo="#edge13_16" data-edgesFrom="#edge16_94,#edge16_52"  data-objectid="1012368" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2013, на 2004 год)"  width="261" height="24" x="311.5" y="-728.5" transform="translate(311.5,-728.5)">
+      <clipPath id="clip16">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad16" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2013, на 2004 год)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad16)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2013, на 2004 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2013, на 2004 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip16)" width="261" id='1012368' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>&quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2013, на 2004 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;16 -->
+<g id="edge13_16" class="edge"><title>13&#45;&#45;16</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M253.046,-716.5C269.956,-716.5 290.397,-716.5 311.484,-716.5"/>
+</g>
+<!-- 39 -->
+
+<g id="el39" class="node" data-edgesTo="#edge13_39" data-edgesFrom="#edge39_73,#edge39_49"  data-objectid="1012339" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2011, на октябрь 2006 года)"  width="261" height="24" x="311.5" y="-679.5" transform="translate(311.5,-679.5)">
+      <clipPath id="clip39">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad39" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2011, на октябрь 2006 года)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad39)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2011, на октябрь 2006 года)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО ГОРОД-ИНФО (данные из Ларикс 2011, на октябрь 2006 года)</span>
+        </foreignObject>
+        <text clip-path="url(#clip39)" width="261" id='1012339' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>ГОРОД-ИНФО (данные из Ларикс 2011, на октябрь 2006 года)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;39 -->
+<g id="edge13_39" class="edge"><title>13&#45;&#45;39</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M241.859,-708.974C259.254,-704.863 281.293,-699.756 301,-695.5 326.319,-690.032 354.295,-684.362 378.541,-679.567"/>
+</g>
+<!-- 40 -->
+
+<g id="el40" class="node" data-edgesTo="#edge13_40" data-edgesFrom="#edge40_74,#edge40_47"  data-objectid="1012341" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2011, на 1999 год)"  width="276" height="34" x="304" y="-618.5" transform="translate(304,-618.5)">
+      <clipPath id="clip40">
+        <rect x="-1" y="-1" width="282" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad40" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2011, на 1999 год)</title>
+    <rect width="276" height="34" rx="5" ry="5" fill='url(#grad40)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="276" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:276px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2011, на 1999 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2011, на 1999 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip40)" width="276" id='1012341' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="138" y="1"><tspan dy='10' x='138' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ГРУППА</tspan><tspan dy='10' x='138' fill='black'>УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА (данные из Ларикс 2011, на</tspan><tspan dy='10' x='138' fill='black'>1999 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;40 -->
+<g id="edge13_40" class="edge"><title>13&#45;&#45;40</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M218.313,-708.894C233.221,-694.76 267.255,-664.269 301,-646.5 323.025,-634.902 348.581,-625.611 371.783,-618.552"/>
+</g>
+<!-- 41 -->
+
+<g id="el41" class="node" data-edgesTo="#edge13_41" data-edgesFrom="#edge41_75,#edge41_45"  data-objectid="1012343" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2011, на 2003 год)"  width="261" height="24" x="311.5" y="-547.5" transform="translate(311.5,-547.5)">
+      <clipPath id="clip41">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad41" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2011, на 2003 год)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad41)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2011, на 2003 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2011, на 2003 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip41)" width="261" id='1012343' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>&quot;НЭКО КОНСАЛТИНГ&quot; (данные из Ларикс 2011, на 2003 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;41 -->
+<g id="edge13_41" class="edge"><title>13&#45;&#45;41</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M213.215,-708.696C221.924,-684.843 251.51,-612.289 301,-575.5 318.751,-562.305 340.723,-553.456 361.957,-547.525"/>
+</g>
+<!-- 42 -->
+
+<g id="el42" class="node" data-edgesTo="#edge13_42" data-edgesFrom="#edge42_76,#edge42_50"  data-objectid="1012344" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2011, на 2004 год)"  width="261" height="24" x="311.5" y="-481.5" transform="translate(311.5,-481.5)">
+      <clipPath id="clip42">
+        <rect x="-1" y="-1" width="267" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad42" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2011, на 2004 год)</title>
+    <rect width="261" height="24" rx="5" ry="5" fill='url(#grad42)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="261" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:261px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2011, на 2004 год)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО &quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2011, на 2004 год)</span>
+        </foreignObject>
+        <text clip-path="url(#clip42)" width="261" id='1012344' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="130.5" y="1"><tspan dy='10' x='130.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ работал(а) в  организации ЗАО</tspan><tspan dy='10' x='130.5' fill='black'>&quot;ГОРОД-ИНФО&quot; (данные из Ларикс 2011, на 2004 год)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13&#45;&#45;42 -->
+<g id="edge13_42" class="edge"><title>13&#45;&#45;42</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M213.033,-708.72C224.099,-675.148 269.08,-543.083 301,-514.5 318.878,-498.491 342.503,-488.171 365.244,-481.521"/>
+</g>
+<!-- 48 -->
+
+<g id="el48" class="node" data-edgesTo="#edge14_48" data-edgesFrom=""  data-objectid="1012340" data-text="ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА"  width="190" height="15" x="624" y="-873" transform="translate(624,-873)">
+      <clipPath id="clip48">
+        <rect x="-1" y="-1" width="196" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad48" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</title>
+    <rect width="190" height="15" rx="5" ry="5" fill='url(#grad48)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="190" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:190px" title="ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА">ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</span>
+        </foreignObject>
+        <text clip-path="url(#clip48)" width="190" id='1012340' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="95" y="1"><tspan dy='10' x='95' fill='black'>ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 14&#45;&#45;48 -->
+<g id="edge14_48" class="edge"><title>14&#45;&#45;48</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.097,-848.952C606.467,-852.116 632.856,-855.283 655.386,-857.986"/>
+</g>
+<!-- 92 -->
+
+<g id="el92" class="node" data-edgesTo="#edge14_92" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-840" transform="translate(660,-840)">
+      <clipPath id="clip92">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad92" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad92)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip92)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 14&#45;&#45;92 -->
+<g id="edge14_92" class="edge"><title>14&#45;&#45;92</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.097,-832.5C608.216,-832.5 636.357,-832.5 659.817,-832.5"/>
+</g>
+<!-- 46 -->
+
+<g id="el46" class="node" data-edgesTo="#edge15_46" data-edgesFrom=""  data-objectid="1012342" data-text="ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;"  width="114" height="15" x="662" y="-807" transform="translate(662,-807)">
+      <clipPath id="clip46">
+        <rect x="-1" y="-1" width="120" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad46" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</title>
+    <rect width="114" height="15" rx="5" ry="5" fill='url(#grad46)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="114" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:114px" title="ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;">ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip46)" width="114" id='1012342' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="57" y="1"><tspan dy='10' x='57' fill='black'>ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 15&#45;&#45;46 -->
+<g id="edge15_46" class="edge"><title>15&#45;&#45;46</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-778.507C583.142,-783.317 627.819,-788.678 661.991,-792.779"/>
+</g>
+<!-- 93 -->
+
+<g id="el93" class="node" data-edgesTo="#edge15_93" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-774" transform="translate(660,-774)">
+      <clipPath id="clip93">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad93" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad93)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip93)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 15&#45;&#45;93 -->
+<g id="edge15_93" class="edge"><title>15&#45;&#45;93</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-766.5C603.306,-766.5 634.264,-766.5 659.722,-766.5"/>
+</g>
+<!-- 52 -->
+
+<g id="el52" class="node" data-edgesTo="#edge16_52" data-edgesFrom=""  data-objectid="1012338" data-text="ЗАО &quot;ГОРОД-ИНФО&quot;"  width="89" height="15" x="674.5" y="-741" transform="translate(674.5,-741)">
+      <clipPath id="clip52">
+        <rect x="-1" y="-1" width="95" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad52" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;ГОРОД-ИНФО&quot;</title>
+    <rect width="89" height="15" rx="5" ry="5" fill='url(#grad52)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="89" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:89px" title="ЗАО &quot;ГОРОД-ИНФО&quot;">ЗАО &quot;ГОРОД-ИНФО&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip52)" width="89" id='1012338' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="44.5" y="1"><tspan dy='10' x='44.5' fill='black'>ЗАО &quot;ГОРОД-ИНФО&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 16&#45;&#45;52 -->
+<g id="edge16_52" class="edge"><title>16&#45;&#45;52</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-724.527C609.425,-726.788 646.724,-729.094 674.352,-730.802"/>
+</g>
+<!-- 94 -->
+
+<g id="el94" class="node" data-edgesTo="#edge16_94" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-708" transform="translate(660,-708)">
+      <clipPath id="clip94">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad94" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad94)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip94)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 16&#45;&#45;94 -->
+<g id="edge16_94" class="edge"><title>16&#45;&#45;94</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-708.945C603.306,-707.173 634.264,-705.372 659.722,-703.891"/>
+</g>
+<!-- 17 -->
+
+<g id="el17" class="node" data-edgesTo="#edge18_17" data-edgesFrom="#edge17_95"  data-objectid="1012369" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ упоминается в криминальных записных книжках (данные из Ларикс 2013)"  width="255" height="24" x="314.5" y="-427.5" transform="translate(314.5,-427.5)">
+      <clipPath id="clip17">
+        <rect x="-1" y="-1" width="261" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad17" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ упоминается в криминальных записных книжках (данные из Ларикс 2013)</title>
+    <rect width="255" height="24" rx="5" ry="5" fill='url(#grad17)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="255" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:255px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ упоминается в криминальных записных книжках (данные из Ларикс 2013)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ упоминается в криминальных записных книжках (данные из Ларикс 2013)</span>
+        </foreignObject>
+        <text clip-path="url(#clip17)" width="255" id='1012369' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="127.5" y="1"><tspan dy='10' x='127.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ упоминается в криминальных</tspan><tspan dy='10' x='127.5' fill='black'>записных книжках (данные из Ларикс 2013)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 95 -->
+
+<g id="el95" class="node" data-edgesTo="#edge17_95" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-411" transform="translate(660,-411)">
+      <clipPath id="clip95">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad95" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad95)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip95)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 17&#45;&#45;95 -->
+<g id="edge17_95" class="edge"><title>17&#45;&#45;95</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M569.634,-409.974C601.21,-408.596 633.555,-407.185 659.953,-406.033"/>
+</g>
+<!-- 18&#45;&#45;17 -->
+<g id="edge18_17" class="edge"><title>18&#45;&#45;17</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M215.073,-541.727C226.754,-522.598 259.702,-473.022 301,-448.5 316.889,-439.065 335.29,-432.328 353.424,-427.516"/>
+</g>
+<!-- 43 -->
+
+<g id="el43" class="node" data-edgesTo="#edge19_43" data-edgesFrom=""  data-objectid="1012346" data-text="г. Москва, Петра Романова ул.д.14 кв.25"  width="165" height="15" x="636.5" y="-2028" transform="translate(636.5,-2028)">
+      <clipPath id="clip43">
+        <rect x="-1" y="-1" width="171" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad43" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Петра Романова ул.д.14 кв.25</title>
+    <rect width="165" height="15" rx="5" ry="5" fill='url(#grad43)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="165" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:165px" title="г. Москва, Петра Романова ул.д.14 кв.25">г. Москва, Петра Романова ул.д.14 кв.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip43)" width="165" id='1012346' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="82.5" y="1"><tspan dy='10' x='82.5' fill='black'>г. Москва, Петра Романова ул.д.14 кв.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 19&#45;&#45;43 -->
+<g id="edge19_43" class="edge"><title>19&#45;&#45;43</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M529.789,-1987.55C547.435,-1990.28 565.844,-1993.31 583,-1996.5 599.114,-1999.5 602.903,-2001.41 619,-2004.5 634.817,-2007.53 652.128,-2010.46 667.79,-2012.97"/>
+</g>
+<!-- 77 -->
+
+<g id="el77" class="node" data-edgesTo="#edge19_77" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1995" transform="translate(660,-1995)">
+      <clipPath id="clip77">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad77" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad77)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip77)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 19&#45;&#45;77 -->
+<g id="edge19_77" class="edge"><title>19&#45;&#45;77</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.07,-1981.31C605.546,-1982.59 635.294,-1983.89 659.888,-1984.96"/>
+</g>
+<!-- 63 -->
+
+<g id="el63" class="node" data-edgesTo="#edge20_63" data-edgesFrom=""  data-objectid="1012327" data-text="г. Москва, Кустанайская ул. д.2 корп.1 кв.84"  width="176" height="15" x="631" y="-1962" transform="translate(631,-1962)">
+      <clipPath id="clip63">
+        <rect x="-1" y="-1" width="182" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad63" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Кустанайская ул. д.2 корп.1 кв.84</title>
+    <rect width="176" height="15" rx="5" ry="5" fill='url(#grad63)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="176" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:176px" title="г. Москва, Кустанайская ул. д.2 корп.1 кв.84">г. Москва, Кустанайская ул. д.2 корп.1 кв.84</span>
+        </foreignObject>
+        <text clip-path="url(#clip63)" width="176" id='1012327' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="88" y="1"><tspan dy='10' x='88' fill='black'>г. Москва, Кустанайская ул. д.2 корп.1 кв.84</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 20&#45;&#45;63 -->
+<g id="edge20_63" class="edge"><title>20&#45;&#45;63</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-1933.51C580.531,-1938 622.019,-1942.98 655.184,-1946.96"/>
+</g>
+<!-- 78 -->
+
+<g id="el78" class="node" data-edgesTo="#edge20_78" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1929" transform="translate(660,-1929)">
+      <clipPath id="clip78">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad78" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad78)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip78)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 20&#45;&#45;78 -->
+<g id="edge20_78" class="edge"><title>20&#45;&#45;78</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.07,-1921.5C605.546,-1921.5 635.294,-1921.5 659.888,-1921.5"/>
+</g>
+<!-- 21 -->
+
+<g id="el21" class="node" data-edgesTo="#edge22_21" data-edgesFrom="#edge21_79,#edge21_60"  data-objectid="1012349" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)"  width="282" height="34" x="301" y="-354.5" transform="translate(301,-354.5)">
+      <clipPath id="clip21">
+        <rect x="-1" y="-1" width="288" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad21" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</title>
+    <rect width="282" height="34" rx="5" ry="5" fill='url(#grad21)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:282px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip21)" width="282" id='1012349' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ</tspan><tspan dy='10' x='141' fill='black'>НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='141' fill='black'>из Ларикс 2013, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 60 -->
+
+<g id="el60" class="node" data-edgesTo="#edge21_60" data-edgesFrom=""  data-objectid="1012329" data-text="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ"  width="151" height="15" x="643.5" y="-378" transform="translate(643.5,-378)">
+      <clipPath id="clip60">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad60" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad60)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ">ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</span>
+        </foreignObject>
+        <text clip-path="url(#clip60)" width="151" id='1012329' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 21&#45;&#45;60 -->
+<g id="edge21_60" class="edge"><title>21&#45;&#45;60</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M583.32,-354.338C608.611,-357.373 633.776,-360.393 655.388,-362.987"/>
+</g>
+<!-- 79 -->
+
+<g id="el79" class="node" data-edgesTo="#edge21_79" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-345" transform="translate(660,-345)">
+      <clipPath id="clip79">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad79" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad79)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip79)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 21&#45;&#45;79 -->
+<g id="edge21_79" class="edge"><title>21&#45;&#45;79</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M583.32,-337.5C610.333,-337.5 637.201,-337.5 659.751,-337.5"/>
+</g>
+<!-- 22&#45;&#45;21 -->
+<g id="edge22_21" class="edge"><title>22&#45;&#45;21</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M217.156,-230.223C231.09,-245.896 265.031,-281.551 301,-300.5 316.792,-308.819 334.593,-315.37 352.074,-320.493"/>
+</g>
+<!-- 23 -->
+
+<g id="el23" class="node" data-edgesTo="#edge22_23" data-edgesFrom="#edge23_80,#edge23_57"  data-objectid="1012350" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)"  width="277" height="34" x="303.5" y="-291.5" transform="translate(303.5,-291.5)">
+      <clipPath id="clip23">
+        <rect x="-1" y="-1" width="283" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad23" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</title>
+    <rect width="277" height="34" rx="5" ry="5" fill='url(#grad23)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="277" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:277px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip23)" width="277" id='1012350' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="138.5" y="1"><tspan dy='10' x='138.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА</tspan><tspan dy='10' x='138.5' fill='black'>СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='138.5' fill='black'>из Ларикс 2013, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22&#45;&#45;23 -->
+<g id="edge22_23" class="edge"><title>22&#45;&#45;23</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M229.777,-228.622C248.003,-234.27 276.18,-242.644 301,-248.5 314.354,-251.65 328.497,-254.657 342.461,-257.434"/>
+</g>
+<!-- 24 -->
+
+<g id="el24" class="node" data-edgesTo="#edge22_24" data-edgesFrom="#edge24_81,#edge24_54"  data-objectid="1012351" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)"  width="280" height="34" x="302" y="-239.5" transform="translate(302,-239.5)">
+      <clipPath id="clip24">
+        <rect x="-1" y="-1" width="286" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad24" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</title>
+    <rect width="280" height="34" rx="5" ry="5" fill='url(#grad24)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="280" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:280px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2013, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip24)" width="280" id='1012351' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140" y="1"><tspan dy='10' x='140' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА</tspan><tspan dy='10' x='140' fill='black'>ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='140' fill='black'>из Ларикс 2013, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22&#45;&#45;24 -->
+<g id="edge22_24" class="edge"><title>22&#45;&#45;24</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M229.756,-222.5C246.797,-222.5 273.344,-222.5 301.935,-222.5"/>
+</g>
+<!-- 33 -->
+
+<g id="el33" class="node" data-edgesTo="#edge22_33" data-edgesFrom="#edge33_67,#edge33_59"  data-objectid="1012330" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)"  width="282" height="34" x="301" y="-187.5" transform="translate(301,-187.5)">
+      <clipPath id="clip33">
+        <rect x="-1" y="-1" width="288" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad33" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</title>
+    <rect width="282" height="34" rx="5" ry="5" fill='url(#grad33)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="282" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:282px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip33)" width="282" id='1012330' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="141" y="1"><tspan dy='10' x='141' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВ</tspan><tspan dy='10' x='141' fill='black'>НИКОЛАЙ ВАСИЛЬЕВИЧ из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='141' fill='black'>из Ларикс 2011, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22&#45;&#45;33 -->
+<g id="edge22_33" class="edge"><title>22&#45;&#45;33</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M229.777,-216.378C248.003,-210.73 276.18,-202.356 301,-196.5 314.354,-193.35 328.497,-190.343 342.461,-187.566"/>
+</g>
+<!-- 34 -->
+
+<g id="el34" class="node" data-edgesTo="#edge22_34" data-edgesFrom="#edge34_68,#edge34_56"  data-objectid="1012332" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)"  width="277" height="34" x="303.5" y="-123.5" transform="translate(303.5,-123.5)">
+      <clipPath id="clip34">
+        <rect x="-1" y="-1" width="283" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad34" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</title>
+    <rect width="277" height="34" rx="5" ry="5" fill='url(#grad34)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="277" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:277px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip34)" width="277" id='1012332' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="138.5" y="1"><tspan dy='10' x='138.5' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА</tspan><tspan dy='10' x='138.5' fill='black'>СВЕТЛАНА ИВАНОВНА из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='138.5' fill='black'>из Ларикс 2011, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22&#45;&#45;34 -->
+<g id="edge22_34" class="edge"><title>22&#45;&#45;34</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M217.167,-214.797C231.12,-199.16 265.095,-163.568 301,-144.5 317.46,-135.759 336.102,-128.896 354.289,-123.556"/>
+</g>
+<!-- 35 -->
+
+<g id="el35" class="node" data-edgesTo="#edge22_35" data-edgesFrom="#edge35_69,#edge35_53"  data-objectid="1012334" data-text="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)"  width="280" height="34" x="302" y="-57.5" transform="translate(302,-57.5)">
+      <clipPath id="clip35">
+        <rect x="-1" y="-1" width="286" height="36"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad35" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</title>
+    <rect width="280" height="34" rx="5" ry="5" fill='url(#grad35)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="280" height="34" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:34px;width:280px" title="ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)">ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные из Ларикс 2011, актуализация записи - Сентябрь 2010)</span>
+        </foreignObject>
+        <text clip-path="url(#clip35)" width="280" id='1012334' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="140" y="1"><tspan dy='10' x='140' fill='black'>ДАВЫДОВ ПАВЕЛ НИКОЛАЕВИЧ имеет родственника ДАВЫДОВА</tspan><tspan dy='10' x='140' fill='black'>ТАТЬЯНА НИКОЛАЕВНА из списка &quot;Загс: родственные связи&quot; (данные</tspan><tspan dy='10' x='140' fill='black'>из Ларикс 2011, актуализация записи - Сентябрь 2010)</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 22&#45;&#45;35 -->
+<g id="edge22_35" class="edge"><title>22&#45;&#45;35</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M213.077,-214.978C221.581,-191.31 251.086,-117.728 301,-80.5 314.272,-70.6009 329.918,-63.1489 345.853,-57.5396"/>
+</g>
+<!-- 57 -->
+
+<g id="el57" class="node" data-edgesTo="#edge23_57" data-edgesFrom=""  data-objectid="1012331" data-text="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА"  width="151" height="15" x="643.5" y="-312" transform="translate(643.5,-312)">
+      <clipPath id="clip57">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad57" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad57)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА">ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip57)" width="151" id='1012331' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 23&#45;&#45;57 -->
+<g id="edge23_57" class="edge"><title>23&#45;&#45;57</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.903,-289.544C604.623,-292.132 628.328,-294.718 649.193,-296.994"/>
+</g>
+<!-- 80 -->
+
+<g id="el80" class="node" data-edgesTo="#edge23_80" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-279" transform="translate(660,-279)">
+      <clipPath id="clip80">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad80" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad80)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip80)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 23&#45;&#45;80 -->
+<g id="edge23_80" class="edge"><title>23&#45;&#45;80</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.903,-272.996C608.778,-272.692 636.631,-272.388 659.879,-272.134"/>
+</g>
+<!-- 54 -->
+
+<g id="el54" class="node" data-edgesTo="#edge24_54" data-edgesFrom=""  data-objectid="1012333" data-text="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА"  width="155" height="15" x="641.5" y="-246" transform="translate(641.5,-246)">
+      <clipPath id="clip54">
+        <rect x="-1" y="-1" width="161" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad54" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</title>
+    <rect width="155" height="15" rx="5" ry="5" fill='url(#grad54)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="155" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:155px" title="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА">ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip54)" width="155" id='1012333' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="77.5" y="1"><tspan dy='10' x='77.5' fill='black'>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 24&#45;&#45;54 -->
+<g id="edge24_54" class="edge"><title>24&#45;&#45;54</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M582.111,-230.594C602.494,-231.78 622.829,-232.963 641.326,-234.039"/>
+</g>
+<!-- 81 -->
+
+<g id="el81" class="node" data-edgesTo="#edge24_81" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-213" transform="translate(660,-213)">
+      <clipPath id="clip81">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad81" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad81)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip81)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 24&#45;&#45;81 -->
+<g id="edge24_81" class="edge"><title>24&#45;&#45;81</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M582.111,-213.9C609.555,-212.204 636.912,-210.513 659.811,-209.097"/>
+</g>
+<!-- 61 -->
+
+<g id="el61" class="node" data-edgesTo="#edge25_61" data-edgesFrom=""  data-objectid="1012329" data-text="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ"  width="151" height="15" x="643.5" y="-1896" transform="translate(643.5,-1896)">
+      <clipPath id="clip61">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad61" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad61)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ">ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</span>
+        </foreignObject>
+        <text clip-path="url(#clip61)" width="151" id='1012329' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 25&#45;&#45;61 -->
+<g id="edge25_61" class="edge"><title>25&#45;&#45;61</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M528.393,-1855.54C557.145,-1861.13 589.43,-1867.26 619,-1872.5 635.457,-1875.42 653.493,-1878.4 669.61,-1880.98"/>
+</g>
+<!-- 82 -->
+
+<g id="el82" class="node" data-edgesTo="#edge25_82" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1863" transform="translate(660,-1863)">
+      <clipPath id="clip82">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad82" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad82)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip82)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 25&#45;&#45;82 -->
+<g id="edge25_82" class="edge"><title>25&#45;&#45;82</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.708,-1847.07C609.34,-1848.78 636.907,-1850.49 659.944,-1851.91"/>
+</g>
+<!-- 102 -->
+
+<g id="el102" class="node" data-edgesTo="#edge25_102" data-edgesFrom=""  data-objectid="1012352" data-text="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25"  width="185" height="15" x="626.5" y="-1830" transform="translate(626.5,-1830)">
+      <clipPath id="clip102">
+        <rect x="-1" y="-1" width="191" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad102" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</title>
+    <rect width="185" height="15" rx="5" ry="5" fill='url(#grad102)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="185" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:185px" title="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip102)" width="185" id='1012352' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="92.5" y="1"><tspan dy='10' x='92.5' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 25&#45;&#45;102 -->
+<g id="edge25_102" class="edge"><title>25&#45;&#45;102</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.708,-1830.43C596.792,-1829.55 611.857,-1828.68 626.176,-1827.84"/>
+</g>
+<!-- 58 -->
+
+<g id="el58" class="node" data-edgesTo="#edge26_58" data-edgesFrom=""  data-objectid="1012331" data-text="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА"  width="151" height="15" x="643.5" y="-1797" transform="translate(643.5,-1797)">
+      <clipPath id="clip58">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad58" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad58)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА">ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip58)" width="151" id='1012331' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 26&#45;&#45;58 -->
+<g id="edge26_58" class="edge"><title>26&#45;&#45;58</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M531.554,-1757.55C559.504,-1762.81 590.519,-1768.53 619,-1773.5 635.551,-1776.39 653.691,-1779.37 669.871,-1781.97"/>
+</g>
+<!-- 83 -->
+
+<g id="el83" class="node" data-edgesTo="#edge26_83" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1764" transform="translate(660,-1764)">
+      <clipPath id="clip83">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad83" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad83)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip83)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 26&#45;&#45;83 -->
+<g id="edge26_83" class="edge"><title>26&#45;&#45;83</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.708,-1748.57C609.34,-1750.18 636.907,-1751.78 659.944,-1753.12"/>
+</g>
+<!-- 103 -->
+
+<g id="el103" class="node" data-edgesTo="#edge26_103" data-edgesFrom=""  data-objectid="1012352" data-text="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25"  width="185" height="15" x="626.5" y="-1731" transform="translate(626.5,-1731)">
+      <clipPath id="clip103">
+        <rect x="-1" y="-1" width="191" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad103" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</title>
+    <rect width="185" height="15" rx="5" ry="5" fill='url(#grad103)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="185" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:185px" title="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip103)" width="185" id='1012352' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="92.5" y="1"><tspan dy='10' x='92.5' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 26&#45;&#45;103 -->
+<g id="edge26_103" class="edge"><title>26&#45;&#45;103</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.708,-1731.93C596.792,-1730.99 611.857,-1730.06 626.176,-1729.18"/>
+</g>
+<!-- 55 -->
+
+<g id="el55" class="node" data-edgesTo="#edge27_55" data-edgesFrom=""  data-objectid="1012333" data-text="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА"  width="155" height="15" x="641.5" y="-1698" transform="translate(641.5,-1698)">
+      <clipPath id="clip55">
+        <rect x="-1" y="-1" width="161" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad55" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</title>
+    <rect width="155" height="15" rx="5" ry="5" fill='url(#grad55)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="155" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:155px" title="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА">ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip55)" width="155" id='1012333' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="77.5" y="1"><tspan dy='10' x='77.5' fill='black'>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 27&#45;&#45;55 -->
+<g id="edge27_55" class="edge"><title>27&#45;&#45;55</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M578.889,-1673.81C605.682,-1677.02 632.556,-1680.25 655.442,-1682.99"/>
+</g>
+<!-- 84 -->
+
+<g id="el84" class="node" data-edgesTo="#edge27_84" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1665" transform="translate(660,-1665)">
+      <clipPath id="clip84">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad84" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad84)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip84)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 27&#45;&#45;84 -->
+<g id="edge27_84" class="edge"><title>27&#45;&#45;84</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M578.889,-1657.5C607.441,-1657.5 636.086,-1657.5 659.898,-1657.5"/>
+</g>
+<!-- 104 -->
+
+<g id="el104" class="node" data-edgesTo="#edge27_104" data-edgesFrom=""  data-objectid="1012352" data-text="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25"  width="185" height="15" x="626.5" y="-1632" transform="translate(626.5,-1632)">
+      <clipPath id="clip104">
+        <rect x="-1" y="-1" width="191" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad104" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</title>
+    <rect width="185" height="15" rx="5" ry="5" fill='url(#grad104)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="185" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:185px" title="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip104)" width="185" id='1012352' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="92.5" y="1"><tspan dy='10' x='92.5' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 27&#45;&#45;104 -->
+<g id="edge27_104" class="edge"><title>27&#45;&#45;104</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M578.889,-1641.19C605.682,-1637.98 632.556,-1634.75 655.442,-1632.01"/>
+</g>
+<!-- 85 -->
+
+<g id="el85" class="node" data-edgesTo="#edge28_85" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1599" transform="translate(660,-1599)">
+      <clipPath id="clip85">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad85" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad85)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip85)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 28&#45;&#45;85 -->
+<g id="edge28_85" class="edge"><title>28&#45;&#45;85</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M578.889,-1583.41C607.441,-1585.07 636.086,-1586.73 659.898,-1588.12"/>
+</g>
+<!-- 101 -->
+
+<g id="el101" class="node" data-edgesTo="#edge28_101" data-edgesFrom=""  data-objectid="1012356" data-text="ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ"  width="167" height="15" x="635.5" y="-1566" transform="translate(635.5,-1566)">
+      <clipPath id="clip101">
+        <rect x="-1" y="-1" width="173" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad101" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ</title>
+    <rect width="167" height="15" rx="5" ry="5" fill='url(#grad101)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="167" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:167px" title="ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ">ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ</span>
+        </foreignObject>
+        <text clip-path="url(#clip101)" width="167" id='1012356' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="83.5" y="1"><tspan dy='10' x='83.5' fill='black'>ЧИГЛАДЗЕ МАМУКА ВИССАРИОНОВИЧ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 28&#45;&#45;101 -->
+<g id="edge28_101" class="edge"><title>28&#45;&#45;101</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M578.889,-1567.1C598.104,-1565.91 617.361,-1564.72 635.159,-1563.62"/>
+</g>
+<!-- 105 -->
+
+<g id="el105" class="node" data-edgesTo="#edge28_105" data-edgesFrom=""  data-objectid="1012352" data-text="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25"  width="185" height="15" x="626.5" y="-1533" transform="translate(626.5,-1533)">
+      <clipPath id="clip105">
+        <rect x="-1" y="-1" width="191" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad105" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</title>
+    <rect width="185" height="15" rx="5" ry="5" fill='url(#grad105)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="185" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:185px" title="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip105)" width="185" id='1012352' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="92.5" y="1"><tspan dy='10' x='92.5' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 28&#45;&#45;105 -->
+<g id="edge28_105" class="edge"><title>28&#45;&#45;105</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M532.487,-1558.45C560.202,-1553.24 590.849,-1547.56 619,-1542.5 636.679,-1539.32 656.159,-1535.95 673.127,-1533.06"/>
+</g>
+<!-- 86 -->
+
+<g id="el86" class="node" data-edgesTo="#edge29_86" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1500" transform="translate(660,-1500)">
+      <clipPath id="clip86">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad86" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad86)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip86)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 29&#45;&#45;86 -->
+<g id="edge29_86" class="edge"><title>29&#45;&#45;86</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.875,-1484.29C606.106,-1485.99 635.556,-1487.7 659.936,-1489.12"/>
+</g>
+<!-- 100 -->
+
+<g id="el100" class="node" data-edgesTo="#edge29_100" data-edgesFrom=""  data-objectid="1012358" data-text="ДУНАЕВА НИНА СЕРГЕЕВНА"  width="125" height="15" x="656.5" y="-1467" transform="translate(656.5,-1467)">
+      <clipPath id="clip100">
+        <rect x="-1" y="-1" width="131" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad100" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДУНАЕВА НИНА СЕРГЕЕВНА</title>
+    <rect width="125" height="15" rx="5" ry="5" fill='url(#grad100)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="125" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:125px" title="ДУНАЕВА НИНА СЕРГЕЕВНА">ДУНАЕВА НИНА СЕРГЕЕВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip100)" width="125" id='1012358' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="62.5" y="1"><tspan dy='10' x='62.5' fill='black'>ДУНАЕВА НИНА СЕРГЕЕВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 29&#45;&#45;100 -->
+<g id="edge29_100" class="edge"><title>29&#45;&#45;100</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.875,-1468.22C604.74,-1466.5 632.804,-1464.77 656.485,-1463.3"/>
+</g>
+<!-- 106 -->
+
+<g id="el106" class="node" data-edgesTo="#edge29_106" data-edgesFrom=""  data-objectid="1012352" data-text="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25"  width="185" height="15" x="626.5" y="-1434" transform="translate(626.5,-1434)">
+      <clipPath id="clip106">
+        <rect x="-1" y="-1" width="191" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad106" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</title>
+    <rect width="185" height="15" rx="5" ry="5" fill='url(#grad106)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="185" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:185px" title="г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25">г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip106)" width="185" id='1012352' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="92.5" y="1"><tspan dy='10' x='92.5' fill='black'>г. Москва, РОМАНОВА ПЕТРА УЛ. Д.14 КВ.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 29&#45;&#45;106 -->
+<g id="edge29_106" class="edge"><title>29&#45;&#45;106</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M528.393,-1459.46C557.145,-1453.87 589.43,-1447.74 619,-1442.5 635.457,-1439.58 653.493,-1436.6 669.61,-1434.02"/>
+</g>
+<!-- 64 -->
+
+<g id="el64" class="node" data-edgesTo="#edge30_64" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1401" transform="translate(660,-1401)">
+      <clipPath id="clip64">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad64" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad64)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip64)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 30&#45;&#45;64 -->
+<g id="edge30_64" class="edge"><title>30&#45;&#45;64</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-1393.5C603.306,-1393.5 634.264,-1393.5 659.722,-1393.5"/>
+</g>
+<!-- 96 -->
+
+<g id="el96" class="node" data-edgesTo="#edge30_96" data-edgesFrom=""  data-objectid="1012324" data-text="г. Москва, Петра Романова ул. д.14 кв.25"  width="167" height="15" x="635.5" y="-1368" transform="translate(635.5,-1368)">
+      <clipPath id="clip96">
+        <rect x="-1" y="-1" width="173" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad96" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Петра Романова ул. д.14 кв.25</title>
+    <rect width="167" height="15" rx="5" ry="5" fill='url(#grad96)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="167" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:167px" title="г. Москва, Петра Романова ул. д.14 кв.25">г. Москва, Петра Романова ул. д.14 кв.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip96)" width="167" id='1012324' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="83.5" y="1"><tspan dy='10' x='83.5' fill='black'>г. Москва, Петра Романова ул. д.14 кв.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 30&#45;&#45;96 -->
+<g id="edge30_96" class="edge"><title>30&#45;&#45;96</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-1381.49C580.531,-1377 622.019,-1372.02 655.184,-1368.04"/>
+</g>
+<!-- 65 -->
+
+<g id="el65" class="node" data-edgesTo="#edge31_65" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1335" transform="translate(660,-1335)">
+      <clipPath id="clip65">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad65" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad65)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip65)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 31&#45;&#45;65 -->
+<g id="edge31_65" class="edge"><title>31&#45;&#45;65</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.07,-1327.5C605.546,-1327.5 635.294,-1327.5 659.888,-1327.5"/>
+</g>
+<!-- 97 -->
+
+<g id="el97" class="node" data-edgesTo="#edge31_97" data-edgesFrom=""  data-objectid="1012324" data-text="г. Москва, Петра Романова ул. д.14 кв.25"  width="167" height="15" x="635.5" y="-1302" transform="translate(635.5,-1302)">
+      <clipPath id="clip97">
+        <rect x="-1" y="-1" width="173" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad97" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Петра Романова ул. д.14 кв.25</title>
+    <rect width="167" height="15" rx="5" ry="5" fill='url(#grad97)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="167" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:167px" title="г. Москва, Петра Романова ул. д.14 кв.25">г. Москва, Петра Романова ул. д.14 кв.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip97)" width="167" id='1012324' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="83.5" y="1"><tspan dy='10' x='83.5' fill='black'>г. Москва, Петра Романова ул. д.14 кв.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 31&#45;&#45;97 -->
+<g id="edge31_97" class="edge"><title>31&#45;&#45;97</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-1315.49C580.531,-1311 622.019,-1306.02 655.184,-1302.04"/>
+</g>
+<!-- 62 -->
+
+<g id="el62" class="node" data-edgesTo="#edge32_62" data-edgesFrom=""  data-objectid="1012327" data-text="г. Москва, Кустанайская ул. д.2 корп.1 кв.84"  width="176" height="15" x="631" y="-1269" transform="translate(631,-1269)">
+      <clipPath id="clip62">
+        <rect x="-1" y="-1" width="182" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad62" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Кустанайская ул. д.2 корп.1 кв.84</title>
+    <rect width="176" height="15" rx="5" ry="5" fill='url(#grad62)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="176" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:176px" title="г. Москва, Кустанайская ул. д.2 корп.1 кв.84">г. Москва, Кустанайская ул. д.2 корп.1 кв.84</span>
+        </foreignObject>
+        <text clip-path="url(#clip62)" width="176" id='1012327' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="88" y="1"><tspan dy='10' x='88' fill='black'>г. Москва, Кустанайская ул. д.2 корп.1 кв.84</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 32&#45;&#45;62 -->
+<g id="edge32_62" class="edge"><title>32&#45;&#45;62</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M576.07,-1261.5C594.715,-1261.5 613.469,-1261.5 630.959,-1261.5"/>
+</g>
+<!-- 66 -->
+
+<g id="el66" class="node" data-edgesTo="#edge32_66" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1236" transform="translate(660,-1236)">
+      <clipPath id="clip66">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad66" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad66)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip66)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 32&#45;&#45;66 -->
+<g id="edge32_66" class="edge"><title>32&#45;&#45;66</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-1249.49C582.22,-1244.79 625.767,-1239.57 659.618,-1235.51"/>
+</g>
+<!-- 59 -->
+
+<g id="el59" class="node" data-edgesTo="#edge33_59" data-edgesFrom=""  data-objectid="1012329" data-text="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ"  width="151" height="15" x="643.5" y="-180" transform="translate(643.5,-180)">
+      <clipPath id="clip59">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad59" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad59)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ">ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</span>
+        </foreignObject>
+        <text clip-path="url(#clip59)" width="151" id='1012329' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВ НИКОЛАЙ ВАСИЛЬЕВИЧ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 33&#45;&#45;59 -->
+<g id="edge33_59" class="edge"><title>33&#45;&#45;59</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M583.32,-171.521C603.977,-171.671 624.549,-171.82 643.17,-171.956"/>
+</g>
+<!-- 67 -->
+
+<g id="el67" class="node" data-edgesTo="#edge33_67" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-147" transform="translate(660,-147)">
+      <clipPath id="clip67">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad67" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad67)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip67)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 33&#45;&#45;67 -->
+<g id="edge33_67" class="edge"><title>33&#45;&#45;67</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M583.32,-154.682C610.333,-151.637 637.201,-148.608 659.751,-146.066"/>
+</g>
+<!-- 56 -->
+
+<g id="el56" class="node" data-edgesTo="#edge34_56" data-edgesFrom=""  data-objectid="1012331" data-text="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА"  width="151" height="15" x="643.5" y="-114" transform="translate(643.5,-114)">
+      <clipPath id="clip56">
+        <rect x="-1" y="-1" width="157" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad56" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</title>
+    <rect width="151" height="15" rx="5" ry="5" fill='url(#grad56)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="151" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:151px" title="ДАВЫДОВА СВЕТЛАНА ИВАНОВНА">ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip56)" width="151" id='1012331' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="75.5" y="1"><tspan dy='10' x='75.5' fill='black'>ДАВЫДОВА СВЕТЛАНА ИВАНОВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 34&#45;&#45;56 -->
+<g id="edge34_56" class="edge"><title>34&#45;&#45;56</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.903,-106.5C602.479,-106.5 624.042,-106.5 643.467,-106.5"/>
+</g>
+<!-- 68 -->
+
+<g id="el68" class="node" data-edgesTo="#edge34_68" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-81" transform="translate(660,-81)">
+      <clipPath id="clip68">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad68" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad68)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip68)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 34&#45;&#45;68 -->
+<g id="edge34_68" class="edge"><title>34&#45;&#45;68</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.903,-89.9517C608.778,-86.6067 636.631,-83.2643 659.879,-80.4745"/>
+</g>
+<!-- 53 -->
+
+<g id="el53" class="node" data-edgesTo="#edge35_53" data-edgesFrom=""  data-objectid="1012333" data-text="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА"  width="155" height="15" x="641.5" y="-48" transform="translate(641.5,-48)">
+      <clipPath id="clip53">
+        <rect x="-1" y="-1" width="161" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad53" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</title>
+    <rect width="155" height="15" rx="5" ry="5" fill='url(#grad53)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="155" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:155px" title="ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА">ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</span>
+        </foreignObject>
+        <text clip-path="url(#clip53)" width="155" id='1012333' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="77.5" y="1"><tspan dy='10' x='77.5' fill='black'>ДАВЫДОВА ТАТЬЯНА НИКОЛАЕВНА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 35&#45;&#45;53 -->
+<g id="edge35_53" class="edge"><title>35&#45;&#45;53</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M582.111,-40.5C602.494,-40.5 622.829,-40.5 641.326,-40.5"/>
+</g>
+<!-- 69 -->
+
+<g id="el69" class="node" data-edgesTo="#edge35_69" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-15" transform="translate(660,-15)">
+      <clipPath id="clip69">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad69" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad69)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip69)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 35&#45;&#45;69 -->
+<g id="edge35_69" class="edge"><title>35&#45;&#45;69</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M582.111,-23.8066C609.555,-20.5134 636.912,-17.2305 659.811,-14.4827"/>
+</g>
+<!-- 70 -->
+
+<g id="el70" class="node" data-edgesTo="#edge36_70" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1137" transform="translate(660,-1137)">
+      <clipPath id="clip70">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad70" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad70)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip70)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 36&#45;&#45;70 -->
+<g id="edge36_70" class="edge"><title>36&#45;&#45;70</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M557.633,-1124.25C592.856,-1125.4 630.139,-1126.62 659.884,-1127.6"/>
+</g>
+<!-- 71 -->
+
+<g id="el71" class="node" data-edgesTo="#edge37_71" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1104" transform="translate(660,-1104)">
+      <clipPath id="clip71">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad71" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad71)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip71)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 37&#45;&#45;71 -->
+<g id="edge37_71" class="edge"><title>37&#45;&#45;71</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M563.619,-1086.4C596.956,-1088.58 631.636,-1090.85 659.662,-1092.68"/>
+</g>
+<!-- 72 -->
+
+<g id="el72" class="node" data-edgesTo="#edge38_72" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-1005" transform="translate(660,-1005)">
+      <clipPath id="clip72">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad72" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad72)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip72)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 38&#45;&#45;72 -->
+<g id="edge38_72" class="edge"><title>38&#45;&#45;72</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.306,-988.553C608.992,-990.365 636.635,-992.174 659.744,-993.687"/>
+</g>
+<!-- 98 -->
+
+<g id="el98" class="node" data-edgesTo="#edge38_98" data-edgesFrom=""  data-objectid="1012324" data-text="г. Москва, Петра Романова ул. д.14 кв.25"  width="167" height="15" x="635.5" y="-972" transform="translate(635.5,-972)">
+      <clipPath id="clip98">
+        <rect x="-1" y="-1" width="173" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad98" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>г. Москва, Петра Романова ул. д.14 кв.25</title>
+    <rect width="167" height="15" rx="5" ry="5" fill='url(#grad98)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="167" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:167px" title="г. Москва, Петра Романова ул. д.14 кв.25">г. Москва, Петра Романова ул. д.14 кв.25</span>
+        </foreignObject>
+        <text clip-path="url(#clip98)" width="167" id='1012324' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="83.5" y="1"><tspan dy='10' x='83.5' fill='black'>г. Москва, Петра Романова ул. д.14 кв.25</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 38&#45;&#45;98 -->
+<g id="edge38_98" class="edge"><title>38&#45;&#45;98</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M581.306,-971.956C599.763,-970.949 618.202,-969.944 635.29,-969.011"/>
+</g>
+<!-- 49 -->
+
+<g id="el49" class="node" data-edgesTo="#edge39_49" data-edgesFrom=""  data-objectid="1012338" data-text="ЗАО &quot;ГОРОД-ИНФО&quot;"  width="89" height="15" x="674.5" y="-675" transform="translate(674.5,-675)">
+      <clipPath id="clip49">
+        <rect x="-1" y="-1" width="95" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad49" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;ГОРОД-ИНФО&quot;</title>
+    <rect width="89" height="15" rx="5" ry="5" fill='url(#grad49)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="89" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:89px" title="ЗАО &quot;ГОРОД-ИНФО&quot;">ЗАО &quot;ГОРОД-ИНФО&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip49)" width="89" id='1012338' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="44.5" y="1"><tspan dy='10' x='44.5' fill='black'>ЗАО &quot;ГОРОД-ИНФО&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 39&#45;&#45;49 -->
+<g id="edge39_49" class="edge"><title>39&#45;&#45;49</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-667.5C609.425,-667.5 646.724,-667.5 674.352,-667.5"/>
+</g>
+<!-- 73 -->
+
+<g id="el73" class="node" data-edgesTo="#edge39_73" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-642" transform="translate(660,-642)">
+      <clipPath id="clip73">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad73" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad73)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip73)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 39&#45;&#45;73 -->
+<g id="edge39_73" class="edge"><title>39&#45;&#45;73</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-655.493C582.22,-650.794 625.767,-645.568 659.618,-641.506"/>
+</g>
+<!-- 47 -->
+
+<g id="el47" class="node" data-edgesTo="#edge40_47" data-edgesFrom=""  data-objectid="1012340" data-text="ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА"  width="190" height="15" x="624" y="-609" transform="translate(624,-609)">
+      <clipPath id="clip47">
+        <rect x="-1" y="-1" width="196" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad47" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</title>
+    <rect width="190" height="15" rx="5" ry="5" fill='url(#grad47)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="190" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:190px" title="ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА">ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</span>
+        </foreignObject>
+        <text clip-path="url(#clip47)" width="190" id='1012340' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="95" y="1"><tspan dy='10' x='95' fill='black'>ГРУППА УЧЕТА N 5 ЦБ N 5 ЮЖНОГО ОКРУГА</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 40&#45;&#45;47 -->
+<g id="edge40_47" class="edge"><title>40&#45;&#45;47</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.097,-601.5C594.896,-601.5 609.702,-601.5 623.828,-601.5"/>
+</g>
+<!-- 74 -->
+
+<g id="el74" class="node" data-edgesTo="#edge40_74" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-576" transform="translate(660,-576)">
+      <clipPath id="clip74">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad74" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad74)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip74)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 40&#45;&#45;74 -->
+<g id="edge40_74" class="edge"><title>40&#45;&#45;74</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M580.097,-585.048C608.216,-581.674 636.357,-578.297 659.817,-575.482"/>
+</g>
+<!-- 45 -->
+
+<g id="el45" class="node" data-edgesTo="#edge41_45" data-edgesFrom=""  data-objectid="1012342" data-text="ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;"  width="114" height="15" x="662" y="-543" transform="translate(662,-543)">
+      <clipPath id="clip45">
+        <rect x="-1" y="-1" width="120" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad45" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</title>
+    <rect width="114" height="15" rx="5" ry="5" fill='url(#grad45)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="114" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:114px" title="ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;">ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip45)" width="114" id='1012342' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="57" y="1"><tspan dy='10' x='57' fill='black'>ЗАО &quot;НЭКО КОНСАЛТИНГ&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 41&#45;&#45;45 -->
+<g id="edge41_45" class="edge"><title>41&#45;&#45;45</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-535.5C604.14,-535.5 635.96,-535.5 661.802,-535.5"/>
+</g>
+<!-- 75 -->
+
+<g id="el75" class="node" data-edgesTo="#edge41_75" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-510" transform="translate(660,-510)">
+      <clipPath id="clip75">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad75" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad75)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip75)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 41&#45;&#45;75 -->
+<g id="edge41_75" class="edge"><title>41&#45;&#45;75</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-523.493C582.22,-518.794 625.767,-513.568 659.618,-509.506"/>
+</g>
+<!-- 50 -->
+
+<g id="el50" class="node" data-edgesTo="#edge42_50" data-edgesFrom=""  data-objectid="1012338" data-text="ЗАО &quot;ГОРОД-ИНФО&quot;"  width="89" height="15" x="674.5" y="-477" transform="translate(674.5,-477)">
+      <clipPath id="clip50">
+        <rect x="-1" y="-1" width="95" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad50" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЗАО &quot;ГОРОД-ИНФО&quot;</title>
+    <rect width="89" height="15" rx="5" ry="5" fill='url(#grad50)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="89" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:89px" title="ЗАО &quot;ГОРОД-ИНФО&quot;">ЗАО &quot;ГОРОД-ИНФО&quot;</span>
+        </foreignObject>
+        <text clip-path="url(#clip50)" width="89" id='1012338' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="44.5" y="1"><tspan dy='10' x='44.5' fill='black'>ЗАО &quot;ГОРОД-ИНФО&quot;</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 42&#45;&#45;50 -->
+<g id="edge42_50" class="edge"><title>42&#45;&#45;50</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M572.85,-469.5C609.425,-469.5 646.724,-469.5 674.352,-469.5"/>
+</g>
+<!-- 76 -->
+
+<g id="el76" class="node" data-edgesTo="#edge42_76" data-edgesFrom=""  data-objectid="1012314" data-text="Давыдов Павел Николаевич"  width="118" height="15" x="660" y="-444" transform="translate(660,-444)">
+      <clipPath id="clip76">
+        <rect x="-1" y="-1" width="124" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad76" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Давыдов Павел Николаевич</title>
+    <rect width="118" height="15" rx="5" ry="5" fill='url(#grad76)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="118" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:118px" title="Давыдов Павел Николаевич">Давыдов Павел Николаевич</span>
+        </foreignObject>
+        <text clip-path="url(#clip76)" width="118" id='1012314' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="59" y="1"><tspan dy='10' x='59' fill='black'>Давыдов Павел Николаевич</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 42&#45;&#45;76 -->
+<g id="edge42_76" class="edge"><title>42&#45;&#45;76</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M543.059,-457.493C582.22,-452.794 625.767,-447.568 659.618,-443.506"/>
+</g>
+</g>
+</svg>

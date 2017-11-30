@@ -21,9 +21,12 @@
         },
 
         initialize: function () {
+
             this.collection = new Backbone.Collection;
             this.collection.url = '/api/sources/persisted/' + this.model.id;
+
             this.paramCollection = new Backbone.Collection();
+
         },
 
         regions: {
@@ -32,13 +35,21 @@
         },
 
         onBeforeRender: function () {
-            $.get("/api/search/balance").done(function (num) {
+
+        	$.get("/api/search/balance").done(function (num) {
+
                 this.ui.balance.text(num.toFixed(2));
                 this.ui.meter.attr("data-meter-max", num).gtkMeter();
+
             }.bind(this));
+
         },
 
         onRender: function () {
+
+        	/***
+				до новой верстки в коментариях 23.11.2017
+			*/
 
             this.showChildView('list', new List);
             this.showChildView('filters', new Filters({ model: this.model }));
@@ -51,6 +62,7 @@
         },
 
         collectionEvents: {
+
             reset: function () {
 
                 Backbone.Radio.channel('loader').trigger('hide');

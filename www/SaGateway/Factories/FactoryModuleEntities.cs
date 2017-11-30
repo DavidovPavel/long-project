@@ -92,7 +92,7 @@ namespace www.SaGateway.Factories
             header.num = num++;
 
             var metaImage = _saDB.MetaModel.MetaProperties.GetByName(_SAConst.Фото);
-            header.AddProperty(metaImage, content?.GetValueBySystemName(_SAConst.Фото));
+            header.AddProperty(metaImage, content?.GetValueBySystemName(_SAConst.Фото), false);
 
             var metaDisplayName = _saDB.MetaModel.MetaProperties.GetByName(_SAConst.Наименование);
             header.AddProperty(metaDisplayName, content?.GetValueBySystemName(_SAConst.Наименование));

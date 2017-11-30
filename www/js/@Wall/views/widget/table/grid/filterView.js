@@ -12,20 +12,46 @@
             tagName: 'span',
             className: 'g-form--input',
 
-            template: _.template('<input class="g-form--checkbox" type="checkbox" checked id="<%- value %>" name="<%- value %>" /><label for="<%- value %>"><%- value %></label>'),
+            template: _.template('<input class="g-form--checkbox" type="checkbox" checked id="<%- prefix %><%- value.replace(/ /g, \'\') %>" name="<%- prefix %><%- value.replace(/ /g, \'\') %>" /><label for="<%- prefix %><%- value.replace(/ /g, \'\') %>"><%- value %></label>'),
+            templateContext: function() {
+            	return {
+            		prefix: this.options.prefix
+            	}
+            },
 
             ui: {
                 chbx: 'input'
             },
 
+            //events: {
+            //	'click': function(e) {
+
+            //		if (e.target.nodeName.toLowerCase() === 'input') {
+
+            //			this.triggerMethod('click:item', this);
+
+            //		}
+            //    }
+            //},
+
+
             triggers: {
-                'click': {
-                    event: 'click:item',
-                    preventDefault: false,
-                    stopPropagation: false
-                }
+            	'click input': {
+            		event: 'click:item',
+            		preventDefault: false,
+            		stopPropagation: true
+            	}
             }
+
         }),
+
+        childViewOptions: function () {
+
+        	return {
+        		prefix: this.options.prefix
+        	}
+
+        },
 
         childViewTriggers: {
             'click:item': 'filter:apply'
@@ -57,7 +83,7 @@
 
         onRender: function () {
 
-            this.showChildView('list', new listRubrics({ collection: this.collection }));
+        	this.showChildView('list', new listRubrics({ collection: this.collection, prefix: this.model.id }));
         },
 
         childViewEvents: {
@@ -110,7 +136,7 @@
 
             	this.triggerMethod("filter:apply");
 
-            	this.$el.slideToggle();
+            	//this.$el.slideToggle();
 
             }
         },

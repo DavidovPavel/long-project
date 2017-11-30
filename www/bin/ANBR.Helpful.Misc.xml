@@ -4,6 +4,18 @@
         <name>ANBR.Helpful.Misc</name>
     </assembly>
     <members>
+        <member name="T:ANBR.Helpful.Misc.Convertion.Helper">
+            <summary>
+            Конверторы, парсеры...
+            </summary>
+        </member>
+        <member name="M:ANBR.Helpful.Misc.Convertion.Helper.ISO8601Parse(System.String)">
+            <summary>
+            Конвертация строки в формате ISO8601 в дату
+            </summary>
+            <param name="s"></param>
+            <returns>Возвращает null - в случае некорректного формата</returns>
+        </member>
         <member name="T:ANBR.Helpful.Misc.Graphic.Helper">
             <summary>
             Набор инструментов на участке работы с графикой

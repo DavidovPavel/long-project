@@ -1,0 +1,22 @@
+﻿#basket { 
+    position: fixed;right:50px;top:100px;z-index:999;cursor:default;.size(940px,500px,none);.panel();line-height:normal;    
+    &>p {padding:9px;line-height:18px;}
+    & #ObjList {
+        padding:0 10px;
+        & table td {border-top-color:transparent;}
+    }
+    & table th:first-child, & table td:first-child {text-align:left;}
+    & .action-container {
+        position:absolute;display:none;.panel();z-index:1;width:680px;margin-left:50px;padding:1px;
+        & input[type=text] {margin-bottom:10px;}        
+        & .functional {
+            padding: 8px 20px;
+            & #objForFactDigest i {font-style:italic;font-weight:normal;}
+        }
+        & .final {display:none;background-color:@color-white;position:absolute;top:45px;left:0;right:0;bottom:0;padding:20px;}
+    }
+    & .table .font-icon {font-size:initial;cursor:pointer;vertical-align:middle;}
+    & .show-item {vertical-align:middle; cursor:pointer;}
+    & .font-icon-play {color:forestgreen;}
+
+}

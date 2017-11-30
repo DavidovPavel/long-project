@@ -9,6 +9,7 @@ using www.SaGateway;
 using System.Linq;
 using System;
 using System.Text;
+using System.Web.Http.Services;
 using www.Helpers;
 using www.Models.Ex.Feed;
 using www.Models.Items;
@@ -70,8 +71,8 @@ namespace www.Controllers.api
                 var original = (ISource)mention.Source.Object;
                 var mType = mention.Source.MetaType.SystemName.ToLower();
 
-                ContentItem ci = DetailsController.GetContentV2(saDB, original.Id, kwArr, null, true, null,
-                    contentPropName, false, TextMode.Short, TranslationMode.Orignal);
+                ContentItem ci = HelperContent.GetContentV2(saDB, original.Id, kwArr, null, true, null,
+                    contentPropName, false, HelperContent.TextMode.Short, HelperContent.TranslationMode.Orignal);
 
                 if (mType == "videosource" || mType == "audiosource")
                 {
@@ -110,7 +111,7 @@ namespace www.Controllers.api
                 int end = mention.Position.EndPosition;
                 string fragment = source?.Text.Substring(start, end - start);
                 int len;
-                Decorator.RawTextPrepare(true,out len, ref fragment);
+                HelperContent.RawTextPrepare(true,out len, ref fragment);
                 if (String.IsNullOrWhiteSpace(fragment)) continue;
 
                 //span data-oknd =\"2\"

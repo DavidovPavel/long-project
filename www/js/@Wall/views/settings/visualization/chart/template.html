@@ -27,6 +27,18 @@
         </span>
     </div>
 
+	<div>
+		<span class="g-form--input">
+			<input type="checkbox" class="g-form--checkbox" id="<%- prefix %>enableRTL" name="enableRTL" <%- enableRTL?checked='checked':'' %> />
+			<label for="<%- prefix %>enableRTL"><%- Resources.dire %></label>
+			<i class="help rtl-1"></i>
+			<span class="g-tip bottom" style="display: none;">
+				<kbd></kbd>
+				<span><%- Resources.dire %></span>
+			</span>
+		</span>
+	</div>
+
     <!-- Tooltips -->
     <h3><%- Resources.vs2 %></h3>
     <div class="row">
@@ -298,6 +310,8 @@
                 </span>
             </span>
         </div>
+    </div>
+    <div class="row">
         <div class="grid--1-2">
             <span class="g-form--input">
                 <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>explodeOnMouseOver" name="explodeOnMouseOver" <%- explodeOnMouseOver?checked='checked':'' %> />

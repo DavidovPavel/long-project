@@ -1,5 +1,6 @@
 ﻿
-table { width: 100%;font-size: 12px;}
+table { width: 100%;font-size: 13px;}
+table thead, table tfoot {font-size: 11px;}
 table td, table th { padding:10px; vertical-align: middle;}
 table th { background-color: #e8e8e8;color: #888;position: relative;white-space:nowrap;}
 
@@ -84,7 +85,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
     border: none;
-    width: 100%;
     margin: 0;
 
     thead {
@@ -101,7 +101,7 @@ table {
                     content: '';
                     width: 1px;
                     height: 40%;
-                    background: rgba(102, 134, 180,1);
+                    //background: #c1c2c3;
                     position: absolute;
                     top: 50%;
                     left: 0;
@@ -112,12 +112,17 @@ table {
                     content: '';
                     width: 1px;
                     height: 40%;
-                    background: rgba(68, 104, 158,1);
+                    //background: #ffffff;
                     position: absolute;
                     top: 50%;
                     right: 0;
                     transform: translateY(-50%);
                 }
+                /*&.th-checkbox {width: 10px;}
+
+                &.th-number {width: 10px;}
+
+                &.th-medium {width: 20px;}*/
             }
         }
     }

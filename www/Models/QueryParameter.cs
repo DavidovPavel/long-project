@@ -33,15 +33,15 @@ namespace www.Models
                 case "DateTime":
                     {
                         DateTime d;
-                        try
-                        {
-                            d = DateTime.Parse(value[0], null, DateTimeStyles.RoundtripKind);
-                        }
-                        catch
+                        var dRes = ANBR.Helpful.Misc.Convertion.Helper.ISO8601Parse(value[0]);
+                        if (dRes == null)
                         {
                             if (!DateTime.TryParse(value[0], CultureInfo.InvariantCulture, DateTimeStyles.None, out d))
-                                DateTime.TryParse(value[0], CultureInfo.CurrentCulture, DateTimeStyles.None, out d);
+                                if (!DateTime.TryParse(value[0], CultureInfo.CurrentCulture, DateTimeStyles.None, out d))
+                                    d = DateTime.Now;
                         }
+                        else
+                            d = dRes.Value;
 
                         Value = new[] { (object)d };
 
@@ -53,6 +53,8 @@ namespace www.Models
             for (var index = 0; index < value.Length; index++)
                 Value[index] = value[index];
         }
+
+
 
         /// <summary>
         /// Признак недействительного параметра (отсутствующего на данный момент в актуальном запросе СА)
@@ -73,8 +75,9 @@ namespace www.Models
 
                         try
                         {
-                            var d = DateTime.Parse(val.ToString(), null, DateTimeStyles.RoundtripKind);
-                            return d.ToString(CultureInfo.InvariantCulture);
+                            var dRes = ANBR.Helpful.Misc.Convertion.Helper.ISO8601Parse(val.ToString());
+                            if (dRes != null)
+                                return dRes.Value.ToString(CultureInfo.InvariantCulture);
                         }
                         // ReSharper disable once EmptyGeneralCatchClause
                         catch

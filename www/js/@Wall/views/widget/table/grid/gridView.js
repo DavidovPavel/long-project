@@ -1,4 +1,4 @@
-﻿define('widgetTableGrid', ['i18n!nls/resources.min', 'widget.table.filter'], function (Resources, filterView) {
+﻿define('widgetTableGrid', ['i18n!nls/resources.min'], function (Resources) {
 
     var toolsView = Mn.CollectionView.extend({
 
@@ -43,9 +43,9 @@
 
             getTemplate: function () {
                 if (this.model.get('render') === 'open')
-                    return _.template('<a href="<%- href %>" target="_blank"><span class="anbr-tooltip"><span position="bottom"></span><%- prompt %></span><svg class="svg-icon"><use xlink:href="#<%- id %>" /></svg></a>');
+                    return _.template('<a dir="auto" href="<%- href %>" target="_blank"><span class="anbr-tooltip"><span position="bottom"></span><%- prompt %></span><svg class="svg-icon"><use xlink:href="#<%- id %>" /></svg></a>');
                 else
-                    return _.template('<span class="anbr-tooltip"><span position="bottom"></span><%- prompt %></span><svg class="svg-icon"><use xlink:href="#<%- id %>" /></svg>');
+                    return _.template('<span dir="auto" class="anbr-tooltip"><span position="bottom"></span><%- prompt %></span><svg class="svg-icon"><use xlink:href="#<%- id %>" /></svg>');
             }
         }),
 
@@ -89,6 +89,7 @@
         getTemplate: function () {
             return _.template(this.options.templ);
         },
+
         templateContext: function () {
             return {
                 parse: this.parseType
@@ -106,11 +107,11 @@
         },
 
         triggers: {
-            'mouseenter': 'mouse:enter:row',
-            'mouseleave': 'mouse:leave:row',
+        	'mouseenter': 'mouse:enter:row',
+        	'mouseleave': 'mouse:leave:row',
 
-            'touchstart': 'table:row:handler',
-            'click': 'table:row:handler',
+        	'touchstart': 'table:row:handler',
+        	'click': 'table:row:handler',
         },
 
         onRender: function () {
@@ -137,6 +138,23 @@
                 }
 
             }
+        },
+
+        modelEvents: {
+
+        	'set:current': function (m, f) {
+
+        		this.$el.addClass('current').removeClass("new-post");
+
+        		this.$el.find('td').each(function (i, e) {
+        			$(e).css({
+        				color: this.options.decoration.ContainerForegroundActive,
+        				'background-color': this.options.decoration.ContainerBackgroundActive
+        			});
+        		}.bind(this));
+
+        	}
+
         },
 
         parseType: function (value, s) {
@@ -167,7 +185,7 @@
                 case 15: // денежный
                 case 16: // bool
                 case 17: // geo coordinates
-                    output = "<span>" + value + "</span>";
+                	output = `<span>${value}</span>`;
             }
 
             return output;
@@ -182,16 +200,22 @@
         childView: rowView,
 
         childViewOptions: function () {
+
             return {
                 templ: this.options.templ,
-                cols: this.options.cols
+                cols: this.options.cols,
+                decoration: this.options.decoration
             };
         },
 
         emptyView: Mn.View.extend({
-            tagName: 'tr',
-            template: _.template('<td colspan="<%- colspan %>"><%- Resources.N %></td>'),
-            templateContext: function () {
+
+        	tagName: 'tr',
+
+        	template: _.template('<td dir="auto" colspan="<%- colspan %>"><%- Resources.N %></td>'),
+
+        	templateContext: function () {
+
                 return {
                     Resources: Resources,
                     colspan: this.options.cols
@@ -232,10 +256,22 @@
     });
 
     var headView = Mn.CollectionView.extend({
-        tagName: 'tr',
-        childView: Mn.View.extend({
+
+    	tagName: 'tr',
+
+    	childView: Mn.View.extend({
+
             tagName: 'th',
-            template: _.template('<%- displayName %>')
+            template: _.template('<%- displayName %>'),
+
+            onRender: function () {
+
+            	this.$el.attr('data-column', this.model.get('systemName'));
+            	this.$el.attr('dir', 'auto');
+            	this.$el.css('width', this.model.get('columnWidth') || 'auto');
+
+            }
+
         })
     });
 
@@ -257,23 +293,28 @@
             this.templ = '';
 
             var columns = this.model.get('ColumnCustomizations');
+
             if (columns) {
 
             	this.options.head = _.chain(columns)
-					.filter(function (e) { return e.ColumnIsVisible; })
-					.sortBy(function (e) { return e.SerialNum })
+					.filter(e=> e.ColumnIsVisible)
+					.sortBy(e=> e.SerialNum)
                     .map(function (e) {
 
-                    	this.templ += `<td data-column="${e.ColumnSystemName.toLowerCase()}"><%= parse(${e.ColumnSystemName.toLowerCase()}, propType["${e.ColumnSystemName.toLowerCase()}"]) %></td>`;
+                    	this.templ += `<td dir='auto' data-column="${e.ColumnSystemName.toLowerCase()}"><%= parse(${e.ColumnSystemName.toLowerCase()}, propType["${e.ColumnSystemName.toLowerCase()}"]) %></td>`;
 
-                    	return { displayName: e.ColumnTitle };
+                    	return {
+                    		displayName: e.ColumnTitle,
+                    		systemName: e.ColumnSystemName,
+                    		columnWidth: e.ColumnWidth || 'auto'
+                    	};
 
                     }, this).value();
 
             } else
             	_.each(this.options.head, function (o) {
 
-            		this.templ += (`<td data-column="${o.systemName}"><%= parse(${o.systemName}, propType["${o.systemName}"]) %></td>`);
+            		this.templ += (`<td dir='auto' data-column="${o.systemName}"><%= parse(${o.systemName}, propType["${o.systemName}"]) %></td>`);
 
                 }, this);
 
@@ -281,25 +322,8 @@
 
         onRender: function () {
 
-            this.$el.css({ width: "100%", "table-layout": "auto" });
+            //this.$el.css({ width: "100%", "table-layout": "auto" });
             this.$el.attr('dir', 'auto');
-
-            //if (this.model.get('ts')) {
-
-            //var items = $.prepare(this.options.feed.get('items'));
-
-            //_.each(feed.data, function (a) {
-            //    var id = _.findWhere(a.data, { systemName: "Object_ID" }).value;
-            //    if (!_.find(items, function (b) { return id === b.Object_ID; }))
-            //        this.feedItems.push(a);
-            //}, this);
-
-            //if (this.feedItems.length) {
-            //    this.$(".number-update").css("display", "inline-block").text(this.feedItems.length);
-            //    this.model.set("Items", this.model.get("Items").concat(this.feedItems));
-            //}
-
-            //} else {
 
             this.showChildView('head', new headView({ collection: new Backbone.Collection(this.options.head) }));
 
@@ -311,17 +335,23 @@
                 decoration: this.model.get('Decoration')
             }));
 
-            //}
-
         },
 
         onAttach: function () {
 
-            this.$('tbody').height(this.$el.closest('.anbr_list').height() - this.$('thead').height());
+        	this._initColResizable(!this.options.editMode);
+
+            //this.$('tbody').height(this.$el.closest('.anbr_list').height() - this.$('thead').height());
 
         },
 
-        modelEvents:{
+        modelEvents: {
+
+        	'change:ReadOnly': function (m, v) {
+
+        		this._initColResizable(v);
+
+        	},
 
             'change:width': function () {
                 this.$('tbody').height(this.$el.closest('.anbr_list').height() - this.$('thead').height());
@@ -343,20 +373,80 @@
             'mouse:enter:row': 'mouse:enter:row',
             'mouse:leave:row': 'mouse:leave:row',
             'table:row:handler': 'table:row:handler'
+        },
+
+        _initColResizable: function (v) {
+
+        	this.$el.colResizable({
+        		disable: v,
+        		liveDrag: true,
+        		onResize: this._colResize.bind(this)
+        	});
+
+        },
+
+        _colResize: function (e) {
+
+        	let $e = $(e.currentTarget);
+
+        	var columns = this.model.get('ColumnCustomizations');
+
+        	if (!columns) {
+
+        		var items = this.model.get('feed').head,
+					rid = this.model.get("requestParameters");
+
+        		columns = _.map(items, function (e, i) {
+
+        			return {
+        				QueryCustomizationUID: null,
+        				QueryID: rid,
+        				ColumnSystemName: e.systemName,
+        				ColumnTitle: e.displayName,
+        				ColumnIsVisible: e.isVisible,
+        				SerialNum: i,
+        				ColumnWidth: 'auto'
+        			};
+
+        		}, this);
+        	}
+
+        	$e.find('th').each(function (i, e) {
+
+        		let name = e.getAttribute('data-column'),
+					width = e.clientWidth;
+
+        		_.findWhere(columns, { ColumnSystemName: name }).ColumnWidth = width;
+
+        	}.bind(this));
+
+
+        	$.ajax({
+
+        		method: "POST",
+        		contentType: 'application/json; charset=utf-8',
+        		url: `/api/widget/${this.model.get("requestParameters").rid}/colscustomization`,
+        		data: JSON.stringify(columns)
+
+        	}).done(function (c) {
+
+        		this.model.save({ ColumnCustomizations: c });
+
+        	}.bind(this));
+
         }
 
     });
 
     return Mn.View.extend({
 
-    	template: _.template('<div class="filter-panel"></div><span class="number-update"></span><div class="preblu"></div><table></table>'),
+    	template: _.template('<span class="number-update"></span><div class="preblu"></div><table></table>'),
 
         ui: {            
             update: '.number-update'
         },
 
-        regions: {
-        	filter: { el: '.filter-panel', replaceElement: true },
+        regions: {        	
             toolsTable: { el: '.preblu', replaceElement: true },            
             table: { el: 'table', replaceElement: true }
         },
@@ -366,13 +456,12 @@
             // 21.09.2017 временно скрыто
             //this.showChildView('toolsTable', new toolsTableView);
 
-        	this.showChildView('filter', new filterView({ model: this.model }));
-
-            this.showChildView('table', new tableView({
-                model: this.model,
-                collection: this.collection,
-                head: _.filter(this.model.get('feed').head, function (o) { return o.isVisible; })
-            }));
+        	this.showChildView('table', new tableView({
+        		model: this.model,
+        		collection: this.collection,
+        		head: _.filter(this.model.get('feed').head, o=> o.isVisible),
+				editMode: this.options.editMode
+        	}));
 
             var c = [];
 
@@ -387,22 +476,7 @@
 
             }, this);
 
-            this.getChildView('filter').collection.add(c);
-
-            if (c.length)
-            	this.getChildView('filter').showRubrics();
-            else
-            	this.getChildView('filter').hideRubrics();
-
-        },
-
-        onAttach: function () {
-
-        	this.getChildView('table').getChildView('body').$el.on('scroll', function (e) {
-
-        		this.triggerMethod('scroll:grid');
-
-        	}.bind(this));
+            this.triggerMethod('table:add:rubrics:filter', c);
 
         },
 
@@ -445,61 +519,8 @@
 
                 //this.triggerMethod( 'check:child', this.model, v.model );
 
-            },
-
-            'filter:search': function (text) {
-
-            	this.$("tbody>tr>td[data-column='display_name'] .Mark").removeClass("Mark");
-
-            	var s = new RegExp(text, "ig");
-
-            	this.$("tbody>tr").each(function (i, e) {
-
-            		var $a = $(e).find("td[data-column='display_name']"),
-						check = $a.html(),
-						searchIndex = check.search(s);
-
-            		if (searchIndex === -1)
-            			$(e).hide();
-
-            		else {
-
-            			var p = `<i class="Mark">${check.match(s)[0]}</i>`,
-							start = check.substring(0, searchIndex),
-							end = check.substring(searchIndex + text.length),
-							out = start + p + end;
-
-            			$a.html(out);
-            			$(e).show();
-            		}
-            	});
-            },
-
-            'filter:apply': function () {
-
-            	this.getChildView('table').getChildView('body').children.each(function (v) {
-
-            		v.$el.show();
-
-            		var a = _.groupBy(v.model.get('links'), 'rel');
-
-            		var rubs = a.rubric_id;
-            		if (rubs) {
-
-            			_.each(rubs, function (r) {
-
-            				var ex = this.getChildView('filter').collection.get(r.id);
-            				if (ex.get('hide'))
-            					v.$el.hide();
-
-            			}, this);
-
-            		}
-
-            	}, this);
-
-            	this.$("tbody>tr>td[data-column='display_name'] .Mark").removeClass("Mark");
             }
+           
         }
     });
 

@@ -1,0 +1,30 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(55.5 11.5)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-55.5,11.5 -55.5,-11.5 55.5,-11.5 55.5,11.5 -55.5,11.5"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom=""  data-objectid="778002" data-text="Греф Герман Оскарович"  width="103" height="15" x="-51.5" y="-7.5" transform="translate(-51.5,-7.5)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="109" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Греф Герман Оскарович</title>
+    <rect width="103" height="15" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="103" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:White;height:15px;width:103px" title="Греф Герман Оскарович">Греф Герман Оскарович</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="103" id='778002' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="51.5" y="1"><tspan dy='10' x='51.5' fill='black'>Греф Герман Оскарович</tspan></text>    
+      </switch>
+    
+</g>
+</g>
+</svg>

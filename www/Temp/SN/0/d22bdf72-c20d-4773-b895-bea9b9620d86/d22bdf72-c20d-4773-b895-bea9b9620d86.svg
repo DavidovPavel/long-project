@@ -1,0 +1,79 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(141.525 37.29)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-141.525,35.8962 -141.525,-37.29 112.475,-37.29 112.475,35.8962 -141.525,35.8962"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom="#edge1_3"  data-objectid="785844" data-text="Набиуллина: оценки МВФ и ВБ экономики России схожи с ЦБ"  width="246" height="15" x="-137.525" y="16.8962" transform="translate(-137.525,16.8962)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="252" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Набиуллина: оценки МВФ и ВБ экономики России схожи с ЦБ</title>
+    <rect width="246" height="15" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="246" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:White;height:15px;width:246px" title="Набиуллина: оценки МВФ и ВБ экономики России схожи с ЦБ">Набиуллина: оценки МВФ и ВБ экономики России схожи с ЦБ</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="246" id='785844' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="123" y="1"><tspan dy='10' x='123' fill='black'>Набиуллина: оценки МВФ и ВБ экономики России схожи с ЦБ</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3 -->
+
+<g id="el3" class="node" data-edgesTo="#edge1_3" data-edgesFrom="#edge3_2"  data-objectid="0" data-text="Person"  width="35" height="15" x="-14.855" y="-6.10614" transform="translate(-14.855,-6.10614)">
+      <clipPath id="clip3">
+        <rect x="-1" y="-1" width="41" height="17"/>
+      </clipPath>
+    
+    <title>Person</title>
+    <rect width="35" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="35" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:35px" title="Person">Person</span>
+        </foreignObject>
+        <text clip-path="url(#clip3)" width="35" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="17.5" y="1"><tspan dy='10' x='17.5' fill='black'>Person</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge1_3" class="edge"><title>1&#45;&#45;3</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M-8.90282,16.8643C-7.02502,14.3487 -4.93165,11.5442 -3.04846,9.02134"/>
+</g>
+<!-- 2 -->
+
+<g id="el2" class="node" data-edgesTo="#edge3_2" data-edgesFrom=""  data-objectid="777985" data-text="Набиуллина Эльвира Сахипзадовна"  width="149" height="15" x="-62.6201" y="-33.29" transform="translate(-62.6201,-33.29)">
+      <clipPath id="clip2">
+        <rect x="-1" y="-1" width="155" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Набиуллина Эльвира Сахипзадовна</title>
+    <rect width="149" height="15" rx="5" ry="5" fill='url(#grad2)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="149" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:149px" title="Набиуллина Эльвира Сахипзадовна">Набиуллина Эльвира Сахипзадовна</span>
+        </foreignObject>
+        <text clip-path="url(#clip2)" width="149" id='777985' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="74.5" y="1"><tspan dy='10' x='74.5' fill='black'>Набиуллина Эльвира Сахипзадовна</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3&#45;&#45;2 -->
+<g id="edge3_2" class="edge"><title>3&#45;&#45;2</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M5.26666,-6.32324C6.50379,-9.96489 7.97761,-14.3033 9.21961,-17.9592"/>
+</g>
+</g>
+</svg>

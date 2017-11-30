@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Net.Http;
-using System.Web;
 using System.Web.Http;
 using ANBR.SemanticArchive.SDK;
 using Newtonsoft.Json.Linq;
@@ -108,7 +107,7 @@ namespace www.Controllers.api
 
             if (saObj.MetaType.IsSource)
             {
-                var ci = GetContentV2(saDB, id, kw, highlightPhrase, true, fragments, null, false, TextMode.Short, TranslationMode.Orignal);
+                var ci = HelperContent.GetContentV2(saDB, id, kw, highlightPhrase, true, fragments, null, false, HelperContent.TextMode.Short, HelperContent.TranslationMode.Orignal);
                 sourceCollection.items.Add(ci);
 
                 return sourceCollection.AddContextData(saDB);
@@ -129,7 +128,7 @@ namespace www.Controllers.api
         public ContentItem ContentV2ToWholeText(int id, string highlightPhrase = null)
         {
             var saDB = WebSaUtilities.Database;
-            return GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, TextMode.Whole, TranslationMode.Orignal);
+            return HelperContent.GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, HelperContent.TextMode.Whole, HelperContent.TranslationMode.Orignal);
         }
 
         /// <summary>
@@ -142,11 +141,11 @@ namespace www.Controllers.api
         [HttpGet]
         public ContentItem ContentV2ToTranslate(int id, string textMode, string highlightPhrase = null)
         {
-            TextMode tMode;
-            if (!Enum.TryParse(textMode, true, out tMode)) tMode = TextMode.Short;
+            HelperContent.TextMode tMode;
+            if (!Enum.TryParse(textMode, true, out tMode)) tMode = HelperContent.TextMode.Short;
 
             var saDB = WebSaUtilities.Database;
-            return GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, tMode, TranslationMode.Translation);
+            return HelperContent.GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, tMode, HelperContent.TranslationMode.Translation);
         }
 
         /// <summary>
@@ -159,139 +158,14 @@ namespace www.Controllers.api
         [HttpGet]
         public ContentItem ContentV2ToOriginal(int id, string textMode, string highlightPhrase = null)
         {
-            TextMode tMode;
-            if (!Enum.TryParse(textMode, true, out tMode)) tMode = TextMode.Short;
+            HelperContent.TextMode tMode;
+            if (!Enum.TryParse(textMode, true, out tMode)) tMode = HelperContent.TextMode.Short;
 
             var saDB = WebSaUtilities.Database;
-            return GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, tMode, TranslationMode.Orignal);
+            return HelperContent.GetContentV2(saDB, id, null, highlightPhrase, true, null, null, false, tMode, HelperContent.TranslationMode.Orignal);
         }
 
 
-        /// <summary>
-        /// Возвращает подготовленный элемент контента по экземпляру типа Источник
-        /// </summary>
-        /// <param name="saDB">БД СА</param>
-        /// <param name="id">Идентификатор источника</param>
-        /// <param name="kwArr">Масив ключевых слов, которые требуют подсветки</param>
-        /// <param name="highlightPhrase">Фраза, которая требует подсветки</param>
-        /// <param name="htmlEncodingNeeded">Необходимо кодировать исходные тексты</param>
-        /// <param name="highlightFragments">Фрагменты требующие подсветки</param>
-        /// <param name="contentPropName">Системное имя свойства, откуда берем содержимое</param>
-        /// <param name="extractOnlyMedia">Признак того, что в содержимом останутся только img, video, iframe(youtube)</param>
-        /// <param name="textMode">Режим отображения весь текст/краткий вариант</param>
-        /// <param name="translationMode"></param>
-        /// <returns>Подготовленный элемент контента по экземпляру типа Источник</returns>
-        [NonAction]
-        internal static ContentItem GetContentV2(IDataBase saDB, int id, string[] kwArr, string highlightPhrase, bool htmlEncodingNeeded, Tuple<Guid, string>[] highlightFragments, string contentPropName, bool extractOnlyMedia, TextMode textMode, TranslationMode translationMode)
-        {
-            var ci = new ContentItem();
-
-            string userDescriptor = WebSaUtilities.GetCurrentUserID();
-            string resource = "Rule_TextExtracted";
-            string kind = "GET";
-            bool hasViolated = StatisticsBL.OperationRulesViolated(userDescriptor, kind, resource);
-
-            if (hasViolated)
-            {
-                ci.LinkAdd("sys", "Mode", "9");
-                return ci;
-            }
-
-            string url = Scope.GetCurrentUrl();
-            StatisticsBL.OperationTransaction(userDescriptor, kind, resource, url);
-
-            int textLength;
-            bool hasFile;
-            ci = Decorator.GetSourceSimpleEx(saDB, id, kwArr, highlightPhrase, htmlEncodingNeeded, highlightFragments, contentPropName, extractOnlyMedia, textMode, translationMode, out textLength, out hasFile);
-
-            if (textLength > 0)
-            {
-                string param = "?textMode=" + HttpUtility.UrlEncode(textMode.ToString());
-                if (!String.IsNullOrWhiteSpace(highlightPhrase))
-                    param = param + "&highlightPhrase=" + HttpUtility.UrlEncode(highlightPhrase);
-
-                LinkExt link;
-                if (translationMode == TranslationMode.Orignal)
-                    link = new LinkExt()
-                    {
-                        rel = "tools",
-                        id = "translate",
-                        href = String.Format("/api/Details/ContentV2ToTranslate/{0}{1}", id, param),
-                        verb = "GET",
-                        prompt = Root.GetResource("toolsTranslate"),
-                        render = "replaceItem"
-                    };
-                else
-                    link = new LinkExt()
-                    {
-                        rel = "tools",
-                        id = "toOriginal",
-                        href = String.Format("/api/Details/ContentV2ToOriginal/{0}{1}", id, param),
-                        verb = "GET",
-                        prompt = Root.GetResource("toolsToOriginalText"),
-                        render = "replaceItem"
-                    };
-
-                ci.links.Add(link);
-            }
-
-            if (hasFile)
-            {
-                var link = new LinkExt()
-                {
-                    rel = "tools",
-                    id = "showOriginalDoc",
-                    href = "",
-                    prompt = Root.GetResource("toolsShowOriginalDoc"),
-                    render = "showOriginalDoc"
-                };
-                ci.links.Add(link);
-            }
-
-            if (htmlEncodingNeeded)
-            {
-#warning КраткийВид-ПолныйВид надо понять что с этим делать (он работал при поиске в ГИ)
-                /*
-                bool isLargeText = textLength > _FULLTEXTLENGTH;
-                if (textMode == TextMode.Whole && isLargeText)
-                {
-                    var link = new LinkExt()
-                    {
-                        rel = "tools",
-                        id = "shortText",
-                        href =
-                            String.Format("/api/Details/ContentV2/{0}{1}", id,
-                            (String.IsNullOrWhiteSpace(highlightPhrase)
-                                ? ""
-                                : "?highlightPhrase=" + HttpUtility.UrlEncode(highlightPhrase))),
-                        verb = "GET",
-                        prompt = Root.GetResource("toolsToShortView"),
-                        render = "replaceItem"
-                    };
-                    ci.links.Add(link);
-                }
-                if (textMode == TextMode.Short && isLargeText)
-                {
-                    var link = new LinkExt()
-                    {
-                        rel = "tools",
-                        id = "shortText",
-                        href =
-                            String.Format("/api/Details/ContentV2ToWholeText/{0}{1}", id,
-                            (String.IsNullOrWhiteSpace(highlightPhrase)
-                                ? ""
-                                : "?highlightPhrase=" + HttpUtility.UrlEncode(highlightPhrase))),
-                        verb = "GET",
-                        prompt = Root.GetResource("toolsToFullView"),
-                        render = "replaceItem"
-                    };
-                    ci.links.Add(link);
-                }
-                */
-            }
-
-            return ci;
-        }
 
 
         /// <summary>

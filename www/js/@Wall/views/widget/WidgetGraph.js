@@ -19,7 +19,14 @@
 
                 var p = _.findWhere(this.model.get('Characteristics'), { WidgetParamName: "WidgetGraph.GhaphSubSettings" });
 
-                if (p) p = p.WidgetParamValue;
+                if (p) {
+                	p = p.WidgetParamValue;
+
+                	if (p.enableRTL)
+                		this.$el.closest('.anbr_list').removeAttr('dir');
+                	else
+                		this.$el.closest('.anbr_list').attr('dir', 'auto');
+                }
 
                 if (name.length && name[1] === 'd3')
                     this.showChildView('graph', new d3Histogram({ items: this.model.get('feed'), model: this.model, chart: name[0] }));

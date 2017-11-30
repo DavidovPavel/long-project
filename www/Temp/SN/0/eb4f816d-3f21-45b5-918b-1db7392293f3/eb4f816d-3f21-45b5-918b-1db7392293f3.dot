@@ -1,0 +1,15 @@
+graph graph0 {
+
+    fontsize=8; 
+    fontname="Arial";
+    splines=true; 
+    sep=1;
+    overlap=false;
+
+{ 
+    node [shape=rect,fontname="Arial",fontsize=8,margin=0,penwidth=0.5,fillcolor=none];
+
+    1 [fixedsize=true,id="el1",width=2.065,height=0.207];
+}
+edge [penwidth=0.2];
+}

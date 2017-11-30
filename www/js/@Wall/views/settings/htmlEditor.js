@@ -1,4 +1,9 @@
-﻿define('settings.htmlEditor', ['requestView', 'g/ejRTEView'], function (requestsList, ejRTEView) {
+﻿define('settings.htmlEditor',
+	[
+		'requestView',
+		'g/ejRTEView'
+	],
+function (requestsList, ejRTEView) {
 
     return Mn.View.extend({
 
@@ -11,8 +16,16 @@
 
         onAttach: function () {
 
-            if (!this.getRegion('editor').hasView())
-                this.showChildView('editor', new ejRTEView({ value: this.model.get('contentHtml') }));
+        	if (!this.getRegion('editor').hasView()) {
+
+        		let p = _.findWhere(this.model.get('Characteristics'), { WidgetParamName: "WidgetRunDirection" }) || { WidgetParamValue: { Right: false } };
+
+        		this.showChildView('editor', new ejRTEView({
+        			value: this.model.get('contentHtml'),
+        			enableRTL: p.WidgetParamValue.Right
+        		}));
+
+        	}
 
             this.getRegion('reqArea').show(new requestsList({ model: new Backbone.Model({ typeName: 'All', widgetID: this.model.id }) }));
             this.getChildView('reqArea').ui.description.hide();

@@ -1,5 +1,13 @@
 ﻿define('MasterCreateView',
-    ['i18n!nls/resources.min', 'settings.subscribeList', 'requestView', 'settings.visualisation.chart.choice', 'g/ejRTEView', 'settings.decorationWidget', 'syncfusion'],
+    [
+		'i18n!nls/resources.min',
+		'settings.subscribeList',
+		'requestView',
+		'settings.visualisation.chart.choice',
+		'g/ejRTEView',
+		'settings.decorationWidget',
+		'syncfusion'
+    ],
 
 function (Resources, subscribeList, Requests, visualView, HtmlEditor, decorationView) {
 

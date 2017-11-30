@@ -249,7 +249,6 @@ const app_build = (c) => {
 
 export const production = gulp.series(clean_all, gulp.parallel(app_vendor, app_build), dossier);
 
-
 gulp.task('app::dashboard', function(c) { dev('wall'); c(); });
 gulp.task('app::inquiry', function(c) { dev('inquiry'); c(); });
 gulp.task('app::search-sources', function(c) {dev('seasources'); c();});
@@ -259,6 +258,7 @@ gulp.task('app::login', function(c) { dev('login'); c();});
 
 gulp.task('watch:inquiry', function(c) { watchFiles('inquiry'); c();});
 gulp.task('watch:dashboard', function(c) { watchFiles('wall'); c();});
+gulp.task('watch:search', function(c) { watchFiles('seasources'); c();});
 
 //gulp.task('less:dev', function () {
 

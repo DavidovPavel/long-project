@@ -1,0 +1,177 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(169.307 192.175)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-169.307,222.853 -169.307,-192.175 305.294,-192.175 305.294,222.853 -169.307,222.853"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom="#edge1_7,#edge1_5,#edge1_3"  data-objectid="778652" data-text="ЦБ продлил антикризисные меры для банков"  width="183" height="15" x="-91.2112" y="-7.14145" transform="translate(-91.2112,-7.14145)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="189" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>ЦБ продлил антикризисные меры для банков</title>
+    <rect width="183" height="15" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="183" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:White;height:15px;width:183px" title="ЦБ продлил антикризисные меры для банков">ЦБ продлил антикризисные меры для банков</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="183" id='778652' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="91.5" y="1"><tspan dy='10' x='91.5' fill='black'>ЦБ продлил антикризисные меры для банков</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3 -->
+
+<g id="el3" class="node" data-edgesTo="#edge1_3" data-edgesFrom="#edge3_2"  data-objectid="0" data-text="Organization"  width="55" height="15" x="-71.7999" y="102.161" transform="translate(-71.7999,102.161)">
+      <clipPath id="clip3">
+        <rect x="-1" y="-1" width="61" height="17"/>
+      </clipPath>
+    
+    <title>Organization</title>
+    <rect width="55" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="55" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:55px" title="Organization">Organization</span>
+        </foreignObject>
+        <text clip-path="url(#clip3)" width="55" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="27.5" y="1"><tspan dy='10' x='27.5' fill='black'>Organization</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge1_3" class="edge"><title>1&#45;&#45;3</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M-2.77592,7.87135C-10.9216,27.8392 -33.0436,82.0678 -41.2137,102.096"/>
+</g>
+<!-- 5 -->
+
+<g id="el5" class="node" data-edgesTo="#edge1_5" data-edgesFrom="#edge5_4"  data-objectid="0" data-text="Person"  width="35.0005" height="15.00004" x="99.8005" y="-22.7453" transform="translate(99.8005,-22.7453)">
+      <clipPath id="clip5">
+        <rect x="-1" y="-1" width="41.0005" height="17.00004"/>
+      </clipPath>
+    
+    <title>Person</title>
+    <rect width="35.0005" height="15.00004" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="35.0005" height="15.00004" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15.00004px;width:35.0005px" title="Person">Person</span>
+        </foreignObject>
+        <text clip-path="url(#clip5)" width="35.0005" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="17.50025" y="1"><tspan dy='10' x='17.50025' fill='black'>Person</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;5 -->
+<g id="edge1_5" class="edge"><title>1&#45;&#45;5</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M56.7382,-7.16912C72.2837,-9.24215 88.023,-11.341 99.5588,-12.8793"/>
+</g>
+<!-- 7 -->
+
+<g id="el7" class="node" data-edgesTo="#edge1_7" data-edgesFrom="#edge7_6"  data-objectid="0" data-text="Money"  width="33" height="15.0001" x="-88.4218" y="-100.552" transform="translate(-88.4218,-100.552)">
+      <clipPath id="clip7">
+        <rect x="-1" y="-1" width="39" height="17.0001"/>
+      </clipPath>
+    
+    <title>Money</title>
+    <rect width="33" height="15.0001" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="33" height="15.0001" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15.0001px;width:33px" title="Money">Money</span>
+        </foreignObject>
+        <text clip-path="url(#clip7)" width="33" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="16.5" y="1"><tspan dy='10' x='16.5' fill='black'>Money</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;7 -->
+<g id="edge1_7" class="edge"><title>1&#45;&#45;7</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M-5.62045,-7.28562C-19.1613,-24.8018 -52.3116,-67.6844 -65.9308,-85.3021"/>
+</g>
+<!-- 2 -->
+
+<g id="el2" class="node" data-edgesTo="#edge3_2" data-edgesFrom=""  data-objectid="777984" data-text="Центральный банк России"  width="110.9995" height="15" x="-143.855" y="203.853" transform="translate(-143.855,203.853)">
+      <clipPath id="clip2">
+        <rect x="-1" y="-1" width="116.9995" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F5ECFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DEBDFF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Центральный банк России</title>
+    <rect width="110.9995" height="15" rx="5" ry="5" fill='url(#grad2)' stroke='#C898F8' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="110.9995" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:110.9995px" title="Центральный банк России">Центральный банк России</span>
+        </foreignObject>
+        <text clip-path="url(#clip2)" width="110.9995" id='777984' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="55.49975" y="1"><tspan dy='10' x='55.49975' fill='black'>Центральный банк России</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3&#45;&#45;2 -->
+<g id="edge3_2" class="edge"><title>3&#45;&#45;2</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M-47.6113,117.304C-55.7757,136.15 -76.801,184.682 -85.0057,203.62"/>
+</g>
+<!-- 4 -->
+
+<g id="el4" class="node" data-edgesTo="#edge5_4" data-edgesFrom=""  data-objectid="777985" data-text="Набиуллина Эльвира Сахипзадовна"  width="149" height="15" x="152.294" y="-39.9001" transform="translate(152.294,-39.9001)">
+      <clipPath id="clip4">
+        <rect x="-1" y="-1" width="155" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFD9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFFFA6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Набиуллина Эльвира Сахипзадовна</title>
+    <rect width="149" height="15" rx="5" ry="5" fill='url(#grad4)' stroke='#F9F981' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="149" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:149px" title="Набиуллина Эльвира Сахипзадовна">Набиуллина Эльвира Сахипзадовна</span>
+        </foreignObject>
+        <text clip-path="url(#clip4)" width="149" id='777985' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="74.5" y="1"><tspan dy='10' x='74.5' fill='black'>Набиуллина Эльвира Сахипзадовна</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;4 -->
+<g id="edge5_4" class="edge"><title>5&#45;&#45;4</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M134.893,-18.0015C146.741,-19.8578 162.986,-22.403 178.525,-24.8375"/>
+</g>
+<!-- 6 -->
+
+<g id="el6" class="node" data-edgesTo="#edge7_6" data-edgesFrom=""  data-objectid="777998" data-text="Курс рубля"  width="51" height="15" x="-165.307" y="-188.175" transform="translate(-165.307,-188.175)">
+      <clipPath id="clip6">
+        <rect x="-1" y="-1" width="57" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFEEDD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE8D0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Курс рубля</title>
+    <rect width="51" height="15" rx="5" ry="5" fill='url(#grad6)' stroke='#663300' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="51" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:51px" title="Курс рубля">Курс рубля</span>
+        </foreignObject>
+        <text clip-path="url(#clip6)" width="51" id='777998' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="25.5" y="1"><tspan dy='10' x='25.5' fill='black'>Курс рубля</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 7&#45;&#45;6 -->
+<g id="edge7_6" class="edge"><title>7&#45;&#45;6</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M-77.9461,-100.828C-90.8608,-117.498 -121.077,-156.5 -133.893,-173.041"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,40 @@
+﻿
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="radio" class="g-form--radio" id="<%- prefix %>_table" name="Visualization" />
+                <label for="<%- prefix %>_table"><%- Resources.feedVisualizationTypeTable %></label>
+                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span></span>
+                </span>
+            </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="radio" class="g-form--radio" id="<%- prefix %>_card" name="Visualization" />
+                <label for="<%- prefix %>_card"><%- Resources.feedVisualizationTypeCardV %></label>
+                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span></span>
+                </span>
+            </span>
+        </div>
+        <div class="grid--1-2">
+            <span class="g-form--input">
+                <input type="radio" class="g-form--radio" id="<%- prefix %>_card2" name="Visualization" />
+                <label for="<%- prefix %>_card2"><%- Resources.feedVisualizationTypeCardH %></label>
+                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
+                <span class="g-tip bottom" style="display: none;">
+                    <kbd></kbd>
+                    <span></span>
+                </span>
+            </span>
+        </div>
+    </div>
+
+    <div id="content"></div>

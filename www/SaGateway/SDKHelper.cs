@@ -46,6 +46,8 @@ namespace www.SaGateway
 {
     public static class SDKHelper
     {
+#warning Необходимо перенести логику взаимодействия с СА в единственный общий proxy класс ANBR.SDKHelper.SDKExt
+
         public static Guid SAAdminBridgeKey => new Guid("026BA06C-68B2-4648-B74F-7390A543A7EC");
 
         /// <summary>
@@ -438,18 +440,6 @@ namespace www.SaGateway
             return WebSaUtilities.Database._PropValue(prop);
         }
 
-        internal static string _Rubrics(this ISaObject obj)
-        {
-            var sb = new StringBuilder();
-            for (int j = 0; j < obj.Rubrics.Count; j++)
-            {
-                sb.Append(obj.Rubrics[j].DisplayName);
-                if (j < obj.Rubrics.Count - 1) sb.Append(", ");
-            }
-
-            return sb.ToString();
-        }
-
         public static Source GetSourceByID(int id)
         {
             ISaObject obj = WebSaUtilities.Database.ObjectModel.GetObject(id);
@@ -477,7 +467,7 @@ namespace www.SaGateway
 
             int i = 0;
             foreach (IDataElement item in listValues)
-                resList[i++] = new AutocompleteItem() { id = item.Id, value = item.DisplayName, label = item.DisplayName };
+                resList[i++] = new AutocompleteItem { id = item.Id, value = item.DisplayName, label = item.DisplayName };
 
             return resList;
         }
@@ -491,7 +481,7 @@ namespace www.SaGateway
                 try
                 {
                     if (WebSaUtilities.Database.MetaModel.ValidateRelation(leftTypeID, rigthTypeID, metaRole.ID))
-                        list.Add(new ListElement() { id = metaRole.ID, title = metaRole.DisplayName });
+                        list.Add(new ListElement { id = metaRole.ID, title = metaRole.DisplayName });
                 }
                 catch
                 {
@@ -615,12 +605,12 @@ namespace www.SaGateway
 
             TypesCategory[] typesCategory = WebSaUtilities.MBF.GetAllCategoriesLinkedBy(sysNamesParents, profileID,
                 WebSaUtilities.GetCurrentContextData());
-            return typesCategory.Select(item => new TaskTypeByCategoriesInfo()
+            return typesCategory.Select(item => new TaskTypeByCategoriesInfo
             {
                 id = item.Id,
                 parentid = item.ParentId,
                 title = item.Name,
-                TaskTypes = item.Types.Select(tt => new TaskTypeInfo()
+                TaskTypes = item.Types.Select(tt => new TaskTypeInfo
                 {
                     id = tt.TypeUid,
                     title = tt.Name,
@@ -628,7 +618,7 @@ namespace www.SaGateway
                     price = tt.Goods != null ? tt.Goods.Sum(g => g.Price ?? 0) : (decimal?)null,
                     goods =
                         tt.Goods != null
-                            ? tt.Goods.Select(g => new GoodsInfo() { id = g.ID, title = g.Title, price = g.Price })
+                            ? tt.Goods.Select(g => new GoodsInfo { id = g.ID, title = g.Title, price = g.Price })
                                 .ToArray()
                             : null
                 }).ToArray()
@@ -638,12 +628,12 @@ namespace www.SaGateway
         public static List<TaskTypeByCategoriesInfo> Search_GetAllRobots()
         {
             TypesCategory[] typesCategory = WebSaUtilities.MBF.GetAllCategories(WebSaUtilities.GetCurrentContextData());
-            return typesCategory.Select(item => new TaskTypeByCategoriesInfo()
+            return typesCategory.Select(item => new TaskTypeByCategoriesInfo
             {
                 id = item.Id,
                 parentid = item.ParentId,
                 title = item.Name,
-                TaskTypes = item.Types.Select(tt => new TaskTypeInfo()
+                TaskTypes = item.Types.Select(tt => new TaskTypeInfo
                 {
                     id = tt.TypeUid,
                     title = tt.Name,
@@ -651,7 +641,7 @@ namespace www.SaGateway
                     price = tt.Goods != null ? tt.Goods.Sum(g => g.Price ?? 0) : (decimal?)null,
                     goods =
                         tt.Goods != null
-                            ? tt.Goods.Select(g => new GoodsInfo() { id = g.ID, title = g.Title, price = g.Price })
+                            ? tt.Goods.Select(g => new GoodsInfo { id = g.ID, title = g.Title, price = g.Price })
                                 .ToArray()
                             : null
                 }).ToArray()
@@ -832,7 +822,7 @@ namespace www.SaGateway
                 price = item.Goods != null ? item.Goods.Sum(g => g.Price ?? 0) : (decimal?)null,
                 goods =
                     item.Goods != null
-                        ? item.Goods.Select(g => new GoodsInfo() { id = g.ID, title = g.Title, price = g.Price })
+                        ? item.Goods.Select(g => new GoodsInfo { id = g.ID, title = g.Title, price = g.Price })
                             .ToArray()
                         : null
             }).Distinct().ToList();
@@ -1921,7 +1911,7 @@ order by
                 dt.AsEnumerable()
                     .Select(
                         item =>
-                            new SARelationData()
+                            new SARelationData
                             {
                                 Relation_ID = item.Field<int>("Relation_ID"),
                                 Object_ID = item.Field<int>("Object_ID")
@@ -2578,7 +2568,7 @@ SET
     #0#
 where [Object_ID] = @objectID
 ";
-            var transliteration = new Transliteration() { ReplacemetSpaceChar = "_" };
+            var transliteration = new Transliteration { ReplacemetSpaceChar = "_" };
 
             StringBuilder sb = new StringBuilder();
             if (vals.Count > 0)
@@ -2603,7 +2593,7 @@ where [Object_ID] = @objectID
             paramObjID.Value = objectId;
             cmd.Parameters.Add(paramObjID);
 
-            saDB.QueryService.ExecuteNativeSQLQueryAsIs(new SQLQuery()
+            saDB.QueryService.ExecuteNativeSQLQueryAsIs(new SQLQuery
             {
                 Text = cmd.CommandAsSql()
             });

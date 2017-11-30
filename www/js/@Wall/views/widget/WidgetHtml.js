@@ -1,4 +1,4 @@
-﻿define('@widget.WidgetHtml', ['app'], function (App) {
+﻿define('@widget.WidgetHtml', [], function () {
 
     return Mn.View.extend({
 
@@ -26,7 +26,7 @@
                     _.each(e.attributes, function (a) {
 
                         if (!_.isObject(a))
-                            output += '<td>' + (a ? a : '') + '</a>';
+                        	output += `<td dir="auto">${a ? a : ''}</td>`;
 
                     }, this);
 

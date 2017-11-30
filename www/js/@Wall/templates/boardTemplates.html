@@ -33,7 +33,7 @@
 
     <figure>
         <h1><%- Resources.myDashboard %></h1>
-        <div class="list"></div>
+        <div class="list-scroll"><div class="list"></div></div>
     </figure>
 
 </script>
@@ -41,13 +41,13 @@
 <script type="x-template/underscore" id="first-item-template">
     <i class="remove"><svg><use xlink:href='#icon-trash' /></svg></i>
     <% if(!Screen){ %>
-    <svg width='208' height='158'><use xlink:href='#plug4dashboard' /></svg>
+    <svg width='209' height='160'><use xlink:href='#plug4dashboard' /></svg>
     <% } else if(Screen.indexOf('data:image')!==-1) {%>
     <img src='<%- Screen %>' alt="" />
     <% } else { %>
-    <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=220&height=160' alt="" />
+    <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=210&height=160' alt="" />
     <% } %>
-    <span><%= title %></span>
+    <span dir="auto"><%= title %></span>
 </script>
 
 <script type="x-template/underscore" id="slider-template">

@@ -1,20 +1,20 @@
 ﻿<script type="x-template/underscore" id="card-vertical-view-template">
-    <div class="card-image">
+    <div class="card-image" dir="auto">
         <%= image %>
         <% if(rubrics){ %>
-        <div class="card-rubric">
-            <p><%- rubrics %></p>
+        <div class="card-rubric" dir="auto">
+            <p dir="auto"><%- rubrics %></p>
         </div>
         <% } %>
-        <div class="card-date">
-            <p><%- pdate %></p>
+        <div class="card-date" dir="auto">
+            <p dir="auto"><%- pdate %></p>
         </div>
     </div>
-    <div class="card-content">
-        <h3><%- display_name %></h3>
-        <p><%= annotation %></p>
+    <div class="card-content" dir="auto">
+        <h3 dir="auto"><%- display_name %></h3>
+        <p dir="auto"><%= annotation %></p>
         <% if(url) { %>
-        <div class="card-link">
+        <div class="card-link" dir="auto">
             <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>    
             <a href="<%= url %>" target="_blank"><%- massmedia %></a>
         </div>
@@ -26,19 +26,19 @@
     <div class="card-image">
         <%= image %>
     </div>
-    <div class="card-content">
+    <div class="card-content" dir="auto">
         <% if(rubrics){ %>
         <div class="card-rubric">
-            <p><%- rubrics %></p>
+            <p dir="auto"><%- rubrics %></p>
         </div>
         <% } %>
         <div class="card-date">
-            <p><%- pdate %></p>
+            <p dir="auto"><%- pdate %></p>
         </div>
-        <h3><%- display_name %></h3>
-        <p><%= annotation %></p>
+        <h3 dir="auto"><%- display_name %></h3>
+        <p dir="auto"><%= annotation %></p>
         <% if(url) { %>
-        <div class="card-link">
+        <div class="card-link" dir="auto">
             <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>
             <a href="<%= url %>" target="_blank"><%- massmedia %></a>
         </div>

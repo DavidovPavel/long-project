@@ -37,7 +37,8 @@
                 </div>
                 <div class="grid--1-1">
                     <span class="g-form--input">
-                        <input type="text" value="<%- address__ru_RU %>" name="address__ru_RU" id="address" class="g-form--input" placeholder="<%- Resources.address %>" />
+					<!-- address__ru_RU don't use -->
+                        <input type="text" value="<%- address_INTERN %>" name="address_INTERN" id="address" class="g-form--input" placeholder="<%- Resources.address %>" />
                         <label for="address"><%- Resources.address %></label>
                         <i class="clear rtl-1"></i>
                     </span>

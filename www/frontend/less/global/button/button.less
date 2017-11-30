@@ -1,0 +1,20 @@
+﻿button {
+    border: 0;
+    border-radius: 0;
+    color: #ffffff;
+    height: 36px;
+    min-width: 126px;
+
+    &:first-child {margin-right: 5px;}
+    //button Назад
+    &#back {
+        background: #888 url(/images/a-f-b-l.png) no-repeat 0;
+        padding-left: 7px;
+    }
+    //button Готово
+    &#go {
+        background: #5b8cd6 url(/images/a-f-b-r.png) no-repeat 100%;
+        padding-right: 7px;
+        :disabled {background-color: #1e88e5;}
+    }
+}

@@ -2,29 +2,32 @@
 
 /*DATA-ICON*/
 [data-icon] {
-    position:relative;
-    text-align:left;
-    padding-left:25px!important;
-    min-height:1em;
+    position: relative;
+    text-align: left;
+    padding-left: 35px !important;
+    min-height: 1em;
+
     &:before {
-        content:'';
-        position:absolute;
-        top:~"calc(50% - 8px)";
-        left:4px;
-        width:16px;
-        height:16px;
-        background-color:transparent;
-        background-image:url('/Content/images/data-icon-all.svg');
-        background-repeat:no-repeat;
-        background-size:544px 544px;
-        filter:grayscale(100%) brightness(0.5);
-        background-position:-100% -100%;
-        cursor:pointer;
+        content: '';
+        position: absolute;
+        top: ~"calc(50% - 8px)";
+        //left:4px;
+        left: 12px;
+        width: 16px;
+        height: 16px;
+        background-color: transparent;
+        background-image: url('/Content/images/data-icon-all.svg');
+        background-repeat: no-repeat;
+        background-size: 544px 544px;
+        filter: grayscale(100%) brightness(0.5);
+        background-position: -100% -100%;
+        cursor: pointer;
         transition: filter ease-in-out 150ms;
     }
+
     &:hover {
         &:before {
-            filter:grayscale(100%) brightness(-1);
+            filter: grayscale(100%) brightness(-1);
         }
     }
 }
@@ -799,7 +802,7 @@ i[data-icon] {
 
 /* Preloader(loader) for widgets */
 .loader { width:16px;height:16px;display:inline-block;
-    &.Preloader { position: absolute;top: 10px;right: 30px;}
+    &.Preloader { position: absolute;top: 10px;right: 60px;}
 }
 @keyframes loader { 0% { transform:rotate(-360deg) } }
 .loader svg {width:100%;height:100%;animation: loader .7s linear infinite;fill:#575757; }

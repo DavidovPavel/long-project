@@ -17,7 +17,10 @@
                 return {
                     text: a.text,
                     weight: parseInt(a.y),
-                    html: { 'data-oid': this.model.id + '_' + a.elId },
+                    html: {
+                        'data-oid': this.model.id + '_' + a.elId,
+                        'dir': 'auto'
+                    },
                     handlers: {
 
                         click: function () {

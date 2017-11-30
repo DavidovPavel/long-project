@@ -1,6 +1,6 @@
 ﻿define('settings.visualization.chart',
 [
-    'i18n!nls/resources.min',
+    'i18n!nls/resources',
     'global.view.dropDown',
     'global.charts.settingsmodel',
     'global.behaviors.input',
@@ -8,7 +8,8 @@
     'settings.visualisation.chart.choice',
     'radio.characteristic',
     'RU'
-], function (Resources, dropDown, subSettings, inputBehavior, colorRow, visualView) {
+],
+function (Resources, dropDown, subSettings, inputBehavior, colorRow, visualView) {
 
     var items = [
                 { id: 1, name: Resources.gn1, title: "column" },

@@ -43,7 +43,7 @@ namespace www.Models.Ex.Feed
 
         public ContentItem AddProperty(string systemName, string displayName, object value,
             ANBR.Common.Contarcts.PropertyType propType, int? dicID, bool? isMultival, bool isVisible, bool isCalc,
-            string prompt = "", bool htmlEncoded = false)
+            string prompt = "", bool htmlEncoded = true)
         {
             string valStr = GetStringRepresentation(value, htmlEncoded);
 
@@ -101,9 +101,9 @@ namespace www.Models.Ex.Feed
         }
 
 
-        public ContentItem AddProperty(IMetaProperty mprop, object value, string prompt = "")
+        public ContentItem AddProperty(IMetaProperty mprop, object value, bool htmlEncoded = true, string prompt = "")
         {
-            string valStr = GetStringRepresentation(value);
+            string valStr = GetStringRepresentation(value, htmlEncoded);
 
             LastAddedProperty = new ContentProperty
             {
@@ -181,7 +181,7 @@ namespace www.Models.Ex.Feed
             return AddProperty(systemName, displayName, value, propType, null, null, isVisible, isCalc, prompt, htmlEncoded);
         }
 
-        private string GetStringRepresentation(object value, bool htmlEncoded = false)
+        private string GetStringRepresentation(object value, bool htmlEncoded = true)
         {
             if (value is DateTime)
                 return ((DateTime)value).ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ss.fffK");

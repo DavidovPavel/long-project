@@ -1,4 +1,14 @@
-﻿define('mainView', ['i18n!nls/resources.min', '@FirstView', '@SliderView', '@DashboardsView', 'leftPanel', 'topPanel', 'global.radio.sideBar'],
+﻿define('mainView',
+	[
+		'i18n!nls/resources.min',
+		'@FirstView',
+		'@SliderView',
+		'@DashboardsView',
+		'leftPanel',
+		'topPanel',
+		'radio.matrixChain',
+		'global.radio.sideBar'
+	],
 
     function (Resources, firstView, sliderView, dashboardsView, leftPanel, topPanel) {
 

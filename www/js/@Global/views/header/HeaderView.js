@@ -109,17 +109,22 @@ define('MessageView', ['app', 'i18n!nls/resources.min'], function (App, Resource
         },
 
         confirm: function (o) {
-            var $l = $("body").children().last();
-            this.$el.insertAfter($l);
+
+        	var $l = $("body").children().last();
+
+        	this.$el.insertAfter($l);
+
             this.$(".container").html(_.template(templateConfirm)({
                 Resources: Resources,
                 title: o.title,
                 message: o.message,
                 textBtnExec: o.titleExec || Resources.deleteItem
             }));
+
             this.$("#sho").addClass("nobg").show();
             this.execConfirm = o.fx;
             this.contextConfirm = o.ctx;
+
             return false;
         },
 

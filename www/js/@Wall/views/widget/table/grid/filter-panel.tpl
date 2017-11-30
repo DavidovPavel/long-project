@@ -3,7 +3,7 @@
         <svg><use xlink:href='#icon-rubrics' /></svg> <label><%= Resources.rubrics %></label>
     </span>
     <span data-name='search-panel'>
-        <svg><use xlink:href='#icon-search-byrubrics' /></svg> <label><%= Resources.scan %></label>
+        <svg><use xlink:href='#icon-search-byrubrics' /></svg> <label><%= Resources.search %></label>
     </span>
     <!--<span class='right'>
         <svg class='icon-close'><use xlink:href='#icon-close' /></svg>
@@ -20,6 +20,6 @@
     
 	<p>		
 		<button class='g-form--button blue right search'><%= Resources.find %></button>
-		<button class='g-form--button right cancel'><%= Resources.cancel %></button>
+		<button class='g-form--button right cancel'><%= Resources.clear %></button>
 	</p>
 </section>

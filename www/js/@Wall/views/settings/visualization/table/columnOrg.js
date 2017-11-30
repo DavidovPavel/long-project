@@ -29,7 +29,7 @@
         childView: Mn.View.extend({
 
             className: 'row',
-            template: '#column-settings-template',
+            template: templates['column-settings-template'],
             templateContext: {
                 Resources: Resources
             },
@@ -64,10 +64,10 @@
 
             var columns = _.map(items, function (e, i) {
 
-                var ci = {};
-                if (custom) {
-                    ci = _.findWhere(custom, { ColumnSystemName: e.systemName }) || {};
-                }
+            	var ci = {};
+
+                if (custom)
+                	ci = _.findWhere(custom, { ColumnSystemName: e.systemName }) || {};
 
                 return new this.collection.model({
                     QueryCustomizationUID: ci.QueryCustomizationUID || null,
@@ -76,7 +76,7 @@
                     ColumnTitle: ci.ColumnTitle || e.displayName,
                     ColumnIsVisible: ci.ColumnIsVisible === undefined ? e.isVisible : ci.ColumnIsVisible,
                     SerialNum: ci.SerialNum || i,
-                    ColumnWidth: ci.ColumnWidth || ''
+                    ColumnWidth: ci.ColumnWidth || 'auto'
                 });
 
             }, this);
@@ -108,16 +108,17 @@
 
         onSave: function (callback) {
 
-            var data = [];
+        	var data = [];
+
             this.$('.row').each(function () {
                 data.push($.GetData($(this)));
             });
 
             $.ajax({
 
-                method: "POST",
-                contentType: 'application/json; charset=utf-8',
-                url: "/api/widget/" + this.model.get("requestParameters").rid + "/colscustomization",
+            	method: "POST",
+            	contentType: 'application/json; charset=utf-8',
+            	url: `/api/widget/${this.model.get("requestParameters").rid}/colscustomization`,
                 data: JSON.stringify(data)
 
             }).done(function (c) {

@@ -3,7 +3,9 @@ input[type=text], textarea {width:100%;}
 
 br { clear: both;}
 input[type=text] {
-    height: 36px; padding:0 10px; .boxshadow(inset 0 1px, rgba(0,0,0,.1));background-color: #fff; border: solid 1px #bbb;color:@color-norm;
+    height: 36px; padding:0 10px;
+    //.boxshadow(inset 0 1px, rgba(0,0,0,.1));
+    background-color: #fff; border: solid 1px #bbb;color:@color-norm;
     /*&[placeholder] {color:@color-light;font-style:italic;text-overflow:ellipsis;}*/  
     &::-webkit-input-placeholder {color:@color-light;font-style:italic;text-overflow:ellipsis;opacity: 1; transition: opacity 0.3s ease;}  
     &::-moz-placeholder {color:@color-light;font-style:italic;text-overflow:ellipsis;opacity: 1; transition: opacity 0.3s ease;}          

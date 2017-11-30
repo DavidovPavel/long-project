@@ -40,17 +40,6 @@ define('settingsView', [
 
         initialize: function () {
 
-            //var decoration = this.model.has("Decoration") ?
-            //   this.model.get("Decoration") :
-            //    {
-            //        CaptionBackground: "rgba(200, 188, 162, 1)", CaptionForeground: "rgba(51, 51, 51, 1)",
-            //        ContainerBackground: "rgba(255, 255, 255, 1)", ContainerForeground: "rgba(51, 51, 51, 1)",
-            //        LinkBackground: "rgba(0, 0, 0, 0)", LinkForeground: "rgba(70, 127, 212, 1)",
-            //        CaptionIsVisible: true, BorderIsVisible: true, ContainerIsTransparent: false
-            //    };
-
-            //if (!this.model.has("Decoration"))
-            //    this.model.set("Decoration", decoration);
 
         },
 
@@ -81,6 +70,22 @@ define('settingsView', [
                     this.currentView.$('.error').removeClass('error');
                 }.bind(this), 3000);
             }
+
+        },
+
+        childViewEvents:{
+
+        	'dialog:closed': function () {
+
+        		if (this.getRegion('dialog').hasView() && this.getChildView('dialog').model.has('content')) {
+
+        			this.getChildView('dialog').model.get('content').$('input.Decoration').each(function (i, e) {
+        				$(e).ejColorPicker("hide");
+        			});
+
+        		}
+
+        	}
 
         },
 

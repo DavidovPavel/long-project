@@ -16,7 +16,7 @@
     <AssemblyName>www</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -638,7 +638,6 @@
     <Compile Include="SaGateway\ClientHighlighterModule.cs" />
     <Compile Include="WebExtensions\CompressAttribute.cs" />
     <Compile Include="SaGateway\CustomRoleManager.cs" />
-    <Compile Include="SaGateway\Decorator.cs" />
     <Compile Include="SaGateway\DocumentHighlighting.cs" />
     <Compile Include="WebExtensions\DynamicCORSPolicyProviderFactory.cs" />
     <Compile Include="SaGateway\ExcelHelper.cs" />
@@ -688,12 +687,27 @@
     <Compile Include="Utilities\Share.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\src\components\charts\ChartView.js" />
+    <Content Include="app\src\components\charts\ejChartView.js" />
+    <Content Include="app\src\components\charts\settingsModel.js" />
     <Content Include="app\src\assets\images\nav.svg" />
     <Content Include="app\src\components\alerts\alert.html" />
     <Content Include="app\src\components\alerts\AlertsBarView.js" />
     <Content Include="app\src\components\alerts\Feedback.js" />
+    <Content Include="app\src\components\basket\BasketView.js" />
+    <Content Include="app\src\components\basket\basket.html" />
+    <Content Include="app\src\components\connectdb\connect.js" />
+    <Content Include="app\src\components\connectdb\template.html" />
     <Content Include="app\src\components\dialog\dialog.html" />
     <Content Include="app\src\components\dialog\dialog.js" />
+    <Content Include="app\src\components\dialog\dialogModel.js" />
+    <Content Include="app\src\components\dialog\template.html" />
+    <Content Include="app\src\components\dropdown\dropDownView.js" />
+    <Content Include="app\src\components\files\AttachFile.js" />
+    <Content Include="app\src\components\files\fileUploadTemplate.html" />
+    <Content Include="app\src\components\files\UploadFileView.js" />
+    <Content Include="app\src\components\tree\Tree.js" />
+    <Content Include="app\src\components\tree\TreeView.js" />
     <Content Include="app\src\dashboards\app.js" />
     <Content Include="App_Data\CashObjectOrgResult.txt" />
     <Content Include="App_Data\CashObjectOrgResultItem.txt" />
@@ -1236,6 +1250,13 @@
     <Content Include="frontend\public\assets\syncfusion\themes\common-images\tools\icons.woff" />
     <Content Include="frontend\less\global\panel\g-panel.less" />
     <Content Include="app\src\components\alerts\alerts.less" />
+    <Content Include="app\src\components\basket\basket.less" />
+    <Content Include="app\src\components\dropdown\dropdonwn-menu.less" />
+    <Content Include="app\src\components\dropdown\dropdown.less" />
+    <Content Include="app\src\components\files\image-gallery.less" />
+    <Content Include="app\src\components\files\upload-block.less" />
+    <Content Include="app\src\components\tree\tree.less" />
+    <Content Include="frontend\less\global\button\button.less" />
     <None Include="js\%40Global\templates\dialogCreating.tpl" />
     <None Include="js\%40Global\templates\dialogCreatingDocument.tpl" />
     <Content Include="js\%40Global\views\edge\edgeViewTemplate.html" />
@@ -1292,8 +1313,11 @@
     <Content Include="js\%40SeaSources\views\filter\filters-selections-sources.tpl" />
     <Content Include="js\%40SeaSources\views\filter\filter-sources.tpl" />
     <None Include="js\%40SeaSources\views\list\list-sources.tpl" />
+    <None Include="js\%40SeaSources\views\new-search.tpl" />
+    <Content Include="js\%40SeaSources\views\mainView_new.js" />
     <Content Include="js\%40Wall\models\SendModel.js" />
     <Content Include="js\%40Wall\radio\characteristics.js" />
+    <Content Include="js\%40Wall\radio\marixChain.js" />
     <Content Include="js\%40Wall\views\panels\template.html" />
     <None Include="js\%40Wall\views\requests\requests-template.tpl" />
     <Content Include="js\%40Wall\views\settings\base\template.html" />
@@ -1315,11 +1339,11 @@
     <Content Include="js\%40Wall\views\settings\visualization\chart\schartView.js" />
     <Content Include="js\%40Wall\views\settings\visualization\semnet\semnet.html" />
     <Content Include="js\%40Wall\views\settings\visualization\semnet\ssemnetView.js" />
-    <Content Include="js\%40Wall\views\settings\visualization\table\column.html" />
+    <None Include="js\%40Wall\views\settings\visualization\table\column-settings-template.tpl" />
     <Content Include="js\%40Wall\views\settings\visualization\table\columnOrg.js" />
     <Content Include="js\%40Wall\views\settings\visualization\table\fieldOrg.js" />
     <Content Include="js\%40Wall\views\settings\visualization\table\tableView.js" />
-    <Content Include="js\%40Wall\views\settings\visualization\table\template.html" />
+    <None Include="js\%40Wall\views\settings\visualization\table\table-visualisation-template.tpl" />
     <Content Include="js\%40Wall\views\settings\visualization\chart\choiceView.js" />
     <Content Include="js\%40Wall\views\widget\content\contentView.js" />
     <Content Include="js\%40Global\views\content\BrowsingView.js" />
@@ -1370,7 +1394,7 @@
     <None Include="js\%40Wall\views\widget\content\widget-source-content.tpl" />
     <Content Include="js\%40Wall\views\widget\create\master.html" />
     <Content Include="js\%40Wall\views\widget\create\masterView.js" />
-    <Content Include="js\%40Wall\views\widget\map\legend.html" />
+    <Content Include="js\%40Wall\views\widget\map\widget-map-legend-template.html" />
     <Content Include="js\%40Wall\views\widget\map\legendView.js" />
     <Content Include="js\%40Wall\views\widget\semnet\semnetView.js" />
     <Content Include="js\%40Wall\views\widget\table\card\cardView.js" />
@@ -1380,7 +1404,10 @@
     <Content Include="js\%40Wall\views\widget\WidgetCloud.js" />
     <Content Include="js\%40Wiki\app.js" />
     <Content Include="js\dist\backbone.js" />
+    <Content Include="js\dist\backbone.marionette.js" />
+    <Content Include="js\dist\backbone.radio.js" />
     <Content Include="js\dist\c3.min.js" />
+    <Content Include="js\dist\colResizable\colResizable-1.6.js" />
     <Content Include="js\dist\d3.min.js" />
     <Content Include="js\dist\jqcloud-1.0.4.js" />
     <Content Include="js\dist\jqcloud-1.0.4.min.js" />
@@ -1402,7 +1429,6 @@
     <Content Include="js\dist\jquery-ui-1.12.1.custom\jquery-ui.theme.css" />
     <Content Include="js\dist\jquery-ui-1.12.1.custom\jquery-ui.theme.min.css" />
     <Content Include="js\dist\jquery-ui-1.12.1.custom\LICENSE.txt" />
-    <Content Include="js\dist\marionette-3.1.0\backbone.marionette.js" />
     <Content Include="js\dist\pdf\core\annotation.js" />
     <Content Include="js\dist\pdf\core\arithmetic_decoder.js" />
     <Content Include="js\dist\pdf\core\bidi.js" />
@@ -1554,6 +1580,7 @@
     <Content Include="js\dist\syncfusion-15.3.033\themes\ej.widgets.core.bootstrap.min.css" />
     <Content Include="js\dist\syncfusion-15.3.033\themes\responsive-css\ej.responsive.css" />
     <Content Include="js\dist\syncfusion-15.3.033\themes\responsive-css\ejgrid.responsive.css" />
+    <Content Include="js\dist\underscore.js" />
     <Content Include="Properties\AssemblyFileVersion.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>AssemblyFileVersion.cs</LastGenOutput>
@@ -3022,7 +3049,6 @@
       <DependentUpon>i18n.js</DependentUpon>
     </Content>
     <Content Include="js\dist\jquery.js" />
-    <Content Include="js\dist\jquery.min.js" />
     <Content Include="js\dist\paginator3000.js" />
     <Content Include="js\%40Inquiry\views\forms\company\1003View.js" />
     <Content Include="js\%40Inquiry\views\forms\formView.js" />
@@ -3030,20 +3056,12 @@
     <Content Include="js\%40Inquiry\views\forms\person\1002View.js" />
     <Content Include="js\%40Inquiry\views\source\sourceView.js" />
     <Content Include="js\%40Wall\models\WidgetModel.js" />
-    <Content Include="js\dist\marionette-3.1.0\backbone.js" />
-    <Content Include="js\dist\backbone.marionette.js" />
-    <Content Include="js\dist\backbone.radio.js" />
     <Content Include="js\dist\d3.js" />
     <Content Include="js\dist\jquery.cookie.js" />
     <Content Include="js\dist\require.js" />
     <Content Include="js\dist\require.min.js">
       <DependentUpon>require.js</DependentUpon>
     </Content>
-    <Content Include="js\dist\text.js" />
-    <Content Include="js\dist\text.min.js">
-      <DependentUpon>text.js</DependentUpon>
-    </Content>
-    <Content Include="js\dist\underscore.js" />
     <Content Include="js\%40Inquiry\views\source\ContentView.js" />
     <Content Include="js\%40Wall\views\dashDecorView.js" />
     <Content Include="js\%40Wall\views\widget\report\reportView.js" />

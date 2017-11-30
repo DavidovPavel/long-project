@@ -85,7 +85,7 @@
 
                         var rgb = $(e).data('ejColorPicker').rgb;
 
-                        this.model.set($(e).attr('name'), 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',' + rgb.a + ')');
+                        this.model.set($(e).attr('name'), `rgba(${rgb.r},${rgb.g},${rgb.b},${rgb.a})`);
 
                     }.bind(this)
 

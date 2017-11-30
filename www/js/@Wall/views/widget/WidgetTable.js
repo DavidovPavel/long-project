@@ -17,7 +17,8 @@
                 case 'table':
                     this.showChildView('wrap', new gridView({
                         model: this.model,
-                        collection: this.collection
+                        collection: this.collection,
+						editMode: this.options.editMode
                     }));
                     break;
 
@@ -42,8 +43,8 @@
         },
 
         childViewTriggers: {
-        	'table:add:rubrics:filter': 'table:add:rubrics:filter',
-			'scroll:grid':'scroll:grid'
+        	'table:add:rubrics:filter': 'table:add:rubrics:filter'
+			//'scroll:grid':'scroll:grid'
         }
 
     });

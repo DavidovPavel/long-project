@@ -1,4 +1,11 @@
-﻿define('result:origin', ['i18n!nls/resources.min', 'global.view.dropDown', 'global.files.attachFile', 'forms/1002Model', 'forms/1003Model'],
+﻿define('result:origin',
+	[
+		'i18n!nls/resources.min',
+		'global.view.dropDown',
+		'global.files.attachFile',
+		'forms/1002Model',
+		'forms/1003Model'
+	],
 
 function (Resources, dropDown, Attach, PersonModel, CompanyModel) {
 

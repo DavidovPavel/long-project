@@ -1,4 +1,6 @@
-﻿define('settings.visualization.cloud', ['i18n!nls/resources.min', 'settings.colorRow', 'global.view.dropDown', 'global.behaviors.input'], function (Resources, colorRow, dropDown, inputBehavior) {
+﻿define('settings.visualization.cloud',
+	['i18n!nls/resources.min', 'settings.colorRow', 'global.view.dropDown', 'global.behaviors.input'],
+	function (Resources, colorRow, dropDown, inputBehavior) {
 
     var formView = Mn.View.extend({
 

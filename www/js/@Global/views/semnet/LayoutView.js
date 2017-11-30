@@ -618,7 +618,7 @@ function (Resources, DropDownView, Visual, baseurl, treeView, contextMenu) {
 
         className: 'semantic-board',
 
-        template: _.template('<div class="inner"><div id="context-menu"></div><div class="svg-content"><%= html %></div></div>'),
+        template: _.template('<div class="inner" dir="auto"><div id="context-menu" dir="auto"></div><div class="svg-content" dir="auto"><%= html %></div></div>'),
 
         regions:{
             cmenu: '#context-menu'
@@ -698,7 +698,7 @@ function (Resources, DropDownView, Visual, baseurl, treeView, contextMenu) {
                 if (parseInt(this.model.get('height')) > this.$el.height())
                     this.$('.svg-content').css({ height: this.model.get('height') });
 
-                var svg = '<svg width="100%" height="100%"><g id="main" transform="translate(0,0) scale(1)">' +
+                var svg = '<svg width="100%" height="100%"><g id="main" transform="translate(0,0) scale(1)" dir="auto">' +
                     $(this.model.get('html')).html() + "</g></svg>";
 
                 this.$(".svg-content").html(svg);
@@ -752,7 +752,7 @@ function (Resources, DropDownView, Visual, baseurl, treeView, contextMenu) {
             var d = this.options.request.toJSON();
             delete d.Resources;
 
-            this.model.url = "/api/SemNet/" + this.model.get("id") + "/?semnetid=" + this.model.id + "&" + $.param(d);
+            this.model.url = `/api/SemNet/${this.model.get("id")}/?semnetid=${this.model.id}&${$.param(d)}`;
 
             this.model.fetch();
         }

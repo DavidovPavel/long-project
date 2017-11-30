@@ -10,45 +10,75 @@ define([
     'i18n!nls/resources.min',
     'global.view.headerView',
     'services.sources.mainView',
+    'services.sources.mainView_new',
     'global.radio.loader'
 ],
-function (App, acc, Resources, Header, sourcesManager) {
+    function (App, acc, Resources, Header, sourcesManager, sourcesManager_new)
+    {
 
-    var init = function () {
+        var init = function ()
+        {
 
-        App.access = acc.data.Points;
-        App.baseType = acc.data.Kind;
+            App.access = acc.data.Points;
+            App.baseType = acc.data.Kind;
 
-        $.ajaxSetup({
-            headers: {
-                'key': $.ajaxSettings.url
-            }
-        });
+            $.ajaxSetup({
+                headers: {
+                    'key': $.ajaxSettings.url
+                }
+            });
 
-        var appS = Mn.Application.extend({
+            var appS = Mn.Application.extend({
 
-            region: 'main',
+                region: 'main',
 
-            onStart: function () {
+                onStart: function ()
+                {
+                    if (Backbone.history) {
+                         Backbone.history.start()
+                    }
 
-                $(document).find("head>title").text(Resources.titleSearchRobots);
+                    if (Backbone.history.fragment === "NEW")
+                    {
+                        Backbone.history.navigate("NEW");
+                    }
+                }
+            });
 
-                this.getRegion().show(new sourcesManager({ model: new Backbone.Model({ "BySaType": null, "SelectedCountries": [Resources.Lang] }) }));
+            var AppRouter = Mn.AppRouter.extend({
+                routes: {
 
-                new Header().render();
+                    '': function ()
+                    {
+                        $(document).find("head>title").text(Resources.titleSearchRobots);
+                        AppS.getRegion().show(new sourcesManager({ model: new Backbone.Model({ "BySaType": null, "SelectedCountries": [Resources.Lang] }) }));
 
-            }
-        });
+                        new Header().render();
+                    },
 
-        var AppS = new appS();
-        AppS.start();
+                    'NEW': function ()
+                    {
+                        AppS.getRegion().show(new sourcesManager_new());
 
-        $(".logo").on("click", function () {
-            location.href = location.pathname;
-        });
-    }
+                        new Header().render();
+                    },
+                }
+            });
 
-    return {
-        init: init
-    }
-});
+
+            var AppS = new appS();
+            var app_router = new AppRouter;
+            AppS.router = app_router;
+
+            AppS.start();
+
+            $(".logo").on("click", function ()
+            {
+                location.href = location.pathname;
+            });
+        }
+
+        return {
+            init: init
+        }
+    });

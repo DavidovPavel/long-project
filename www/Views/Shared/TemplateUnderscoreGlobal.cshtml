@@ -7,6 +7,18 @@
         <div class="menu-alert-list">
             <ul></ul>
         </div>
+    </div></script><script type="x-template/underscore" id="connect-template"><div style="width:400px;margin:0 auto;">
+        <label><%= Resources.workGroups %></label>
+        <select class="form-control" id="WorkGroups"><option value="">...</option></select>
+        <br />
+        <label><%= Resources.avaProjects %></label>
+        <select class="form-control" id="Projects"><option value="">...</option></select>
+        <br />
+        <label><%= Resources.avaDatabase %></label>
+        <select class="form-control" id="Connects"><option value="">...</option></select>
+        <div id="Info" style="color: red;"></div>
+        <!--<br />
+        <p><button class="g-form--button blue disabled"><%= Resources.Connect %></button></p>-->
     </div></script><script type="x-template/underscore" id="case-export-template"><div class="row">
         <div class="grid--1-2">
             <h4><%= Resources.forobj %></h4>
@@ -111,19 +123,7 @@
 
     <p><input type="text" name="Subscribers" placeholder="<%- Resources.subscribers %>" style="width: 80%;" value="<%- Subscribers %>" /></p>
     <p><input type="text" name="EmailTopic" placeholder="<%- Resources.EmailTopic %>" style="width: 80%;" value="<%- EmailTopic %>" /></p>
-    <p><label><%- Resources.emailBody %></label><br /><textarea name="EmailBody" style="width: 80%;"><%- EmailBody %></textarea></p></script><script type="x-template/underscore" id="connect-template"><div style="width:400px;margin:0 auto;">
-        <label><%= Resources.workGroups %></label>
-        <select class="form-control" id="WorkGroups"><option value="">...</option></select>
-        <br />
-        <label><%= Resources.avaProjects %></label>
-        <select class="form-control" id="Projects"><option value="">...</option></select>
-        <br />
-        <label><%= Resources.avaDatabase %></label>
-        <select class="form-control" id="Connects"><option value="">...</option></select>
-        <div id="Info" style="color: red;"></div>
-        <!--<br />
-        <p><button class="g-form--button blue disabled"><%= Resources.Connect %></button></p>-->
-    </div></script><script type="x-template/underscore" id="dialog-window-template"><div class="g-dialog--header">
+    <p><label><%- Resources.emailBody %></label><br /><textarea name="EmailBody" style="width: 80%;"><%- EmailBody %></textarea></p></script><script type="x-template/underscore" id="dialog-window-template"><div class="g-dialog--header">
         <div class="g-dialog--title" data-icon="icon-<%- icon %>"><%= title %></div>
         <div class="g-dialog--manage">
             <i class="close"></i>
@@ -216,26 +216,13 @@
         <span class="anbr-tooltip bottom">
             <span position="bottom"></span><%= Resources.findimg %> </span>
 
-    </form></script><script type="x-template/underscore" id="edit-panel-template"><ul>
-        <li name="add" class="tlbr--add" title="<%- Resources.add %>"></li>
-        <li name="rename" class="tlbr--rename" disabled title="<%- Resources.editItem %>"></li>
-        <li name="remove" class="tlbr--clear" disabled title="<%- Resources.deleteItem %>"></li>
-        <li class="sorting">
-            <i class="up" name="up"></i>
-            <i class="down" name="down"></i>
-            <i class="first" name="first"></i>
-            <i class="last" name="last"></i>
-        </li>
-        <li class="search">
-            <span class="g-form--input input-data"><input type="text" name="rubric-name" value="" class="g-form--input" placeholder="Enter keyword" /><i class="search rtl-1" name="search"></i></span>
-        </li>
-    </ul></script><script type="x-template/underscore" id="choise-panel-list-template"><div id="types-tree" class="right" style="display:none;"></div>
+    </form></script><script type="x-template/underscore" id="choise-panel-list-template"><div id="types-tree" class="right" style="display:none;"></div>
     <div class="result-search">
         <div class="result-list"></div>
         <div class="select-list"></div>
     </div></script><script type="x-template/underscore" id="semantic-scheme-wrapper"><section class="semnet">
         <div class="semantic-wrapper">
-            <div id="svg-content"></div>
+            <div id="svg-content" dir="auto"></div>
             <div class="semantic-sidebar" id="tools-bar"></div>
 
             <!--<div class="semantic-tabs active">
@@ -327,4 +314,17 @@
                 <input type="button" name="export" value="<%- Resources.download %>">
             </div>
         </div>
-    </div></script>
+    </div></script><script type="x-template/underscore" id="edit-panel-template"><ul>
+        <li name="add" class="tlbr--add" title="<%- Resources.add %>"></li>
+        <li name="rename" class="tlbr--rename" disabled title="<%- Resources.editItem %>"></li>
+        <li name="remove" class="tlbr--clear" disabled title="<%- Resources.deleteItem %>"></li>
+        <li class="sorting">
+            <i class="up" name="up"></i>
+            <i class="down" name="down"></i>
+            <i class="first" name="first"></i>
+            <i class="last" name="last"></i>
+        </li>
+        <li class="search">
+            <span class="g-form--input input-data"><input type="text" name="rubric-name" value="" class="g-form--input" placeholder="Enter keyword" /><i class="search rtl-1" name="search"></i></span>
+        </li>
+    </ul></script>

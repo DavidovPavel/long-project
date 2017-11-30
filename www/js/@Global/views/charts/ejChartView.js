@@ -39,6 +39,9 @@
                 //isResponsive: true, Controls whether Chart has to be responsive while resizing. - для нас не подходит
                 locale: Resources.Lang,
 
+				// 
+                enableRTL: true,
+
                 title: {
                     text:  sModel.get('chartTitle') || this.model.get('name') || "",
                     enableTrim: true

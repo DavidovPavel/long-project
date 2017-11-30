@@ -1,0 +1,32 @@
+﻿
+.uploadFile { display: block; padding: 1px; border: solid 1px #bbb; font-size: 11px; height: 30px; margin: 0; background: none; border-radius: 0; background-color: #fff;
+    & button { float: right; background-color: #5b8cd6; width: 42px; height: 26px; border: 0; cursor: pointer; }
+    & svg { width: 16px; height: 16px; fill: @color-white; }
+    & .anbr-tooltip { margin-top: -45px;margin-left:80px; }
+    & .anbr-tooltip span { left: 330px; }
+}
+
+#uploadFile { display: block; padding: 1px; border: solid 1px #bbb; font-size: 11px; height: 30px; margin: 0; background: none; border-radius: 0; background-color: #fff;
+    & button { float: right; background-color: #5b8cd6; width: 42px; height: 26px; border: 0; cursor: pointer; }
+    & svg { width: 16px; height: 16px; fill: @color-white; }
+    & input[name=fileToUpload] { margin-top: 3px; }
+}
+
+#uploadFileBlock .progress { position:relative; border: 0; padding: 0px;height:4px;border-radius:0;background-color:#f0f0f0;box-shadow:none;margin-bottom:7px; }
+#uploadFileBlock .bar { background-color: #5b8cd6; height: 4px; border-radius: 3px; width:0%; }
+#uploadFileBlock .percent {text-align:right;font-size:10px; }
+
+.uploadbutton { display: inline-block; overflow: hidden; cursor: pointer; width: 100%; position: relative;
+    & input { display: none; }
+    & .button { width: 42px; min-width: 42px; line-height: 26px; background: #ebebeb; transition: background 0.2s; float:left;
+        &.blue { float: right; background-color: #5b8cd6; width: 42px; height: 26px;text-align:center;}
+    }
+    &:hover .button { background: #dcdbdb; }
+    &:hover .button.blue { background: @color-blue; }
+    & .input { display: inline-block; color: #999; font-style: italic; margin-left: 6px; font-size: 13px; width: 75%; overflow: hidden; line-height: 26px; vertical-align: middle; }
+
+    & .progress { position: absolute; width: 90%; height: 26px; left: 42px; border: 0; padding: 0; border-radius: 0; display: none;
+        & .bar { background-color: lightblue; border-radius: 0; height: 26px; position: absolute; left: 24px; }
+        & .percent { top: 6px; color: #333333; }
+    }
+}

@@ -1,4 +1,12 @@
-﻿define('global.view.connect', ['i18n!nls/resources.min', 'access'],
+﻿/***
+
+при смене базы данных переходим по урл: http://localhost/lang-%7B0%7D/account/login?returnUrl=%2flang-ru-RU%2fdb159%2finquiry%2finquiry
+
+логика по адрессу: js/@Login/app.js
+
+*/
+
+define('global.view.connect', ['i18n!nls/resources.min', 'access'],
 
 function (Resources, access) {
 

@@ -5,9 +5,11 @@
         'settingsView',
         'widget.reportView',
         'widget.content.contentView',
-        'widget.semnet.semnetView'        
+        'widget.semnet.semnetView',
+		'widget.table.filter'
     ],
-function (Resources, sendModel, settingView, reportLoad, contentView, semnetView) {
+function (Resources, sendModel, settingView, reportLoad, contentView, semnetView, filterView) {
+
 
         // settings.subscribe.subscribeList 
         var include = ["WidgetTable", "WidgetMap", "WidgetGraph", "WidgetRunning", "WidgetHtml", 'WidgetCloud'];
@@ -50,19 +52,32 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
                 loader: '.anbr_head .Preloader',
                 settings: '.settings',
                 trash: '.icon-trash',
-                filter: '.font-icon-filter',
+                filter: '.font-icon-filter'                
             },
 
             regions: {
                 load: '@ui.load', // { el: '@ui.load', replaceElement: true },
-                settings: { el: '@ui.settings', replaceElement: true },                
+                settings: { el: '@ui.settings', replaceElement: true },
+                filter: { el: '.filter-panel', replaceElement: true }
             },
 
             events: {
 
             	"click .font-icon-filter": function () {
 
-            		this.getChildView('load').getChildView('wrap').getChildView('filter').$el.slideToggle();
+            		var fp = this.getChildView('filter'),
+            			dh = this.ui.container.height() - fp.$el.height() + 20;
+
+            		if (fp.$el.is(':hidden'))
+            			this.ui.container.css({
+            				height: dh
+            			});
+            		else
+            			this.ui.container.css({
+            				height: this.ui.load.height() + 20
+            			});
+
+            		fp.$el.toggle();
 
             	},
 
@@ -85,7 +100,13 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
 
                         this._addSettings();
 
-                        Backbone.Radio.channel('sidebar').request('open', { nameView: this.model.get('title'), view: this.getChildView('settings'), title: Resources.wst }, this.getChildView('settings').getMenu());
+                        Backbone.Radio.channel('sidebar')
+							.request('open', {
+								nameView: this.model.get('title'),
+								view: this.getChildView('settings'),
+								title: Resources.wst
+							},
+							this.getChildView('settings').getMenu());
 
                         if ( e.shiftKey || e.ctrlKey )
                             this.triggerMethod( 'select:more', this.model );
@@ -110,6 +131,8 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
             },
 
             initialize: function () {
+
+            	this.scrollTop = 0;
 
                 this.model.set('ReadOnly', true);
 
@@ -159,6 +182,8 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
 
                 if (this.model.get("typeName") !== 'WidgetTable')
                 	this.ui.filter.hide();
+                else
+                	this.showChildView('filter', new filterView({ model: this.model }));
 
             },
 
@@ -175,6 +200,41 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
                 this.ui.load.css("height", this.ui.container.height());
 
                 this.triggerMethod('fix:size', this.model);
+
+                this.ui.container.on('scroll', function (e) {
+
+                	// TODO: use Promise mzfka!
+
+                    //#5240 volkov 2017-11-16 Были проблемы при прокрутки (декоративного виджета)
+                    if (this.sendModel.get('feed') && this.sendModel.get('feed').pagination) {
+                        var pon = this.sendModel.get('feed').pagination;
+                        let isDown = e.target.scrollTop - this.scrollTop > 0;
+
+                        if (!isDown) return;
+
+                        if (this.stopScroll) return;
+
+                        this.scrollTop = e.target.scrollTop;
+
+                        if (pon.totalItems > pon.pageSize * pon.currentPage - pon.pageSize) {
+
+                            if (e.target.scrollTop >= e.target.scrollHeight - e.target.offsetHeight - 100) {
+
+                                this.stopScroll = true;
+
+                                this.sendModel.set({
+                                    ts: this.model.get('timeStampForUpdate'),
+                                    page: ++pon.currentPage
+                                });
+
+                                this.onLoad({ add: true });
+
+                                console.log('scrolling table');
+                            }
+                        }
+                    }
+
+                }.bind(this));
             },
 
             modelEvents: {
@@ -188,39 +248,21 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
 
                 'click:item': function ( itemModel ) {
 
+                	Backbone.Radio.channel('matrixChain').trigger('start:chain', this.model);
+
                     this.model.collection.each( function ( m ) {
 
                         if ( this.model.id !== m.id ) {
 
+							// дергаем подписчиков
                             m.trigger( 'check:subscribers',
                                 this.model.id,
                                 itemModel.get('requestID') || this.model.get('requestParameters').rid,
                                 itemModel.get( 'object_id' ) );
 
-                            _.each( m.get( 'publishersSubscriberMap' ), function ( v, k ) {
 
-                                if ( k === this.model.id ) {
-
-                                    _.each( v, function ( p ) {
-
-                                        if ( p.QueryID === this.model.get( 'requestParameters' ).rid ) {
-
-                                            var par = _.findWhere( m.get( 'requestParameters' ).parameters, { id: p.QueryParamID } );
-
-                                            _.each( itemModel.attributes, function ( v, k ) {
-
-                                                if ( k.toLowerCase() === p.ColumnSystemName.toLowerCase() )
-                                                    par.Value = [v];
-
-                                            } );
-
-                                            m.trigger( 'load:chain' );
-
-                                        }
-
-                                    }, this );
-                                }
-                            }, this );
+							// цепочки зависимостей
+                            this._startChain(m, itemModel);
 
                         }
 
@@ -245,19 +287,8 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
                         } );
                 },
 
-                'load:chain': function () {
-
-                    // цепочки не должны содержать метку времени для обновления
-                    // значение должно бытьб в this.model.get('timeStampForUpdate')
-                    this.sendModel.set('ts', '');
-
-                    // не использовать параметры по умолчанию в данном случае - цепочка реакций
-                    this.onLoad({ notUseDefParams: true });
-
-                    // по идее это лишнее - send вернет новый ts и он сохранится в timeStampForUpdate
-                    if (this.model.get('timeStampForUpdate'))
-                        this.sendModel.set('ts', this.model.get('timeStampForUpdate'));
-
+                'load:chain': function () {                    
+                	this._loadChain();
                 },
 
                 //
@@ -317,135 +348,242 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
 
                 this.loadOptions = o || {};
 
-                var typeName = this.model.get( "typeName" );
+                var typeName = this.model.get("typeName"),
+					pa = this.model.get('requestParameters');
 
-                var pa = this.model.get( 'requestParameters' );
+				// TODO: переделать все под Promise
+                return new Promise(function (resolve, reject) {
 
-                if ( pa && pa.rid ) {
+                	if (pa && pa.rid) {
 
-                    if ( !pa.useDefParams )
-                        this.loadOptions.notUseDefParams = true;
+                		if (!pa.useDefParams)
+                			this.loadOptions.notUseDefParams = true;
 
-                    this.sendModel.set({
-                        widget: {
-                            uid: this.model.id,
-                            name: this.model.get('title'),
-                            type: this.model.get('typeName'),
-                            Visualization: this.model.get('Visualization')
-                        },
-                        id: pa.rid,
-                        pars: pa.parameters,
-                        useDefParams: !this.loadOptions.notUseDefParams
-                    });
+                		this.sendModel.set({
+                			widget: {
+                				uid: this.model.id,
+                				name: this.model.get('title'),
+                				type: this.model.get('typeName'),
+                				Visualization: this.model.get('Visualization')
+                			},
+                			id: pa.rid,
+                			pars: pa.parameters,
+                			useDefParams: !this.loadOptions.notUseDefParams
+                		});
 
-                    this.ui.loader.show();
-                    this.sendModel.fetch( {
-                        success: this._successLoad.bind( this ),
-                        error: this._endload.bind( this )
-                    } );
+                		this.ui.loader.show();
+                		this.sendModel.fetch({
 
-                    if ( this.model.get( 'update' ) )
+                			success: function () {
+                				
+                				this._successLoad();
+                				resolve();
 
-                        setInterval(
-                            function () {
+                			}.bind(this),
 
-                                this.ui.loader.show();
-                                this.sendModel.fetch( {
-                                    success: this._successLoad.bind( this ),
-                                    error: this._endload.bind( this )
-                                } );
+                			error: function () {
 
-                            }.bind( this ),
+                				
+                				this._endload.bind(this);
+                				resolve();
 
-                            this.model.get( 'timeUpdate' ) );
+                			}.bind(this)
+                		});
 
-                } else {                                            // виджеты не имеющие своих запросов
+                		if (this.model.get('update'))
 
-                    if ( typeName === "WidgetHtml" )
-                        this.ui.load.html( this.model.get( "contentHtml" ) );
+                			setInterval(
+								function () {
+
+									this.ui.loader.show();
+									this.sendModel.fetch({
+
+										success: function () {
+											
+											this._successLoad();
+											resolve();
 
 
-                    if (this.objectID && this.requestID) {
+										}.bind(this),
 
-                        switch (this.model.get("typeName")) {
+										error: function () {
+											
+											this._endload.bind(this);
+											resolve();
 
-                            case "WidgetSource":
+										}.bind(this)
+									});
 
-                                this.showChildView('load', new contentView({
-                                    model: this.model,
-                                    requestID: this.requestID,
-                                    objectID: this.objectID
-                                }));
+								}.bind(this),
 
-                                break;
+								this.model.get('timeUpdate'));
 
-                            case "WidgetSemNet":
+                	} else {                                            // виджеты не имеющие своих запросов
 
-                                this.showChildView('load', new semnetView({
-                                    objectID: this.objectID,
-                                    RID: this.requestID,
-                                    container: this.ui.container,
-                                    widget: this.model
-                                }));
+                		if (typeName === "WidgetHtml")
+                			this.ui.load.html(this.model.get("contentHtml"));
 
-                                break;
+                		if (this.objectID && this.requestID) {
 
-                            case "WidgetReporting":
+                			switch (this.model.get("typeName")) {
 
-                                Backbone.Radio.channel('loader').trigger('show', this.ui.load, { speed: 'fast' });
+                				case "WidgetSource":
 
-                                $.get(`/api/widget/listen/${this.requestID}/reporting/${this.model.id}/${this.objectID}`)
+                					this.showChildView('load', new contentView({
+                						model: this.model,
+                						requestID: this.requestID,
+                						objectID: this.objectID
+                					}));
 
-                                    .done(function (url) {
+                					break;
 
-                                        this.showChildView('load', new reportLoad({ url: url, model: this.model }));
+                				case "WidgetSemNet":
 
-                                    }.bind(this))
+                					this.showChildView('load', new semnetView({
+                						objectID: this.objectID,
+                						RID: this.requestID,
+                						container: this.ui.container,
+                						widget: this.model
+                					}));
 
-                                    .always(function () {
+                					break;
 
-                                        Backbone.Radio.channel('loader').trigger('hide');
-                                        this.ui.loader.hide();
-                                        this.loadSourceProc = false;
+                				case "WidgetReporting":
 
-                                    }.bind(this));
+                					Backbone.Radio.channel('loader').trigger('show', this.ui.load, { speed: 'fast' });
 
-                                break;
+                					$.get(`/api/widget/listen/${this.requestID}/reporting/${this.model.id}/${this.objectID}`)
 
-                            case "WidgetHtml":
+										.done(function (url) {
 
-                                Backbone.Radio.channel('loader').trigger('show', this.ui.load, { speed: 'fast' });
+											this.showChildView('load', new reportLoad({ url: url, model: this.model }));
 
-                                $.get(`/api/widget/listen/${this.requestID}/uiwidget/${this.model.id}/${this.objectID}`)
+										}.bind(this))
 
-                                    .done(function (source) {
+										.always(function () {
 
-                                        if (source) {
-                                            this.model.set('contentHtml', source);
-                                            this.ui.load.html(this.model.get("contentHtml"));
-                                        }
+											Backbone.Radio.channel('loader').trigger('hide');
+											this.ui.loader.hide();
+											this.loadSourceProc = false;
 
-                                    }.bind(this))
+										}.bind(this));
 
-                                    .always(function () {
+                					break;
 
-                                        Backbone.Radio.channel('loader').trigger('hide');
-                                        this.ui.loader.hide();
-                                        this.loadSourceProc = false;
+                				case "WidgetHtml":
 
-                                    }.bind(this));
+                					Backbone.Radio.channel('loader').trigger('show', this.ui.load, { speed: 'fast' });
 
-                                break;
+                					$.get(`/api/widget/listen/${this.requestID}/uiwidget/${this.model.id}/${this.objectID}`)
 
-                        }
+										.done(function (source) {
 
-                    }
+											if (source) {
+												this.model.set('contentHtml', source);
+												this.ui.load.html(this.model.get("contentHtml"));
+											}
 
-                    this._endload();
+										}.bind(this))
 
-                }
+										.always(function () {
 
-                return this;
+											Backbone.Radio.channel('loader').trigger('hide');
+											this.ui.loader.hide();
+											this.loadSourceProc = false;
+
+										}.bind(this));
+
+                					break;
+
+                			}
+
+                		}
+
+                		this._endload();
+                		resolve();
+
+                	}
+
+                }.bind(this));
+            },
+
+        	/***
+				этот метод инициализирует перезагрузку связанного виджета по цепочке дергая его модель
+			*/
+            _startChain: function (m, itemModel) {
+
+            	_.each(m.get('publishersSubscriberMap'), function (v, k) {
+
+            		if (k === this.model.id) {
+
+            			_.each(v, function (p) {
+
+            				if (p.QueryID === this.model.get('requestParameters').rid) {
+
+            					var par = _.findWhere(m.get('requestParameters').parameters, { id: p.QueryParamID });
+
+            					_.each(itemModel.attributes, function (v, k) {
+
+            						if (k.toLowerCase() === p.ColumnSystemName.toLowerCase())
+            							par.Value = [v];
+
+            					});
+
+            					m.trigger('load:chain');
+
+            				}
+
+            			}, this);
+            		}
+            	}, this);
+
+            },
+
+        	/***
+
+			ВАЖНО! этот метод выполняется не в текущем виджете
+					контекст связанного виджета по цепочке
+
+			*/
+            _loadChain:function(){
+
+            	// цепочки не должны содержать метку времени для обновления
+            	// значение должно бытьб в this.model.get('timeStampForUpdate')
+            	this.sendModel.set('ts', '');
+
+
+            	if (Backbone.Radio.channel('matrixChain').request('check:chain', this.model))
+            		this.onLoad({ notUseDefParams: true })
+						.then(function () {
+
+							Backbone.Radio.channel('matrixChain').trigger('add:chain', this.model);
+
+							// после этой загрузки нужно взять первый элемент (если он есть)
+							if (this.collection.length) {
+
+								// и инициализировать загрузку следующего связанного виджета (если он есть)
+								var item = this.collection.at(0);
+
+								this.model.collection.each(function (m) {
+
+									if (this.model.id !== m.id) {
+
+										// цепочки зависимостей
+										this._startChain(m, item);
+										setTimeout(() =>item.trigger('set:current', true), 1);
+
+									}
+
+								}, this);
+
+							}
+
+						}.bind(this));
+
+            	// по идее это лишнее - send вернет новый ts и он сохранится в timeStampForUpdate
+            	if (this.model.get('timeStampForUpdate'))
+            		this.sendModel.set('ts', this.model.get('timeStampForUpdate'));
+
             },
 
             _callSubscribers: function ( subscriberID, objectID, requestID ) {
@@ -484,26 +622,35 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
 
                 var typeName = this.model.get( "typeName" );
 
-                require( ['@widget.' + typeName], function ( typeWidget ) {
+                if (!this.loadOptions.add)
+                	require(['@widget.' + typeName], function (typeWidget) {
 
-                    this.showChildView( 'load', new typeWidget( {
-                        model: this.model,
-                        collection: this.collection
-                    } ) );
+                		this.showChildView('load', new typeWidget({
+                			model: this.model,
+                			collection: this.collection,
+                			load: this.loadOptions,
+                			editMode: this.Mode
+                		}));
 
-                    this._endload();
+                		this._endload();
 
-                }.bind( this ) );
+                	}.bind(this));
+
+                else
+                	this._endload();
 
                 var items = this.model.get('feed') ?
                     this.model.get('feed').items ? $.prepare(this.model.get('feed').items) :                    
                     this.model.get('feed').variations[0].flow :                                 // diagrams data
                     [];
 
-                if ( this.loadOptions.add )
-                    this.collection.add( items );
+                if (this.loadOptions.add) {
+                	this.collection.add(items);
+                }
                 else
-                    this.collection.reset( items );
+                	this.collection.reset(items);
+
+                this.stopScroll = false;
 
             },
 
@@ -731,38 +878,72 @@ function (Resources, sendModel, settingView, reportLoad, contentView, semnetView
                     this.model.trigger('click:item', m);
                 },
 
-                'scroll:grid': function () {
+                'table:add:rubrics:filter': function (c) {
 
-                	var saveTop = 0;
+                	this.getChildView('filter').collection.add(c);
 
-                	var pon = this.sendModel.get('feed').pagination;
+                	if (c.length)
+                		this.getChildView('filter').showRubrics();
+                	else
+                		this.getChildView('filter').hideRubrics();
+                },
 
-                	if (pon.totalItems > pon.pageSize * pon.currentPage - pon.pageSize) {
+                'filter:search': function (text) {
 
-                		var top = this.ui.container.scrollTop(),
-							height = this.ui.container.find('.anbr_list>div').height(),
-							scr = height - this.ui.container.height(),
-							flag = false;
+                	this.$("tbody>tr>td .Mark").removeClass("Mark");
 
-                		flag = saveTop < top;
-                		saveTop = top;
+                	var s = new RegExp(text, "ig");
 
-                		console.warn('scroll not relised');
+                	this.$("tbody>tr").each(function (i, e) {
 
-                		if (flag && scr - top <= 80) {
+                		var $a = $(e).find("td:first"),
+							check = $a.html(),
+							searchIndex = check.search(s);
 
-                			this.sendModel.set({
-                				ts: this.model.get('timeStampForUpdate'),
-                				page: pon.currentPage++
-                			});
+                		if (searchIndex === -1)
+                			$(e).hide();
 
-                			this.onLoad({ add: true });
+                		else {
 
-                			console.log('scroll')
+                			var p = `<i class="Mark">${check.match(s)[0]}</i>`,
+								start = check.substring(0, searchIndex),
+								end = check.substring(searchIndex + text.length),
+								out = start + p + end;
 
+                			$a.html(out);
+                			$(e).show();
                 		}
+                	});
+                },
+
+                'filter:apply': function (v) {
+
+                	//if (v.options.prefix === this.model.id) {
+
+                		this.getChildView('load').getChildView('wrap').getChildView('table').getChildView('body').children.each(function (w) {
+
+                			w.$el.show();
+
+                			var a = _.groupBy(w.model.get('links'), 'rel');
+
+                			var rubs = a.rubric_id;
+                			if (rubs) {
+
+                				_.each(rubs, function (r) {
+
+                					var ex = this.getChildView('filter').collection.get(r.id);
+                					if (ex.get('hide'))
+                						w.$el.hide();
+
+                				}, this);
+
+                			}
+
+                		}, this);
+
+                		this.$("tbody>tr>td .Mark").removeClass("Mark");
                 	}
-                }
+                //}
 
             },
 

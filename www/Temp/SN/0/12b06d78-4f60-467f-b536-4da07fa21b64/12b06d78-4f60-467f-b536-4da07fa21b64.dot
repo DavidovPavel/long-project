@@ -1,0 +1,115 @@
+graph graph0 {
+
+    fontsize=8; 
+    fontname="Arial";
+    splines=true; 
+    sep=1;
+    overlap=false;
+
+
+    rankdir=LR;
+
+
+{ 
+    node [shape=rect,fontname="Arial",fontsize=8,margin=0,penwidth=0.5,fillcolor=none];
+
+    1 [fixedsize=true,id="el1",width=1.882,height=0.555];
+    2 [fixedsize=true,id="el2",width=3.904,height=0.850];
+    3 [fixedsize=true,id="el3",width=0.909,height=0.207];
+    4 [fixedsize=true,id="el4",width=3.920,height=0.978];
+    5 [fixedsize=true,id="el5",width=0.572,height=0.207];
+    6 [fixedsize=true,id="el6",width=3.920,height=0.978];
+    7 [fixedsize=true,id="el7",width=0.515,height=0.207];
+    8 [fixedsize=true,id="el8",width=3.920,height=0.978];
+    9 [fixedsize=true,id="el9",width=0.515,height=0.207];
+    10 [fixedsize=true,id="el10",width=3.904,height=0.467];
+    11 [fixedsize=true,id="el11",width=3.904,height=0.467];
+    12 [fixedsize=true,id="el12",width=0.502,height=0.207];
+    13 [fixedsize=true,id="el13",width=3.904,height=0.467];
+    14 [fixedsize=true,id="el14",width=3.904,height=0.850];
+    15 [fixedsize=true,id="el15",width=3.904,height=0.850];
+    16 [fixedsize=true,id="el16",width=0.483,height=0.207];
+    17 [fixedsize=true,id="el17",width=3.920,height=0.978];
+    18 [fixedsize=true,id="el18",width=1.100,height=0.207];
+    19 [fixedsize=true,id="el19",width=3.904,height=0.850];
+    20 [fixedsize=true,id="el20",width=0.592,height=0.207];
+    21 [fixedsize=true,id="el21",width=0.592,height=0.207];
+    22 [fixedsize=true,id="el22",width=0.592,height=0.207];
+    23 [fixedsize=true,id="el23",width=0.592,height=0.207];
+    24 [fixedsize=true,id="el24",width=0.592,height=0.207];
+    25 [fixedsize=true,id="el25",width=0.592,height=0.207];
+    26 [fixedsize=true,id="el26",width=0.592,height=0.207];
+    27 [fixedsize=true,id="el27",width=0.592,height=0.207];
+    28 [fixedsize=true,id="el28",width=0.592,height=0.207];
+    29 [fixedsize=true,id="el29",width=0.592,height=0.207];
+    30 [fixedsize=true,id="el30",width=0.592,height=0.207];
+    31 [fixedsize=true,id="el31",width=0.442,height=0.207];
+    32 [fixedsize=true,id="el32",width=0.442,height=0.207];
+    33 [fixedsize=true,id="el33",width=0.442,height=0.207];
+    34 [fixedsize=true,id="el34",width=0.442,height=0.207];
+    35 [fixedsize=true,id="el35",width=0.501,height=0.207];
+    36 [fixedsize=true,id="el36",width=0.501,height=0.207];
+    37 [fixedsize=true,id="el37",width=0.501,height=0.207];
+    38 [fixedsize=true,id="el38",width=0.501,height=0.207];
+    39 [fixedsize=true,id="el39",width=0.501,height=0.207];
+    40 [fixedsize=true,id="el40",width=0.501,height=0.207];
+    41 [fixedsize=true,id="el41",width=0.501,height=0.207];
+    42 [fixedsize=true,id="el42",width=0.501,height=0.207];
+    43 [fixedsize=true,id="el43",width=0.501,height=0.207];
+    44 [fixedsize=true,id="el44",width=0.501,height=0.207];
+    45 [fixedsize=true,id="el45",width=0.501,height=0.207];
+    46 [fixedsize=true,id="el46",width=0.985,height=0.207];
+    47 [fixedsize=true,id="el47",width=0.985,height=0.207];
+    48 [fixedsize=true,id="el48",width=0.985,height=0.207];
+    49 [fixedsize=true,id="el49",width=0.985,height=0.207];
+}
+edge [penwidth=0.2];
+3 -- 2 [id="edge3_2",dir="none"];
+5 -- 4 [id="edge5_4",dir="none"];
+7 -- 6 [id="edge7_6",dir="none"];
+9 -- 8 [id="edge9_8",dir="none"];
+5 -- 10 [id="edge5_10",dir="none"];
+12 -- 11 [id="edge12_11",dir="none"];
+9 -- 13 [id="edge9_13",dir="none"];
+9 -- 14 [id="edge9_14",dir="none"];
+16 -- 15 [id="edge16_15",dir="none"];
+18 -- 17 [id="edge18_17",dir="none"];
+18 -- 19 [id="edge18_19",dir="none"];
+4 -- 20 [id="edge4_20",dir="none"];
+6 -- 21 [id="edge6_21",dir="none"];
+8 -- 22 [id="edge8_22",dir="none"];
+17 -- 23 [id="edge17_23",dir="none"];
+2 -- 24 [id="edge2_24",dir="none"];
+10 -- 25 [id="edge10_25",dir="none"];
+11 -- 26 [id="edge11_26",dir="none"];
+13 -- 27 [id="edge13_27",dir="none"];
+14 -- 28 [id="edge14_28",dir="none"];
+15 -- 29 [id="edge15_29",dir="none"];
+19 -- 30 [id="edge19_30",dir="none"];
+4 -- 31 [id="edge4_31",dir="none"];
+6 -- 32 [id="edge6_32",dir="none"];
+8 -- 33 [id="edge8_33",dir="none"];
+17 -- 34 [id="edge17_34",dir="none"];
+4 -- 35 [id="edge4_35",dir="none"];
+6 -- 36 [id="edge6_36",dir="none"];
+8 -- 37 [id="edge8_37",dir="none"];
+17 -- 38 [id="edge17_38",dir="none"];
+2 -- 39 [id="edge2_39",dir="none"];
+10 -- 40 [id="edge10_40",dir="none"];
+11 -- 41 [id="edge11_41",dir="none"];
+13 -- 42 [id="edge13_42",dir="none"];
+14 -- 43 [id="edge14_43",dir="none"];
+15 -- 44 [id="edge15_44",dir="none"];
+19 -- 45 [id="edge19_45",dir="none"];
+4 -- 46 [id="edge4_46",dir="none"];
+6 -- 47 [id="edge6_47",dir="none"];
+8 -- 48 [id="edge8_48",dir="none"];
+17 -- 49 [id="edge17_49",dir="none"];
+1 -- 3 [id="edge1_3",dir="none"];
+1 -- 5 [id="edge1_5",dir="none"];
+1 -- 7 [id="edge1_7",dir="none"];
+1 -- 9 [id="edge1_9",dir="none"];
+1 -- 12 [id="edge1_12",dir="none"];
+1 -- 16 [id="edge1_16",dir="none"];
+1 -- 18 [id="edge1_18",dir="none"];
+}

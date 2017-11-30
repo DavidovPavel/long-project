@@ -107,7 +107,7 @@ namespace www.Controllers.api.wall
             {
                 bool htmlEncodingNeeded = !(wDTO.IsHtmlContent ?? false);
                 bool extractOnlyMedia = wDTO.ExtractOnlyMedia ?? false;
-                ContentItem ci = DetailsController.GetContentV2(saDB, id, kwArr, null, htmlEncodingNeeded, null, contentPropName, extractOnlyMedia, TextMode.Short, TranslationMode.Orignal);
+                ContentItem ci = HelperContent.GetContentV2(saDB, id, kwArr, null, htmlEncodingNeeded, null, contentPropName, extractOnlyMedia, HelperContent.TextMode.Short, HelperContent.TranslationMode.Orignal);
                 coll.items.Add(ci);
             }
 
@@ -170,7 +170,14 @@ namespace www.Controllers.api.wall
 
                         string color = pair.Item1.ToHtmlVersion();
                         string bgcolor = pair.Item2.ToHtmlVersion();
+
+                        var minLen = highlightingElements.Min(item => item.Length);
+
                         var highlightingElementstWithMorph = saDB.ServiceTools.GetPhraseFormsSimple(highlightingElements.ToArray(), text);
+                        if (minLen != 1) minLen = 2;
+
+                        highlightingElementstWithMorph = highlightingElementstWithMorph.Where(item => item.Length >= minLen).ToArray();
+
                         text = DocumentHighlighting.GetFormattedText(
                             highlightingElementstWithMorph,
                             text,

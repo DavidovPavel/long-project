@@ -72,7 +72,7 @@ define('settings.baseOptions', ['i18n!nls/resources.min', 'global.request.param'
             }
 
 
-            if (this.model.get('typeName') === 'WidgetRunning') {
+            if (this.model.get('typeName') === 'WidgetRunning' || this.model.get('typeName') === 'WidgetHtml') {
 
             	let o = Backbone.Radio.channel('chW').request('get:param:model', this.model.get('Characteristics'), "WidgetRunDirection");
 

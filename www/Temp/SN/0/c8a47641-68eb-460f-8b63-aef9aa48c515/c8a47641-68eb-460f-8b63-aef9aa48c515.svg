@@ -1,0 +1,744 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 580)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-4,4 -4,-580 598,-580 598,4 -4,4"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom="#edge1_7,#edge1_3"  data-objectid="727919" data-text="Serzh Sargsyan"  width="67" height="79" x="0" y="-346" transform="translate(0,-346)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="73" height="81"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Serzh Sargsyan</title>
+    <rect width="67" height="79" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="67" height="79" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="vertical-align: middle;overflow:hidden;color:White;height:79px;width:67px" title="Serzh Sargsyan">Serzh Sargsyan</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="67" id='727919' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="33.5" y="1"><tspan dy='10' x='33.5' fill='black'>Serzh Sargsyan</tspan></text>    
+      </switch>
+    <image x="4.5" y="12.46875" width="58" height="64" xlink:href="/Temp/SN/0/c8a47641-68eb-460f-8b63-aef9aa48c515/727919.jpg" />
+</g>
+<!-- 3 -->
+
+<g id="el3" class="node" data-edgesTo="#edge1_3" data-edgesFrom="#edge3_5,#edge3_4,#edge3_2"  data-objectid="0" data-text="Contact"  width="37" height="15" x="124" y="-393" transform="translate(124,-393)">
+      <clipPath id="clip3">
+        <rect x="-1" y="-1" width="43" height="17"/>
+      </clipPath>
+    
+    <title>Contact</title>
+    <rect width="37" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="37" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:37px" title="Contact">Contact</span>
+        </foreignObject>
+        <text clip-path="url(#clip3)" width="37" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="18.5" y="1"><tspan dy='10' x='18.5' fill='black'>Contact</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;3 -->
+<g id="edge1_3" class="edge"><title>1&#45;&#45;3</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M67.1849,-330.632C89.0641,-346.786 116.446,-367.002 131.101,-377.822"/>
+</g>
+<!-- 7 -->
+
+<g id="el7" class="node" data-edgesTo="#edge1_7" data-edgesFrom="#edge7_9,#edge7_8,#edge7_6"  data-objectid="0" data-text="Working in Position"  width="79" height="15" x="103" y="-202" transform="translate(103,-202)">
+      <clipPath id="clip7">
+        <rect x="-1" y="-1" width="85" height="17"/>
+      </clipPath>
+    
+    <title>Working in Position</title>
+    <rect width="79" height="15" rx="5" ry="5" fill='White' stroke='DeepSkyBlue' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="79" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:79px" title="Working in Position">Working in Position</span>
+        </foreignObject>
+        <text clip-path="url(#clip7)" width="79" id='0' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="39.5" y="1"><tspan dy='10' x='39.5' fill='black'>Working in Position</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 1&#45;&#45;7 -->
+<g id="edge1_7" class="edge"><title>1&#45;&#45;7</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M67.1849,-272.288C90.785,-247.585 120.787,-216.181 134.313,-202.023"/>
+</g>
+<!-- 2 -->
+
+<g id="el2" class="node" data-edgesTo="#edge3_2" data-edgesFrom="#edge2_22,#edge2_16,#edge2_10"  data-objectid="777786" data-text="Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян"  width="275" height="52" x="218" y="-544.5" transform="translate(218,-544.5)">
+      <clipPath id="clip2">
+        <rect x="-1" y="-1" width="281" height="54"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян</title>
+    <rect width="275" height="52" rx="5" ry="5" fill='url(#grad2)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="275" height="52" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:52px;width:275px" title="Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян">Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян</span>
+        </foreignObject>
+        <text clip-path="url(#clip2)" width="275" id='777786' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="137.5" y="1"><tspan dy='10' x='137.5' fill='black'>Итоги визита президента Армении Сержа Саргсяна в Китайскую</tspan><tspan dy='10' x='137.5' fill='black'>Народную Республику можно назвать одним из серьезнейших</tspan><tspan dy='10' x='137.5' fill='black'>внешнеполитических успехов последних лет, сказала в понедельник</tspan><tspan dy='10' x='137.5' fill='black'>журналистам эксперт Аналитического центра прикладной политики и</tspan><tspan dy='10' x='137.5' fill='black'>исследований &#171;Айацк&#187; Наира Мкртчян</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 10 -->
+
+<g id="el10" class="node" data-edgesTo="#edge2_10" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-576" transform="translate(540,-576)">
+      <clipPath id="clip10">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad10" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad10)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip10)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 2&#45;&#45;10 -->
+<g id="edge2_10" class="edge"><title>2&#45;&#45;10</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M462.683,-544.525C492.114,-551.739 521.08,-558.838 539.758,-563.416"/>
+</g>
+<!-- 16 -->
+
+<g id="el16" class="node" data-edgesTo="#edge2_16" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-543" transform="translate(546,-543)">
+      <clipPath id="clip16">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad16" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad16)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip16)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 2&#45;&#45;16 -->
+<g id="edge2_16" class="edge"><title>2&#45;&#45;16</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M493.137,-529.886C514.476,-531.665 533.52,-533.252 545.869,-534.281"/>
+</g>
+<!-- 22 -->
+
+<g id="el22" class="node" data-edgesTo="#edge2_22" data-edgesFrom=""  data-objectid="777859" data-text="в понедельник"  width="65" height="15" x="529" y="-510" transform="translate(529,-510)">
+      <clipPath id="clip22">
+        <rect x="-1" y="-1" width="71" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad22" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>в понедельник</title>
+    <rect width="65" height="15" rx="5" ry="5" fill='url(#grad22)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="65" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:65px" title="в понедельник">в понедельник</span>
+        </foreignObject>
+        <text clip-path="url(#clip22)" width="65" id='777859' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="32.5" y="1"><tspan dy='10' x='32.5' fill='black'>в понедельник</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 2&#45;&#45;22 -->
+<g id="edge2_22" class="edge"><title>2&#45;&#45;22</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M493.137,-507.783C506.202,-506.759 518.406,-505.801 528.74,-504.991"/>
+</g>
+<!-- 3&#45;&#45;2 -->
+<g id="edge3_2" class="edge"><title>3&#45;&#45;2</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M153.357,-393.355C167.372,-404.389 194.025,-424.876 218,-440.5 246.355,-458.978 279.267,-477.856 305.668,-492.411"/>
+</g>
+<!-- 4 -->
+
+<g id="el4" class="node" data-edgesTo="#edge3_4" data-edgesFrom="#edge4_24,#edge4_17,#edge4_11"  data-objectid="777788" data-text="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта"  width="223" height="24" x="244" y="-431.5" transform="translate(244,-431.5)">
+      <clipPath id="clip4">
+        <rect x="-1" y="-1" width="229" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad4" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта</title>
+    <rect width="223" height="24" rx="5" ry="5" fill='url(#grad4)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="223" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:223px" title="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта">Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip4)" width="223" id='777788' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="111.5" y="1"><tspan dy='10' x='111.5' fill='black'>Президент Армении Серж Саргсян находился в Китае с</tspan><tspan dy='10' x='111.5' fill='black'>государственным визитом с 24 по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3&#45;&#45;4 -->
+<g id="edge3_4" class="edge"><title>3&#45;&#45;4</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M161.127,-388.34C187.077,-392.522 237.105,-400.583 279.773,-407.459"/>
+</g>
+<!-- 5 -->
+
+<g id="el5" class="node" data-edgesTo="#edge3_5" data-edgesFrom="#edge5_25,#edge5_18,#edge5_12"  data-objectid="777789" data-text="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном"  width="249" height="43" x="231" y="-374" transform="translate(231,-374)">
+      <clipPath id="clip5">
+        <rect x="-1" y="-1" width="255" height="45"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad5" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DAEFFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A3D6FC;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном</title>
+    <rect width="249" height="43" rx="5" ry="5" fill='url(#grad5)' stroke='#7EC6FB' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="249" height="43" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:43px;width:249px" title="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном">Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip5)" width="249" id='777789' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="124.5" y="1"><tspan dy='10' x='124.5' fill='black'>Президент Армении Серж Саргсян находился в Китае с</tspan><tspan dy='10' x='124.5' fill='black'>государственным визитом с 24 по 28 марта. В ходе визита</tspan><tspan dy='10' x='124.5' fill='black'>состоялись его встречи с председателем КНР Си Цзиньпином,</tspan><tspan dy='10' x='124.5' fill='black'>премьером Госсовета&#160; Ли Кэцяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 3&#45;&#45;5 -->
+<g id="edge3_5" class="edge"><title>3&#45;&#45;5</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M161.127,-382.743C177.469,-380.187 203.362,-376.138 230.951,-371.823"/>
+</g>
+<!-- 11 -->
+
+<g id="el11" class="node" data-edgesTo="#edge4_11" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-477" transform="translate(540,-477)">
+      <clipPath id="clip11">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad11" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad11)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip11)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;11 -->
+<g id="edge4_11" class="edge"><title>4&#45;&#45;11</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M405.623,-431.54C448.537,-442.058 508.713,-456.807 539.916,-464.455"/>
+</g>
+<!-- 17 -->
+
+<g id="el17" class="node" data-edgesTo="#edge4_17" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-444" transform="translate(546,-444)">
+      <clipPath id="clip17">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad17" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad17)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip17)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;17 -->
+<g id="edge4_17" class="edge"><title>4&#45;&#45;17</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M467.157,-428.721C498.441,-431.328 528.632,-433.844 545.842,-435.279"/>
+</g>
+<!-- 24 -->
+
+<g id="el24" class="node" data-edgesTo="#edge4_24" data-edgesFrom=""  data-objectid="777860" data-text="по 28 марта"  width="55" height="15" x="534" y="-411" transform="translate(534,-411)">
+      <clipPath id="clip24">
+        <rect x="-1" y="-1" width="61" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad24" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>по 28 марта</title>
+    <rect width="55" height="15" rx="5" ry="5" fill='url(#grad24)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="55" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:55px" title="по 28 марта">по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip24)" width="55" id='777860' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="27.5" y="1"><tspan dy='10' x='27.5' fill='black'>по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 4&#45;&#45;24 -->
+<g id="edge4_24" class="edge"><title>4&#45;&#45;24</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M467.157,-410.821C492.072,-408.867 516.293,-406.967 533.817,-405.593"/>
+</g>
+<!-- 12 -->
+
+<g id="el12" class="node" data-edgesTo="#edge5_12" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-378" transform="translate(540,-378)">
+      <clipPath id="clip12">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad12" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad12)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip12)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;12 -->
+<g id="edge5_12" class="edge"><title>5&#45;&#45;12</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M480.167,-363.412C503.26,-365.449 524.8,-367.35 539.75,-368.669"/>
+</g>
+<!-- 18 -->
+
+<g id="el18" class="node" data-edgesTo="#edge5_18" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-345" transform="translate(546,-345)">
+      <clipPath id="clip18">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad18" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad18)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip18)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;18 -->
+<g id="edge5_18" class="edge"><title>5&#45;&#45;18</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M480.167,-343.407C506.607,-341.463 531.01,-339.668 545.82,-338.579"/>
+</g>
+<!-- 25 -->
+
+<g id="el25" class="node" data-edgesTo="#edge5_25" data-edgesFrom=""  data-objectid="777860" data-text="по 28 марта"  width="55" height="15" x="534" y="-312" transform="translate(534,-312)">
+      <clipPath id="clip25">
+        <rect x="-1" y="-1" width="61" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad25" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>по 28 марта</title>
+    <rect width="55" height="15" rx="5" ry="5" fill='url(#grad25)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="55" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:55px" title="по 28 марта">по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip25)" width="55" id='777860' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="27.5" y="1"><tspan dy='10' x='27.5' fill='black'>по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 5&#45;&#45;25 -->
+<g id="edge5_25" class="edge"><title>5&#45;&#45;25</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M448.057,-330.957C479.198,-323.63 511.651,-315.994 533.641,-310.82"/>
+</g>
+<!-- 6 -->
+
+<g id="el6" class="node" data-edgesTo="#edge7_6" data-edgesFrom="#edge6_23,#edge6_19,#edge6_13"  data-objectid="777834" data-text="Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян"  width="275" height="52" x="218" y="-253.5" transform="translate(218,-253.5)">
+      <clipPath id="clip6">
+        <rect x="-1" y="-1" width="281" height="54"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad6" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян</title>
+    <rect width="275" height="52" rx="5" ry="5" fill='url(#grad6)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="275" height="52" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:52px;width:275px" title="Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян">Итоги визита президента Армении Сержа Саргсяна в Китайскую Народную Республику можно назвать одним из серьезнейших внешнеполитических успехов последних лет, сказала в понедельник журналистам эксперт Аналитического центра прикладной политики и исследований &#171;Айацк&#187; Наира Мкртчян</span>
+        </foreignObject>
+        <text clip-path="url(#clip6)" width="275" id='777834' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="137.5" y="1"><tspan dy='10' x='137.5' fill='black'>Итоги визита президента Армении Сержа Саргсяна в Китайскую</tspan><tspan dy='10' x='137.5' fill='black'>Народную Республику можно назвать одним из серьезнейших</tspan><tspan dy='10' x='137.5' fill='black'>внешнеполитических успехов последних лет, сказала в понедельник</tspan><tspan dy='10' x='137.5' fill='black'>журналистам эксперт Аналитического центра прикладной политики и</tspan><tspan dy='10' x='137.5' fill='black'>исследований &#171;Айацк&#187; Наира Мкртчян</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 13 -->
+
+<g id="el13" class="node" data-edgesTo="#edge6_13" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-279" transform="translate(540,-279)">
+      <clipPath id="clip13">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad13" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad13)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip13)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;13 -->
+<g id="edge6_13" class="edge"><title>6&#45;&#45;13</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M477.231,-253.54C501.492,-258.773 524.288,-263.69 539.874,-267.051"/>
+</g>
+<!-- 19 -->
+
+<g id="el19" class="node" data-edgesTo="#edge6_19" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-246" transform="translate(546,-246)">
+      <clipPath id="clip19">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad19" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad19)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip19)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;19 -->
+<g id="edge6_19" class="edge"><title>6&#45;&#45;19</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M493.137,-234.868C514.476,-236.018 533.52,-237.045 545.869,-237.711"/>
+</g>
+<!-- 23 -->
+
+<g id="el23" class="node" data-edgesTo="#edge6_23" data-edgesFrom=""  data-objectid="777859" data-text="в понедельник"  width="65" height="15" x="529" y="-213" transform="translate(529,-213)">
+      <clipPath id="clip23">
+        <rect x="-1" y="-1" width="71" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad23" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>в понедельник</title>
+    <rect width="65" height="15" rx="5" ry="5" fill='url(#grad23)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="65" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:65px" title="в понедельник">в понедельник</span>
+        </foreignObject>
+        <text clip-path="url(#clip23)" width="65" id='777859' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="32.5" y="1"><tspan dy='10' x='32.5' fill='black'>в понедельник</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 6&#45;&#45;23 -->
+<g id="edge6_23" class="edge"><title>6&#45;&#45;23</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M493.137,-212.765C506.202,-211.356 518.406,-210.04 528.74,-208.925"/>
+</g>
+<!-- 7&#45;&#45;6 -->
+<g id="edge7_6" class="edge"><title>7&#45;&#45;6</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M182.201,-200.553C192.789,-202.209 204.903,-204.103 217.691,-206.103"/>
+</g>
+<!-- 8 -->
+
+<g id="el8" class="node" data-edgesTo="#edge7_8" data-edgesFrom="#edge8_26,#edge8_20,#edge8_14"  data-objectid="777836" data-text="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта"  width="223" height="24" x="244" y="-173.5" transform="translate(244,-173.5)">
+      <clipPath id="clip8">
+        <rect x="-1" y="-1" width="229" height="26"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad8" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта</title>
+    <rect width="223" height="24" rx="5" ry="5" fill='url(#grad8)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="223" height="24" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:24px;width:223px" title="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта">Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip8)" width="223" id='777836' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="111.5" y="1"><tspan dy='10' x='111.5' fill='black'>Президент Армении Серж Саргсян находился в Китае с</tspan><tspan dy='10' x='111.5' fill='black'>государственным визитом с 24 по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 7&#45;&#45;8 -->
+<g id="edge7_8" class="edge"><title>7&#45;&#45;8</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M182.201,-188.447C208.85,-184.279 245.161,-178.6 277.578,-173.53"/>
+</g>
+<!-- 9 -->
+
+<g id="el9" class="node" data-edgesTo="#edge7_9" data-edgesFrom="#edge9_27,#edge9_21,#edge9_15"  data-objectid="777837" data-text="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном"  width="249" height="43" x="231" y="-79" transform="translate(231,-79)">
+      <clipPath id="clip9">
+        <rect x="-1" y="-1" width="255" height="45"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad9" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#F0F0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D9D9D9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном</title>
+    <rect width="249" height="43" rx="5" ry="5" fill='url(#grad9)' stroke='#B4B4B4' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="249" height="43" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:43px;width:249px" title="Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном">Президент Армении Серж Саргсян находился в Китае с государственным визитом с 24 по 28 марта. В ходе визита состоялись его встречи с председателем КНР Си Цзиньпином, премьером Госсовета&#160; Ли Кэцяном</span>
+        </foreignObject>
+        <text clip-path="url(#clip9)" width="249" id='777837' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="124.5" y="1"><tspan dy='10' x='124.5' fill='black'>Президент Армении Серж Саргсян находился в Китае с</tspan><tspan dy='10' x='124.5' fill='black'>государственным визитом с 24 по 28 марта. В ходе визита</tspan><tspan dy='10' x='124.5' fill='black'>состоялись его встречи с председателем КНР Си Цзиньпином,</tspan><tspan dy='10' x='124.5' fill='black'>премьером Госсовета&#160; Ли Кэцяном</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 7&#45;&#45;9 -->
+<g id="edge7_9" class="edge"><title>7&#45;&#45;9</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M153.439,-186.9C167.553,-176.2 194.322,-156.243 218,-140.5 250.912,-118.618 289.478,-95.3792 317.206,-79.0744"/>
+</g>
+<!-- 14 -->
+
+<g id="el14" class="node" data-edgesTo="#edge8_14" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-180" transform="translate(540,-180)">
+      <clipPath id="clip14">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad14" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad14)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip14)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;14 -->
+<g id="edge8_14" class="edge"><title>8&#45;&#45;14</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M467.157,-167.467C495.069,-168.972 522.111,-170.43 539.84,-171.386"/>
+</g>
+<!-- 20 -->
+
+<g id="el20" class="node" data-edgesTo="#edge8_20" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-147" transform="translate(546,-147)">
+      <clipPath id="clip20">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad20" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad20)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip20)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;20 -->
+<g id="edge8_20" class="edge"><title>8&#45;&#45;20</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M467.157,-149.566C498.441,-146.193 528.632,-142.937 545.842,-141.081"/>
+</g>
+<!-- 26 -->
+
+<g id="el26" class="node" data-edgesTo="#edge8_26" data-edgesFrom=""  data-objectid="777860" data-text="по 28 марта"  width="55" height="15" x="534" y="-114" transform="translate(534,-114)">
+      <clipPath id="clip26">
+        <rect x="-1" y="-1" width="61" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad26" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>по 28 марта</title>
+    <rect width="55" height="15" rx="5" ry="5" fill='url(#grad26)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="55" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:55px" title="по 28 марта">по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip26)" width="55" id='777860' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="27.5" y="1"><tspan dy='10' x='27.5' fill='black'>по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 8&#45;&#45;26 -->
+<g id="edge8_26" class="edge"><title>8&#45;&#45;26</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M401.017,-149.498C441.58,-138.562 500.153,-122.77 533.869,-113.68"/>
+</g>
+<!-- 15 -->
+
+<g id="el15" class="node" data-edgesTo="#edge9_15" data-edgesFrom=""  data-objectid="777844" data-text="Армения"  width="43" height="15" x="540" y="-81" transform="translate(540,-81)">
+      <clipPath id="clip15">
+        <rect x="-1" y="-1" width="49" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad15" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Армения</title>
+    <rect width="43" height="15" rx="5" ry="5" fill='url(#grad15)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="43" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:43px" title="Армения">Армения</span>
+        </foreignObject>
+        <text clip-path="url(#clip15)" width="43" id='777844' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="21.5" y="1"><tspan dy='10' x='21.5' fill='black'>Армения</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;15 -->
+<g id="edge9_15" class="edge"><title>9&#45;&#45;15</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M480.167,-67.1993C503.26,-69.0106 524.8,-70.7 539.75,-71.8726"/>
+</g>
+<!-- 21 -->
+
+<g id="el21" class="node" data-edgesTo="#edge9_21" data-edgesFrom=""  data-objectid="777858" data-text="Китай"  width="31" height="15" x="546" y="-48" transform="translate(546,-48)">
+      <clipPath id="clip21">
+        <rect x="-1" y="-1" width="37" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad21" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#DDF7F1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#80DDC8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Китай</title>
+    <rect width="31" height="15" rx="5" ry="5" fill='url(#grad21)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="31" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:31px" title="Китай">Китай</span>
+        </foreignObject>
+        <text clip-path="url(#clip21)" width="31" id='777858' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="15.5" y="1"><tspan dy='10' x='15.5' fill='black'>Китай</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;21 -->
+<g id="edge9_21" class="edge"><title>9&#45;&#45;21</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M480.167,-47.1944C506.607,-44.9911 531.01,-42.9575 545.82,-41.7233"/>
+</g>
+<!-- 27 -->
+
+<g id="el27" class="node" data-edgesTo="#edge9_27" data-edgesFrom=""  data-objectid="777860" data-text="по 28 марта"  width="55" height="15" x="534" y="-15" transform="translate(534,-15)">
+      <clipPath id="clip27">
+        <rect x="-1" y="-1" width="61" height="17"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad27" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:White;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:White;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>по 28 марта</title>
+    <rect width="55" height="15" rx="5" ry="5" fill='url(#grad27)' stroke='#2F939D' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="55" height="15" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="display: table-cell;vertical-align: middle;overflow:hidden;color:Black;height:15px;width:55px" title="по 28 марта">по 28 марта</span>
+        </foreignObject>
+        <text clip-path="url(#clip27)" width="55" id='777860' style="font:normal 8px Arial;color:Black;text-anchor: middle" fill='black' x="27.5" y="1"><tspan dy='10' x='27.5' fill='black'>по 28 марта</tspan></text>    
+      </switch>
+    
+</g>
+<!-- 9&#45;&#45;27 -->
+<g id="edge9_27" class="edge"><title>9&#45;&#45;27</title>
+<path fill="none" stroke="black" stroke-width="0.2" d="M444.495,-35.9327C476.846,-28.0035 511.113,-19.6048 533.943,-14.009"/>
+</g>
+</g>
+</svg>

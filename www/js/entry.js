@@ -53,7 +53,7 @@ var mobileAndTabletcheck = function () {
 var isMobile = mobileAndTabletcheck();
 
 require.config({
-    urlArgs: 'v=5.0882',
+    urlArgs: 'v=5.0884',
     baseUrl: '/js',
     waitSeconds: 120,
     paths: {

@@ -1,13 +1,13 @@
 ﻿<div class="head-content">
-    <h3><%- display_name %></h3>
+    <h3 dir="auto"><%- display_name %></h3>
 
-    <div class="tools"></div>
+    <div class="tools" dir="auto"></div>
 
     <!--<div class="gotoresult" data-id="6782E40B-794A-467D-BC8E-21992920317D"><span class="total"></span>&nbsp;<button class="up"><%- Resources.go %></button></div>-->
 
-    <div class="card-rubric"><p></p></div>
+    <div class="card-rubric" dir="auto"><p dir="auto"></p></div>
 </div>
-<div class="load">
+<div class="load" dir="auto">
 
     <% if(systemtypename==="VideoSource" || systemtypename==="Audiosource"){ %>
 
@@ -32,6 +32,6 @@
     <%= webfile %>
 
     <br /><br />
-    <i><%- author %></i>
+    <i dir="auto"><%- author %></i>
     <div class="card-link"></div>
 </div>

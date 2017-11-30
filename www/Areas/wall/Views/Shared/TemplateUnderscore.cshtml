@@ -25,8 +25,8 @@
 
     <figure>
         <h1><%- Resources.myDashboard %></h1>
-        <div class="list"></div>
-    </figure></script><script type="x-template/underscore" id="first-item-template"><i class="remove"><svg><use xlink:href='#icon-trash' /></svg></i> <% if(!Screen){ %> <svg width='208' height='158'><use xlink:href='#plug4dashboard' /></svg> <% } else if(Screen.indexOf('data:image')!==-1) {%> <img src='<%- Screen %>' alt="" /> <% } else { %> <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=220&height=160' alt="" /> <% } %> <span><%= title %></span></script><script type="x-template/underscore" id="slider-template"><div class="bolt"><div class="bolt-lug"><div><span class="arrow vertical"></span></div></div></div>
+        <div class="list-scroll"><div class="list"></div></div>
+    </figure></script><script type="x-template/underscore" id="first-item-template"><i class="remove"><svg><use xlink:href='#icon-trash' /></svg></i> <% if(!Screen){ %> <svg width='209' height='160'><use xlink:href='#plug4dashboard' /></svg> <% } else if(Screen.indexOf('data:image')!==-1) {%> <img src='<%- Screen %>' alt="" /> <% } else { %> <img src='<%- baseurl %>/Files/ImageTransform?path=<%- Screen %>&width=210&height=160' alt="" /> <% } %> <span dir="auto"><%= title %></span></script><script type="x-template/underscore" id="slider-template"><div class="bolt"><div class="bolt-lug"><div><span class="arrow vertical"></span></div></div></div>
     <div class="list">
         <div class="show-add-vitrin" title="<%- Resources.addVitrin %>"><svg><use xlink:href="#add-vitrin" /></svg></div>
         <div class="arrow horisontal big le"></div>
@@ -131,15 +131,7 @@
     </div> <% } else if (type==='select'){ %> <div class="g-form--input">
         <label class="g-form--label"><%- displayName %></label>
         <select class="g-form--select" name="<%- name %>"> <% _.each(value, function(o){ %> <option value="<%- o.value %>" <%= o.checked?'selected="selected"':"" %>><%- o.title %></option> <% }) %> </select>
-    </div> <% } %> <div id="params"></div></script><script type="x-template/underscore" id="relations-settings-template"><div class="notify"></div>
-    <div id="widgets"></div>
-    <br />
-
-    <table>
-        <thead><tr><th><%- Resources.rsw1 %></th><th><%- Resources.rsw2 %></th><th></th></tr></thead>
-        <tbody><tr><td><div id="select-param"></div></td><td><div id="params"></div></td><td><span data-icon="icon-anchor"></span></td></tr></tbody>
-    </table>
-    <div id="result"></div></script><script type="x-template/underscore" id="decoration-settings-template"><div class="marker">
+    </div> <% } %> <div id="params"></div></script><script type="x-template/underscore" id="decoration-settings-template"><div class="marker">
         <div>
             <hr /><svg><use xlink:href="#marker-decoration"></use></svg>
             <input type="text" class="Decoration ignore" name="CaptionBackground" id="<%- prefix %>_CaptionBackground" value="<%- CaptionBackground %>" />
@@ -193,7 +185,15 @@
     </div></script><script type="x-template/underscore" id="maket-template"> <% if(CaptionIsVisible) {  %> <div class="pat-title" style="background-color:<%- CaptionBackground %>;color:<%- CaptionForeground %>;">Title</div> <% } %> <div class="pat-content" style="<%- CaptionIsVisible?'':'height:136px;' %>background-color:<%- !ContainerIsTransparent? ContainerBackground: 'transparent' %>;color:<%- ContainerForeground %>;border: <%- BorderIsVisible?'solid 2px '+ CaptionBackground:'transparent' %>">
             Content
             <div class="pat-link" style="color:<%- LinkForeground %>"><span style="background-color:<%- LinkBackground %>;">Link</span></div>
-        </div></script><script type="x-template/underscore" id="legend-settings-template"><div class="g-form--input">
+        </div></script><script type="x-template/underscore" id="relations-settings-template"><div class="notify"></div>
+    <div id="widgets"></div>
+    <br />
+
+    <table>
+        <thead><tr><th><%- Resources.rsw1 %></th><th><%- Resources.rsw2 %></th><th></th></tr></thead>
+        <tbody><tr><td><div id="select-param"></div></td><td><div id="params"></div></td><td><span data-icon="icon-anchor"></span></td></tr></tbody>
+    </table>
+    <div id="result"></div></script><script type="x-template/underscore" id="legend-settings-template"><div class="g-form--input">
         <input id="LegendIsVisible_<%- id %>" type="checkbox" class="g-form--checkbox" name="LegendIsVisible" <%- (LegendIsVisible?checked="checked":"") %> />
         <label for="LegendIsVisible_<%- id %>"><%= Resources.visibleLegend %>:</label>
     </div>
@@ -356,10 +356,10 @@
 
     <br />
     <p class="cmd"><button id="back"><%= Resources.toback %></button>&nbsp;&nbsp;<button id="next"><%= Resources.next %></button></p></script><script type="x-template/underscore" id="widget-map-legend-template"><div class='LegendContainer'>
-        <h4><%- Title %></h4>
-        <table class='ListItemsLegend'> <% _.each(WidgetsLegendItems, function(a){ %> <tr>
+        <h4 dir="auto"><%- Title %></h4>
+        <table class='ListItemsLegend'> <% _.each(WidgetsLegendItems, function(a){ %> <tr dir="auto">
                 <td> <% if(a.MarkerUrl){ %> <img class='Bull' src='<%= a.MarkerUrl %>' alt='' /> <% } else { %> <span class='Blam' style='background-color:<%- a.MarkerColor %>'></span> <% } %> </td>
-                <td><%- a.MarkerDescription %></td>
+                <td dir="auto"><%- a.MarkerDescription %></td>
             </tr> <% }); %> </table>
     </div></script><script type="x-template/underscore" id="choice-chart-template"><div class="graph-panel-container">
         <p class="title"><%- Resources.gtitle %></p>
@@ -382,6 +382,18 @@
             </span>
         </span>
     </div>
+
+	<div>
+		<span class="g-form--input">
+			<input type="checkbox" class="g-form--checkbox" id="<%- prefix %>enableRTL" name="enableRTL" <%- enableRTL?checked='checked':'' %> />
+			<label for="<%- prefix %>enableRTL"><%- Resources.dire %></label>
+			<i class="help rtl-1"></i>
+			<span class="g-tip bottom" style="display: none;">
+				<kbd></kbd>
+				<span><%- Resources.dire %></span>
+			</span>
+		</span>
+	</div>
 
     <!-- Tooltips -->
     <h3><%- Resources.vs2 %></h3>
@@ -632,6 +644,8 @@
                 </span>
             </span>
         </div>
+    </div>
+    <div class="row">
         <div class="grid--1-2">
             <span class="g-form--input">
                 <input type="checkbox" class="g-form--checkbox" id="<%- prefix %>explodeOnMouseOver" name="explodeOnMouseOver" <%- explodeOnMouseOver?checked='checked':'' %> />
@@ -672,28 +686,7 @@
     <div class="g-form--input">
         <label class="g-form--label"><%- Resources.csh %></label>
         <div class="g-dropdown--menu" id="cloud-shape"></div>
-    </div></script><script type="x-template/underscore" id="card-vertical-view-template"><div class="card-image"> <%= image %> <% if(rubrics){ %> <div class="card-rubric">
-            <p><%- rubrics %></p>
-        </div> <% } %> <div class="card-date">
-            <p><%- pdate %></p>
-        </div>
-    </div>
-    <div class="card-content">
-        <h3><%- display_name %></h3>
-        <p><%= annotation %></p> <% if(url) { %> <div class="card-link">
-            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>    
-            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
-        </div> <% } %> </div></script><script type="x-template/underscore" id="card-horizontal-view-template"><div class="card-image"> <%= image %> </div>
-    <div class="card-content"> <% if(rubrics){ %> <div class="card-rubric">
-            <p><%- rubrics %></p>
-        </div> <% } %> <div class="card-date">
-            <p><%- pdate %></p>
-        </div>
-        <h3><%- display_name %></h3>
-        <p><%= annotation %></p> <% if(url) { %> <div class="card-link">
-            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>
-            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
-        </div> <% } %> </div></script><script type="x-template/underscore" id="semnet-settings-template"><span class="g-form--input">
+    </div></script><script type="x-template/underscore" id="semnet-settings-template"><span class="g-form--input">
         <label><%- Resources.layout %></label>
         <span id="layout"></span>
     </span>
@@ -737,59 +730,25 @@
             <kbd></kbd>
             <span></span>
         </span>
-    </span>--></script><script type="x-template/underscore" id="column-settings-template"><div class="g-sortable--list-item">
-
-        <input type="hidden" name="QueryCustomizationUID" value="<%- QueryCustomizationUID %>" />
-        <input type="hidden" name="QueryID" value="<%- QueryID %>" />
-        <input type="hidden" name="ColumnSystemName" value="<%- ColumnSystemName %>" />
-        <input type="hidden" name="SerialNum" value="<%- SerialNum %>" />
-
-        <span>
-            <input class="g-form--checkbox" type="checkbox" id="<%- prefix + ColumnSystemName %>" name="ColumnIsVisible" <%= ColumnIsVisible?'checked="checked"': '' %> />
-            <label for="<%- prefix + ColumnSystemName %>"></label>
-        </span>
-
-        &nbsp;
-        <input type="text" name="ColumnTitle" value="<%= ColumnTitle %>" placeholder="<%= ColumnTitle %>">
-
-        <input type="text" placeholder="<%= Resources.width %>: (px / %)" maxlength="5" id="ColumnWidth" name="ColumnWidth" value="<%- ColumnWidth %>" />
-
-</div></script><script type="x-template/underscore" id="table-visualisation-template"><div class="row">
-        <div class="grid--1-2">
-            <span class="g-form--input">
-                <input type="radio" class="g-form--radio" id="<%- prefix %>_table" name="Visualization" />
-                <label for="<%- prefix %>_table"><%- Resources.feedVisualizationTypeTable %></label>
-                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
-                <span class="g-tip bottom" style="display: none;">
-                    <kbd></kbd>
-                    <span></span>
-                </span>
-            </span>
+    </span>--></script><script type="x-template/underscore" id="card-vertical-view-template"><div class="card-image" dir="auto"> <%= image %> <% if(rubrics){ %> <div class="card-rubric" dir="auto">
+            <p dir="auto"><%- rubrics %></p>
+        </div> <% } %> <div class="card-date" dir="auto">
+            <p dir="auto"><%- pdate %></p>
         </div>
     </div>
-    <div class="row">
-        <div class="grid--1-2">
-            <span class="g-form--input">
-                <input type="radio" class="g-form--radio" id="<%- prefix %>_card" name="Visualization" />
-                <label for="<%- prefix %>_card"><%- Resources.feedVisualizationTypeCardV %></label>
-                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
-                <span class="g-tip bottom" style="display: none;">
-                    <kbd></kbd>
-                    <span></span>
-                </span>
-            </span>
+    <div class="card-content" dir="auto">
+        <h3 dir="auto"><%- display_name %></h3>
+        <p dir="auto"><%= annotation %></p> <% if(url) { %> <div class="card-link" dir="auto">
+            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>    
+            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
+        </div> <% } %> </div></script><script type="x-template/underscore" id="card-horizontal-view-template"><div class="card-image"> <%= image %> </div>
+    <div class="card-content" dir="auto"> <% if(rubrics){ %> <div class="card-rubric">
+            <p dir="auto"><%- rubrics %></p>
+        </div> <% } %> <div class="card-date">
+            <p dir="auto"><%- pdate %></p>
         </div>
-        <div class="grid--1-2">
-            <span class="g-form--input">
-                <input type="radio" class="g-form--radio" id="<%- prefix %>_card2" name="Visualization" />
-                <label for="<%- prefix %>_card2"><%- Resources.feedVisualizationTypeCardH %></label>
-                <!-- Task 4284 - Hide help icons --><!-- <i class="help rtl-1"></i> -->
-                <span class="g-tip bottom" style="display: none;">
-                    <kbd></kbd>
-                    <span></span>
-                </span>
-            </span>
-        </div>
-    </div>
-
-    <div id="content"></div></script>
+        <h3 dir="auto"><%- display_name %></h3>
+        <p dir="auto"><%= annotation %></p> <% if(url) { %> <div class="card-link" dir="auto">
+            <span class="card-link-icon"><svg class="link-icon"><use xlink:href="#link-icon" /></svg></span>
+            <a href="<%= url %>" target="_blank"><%- massmedia %></a>
+        </div> <% } %> </div></script>

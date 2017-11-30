@@ -1,4 +1,11 @@
-﻿define('g/ejRTEView', ['i18n!nls/resources.min', 'g/ImageGalleryView', 'RU', 'syncfusion'], function (Resources, Gallery) {
+﻿define('g/ejRTEView',
+	[
+	'i18n!nls/resources.min',
+	'g/ImageGalleryView',
+	'RU',
+	'syncfusion'
+],
+function (Resources, Gallery) {
 
     return Mn.View.extend({
 
@@ -7,7 +14,8 @@
 
         onAttach: function () {
 
-            this.ejRTE = this.$el.ejRTE({
+        	this.ejRTE = this.$el.ejRTE({
+        		enableRTL: !!this.options.enableRTL, 
                 value: this.options.value,
                 maxLength: Number.MAX_VALUE,
                 locale:Resources.Lang,
@@ -98,4 +106,5 @@
             return this;
         }
     });
+
 });

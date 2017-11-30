@@ -1,0 +1,30 @@
+<svg id="svgSN" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(20.5 34)">
+<title>graph0</title>
+<polygon fill="none" stroke="none" points="-20.5,34 -20.5,-34 20.5,-34 20.5,34 -20.5,34"/>
+<!-- 1 -->
+
+<g id="el1" class="node" data-edgesTo="" data-edgesFrom=""  data-objectid="792011" data-text="Golkar"  width="33" height="60" x="-16.5" y="-30" transform="translate(-16.5,-30)">
+      <clipPath id="clip1">
+        <rect x="-1" y="-1" width="39" height="62"/>
+      </clipPath>
+    
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:Red;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:OrangeRed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+    <title>Golkar</title>
+    <rect width="33" height="60" rx="5" ry="5" fill='url(#grad1)' stroke='Red' stroke-width="0.1"/>
+      <switch>
+        <foreignObject x="0" y="0" width="33" height="60" style="text-align: center;font:normal 8px Arial" >
+          <span xmlns="http://www.w3.org/1999/xhtml" style="vertical-align: middle;overflow:hidden;color:White;height:60px;width:33px" title="Golkar">Golkar</span>
+        </foreignObject>
+        <text clip-path="url(#clip1)" width="33" id='792011' style="font:normal 8px Arial;color:White;text-anchor: middle" fill='black' x="16.5" y="1"><tspan dy='10' x='16.5' fill='black'>Golkar</tspan></text>    
+      </switch>
+    <image x="-15.5" y="12.46875" width="64" height="45" xlink:href="/Temp/SN/0/998a3e9f-38ca-43df-9c3e-9979d39d79c4/792011.jpg" />
+</g>
+</g>
+</svg>

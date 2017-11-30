@@ -51,7 +51,7 @@ namespace www.Helpers
             {
                 var sb = new StringBuilder();
                 sb.Append(@"<div class=""showroom"">");
-                var matches = Regex.Matches(sourceText, @"<img.*?src=[""'](.*?)[""']>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+                var matches = Regex.Matches(sourceText, @"<img.*?src=[""'](.*?)[""'].*?/?>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
                 foreach (Match m in matches)
                     sb.AppendFormat(@"<img src=""{0}"" /><br/>", m.Groups[1].Value);
 
@@ -59,7 +59,7 @@ namespace www.Helpers
                 foreach (Match m in matches)
                     sb.Append(m.Groups[1].Value).Append("<br/>");
 
-                matches = Regex.Matches(sourceText, @"<iframe.*?src=[""'](.*?)[""']>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
+                matches = Regex.Matches(sourceText, @"<iframe.*?src=[""'](.*?)[""'].*?/?>", RegexOptions.IgnoreCase | RegexOptions.Singleline);
                 foreach (Match m in matches)
                 {
                     sb.AppendFormat(@"
@@ -84,7 +84,18 @@ namespace www.Helpers
                 sanitizer.Sanitize(sourceText);
                 sanitizer.RemovingAttribute += (s, e) => e.Cancel = e.Reason == RemoveReason.NotAllowedUrlValue && e.Attribute.Value.Length >= 0xfff0 && e.Attribute.Value.StartsWith("data:", StringComparison.OrdinalIgnoreCase);
 
-                return sanitizer.Sanitize(sourceText);
+                sourceText = sanitizer.Sanitize(sourceText);
+
+                var doc = new HtmlAgilityPack.HtmlDocument();
+                doc.LoadHtml(sourceText);
+
+                foreach (var img in doc.DocumentNode.Descendants("img"))
+                {
+                    img.Attributes.Remove("width");
+                    img.Attributes.Append("width", "100%");
+                }
+
+                sourceText = doc.DocumentNode.OuterHtml;
             }
 
             return sourceText;

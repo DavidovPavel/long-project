@@ -11,6 +11,7 @@
 @import "global/body/body";
 @import "global/header/header";
 
+@import "global/button/button";
 @import "global/body/icons";
 @import "global/body/form";
 @import "global/message/messages";
@@ -45,7 +46,221 @@
 */
 
 
-.wrap {  width: 960px;  margin: 0 auto; padding-top: 37px;padding-bottom: 37px;}
-.dropdown-toggle.btn-clear {
-    text-align:left;
+ 
+//main {margin-top: 0!important;}
+
+.g-seasourses-wrapper {display:flex; flex-direction: column; min-height: 100vh;}
+
+.seasourses-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex: 1;
+    max-width: 100vw;
+    display: flex;
+
+    & > .left-flex {
+        width: 25%;
+        border-right: 1px solid #dadada; /*height:100%;*/
+        padding: 30px;
+        padding-bottom: 0;
+
+        ul.g-tree div {
+            display: flex;
+            align-items: center;
+
+            & span.item {
+                margin-left: 10px;
+            }
+
+            & span.item-number {
+                margin-left: auto;
+            }
+        }
+    }
+
+    & > .right-flex {
+        width: 75%;
+    }
+
+    & .g-toolbar {
+        background-color: #f3f3f3;
+        min-height: 45px;
+    }
+
+
+    & table thead {
+        border-bottom: 1px solid #dadada;
+        border-top: 1px solid #dadada;
+    }
+
+    & table tfoot {
+        border-top: 1px solid #dadada;
+    }
+
+    & table thead tr th {
+        background-color: #f3f3f3;
+        color: #666666;
+
+        &:before {
+            background: #bbbbbb;
+        }
+
+        &:after {
+            background: #bbbbbb;
+        }
+    }
+
+    & .table thead tr, & .table tbody tr {
+        .th-small {
+            width: 5%;
+        }
+
+        .th-medium {
+            width: 10%;
+        }
+
+        .th-big {
+            width: 75%;
+        }
+
+        th:first-child:before, td:first-child:before {
+            left: -9999px;
+        }
+
+        th:last-child:after, td:last-child:after {
+            left: -9999px;
+        }
+    }
+
+    & .table tfoot tr {
+        display: flex;
+
+        & td:nth-child(4) {
+            margin-left: auto;
+        }
+    }
+
+    tfoot {
+        position: absolute;
+        bottom: 44px;
+        width: 75%;
+        height: 35px;
+        border-top: 1px solid #dadada;
+        background-color: #f3f3f3;
+    }
+
+    & div.g-toolbar ul {
+        display: flex;
+
+        & li:first-child {
+            flex: 2;
+            max-width: 60%;
+            margin-right: auto;
+        }
+
+        & li {
+            flex: 1;
+            max-width: 15%;
+            padding: 15px;
+        }
+    }
+
+    td {
+        color: #666666;
+    }
+    // if (input[type=checkbox].g-form--checkbox:checked)
+    tbody tr > td.checked {
+        color: #333333;
+        font-weight: 500;
+    }
+
+    /*svg.svg-icon {
+        fill: #378dda;
+        margin: 5px;
+        stroke-width: 2px;
+    }*/
+
+    & tbody td > span {margin-right: 10px;}
+
+    & span.help { display:inline-block;width: 24px;height: 24px; position: relative;
+        & > a {
+            display: inline-block;
+            padding: 0 10px;
+            text-decoration: none;
+            color: #378dda;
+        }
+
+        &:hover {
+            & > .left {
+                display: block;
+            }
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 4px;
+            border-left: 2px solid #666666;
+            border-top: 2px solid #666666;
+            border-bottom: 2px solid #666666;
+            position: absolute;
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            height: 20px;
+            width: 4px;
+            border-right: 2px solid #666666;
+            border-top: 2px solid #666666;
+            border-bottom: 2px solid #666666;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    
 }
+
+div.search-wrapper {
+    position: relative;
+
+    &::before {
+        width: 24px;
+        height: 24px;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 20%;
+        right: 10px;
+        background-image: url(/Content/images/icon24.svg);
+        background-repeat: no-repeat;
+        background-position: -649px 0;
+        background-size: 1200px 51px;
+        -webkit-filter: invert(60%);
+        filter: invert(60%);
+        transform: rotate(270deg);
+        cursor: pointer;
+    }
+}
+
+
+    .seasourses-footer {
+        width: 100%;
+        background-color: #f3f3f3;
+        height: 65px;
+        border-top: 1px solid #dadada;
+        position: relative;
+    }
+
+    div.buttons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+    }

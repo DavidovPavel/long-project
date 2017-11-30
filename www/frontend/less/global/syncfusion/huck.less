@@ -1,14 +1,26 @@
 ﻿@import "../../libs/lib";
 
 .e-widget .e-in-wrap {
-    //border: 0;
-    border: solid 1px #bbb;
+    border-color: #d7d7d7;
+
+    & .e-box {border:none;
+        
+    }
 }
 
+/*.e-datetime-wrap e-widget e-ntouch{
+    & input.e-input {border: 1px solid; border-right: none;}
+        & span.e-select {border: none; border-left: 1px solid;}
+}*/
+
+
 .e-widget:focus {
-    //border: 0;
-   
+    border: 0;
 }
+
+.e-focus.e-valid  input.g-form--input:focus{
+    border: 0;
+} 
 
 .e-widget .e-select {
     background-color: transparent;
@@ -20,8 +32,7 @@
     }
 
 .e-widget input.e-input {
-    border: solid 1px #bbb;
-    box-sizing: border-box;
+
 }
 
 .e-datepicker .e-header,
@@ -125,6 +136,23 @@
         }
     }
 }
+.e-datetimecalendar:before,
+.e-icon.e-datetime:before {
+    content: '';
+    position: absolute;
+    top: ~"calc(50% - 11px)";
+    left: 10px;
+    //width: 16px !important;
+    //height: 16px !important;
+    background-color: transparent;
+    background-image: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" fill="#666666"  viewBox="322 51 16 16"><path d="M336.61,67.1h-13c-.6,0-.61-.4-.61-1v-13c0-.6,0-1,.61-1H326v-1h1v1h3v-1h1v1h3v-1h1v1h1.61c.6,0,1.39.4,1.39,1v13C338,66.7,337.21,67.1,336.61,67.1Zm.39-14h-2v1h-1v-1h-3v1h-1v-1h-3v1h-1v-1h-2v13h13Zm-11.39,5h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm2-6h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm2-6h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm2-6h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm-3.61-9h5v1h-5Zm5.61,3h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm2-6h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Zm0,2h-1v-1h1Z" /></svg>');
+    //background-repeat: no-repeat;
+    //background-size: 544px 544px;
+    //filter: grayscale(100%) brightness(1);
+    //background-position: -323px -51px !important;
+    cursor: pointer;
+    transition: filter ease-in-out 150ms;
+}
 
 //Добавлена иконка image
 .e-rte-toolbar-icon.image:before, .e-rte-toolbar-icon.imageProperties:before {
@@ -139,3 +167,4 @@
 #master-create #ejControl_42_wrapper {
     height: 320px !important;
 }
+

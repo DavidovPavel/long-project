@@ -11,6 +11,8 @@ define('global:maps:GeoMapGoogleView', ['async!http://maps.google.com/maps/api/j
 
         onAttach: function () {
 
+        	//this.$el.attr('dir', 'rtl');
+
             let zoom = this.model.get( "Zoom" ),
                 lat = this.model.get( "CenterLat" ),
                 long = this.model.get( "CenterLong" ),

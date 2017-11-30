@@ -30,7 +30,8 @@ define('WidgetModel', [], function () {
                     CaptionForeground: 'rgba(51, 51, 51, 1)',
                     ContainerBackground: 'rgba(255, 255, 255, 1)',
                     ContainerForeground: 'rgba(51, 51, 51, 1)',
-                    LinkBackground: 'rgba(255, 255, 255, 1)',
+					// по умолчанию ссылки имеют прозрачный фон
+                    LinkBackground: 'rgba(255, 255, 255, 0)',
                     LinkForeground: 'rgba(55,141,218,1)',
                     CaptionIsVisible: true,
                     BorderIsVisible: true,

@@ -798,6 +798,7 @@ define({
     notparameters: "No query parameters",
     decrparameter: "Parameter Description",
     parametrs: "Parameters",
+    noParametrs: "Pleace, chose request or try by search",
 
     smi: "Mass Media",
     author: "Author",

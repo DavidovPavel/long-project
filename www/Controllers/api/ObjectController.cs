@@ -288,13 +288,13 @@ namespace www.Controllers.api
             var mIsMedia = meta.GetByName("IsMedia");
 
             var ci = new ContentItem()
-                .AddProperty(mObject_ID, obj.ObjectId, "")
-                .AddProperty(mDisplay_Name, obj.DisplayName, "")
-                .AddProperty(mTextSource, saDB._PropValue(obj.Properties[mTextSource.SystemName], ", "), "")
-                .AddProperty(mAuthor, saDB._PropValue(obj.Properties[mAuthor.SystemName], ", "), "")
-                .AddProperty(mPublicationDate, saDB._PropValue(obj.Properties[mPublicationDate.SystemName], ", "), "")
-                .AddProperty(mMassMedia, saDB._PropValue(obj.Properties[mMassMedia.SystemName], ", "), "")
-                .AddProperty(mIsMedia, saDB._PropValue(obj.Properties[mIsMedia.SystemName], ", "), "");
+                .AddProperty(mObject_ID, obj.ObjectId)
+                .AddProperty(mDisplay_Name, obj.DisplayName)
+                .AddProperty(mTextSource, saDB._PropValue(obj.Properties[mTextSource.SystemName], ", "))
+                .AddProperty(mAuthor, saDB._PropValue(obj.Properties[mAuthor.SystemName], ", "))
+                .AddProperty(mPublicationDate, saDB._PropValue(obj.Properties[mPublicationDate.SystemName], ", "))
+                .AddProperty(mMassMedia, saDB._PropValue(obj.Properties[mMassMedia.SystemName], ", "))
+                .AddProperty(mIsMedia, saDB._PropValue(obj.Properties[mIsMedia.SystemName], ", "));
 
             ci.LinkAdd("meta", "MetaType.ID", obj.MetaType.ID.ToString());
             ci.LinkAdd("meta", "MetaType.IsOrganization", obj.MetaType.IsOrganization.ToString());
